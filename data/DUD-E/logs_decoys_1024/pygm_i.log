@@ -1,0 +1,13 @@
+[17:07:30] ZINC60280382: warning - charged amidine and isFixed atom.
+[17:07:30] ZINC60280382: warning - charged amidine and isFixed atom.
+[17:07:31] Explicit valence for atom # 27 C, 5, is greater than permitted
+[17:07:31] sanitise [17:07:31] ZINC35675053: [17:07:31] Explicit valence for atom # 27 C, 5, is greater than permitted
+[17:07:31] sanitise [17:07:31] ZINC35675055: [17:07:31] Explicit valence for atom # 27 C, 5, is greater than permitted
+[17:07:31] sanitise [17:07:31] ZINC36048202: [17:07:32] Explicit valence for atom # 18 C, 5, is greater than permitted
+[17:07:32] sanitise [17:07:32] ZINC35674944: [17:07:32] Explicit valence for atom # 17 C, 5, is greater than permitted
+[17:07:32] sanitise [17:07:32] ZINC36048862: [17:07:34] Explicit valence for atom # 17 C, 5, is greater than permitted
+[17:07:34] sanitise [17:07:34] ZINC35674980: [17:07:34] Explicit valence for atom # 11 C, 5, is greater than permitted
+[17:07:34] sanitise [17:07:34] ZINC35675079: [17:07:34] ZINC06691774: Warning - no explicit hydrogens in mol2 file but needed for formal charge estimation.
+[17:07:34] ZINC06691774: Warning - no explicit hydrogens in mol2 file but needed for formal charge estimation.
+[17:07:34] ZINC17300648: Warning - no explicit hydrogens in mol2 file but needed for formal charge estimation.
+[17:07:34] ZINC17300648: Warning - no explicit hydrogens in mol2 file but needed for formal charge estimation.

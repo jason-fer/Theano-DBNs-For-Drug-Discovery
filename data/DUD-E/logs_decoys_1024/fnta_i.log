@@ -1,0 +1,13 @@
+[16:41:46] ZINC05217825: warning - aromatic N with 3 aromatic bonds - skipping charge guess for this atom
+[16:41:46] Can't kekulize mol 
+
+[16:41:46] sanitise [16:41:46] ZINC05217825: [16:42:05] ZINC19938320: warning - charged amidine and isFixed atom.
+[16:42:05] Explicit valence for atom # 15 N, 4, is greater than permitted
+[16:42:05] sanitise [16:42:05] ZINC19938320: [16:43:09] ZINC16430814: Error - C.Cat with bad number of N neighbors.
+[16:43:21] Explicit valence for atom # 11 C, 5, is greater than permitted
+[16:43:21] sanitise [16:43:21] ZINC35674992: [16:43:21] Explicit valence for atom # 11 C, 5, is greater than permitted
+[16:43:21] sanitise [16:43:21] ZINC35674994: [16:43:21] Explicit valence for atom # 23 C, 5, is greater than permitted
+[16:43:21] sanitise [16:43:21] ZINC36048159: [16:43:21] Explicit valence for atom # 11 C, 5, is greater than permitted
+[16:43:21] sanitise [16:43:21] ZINC36048771: [16:43:21] Explicit valence for atom # 11 C, 5, is greater than permitted
+[16:43:21] sanitise [16:43:21] ZINC36048797: [16:43:21] Explicit valence for atom # 19 C, 5, is greater than permitted
+[16:43:21] sanitise [16:43:21] ZINC36048834: [16:43:41] ZINC16186504: Error - C.Cat with bad number of N neighbors.

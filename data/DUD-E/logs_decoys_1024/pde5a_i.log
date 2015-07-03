@@ -1,0 +1,5 @@
+[17:01:20] Explicit valence for atom # 28 N, 4, is greater than permitted
+[17:01:20] sanitise [17:01:20] ZINC19944322: [17:01:33] ZINC17022034: warning - aromatic N with 3 aromatic bonds - skipping charge guess for this atom
+[17:01:33] Can't kekulize mol 
+
+[17:01:33] sanitise [17:01:33] ZINC17022034: 

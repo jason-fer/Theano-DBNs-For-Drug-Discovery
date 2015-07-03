@@ -1,0 +1,28 @@
+[16:26:56] Explicit valence for atom # 25 C, 5, is greater than permitted
+[16:26:56] sanitise [16:26:56] ZINC36048645: [16:26:59] Explicit valence for atom # 25 C, 5, is greater than permitted
+[16:26:59] sanitise [16:26:59] ZINC36048909: [16:27:08] ZINC50122047: warning - charged amidine and isFixed atom.
+[16:27:08] ZINC50122047: warning - charged amidine and isFixed atom.
+[16:27:08] ZINC50998494: warning - charged amidine and isFixed atom.
+[16:27:08] ZINC50998494: warning - charged amidine and isFixed atom.
+[16:27:08] ZINC52176684: warning - charged amidine and isFixed atom.
+[16:27:08] ZINC52176684: warning - charged amidine and isFixed atom.
+[16:27:08] ZINC52176693: warning - charged amidine and isFixed atom.
+[16:27:08] ZINC52176693: warning - charged amidine and isFixed atom.
+[16:27:12] ZINC50987587: warning - charged amidine and isFixed atom.
+[16:27:12] ZINC50987587: warning - charged amidine and isFixed atom.
+[16:27:24] ZINC51003139: warning - charged amidine and isFixed atom.
+[16:27:24] ZINC51003139: warning - charged amidine and isFixed atom.
+[16:27:25] ZINC50987588: warning - charged amidine and isFixed atom.
+[16:27:25] ZINC50987588: warning - charged amidine and isFixed atom.
+[16:27:26] ZINC50986063: warning - charged amidine and isFixed atom.
+[16:27:26] ZINC50986063: warning - charged amidine and isFixed atom.
+[16:27:26] ZINC50988168: warning - charged amidine and isFixed atom.
+[16:27:26] ZINC50988168: warning - charged amidine and isFixed atom.
+[16:27:26] ZINC50998217: warning - charged amidine and isFixed atom.
+[16:27:26] ZINC50998217: warning - charged amidine and isFixed atom.
+[16:27:36] ZINC50987586: warning - charged amidine and isFixed atom.
+[16:27:36] ZINC50987586: warning - charged amidine and isFixed atom.
+[16:27:45] ZINC39715172: warning - aromatic N with 3 aromatic bonds - skipping charge guess for this atom
+[16:27:45] Can't kekulize mol 
+
+[16:27:45] sanitise [16:27:45] ZINC39715172: 
