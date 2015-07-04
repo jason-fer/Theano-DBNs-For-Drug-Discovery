@@ -20,6 +20,23 @@ sha_1 = hashlib.sha1()
 # Tox21
 
 
+data_paths = [
+    "./data/DUD-E",
+    "./data/MUV",
+    "./data/Tox21",
+    "./data/PCBA/AIDS_fingerprints", # fingerprints
+    "./data/PCBA/AIDs_PCassay_data", # CSVs
+    ]
+
+
+fold_paths = [
+    "./folds/DUD-E",
+    "./folds/MUV",
+    "./folds/Tox21",
+    "./folds/PCBA",
+    ]
+
+
 
 def mkdir_p(path):
     """ mkdir without errors """
@@ -115,8 +132,8 @@ def dud_e():
     actives = []
     inactives = []
 
-    data_path = "./data/DUD-E/fingerprints"
-    fold_path = "./folds/DUD-E"
+    data_path = data_paths[0]
+    fold_path = fold_paths[0]
 
     for dir_name, sub, files in os.walk(data_path):
         for fname in files:
@@ -132,6 +149,7 @@ def dud_e():
     print "DUD-E: " + str( len(inactives) + len(actives) ) + " files found"
     print "Now generating folds for DUD-E..."
 
+    # pass along the file names
     make_folds(actives, 'actives', 'DUD-E')
     make_folds(inactives, 'inactives', 'DUD-E')
 
@@ -142,28 +160,50 @@ def muv():
     actives = []
     inactives = []
 
-    data_path = "./data/MUV/MUV-fingerprints"
-    fold_path = "./folds/MUV"
+    data_path = data_paths[1]
+    fold_path = fold_paths[1]
 
     for dir_name, sub, files in os.walk(data_path):
         for fname in files:
-            if 'Log' in dir_name:
-                pass
+            if 'decoys' in fname:
+                # print('inactive: %s' % fname)
+                inactives.append(fname)
             else:
-                if 'decoys' in fname:
-                    # print('inactive: %s' % fname)
-                    inactives.append(fname)
-                else:
-                    # print('  active: %s' % fname)
-                    actives.append(fname)
+                # print('  active: %s' % fname)
+                actives.append(fname)
 
     # we should have an equal number of files
     assert len(actives) == len(inactives)
     print "MUV: " + str( len(inactives) + len(actives) ) + " files found"
     print "Now generating folds for MUV..."
 
+    # pass along the file names
     make_folds(actives, 'actives', 'MUV')
     make_folds(inactives, 'inactives', 'MUV')
+
+
+# Tox21 has classifications inline (unlike the rest of the system)
+def tox21():
+    """ Generate folds for Tox21 """
+    actives = []
+    inactives = []
+
+    data_path = data_paths[2]
+    fold_path = fold_paths[2]
+
+    for dir_name, sub, files in os.walk(data_path):
+        for fname in files:
+            if '.log' in fname:
+                pass
+            else:
+                inactives.append(fname)
+
+    # we only have 1 group of files!
+    print "Tox21: " + str(len(inactives)) + " files found"
+    print "Now generating folds for Tox21..."
+
+    # XXXXXXXXXXXXXXXXXXXXXXXXXXX This needs to be modified to work correctly XXXXXXXXXXXXXXXXXXXXXXX
+    make_folds(inactives, 'inactives', 'Tox21')
 
 
 
@@ -172,8 +212,10 @@ def pcba():
     actives = []
     inactives = []
 
-    data_path = "./data/PCBA/AIDS_fingerprints"
-    fold_path = "./folds/PCBA"
+
+    data_path = data_paths[3]
+    csv_path  = data_paths[4]
+    fold_path = fold_paths[3]
 
     for dir_name, sub, files in os.walk(data_path):
         for fname in files:
@@ -192,39 +234,16 @@ def pcba():
     print "MUV: " + str( len(inactives) + len(actives) ) + " files found"
     print "Now generating folds for MUV..."
 
+    # pass along the file names
     make_folds(actives, 'actives', 'MUV')
     make_folds(inactives, 'inactives', 'MUV')
 
-
-
-# Tox21 has classifications inline (unlike the rest of the system)
-def tox21():
-    """ Generate folds for Tox21 """
-    actives = []
-    inactives = []
-
-    data_path = "./data/Tox21/fingerprints"
-    fold_path = "./folds/Tox21"
-
-    for dir_name, sub, files in os.walk(data_path):
-        for fname in files:
-            if '.log' in fname:
-                pass
-            else:
-                inactives.append(fname)
-
-    # we only have 1 group of files!
-    print "Tox21: " + str(len(inactives)) + " files found"
-    print "Now generating folds for Tox21..."
-
-    # XXXXXXXXXXXXXXXXXXXXXXXXXXX This needs to be modified to work correctly XXXXXXXXXXXXXXXXXXXXXXX
-    make_folds(inactives, 'inactives', 'Tox21')
-
-
 def main(args):
     # generate DUDE-E folds
-    # dud_e()
-    muv()
+    dud_e()
+    # muv()
+    # tox21()
+    # pcba()
 
 
 
