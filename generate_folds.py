@@ -76,6 +76,7 @@ def parse_line(line, activity, data_type):
         parts = line.rstrip('\n').split(r' ')
         native_id = parts[0]
         bitstring = parts[1]
+
         # generate sha1 hash identity for bitstring
         sha_1.update(bitstring)
         hash_id = sha_1.hexdigest()
@@ -86,9 +87,10 @@ def parse_line(line, activity, data_type):
         else:
             activity = 0
 
+        fold = 0
+
         # row format:
-        # hash_id, native_id, activity, bitstring, fold
-        row = [hash_id, native_id, activity, bitstring, 0]
+        row = [hash_id, activity, fold, native_id, bitstring]
 
         return row
 
@@ -98,13 +100,14 @@ def parse_line(line, activity, data_type):
         activity = parts[0]
         native_id = parts[1]
         bitstring = parts[2]
+
         # generate sha1 hash identity for bitstring
         sha_1.update(bitstring)
         hash_id = sha_1.hexdigest()
+        fold = 0
 
         # row format:
-        # hash_id, native_id, activity, bitstring, fold
-        row = [hash_id, native_id, activity, bitstring, 0]
+        row = [hash_id, activity, native_id, fold, bitstring]
 
         return row
 
@@ -117,6 +120,10 @@ def parse_line(line, activity, data_type):
 
 def write_folds(filename, all_rows, is_active):
     """ each file only gets 2x folds: actives & inactive """
+
+    # there should be something to write.
+    assert(len(all_rows) > 0)
+
     num_rows = len(all_rows)
     fold_size = num_rows / 5
     last_fold_size = (num_rows % 5) + fold_size
@@ -125,27 +132,27 @@ def write_folds(filename, all_rows, is_active):
     assert((last_fold_size + fold_size * 4) == num_rows)
 
     count = 0
-    for fold_id in range(5):
-        for row_id in range(fold_size):
-            with open(filename, 'w') as file_obj:
-                print all_rows[row_id]
-                print all_rows.pop()
-                exit(0)
-                # row = all_rows.pop()
-                # row[4] = is_active
-                # print row
-                # print activity
-                # exit(0)
-                # row = ' '.join(str(v) for v in all_rows.pop())
-                # print 'row'
-                # print row
-                # exit(0)
-                # file_obj.write(row + '\n')
+    with open(filename, 'w') as file_obj:
+        for fold_id in range(4):
+            for row_id in range(fold_size):
+                row = all_rows.pop()
+                row[1] = is_active
+                row[3] = fold_id
+                row = ' '.join(str(v) for v in row)
+                file_obj.write(row + '\n')
 
-    print 'wtf'
-    exit(0)
+    # write leftovers to the last fold
+    fold_id = 4
+    with open(filename, 'w') as file_obj:
+        for j in range(last_fold_size):
+            row = all_rows.pop()
+            row[1] = is_active
+            row[3] = fold_id
+            row = ' '.join(str(v) for v in row)
+            file_obj.write(row + '\n')
+
     # confirm we built all the folds
-    # assert(len(all_rows) == count)
+    assert(len(all_rows) == 0)
 
 
 
@@ -172,6 +179,8 @@ def make_folds(filenames, activity, data_type, data_path, fold_path, csv_path = 
         # randomize
         random.shuffle(all_rows)
 
+        base_path = fold_path + '/'
+
         # write our files
         if(data_type == 'Tox21'):
 
@@ -179,8 +188,8 @@ def make_folds(filenames, activity, data_type, data_path, fold_path, csv_path = 
             actives = []
             inactives = []
             for row in all_rows:
-                is_active = row[4]
-                if(is_active):
+                is_active = int(row[1])
+                if(is_active == 1):
                     actives.append(row)
                 else:
                     inactives.append(row)
@@ -190,22 +199,21 @@ def make_folds(filenames, activity, data_type, data_path, fold_path, csv_path = 
 
             #write actives
             filename = target + '_actives.fl'
-            write_folds(filename, actives, 1)
+            write_folds(base_path + filename, actives, 1)
 
             #write inactives
             filename = target + '_inactives.fl'
-            write_folds(filename, inactives, 0)
+            write_folds(base_path + filename, inactives, 0)
 
         else:
 
             # It's not Tox21
-
             is_active = 0
             if(activity == '_actives'):
                 is_active = 1
 
             filename = target + activity + '.fl'
-            write_folds(filename, all_rows, is_active)
+            write_folds(base_path + filename, all_rows, is_active)
 
 
 def dud_e():
