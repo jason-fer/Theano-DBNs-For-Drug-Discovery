@@ -126,12 +126,7 @@ def write_folds(filename, all_rows, is_active):
 
     num_rows = len(all_rows)
     fold_size = num_rows / 5
-    last_fold_size = (num_rows % 5) + fold_size
 
-    # sanity check for the fold math
-    assert((last_fold_size + fold_size * 4) == num_rows)
-
-    count = 0
     with open(filename, 'w') as file_obj:
         for fold_id in range(4):
             for row_id in range(fold_size):
@@ -141,10 +136,9 @@ def write_folds(filename, all_rows, is_active):
                 row = ' '.join(str(v) for v in row)
                 file_obj.write(row + '\n')
 
-    # write leftovers to the last fold
-    fold_id = 4
-    with open(filename, 'w') as file_obj:
-        for j in range(last_fold_size):
+        # write leftovers to the last fold
+        fold_id = 4
+        while(all_rows):
             row = all_rows.pop()
             row[1] = is_active
             row[3] = fold_id
