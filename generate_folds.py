@@ -71,6 +71,7 @@ def get_target(fname, data_type):
 
 
 def parse_line(line, activity, data_type):
+
     if(data_type == 'DUD-E' or data_type == 'MUV'):
 
         parts = line.rstrip('\n').split(r' ')
@@ -83,21 +84,20 @@ def parse_line(line, activity, data_type):
 
         # activity is based on the fname / argument passed in
         if(activity == '_actives'):
-            activity = 1
+            is_active = 1
         else:
-            activity = 0
+            is_active = 0
 
         fold = 0
-
         # row format:
-        row = [hash_id, activity, fold, native_id, bitstring]
+        row = [hash_id, is_active, native_id, fold, bitstring]
 
         return row
 
     elif(data_type == 'Tox21'):
 
         parts = line.rstrip('\n').split(r' ')
-        activity = parts[0]
+        is_active = parts[0]
         native_id = parts[1]
         bitstring = parts[2]
 
@@ -107,7 +107,7 @@ def parse_line(line, activity, data_type):
         fold = 0
 
         # row format:
-        row = [hash_id, activity, native_id, fold, bitstring]
+        row = [hash_id, is_active, native_id, fold, bitstring]
 
         return row
 
@@ -335,9 +335,9 @@ def pcba():
 
 def main(args):
     # generate DUDE-E folds
-    # dud_e()
+    dud_e()
     # muv()
-    tox21()
+    # tox21()
     # pcba()
 
 
