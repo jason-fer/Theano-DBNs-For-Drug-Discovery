@@ -24,7 +24,7 @@ data_paths = [
     "./data/DUD-E",
     "./data/MUV",
     "./data/Tox21",
-    "./data/PCBA/AIDS_fingerprints", # fingerprints
+    "./data/PCBA/AIDs_fingerprints", # fingerprints
     "./data/PCBA/AIDs_PCassay_data", # CSVs
     ]
 
@@ -51,22 +51,24 @@ def mkdir_p(path):
 
 
 def get_target(fname, data_type):
-
+    """ Extract the target from the filename """
     if(data_type == 'DUD-E'):
         parts = fname.split(r'_')
-        target = parts[0]
-        return target
+        return parts[0]
 
     if(data_type == 'MUV'):
         fname = fname.replace('cmp_list_MUV_', '')
         parts = fname.split(r'_')
-        target = parts[0]
-        return target
+        return parts[0]
 
     if(data_type == 'Tox21'):
         parts = fname.split(r'_')
-        target = parts[0]
-        return target
+        return parts[0]
+
+    if(data_type == 'PCBA'):
+        fname = fname.replace('pcba_', '')
+        parts = fname.split(r'_')
+        return parts[0]
 
 
 
@@ -302,44 +304,80 @@ def tox21():
 
 def pcba():
     """ Generate folds for PCBA """
-    actives = []
-    inactives = []
-
+    pcba_fps = []
+    pcba_csv = []
+    targets = {}
 
     data_path = data_paths[3]
     csv_path  = data_paths[4]
     fold_path = fold_paths[3]
 
+    # init targets
     for dir_name, sub, files in os.walk(data_path):
         for fname in files:
-            if 'Log' in dir_name or '.list' in fname:
+            if 'Log' in dir_name or '.list' in fname or fname.startswith('.'):
                 pass
             else:
-                if 'decoys' in fname:
-                    # print('inactive: %s' % fname)
-                    inactives.append(fname)
-                else:
-                    # print('  active: %s' % fname)
-                    actives.append(fname)
+                target = get_target(fname, 'PCBA')
+                targets[target] = []
+
+    # now, walk the data path again, appending each file name to each target list
+    for dir_name, sub, files in os.walk(data_path):
+        for fname in files:
+            if 'Log' in dir_name or '.list' in fname or fname.startswith('.'):
+                pass
+            else:
+                # pcba_fps is just for book-keeping.
+                pcba_fps.append(fname)
+                target = get_target(fname, 'PCBA')
+                targets[target].append(fname)
+
+
+    for dir_name, sub, files in os.walk(csv_path):
+        for fname in files:
+            if 'Log' in dir_name or '.list' in fname or fname.startswith('.'):
+                pass
+            else:
+                pcba_csv.append(fname)
+
+    """ this dumps all targets & associated files w/ each """
+    # for k, vals in targets.iteritems():
+    #     print k
+    #     for v in vals:
+    #         print '\t' + v
+    # exit(0)
 
     # we should have an equal number of files
-    assert len(actives) == len(inactives)
-    print "MUV: " + str( len(inactives) + len(actives) ) + " files found"
-    print "Now generating folds for MUV..."
+    assert len(targets) == len(pcba_csv)
+    print "PCBA: " + str(len(pcba_fps)) + " fps and " + \
+        str(len(pcba_csv)) + " csv files found"
+    print "Now generating folds for PCBA..."
 
+    # now, for each target, generate a hashmap based on the CSV
+    # the hashmap will tell us active / vs inactive based on CIDs
+    # then, from each target file, we can determine actives / inactives
+    # we can then write these inactives & inactives to their respective folds
+    # rinse, repeat.
+    exit(0)
+    for row in pcba_fps:
+        print row
+    exit(0)
     # pass along the file names
-    make_folds(actives, 'actives', 'MUV', data_path, csv_path)
-    make_folds(inactives, 'inactives', 'MUV', data_path, csv_path)
+    make_folds(actives, 'actives', 'PCBA', data_path, csv_path)
+    make_folds(inactives, 'inactives', 'PCBA', data_path, csv_path)
 
 
+def gen_folds():
+    dud_e()
+    muv()
+    tox21()
+    
 
 def main(args):
     # generate DUDE-E folds
-    dud_e()
-    # muv()
-    # tox21()
-    # pcba()
+    # gen_folds()
 
+    pcba()
 
 
 if __name__ == "__main__":
