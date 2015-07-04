@@ -193,10 +193,12 @@ def make_folds(filenames, activity, data_type, data_path, fold_path, csv_path = 
 
             #write actives
             filename = target + '_actives.fl'
+            print filename
             write_folds(base_path + filename, actives, 1)
 
             #write inactives
             filename = target + '_inactives.fl'
+            print filename
             write_folds(base_path + filename, inactives, 0)
 
         else:
@@ -207,6 +209,7 @@ def make_folds(filenames, activity, data_type, data_path, fold_path, csv_path = 
                 is_active = 1
 
             filename = target + activity + '.fl'
+            print filename
             write_folds(base_path + filename, all_rows, is_active)
 
 
