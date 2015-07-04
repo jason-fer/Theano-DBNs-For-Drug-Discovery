@@ -1,5 +1,0 @@
-[16:31:37] ZINC17022038: warning - aromatic N with 3 aromatic bonds - skipping charge guess for this atom
-[16:31:37] Can't kekulize mol 
-
-[16:31:37] sanitise [16:31:37] ZINC17022038: [16:31:51] ZINC02540222: Warning - no explicit hydrogens in mol2 file but needed for formal charge estimation.
-[16:31:51] ZINC02540222: Warning - no explicit hydrogens in mol2 file but needed for formal charge estimation.
