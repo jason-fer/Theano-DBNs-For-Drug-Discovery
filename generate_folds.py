@@ -72,7 +72,7 @@ def get_target(fname, data_type):
 
 
 
-def parse_line(line, activity, data_type, g_truth = None):
+def parse_line(line, activity, data_type, g_truth = None, target = None):
 
     if(data_type == 'DUD-E' or data_type == 'MUV'):
 
@@ -116,8 +116,15 @@ def parse_line(line, activity, data_type, g_truth = None):
         native_id = parts[0]
         bitstring = parts[1]
 
-        # find the activity level in our hashmap
-        is_active = g_truth[native_id]
+        # assume inactive; this will be true most of the time..... 
+        is_active = 0
+        try:
+            # find the activity level in our hashmap
+            is_active = g_truth[native_id]
+        except:
+            # is_active = -1 # throw this value from the dataset?
+            # print 'PCBA CID:' + str(native_id) + ', not found for target: ' + target
+
         # generate sha1 hash identity for bitstring
         sha_1.update(bitstring)
         hash_id = sha_1.hexdigest()
@@ -443,16 +450,22 @@ def pcba():
             with open(data_path + '/' + fname) as f:
                 lines = f.readlines()
                 for line in lines:
-                    row = parse_line(line, 0, 'PCBA', g_truth)
+                    row = parse_line(line, 0, 'PCBA', g_truth, target)
                     """ row format: [hash_id, is_active, native_id, fold, bitstring] """
-                    if(is_active == 0):
+                    if(row[1] == 0):
                         inactives.append(row)
-                    else:
+                    elif(row[1] == 1):
                         actives.append(row)
+                    else:
+                        # fingerprints we can't find a truth value for
+                        # ... what to do?
+                        pass
+
         # with open(data_path + '/' + csv) as f:
-        print len(actives)
-        print len(inactives)
-        print len(actives) + len(inactives)
+        print str(len(actives)) + ' actives'
+        print str(len(inactives)) + ' actives'
+        total = len(actives) + len(inactives)
+        print str(len(actives) + len(inactives)) + ' total'
         print 'xxxxxxxxxxxxxxxx'
         exit(0)
 
