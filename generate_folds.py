@@ -72,7 +72,7 @@ def get_target(fname, data_type):
 
 
 
-def parse_line(line, activity, data_type):
+def parse_line(line, activity, data_type, g_truth = None):
 
     if(data_type == 'DUD-E' or data_type == 'MUV'):
 
@@ -92,9 +92,7 @@ def parse_line(line, activity, data_type):
 
         fold = 0
         # row format:
-        row = [hash_id, is_active, native_id, fold, bitstring]
-
-        return row
+        return [hash_id, is_active, native_id, fold, bitstring]
 
     elif(data_type == 'Tox21'):
 
@@ -109,12 +107,25 @@ def parse_line(line, activity, data_type):
         fold = 0
 
         # row format:
-        row = [hash_id, is_active, native_id, fold, bitstring]
-
-        return row
+        return [hash_id, is_active, native_id, fold, bitstring]
 
     elif(data_type == 'PCBA'):
-        raise ValueError('PCBA method not written yet')
+
+        # g_truth
+        parts = line.rstrip('\n').split(r' ')
+        native_id = parts[0]
+        bitstring = parts[1]
+
+        # find the activity level in our hashmap
+        is_active = g_truth[native_id]
+        # generate sha1 hash identity for bitstring
+        sha_1.update(bitstring)
+        hash_id = sha_1.hexdigest()
+        fold = 0
+
+        # row format:
+        return [hash_id, is_active, native_id, fold, bitstring]
+
     else:
         raise ValueError('Unknown data type:' + str(data_type))
 
@@ -422,16 +433,28 @@ def pcba():
                 # Now that we have our  hashmap, we can build our respective sets
                 # of actives & inactives
                 
+        # based on the target, we can retrieve the files; use the targets
+        # hashmap we built earlier
 
-                # based on the target, we can retrieve the files; use the targets
-                # hashmap we built earlier
-                fps_files = targets[target]
-                print 'fps_files'
-                print fps_files
-                print 'target'
-                print target
-                exit(0)
-                # with open(data_path + '/' + csv) as f:
+        # build the active / inactive sets 
+        actives = []
+        inactives = []
+        for fname in targets[target]:
+            with open(data_path + '/' + fname) as f:
+                lines = f.readlines()
+                for line in lines:
+                    row = parse_line(line, 0, 'PCBA', g_truth)
+                    """ row format: [hash_id, is_active, native_id, fold, bitstring] """
+                    if(is_active == 0):
+                        inactives.append(row)
+                    else:
+                        actives.append(row)
+        # with open(data_path + '/' + csv) as f:
+        print len(actives)
+        print len(inactives)
+        print len(actives) + len(inactives)
+        print 'xxxxxxxxxxxxxxxx'
+        exit(0)
 
         print g_truth
         exit(0)
@@ -450,7 +473,6 @@ def gen_folds():
 def main(args):
     # generate DUDE-E folds
     # gen_folds()
-
     pcba()
 
 
