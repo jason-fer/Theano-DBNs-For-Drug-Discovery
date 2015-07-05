@@ -128,16 +128,19 @@ def tox21():
     for target, folds in all_folds.iteritems():
         # lets try a generic dataset with just 1 fold
         temp_data = []
-        for i in range(len(folds)):
+        for i in range(len(folds) - 1):
             temp_data += folds[i]
 
-        print 'Running logistic regression for target: ' + target
-
+        test_data = folds[4]
+        
+        print 'Building data for target: ' + target
         # we skipped over-sampling inactives.
         random.shuffle(temp_data)
+        random.shuffle(test_data)
         # for i in range(10):
         #     print temp_data[i]
 
+        # build training data
         X = []
         Y = []
         for i in range(len(temp_data)):
@@ -146,41 +149,41 @@ def tox21():
             for bit in string:
                 row.append(int(bit))
             X.append(row)
-            Y.append(temp_data[i][1])
+            Y.append(int(temp_data[i][1]))
 
         X = np.array(X)
         Y = np.array(Y)
 
-        # print X.dtype
-        # print Y.dtype
-        # exit(0)
+        # build test data
+        X_test = []
+        Y_test = []
+        for i in range(len(test_data)):
+            string = BitArray(bin=str(test_data[i][0]))
+            row = []
+            for bit in string:
+                row.append(int(bit))
+            X_test.append(row)
+            Y_test.append(int(test_data[i][1]))
 
-        h = .02  # step size in the mesh
+        X_test = np.array(X_test)
+        Y_test = np.array(Y_test)
+
+
+        print 'Running logistic regression for target: ' + target
         logreg = linear_model.LogisticRegression(C=1e5)
         logreg.fit(X, Y)
-        # Plot the decision boundary. Assign color to each point in the mesh 
-        # [x_min, m_max]x[y_min, y_max].
-        x_min, x_max = X[:, 0].min() - .5, X[:, 0].max() + .5
-        y_min, y_max = X[:, 1].min() - .5, X[:, 1].max() + .5
-        xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
-        Z = logreg.predict(np.c_[xx.ravel(), yy.ravel()])
 
-        # Put the result into a color plot
-        Z = Z.reshape(xx.shape)
-        plt.figure(1, figsize=(4, 3))
-        plt.pcolormesh(xx, yy, Z, cmap=plt.cm.Paired)
+        Z = logreg.predict(X_test)
 
-        # Plot also the training points
-        plt.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=plt.cm.Paired)
-        plt.xlabel(str(target) + ' length')
-        plt.ylabel(str(target) +' width')
+        # print X.shape
+        # print Y.shape
+        # print Z.shape
+        # print X_test.shape
+        # print Y_test.shape
 
-        plt.xlim(xx.min(), xx.max())
-        plt.ylim(yy.min(), yy.max())
-        plt.xticks(())
-        plt.yticks(())
-
-        plt.show()
+        print Z
+        print Y_test
+        exit(0)
 
         # all done with 1 target....
         exit(0)
