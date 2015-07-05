@@ -11,8 +11,40 @@ fold_paths = [
 
 
 
+def get_fold_path(data_type):
+
+    if(data_type == 'DUD-E'):
+        return fold_paths[0]
+
+    if(data_type == 'MUV'):
+        return fold_paths[1]
+
+    if(data_type == 'Tox21'):
+        return fold_paths[2]
+
+    if(data_type == 'PCBA'):
+        return fold_paths[3]
+
+    raise ValueError('data_type does not exist:' + str(data_type))
+
+
+
 def get_target(fname, data_type):
     return generate_folds.get_target(fname, data_type)
+
+
+
+def parse_line(line, data_type):
+
+    # row format: [hash_id, is_active, native_id, fold, bitstring]
+    parts = line.rstrip('\n').split(r' ')
+    hash_id = parts[0]
+    is_active = parts[1]
+    native_id = parts[2]
+    fold = parts[3]
+    bitstring = parts[4]
+
+    return fold, [bitstring, is_active]
 
 
 
@@ -43,22 +75,45 @@ def build_targets(fold_path, data_type):
 
 
 
-def tox21():
-    fold_path = fold_paths[2]
-    targets = build_targets(fold_path, 'Tox21')
+def get_folds(data_type):
+    fold_path = get_fold_path(data_type)
+    targets = build_targets(fold_path, data_type)
 
-    print "Found " + str(len(targets)) + " targets for Tox21"
+    print "Found " + str(len(targets)) + " targets for " + data_type
     
-    data = []
+    folds = {}
+    for i in range(5):
+        # don't forget -- we are using strings & not integer keys!!!
+        folds[str(i)] = []
+
     for target, fnames in targets.iteritems():
         #fnames contains all files for this target
         for fname in fnames:
-            
-        print key
-        print val
-        exit(0)
-    exit(0)
-    exit(0)
+            row = []
+            with open(fold_path + '/' + fname) as f:
+                lines = f.readlines()
+                for line in lines:
+                    # put each row in it's respective fold
+                    fold, row = parse_line(line, data_type)
+                    folds[str(fold)].append(row)
+
+    """ Debug """
+    # print "length of all folds"
+    # print len(folds)
+    # print "length of respective folds"
+    # print len(folds['0'])
+    # print len(folds['1'])
+    # print len(folds['2'])
+    # print len(folds['3'])
+    # print len(folds['4'])
+
+    return folds
+
+
+
+def tox21():
+    # get our 5x folds...
+    folds = get_folds('Tox21')
 
 
 
