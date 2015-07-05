@@ -2,6 +2,7 @@ import generate_folds, os, sys, random
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import linear_model
+from bitstring import BitArray
 
 fold_paths = [
     "./folds/DUD-E",
@@ -134,17 +135,25 @@ def tox21():
 
         # we skipped over-sampling inactives.
         random.shuffle(temp_data)
-        for i in range(10):
-            print temp_data[i]
+        # for i in range(10):
+        #     print temp_data[i]
 
         X = []
         Y = []
         for i in range(len(temp_data)):
-            X.append(temp_data[i][0])
+            string = BitArray(bin=str(temp_data[i][0]))
+            row = []
+            for bit in string:
+                row.append(int(bit))
+            X.append(row)
             Y.append(temp_data[i][1])
 
         X = np.array(X)
         Y = np.array(Y)
+
+        # print X.dtype
+        # print Y.dtype
+        # exit(0)
 
         h = .02  # step size in the mesh
         logreg = linear_model.LogisticRegression(C=1e5)
