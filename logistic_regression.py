@@ -80,13 +80,16 @@ def get_folds(data_type):
     targets = build_targets(fold_path, data_type)
 
     print "Found " + str(len(targets)) + " targets for " + data_type
-    
-    folds = {}
-    for i in range(5):
-        # don't forget -- we are using strings & not integer keys!!!
-        folds[str(i)] = []
 
+    # store folds by target
+    all_folds = {}
     for target, fnames in targets.iteritems():
+        # generate a fold set fo reach target
+        folds = {}
+        for i in range(5):
+            # don't forget -- we are using strings & not integer keys!!!
+            folds[i] = []
+
         #fnames contains all files for this target
         for fname in fnames:
             row = []
@@ -95,7 +98,12 @@ def get_folds(data_type):
                 for line in lines:
                     # put each row in it's respective fold
                     fold, row = parse_line(line, data_type)
-                    folds[str(fold)].append(row)
+                    folds[int(fold)].append(row)
+
+        # add the folds to our target
+        # print 'target: ' + target
+        # print len(folds)
+        all_folds[target] =  folds
 
     """ Debug """
     # print "length of all folds"
@@ -107,13 +115,23 @@ def get_folds(data_type):
     # print len(folds['3'])
     # print len(folds['4'])
 
-    return folds
+    return all_folds
 
 
 
 def tox21():
     # get our 5x folds...
-    folds = get_folds('Tox21')
+    all_folds = get_folds('Tox21')
+
+    for target, folds in all_folds.iteritems():
+        # lets try a generic dataset with just 1 fold
+        data = []
+        for i in range(len(folds)):
+            data += folds[i]
+
+        print 'Running logistic regression for target: ' + target
+
+        
 
 
 
