@@ -124,6 +124,7 @@ def parse_line(line, activity, data_type, g_truth = None, target = None):
         except:
             # is_active = -1 # throw this value from the dataset?
             # print 'PCBA CID:' + str(native_id) + ', not found for target: ' + target
+            pass
 
         # generate sha1 hash identity for bitstring
         sha_1.update(bitstring)
@@ -134,6 +135,7 @@ def parse_line(line, activity, data_type, g_truth = None, target = None):
         return [hash_id, is_active, native_id, fold, bitstring]
 
     else:
+        
         raise ValueError('Unknown data type:' + str(data_type))
 
 
@@ -192,7 +194,6 @@ def make_folds(filenames, activity, data_type, data_path, fold_path, csv_path = 
 
         # randomize
         random.shuffle(all_rows)
-
         base_path = fold_path + '/'
 
         # write our files
@@ -446,6 +447,7 @@ def pcba():
         # build the active / inactive sets 
         actives = []
         inactives = []
+        # loop through all files in the set (usually not more than 2)
         for fname in targets[target]:
             with open(data_path + '/' + fname) as f:
                 lines = f.readlines()
@@ -461,19 +463,28 @@ def pcba():
                         # ... what to do?
                         pass
 
-        # with open(data_path + '/' + csv) as f:
-        print str(len(actives)) + ' actives'
-        print str(len(inactives)) + ' actives'
-        total = len(actives) + len(inactives)
-        print str(len(actives) + len(inactives)) + ' total'
-        print 'xxxxxxxxxxxxxxxx'
-        exit(0)
+        # we are done with the hashmap
+        del g_truth
 
-        print g_truth
-        exit(0)
-        # print all_rows
-    print test_output
-    exit(0)  
+        # we should always have SOMETHING active... (right?)
+        assert( len(actives) > 0 )
+        assert( len(inactives) > 0 )
+
+        # now we can dump our data to the output folds
+        mkdir_p(fold_path) # generate folder for our folds
+        random.shuffle(actives)
+        random.shuffle(inactives)
+        base_path = fold_path + '/'
+
+        #write actives
+        filename = target + '_actives.fl'
+        print filename
+        write_folds(base_path + filename, actives, 1)
+
+        #write inactives
+        filename = target + '_inactives.fl'
+        print filename
+        write_folds(base_path + filename, inactives, 0)
 
 
 
