@@ -301,6 +301,16 @@ def tox21():
     make_folds(all_files, '', 'Tox21', data_path, fold_path)
 
 
+def get_csv_index(first_line, csv, name):
+    # make sure we have the right CID for this CSV file
+    for i in range(len(first_line)):
+        if(first_line[i] == name):
+            return i
+
+    # this should never happen
+    raise ValueError('Failed to find ' + name + ' in ' + csv)
+
+
 
 def pcba():
     """ Generate folds for PCBA """
@@ -348,23 +358,87 @@ def pcba():
     # exit(0)
 
     # we should have an equal number of files
-    assert len(targets) == len(pcba_csv)
-    print "PCBA: " + str(len(pcba_fps)) + " fps and " + \
-        str(len(pcba_csv)) + " csv files found"
+    num_csvs = len(pcba_csv)
+    assert len(targets) == num_csvs
+    print "PCBA: " + str(len(pcba_fps)) + " fps and " + str(num_csvs) + \
+        " csv files found"
     print "Now generating folds for PCBA..."
 
     # now, for each target, generate a hashmap based on the CSV
     # the hashmap will tell us active / vs inactive based on CIDs
-    # then, from each target file, we can determine actives / inactives
-    # we can then write these inactives & inactives to their respective folds
-    # rinse, repeat.
-    exit(0)
-    for row in pcba_fps:
-        print row
-    exit(0)
-    # pass along the file names
-    make_folds(actives, 'actives', 'PCBA', data_path, csv_path)
-    make_folds(inactives, 'inactives', 'PCBA', data_path, csv_path)
+    for csv in pcba_csv:
+        
+        # extract target from CSV file name
+        parts = csv.replace('.', '-').split(r'-')
+        target = parts[1]
+
+        # ground truth CID to {0,1} hashmap (based on CSV data)
+        g_truth = {} # CID = compound ID.
+        # now we can determine actives / inactives from each target file
+
+        # now write actives & inactives to their respective folds for 1 file
+        # rinse, repeat...
+        all_rows = []
+        with open(csv_path + '/' + csv) as f:
+            lines = f.readlines()
+            first_line = lines.pop(0).split(r',')
+
+            CID_index = get_csv_index(first_line, csv, 'PUBCHEM_CID')
+            outcome_index = get_csv_index(first_line, csv, 'PUBCHEM_ACTIVITY_OUTCOME')
+            score_index = get_csv_index(first_line, csv, 'PUBCHEM_ACTIVITY_SCORE')
+            pheno_index = get_csv_index(first_line, csv, '1^Phenotype^STRING^^^^')
+
+            # now build our results based on the indexes
+            for line in lines:
+                line = line.split(r',')
+              
+
+                # skip the many annoying header rows that would corrupt our data
+                """ Allows me to manually find errors (e.g. xml gateway """
+                """ errors) and clear them out out by hand."""
+                try:
+                    if(line[CID_index] == 'PUBCHEM_CID'):
+                        continue;
+                except:
+                    print 'line'
+                    print line
+                    print 'CID_index'
+                    print CID_index
+                    print csv
+                    exit(0)
+
+                # build the data
+                row = [line[CID_index], line[outcome_index], line[score_index], line[pheno_index]]
+
+                # map the PUBCHEM_CID to the PUBCHEM_ACTIVITY_OUTCOME
+                is_active= 0
+                if(line[outcome_index] == 'Active'):
+                    is_active = 1
+
+                g_truth[ line[CID_index] ] = is_active
+                # for building debugging output
+                # test_output[row[1]] = ''
+
+                # Now that we have our  hashmap, we can build our respective sets
+                # of actives & inactives
+                
+
+                # based on the target, we can retrieve the files; use the targets
+                # hashmap we built earlier
+                fps_files = targets[target]
+                print 'fps_files'
+                print fps_files
+                print 'target'
+                print target
+                exit(0)
+                # with open(data_path + '/' + csv) as f:
+
+        print g_truth
+        exit(0)
+        # print all_rows
+    print test_output
+    exit(0)  
+
 
 
 def gen_folds():
