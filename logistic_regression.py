@@ -177,13 +177,31 @@ def tox21():
 
         # print X.shape
         # print Y.shape
-        # print Z.shape
-        # print X_test.shape
+        print 'Training size:'
+        print X.shape
+        print 'Test size:'
+        print X_test.shape
         # print Y_test.shape
 
-        print Z
-        print Y_test
-        exit(0)
+        # print Z
+        # print Y_test
+        # Z = Z.tolist()
+        # Y_test = Y_test.tolist()
+
+        num_correct = 0
+        num_false = 0
+        for i in range(len(Z)):
+            if Z[i] == Y_test[i]:
+                num_correct += 1
+            else:
+                num_false += 1
+
+        total = len(Z)
+        print 'Total predictions: ' + str(total)
+        print 'Num correct: ' + str(num_correct)
+        print 'Num false: ' + str(num_false)
+        print 'Percent correct: ' + str(num_correct / float(total))
+
 
         # all done with 1 target....
         exit(0)
