@@ -1,6 +1,7 @@
-import generate_folds, os, sys
-
-
+import generate_folds, os, sys, random
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import linear_model
 
 fold_paths = [
     "./folds/DUD-E",
@@ -125,13 +126,55 @@ def tox21():
 
     for target, folds in all_folds.iteritems():
         # lets try a generic dataset with just 1 fold
-        data = []
+        temp_data = []
         for i in range(len(folds)):
-            data += folds[i]
+            temp_data += folds[i]
 
         print 'Running logistic regression for target: ' + target
 
-        
+        # we skipped over-sampling inactives.
+        random.shuffle(temp_data)
+        for i in range(10):
+            print temp_data[i]
+
+        X = []
+        Y = []
+        for i in range(len(temp_data)):
+            X.append(temp_data[i][0])
+            Y.append(temp_data[i][1])
+
+        X = np.array(X)
+        Y = np.array(Y)
+
+        h = .02  # step size in the mesh
+        logreg = linear_model.LogisticRegression(C=1e5)
+        logreg.fit(X, Y)
+        # Plot the decision boundary. Assign color to each point in the mesh 
+        # [x_min, m_max]x[y_min, y_max].
+        x_min, x_max = X[:, 0].min() - .5, X[:, 0].max() + .5
+        y_min, y_max = X[:, 1].min() - .5, X[:, 1].max() + .5
+        xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
+        Z = logreg.predict(np.c_[xx.ravel(), yy.ravel()])
+
+        # Put the result into a color plot
+        Z = Z.reshape(xx.shape)
+        plt.figure(1, figsize=(4, 3))
+        plt.pcolormesh(xx, yy, Z, cmap=plt.cm.Paired)
+
+        # Plot also the training points
+        plt.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=plt.cm.Paired)
+        plt.xlabel(str(target) + ' length')
+        plt.ylabel(str(target) +' width')
+
+        plt.xlim(xx.min(), xx.max())
+        plt.ylim(yy.min(), yy.max())
+        plt.xticks(())
+        plt.yticks(())
+
+        plt.show()
+
+        # all done with 1 target....
+        exit(0)
 
 
 
