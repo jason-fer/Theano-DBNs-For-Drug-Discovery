@@ -1,4 +1,4 @@
 *.tgz
-folds.tar.gz
+*.gz
+*.pyc
 folds
-

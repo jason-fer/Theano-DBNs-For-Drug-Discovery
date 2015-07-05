@@ -52,6 +52,7 @@ def mkdir_p(path):
 
 def get_target(fname, data_type):
     """ Extract the target from the filename """
+    """ Allowed types: DUD-E MUV Tox21 PCBA"""
     if(data_type == 'DUD-E'):
         parts = fname.split(r'_')
         return parts[0]
@@ -488,16 +489,19 @@ def pcba():
 
 
 
-def gen_folds():
+def main(args):
+    """ Traverse folder structures and convert inconstient raw data into """
+    """ 2x files per target; 1 active file and 1 inactive file. """
+
+    ################################################################################
+    print "Remove this if you want to generate the folds... it could take a while!"
+    exit(0)
+    ################################################################################
+
     dud_e()
     muv()
-    tox21()
-    
-
-def main(args):
-    # generate DUDE-E folds
-    # gen_folds()
     pcba()
+    tox21()
 
 
 if __name__ == "__main__":
