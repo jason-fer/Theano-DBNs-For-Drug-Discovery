@@ -121,6 +121,72 @@ def get_folds(data_type):
 
 
 
+def logistic_regression(target, X, Y, X_test, Y_test):
+    print 'Running logistic regression for target: ' + target
+    logreg = linear_model.LogisticRegression(C=1e5)
+    logreg.fit(X, Y)
+
+    Z = logreg.predict(X_test)
+
+    # print X.shape
+    # print Y.shape
+    print 'Training size:'
+    print X.shape
+    print 'Test size:'
+    print X_test.shape
+    # print Y_test.shape
+
+    # print Z
+    # print Y_test
+    # Z = Z.tolist()
+    # Y_test = Y_test.tolist()
+
+    num_correct = 0
+    num_false = 0
+    for i in range(len(Z)):
+        if Z[i] == Y_test[i]:
+            num_correct += 1
+        else:
+            num_false += 1
+
+    total = len(Z)
+    print 'Total predictions: ' + str(total)
+    print 'Num correct: ' + str(num_correct)
+    print 'Num false: ' + str(num_false)
+    print 'Percent correct for ' + target + ': ' + \
+        str(num_correct / float(total))
+
+
+def oversample(data):
+    # balance the number of actives / inactives in the dataset
+    actives = []
+    inactives = []
+    for i in range(len(data)):
+        if(int(data[i][1]) == 1):
+            actives.append(data[i])
+        else:
+            inactives.append(data[i])
+
+    total_inactives = len(inactives)
+    total_actives = len(actives)
+    ratio = total_inactives / total_actives
+
+    # oversample_total = ratio * total_actives
+
+    oversamples = []
+    for i in range(len(actives)):
+        for j in range(ratio):
+            oversamples.append(actives[i])
+
+    # print len(oversamples)
+    # print total_inactives
+    # print len(oversamples + inactives)
+    
+    # combine oversampled actives + inactives into one list
+    return oversamples + inactives
+
+
+
 def tox21():
     # get our 5x folds...
     all_folds = get_folds('Tox21')
@@ -134,9 +200,15 @@ def tox21():
         test_data = folds[4]
         
         print 'Building data for target: ' + target
-        # we skipped over-sampling inactives.
+
+        # oversample our datasets
+        temp_data = oversample(temp_data)
+        test_data = oversample(test_data)
+
+        # randomize the ordering
         random.shuffle(temp_data)
         random.shuffle(test_data)
+
         # for i in range(10):
         #     print temp_data[i]
 
@@ -168,40 +240,7 @@ def tox21():
         X_test = np.array(X_test)
         Y_test = np.array(Y_test)
 
-
-        print 'Running logistic regression for target: ' + target
-        logreg = linear_model.LogisticRegression(C=1e5)
-        logreg.fit(X, Y)
-
-        Z = logreg.predict(X_test)
-
-        # print X.shape
-        # print Y.shape
-        print 'Training size:'
-        print X.shape
-        print 'Test size:'
-        print X_test.shape
-        # print Y_test.shape
-
-        # print Z
-        # print Y_test
-        # Z = Z.tolist()
-        # Y_test = Y_test.tolist()
-
-        num_correct = 0
-        num_false = 0
-        for i in range(len(Z)):
-            if Z[i] == Y_test[i]:
-                num_correct += 1
-            else:
-                num_false += 1
-
-        total = len(Z)
-        print 'Total predictions: ' + str(total)
-        print 'Num correct: ' + str(num_correct)
-        print 'Num false: ' + str(num_false)
-        print 'Percent correct: ' + str(num_correct / float(total))
-
+        logistic_regression(target, X, Y, X_test, Y_test)
 
         # all done with 1 target....
         exit(0)
