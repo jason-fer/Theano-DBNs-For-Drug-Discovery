@@ -261,7 +261,7 @@ def run_predictions(data_type):
 
     overall_acc = accuracies / num_targets
     print ' overall accuracy: ' + str(overall_acc)
-    print '#######################################################'
+    print '############################################################'
 
 
 def tox21():

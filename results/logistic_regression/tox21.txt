@@ -1,3 +1,217 @@
+Found 12 targets for Tox21
+Building data for target: sr-atad5, fold: 0
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:0 predicted: 3487 correct: 2640 wrong: 847 pct correct: 0.757097791798
+Building data for target: sr-atad5, fold: 1
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:1 predicted: 3487 correct: 2425 wrong: 1062 pct correct: 0.695440206481
+Building data for target: sr-atad5, fold: 2
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:2 predicted: 3487 correct: 2669 wrong: 818 pct correct: 0.765414396329
+Building data for target: sr-atad5, fold: 3
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:3 predicted: 3487 correct: 2300 wrong: 1187 pct correct: 0.659592773157
+Building data for target: sr-atad5, fold: 4
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:4 predicted: 3429 correct: 2510 wrong: 919 pct correct: 0.731991834354
+Results for sr-atad5:0.721907400424
+Building data for target: sr-hse, fold: 0
+Running logistic regression for target: sr-hse
+target:sr-hse fold:0 predicted: 3069 correct: 2077 wrong: 992 pct correct: 0.676767676768
+Building data for target: sr-hse, fold: 1
+Running logistic regression for target: sr-hse
+target:sr-hse fold:1 predicted: 3069 correct: 2061 wrong: 1008 pct correct: 0.671554252199
+Building data for target: sr-hse, fold: 2
+Running logistic regression for target: sr-hse
+target:sr-hse fold:2 predicted: 3069 correct: 2116 wrong: 953 pct correct: 0.689475399153
+Building data for target: sr-hse, fold: 3
+Running logistic regression for target: sr-hse
+target:sr-hse fold:3 predicted: 3069 correct: 1929 wrong: 1140 pct correct: 0.628543499511
+Building data for target: sr-hse, fold: 4
+Running logistic regression for target: sr-hse
+target:sr-hse fold:4 predicted: 3039 correct: 2085 wrong: 954 pct correct: 0.68608094768
+Results for sr-hse:0.670484355062
+Building data for target: nr-ar-lbd, fold: 0
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:0 predicted: 3274 correct: 2591 wrong: 683 pct correct: 0.791386682957
+Building data for target: nr-ar-lbd, fold: 1
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:1 predicted: 3274 correct: 2626 wrong: 648 pct correct: 0.802076970067
+Building data for target: nr-ar-lbd, fold: 2
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:2 predicted: 3274 correct: 2544 wrong: 730 pct correct: 0.777031154551
+Building data for target: nr-ar-lbd, fold: 3
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:3 predicted: 3274 correct: 2776 wrong: 498 pct correct: 0.847892486255
+Building data for target: nr-ar-lbd, fold: 4
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:4 predicted: 3293 correct: 2610 wrong: 683 pct correct: 0.792590343152
+Results for nr-ar-lbd:0.802195527396
+Building data for target: nr-aromatase, fold: 0
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:0 predicted: 2717 correct: 1995 wrong: 722 pct correct: 0.734265734266
+Building data for target: nr-aromatase, fold: 1
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:1 predicted: 2717 correct: 2091 wrong: 626 pct correct: 0.76959882223
+Building data for target: nr-aromatase, fold: 2
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:2 predicted: 2717 correct: 2017 wrong: 700 pct correct: 0.742362900258
+Building data for target: nr-aromatase, fold: 3
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:3 predicted: 2717 correct: 1954 wrong: 763 pct correct: 0.719175561281
+Building data for target: nr-aromatase, fold: 4
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:4 predicted: 2740 correct: 2019 wrong: 721 pct correct: 0.736861313869
+Results for nr-aromatase:0.740452866381
+Building data for target: sr-p53, fold: 0
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:0 predicted: 3220 correct: 2276 wrong: 944 pct correct: 0.706832298137
+Building data for target: sr-p53, fold: 1
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:1 predicted: 3220 correct: 2410 wrong: 810 pct correct: 0.748447204969
+Building data for target: sr-p53, fold: 2
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:2 predicted: 3220 correct: 2385 wrong: 835 pct correct: 0.740683229814
+Building data for target: sr-p53, fold: 3
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:3 predicted: 3220 correct: 2441 wrong: 779 pct correct: 0.758074534161
+Building data for target: sr-p53, fold: 4
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:4 predicted: 3141 correct: 2346 wrong: 795 pct correct: 0.746895893028
+Results for sr-p53:0.740186632022
+Building data for target: nr-ahr, fold: 0
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:0 predicted: 2762 correct: 2068 wrong: 694 pct correct: 0.748732802317
+Building data for target: nr-ahr, fold: 1
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:1 predicted: 2762 correct: 2078 wrong: 684 pct correct: 0.752353367125
+Building data for target: nr-ahr, fold: 2
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:2 predicted: 2762 correct: 2035 wrong: 727 pct correct: 0.73678493845
+Building data for target: nr-ahr, fold: 3
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:3 predicted: 2762 correct: 2096 wrong: 666 pct correct: 0.75887038378
+Building data for target: nr-ahr, fold: 4
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:4 predicted: 2790 correct: 2188 wrong: 602 pct correct: 0.784229390681
+Results for nr-ahr:0.756194176471
+Building data for target: sr-are, fold: 0
+Running logistic regression for target: sr-are
+target:sr-are fold:0 predicted: 2300 correct: 1667 wrong: 633 pct correct: 0.724782608696
+Building data for target: sr-are, fold: 1
+Running logistic regression for target: sr-are
+target:sr-are fold:1 predicted: 2300 correct: 1576 wrong: 724 pct correct: 0.685217391304
+Building data for target: sr-are, fold: 2
+Running logistic regression for target: sr-are
+target:sr-are fold:2 predicted: 2300 correct: 1630 wrong: 670 pct correct: 0.708695652174
+Building data for target: sr-are, fold: 3
+Running logistic regression for target: sr-are
+target:sr-are fold:3 predicted: 2300 correct: 1584 wrong: 716 pct correct: 0.688695652174
+Building data for target: sr-are, fold: 4
+Running logistic regression for target: sr-are
+target:sr-are fold:4 predicted: 2303 correct: 1683 wrong: 620 pct correct: 0.730785931394
+Results for sr-are:0.707635447148
+Building data for target: nr-er, fold: 0
+Running logistic regression for target: nr-er
+target:nr-er fold:0 predicted: 2657 correct: 1697 wrong: 960 pct correct: 0.638690252164
+Building data for target: nr-er, fold: 1
+Running logistic regression for target: nr-er
+target:nr-er fold:1 predicted: 2657 correct: 1816 wrong: 841 pct correct: 0.683477606323
+Building data for target: nr-er, fold: 2
+Running logistic regression for target: nr-er
+target:nr-er fold:2 predicted: 2657 correct: 1720 wrong: 937 pct correct: 0.647346631539
+Building data for target: nr-er, fold: 3
+Running logistic regression for target: nr-er
+target:nr-er fold:3 predicted: 2657 correct: 1778 wrong: 879 pct correct: 0.669175762138
+Building data for target: nr-er, fold: 4
+Running logistic regression for target: nr-er
+target:nr-er fold:4 predicted: 2667 correct: 1771 wrong: 896 pct correct: 0.664041994751
+Results for nr-er:0.660546449383
+Building data for target: nr-er-lbd, fold: 0
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:0 predicted: 3258 correct: 2419 wrong: 839 pct correct: 0.74248004911
+Building data for target: nr-er-lbd, fold: 1
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:1 predicted: 3258 correct: 2415 wrong: 843 pct correct: 0.741252302026
+Building data for target: nr-er-lbd, fold: 2
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:2 predicted: 3258 correct: 2626 wrong: 632 pct correct: 0.806015960712
+Building data for target: nr-er-lbd, fold: 3
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:3 predicted: 3258 correct: 2482 wrong: 776 pct correct: 0.761817065684
+Building data for target: nr-er-lbd, fold: 4
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:4 predicted: 3260 correct: 2357 wrong: 903 pct correct: 0.723006134969
+Results for nr-er-lbd:0.7549143025
+Building data for target: nr-ppar-gamma, fold: 0
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:0 predicted: 3171 correct: 2259 wrong: 912 pct correct: 0.712393566698
+Building data for target: nr-ppar-gamma, fold: 1
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:1 predicted: 3171 correct: 2090 wrong: 1081 pct correct: 0.659098076317
+Building data for target: nr-ppar-gamma, fold: 2
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:2 predicted: 3171 correct: 1937 wrong: 1234 pct correct: 0.610848312835
+Building data for target: nr-ppar-gamma, fold: 3
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:3 predicted: 3171 correct: 2078 wrong: 1093 pct correct: 0.655313781142
+Building data for target: nr-ppar-gamma, fold: 4
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:4 predicted: 3154 correct: 2293 wrong: 861 pct correct: 0.727013316424
+Results for nr-ppar-gamma:0.672933410683
+Building data for target: sr-mmp, fold: 0
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:0 predicted: 2367 correct: 1817 wrong: 550 pct correct: 0.767638360794
+Building data for target: sr-mmp, fold: 1
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:1 predicted: 2367 correct: 1777 wrong: 590 pct correct: 0.750739332488
+Building data for target: sr-mmp, fold: 2
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:2 predicted: 2367 correct: 1753 wrong: 614 pct correct: 0.740599915505
+Building data for target: sr-mmp, fold: 3
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:3 predicted: 2367 correct: 1830 wrong: 537 pct correct: 0.773130544994
+Building data for target: sr-mmp, fold: 4
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:4 predicted: 2379 correct: 1791 wrong: 588 pct correct: 0.752837326608
+Results for sr-mmp:0.756989096078
+Building data for target: nr-ar, fold: 0
+Running logistic regression for target: nr-ar
+target:nr-ar fold:0 predicted: 3538 correct: 2773 wrong: 765 pct correct: 0.783776144715
+Building data for target: nr-ar, fold: 1
+Running logistic regression for target: nr-ar
+target:nr-ar fold:1 predicted: 3538 correct: 2729 wrong: 809 pct correct: 0.771339739966
+Building data for target: nr-ar, fold: 2
+Running logistic regression for target: nr-ar
+target:nr-ar fold:2 predicted: 3538 correct: 2658 wrong: 880 pct correct: 0.751271905031
+Building data for target: nr-ar, fold: 3
+Running logistic regression for target: nr-ar
+target:nr-ar fold:3 predicted: 3538 correct: 2811 wrong: 727 pct correct: 0.794516676088
+Building data for target: nr-ar, fold: 4
+Running logistic regression for target: nr-ar
+target:nr-ar fold:4 predicted: 3541 correct: 2423 wrong: 1118 pct correct: 0.684269980232
+Results for nr-ar:0.757034889206
+####################  Results for Tox21 ####################
+sr-atad5 accuracy: 0.721907400424
+sr-hse accuracy: 0.670484355062
+nr-aromatase accuracy: 0.740452866381
+nr-ar-lbd accuracy: 0.802195527396
+sr-p53 accuracy: 0.740186632022
+nr-ahr accuracy: 0.756194176471
+sr-are accuracy: 0.707635447148
+nr-er accuracy: 0.660546449383
+nr-er-lbd accuracy: 0.7549143025
+nr-ppar-gamma accuracy: 0.672933410683
+sr-mmp accuracy: 0.756989096078
+nr-ar accuracy: 0.757034889206
+ overall accuracy: 0.72845621273
+############################################################
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
 Folds 1-4 (train) vs Fold 5 (test)
 
 Found 12 targets for Tox21
