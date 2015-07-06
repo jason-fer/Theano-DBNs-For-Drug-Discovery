@@ -1,0 +1,144 @@
+Folds 1-4 (train) vs Fold 5 (test)
+
+Found 12 targets for Tox21
+Building data for target: sr-atad5
+Running logistic regression for target: sr-atad5
+Training size:
+(13948, 1024)
+Test size:
+(3429, 1024)
+Total predictions: 3429
+Num correct: 2510
+Num false: 919
+Percent correct for sr-atad5: 0.731991834354
+Building data for target: sr-hse
+Running logistic regression for target: sr-hse
+Training size:
+(12276, 1024)
+Test size:
+(3039, 1024)
+Total predictions: 3039
+Num correct: 2087
+Num false: 952
+Percent correct for sr-hse: 0.686739058901
+Building data for target: nr-ar-lbd
+Running logistic regression for target: nr-ar-lbd
+Training size:
+(13096, 1024)
+Test size:
+(3293, 1024)
+Total predictions: 3293
+Num correct: 2583
+Num false: 710
+Percent correct for nr-ar-lbd: 0.784391132706
+Building data for target: nr-aromatase
+Running logistic regression for target: nr-aromatase
+Training size:
+(10868, 1024)
+Test size:
+(2740, 1024)
+Total predictions: 2740
+Num correct: 2001
+Num false: 739
+Percent correct for nr-aromatase: 0.730291970803
+Building data for target: sr-p53
+Running logistic regression for target: sr-p53
+Training size:
+(12880, 1024)
+Test size:
+(3141, 1024)
+Total predictions: 3141
+Num correct: 2361
+Num false: 780
+Percent correct for sr-p53: 0.751671442216
+Building data for target: nr-ahr
+Running logistic regression for target: nr-ahr
+Training size:
+(11048, 1024)
+Test size:
+(2790, 1024)
+Total predictions: 2790
+Num correct: 2188
+Num false: 602
+Percent correct for nr-ahr: 0.784229390681
+Building data for target: sr-are
+Running logistic regression for target: sr-are
+Training size:
+(9200, 1024)
+Test size:
+(2303, 1024)
+Total predictions: 2303
+Num correct: 1683
+Num false: 620
+Percent correct for sr-are: 0.730785931394
+Building data for target: nr-er
+Running logistic regression for target: nr-er
+Training size:
+(10628, 1024)
+Test size:
+(2667, 1024)
+Total predictions: 2667
+Num correct: 1771
+Num false: 896
+Percent correct for nr-er: 0.664041994751
+Building data for target: nr-er-lbd
+Running logistic regression for target: nr-er-lbd
+Training size:
+(13032, 1024)
+Test size:
+(3260, 1024)
+Total predictions: 3260
+Num correct: 2359
+Num false: 901
+Percent correct for nr-er-lbd: 0.723619631902
+Building data for target: nr-ppar-gamma
+Running logistic regression for target: nr-ppar-gamma
+Training size:
+(12684, 1024)
+Test size:
+(3154, 1024)
+Total predictions: 3154
+Num correct: 2292
+Num false: 862
+Percent correct for nr-ppar-gamma: 0.726696258719
+Building data for target: sr-mmp
+Running logistic regression for target: sr-mmp
+Training size:
+(9468, 1024)
+Test size:
+(2379, 1024)
+Total predictions: 2379
+Num correct: 1791
+Num false: 588
+Percent correct for sr-mmp: 0.752837326608
+Building data for target: nr-ar
+Running logistic regression for target: nr-ar
+Training size:
+(14152, 1024)
+Test size:
+(3541, 1024)
+Total predictions: 3541
+Num correct: 2422
+Num false: 1119
+Percent correct for nr-ar: 0.683987574132
+
+
+sr-atad5: 0.7319918344
+sr-hse: 0.6867390589
+nr-ar-lbd:  0.7843911327
+nr-aromatase: 0.7302919708
+sr-p53: 0.7516714422
+nr-ahr: 0.7842293907
+sr-are: 0.7307859314
+nr-er:  0.6640419948
+nr-er-lbd:  0.7236196319
+nr-ppar-gamma:  0.7266962587
+sr-mmp: 0.7528373266
+nr-ar:  0.6839875741
+
+LR average for Tox21: 0.7292736289
+
+This is slightly worse than the stanford google experiment results of 0.738 for Tox21.
+
+
+
