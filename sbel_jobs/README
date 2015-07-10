@@ -9,8 +9,12 @@ To run a job (submit a job to the queue)
 qsub <shell file name>
 
 e.g. 
-qsub sbel_jobs/sk_logistic_regression/pbs-logistic_regression-job.sh --> 3792.newton.wacc.wisc.edu
-qsub sbel_jobs/sk_random_forests/pbs-random_forests-job.sh --> 3793.newton.wacc.wisc.edu
+cd to the directory with the job bash file
+cd sbel_jobs/sk_logistic_regression
+qsub pbs-logistic_regression-job.sh
+qsub pbs-random_forests-job.sh
+
+output (to submission directory):  --> 3792.newton.wacc.wisc.edu, etc
 
 
 ############################# Scratch ############################
