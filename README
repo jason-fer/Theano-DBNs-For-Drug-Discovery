@@ -7,3 +7,10 @@
 | Date: 15 June 2015
 +-------------------------------------------------------------------------------
 
+Conventions:
+
+prepended names represent different libraries:
+sk_ = scikit learn
+th_ = theano
+
+e.g. sk_logistic_regression means this file uses scikit learn's version
