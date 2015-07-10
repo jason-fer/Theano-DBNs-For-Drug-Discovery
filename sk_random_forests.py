@@ -286,11 +286,10 @@ def pcba():
 
 def main(args):
     print "Running Scikit Learn Random Forest Classifier........."
-    # generate DUDE-E folds
     tox21()
     # dud_e()
-    # muv()
-    # pcba()
+    muv()
+    pcba()
 
 
 

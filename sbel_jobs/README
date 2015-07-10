@@ -1,6 +1,21 @@
+############################# Notes  ############################
+Finding jobs that are running:
+qstat <jobnum>
+qstat | grep feriante
+
+e.g. qstat 3252 (you get the jobnum right after you submit a job)
+
+To run a job (submit a job to the queue)
+qsub <shell file name>
+
+e.g. 
+qsub sbel_jobs/sk_logistic_regression/pbs-logistic_regression-job.sh --> 3792.newton.wacc.wisc.edu
+qsub sbel_jobs/sk_random_forests/pbs-random_forests-job.sh --> 3793.newton.wacc.wisc.edu
+
+
+############################# Scratch ############################
 I'm working on a full configuration here:
 https://gist.github.com/jferiante/6ba5c133e34d973648da
-
 
 
 CUDA_ROOT=/usr/local/cuda/7.0.28/cuda
