@@ -2,7 +2,6 @@ import generate_folds, os, sys, random
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
-from bitstring import BitArray
 
 
 
