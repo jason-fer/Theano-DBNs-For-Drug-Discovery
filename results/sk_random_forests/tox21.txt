@@ -1,0 +1,20 @@
+Getting about 72% accuracy with 512 Features & 100 Trees.
+
+Running Scikit Learn Random Forest Classifier.........
+Found 12 targets for Tox21
+Building data for target: sr-atad5, fold: 0
+Running random forests for target: sr-atad5
+target:sr-atad5 fold:0 predicted: 3487 correct: 2637 wrong: 850 pct correct: 0.756237453398
+Building data for target: sr-atad5, fold: 1
+Running random forests for target: sr-atad5
+target:sr-atad5 fold:1 predicted: 3487 correct: 2320 wrong: 1167 pct correct: 0.665328362489
+Building data for target: sr-atad5, fold: 2
+Running random forests for target: sr-atad5
+target:sr-atad5 fold:2 predicted: 3487 correct: 2606 wrong: 881 pct correct: 0.747347289934
+Building data for target: sr-atad5, fold: 3
+Running random forests for target: sr-atad5
+target:sr-atad5 fold:3 predicted: 3487 correct: 2354 wrong: 1133 pct correct: 0.675078864353
+Building data for target: sr-atad5, fold: 4
+Running random forests for target: sr-atad5
+target:sr-atad5 fold:4 predicted: 3429 correct: 2623 wrong: 806 pct correct: 0.764946048411
+Results for sr-atad5:0.721787603717
