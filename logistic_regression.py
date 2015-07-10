@@ -150,7 +150,7 @@ def get_folds(data_type, fold_path, target, fnames):
 def logistic_regression(target, X, Y, X_test, Y_test, fold_id):
 
     print 'Running logistic regression for target: ' + target
-    logreg = linear_model.LogisticRegression(C=1e5)
+    logreg = linear_model.LogisticRegression()
     logreg.fit(X, Y)
 
     Z = logreg.predict(X_test)
@@ -286,10 +286,10 @@ def pcba():
 
 def main(args):
     # generate DUDE-E folds
-    # dud_e()
-    # muv()
-    # pcba()
     tox21()
+    dud_e()
+    muv()
+    pcba()
 
 
 
