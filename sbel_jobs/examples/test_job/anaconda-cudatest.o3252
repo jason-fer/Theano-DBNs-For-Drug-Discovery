@@ -1,0 +1,5 @@
+[GpuElemwise{exp,no_inplace}(<CudaNdarrayType(float32, vector)>), HostFromGpu(GpuElemwise{exp,no_inplace}.0)]
+Looping 1000 times took 1.17361283302 seconds
+Result is [ 1.23178029  1.61879349  1.52278066 ...,  2.20771813  2.29967761
+  1.62323296]
+Used the gpu

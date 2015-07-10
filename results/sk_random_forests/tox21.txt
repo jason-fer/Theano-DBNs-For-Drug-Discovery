@@ -18,3 +18,21 @@ Building data for target: sr-atad5, fold: 4
 Running random forests for target: sr-atad5
 target:sr-atad5 fold:4 predicted: 3429 correct: 2623 wrong: 806 pct correct: 0.764946048411
 Results for sr-atad5:0.721787603717
+
+
+400 worse.
+500 features, 16 trees = 0.7209
+500 features, 20 trees = 0.7163
+500 features, 24 trees = 0.7254  acc (the best so far, but just random chance.)
+500 features, 30 trees = 0.7241
+502 features, 30 trees = 0.7236
+600 worse.
+1024 features, 40 trees = 0.7243
+512 features, 100 trees = 0.7217
+1024 features, 150 trees = 
+(where is the sweet spot on # features?)
+
+n = the number of targets
+PCBA
+MUV
+Tox21

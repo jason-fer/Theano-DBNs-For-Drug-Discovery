@@ -14,3 +14,7 @@ sk_ = scikit learn
 th_ = theano
 
 e.g. sk_logistic_regression means this file uses scikit learn's version
+
+sbel_jobs: configurations for the PBS-Torque Schedular
+sbel_config: configuration files you need if you want to run SBEL jobs. These
+need to be in your root home directory on the SBEL server.

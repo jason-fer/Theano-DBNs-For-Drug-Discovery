@@ -1,0 +1,42 @@
+I'm working on a full configuration here:
+https://gist.github.com/jferiante/6ba5c133e34d973648da
+
+
+
+CUDA_ROOT=/usr/local/cuda/7.0.28/cuda
+
+touch cudatest
+echo "from theano import function, config, shared, sandbox
+import theano.tensor as T
+import numpy
+import time
+
+vlen = 10 * 30 * 768  # 10 x #cores x # threads per core
+iters = 1000
+
+rng = numpy.random.RandomState(22)
+x = shared(numpy.asarray(rng.rand(vlen), config.floatX))
+f = function([], T.exp(x))
+print f.maker.fgraph.toposort()
+t0 = time.time()
+for i in xrange(iters):
+    r = f()
+t1 = time.time()
+print 'Looping %d times took' % iters, t1 - t0, 'seconds'
+print 'Result is', r
+if numpy.any([isinstance(x.op, T.Elemwise) for x in f.maker.fgraph.toposort()]):
+    print 'Used the cpu'
+else:
+    print 'Used the gpu'" >> cudatest
+
+
+mkdir .config && mkdir .config/pip && touch .config/pip/pip.conf && cd .config/pip
+
+echo "[global]
+target = /usr/local/lib/python2.7/site-packages" >> $HOME/.config/pip/pip.conf
+
+
+cd ~/ && touch .bashrc && echo "export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
+PIP_CONFIG_FILE=$HOME/.config/pip/pip.conf" >> .bashrc
+
+source ~/.bashrc
