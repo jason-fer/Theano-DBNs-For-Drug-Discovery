@@ -2,3 +2,4 @@
 *.gz*
 *.pyc
 folds
+!folds/README

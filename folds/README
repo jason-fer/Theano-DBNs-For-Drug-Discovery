@@ -1,0 +1,15 @@
+To decompress my split PCBA file:
+cat pcba.tar.gz.* | tar pcba.tar.gz
+
+I have now generated all the data folds for each dataset (from Spencer's fingerprint, etc data):
+
+PCBA: 2048 bits, & the rest [MUV, Tox21, DUD-E] are 1024 bits.
+
+size: 4.2 gigs
+
+file names:
+<target>_actives.fl
+<target>_inactives.fl
+
+row structure (there's no header rows, & it's space delimited):
+sha1_hash_id, is_active, native_cid, fold 0-4, 1024 bit string
