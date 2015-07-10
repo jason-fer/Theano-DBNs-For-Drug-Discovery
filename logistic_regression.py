@@ -285,9 +285,9 @@ def pcba():
 
 
 def main(args):
-    # generate DUDE-E folds
+    print "Running Scikit Learn Logistic Regression Classifier........."
     tox21()
-    dud_e()
+    # dud_e()
     muv()
     pcba()
 
