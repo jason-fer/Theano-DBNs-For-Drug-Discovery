@@ -249,8 +249,6 @@ def run_predictions(data_type):
         print 'Results for '+ target + ':' + str(accuracy)
         # update fold accuracies
         fold_accuracies[target] = accuracy
-        print 'it worked!!'
-        exit(0)
 
     print '####################  Results for ' + data_type + ' ####################'
     # output results
