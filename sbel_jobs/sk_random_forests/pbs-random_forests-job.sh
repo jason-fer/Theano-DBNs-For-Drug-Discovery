@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #PBS -N MMNT-RandomForests
-#PBS -l nodes=1:gpus=1,walltime=02:12:00
+#PBS -l nodes=1:gpus=1,walltime=76:00:00
 
 cd $PBS_O_WORKDIR
 module load cuda anaconda

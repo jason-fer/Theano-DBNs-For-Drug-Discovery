@@ -1,0 +1,440 @@
+Running Scikit Learn Logistic Regression Classifier.........
+Found 12 targets for Tox21
+Building data for target: sr-atad5, fold: 0
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:0 predicted: 3487 correct: 2826 wrong: 661 pct correct: 0.810438772584
+Building data for target: sr-atad5, fold: 1
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:1 predicted: 3487 correct: 2563 wrong: 924 pct correct: 0.735015772871
+Building data for target: sr-atad5, fold: 2
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:2 predicted: 3487 correct: 2808 wrong: 679 pct correct: 0.805276742185
+Building data for target: sr-atad5, fold: 3
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:3 predicted: 3487 correct: 2645 wrong: 842 pct correct: 0.758531689131
+Building data for target: sr-atad5, fold: 4
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:4 predicted: 3429 correct: 2664 wrong: 765 pct correct: 0.776902887139
+Results for sr-atad5:0.777233172782
+Building data for target: sr-hse, fold: 0
+Running logistic regression for target: sr-hse
+target:sr-hse fold:0 predicted: 3069 correct: 2114 wrong: 955 pct correct: 0.688823721082
+Building data for target: sr-hse, fold: 1
+Running logistic regression for target: sr-hse
+target:sr-hse fold:1 predicted: 3069 correct: 2156 wrong: 913 pct correct: 0.702508960573
+Building data for target: sr-hse, fold: 2
+Running logistic regression for target: sr-hse
+target:sr-hse fold:2 predicted: 3069 correct: 2160 wrong: 909 pct correct: 0.703812316716
+Building data for target: sr-hse, fold: 3
+Running logistic regression for target: sr-hse
+target:sr-hse fold:3 predicted: 3069 correct: 2013 wrong: 1056 pct correct: 0.655913978495
+Building data for target: sr-hse, fold: 4
+Running logistic regression for target: sr-hse
+target:sr-hse fold:4 predicted: 3039 correct: 2173 wrong: 866 pct correct: 0.715037841395
+Results for sr-hse:0.693219363652
+Building data for target: nr-ar-lbd, fold: 0
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:0 predicted: 3274 correct: 2749 wrong: 525 pct correct: 0.839645693341
+Building data for target: nr-ar-lbd, fold: 1
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:1 predicted: 3274 correct: 2698 wrong: 576 pct correct: 0.824068417838
+Building data for target: nr-ar-lbd, fold: 2
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:2 predicted: 3274 correct: 2621 wrong: 653 pct correct: 0.800549786194
+Building data for target: nr-ar-lbd, fold: 3
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:3 predicted: 3274 correct: 2857 wrong: 417 pct correct: 0.872632864997
+Building data for target: nr-ar-lbd, fold: 4
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:4 predicted: 3293 correct: 2664 wrong: 629 pct correct: 0.808988764045
+Results for nr-ar-lbd:0.829177105283
+Building data for target: nr-aromatase, fold: 0
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:0 predicted: 2717 correct: 2023 wrong: 694 pct correct: 0.744571218255
+Building data for target: nr-aromatase, fold: 1
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:1 predicted: 2717 correct: 2111 wrong: 606 pct correct: 0.776959882223
+Building data for target: nr-aromatase, fold: 2
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:2 predicted: 2717 correct: 2029 wrong: 688 pct correct: 0.746779536253
+Building data for target: nr-aromatase, fold: 3
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:3 predicted: 2717 correct: 1983 wrong: 734 pct correct: 0.72984909827
+Building data for target: nr-aromatase, fold: 4
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:4 predicted: 2740 correct: 2014 wrong: 726 pct correct: 0.73503649635
+Results for nr-aromatase:0.74663924627
+Building data for target: sr-p53, fold: 0
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:0 predicted: 3220 correct: 2411 wrong: 809 pct correct: 0.748757763975
+Building data for target: sr-p53, fold: 1
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:1 predicted: 3220 correct: 2491 wrong: 729 pct correct: 0.773602484472
+Building data for target: sr-p53, fold: 2
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:2 predicted: 3220 correct: 2421 wrong: 799 pct correct: 0.751863354037
+Building data for target: sr-p53, fold: 3
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:3 predicted: 3220 correct: 2487 wrong: 733 pct correct: 0.772360248447
+Building data for target: sr-p53, fold: 4
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:4 predicted: 3141 correct: 2390 wrong: 751 pct correct: 0.760904170646
+Results for sr-p53:0.761497604316
+Building data for target: nr-ahr, fold: 0
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:0 predicted: 2762 correct: 2210 wrong: 552 pct correct: 0.800144822592
+Building data for target: nr-ahr, fold: 1
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:1 predicted: 2762 correct: 2216 wrong: 546 pct correct: 0.802317161477
+Building data for target: nr-ahr, fold: 2
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:2 predicted: 2762 correct: 2137 wrong: 625 pct correct: 0.773714699493
+Building data for target: nr-ahr, fold: 3
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:3 predicted: 2762 correct: 2273 wrong: 489 pct correct: 0.822954380883
+Building data for target: nr-ahr, fold: 4
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:4 predicted: 2790 correct: 2256 wrong: 534 pct correct: 0.808602150538
+Results for nr-ahr:0.801546642997
+Building data for target: sr-are, fold: 0
+Running logistic regression for target: sr-are
+target:sr-are fold:0 predicted: 2300 correct: 1654 wrong: 646 pct correct: 0.719130434783
+Building data for target: sr-are, fold: 1
+Running logistic regression for target: sr-are
+target:sr-are fold:1 predicted: 2300 correct: 1642 wrong: 658 pct correct: 0.713913043478
+Building data for target: sr-are, fold: 2
+Running logistic regression for target: sr-are
+target:sr-are fold:2 predicted: 2300 correct: 1657 wrong: 643 pct correct: 0.720434782609
+Building data for target: sr-are, fold: 3
+Running logistic regression for target: sr-are
+target:sr-are fold:3 predicted: 2300 correct: 1631 wrong: 669 pct correct: 0.709130434783
+Building data for target: sr-are, fold: 4
+Running logistic regression for target: sr-are
+target:sr-are fold:4 predicted: 2303 correct: 1705 wrong: 598 pct correct: 0.740338688667
+Results for sr-are:0.720589476864
+Building data for target: nr-er, fold: 0
+Running logistic regression for target: nr-er
+target:nr-er fold:0 predicted: 2657 correct: 1727 wrong: 930 pct correct: 0.649981181784
+Building data for target: nr-er, fold: 1
+Running logistic regression for target: nr-er
+target:nr-er fold:1 predicted: 2657 correct: 1860 wrong: 797 pct correct: 0.700037636432
+Building data for target: nr-er, fold: 2
+Running logistic regression for target: nr-er
+target:nr-er fold:2 predicted: 2657 correct: 1777 wrong: 880 pct correct: 0.668799397817
+Building data for target: nr-er, fold: 3
+Running logistic regression for target: nr-er
+target:nr-er fold:3 predicted: 2657 correct: 1803 wrong: 854 pct correct: 0.678584870154
+Building data for target: nr-er, fold: 4
+Running logistic regression for target: nr-er
+target:nr-er fold:4 predicted: 2667 correct: 1869 wrong: 798 pct correct: 0.700787401575
+Results for nr-er:0.679638097552
+Building data for target: nr-er-lbd, fold: 0
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:0 predicted: 3258 correct: 2528 wrong: 730 pct correct: 0.775936157152
+Building data for target: nr-er-lbd, fold: 1
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:1 predicted: 3258 correct: 2516 wrong: 742 pct correct: 0.772252915899
+Building data for target: nr-er-lbd, fold: 2
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:2 predicted: 3258 correct: 2658 wrong: 600 pct correct: 0.815837937385
+Building data for target: nr-er-lbd, fold: 3
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:3 predicted: 3258 correct: 2539 wrong: 719 pct correct: 0.779312461633
+Building data for target: nr-er-lbd, fold: 4
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:4 predicted: 3260 correct: 2409 wrong: 851 pct correct: 0.738957055215
+Results for nr-er-lbd:0.776459305457
+Building data for target: nr-ppar-gamma, fold: 0
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:0 predicted: 3171 correct: 2208 wrong: 963 pct correct: 0.696310312204
+Building data for target: nr-ppar-gamma, fold: 1
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:1 predicted: 3171 correct: 2114 wrong: 1057 pct correct: 0.666666666667
+Building data for target: nr-ppar-gamma, fold: 2
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:2 predicted: 3171 correct: 2102 wrong: 1069 pct correct: 0.662882371492
+Building data for target: nr-ppar-gamma, fold: 3
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:3 predicted: 3171 correct: 2102 wrong: 1069 pct correct: 0.662882371492
+Building data for target: nr-ppar-gamma, fold: 4
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:4 predicted: 3154 correct: 2414 wrong: 740 pct correct: 0.765377298668
+Results for nr-ppar-gamma:0.690823804105
+Building data for target: sr-mmp, fold: 0
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:0 predicted: 2367 correct: 1916 wrong: 451 pct correct: 0.809463455851
+Building data for target: sr-mmp, fold: 1
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:1 predicted: 2367 correct: 1860 wrong: 507 pct correct: 0.785804816223
+Building data for target: sr-mmp, fold: 2
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:2 predicted: 2367 correct: 1870 wrong: 497 pct correct: 0.7900295733
+Building data for target: sr-mmp, fold: 3
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:3 predicted: 2367 correct: 1909 wrong: 458 pct correct: 0.806506125898
+Building data for target: sr-mmp, fold: 4
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:4 predicted: 2379 correct: 1949 wrong: 430 pct correct: 0.819251786465
+Results for sr-mmp:0.802211151547
+Building data for target: nr-ar, fold: 0
+Running logistic regression for target: nr-ar
+target:nr-ar fold:0 predicted: 3538 correct: 2842 wrong: 696 pct correct: 0.803278688525
+Building data for target: nr-ar, fold: 1
+Running logistic regression for target: nr-ar
+target:nr-ar fold:1 predicted: 3538 correct: 2835 wrong: 703 pct correct: 0.801300169587
+Building data for target: nr-ar, fold: 2
+Running logistic regression for target: nr-ar
+target:nr-ar fold:2 predicted: 3538 correct: 2721 wrong: 817 pct correct: 0.769078575466
+Building data for target: nr-ar, fold: 3
+Running logistic regression for target: nr-ar
+target:nr-ar fold:3 predicted: 3538 correct: 2885 wrong: 653 pct correct: 0.815432447711
+Building data for target: nr-ar, fold: 4
+Running logistic regression for target: nr-ar
+target:nr-ar fold:4 predicted: 3541 correct: 2477 wrong: 1064 pct correct: 0.69951990963
+Results for nr-ar:0.777721958184
+####################  Results for Tox21 ####################
+sr-atad5 accuracy: 0.777233172782
+sr-hse accuracy: 0.693219363652
+nr-aromatase accuracy: 0.74663924627
+nr-ar-lbd accuracy: 0.829177105283
+sr-p53 accuracy: 0.761497604316
+nr-ahr accuracy: 0.801546642997
+sr-are accuracy: 0.720589476864
+nr-er accuracy: 0.679638097552
+nr-er-lbd accuracy: 0.776459305457
+nr-ppar-gamma accuracy: 0.690823804105
+sr-mmp accuracy: 0.802211151547
+nr-ar accuracy: 0.777721958184
+ overall accuracy: 0.754729744084
+############################################################
+Found 17 targets for MUV
+Building data for target: 692, fold: 0
+Running logistic regression for target: 692
+target:692 fold:0 predicted: 6000 correct: 2991 wrong: 3009 pct correct: 0.4985
+Building data for target: 692, fold: 1
+Running logistic regression for target: 692
+target:692 fold:1 predicted: 6000 correct: 2989 wrong: 3011 pct correct: 0.498166666667
+Building data for target: 692, fold: 2
+Running logistic regression for target: 692
+target:692 fold:2 predicted: 6000 correct: 3484 wrong: 2516 pct correct: 0.580666666667
+Building data for target: 692, fold: 3
+Running logistic regression for target: 692
+target:692 fold:3 predicted: 6000 correct: 2988 wrong: 3012 pct correct: 0.498
+Building data for target: 692, fold: 4
+Running logistic regression for target: 692
+target:692 fold:4 predicted: 6000 correct: 2991 wrong: 3009 pct correct: 0.4985
+Results for 692:0.514766666667
+Building data for target: 832, fold: 0
+Running logistic regression for target: 832
+target:832 fold:0 predicted: 6000 correct: 4494 wrong: 1506 pct correct: 0.749
+Building data for target: 832, fold: 1
+Running logistic regression for target: 832
+target:832 fold:1 predicted: 6000 correct: 4995 wrong: 1005 pct correct: 0.8325
+Building data for target: 832, fold: 2
+Running logistic regression for target: 832
+target:832 fold:2 predicted: 6000 correct: 4496 wrong: 1504 pct correct: 0.749333333333
+Building data for target: 832, fold: 3
+Running logistic regression for target: 832
+target:832 fold:3 predicted: 6000 correct: 5495 wrong: 505 pct correct: 0.915833333333
+Building data for target: 832, fold: 4
+Running logistic regression for target: 832
+target:832 fold:4 predicted: 6000 correct: 4493 wrong: 1507 pct correct: 0.748833333333
+Results for 832:0.7991
+Building data for target: 600, fold: 0
+Running logistic regression for target: 600
+target:600 fold:0 predicted: 6000 correct: 3489 wrong: 2511 pct correct: 0.5815
+Building data for target: 600, fold: 1
+Running logistic regression for target: 600
+target:600 fold:1 predicted: 6000 correct: 2996 wrong: 3004 pct correct: 0.499333333333
+Building data for target: 600, fold: 2
+Running logistic regression for target: 600
+target:600 fold:2 predicted: 6000 correct: 2989 wrong: 3011 pct correct: 0.498166666667
+Building data for target: 600, fold: 3
+Running logistic regression for target: 600
+target:600 fold:3 predicted: 6000 correct: 4490 wrong: 1510 pct correct: 0.748333333333
+Building data for target: 600, fold: 4
+Running logistic regression for target: 600
+target:600 fold:4 predicted: 6000 correct: 3491 wrong: 2509 pct correct: 0.581833333333
+Results for 600:0.581833333333
+Building data for target: 852, fold: 0
+Running logistic regression for target: 852
+target:852 fold:0 predicted: 6000 correct: 3994 wrong: 2006 pct correct: 0.665666666667
+Building data for target: 852, fold: 1
+Running logistic regression for target: 852
+target:852 fold:1 predicted: 6000 correct: 3497 wrong: 2503 pct correct: 0.582833333333
+Building data for target: 852, fold: 2
+Running logistic regression for target: 852
+target:852 fold:2 predicted: 6000 correct: 4996 wrong: 1004 pct correct: 0.832666666667
+Building data for target: 852, fold: 3
+Running logistic regression for target: 852
+target:852 fold:3 predicted: 6000 correct: 4494 wrong: 1506 pct correct: 0.749
+Building data for target: 852, fold: 4
+Running logistic regression for target: 852
+target:852 fold:4 predicted: 6000 correct: 2996 wrong: 3004 pct correct: 0.499333333333
+Results for 852:0.6659
+Building data for target: 846, fold: 0
+Running logistic regression for target: 846
+target:846 fold:0 predicted: 6000 correct: 3997 wrong: 2003 pct correct: 0.666166666667
+Building data for target: 846, fold: 1
+Running logistic regression for target: 846
+target:846 fold:1 predicted: 6000 correct: 5492 wrong: 508 pct correct: 0.915333333333
+Building data for target: 846, fold: 2
+Running logistic regression for target: 846
+target:846 fold:2 predicted: 6000 correct: 3990 wrong: 2010 pct correct: 0.665
+Building data for target: 846, fold: 3
+Running logistic regression for target: 846
+target:846 fold:3 predicted: 6000 correct: 4485 wrong: 1515 pct correct: 0.7475
+Building data for target: 846, fold: 4
+Running logistic regression for target: 846
+target:846 fold:4 predicted: 6000 correct: 3994 wrong: 2006 pct correct: 0.665666666667
+Results for 846:0.731933333333
+Building data for target: 858, fold: 0
+Running logistic regression for target: 858
+target:858 fold:0 predicted: 6000 correct: 3487 wrong: 2513 pct correct: 0.581166666667
+Building data for target: 858, fold: 1
+Running logistic regression for target: 858
+target:858 fold:1 predicted: 6000 correct: 3489 wrong: 2511 pct correct: 0.5815
+Building data for target: 858, fold: 2
+Running logistic regression for target: 858
+target:858 fold:2 predicted: 6000 correct: 3995 wrong: 2005 pct correct: 0.665833333333
+Building data for target: 858, fold: 3
+Running logistic regression for target: 858
+target:858 fold:3 predicted: 6000 correct: 2991 wrong: 3009 pct correct: 0.4985
+Building data for target: 858, fold: 4
+Running logistic regression for target: 858
+target:858 fold:4 predicted: 6000 correct: 3490 wrong: 2510 pct correct: 0.581666666667
+Results for 858:0.581733333333
+Building data for target: 466, fold: 0
+Running logistic regression for target: 466
+target:466 fold:0 predicted: 6000 correct: 3485 wrong: 2515 pct correct: 0.580833333333
+Building data for target: 466, fold: 1
+Running logistic regression for target: 466
+target:466 fold:1 predicted: 6000 correct: 2982 wrong: 3018 pct correct: 0.497
+Building data for target: 466, fold: 2
+Running logistic regression for target: 466
+target:466 fold:2 predicted: 6000 correct: 2995 wrong: 3005 pct correct: 0.499166666667
+Building data for target: 466, fold: 3
+Running logistic regression for target: 466
+target:466 fold:3 predicted: 6000 correct: 3495 wrong: 2505 pct correct: 0.5825
+Building data for target: 466, fold: 4
+Running logistic regression for target: 466
+target:466 fold:4 predicted: 6000 correct: 3495 wrong: 2505 pct correct: 0.5825
+Results for 466:0.5484
+Building data for target: 713, fold: 0
+Running logistic regression for target: 713
+target:713 fold:0 predicted: 6000 correct: 3487 wrong: 2513 pct correct: 0.581166666667
+Building data for target: 713, fold: 1
+Running logistic regression for target: 713
+target:713 fold:1 predicted: 6000 correct: 3496 wrong: 2504 pct correct: 0.582666666667
+Building data for target: 713, fold: 2
+Running logistic regression for target: 713
+target:713 fold:2 predicted: 6000 correct: 2994 wrong: 3006 pct correct: 0.499
+Building data for target: 713, fold: 3
+Running logistic regression for target: 713
+target:713 fold:3 predicted: 6000 correct: 2989 wrong: 3011 pct correct: 0.498166666667
+Building data for target: 713, fold: 4
+Running logistic regression for target: 713
+target:713 fold:4 predicted: 6000 correct: 2987 wrong: 3013 pct correct: 0.497833333333
+Results for 713:0.531766666667
+Building data for target: 712, fold: 0
+Running logistic regression for target: 712
+target:712 fold:0 predicted: 6000 correct: 2993 wrong: 3007 pct correct: 0.498833333333
+Building data for target: 712, fold: 1
+Running logistic regression for target: 712
+target:712 fold:1 predicted: 6000 correct: 3993 wrong: 2007 pct correct: 0.6655
+Building data for target: 712, fold: 2
+Running logistic regression for target: 712
+target:712 fold:2 predicted: 6000 correct: 3495 wrong: 2505 pct correct: 0.5825
+Building data for target: 712, fold: 3
+Running logistic regression for target: 712
+target:712 fold:3 predicted: 6000 correct: 3497 wrong: 2503 pct correct: 0.582833333333
+Building data for target: 712, fold: 4
+Running logistic regression for target: 712
+target:712 fold:4 predicted: 6000 correct: 3997 wrong: 2003 pct correct: 0.666166666667
+Results for 712:0.599166666667
+Building data for target: 859, fold: 0
+Running logistic regression for target: 859
+target:859 fold:0 predicted: 6000 correct: 2992 wrong: 3008 pct correct: 0.498666666667
+Building data for target: 859, fold: 1
+Running logistic regression for target: 859
+target:859 fold:1 predicted: 6000 correct: 2989 wrong: 3011 pct correct: 0.498166666667
+Building data for target: 859, fold: 2
+Running logistic regression for target: 859
+target:859 fold:2 predicted: 6000 correct: 2988 wrong: 3012 pct correct: 0.498
+Building data for target: 859, fold: 3
+Running logistic regression for target: 859
+target:859 fold:3 predicted: 6000 correct: 2994 wrong: 3006 pct correct: 0.499
+Building data for target: 859, fold: 4
+Running logistic regression for target: 859
+target:859 fold:4 predicted: 6000 correct: 2990 wrong: 3010 pct correct: 0.498333333333
+Results for 859:0.498433333333
+Building data for target: 733, fold: 0
+Running logistic regression for target: 733
+target:733 fold:0 predicted: 6000 correct: 2992 wrong: 3008 pct correct: 0.498666666667
+Building data for target: 733, fold: 1
+Running logistic regression for target: 733
+target:733 fold:1 predicted: 6000 correct: 2994 wrong: 3006 pct correct: 0.499
+Building data for target: 733, fold: 2
+Running logistic regression for target: 733
+target:733 fold:2 predicted: 6000 correct: 2992 wrong: 3008 pct correct: 0.498666666667
+Building data for target: 733, fold: 3
+Running logistic regression for target: 733
+target:733 fold:3 predicted: 6000 correct: 3988 wrong: 2012 pct correct: 0.664666666667
+Building data for target: 733, fold: 4
+Running logistic regression for target: 733
+target:733 fold:4 predicted: 6000 correct: 2990 wrong: 3010 pct correct: 0.498333333333
+Results for 733:0.531866666667
+Building data for target: 689, fold: 0
+Running logistic regression for target: 689
+target:689 fold:0 predicted: 6000 correct: 2993 wrong: 3007 pct correct: 0.498833333333
+Building data for target: 689, fold: 1
+Running logistic regression for target: 689
+target:689 fold:1 predicted: 6000 correct: 2995 wrong: 3005 pct correct: 0.499166666667
+Building data for target: 689, fold: 2
+Running logistic regression for target: 689
+target:689 fold:2 predicted: 6000 correct: 2997 wrong: 3003 pct correct: 0.4995
+Building data for target: 689, fold: 3
+Running logistic regression for target: 689
+target:689 fold:3 predicted: 6000 correct: 3493 wrong: 2507 pct correct: 0.582166666667
+Building data for target: 689, fold: 4
+Running logistic regression for target: 689
+target:689 fold:4 predicted: 6000 correct: 2990 wrong: 3010 pct correct: 0.498333333333
+Results for 689:0.5156
+Building data for target: 644, fold: 0
+Running logistic regression for target: 644
+target:644 fold:0 predicted: 6000 correct: 2994 wrong: 3006 pct correct: 0.499
+Building data for target: 644, fold: 1
+Running logistic regression for target: 644
+target:644 fold:1 predicted: 6000 correct: 3493 wrong: 2507 pct correct: 0.582166666667
+Building data for target: 644, fold: 2
+Running logistic regression for target: 644
+target:644 fold:2 predicted: 6000 correct: 3494 wrong: 2506 pct correct: 0.582333333333
+Building data for target: 644, fold: 3
+Running logistic regression for target: 644
+target:644 fold:3 predicted: 6000 correct: 3991 wrong: 2009 pct correct: 0.665166666667
+Building data for target: 644, fold: 4
+Running logistic regression for target: 644
+target:644 fold:4 predicted: 6000 correct: 4495 wrong: 1505 pct correct: 0.749166666667
+Results for 644:0.615566666667
+Building data for target: 737, fold: 0
+Running logistic regression for target: 737
+target:737 fold:0 predicted: 6000 correct: 2993 wrong: 3007 pct correct: 0.498833333333
+Building data for target: 737, fold: 1
+Running logistic regression for target: 737
+target:737 fold:1 predicted: 6000 correct: 3488 wrong: 2512 pct correct: 0.581333333333
+Building data for target: 737, fold: 2
+Running logistic regression for target: 737
+target:737 fold:2 predicted: 6000 correct: 3494 wrong: 2506 pct correct: 0.582333333333
+Building data for target: 737, fold: 3
+Running logistic regression for target: 737
+target:737 fold:3 predicted: 6000 correct: 2994 wrong: 3006 pct correct: 0.499
+Building data for target: 737, fold: 4
+Running logistic regression for target: 737
+target:737 fold:4 predicted: 6000 correct: 2980 wrong: 3020 pct correct: 0.496666666667
+Results for 737:0.531633333333
+Building data for target: 810, fold: 0
+Running logistic regression for target: 810
+target:810 fold:0 predicted: 6000 correct: 2996 wrong: 3004 pct correct: 0.499333333333
+Building data for target: 810, fold: 1
+Running logistic regression for target: 810
+target:810 fold:1 predict
