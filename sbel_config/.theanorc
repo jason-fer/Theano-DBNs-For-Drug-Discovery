@@ -4,3 +4,4 @@ root=/usr/local/cuda/7.0.28/cuda
 [global]
 device = gpu
 floatX = float32
+

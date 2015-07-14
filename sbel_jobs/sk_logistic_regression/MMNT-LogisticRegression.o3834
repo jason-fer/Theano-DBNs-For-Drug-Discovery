@@ -1,0 +1,1658 @@
+Running Scikit Learn Logistic Regression Classifier.........
+Found 12 targets for Tox21
+Building data for target: sr-atad5, fold: 0
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:0 predicted: 3487 correct: 2826 wrong: 661 pct correct: 0.810438772584
+Building data for target: sr-atad5, fold: 1
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:1 predicted: 3487 correct: 2563 wrong: 924 pct correct: 0.735015772871
+Building data for target: sr-atad5, fold: 2
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:2 predicted: 3487 correct: 2808 wrong: 679 pct correct: 0.805276742185
+Building data for target: sr-atad5, fold: 3
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:3 predicted: 3487 correct: 2645 wrong: 842 pct correct: 0.758531689131
+Building data for target: sr-atad5, fold: 4
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:4 predicted: 3429 correct: 2664 wrong: 765 pct correct: 0.776902887139
+Results for sr-atad5:0.777233172782
+Building data for target: sr-hse, fold: 0
+Running logistic regression for target: sr-hse
+target:sr-hse fold:0 predicted: 3069 correct: 2114 wrong: 955 pct correct: 0.688823721082
+Building data for target: sr-hse, fold: 1
+Running logistic regression for target: sr-hse
+target:sr-hse fold:1 predicted: 3069 correct: 2156 wrong: 913 pct correct: 0.702508960573
+Building data for target: sr-hse, fold: 2
+Running logistic regression for target: sr-hse
+target:sr-hse fold:2 predicted: 3069 correct: 2160 wrong: 909 pct correct: 0.703812316716
+Building data for target: sr-hse, fold: 3
+Running logistic regression for target: sr-hse
+target:sr-hse fold:3 predicted: 3069 correct: 2013 wrong: 1056 pct correct: 0.655913978495
+Building data for target: sr-hse, fold: 4
+Running logistic regression for target: sr-hse
+target:sr-hse fold:4 predicted: 3039 correct: 2173 wrong: 866 pct correct: 0.715037841395
+Results for sr-hse:0.693219363652
+Building data for target: nr-ar-lbd, fold: 0
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:0 predicted: 3274 correct: 2749 wrong: 525 pct correct: 0.839645693341
+Building data for target: nr-ar-lbd, fold: 1
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:1 predicted: 3274 correct: 2698 wrong: 576 pct correct: 0.824068417838
+Building data for target: nr-ar-lbd, fold: 2
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:2 predicted: 3274 correct: 2621 wrong: 653 pct correct: 0.800549786194
+Building data for target: nr-ar-lbd, fold: 3
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:3 predicted: 3274 correct: 2857 wrong: 417 pct correct: 0.872632864997
+Building data for target: nr-ar-lbd, fold: 4
+Running logistic regression for target: nr-ar-lbd
+target:nr-ar-lbd fold:4 predicted: 3293 correct: 2664 wrong: 629 pct correct: 0.808988764045
+Results for nr-ar-lbd:0.829177105283
+Building data for target: nr-aromatase, fold: 0
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:0 predicted: 2717 correct: 2023 wrong: 694 pct correct: 0.744571218255
+Building data for target: nr-aromatase, fold: 1
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:1 predicted: 2717 correct: 2111 wrong: 606 pct correct: 0.776959882223
+Building data for target: nr-aromatase, fold: 2
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:2 predicted: 2717 correct: 2029 wrong: 688 pct correct: 0.746779536253
+Building data for target: nr-aromatase, fold: 3
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:3 predicted: 2717 correct: 1983 wrong: 734 pct correct: 0.72984909827
+Building data for target: nr-aromatase, fold: 4
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:4 predicted: 2740 correct: 2014 wrong: 726 pct correct: 0.73503649635
+Results for nr-aromatase:0.74663924627
+Building data for target: sr-p53, fold: 0
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:0 predicted: 3220 correct: 2411 wrong: 809 pct correct: 0.748757763975
+Building data for target: sr-p53, fold: 1
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:1 predicted: 3220 correct: 2491 wrong: 729 pct correct: 0.773602484472
+Building data for target: sr-p53, fold: 2
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:2 predicted: 3220 correct: 2421 wrong: 799 pct correct: 0.751863354037
+Building data for target: sr-p53, fold: 3
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:3 predicted: 3220 correct: 2487 wrong: 733 pct correct: 0.772360248447
+Building data for target: sr-p53, fold: 4
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:4 predicted: 3141 correct: 2390 wrong: 751 pct correct: 0.760904170646
+Results for sr-p53:0.761497604316
+Building data for target: nr-ahr, fold: 0
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:0 predicted: 2762 correct: 2210 wrong: 552 pct correct: 0.800144822592
+Building data for target: nr-ahr, fold: 1
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:1 predicted: 2762 correct: 2216 wrong: 546 pct correct: 0.802317161477
+Building data for target: nr-ahr, fold: 2
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:2 predicted: 2762 correct: 2137 wrong: 625 pct correct: 0.773714699493
+Building data for target: nr-ahr, fold: 3
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:3 predicted: 2762 correct: 2273 wrong: 489 pct correct: 0.822954380883
+Building data for target: nr-ahr, fold: 4
+Running logistic regression for target: nr-ahr
+target:nr-ahr fold:4 predicted: 2790 correct: 2256 wrong: 534 pct correct: 0.808602150538
+Results for nr-ahr:0.801546642997
+Building data for target: sr-are, fold: 0
+Running logistic regression for target: sr-are
+target:sr-are fold:0 predicted: 2300 correct: 1654 wrong: 646 pct correct: 0.719130434783
+Building data for target: sr-are, fold: 1
+Running logistic regression for target: sr-are
+target:sr-are fold:1 predicted: 2300 correct: 1642 wrong: 658 pct correct: 0.713913043478
+Building data for target: sr-are, fold: 2
+Running logistic regression for target: sr-are
+target:sr-are fold:2 predicted: 2300 correct: 1657 wrong: 643 pct correct: 0.720434782609
+Building data for target: sr-are, fold: 3
+Running logistic regression for target: sr-are
+target:sr-are fold:3 predicted: 2300 correct: 1631 wrong: 669 pct correct: 0.709130434783
+Building data for target: sr-are, fold: 4
+Running logistic regression for target: sr-are
+target:sr-are fold:4 predicted: 2303 correct: 1705 wrong: 598 pct correct: 0.740338688667
+Results for sr-are:0.720589476864
+Building data for target: nr-er, fold: 0
+Running logistic regression for target: nr-er
+target:nr-er fold:0 predicted: 2657 correct: 1727 wrong: 930 pct correct: 0.649981181784
+Building data for target: nr-er, fold: 1
+Running logistic regression for target: nr-er
+target:nr-er fold:1 predicted: 2657 correct: 1860 wrong: 797 pct correct: 0.700037636432
+Building data for target: nr-er, fold: 2
+Running logistic regression for target: nr-er
+target:nr-er fold:2 predicted: 2657 correct: 1777 wrong: 880 pct correct: 0.668799397817
+Building data for target: nr-er, fold: 3
+Running logistic regression for target: nr-er
+target:nr-er fold:3 predicted: 2657 correct: 1803 wrong: 854 pct correct: 0.678584870154
+Building data for target: nr-er, fold: 4
+Running logistic regression for target: nr-er
+target:nr-er fold:4 predicted: 2667 correct: 1869 wrong: 798 pct correct: 0.700787401575
+Results for nr-er:0.679638097552
+Building data for target: nr-er-lbd, fold: 0
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:0 predicted: 3258 correct: 2528 wrong: 730 pct correct: 0.775936157152
+Building data for target: nr-er-lbd, fold: 1
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:1 predicted: 3258 correct: 2516 wrong: 742 pct correct: 0.772252915899
+Building data for target: nr-er-lbd, fold: 2
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:2 predicted: 3258 correct: 2658 wrong: 600 pct correct: 0.815837937385
+Building data for target: nr-er-lbd, fold: 3
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:3 predicted: 3258 correct: 2539 wrong: 719 pct correct: 0.779312461633
+Building data for target: nr-er-lbd, fold: 4
+Running logistic regression for target: nr-er-lbd
+target:nr-er-lbd fold:4 predicted: 3260 correct: 2409 wrong: 851 pct correct: 0.738957055215
+Results for nr-er-lbd:0.776459305457
+Building data for target: nr-ppar-gamma, fold: 0
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:0 predicted: 3171 correct: 2208 wrong: 963 pct correct: 0.696310312204
+Building data for target: nr-ppar-gamma, fold: 1
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:1 predicted: 3171 correct: 2114 wrong: 1057 pct correct: 0.666666666667
+Building data for target: nr-ppar-gamma, fold: 2
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:2 predicted: 3171 correct: 2102 wrong: 1069 pct correct: 0.662882371492
+Building data for target: nr-ppar-gamma, fold: 3
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:3 predicted: 3171 correct: 2102 wrong: 1069 pct correct: 0.662882371492
+Building data for target: nr-ppar-gamma, fold: 4
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:4 predicted: 3154 correct: 2414 wrong: 740 pct correct: 0.765377298668
+Results for nr-ppar-gamma:0.690823804105
+Building data for target: sr-mmp, fold: 0
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:0 predicted: 2367 correct: 1916 wrong: 451 pct correct: 0.809463455851
+Building data for target: sr-mmp, fold: 1
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:1 predicted: 2367 correct: 1860 wrong: 507 pct correct: 0.785804816223
+Building data for target: sr-mmp, fold: 2
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:2 predicted: 2367 correct: 1870 wrong: 497 pct correct: 0.7900295733
+Building data for target: sr-mmp, fold: 3
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:3 predicted: 2367 correct: 1909 wrong: 458 pct correct: 0.806506125898
+Building data for target: sr-mmp, fold: 4
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:4 predicted: 2379 correct: 1949 wrong: 430 pct correct: 0.819251786465
+Results for sr-mmp:0.802211151547
+Building data for target: nr-ar, fold: 0
+Running logistic regression for target: nr-ar
+target:nr-ar fold:0 predicted: 3538 correct: 2842 wrong: 696 pct correct: 0.803278688525
+Building data for target: nr-ar, fold: 1
+Running logistic regression for target: nr-ar
+target:nr-ar fold:1 predicted: 3538 correct: 2835 wrong: 703 pct correct: 0.801300169587
+Building data for target: nr-ar, fold: 2
+Running logistic regression for target: nr-ar
+target:nr-ar fold:2 predicted: 3538 correct: 2721 wrong: 817 pct correct: 0.769078575466
+Building data for target: nr-ar, fold: 3
+Running logistic regression for target: nr-ar
+target:nr-ar fold:3 predicted: 3538 correct: 2885 wrong: 653 pct correct: 0.815432447711
+Building data for target: nr-ar, fold: 4
+Running logistic regression for target: nr-ar
+target:nr-ar fold:4 predicted: 3541 correct: 2477 wrong: 1064 pct correct: 0.69951990963
+Results for nr-ar:0.777721958184
+####################  Results for Tox21 ####################
+sr-atad5 accuracy: 0.777233172782
+sr-hse accuracy: 0.693219363652
+nr-aromatase accuracy: 0.74663924627
+nr-ar-lbd accuracy: 0.829177105283
+sr-p53 accuracy: 0.761497604316
+nr-ahr accuracy: 0.801546642997
+sr-are accuracy: 0.720589476864
+nr-er accuracy: 0.679638097552
+nr-er-lbd accuracy: 0.776459305457
+nr-ppar-gamma accuracy: 0.690823804105
+sr-mmp accuracy: 0.802211151547
+nr-ar accuracy: 0.777721958184
+ overall accuracy: 0.754729744084
+############################################################
+Found 17 targets for MUV
+Building data for target: 692, fold: 0
+Running logistic regression for target: 692
+target:692 fold:0 predicted: 6000 correct: 2991 wrong: 3009 pct correct: 0.4985
+Building data for target: 692, fold: 1
+Running logistic regression for target: 692
+target:692 fold:1 predicted: 6000 correct: 2989 wrong: 3011 pct correct: 0.498166666667
+Building data for target: 692, fold: 2
+Running logistic regression for target: 692
+target:692 fold:2 predicted: 6000 correct: 3484 wrong: 2516 pct correct: 0.580666666667
+Building data for target: 692, fold: 3
+Running logistic regression for target: 692
+target:692 fold:3 predicted: 6000 correct: 2988 wrong: 3012 pct correct: 0.498
+Building data for target: 692, fold: 4
+Running logistic regression for target: 692
+target:692 fold:4 predicted: 6000 correct: 2991 wrong: 3009 pct correct: 0.4985
+Results for 692:0.514766666667
+Building data for target: 832, fold: 0
+Running logistic regression for target: 832
+target:832 fold:0 predicted: 6000 correct: 4494 wrong: 1506 pct correct: 0.749
+Building data for target: 832, fold: 1
+Running logistic regression for target: 832
+target:832 fold:1 predicted: 6000 correct: 4995 wrong: 1005 pct correct: 0.8325
+Building data for target: 832, fold: 2
+Running logistic regression for target: 832
+target:832 fold:2 predicted: 6000 correct: 4496 wrong: 1504 pct correct: 0.749333333333
+Building data for target: 832, fold: 3
+Running logistic regression for target: 832
+target:832 fold:3 predicted: 6000 correct: 5495 wrong: 505 pct correct: 0.915833333333
+Building data for target: 832, fold: 4
+Running logistic regression for target: 832
+target:832 fold:4 predicted: 6000 correct: 4493 wrong: 1507 pct correct: 0.748833333333
+Results for 832:0.7991
+Building data for target: 600, fold: 0
+Running logistic regression for target: 600
+target:600 fold:0 predicted: 6000 correct: 3489 wrong: 2511 pct correct: 0.5815
+Building data for target: 600, fold: 1
+Running logistic regression for target: 600
+target:600 fold:1 predicted: 6000 correct: 2996 wrong: 3004 pct correct: 0.499333333333
+Building data for target: 600, fold: 2
+Running logistic regression for target: 600
+target:600 fold:2 predicted: 6000 correct: 2989 wrong: 3011 pct correct: 0.498166666667
+Building data for target: 600, fold: 3
+Running logistic regression for target: 600
+target:600 fold:3 predicted: 6000 correct: 4490 wrong: 1510 pct correct: 0.748333333333
+Building data for target: 600, fold: 4
+Running logistic regression for target: 600
+target:600 fold:4 predicted: 6000 correct: 3491 wrong: 2509 pct correct: 0.581833333333
+Results for 600:0.581833333333
+Building data for target: 852, fold: 0
+Running logistic regression for target: 852
+target:852 fold:0 predicted: 6000 correct: 3994 wrong: 2006 pct correct: 0.665666666667
+Building data for target: 852, fold: 1
+Running logistic regression for target: 852
+target:852 fold:1 predicted: 6000 correct: 3497 wrong: 2503 pct correct: 0.582833333333
+Building data for target: 852, fold: 2
+Running logistic regression for target: 852
+target:852 fold:2 predicted: 6000 correct: 4996 wrong: 1004 pct correct: 0.832666666667
+Building data for target: 852, fold: 3
+Running logistic regression for target: 852
+target:852 fold:3 predicted: 6000 correct: 4494 wrong: 1506 pct correct: 0.749
+Building data for target: 852, fold: 4
+Running logistic regression for target: 852
+target:852 fold:4 predicted: 6000 correct: 2996 wrong: 3004 pct correct: 0.499333333333
+Results for 852:0.6659
+Building data for target: 846, fold: 0
+Running logistic regression for target: 846
+target:846 fold:0 predicted: 6000 correct: 3997 wrong: 2003 pct correct: 0.666166666667
+Building data for target: 846, fold: 1
+Running logistic regression for target: 846
+target:846 fold:1 predicted: 6000 correct: 5492 wrong: 508 pct correct: 0.915333333333
+Building data for target: 846, fold: 2
+Running logistic regression for target: 846
+target:846 fold:2 predicted: 6000 correct: 3990 wrong: 2010 pct correct: 0.665
+Building data for target: 846, fold: 3
+Running logistic regression for target: 846
+target:846 fold:3 predicted: 6000 correct: 4485 wrong: 1515 pct correct: 0.7475
+Building data for target: 846, fold: 4
+Running logistic regression for target: 846
+target:846 fold:4 predicted: 6000 correct: 3994 wrong: 2006 pct correct: 0.665666666667
+Results for 846:0.731933333333
+Building data for target: 858, fold: 0
+Running logistic regression for target: 858
+target:858 fold:0 predicted: 6000 correct: 3487 wrong: 2513 pct correct: 0.581166666667
+Building data for target: 858, fold: 1
+Running logistic regression for target: 858
+target:858 fold:1 predicted: 6000 correct: 3489 wrong: 2511 pct correct: 0.5815
+Building data for target: 858, fold: 2
+Running logistic regression for target: 858
+target:858 fold:2 predicted: 6000 correct: 3995 wrong: 2005 pct correct: 0.665833333333
+Building data for target: 858, fold: 3
+Running logistic regression for target: 858
+target:858 fold:3 predicted: 6000 correct: 2991 wrong: 3009 pct correct: 0.4985
+Building data for target: 858, fold: 4
+Running logistic regression for target: 858
+target:858 fold:4 predicted: 6000 correct: 3490 wrong: 2510 pct correct: 0.581666666667
+Results for 858:0.581733333333
+Building data for target: 466, fold: 0
+Running logistic regression for target: 466
+target:466 fold:0 predicted: 6000 correct: 3485 wrong: 2515 pct correct: 0.580833333333
+Building data for target: 466, fold: 1
+Running logistic regression for target: 466
+target:466 fold:1 predicted: 6000 correct: 2982 wrong: 3018 pct correct: 0.497
+Building data for target: 466, fold: 2
+Running logistic regression for target: 466
+target:466 fold:2 predicted: 6000 correct: 2995 wrong: 3005 pct correct: 0.499166666667
+Building data for target: 466, fold: 3
+Running logistic regression for target: 466
+target:466 fold:3 predicted: 6000 correct: 3495 wrong: 2505 pct correct: 0.5825
+Building data for target: 466, fold: 4
+Running logistic regression for target: 466
+target:466 fold:4 predicted: 6000 correct: 3495 wrong: 2505 pct correct: 0.5825
+Results for 466:0.5484
+Building data for target: 713, fold: 0
+Running logistic regression for target: 713
+target:713 fold:0 predicted: 6000 correct: 3487 wrong: 2513 pct correct: 0.581166666667
+Building data for target: 713, fold: 1
+Running logistic regression for target: 713
+target:713 fold:1 predicted: 6000 correct: 3496 wrong: 2504 pct correct: 0.582666666667
+Building data for target: 713, fold: 2
+Running logistic regression for target: 713
+target:713 fold:2 predicted: 6000 correct: 2994 wrong: 3006 pct correct: 0.499
+Building data for target: 713, fold: 3
+Running logistic regression for target: 713
+target:713 fold:3 predicted: 6000 correct: 2989 wrong: 3011 pct correct: 0.498166666667
+Building data for target: 713, fold: 4
+Running logistic regression for target: 713
+target:713 fold:4 predicted: 6000 correct: 2987 wrong: 3013 pct correct: 0.497833333333
+Results for 713:0.531766666667
+Building data for target: 712, fold: 0
+Running logistic regression for target: 712
+target:712 fold:0 predicted: 6000 correct: 2993 wrong: 3007 pct correct: 0.498833333333
+Building data for target: 712, fold: 1
+Running logistic regression for target: 712
+target:712 fold:1 predicted: 6000 correct: 3993 wrong: 2007 pct correct: 0.6655
+Building data for target: 712, fold: 2
+Running logistic regression for target: 712
+target:712 fold:2 predicted: 6000 correct: 3495 wrong: 2505 pct correct: 0.5825
+Building data for target: 712, fold: 3
+Running logistic regression for target: 712
+target:712 fold:3 predicted: 6000 correct: 3497 wrong: 2503 pct correct: 0.582833333333
+Building data for target: 712, fold: 4
+Running logistic regression for target: 712
+target:712 fold:4 predicted: 6000 correct: 3997 wrong: 2003 pct correct: 0.666166666667
+Results for 712:0.599166666667
+Building data for target: 859, fold: 0
+Running logistic regression for target: 859
+target:859 fold:0 predicted: 6000 correct: 2992 wrong: 3008 pct correct: 0.498666666667
+Building data for target: 859, fold: 1
+Running logistic regression for target: 859
+target:859 fold:1 predicted: 6000 correct: 2989 wrong: 3011 pct correct: 0.498166666667
+Building data for target: 859, fold: 2
+Running logistic regression for target: 859
+target:859 fold:2 predicted: 6000 correct: 2988 wrong: 3012 pct correct: 0.498
+Building data for target: 859, fold: 3
+Running logistic regression for target: 859
+target:859 fold:3 predicted: 6000 correct: 2994 wrong: 3006 pct correct: 0.499
+Building data for target: 859, fold: 4
+Running logistic regression for target: 859
+target:859 fold:4 predicted: 6000 correct: 2990 wrong: 3010 pct correct: 0.498333333333
+Results for 859:0.498433333333
+Building data for target: 733, fold: 0
+Running logistic regression for target: 733
+target:733 fold:0 predicted: 6000 correct: 2992 wrong: 3008 pct correct: 0.498666666667
+Building data for target: 733, fold: 1
+Running logistic regression for target: 733
+target:733 fold:1 predicted: 6000 correct: 2994 wrong: 3006 pct correct: 0.499
+Building data for target: 733, fold: 2
+Running logistic regression for target: 733
+target:733 fold:2 predicted: 6000 correct: 2992 wrong: 3008 pct correct: 0.498666666667
+Building data for target: 733, fold: 3
+Running logistic regression for target: 733
+target:733 fold:3 predicted: 6000 correct: 3988 wrong: 2012 pct correct: 0.664666666667
+Building data for target: 733, fold: 4
+Running logistic regression for target: 733
+target:733 fold:4 predicted: 6000 correct: 2990 wrong: 3010 pct correct: 0.498333333333
+Results for 733:0.531866666667
+Building data for target: 689, fold: 0
+Running logistic regression for target: 689
+target:689 fold:0 predicted: 6000 correct: 2993 wrong: 3007 pct correct: 0.498833333333
+Building data for target: 689, fold: 1
+Running logistic regression for target: 689
+target:689 fold:1 predicted: 6000 correct: 2995 wrong: 3005 pct correct: 0.499166666667
+Building data for target: 689, fold: 2
+Running logistic regression for target: 689
+target:689 fold:2 predicted: 6000 correct: 2997 wrong: 3003 pct correct: 0.4995
+Building data for target: 689, fold: 3
+Running logistic regression for target: 689
+target:689 fold:3 predicted: 6000 correct: 3493 wrong: 2507 pct correct: 0.582166666667
+Building data for target: 689, fold: 4
+Running logistic regression for target: 689
+target:689 fold:4 predicted: 6000 correct: 2990 wrong: 3010 pct correct: 0.498333333333
+Results for 689:0.5156
+Building data for target: 644, fold: 0
+Running logistic regression for target: 644
+target:644 fold:0 predicted: 6000 correct: 2994 wrong: 3006 pct correct: 0.499
+Building data for target: 644, fold: 1
+Running logistic regression for target: 644
+target:644 fold:1 predicted: 6000 correct: 3493 wrong: 2507 pct correct: 0.582166666667
+Building data for target: 644, fold: 2
+Running logistic regression for target: 644
+target:644 fold:2 predicted: 6000 correct: 3494 wrong: 2506 pct correct: 0.582333333333
+Building data for target: 644, fold: 3
+Running logistic regression for target: 644
+target:644 fold:3 predicted: 6000 correct: 3991 wrong: 2009 pct correct: 0.665166666667
+Building data for target: 644, fold: 4
+Running logistic regression for target: 644
+target:644 fold:4 predicted: 6000 correct: 4495 wrong: 1505 pct correct: 0.749166666667
+Results for 644:0.615566666667
+Building data for target: 737, fold: 0
+Running logistic regression for target: 737
+target:737 fold:0 predicted: 6000 correct: 2993 wrong: 3007 pct correct: 0.498833333333
+Building data for target: 737, fold: 1
+Running logistic regression for target: 737
+target:737 fold:1 predicted: 6000 correct: 3488 wrong: 2512 pct correct: 0.581333333333
+Building data for target: 737, fold: 2
+Running logistic regression for target: 737
+target:737 fold:2 predicted: 6000 correct: 3494 wrong: 2506 pct correct: 0.582333333333
+Building data for target: 737, fold: 3
+Running logistic regression for target: 737
+target:737 fold:3 predicted: 6000 correct: 2994 wrong: 3006 pct correct: 0.499
+Building data for target: 737, fold: 4
+Running logistic regression for target: 737
+target:737 fold:4 predicted: 6000 correct: 2980 wrong: 3020 pct correct: 0.496666666667
+Results for 737:0.531633333333
+Building data for target: 810, fold: 0
+Running logistic regression for target: 810
+target:810 fold:0 predicted: 6000 correct: 2996 wrong: 3004 pct correct: 0.499333333333
+Building data for target: 810, fold: 1
+Running logistic regression for target: 810
+target:810 fold:1 predicted: 6000 correct: 3993 wrong: 2007 pct correct: 0.6655
+Building data for target: 810, fold: 2
+Running logistic regression for target: 810
+target:810 fold:2 predicted: 6000 correct: 3493 wrong: 2507 pct correct: 0.582166666667
+Building data for target: 810, fold: 3
+Running logistic regression for target: 810
+target:810 fold:3 predicted: 6000 correct: 3493 wrong: 2507 pct correct: 0.582166666667
+Building data for target: 810, fold: 4
+Running logistic regression for target: 810
+target:810 fold:4 predicted: 6000 correct: 3991 wrong: 2009 pct correct: 0.665166666667
+Results for 810:0.598866666667
+Building data for target: 652, fold: 0
+Running logistic regression for target: 652
+target:652 fold:0 predicted: 6000 correct: 2991 wrong: 3009 pct correct: 0.4985
+Building data for target: 652, fold: 1
+Running logistic regression for target: 652
+target:652 fold:1 predicted: 6000 correct: 2997 wrong: 3003 pct correct: 0.4995
+Building data for target: 652, fold: 2
+Running logistic regression for target: 652
+target:652 fold:2 predicted: 6000 correct: 3492 wrong: 2508 pct correct: 0.582
+Building data for target: 652, fold: 3
+Running logistic regression for target: 652
+target:652 fold:3 predicted: 6000 correct: 3491 wrong: 2509 pct correct: 0.581833333333
+Building data for target: 652, fold: 4
+Running logistic regression for target: 652
+target:652 fold:4 predicted: 6000 correct: 2996 wrong: 3004 pct correct: 0.499333333333
+Results for 652:0.532233333333
+Building data for target: 548, fold: 0
+Running logistic regression for target: 548
+target:548 fold:0 predicted: 6000 correct: 3490 wrong: 2510 pct correct: 0.581666666667
+Building data for target: 548, fold: 1
+Running logistic regression for target: 548
+target:548 fold:1 predicted: 6000 correct: 3991 wrong: 2009 pct correct: 0.665166666667
+Building data for target: 548, fold: 2
+Running logistic regression for target: 548
+target:548 fold:2 predicted: 6000 correct: 3490 wrong: 2510 pct correct: 0.581666666667
+Building data for target: 548, fold: 3
+Running logistic regression for target: 548
+target:548 fold:3 predicted: 6000 correct: 4490 wrong: 1510 pct correct: 0.748333333333
+Building data for target: 548, fold: 4
+Running logistic regression for target: 548
+target:548 fold:4 predicted: 6000 correct: 3492 wrong: 2508 pct correct: 0.582
+Results for 548:0.631766666667
+####################  Results for MUV ####################
+692 accuracy: 0.514766666667
+832 accuracy: 0.7991
+600 accuracy: 0.581833333333
+852 accuracy: 0.6659
+846 accuracy: 0.731933333333
+713 accuracy: 0.531766666667
+466 accuracy: 0.5484
+858 accuracy: 0.581733333333
+712 accuracy: 0.599166666667
+859 accuracy: 0.498433333333
+733 accuracy: 0.531866666667
+689 accuracy: 0.5156
+644 accuracy: 0.615566666667
+737 accuracy: 0.531633333333
+810 accuracy: 0.598866666667
+652 accuracy: 0.532233333333
+548 accuracy: 0.631766666667
+ overall accuracy: 0.588856862745
+############################################################
+Found 128 targets for PCBA
+Building data for target: aid2675, fold: 0
+Running logistic regression for target: aid2675
+target:aid2675 fold:0 predicted: 111727 correct: 82219 wrong: 29508 pct correct: 0.735891950916
+Building data for target: aid2675, fold: 1
+Running logistic regression for target: aid2675
+target:aid2675 fold:1 predicted: 111727 correct: 70433 wrong: 41294 pct correct: 0.630402677956
+Building data for target: aid2675, fold: 2
+Running logistic regression for target: aid2675
+target:aid2675 fold:2 predicted: 111727 correct: 70472 wrong: 41255 pct correct: 0.630751743088
+Building data for target: aid2675, fold: 3
+Running logistic regression for target: aid2675
+target:aid2675 fold:3 predicted: 111727 correct: 67515 wrong: 44212 pct correct: 0.604285445774
+Building data for target: aid2675, fold: 4
+Running logistic regression for target: aid2675
+target:aid2675 fold:4 predicted: 111734 correct: 65490 wrong: 46244 pct correct: 0.586124187803
+Results for aid2675:0.637491201107
+Building data for target: aid2676, fold: 0
+Running logistic regression for target: aid2676
+target:aid2676 fold:0 predicted: 144369 correct: 111460 wrong: 32909 pct correct: 0.772049401187
+Building data for target: aid2676, fold: 1
+Running logistic regression for target: aid2676
+target:aid2676 fold:1 predicted: 144369 correct: 114320 wrong: 30049 pct correct: 0.791859748284
+Building data for target: aid2676, fold: 2
+Running logistic regression for target: aid2676
+target:aid2676 fold:2 predicted: 144369 correct: 106981 wrong: 37388 pct correct: 0.741024735227
+Building data for target: aid2676, fold: 3
+Running logistic regression for target: aid2676
+target:aid2676 fold:3 predicted: 144369 correct: 116200 wrong: 28169 pct correct: 0.804881934487
+Building data for target: aid2676, fold: 4
+Running logistic regression for target: aid2676
+target:aid2676 fold:4 predicted: 144270 correct: 114132 wrong: 30138 pct correct: 0.791100020794
+Results for aid2676:0.780183167996
+Building data for target: aid485360, fold: 0
+Running logistic regression for target: aid485360
+target:aid485360 fold:0 predicted: 89316 correct: 66180 wrong: 23136 pct correct: 0.740964664786
+Building data for target: aid485360, fold: 1
+Running logistic regression for target: aid485360
+target:aid485360 fold:1 predicted: 89316 correct: 67696 wrong: 21620 pct correct: 0.757938107394
+Building data for target: aid485360, fold: 2
+Running logistic regression for target: aid485360
+target:aid485360 fold:2 predicted: 89316 correct: 67841 wrong: 21475 pct correct: 0.75956155672
+Building data for target: aid485360, fold: 3
+Running logistic regression for target: aid485360
+target:aid485360 fold:3 predicted: 89316 correct: 66322 wrong: 22994 pct correct: 0.742554525505
+Building data for target: aid485360, fold: 4
+Running logistic regression for target: aid485360
+target:aid485360 fold:4 predicted: 89316 correct: 68320 wrong: 20996 pct correct: 0.764924537597
+Results for aid485360:0.7531886784
+Building data for target: aid485364, fold: 0
+Running logistic regression for target: aid485364
+target:aid485364 fold:0 predicted: 137638 correct: 107896 wrong: 29742 pct correct: 0.783911419811
+Building data for target: aid485364, fold: 1
+Running logistic regression for target: aid485364
+target:aid485364 fold:1 predicted: 137638 correct: 106613 wrong: 31025 pct correct: 0.774589866171
+Building data for target: aid485364, fold: 2
+Running logistic regression for target: aid485364
+target:aid485364 fold:2 predicted: 137638 correct: 106830 wrong: 30808 pct correct: 0.776166465656
+Building data for target: aid485364, fold: 3
+Running logistic regression for target: aid485364
+target:aid485364 fold:3 predicted: 137638 correct: 107138 wrong: 30500 pct correct: 0.778404219765
+Building data for target: aid485364, fold: 4
+Running logistic regression for target: aid485364
+target:aid485364 fold:4 predicted: 137738 correct: 107660 wrong: 30078 pct correct: 0.781628889631
+Results for aid485364:0.778940172207
+Building data for target: aid1379, fold: 0
+Running logistic regression for target: aid1379
+target:aid1379 fold:0 predicted: 79348 correct: 58047 wrong: 21301 pct correct: 0.73154962948
+Building data for target: aid1379, fold: 1
+Running logistic regression for target: aid1379
+target:aid1379 fold:1 predicted: 79348 correct: 62202 wrong: 17146 pct correct: 0.783913898271
+Building data for target: aid1379, fold: 2
+Running logistic regression for target: aid1379
+target:aid1379 fold:2 predicted: 79348 correct: 62598 wrong: 16750 pct correct: 0.788904572264
+Building data for target: aid1379, fold: 3
+Running logistic regression for target: aid1379
+target:aid1379 fold:3 predicted: 79348 correct: 60404 wrong: 18944 pct correct: 0.761254221909
+Building data for target: aid1379, fold: 4
+Running logistic regression for target: aid1379
+target:aid1379 fold:4 predicted: 79364 correct: 61959 wrong: 17405 pct correct: 0.780694017439
+Results for aid1379:0.769263267872
+Building data for target: aid485367, fold: 0
+Running logistic regression for target: aid485367
+target:aid485367 fold:0 predicted: 131959 correct: 95626 wrong: 36333 pct correct: 0.724664479119
+Building data for target: aid485367, fold: 1
+Running logistic regression for target: aid485367
+target:aid485367 fold:1 predicted: 131959 correct: 90072 wrong: 41887 pct correct: 0.682575648497
+Building data for target: aid485367, fold: 2
+Running logistic regression for target: aid485367
+target:aid485367 fold:2 predicted: 131959 correct: 95289 wrong: 36670 pct correct: 0.722110655582
+Building data for target: aid485367, fold: 3
+Running logistic regression for target: aid485367
+target:aid485367 fold:3 predicted: 131959 correct: 98157 wrong: 33802 pct correct: 0.743844679029
+Building data for target: aid485367, fold: 4
+Running logistic regression for target: aid485367
+target:aid485367 fold:4 predicted: 132018 correct: 96605 wrong: 35413 pct correct: 0.731756275659
+Results for aid485367:0.720990347577
+Building data for target: aid651965, fold: 0
+Running logistic regression for target: aid651965
+target:aid651965 fold:0 predicted: 132394 correct: 93519 wrong: 38875 pct correct: 0.70636886868
+Building data for target: aid651965, fold: 1
+Running logistic regression for target: aid651965
+target:aid651965 fold:1 predicted: 132394 correct: 92844 wrong: 39550 pct correct: 0.701270450323
+Building data for target: aid651965, fold: 2
+Running logistic regression for target: aid651965
+target:aid651965 fold:2 predicted: 132394 correct: 92373 wrong: 40021 pct correct: 0.697712887291
+Building data for target: aid651965, fold: 3
+Running logistic regression for target: aid651965
+target:aid651965 fold:3 predicted: 132394 correct: 92474 wrong: 39920 pct correct: 0.698475761741
+Building data for target: aid651965, fold: 4
+Running logistic regression for target: aid651965
+target:aid651965 fold:4 predicted: 132449 correct: 92299 wrong: 40150 pct correct: 0.696864453488
+Results for aid651965:0.700138484305
+Building data for target: aid624296, fold: 0
+Running logistic regression for target: aid624296
+target:aid624296 fold:0 predicted: 131620 correct: 91991 wrong: 39629 pct correct: 0.698913538976
+Building data for target: aid624296, fold: 1
+Running logistic regression for target: aid624296
+target:aid624296 fold:1 predicted: 131620 correct: 92283 wrong: 39337 pct correct: 0.701132046801
+Building data for target: aid624296, fold: 2
+Running logistic regression for target: aid624296
+target:aid624296 fold:2 predicted: 131620 correct: 92199 wrong: 39421 pct correct: 0.70049384592
+Building data for target: aid624296, fold: 3
+Running logistic regression for target: aid624296
+target:aid624296 fold:3 predicted: 131620 correct: 91403 wrong: 40217 pct correct: 0.694446132807
+Building data for target: aid624296, fold: 4
+Running logistic regression for target: aid624296
+target:aid624296 fold:4 predicted: 131621 correct: 93130 wrong: 38491 pct correct: 0.707561863229
+Results for aid624296:0.700509485546
+Building data for target: aid624297, fold: 0
+Running logistic regression for target: aid624297
+target:aid624297 fold:0 predicted: 134278 correct: 92635 wrong: 41643 pct correct: 0.689874737485
+Building data for target: aid624297, fold: 1
+Running logistic regression for target: aid624297
+target:aid624297 fold:1 predicted: 134278 correct: 92184 wrong: 42094 pct correct: 0.6865160339
+Building data for target: aid624297, fold: 2
+Running logistic regression for target: aid624297
+target:aid624297 fold:2 predicted: 134278 correct: 94612 wrong: 39666 pct correct: 0.704597923711
+Building data for target: aid624297, fold: 3
+Running logistic regression for target: aid624297
+target:aid624297 fold:3 predicted: 134278 correct: 94686 wrong: 39592 pct correct: 0.705149019199
+Building data for target: aid624297, fold: 4
+Running logistic regression for target: aid624297
+target:aid624297 fold:4 predicted: 133198 correct: 91196 wrong: 42002 pct correct: 0.684664934909
+Results for aid624297:0.694160529841
+Building data for target: aid624291, fold: 0
+Running logistic regression for target: aid624291
+target:aid624291 fold:0 predicted: 138248 correct: 68721 wrong: 69527 pct correct: 0.497084948788
+Building data for target: aid624291, fold: 1
+Running logistic regression for target: aid624291
+target:aid624291 fold:1 predicted: 138248 correct: 68831 wrong: 69417 pct correct: 0.497880620334
+Building data for target: aid624291, fold: 2
+Running logistic regression for target: aid624291
+target:aid624291 fold:2 predicted: 138248 correct: 70330 wrong: 67918 pct correct: 0.508723453504
+Building data for target: aid624291, fold: 3
+Running logistic regression for target: aid624291
+target:aid624291 fold:3 predicted: 138248 correct: 70240 wrong: 68008 pct correct: 0.508072449511
+Building data for target: aid624291, fold: 4
+Running logistic regression for target: aid624291
+target:aid624291 fold:4 predicted: 138217 correct: 70097 wrong: 68120 pct correct: 0.507151797536
+Results for aid624291:0.503782653935
+Building data for target: aid2100, fold: 0
+Running logistic regression for target: aid2100
+target:aid2100 fold:0 predicted: 120289 correct: 96393 wrong: 23896 pct correct: 0.801345093899
+Building data for target: aid2100, fold: 1
+Running logistic regression for target: aid2100
+target:aid2100 fold:1 predicted: 120289 correct: 97812 wrong: 22477 pct correct: 0.813141683778
+Building data for target: aid2100, fold: 2
+Running logistic regression for target: aid2100
+target:aid2100 fold:2 predicted: 120289 correct: 93099 wrong: 27190 pct correct: 0.773961043819
+Building data for target: aid2100, fold: 3
+Running logistic regression for target: aid2100
+target:aid2100 fold:3 predicted: 120289 correct: 98913 wrong: 21376 pct correct: 0.822294640408
+Building data for target: aid2100, fold: 4
+Running logistic regression for target: aid2100
+target:aid2100 fold:4 predicted: 120347 correct: 96738 wrong: 23609 pct correct: 0.803825604294
+Results for aid2100:0.80291361324
+Building data for target: aid2101, fold: 0
+Running logistic regression for target: aid2101
+target:aid2101 fold:0 predicted: 128493 correct: 89694 wrong: 38799 pct correct: 0.698045807943
+Building data for target: aid2101, fold: 1
+Running logistic regression for target: aid2101
+target:aid2101 fold:1 predicted: 128493 correct: 94285 wrong: 34208 pct correct: 0.73377538076
+Building data for target: aid2101, fold: 2
+Running logistic regression for target: aid2101
+target:aid2101 fold:2 predicted: 128493 correct: 93009 wrong: 35484 pct correct: 0.723844878709
+Building data for target: aid2101, fold: 3
+Running logistic regression for target: aid2101
+target:aid2101 fold:3 predicted: 128493 correct: 98713 wrong: 29780 pct correct: 0.768236401983
+Building data for target: aid2101, fold: 4
+Running logistic regression for target: aid2101
+target:aid2101 fold:4 predicted: 128455 correct: 95817 wrong: 32638 pct correct: 0.745918804251
+Results for aid2101:0.733964254729
+Building data for target: aid602179, fold: 0
+Running logistic regression for target: aid602179
+target:aid602179 fold:0 predicted: 154846 correct: 105614 wrong: 49232 pct correct: 0.682058303088
+Building data for target: aid602179, fold: 1
+Running logistic regression for target: aid602179
+target:aid602179 fold:1 predicted: 154846 correct: 109961 wrong: 44885 pct correct: 0.710131356315
+Building data for target: aid602179, fold: 2
+Running logistic regression for target: aid602179
+target:aid602179 fold:2 predicted: 154846 correct: 94190 wrong: 60656 pct correct: 0.608281776733
+Building data for target: aid602179, fold: 3
+Running logistic regression for target: aid602179
+target:aid602179 fold:3 predicted: 154846 correct: 99508 wrong: 55338 pct correct: 0.642625576379
+Building data for target: aid602179, fold: 4
+Running logistic regression for target: aid602179
+target:aid602179 fold:4 predicted: 154892 correct: 95218 wrong: 59674 pct correct: 0.614738011001
+Results for aid602179:0.651567004703
+Building data for target: aid504444, fold: 0
+Running logistic regression for target: aid504444
+target:aid504444 fold:0 predicted: 140115 correct: 96839 wrong: 43276 pct correct: 0.69113942119
+Building data for target: aid504444, fold: 1
+Running logistic regression for target: aid504444
+target:aid504444 fold:1 predicted: 140115 correct: 98465 wrong: 41650 pct correct: 0.702744174428
+Building data for target: aid504444, fold: 2
+Running logistic regression for target: aid504444
+target:aid504444 fold:2 predicted: 140115 correct: 96373 wrong: 43742 pct correct: 0.687813581701
+Building data for target: aid504444, fold: 3
+Running logistic regression for target: aid504444
+target:aid504444 fold:3 predicted: 140115 correct: 99148 wrong: 40967 pct correct: 0.707618741748
+Building data for target: aid504444, fold: 4
+Running logistic regression for target: aid504444
+target:aid504444 fold:4 predicted: 140256 correct: 96261 wrong: 43995 pct correct: 0.68632357974
+Results for aid504444:0.695127899761
+Building data for target: aid720542, fold: 0
+Running logistic regression for target: aid720542
+target:aid720542 fold:0 predicted: 145232 correct: 111800 wrong: 33432 pct correct: 0.769802798281
+Building data for target: aid720542, fold: 1
+Running logistic regression for target: aid720542
+target:aid720542 fold:1 predicted: 145232 correct: 115274 wrong: 29958 pct correct: 0.793723146414
+Building data for target: aid720542, fold: 2
+Running logistic regression for target: aid720542
+target:aid720542 fold:2 predicted: 145232 correct: 114908 wrong: 30324 pct correct: 0.791203040652
+Building data for target: aid720542, fold: 3
+Running logistic regression for target: aid720542
+target:aid720542 fold:3 predicted: 145232 correct: 107229 wrong: 38003 pct correct: 0.738329018398
+Building data for target: aid720542, fold: 4
+Running logistic regression for target: aid720542
+target:aid720542 fold:4 predicted: 145234 correct: 110629 wrong: 34605 pct correct: 0.761729347123
+Results for aid720542:0.770957470174
+Building data for target: aid588591, fold: 0
+Running logistic regression for target: aid588591
+target:aid588591 fold:0 predicted: 152942 correct: 125125 wrong: 27817 pct correct: 0.818120594735
+Building data for target: aid588591, fold: 1
+Running logistic regression for target: aid588591
+target:aid588591 fold:1 predicted: 152942 correct: 122805 wrong: 30137 pct correct: 0.802951445646
+Building data for target: aid588591, fold: 2
+Running logistic regression for target: aid588591
+target:aid588591 fold:2 predicted: 152942 correct: 124284 wrong: 28658 pct correct: 0.81262177819
+Building data for target: aid588591, fold: 3
+Running logistic regression for target: aid588591
+target:aid588591 fold:3 predicted: 152942 correct: 124382 wrong: 28560 pct correct: 0.813262543971
+Building data for target: aid588591, fold: 4
+Running logistic regression for target: aid588591
+target:aid588591 fold:4 predicted: 152943 correct: 124255 wrong: 28688 pct correct: 0.812426851834
+Results for aid588591:0.811876642875
+Building data for target: aid995, fold: 0
+Running logistic regression for target: aid995
+target:aid995 fold:0 predicted: 27938 correct: 16971 wrong: 10967 pct correct: 0.60745221562
+Building data for target: aid995, fold: 1
+Running logistic regression for target: aid995
+target:aid995 fold:1 predicted: 27938 correct: 18920 wrong: 9018 pct correct: 0.677213830625
+Building data for target: aid995, fold: 2
+Running logistic regression for target: aid995
+target:aid995 fold:2 predicted: 27938 correct: 17463 wrong: 10475 pct correct: 0.6250626387
+Building data for target: aid995, fold: 3
+Running logistic regression for target: aid995
+target:aid995 fold:3 predicted: 27938 correct: 18817 wrong: 9121 pct correct: 0.673527095712
+Building data for target: aid995, fold: 4
+Running logistic regression for target: aid995
+target:aid995 fold:4 predicted: 28055 correct: 19420 wrong: 8635 pct correct: 0.692211726965
+Results for aid995:0.655093501524
+Building data for target: aid2242, fold: 0
+Running logistic regression for target: aid2242
+target:aid2242 fold:0 predicted: 79302 correct: 65990 wrong: 13312 pct correct: 0.832135381201
+Building data for target: aid2242, fold: 1
+Running logistic regression for target: aid2242
+target:aid2242 fold:1 predicted: 79302 correct: 65780 wrong: 13522 pct correct: 0.829487276487
+Building data for target: aid2242, fold: 2
+Running logistic regression for target: aid2242
+target:aid2242 fold:2 predicted: 79302 correct: 64997 wrong: 14305 pct correct: 0.819613628912
+Building data for target: aid2242, fold: 3
+Running logistic regression for target: aid2242
+target:aid2242 fold:3 predicted: 79302 correct: 62049 wrong: 17253 pct correct: 0.782439282742
+Building data for target: aid2242, fold: 4
+Running logistic regression for target: aid2242
+target:aid2242 fold:4 predicted: 79306 correct: 66096 wrong: 13210 pct correct: 0.833430005296
+Results for aid2242:0.819421114928
+Building data for target: aid912, fold: 0
+Running logistic regression for target: aid912
+target:aid912 fold:0 predicted: 27380 correct: 17158 wrong: 10222 pct correct: 0.626661796932
+Building data for target: aid912, fold: 1
+Running logistic regression for target: aid912
+target:aid912 fold:1 predicted: 27380 correct: 17129 wrong: 10251 pct correct: 0.625602629657
+Building data for target: aid912, fold: 2
+Running logistic regression for target: aid912
+target:aid912 fold:2 predicted: 27380 correct: 16917 wrong: 10463 pct correct: 0.617859751644
+Building data for target: aid912, fold: 3
+Running logistic regression for target: aid912
+target:aid912 fold:3 predicted: 27380 correct: 16285 wrong: 11095 pct correct: 0.594777209642
+Building data for target: aid912, fold: 4
+Running logistic regression for target: aid912
+target:aid912 fold:4 predicted: 27373 correct: 17594 wrong: 9779 pct correct: 0.642750155262
+Results for aid912:0.621530308627
+Building data for target: aid914, fold: 0
+Running logistic regression for target: aid914
+target:aid914 fold:0 predicted: 4235 correct: 3513 wrong: 722 pct correct: 0.829515938607
+Building data for target: aid914, fold: 1
+Running logistic regression for target: aid914
+target:aid914 fold:1 predicted: 4235 correct: 3519 wrong: 716 pct correct: 0.83093270366
+Building data for target: aid914, fold: 2
+Running logistic regression for target: aid914
+target:aid914 fold:2 predicted: 4235 correct: 3681 wrong: 554 pct correct: 0.869185360094
+Building data for target: aid914, fold: 3
+Running logistic regression for target: aid914
+target:aid914 fold:3 predicted: 4235 correct: 3471 wrong: 764 pct correct: 0.819598583235
+Building data for target: aid914, fold: 4
+Running logistic regression for target: aid914
+target:aid914 fold:4 predicted: 4239 correct: 3400 wrong: 839 pct correct: 0.802075961312
+Results for aid914:0.830261709382
+Building data for target: aid915, fold: 0
+Running logistic regression for target: aid915
+target:aid915 fold:0 predicted: 4099 correct: 2691 wrong: 1408 pct correct: 0.656501585753
+Building data for target: aid915, fold: 1
+Running logistic regression for target: aid915
+target:aid915 fold:1 predicted: 4099 correct: 2820 wrong: 1279 pct correct: 0.687972676263
+Building data for target: aid915, fold: 2
+Running logistic regression for target: aid915
+target:aid915 fold:2 predicted: 4099 correct: 2770 wrong: 1329 pct correct: 0.675774579166
+Building data for target: aid915, fold: 3
+Running logistic regression for target: aid915
+target:aid915 fold:3 predicted: 4099 correct: 2880 wrong: 1219 pct correct: 0.702610392779
+Building data for target: aid915, fold: 4
+Running logistic regression for target: aid915
+target:aid915 fold:4 predicted: 4124 correct: 2751 wrong: 1373 pct correct: 0.667070805044
+Results for aid915:0.677986007801
+Building data for target: aid720553, fold: 0
+Running logistic regression for target: aid720553
+target:aid720553 fold:0 predicted: 135466 correct: 93335 wrong: 42131 pct correct: 0.688992071811
+Building data for target: aid720553, fold: 1
+Running logistic regression for target: aid720553
+target:aid720553 fold:1 predicted: 135466 correct: 91625 wrong: 43841 pct correct: 0.676368978194
+Building data for target: aid720553, fold: 2
+Running logistic regression for target: aid720553
+target:aid720553 fold:2 predicted: 135466 correct: 90745 wrong: 44721 pct correct: 0.669872883233
+Building data for target: aid720553, fold: 3
+Running logistic regression for target: aid720553
+target:aid720553 fold:3 predicted: 135466 correct: 94434 wrong: 41032 pct correct: 0.697104808587
+Building data for target: aid720553, fold: 4
+Running logistic regression for target: aid720553
+target:aid720553 fold:4 predicted: 135230 correct: 90584 wrong: 44646 pct correct: 0.669851364342
+Results for aid720553:0.680438021233
+Building data for target: aid720551, fold: 0
+Running logistic regression for target: aid720551
+target:aid720551 fold:0 predicted: 136787 correct: 85089 wrong: 51698 pct correct: 0.622054727423
+Building data for target: aid720551, fold: 1
+Running logistic regression for target: aid720551
+target:aid720551 fold:1 predicted: 136787 correct: 88579 wrong: 48208 pct correct: 0.647568847917
+Building data for target: aid720551, fold: 2
+Running logistic regression for target: aid720551
+target:aid720551 fold:2 predicted: 136787 correct: 85037 wrong: 51750 pct correct: 0.621674574338
+Building data for target: aid720551, fold: 3
+Running logistic regression for target: aid720551
+target:aid720551 fold:3 predicted: 136787 correct: 83486 wrong: 53301 pct correct: 0.610335777523
+Building data for target: aid720551, fold: 4
+Running logistic regression for target: aid720551
+target:aid720551 fold:4 predicted: 136791 correct: 85828 wrong: 50963 pct correct: 0.627438939696
+Results for aid720551:0.625814573379
+Building data for target: aid588795, fold: 0
+Running logistic regression for target: aid588795
+target:aid588795 fold:0 predicted: 153725 correct: 118417 wrong: 35308 pct correct: 0.770317124736
+Building data for target: aid588795, fold: 1
+Running logistic regression for target: aid588795
+target:aid588795 fold:1 predicted: 153725 correct: 124884 wrong: 28841 pct correct: 0.812385753781
+Building data for target: aid588795, fold: 2
+Running logistic regression for target: aid588795
+target:aid588795 fold:2 predicted: 153725 correct: 124041 wrong: 29684 pct correct: 0.806901935274
+Building data for target: aid588795, fold: 3
+Running logistic regression for target: aid588795
+target:aid588795 fold:3 predicted: 153725 correct: 123676 wrong: 30049 pct correct: 0.804527565458
+Building data for target: aid588795, fold: 4
+Running logistic regression for target: aid588795
+target:aid588795 fold:4 predicted: 153789 correct: 123587 wrong: 30202 pct correct: 0.803614042617
+Results for aid588795:0.799549284373
+Building data for target: aid651768, fold: 0
+Running logistic regression for target: aid651768
+target:aid651768 fold:0 predicted: 144824 correct: 115716 wrong: 29108 pct correct: 0.799011213611
+Building data for target: aid651768, fold: 1
+Running logistic regression for target: aid651768
+target:aid651768 fold:1 predicted: 144824 correct: 115844 wrong: 28980 pct correct: 0.79989504502
+Building data for target: aid651768, fold: 2
+Running logistic regression for target: aid651768
+target:aid651768 fold:2 predicted: 144824 correct: 115088 wrong: 29736 pct correct: 0.79467491576
+Building data for target: aid651768, fold: 3
+Running logistic regression for target: aid651768
+target:aid651768 fold:3 predicted: 144824 correct: 118238 wrong: 26586 pct correct: 0.816425454345
+Building data for target: aid651768, fold: 4
+Running logistic regression for target: aid651768
+target:aid651768 fold:4 predicted: 144921 correct: 114993 wrong: 29928 pct correct: 0.793487486286
+Results for aid651768:0.800698823004
+Building data for target: aid492947, fold: 0
+Running logistic regression for target: aid492947
+target:aid492947 fold:0 predicted: 132232 correct: 86718 wrong: 45514 pct correct: 0.655801923891
+Building data for target: aid492947, fold: 1
+Running logistic regression for target: aid492947
+target:aid492947 fold:1 predicted: 132232 correct: 70184 wrong: 62048 pct correct: 0.530764111561
+Building data for target: aid492947, fold: 2
+Running logistic regression for target: aid492947
+target:aid492947 fold:2 predicted: 132232 correct: 78450 wrong: 53782 pct correct: 0.59327545526
+Building data for target: aid492947, fold: 3
+Running logistic regression for target: aid492947
+target:aid492947 fold:3 predicted: 132232 correct: 82567 wrong: 49665 pct correct: 0.624410127654
+Building data for target: aid492947, fold: 4
+Running logistic regression for target: aid492947
+target:aid492947 fold:4 predicted: 132235 correct: 78423 wrong: 53812 pct correct: 0.593057813741
+Results for aid492947:0.599461886422
+Building data for target: aid504466, fold: 0
+Running logistic regression for target: aid504466
+target:aid504466 fold:0 predicted: 130163 correct: 102595 wrong: 27568 pct correct: 0.788204021112
+Building data for target: aid504466, fold: 1
+Running logistic regression for target: aid504466
+target:aid504466 fold:1 predicted: 130163 correct: 102535 wrong: 27628 pct correct: 0.787743060624
+Building data for target: aid504466, fold: 2
+Running logistic regression for target: aid504466
+target:aid504466 fold:2 predicted: 130163 correct: 102406 wrong: 27757 pct correct: 0.786751995575
+Building data for target: aid504466, fold: 3
+Running logistic regression for target: aid504466
+target:aid504466 fold:3 predicted: 130163 correct: 101704 wrong: 28459 pct correct: 0.781358757865
+Building data for target: aid504466, fold: 4
+Running logistic regression for target: aid504466
+target:aid504466 fold:4 predicted: 129639 correct: 102244 wrong: 27395 pct correct: 0.788682418099
+Results for aid504466:0.786548050655
+Building data for target: aid504467, fold: 0
+Running logistic regression for target: aid504467
+target:aid504467 fold:0 predicted: 128711 correct: 94103 wrong: 34608 pct correct: 0.731118552416
+Building data for target: aid504467, fold: 1
+Running logistic regression for target: aid504467
+target:aid504467 fold:1 predicted: 128711 correct: 93847 wrong: 34864 pct correct: 0.729129600423
+Building data for target: aid504467, fold: 2
+Running logistic regression for target: aid504467
+target:aid504467 fold:2 predicted: 128711 correct: 95227 wrong: 33484 pct correct: 0.739851294761
+Building data for target: aid504467, fold: 3
+Running logistic regression for target: aid504467
+target:aid504467 fold:3 predicted: 128711 correct: 93574 wrong: 35137 pct correct: 0.727008569586
+Building data for target: aid504467, fold: 4
+Running logistic regression for target: aid504467
+target:aid504467 fold:4 predicted: 128837 correct: 93923 wrong: 34914 pct correct: 0.729006418963
+Results for aid504467:0.73122288723
+Building data for target: aid881, fold: 0
+Running logistic regression for target: aid881
+target:aid881 fold:0 predicted: 42571 correct: 31848 wrong: 10723 pct correct: 0.748114913909
+Building data for target: aid881, fold: 1
+Running logistic regression for target: aid881
+target:aid881 fold:1 predicted: 42571 correct: 30720 wrong: 11851 pct correct: 0.721618002866
+Building data for target: aid881, fold: 2
+Running logistic regression for target: aid881
+target:aid881 fold:2 predicted: 42571 correct: 32573 wrong: 9998 pct correct: 0.765145286698
+Building data for target: aid881, fold: 3
+Running logistic regression for target: aid881
+target:aid881 fold:3 predicted: 42571 correct: 30937 wrong: 11634 pct correct: 0.726715369618
+Building data for target: aid881, fold: 4
+Running logistic regression for target: aid881
+target:aid881 fold:4 predicted: 42575 correct: 34071 wrong: 8504 pct correct: 0.800258367587
+Results for aid881:0.752370388135
+Building data for target: aid720504, fold: 0
+Running logistic regression for target: aid720504
+target:aid720504 fold:0 predicted: 139932 correct: 92100 wrong: 47832 pct correct: 0.658176828745
+Building data for target: aid720504, fold: 1
+Running logistic regression for target: aid720504
+target:aid720504 fold:1 predicted: 139932 correct: 91075 wrong: 48857 pct correct: 0.650851842323
+Building data for target: aid720504, fold: 2
+Running logistic regression for target: aid720504
+target:aid720504 fold:2 predicted: 139932 correct: 91974 wrong: 47958 pct correct: 0.65727639139
+Building data for target: aid720504, fold: 3
+Running logistic regression for target: aid720504
+target:aid720504 fold:3 predicted: 139932 correct: 92348 wrong: 47584 pct correct: 0.659949118143
+Building data for target: aid720504, fold: 4
+Running logistic regression for target: aid720504
+target:aid720504 fold:4 predicted: 139935 correct: 92143 wrong: 47792 pct correct: 0.65847000393
+Results for aid720504:0.656944836906
+Building data for target: aid743266, fold: 0
+Running logistic regression for target: aid743266
+target:aid743266 fold:0 predicted: 162143 correct: 82656 wrong: 79487 pct correct: 0.509772238086
+Building data for target: aid743266, fold: 1
+Running logistic regression for target: aid743266
+target:aid743266 fold:1 predicted: 162143 correct: 78860 wrong: 83283 pct correct: 0.486360804968
+Building data for target: aid743266, fold: 2
+Running logistic regression for target: aid743266
+target:aid743266 fold:2 predicted: 162143 correct: 81464 wrong: 80679 pct correct: 0.502420702713
+Building data for target: aid743266, fold: 3
+Running logistic regression for target: aid743266
+target:aid743266 fold:3 predicted: 162143 correct: 82314 wrong: 79829 pct correct: 0.507662988843
+Building data for target: aid743266, fold: 4
+Running logistic regression for target: aid743266
+target:aid743266 fold:4 predicted: 162108 correct: 86181 wrong: 75927 pct correct: 0.531627063439
+Results for aid743266:0.50756875961
+Building data for target: aid903, fold: 0
+Running logistic regression for target: aid903
+target:aid903 fold:0 predicted: 21622 correct: 15204 wrong: 6418 pct correct: 0.703172694478
+Building data for target: aid903, fold: 1
+Running logistic regression for target: aid903
+target:aid903 fold:1 predicted: 21622 correct: 15700 wrong: 5922 pct correct: 0.726112293035
+Building data for target: aid903, fold: 2
+Running logistic regression for target: aid903
+target:aid903 fold:2 predicted: 21622 correct: 15870 wrong: 5752 pct correct: 0.733974655444
+Building data for target: aid903, fold: 3
+Running logistic regression for target: aid903
+target:aid903 fold:3 predicted: 21622 correct: 16554 wrong: 5068 pct correct: 0.765609101841
+Building data for target: aid903, fold: 4
+Running logistic regression for target: aid903
+target:aid903 fold:4 predicted: 21615 correct: 15125 wrong: 6490 pct correct: 0.699745547074
+Results for aid903:0.725722858374
+Building data for target: aid902, fold: 0
+Running logistic regression for target: aid902
+target:aid902 fold:0 predicted: 49322 correct: 36317 wrong: 13005 pct correct: 0.736324561048
+Building data for target: aid902, fold: 1
+Running logistic regression for target: aid902
+target:aid902 fold:1 predicted: 49322 correct: 37019 wrong: 12303 pct correct: 0.750557560521
+Building data for target: aid902, fold: 2
+Running logistic regression for target: aid902
+target:aid902 fold:2 predicted: 49322 correct: 35827 wrong: 13495 pct correct: 0.726389846316
+Building data for target: aid902, fold: 3
+Running logistic regression for target: aid902
+target:aid902 fold:3 predicted: 49322 correct: 35212 wrong: 14110 pct correct: 0.713920765581
+Building data for target: aid902, fold: 4
+Running logistic regression for target: aid902
+target:aid902 fold:4 predicted: 49325 correct: 34187 wrong: 15138 pct correct: 0.693096806893
+Results for aid902:0.724057908072
+Building data for target: aid904, fold: 0
+Running logistic regression for target: aid904
+target:aid904 fold:0 predicted: 21506 correct: 14313 wrong: 7193 pct correct: 0.665535199479
+Building data for target: aid904, fold: 1
+Running logistic regression for target: aid904
+target:aid904 fold:1 predicted: 21506 correct: 14237 wrong: 7269 pct correct: 0.662001301962
+Building data for target: aid904, fold: 2
+Running logistic regression for target: aid904
+target:aid904 fold:2 predicted: 21506 correct: 15448 wrong: 6058 pct correct: 0.718311168976
+Building data for target: aid904, fold: 3
+Running logistic regression for target: aid904
+target:aid904 fold:3 predicted: 21506 correct: 14150 wrong: 7356 pct correct: 0.657955919278
+Building data for target: aid904, fold: 4
+Running logistic regression for target: aid904
+target:aid904 fold:4 predicted: 21489 correct: 14607 wrong: 6882 pct correct: 0.679743124389
+Results for aid904:0.676709342817
+Building data for target: aid651644, fold: 0
+Running logistic regression for target: aid651644
+target:aid651644 fold:0 predicted: 144339 correct: 108002 wrong: 36337 pct correct: 0.748252378082
+Building data for target: aid651644, fold: 1
+Running logistic regression for target: aid651644
+target:aid651644 fold:1 predicted: 144339 correct: 103823 wrong: 40516 pct correct: 0.719299704169
+Building data for target: aid651644, fold: 2
+Running logistic regression for target: aid651644
+target:aid651644 fold:2 predicted: 144339 correct: 107942 wrong: 36397 pct correct: 0.747836690014
+Building data for target: aid651644, fold: 3
+Running logistic regression for target: aid651644
+target:aid651644 fold:3 predicted: 144339 correct: 113001 wrong: 31338 pct correct: 0.782886122254
+Building data for target: aid651644, fold: 4
+Running logistic regression for target: aid651644
+target:aid651644 fold:4 predicted: 144425 correct: 109533 wrong: 34892 pct correct: 0.75840747793
+Results for aid651644:0.75133647449
+Building data for target: aid720580, fold: 0
+Running logistic regression for target: aid720580
+target:aid720580 fold:0 predicted: 129684 correct: 96842 wrong: 32842 pct correct: 0.746753647327
+Building data for target: aid720580, fold: 1
+Running logistic regression for target: aid720580
+target:aid720580 fold:1 predicted: 129684 correct: 94907 wrong: 34777 pct correct: 0.731832762716
+Building data for target: aid720580, fold: 2
+Running logistic regression for target: aid720580
+target:aid720580 fold:2 predicted: 129684 correct: 96362 wrong: 33322 pct correct: 0.743052342617
+Building data for target: aid720580, fold: 3
+Running logistic regression for target: aid720580
+target:aid720580 fold:3 predicted: 129684 correct: 96118 wrong: 33566 pct correct: 0.741170846057
+Building data for target: aid720580, fold: 4
+Running logistic regression for target: aid720580
+target:aid720580 fold:4 predicted: 129725 correct: 96159 wrong: 33566 pct correct: 0.741252649836
+Results for aid720580:0.740812449711
+Building data for target: aid651635, fold: 0
+Running logistic regression for target: aid651635
+target:aid651635 fold:0 predicted: 154668 correct: 119850 wrong: 34818 pct correct: 0.774885561331
+Building data for target: aid651635, fold: 1
+Running logistic regression for target: aid651635
+target:aid651635 fold:1 predicted: 154668 correct: 117127 wrong: 37541 pct correct: 0.757280109654
+Building data for target: aid651635, fold: 2
+Running logistic regression for target: aid651635
+target:aid651635 fold:2 predicted: 154668 correct: 121050 wrong: 33618 pct correct: 0.782644115137
+Building data for target: aid651635, fold: 3
+Running logistic regression for target: aid651635
+target:aid651635 fold:3 predicted: 154668 correct: 118776 wrong: 35892 pct correct: 0.767941655675
+Building data for target: aid651635, fold: 4
+Running logistic regression for target: aid651635
+target:aid651635 fold:4 predicted: 155078 correct: 118816 wrong: 36262 pct correct: 0.766169282555
+Results for aid651635:0.769784144871
+Building data for target: aid504327, fold: 0
+Running logistic regression for target: aid504327
+target:aid504327 fold:0 predicted: 152204 correct: 108932 wrong: 43272 pct correct: 0.715697353552
+Building data for target: aid504327, fold: 1
+Running logistic regression for target: aid504327
+target:aid504327 fold:1 predicted: 152204 correct: 106159 wrong: 46045 pct correct: 0.697478384274
+Building data for target: aid504327, fold: 2
+Running logistic regression for target: aid504327
+target:aid504327 fold:2 predicted: 152204 correct: 106362 wrong: 45842 pct correct: 0.698812120575
+Building data for target: aid504327, fold: 3
+Running logistic regression for target: aid504327
+target:aid504327 fold:3 predicted: 152204 correct: 103279 wrong: 48925 pct correct: 0.678556411132
+Building data for target: aid504327, fold: 4
+Running logistic regression for target: aid504327
+target:aid504327 fold:4 predicted: 152240 correct: 102027 wrong: 50213 pct correct: 0.670172096689
+Results for aid504327:0.692143273244
+Building data for target: aid1471, fold: 0
+Running logistic regression for target: aid1471
+target:aid1471 fold:0 predicted: 89324 correct: 48450 wrong: 40874 pct correct: 0.5424074157
+Building data for target: aid1471, fold: 1
+Running logistic regression for target: aid1471
+target:aid1471 fold:1 predicted: 89324 correct: 47213 wrong: 42111 pct correct: 0.528558953921
+Building data for target: aid1471, fold: 2
+Running logistic regression for target: aid1471
+target:aid1471 fold:2 predicted: 89324 correct: 50869 wrong: 38455 pct correct: 0.569488603287
+Building data for target: aid1471, fold: 3
+Running logistic regression for target: aid1471
+target:aid1471 fold:3 predicted: 89324 correct: 46347 wrong: 42977 pct correct: 0.518863911155
+Building data for target: aid1471, fold: 4
+Running logistic regression for target: aid1471
+target:aid1471 fold:4 predicted: 89318 correct: 47837 wrong: 41481 pct correct: 0.535580734007
+Results for aid1471:0.538979923614
+Building data for target: aid1688, fold: 0
+Running logistic regression for target: aid1688
+target:aid1688 fold:0 predicted: 86865 correct: 58003 wrong: 28862 pct correct: 0.667737293501
+Building data for target: aid1688, fold: 1
+Running logistic regression for target: aid1688
+target:aid1688 fold:1 predicted: 86865 correct: 60238 wrong: 26627 pct correct: 0.693466873885
+Building data for target: aid1688, fold: 2
+Running logistic regression for target: aid1688
+target:aid1688 fold:2 predicted: 86865 correct: 59169 wrong: 27696 pct correct: 0.681160421343
+Building data for target: aid1688, fold: 3
+Running logistic regression for target: aid1688
+target:aid1688 fold:3 predicted: 86865 correct: 58119 wrong: 28746 pct correct: 0.669072699016
+Building data for target: aid1688, fold: 4
+Running logistic regression for target: aid1688
+target:aid1688 fold:4 predicted: 86866 correct: 59729 wrong: 27137 pct correct: 0.687599290862
+Results for aid1688:0.679807315721
+Building data for target: aid1479, fold: 0
+Running logistic regression for target: aid1479
+target:aid1479 fold:0 predicted: 110080 correct: 75659 wrong: 34421 pct correct: 0.687309229651
+Building data for target: aid1479, fold: 1
+Running logistic regression for target: aid1479
+target:aid1479 fold:1 predicted: 110080 correct: 71701 wrong: 38379 pct correct: 0.651353561047
+Building data for target: aid1479, fold: 2
+Running logistic regression for target: aid1479
+target:aid1479 fold:2 predicted: 110080 correct: 69615 wrong: 40465 pct correct: 0.632403706395
+Building data for target: aid1479, fold: 3
+Running logistic regression for target: aid1479
+target:aid1479 fold:3 predicted: 110080 correct: 69448 wrong: 40632 pct correct: 0.630886627907
+Building data for target: aid1479, fold: 4
+Running logistic regression for target: aid1479
+target:aid1479 fold:4 predicted: 110158 correct: 66929 wrong: 43229 pct correct: 0.607572759128
+Results for aid1479:0.641905176826
+Building data for target: aid938, fold: 0
+Running logistic regression for target: aid938
+target:aid938 fold:0 predicted: 27931 correct: 19705 wrong: 8226 pct correct: 0.705488525294
+Building data for target: aid938, fold: 1
+Running logistic regression for target: aid938
+target:aid938 fold:1 predicted: 27931 correct: 19804 wrong: 8127 pct correct: 0.709032974115
+Building data for target: aid938, fold: 2
+Running logistic regression for target: aid938
+target:aid938 fold:2 predicted: 27931 correct: 19629 wrong: 8302 pct correct: 0.702767534281
+Building data for target: aid938, fold: 3
+Running logistic regression for target: aid938
+target:aid938 fold:3 predicted: 27931 correct: 19725 wrong: 8206 pct correct: 0.706204575561
+Building data for target: aid938, fold: 4
+Running logistic regression for target: aid938
+target:aid938 fold:4 predicted: 27974 correct: 19339 wrong: 8635 pct correct: 0.691320511904
+Results for aid938:0.702962824231
+Building data for target: aid720579, fold: 0
+Running logistic regression for target: aid720579
+target:aid720579 fold:0 predicted: 121925 correct: 88721 wrong: 33204 pct correct: 0.727668648759
+Building data for target: aid720579, fold: 1
+Running logistic regression for target: aid720579
+target:aid720579 fold:1 predicted: 121925 correct: 90751 wrong: 31174 pct correct: 0.744318228419
+Building data for target: aid720579, fold: 2
+Running logistic regression for target: aid720579
+target:aid720579 fold:2 predicted: 121925 correct: 90521 wrong: 31404 pct correct: 0.742431822842
+Building data for target: aid720579, fold: 3
+Running logistic regression for target: aid720579
+target:aid720579 fold:3 predicted: 121925 correct: 88728 wrong: 33197 pct correct: 0.727726061103
+Building data for target: aid720579, fold: 4
+Running logistic regression for target: aid720579
+target:aid720579 fold:4 predicted: 121637 correct: 88668 wrong: 32969 pct correct: 0.728955827585
+Results for aid720579:0.734220117742
+Building data for target: aid504842, fold: 0
+Running logistic regression for target: aid504842
+target:aid504842 fold:0 predicted: 131803 correct: 78952 wrong: 52851 pct correct: 0.599015196923
+Building data for target: aid504842, fold: 1
+Running logistic regression for target: aid504842
+target:aid504842 fold:1 predicted: 131803 correct: 82254 wrong: 49549 pct correct: 0.624067737457
+Building data for target: aid504842, fold: 2
+Running logistic regression for target: aid504842
+target:aid504842 fold:2 predicted: 131803 correct: 78963 wrong: 52840 pct correct: 0.599098654811
+Building data for target: aid504842, fold: 3
+Running logistic regression for target: aid504842
+target:aid504842 fold:3 predicted: 131803 correct: 88848 wrong: 42955 pct correct: 0.674096947717
+Building data for target: aid504842, fold: 4
+Running logistic regression for target: aid504842
+target:aid504842 fold:4 predicted: 131805 correct: 75194 wrong: 56611 pct correct: 0.570494290808
+Results for aid504842:0.613354565543
+Building data for target: aid2551, fold: 0
+Running logistic regression for target: aid2551
+target:aid2551 fold:0 predicted: 114432 correct: 92062 wrong: 22370 pct correct: 0.804512723714
+Building data for target: aid2551, fold: 1
+Running logistic regression for target: aid2551
+target:aid2551 fold:1 predicted: 114432 correct: 91346 wrong: 23086 pct correct: 0.798255732662
+Building data for target: aid2551, fold: 2
+Running logistic regression for target: aid2551
+target:aid2551 fold:2 predicted: 114432 correct: 91048 wrong: 23384 pct correct: 0.795651565996
+Building data for target: aid2551, fold: 3
+Running logistic regression for target: aid2551
+target:aid2551 fold:3 predicted: 114432 correct: 91846 wrong: 22586 pct correct: 0.802625139821
+Building data for target: aid2551, fold: 4
+Running logistic regression for target: aid2551
+target:aid2551 fold:4 predicted: 114452 correct: 91383 wrong: 23069 pct correct: 0.798439520498
+Results for aid2551:0.799896936538
+Building data for target: aid504845, fold: 0
+Running logistic regression for target: aid504845
+target:aid504845 fold:0 predicted: 154161 correct: 84661 wrong: 69500 pct correct: 0.549172618237
+Building data for target: aid504845, fold: 1
+Running logistic regression for target: aid504845
+target:aid504845 fold:1 predicted: 154161 correct: 80821 wrong: 73340 pct correct: 0.524263594554
+Building data for target: aid504845, fold: 2
+Running logistic regression for target: aid504845
+target:aid504845 fold:2 predicted: 154161 correct: 88546 wrong: 65615 pct correct: 0.574373544541
+Building data for target: aid504845, fold: 3
+Running logistic regression for target: aid504845
+target:aid504845 fold:3 predicted: 154161 correct: 100088 wrong: 54073 pct correct: 0.649243323538
+Building data for target: aid504845, fold: 4
+Running logistic regression for target: aid504845
+target:aid504845 fold:4 predicted: 154164 correct: 84696 wrong: 69468 pct correct: 0.549388962404
+Results for aid504845:0.569288408655
+Building data for target: aid504847, fold: 0
+Running logistic regression for target: aid504847
+target:aid504847 fold:0 predicted: 155918 correct: 120645 wrong: 35273 pct correct: 0.773772110981
+Building data for target: aid504847, fold: 1
+Running logistic regression for target: aid504847
+target:aid504847 fold:1 predicted: 155918 correct: 123665 wrong: 32253 pct correct: 0.793141266563
+Building data for target: aid504847, fold: 2
+Running logistic regression for target: aid504847
+target:aid504847 fold:2 predicted: 155918 correct: 123345 wrong: 32573 pct correct: 0.791088905707
+Building data for target: aid504847, fold: 3
+Running logistic regression for target: aid504847
+target:aid504847 fold:3 predicted: 155918 correct: 118345 wrong: 37573 pct correct: 0.759020767326
+Building data for target: aid504847, fold: 4
+Running logistic regression for target: aid504847
+target:aid504847 fold:4 predicted: 155657 correct: 119933 wrong: 35724 pct correct: 0.770495384082
+Results for aid504847:0.777503686932
+Building data for target: aid588579, fold: 0
+Running logistic regression for target: aid588579
+target:aid588579 fold:0 predicted: 157070 correct: 129914 wrong: 27156 pct correct: 0.827108932323
+Building data for target: aid588579, fold: 1
+Running logistic regression for target: aid588579
+target:aid588579 fold:1 predicted: 157070 correct: 129059 wrong: 28011 pct correct: 0.821665499459
+Building data for target: aid588579, fold: 2
+Running logistic regression for target: aid588579
+target:aid588579 fold:2 predicted: 157070 correct: 128382 wrong: 28688 pct correct: 0.817355319284
+Building data for target: aid588579, fold: 3
+Running logistic regression for target: aid588579
+target:aid588579 fold:3 predicted: 157070 correct: 127850 wrong: 29220 pct correct: 0.813968294391
+Building data for target: aid588579, fold: 4
+Running logistic regression for target: aid588579
+target:aid588579 fold:4 predicted: 157070 correct: 128578 wrong: 28492 pct correct: 0.818603170561
+Results for aid588579:0.819740243204
+Building data for target: aid485341, fold: 0
+Running logistic regression for target: aid485341
+target:aid485341 fold:0 predicted: 131340 correct: 88458 wrong: 42882 pct correct: 0.673503883052
+Building data for target: aid485341, fold: 1
+Running logistic regression for target: aid485341
+target:aid485341 fold:1 predicted: 131340 correct: 86490 wrong: 44850 pct correct: 0.658519872088
+Building data for target: aid485341, fold: 2
+Running logistic regression for target: aid485341
+target:aid485341 fold:2 predicted: 131340 correct: 88973 wrong: 42367 pct correct: 0.677425003807
+Building data for target: aid485341, fold: 3
+Running logistic regression for target: aid485341
+target:aid485341 fold:3 predicted: 131340 correct: 85588 wrong: 45752 pct correct: 0.651652200396
+Building data for target: aid485341, fold: 4
+Running logistic regression for target: aid485341
+target:aid485341 fold:4 predicted: 131406 correct: 87371 wrong: 44035 pct correct: 0.664893536064
+Results for aid485341:0.665198899081
+Building data for target: aid624246, fold: 0
+Running logistic regression for target: aid624246
+target:aid624246 fold:0 predicted: 146895 correct: 88021 wrong: 58874 pct correct: 0.599210320297
+Building data for target: aid624246, fold: 1
+Running logistic regression for target: aid624246
+target:aid624246 fold:1 predicted: 146895 correct: 91686 wrong: 55209 pct correct: 0.624160114367
+Building data for target: aid624246, fold: 2
+Running logistic regression for target: aid624246
+target:aid624246 fold:2 predicted: 146895 correct: 95343 wrong: 51552 pct correct: 0.649055447769
+Building data for target: aid624246, fold: 3
+Running logistic regression for target: aid624246
+target:aid624246 fold:3 predicted: 146895 correct: 80683 wrong: 66212 pct correct: 0.549256271486
+Building data for target: aid624246, fold: 4
+Running logistic regression for target: aid624246
+target:aid624246 fold:4 predicted: 146892 correct: 83821 wrong: 63071 pct correct: 0.570630122811
+Results for aid624246:0.598462455346
+Building data for target: aid504339, fold: 0
+Running logistic regression for target: aid504339
+target:aid504339 fold:0 predicted: 144323 correct: 108752 wrong: 35571 pct correct: 0.753532008065
+Building data for target: aid504339, fold: 1
+Running logistic regression for target: aid504339
+target:aid504339 fold:1 predicted: 144323 correct: 109487 wrong: 34836 pct correct: 0.758624751426
+Building data for target: aid504339, fold: 2
+Running logistic regression for target: aid504339
+target:aid504339 fold:2 predicted: 144323 correct: 108276 wrong: 36047 pct correct: 0.75023385046
+Building data for target: aid504339, fold: 3
+Running logistic regression for target: aid504339
+target:aid504339 fold:3 predicted: 144323 correct: 109362 wrong: 34961 pct correct: 0.757758638609
+Building data for target: aid504339, fold: 4
+Running logistic regression for target: aid504339
+target:aid504339 fold:4 predicted: 144409 correct: 109346 wrong: 35063 pct correct: 0.757196573621
+Results for aid504339:0.755469164436
+Building data for target: aid504332, fold: 0
+Running logistic regression for target: aid504332
+target:aid504332 fold:0 predicted: 124135 correct: 87421 wrong: 36714 pct correct: 0.704241350143
+Building data for target: aid504332, fold: 1
+Running logistic regression for target: aid504332
+target:aid504332 fold:1 predicted: 124135 correct: 87406 wrong: 36729 pct correct: 0.704120513957
+Building data for target: aid504332, fold: 2
+Running logistic regression for target: aid504332
+target:aid504332 fold:2 predicted: 124135 correct: 87250 wrong: 36885 pct correct: 0.702863817618
+Building data for target: aid504332, fold: 3
+Running logistic regression for target: aid504332
+target:aid504332 fold:3 predicted: 124135 correct: 87355 wrong: 36780 pct correct: 0.703709670923
+Building data for target: aid504332, fold: 4
+Running logistic regression for target: aid504332
+target:aid504332 fold:4 predicted: 124178 correct: 87406 wrong: 36772 pct correct: 0.703876693134
+Results for aid504332:0.703762409155
+Building data for target: aid504333, fold: 0
+Running logistic regression for target: aid504333
+target:aid504333 fold:0 predicted: 134046 correct: 101544 wrong: 32502 pct correct: 0.757530996822
+Building data for target: aid504333, fold: 1
+Running logistic regression for target: aid504333
+target:aid504333 fold:1 predicted: 134046 correct: 102512 wrong: 31534 pct correct: 0.76475239843
+Building data for target: aid504333, fold: 2
+Running logistic regression for target: aid504333
+target:aid504333 fold:2 predicted: 134046 correct: 101991 wrong: 32055 pct correct: 0.760865672978
+Building data for target: aid504333, fold: 3
+Running logistic regression for target: aid504333
+target:aid504333 fold:3 predicted: 134046 correct: 102691 wrong: 31355 pct correct: 0.766087760918
+Building data for target: aid504333, fold: 4
+Running logistic regression for target: aid504333
+target:aid504333 fold:4 predicted: 134113 correct: 101736 wrong: 32377 pct correct: 0.758584179013
+Results for aid504333:0.761564201632
+Building data for target: aid540317, fold: 0
+Running logistic regression for target: aid540317
+target:aid540317 fold:0 predicted: 152320 correct: 120292 wrong: 32028 pct correct: 0.789732142857
+Building data for target: aid540317, fold: 1
+Running logistic regression for target: aid540317
+target:aid540317 fold:1 predicted: 152320 correct: 121695 wrong: 30625 pct correct: 0.798943014706
+Building data for target: aid540317, fold: 2
+Running logistic regression for target: aid540317
+target:aid540317 fold:2 predicted: 152320 correct: 122149 wrong: 30171 pct correct: 0.801923581933
+Building data for target: aid540317, fold: 3
+Running logistic regression for target: aid540317
+target:aid540317 fold:3 predicted: 152320 correct: 120978 wrong: 31342 pct correct: 0.794235819328
+Building data for target: aid540317, fold: 4
+Running logistic regression for target: aid540317
+target:aid540317 fold:4 predicted: 152179 correct: 120533 wrong: 31646 pct correct: 0.792047522983
+Results for aid540317:0.795376416361
+Building data for target: aid1460, fold: 0
+Running logistic regression for target: aid1460
+target:aid1460 fold:0 predicted: 104334 correct: 87810 wrong: 16524 pct correct: 0.841624015182
+Building data for target: aid1460, fold: 1
+Running logistic regression for target: aid1460
+target:aid1460 fold:1 predicted: 104334 correct: 87553 wrong: 16781 pct correct: 0.839160772136
+Building data for target: aid1460, fold: 2
+Running logistic regression for target: aid1460
+target:aid1460 fold:2 predicted: 104334 correct: 86141 wrong: 18193 pct correct: 0.825627312286
+Building data for target: aid1460, fold: 3
+Running logistic regression for target: aid1460
+target:aid1460 fold:3 predicted: 104334 correct: 86069 wrong: 18265 pct correct: 0.824937220848
+Building data for target: aid1460, fold: 4
+Running logistic regression for target: aid1460
+target:aid1460 fold:4 predicted: 104335 correct: 86494 wrong: 17841 pct correct: 0.829002731586
+Results for aid1460:0.832070410407
+Building data for target: aid1461, fold: 0
+Running logistic regression for target: aid1461
+target:aid1461 fold:0 predicted: 87046 correct: 60097 wrong: 26949 pct correct: 0.69040507318
+Building data for target: aid1461, fold: 1
+Running logistic regression for target: aid1461
+target:aid1461 fold:1 predicted: 87046 correct: 61721 wrong: 25325 pct correct: 0.70906187533
+Building data for target: aid1461, fold: 2
+Running logistic regression for target: aid1461
+target:aid1461 fold:2 predicted: 87046 correct: 61473 wrong: 25573 pct correct: 0.706212807022
+Building data for target: aid1461, fold: 3
+Running logistic regression for target: aid1461
+target:aid1461 fold:3 predicted: 87046 correct: 63164 wrong: 23882 pct correct: 0.725639317143
+Building data for target: aid1461, fold: 4
+Running logistic regression for target: aid1461
+target:aid1461 fold:4 predicted: 87049 correct: 61805 wrong: 25244 pct correct: 0.710002412434
+Results for aid1461:0.708264297022
+Building data for target: aid927, fold: 0
+Running logistic regression for target: aid927
+target:aid927 fold:0 predicted: 23641 correct: 11794 wrong: 11847 pct correct: 0.498879066029
+Building data for target: aid927, fold: 1
+Running logistic regression for target: aid927
+target:aid927 fold:1 predicted: 23641 correct: 12775 wrong: 10866 pct correct: 0.540374772641
+Building data for target: aid927, fold: 2
+Running logistic regression for target: aid927
+target:aid927 fold:2 predicted: 23641 correct: 13762 wrong: 9879 pct correct: 0.582124275623
+Building data for target: aid927, fold: 3
+Running logistic regression for target: aid927
+target:aid927 fold:3 predicted: 23641 correct: 12774 wrong: 10867 pct correct: 0.540332473246
+Building data for target: aid927, fold: 4
+Running logistic regression for target: aid927
+target:aid927 fold:4 predicted: 23645 correct: 13763 wrong: 9882 pct correct: 0.582068090505
+Results for aid927:0.548755735609
+Building data for target: aid926, fold: 0
+Running logistic regression for target: aid926
+target:aid926 fold:0 predicted: 28618 correct: 15384 wrong: 13234 pct correct: 0.537563771053
+Building data for target: aid926, fold: 1
+Running logistic regression for target: aid926
+target:aid926 fold:1 predicted: 28618 correct: 18085 wrong: 10533 pct correct: 0.631944929764
+Building data for target: aid926, fold: 2
+Running logistic regression for target: aid926
+target:aid926 fold:2 predicted: 28618 correct: 16081 wrong: 12537 pct correct: 0.561919071913
+Building data for target: aid926, fold: 3
+Running logistic regression for target: aid926
+target:aid926 fold:3 predicted: 28618 correct: 15965 wrong: 12653 pct correct: 0.557865678943
+Building data for target: aid926, fold: 4
+Running logistic regression for target: aid926
+target:aid926 fold:4 predicted: 28618 correct: 16157 wrong: 12461 pct correct: 0.564574743169
+Results for aid926:0.570773638968
+Building data for target: aid925, fold: 0
+Running logistic regression for target: aid925
+target:aid925 fold:0 predicted: 25738 correct: 16532 wrong: 9206 pct correct: 0.642318750486
+Building data for target: aid925, fold: 1
+Running logistic regression for target: aid925
+target:aid925 fold:1 predicted: 25738 correct: 16530 wrong: 9208 pct correct: 0.64224104437
+Building data for target: aid925, fold: 2
+Running logistic regression for target: aid925
+target:aid925 fold:2 predicted: 25738 correct: 18373 wrong: 7365 pct correct: 0.713847229777
+Building data for target: aid925, fold: 3
+Running logistic regression for target: aid925
+target:aid925 fold:3 predicted: 25738 correct: 18369 wrong: 7369 pct correct: 0.713691817546
+Building data for target: aid925, fold: 4
+Running logistic regression for target: aid925
+target:aid925 fold:4 predicted: 25744 correct: 14035 wrong: 11709 pct correct: 0.545175574891
+Results for aid925:0.651454883414
+Building data for target: aid924, fold: 0
+Running logistic regression for target: aid924
+target:aid924 fold:0 predicted: 48970 correct: 36480 wrong: 12490 pct correct: 0.744945885236
+Building data for target: aid924, fold: 1
+Running logistic regression for target: aid924
+target:aid924 fold:1 predicted: 48970 correct: 36313 wrong: 12657 pct correct: 0.741535634062
+Building data for target: aid924, fold: 2
+Running logistic regression for target: aid924
+target:aid924 fold:2 predicted: 48970 correct: 36138 wrong: 12832 pct correct: 0.737962017562
+Building data for target: aid924, fold: 3
+Running logistic regression for target: aid924
+target:aid924 fold:3 predicted: 48970 correct: 37274 wrong: 11696 pct correct: 0.761159893813
+Building data for target: aid924, fold: 4
+Running logistic regression for target: aid924
+target:aid924 fold:4 predicted: 48937 correct: 37445 wrong: 11492 pct correct: 0.765167460204
+Results for aid924:0.750154178175
+Building data for target: aid1468, fold: 0
+Running logistic regression for target: aid1468
+target:aid1468 fold:0 predicted: 108101 correct: 83723 wrong: 24378 pct correct: 0.77448867263
+Building data for target: aid1468, fold: 1
+Running logistic regression for target: aid1468
+target:aid1468 fold:1 predicted: 108101 correct: 85624 wrong: 22477 pct correct: 0.792074078871
+Building data for target: aid1468, fold: 2
+Running logistic regression for target: aid1468
+target:aid1468 fold:2 predicted: 108101 correct: 84422 wrong: 23679 pct correct: 0.780954847781
+Building data for target: aid1468, fold: 3
+Running logistic regression for target: aid1468
+target:aid1468 fold:3 predicted: 108101 correct: 83282 wrong: 24819 pct correct: 0.770409154402
+Building data for target: aid1468, fold: 4
+Running logistic regression for target: aid1468
+target:aid1468 fold:4 predicted: 108048 correct: 84567 wrong: 23481 pct correct: 0.782679920036
+Results for aid1468:0.780121334744
+Building data for target: aid1469, fold: 0
+Running logistic regression for target: aid1469
+target:aid1469 fold:0 predicted: 110436 correct: 71311 wrong: 39125 pct correct: 0.645722409359
+Building data for target: aid1469, fold: 1
+Running logistic regression for target: aid1469
+target:aid1469 fold:1 predicted: 110436 correct: 77803 wrong: 32633 pct correct: 0.704507588105
+Building data for target: aid1469, fold: 2
+Running logistic regression for target: aid1469
+target:aid1469 fold:2 predicted: 110436 correct: 77797 wrong: 32639 pct correct: 0.704453257996
+Building data for target: aid1469, fold: 3
+Running logistic regression for target: aid1469
+target:aid1469 fold:3 predicted: 110436 correct: 72901 wrong: 37535 pct correct: 0.660119888442
+Building data for target: aid1469, fold: 4
+Running logistic regression for target: aid1469
+target:aid1469 fold:4 predicted: 110439 correct: 77814 wrong: 32625 pct correct: 0.704588053133
+Results for aid1469:0.683878239407
+Building data for target: aid883, fold: 0
+Running logistic regression for target: aid883
+target:aid883 fold:0 predicted: 3091 correct: 2270 wrong: 821 pct correct: 0.734390164995
+Building data for target: aid883, fold: 1
+Running logistic regression for target: aid883
+target:aid883 fold:1 predicted: 3091 correct: 2217 wrong: 874 pct correct: 0.717243610482
+Building data for target: aid883, fold: 2
+Running logistic regression for target: aid883
+target:aid883 fold:2 predicted: 3091 correct: 2342 wrong: 749 pct correct: 0.757683597541
+Building data for target: aid883, fold: 3
+Running logistic regression for target: aid883
+target:aid883 fold:3 predicted: 3091 correct: 2319 wrong: 772 pct correct: 0.750242639922
+Building data for target: aid883, fold: 4
+Running logistic regression for target: aid883
+target:aid883 fold:4 predicted: 3105 correct: 2316 wrong: 789 pct correct: 0.745893719807
+Results for aid883:0.74109074655
+Building data for target: aid884, fold: 0
+Running logistic regression for target: aid884
+target:aid884 fold:0 predicted: 3293 correct: 2609 wrong: 684 pct correct: 0.792286668691
+Building data for target: aid884, fold: 1
+Running logistic regression for target: aid884
+target:aid884 fold:1 predicted: 3293 correct: 2641 wrong: 652 pct correct: 0.802004251442
+Building data for target: aid884, fold: 2
+Running logistic regression for target: aid884
+target:aid884 fold:2 predicted: 3293 correct: 2602 wrong: 691 pct correct: 0.790160947464
+Building data for target: aid884, fold: 3
+Running logistic regression for target: aid884
+target:aid884 fold:3 predicted: 3293 correct: 2616 wrong: 677 pct correct: 0.794412389918
+Building data for target: aid884, fold: 4
+Running logistic regression for target: aid884
+target:aid884 fold:4 predicted: 3295 correct: 2627 wrong: 668 pct correct: 0.797268588771
+Results for aid884:0.795226569257
+Building data for target: aid885, fold: 0
+Running logistic regression for target: aid885
+target:aid885 fold:0 predicted: 5142 correct: 3749 wrong: 1393 pct correct: 0.729093737845
+Building data for target: aid885, fold: 1
+Running logistic regression for target: aid885
+target:aid885 fold:1 predicted: 5142 correct: 4052 wrong: 1090 pct correct: 0.788020225593
+Building data for target: aid885, fold: 2
+Running logistic regression for target: aid885
+target:aid885 fold:2 predicted: 5142 correct: 4209 wrong: 933 pct correct: 0.818553092182
+Building data for target: aid885, fold: 3
+Running logistic regression for target: aid885
+target:aid885 fold:3 predicted: 5142 correct: 4224 wrong: 918 pct correct: 0.821470245041
+Building data for target: aid885, fold: 4
+Running logistic regression for target: aid885
+target:aid885 fold:4 predicted: 5143 correct: 3822 wrong: 1321 pct correct: 0.743146023722
+Results for aid885:0.780056664877
+Building data for target: aid887, fold: 0
+Running logistic regression for target: aid887
+target:aid887 fold:0 predicted: 28843 correct: 19155 wrong: 9688 pct correct: 0.664112609645
+Building data for target: aid887, fold: 1
+Running logistic regression for target: aid887
+target:aid887 fold:1 predicted: 28843 correct: 20402 wrong: 8441 pct correct: 0.707346669903
+Building data for target: aid887, fold: 2
+Running logistic regression for target: aid887
+target:aid887 fold:2 predicted: 28843 correct: 20082 wrong: 8761 pct correct: 0.696252123566
+Building data for target: aid887, fold: 3
+Running logistic regression for target: aid887
+target:aid887 fold:3 predicted: 28843 correct: 19461 wrong: 9382 pct correct: 0.67472176958
+Building data for target: aid887, fold: 4
+Running logistic regression for target: aid887
+target:aid887 fold:4 predicted: 28781 correct: 20300 wrong: 8481 pct correct: 0.705326430631
+Results for aid887:0.689551920665
+Building data for target: aid1631, fold: 0
+Running logistic regression for target: aid1631
+target:aid1631 fold:0 predicted: 105065 correct: 78504 wrong: 26561 pct correct: 0.747194593823
+Building data for target: aid1631, fold: 1
+Running logistic regression for target: aid1631
+target:aid1631 fold:1 predicted: 105065 correct: 76588 wrong: 28477 pct correct: 0.728958263932
+Building data for target: aid1631, fold: 2
+Running logistic regression for target: aid1631
+target:aid1631 fold:2 predicted: 105065 correct: 78591 wrong: 26474 pct correct: 0.748022652644
+Building data for target: aid1631, fold: 3
+Running logistic regression for target: aid1631
+target:aid1631 fold:3 predicted: 105065 correct: 77816 wrong: 27249 pct correct: 0.740646266597
+Building data for target: aid1631, fold: 4
+Running logistic regression for target: aid1631
+target:aid1631 fold:4 predicted: 104936 correct: 78822 wrong: 26114 pct correct: 0.751143554166
+Results for aid1631:0.743193066232
+Building data for target: aid2147, fold: 0
+Running logistic regression for target: aid2147
+target:aid2147 fold:0 predicted: 89105 correct: 65396 wrong: 23709 pct correct: 0.733920655407
+Building data for target: aid2147, fold: 1
+Running logistic regression for target: aid2147
+target:aid2147 fold:1 predicted: 89105 correct: 63954 wrong: 25151 pct correct: 0.717737500701
+Building data for target: aid2147, fold: 2
+Running logistic regression for target: aid2147
+target:aid2147 fold:2 predicted: 89105 correct: 67601 wrong: 21504 pct correct: 0.758666741485
+Building data for target: aid2147, fold: 3
+Running logistic regression for target: aid2147
+target:aid2147 fold:3 predicted: 89105 correct: 66903 wrong: 22202 pct correct: 0.750833286572
+Building data for target: aid2147, fold: 4
+Running logistic regression for target: aid2147
+target:aid2147 fold:4 predicted: 89299 correct: 66053 wrong: 23246 pct correct: 0.73968353509
+Results for aid2147:0.740168343851
+Building data for target: aid1634, fold: 0
+Running logistic regression for target: aid1634
+target:aid1634 fold:0 predicted: 105382 correct: 68341 wrong: 37041 pct correct: 0.648507335219
+Building data for target: aid1634, fold: 1
+Running logistic regression for target: aid1634
+target:aid1634 fold:1 predicted: 105382 correct: 71830 wrong: 33552 pct correct: 0.68161545615
+Building data for target: aid1634, fold: 2
+Running logistic regression for target: aid1634
+target:aid1634 fold:2 predicted: 105382 correct: 75351 wrong: 30031 pct correct: 0.715027234253
+Building data for target: aid1634, fold: 3
+Running logistic regression for target: aid1634
+target:aid1634 fold:3 predicted: 105382 correct: 66564 wrong: 38818 pct correct: 0.631644872938
+Building data for target: aid1634, fold: 4
+Running logistic regression for target: aid1634
+target:aid1634 fold:4 predicted: 105406 correct: 78880 wrong: 26526 pct correct: 0.748344496518
+Results for aid1634:0.685027879016
+Building data for target: aid720711, fold: 0
+Running logistic regression for target: aid720711
+target:aid720711 fold:0 predicted: 145710 correct: 102279 wrong: 43431 pct correct: 0.70193535104
+Building data for target: aid720711, fold: 1
+Running logistic regression for target: aid720711
+target:aid720711 fold:1 predicted: 145710 correct: 108464 wrong: 37246 pct correct: 0.744382677922
+Building data for target: aid720711, fold: 2
+Running logistic regression for target: aid720711
+target:aid720711 fold:2 predicted: 145710 correct: 96062 wrong: 49648 pct correct: 0.659268409855
+Building data for target: aid720711, fold: 3
+Running logistic regression for target: aid720711
+target:aid720711 fold:3 predicted: 145710 correct: 101040 wrong: 44670 pct correct: 0.693432159769
+Building data for target: aid720711, fold: 4
+Running logistic regression for target: aid720711
+target:aid720711 fold:4 predicted: 145712 correct: 93567 wrong: 52145 pct correct: 0.642136543318
+Results for aid720711:0.688231028381
+Building data for target: aid485294, fold: 0
+Running logistic regression for target: aid485294
+target:aid485294 fold:0 predicted: 144795 correct: 102189 wrong: 42606 pct correct: 0.705749507925
+Building data for target: aid485294, fold: 1
+Running logistic regression for target: aid485294
+target:aid485294 fold:1 predicted: 144795 correct: 97136 wrong: 47659 pct correct: 0.670851894057
+Building data for target: aid485294, fold: 2
+Running logistic regression for target: aid485294
+target:aid485294 fold:2 predicted: 144795 correct: 97185 wrong: 47610 pct correct: 0.671190303533
+Building data for target: aid485294, fold: 3
+Running logistic regression for target: aid485294
+target:aid485294 fold:3 predicted: 144795 correct: 104678 wrong: 40117 pct correct: 0.722939328015
+Building data for target: aid485294, fold: 4
+Running logistic regression for target: aid485294
+target:aid485294 fold:4 predicted: 144798 correct: 94871 wrong: 49927 pct correct: 0.65519551375
+Results for aid485294:0.685185309456
+Building data for target: aid485297, fold: 0
+Running logistic regression for target: aid485297
+target:aid485297 fold:0 predicted: 124346 correct: 101023 wrong: 23323 pct correct: 0.812434658131
+Building data for target: aid485297, fold: 1
+Running logistic regression for target: aid485297
+target:aid485297 fold:1 predicted: 124346 correct: 101723 wrong: 22623 pct correct: 0.818064111431
+Building data for target: aid485297, fold: 2
+Running logistic regression for target: aid485297
+target:aid485297 fold:2 predicted: 124346 correct: 101100 wrong: 23246 pct correct: 0.813053897994
+Building data for target: aid485297, fold: 3
+Running logistic regression for target: aid485297
+target:aid485297 fold:3 predicted: 124346 correct: 101068 wrong: 23278 pct correct: 0.812796551558
+Building data for target: aid485297, fold: 4
+Running logistic regression for target: aid485297
+target:aid485297 fold:4 predicted: 124450 correct: 101710 wrong: 22740 pct correct: 0.817276014464
+Results for aid485297:0.814725046716
+Building data for target: aid1030, fold: 0
+Running logistic regression for target: aid1030
+target:aid1030 fold:0 predicted: 78423 correct: 52802 wrong: 25621 pct
