@@ -95,6 +95,7 @@ def oversample(data):
     total_actives = len(actives)
     ratio = total_inactives / total_actives
 
+    ratio = ratio
     # oversample_total = ratio * total_actives
 
     oversamples = []
@@ -149,7 +150,7 @@ def get_folds(data_type, fold_path, target, fnames):
 def logistic_regression(target, X, Y, X_test, Y_test, fold_id):
 
     print 'Running logistic regression for target: ' + target
-    logreg = linear_model.LogisticRegression()
+    logreg = linear_model.LogisticRegression(class_weight = 'auto')
     logreg.fit(X, Y)
 
     Z = logreg.predict(X_test)
@@ -263,36 +264,33 @@ def run_predictions(data_type):
     print '############################################################'
 
 
-def tox21():
-    run_predictions('Tox21')
-
-
-
-def dud_e():
-    run_predictions('DUD-E')
-
-
-
-def muv():
-    run_predictions('MUV')
-
-
-
-def pcba():
-    run_predictions('PCBA')
-
-
 
 def main(args):
+    if(len(args) < 2):
+        print 'usage: tox21, dud_e, muv, or pcba'
+        return
+
+
     print "Running Scikit Learn Logistic Regression Classifier........."
-    tox21()
-    # dud_e()
-    muv()
-    pcba()
+    dataset = args[1]
+
+    if(dataset == 'tox21'):
+        run_predictions('Tox21')
+
+    elif(dataset == 'dud_e'):
+        run_predictions('DUD-E')
+
+    elif(dataset == 'muv'):
+        run_predictions('MUV')
+
+    elif(dataset == 'pcba'):
+        run_predictions('PCBA')
+    else:
+        print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main(sys.argv)
 
 
