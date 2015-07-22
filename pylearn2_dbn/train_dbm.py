@@ -33,11 +33,11 @@ def train_dbm():
 
     skip.skip_if_no_data()
 
-    yaml_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__),
-                                                  ''))
-    save_path = os.path.dirname(os.path.realpath(__file__))
+    curr_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ''))
 
-    train(yaml_file_path, save_path)
+    save_path = os.path.dirname(os.path.realpath(__file__)) + '/results'
+
+    train(curr_file_path, save_path)
 
 if __name__ == '__main__':
     train_dbm()

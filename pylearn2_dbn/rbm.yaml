@@ -28,6 +28,11 @@
         # a Gaussian distributed vector, etc.)
         visible_layer: !obj:pylearn2.models.dbm.BinaryVector {
             nvis: 784,
+            # @todo: update to fit our model:
+            # nvis: 1024, visible units
+            # nhid: 2000, hidden units
+            # "activation_fn": !import 'pylearn2.expr.activations.relu',
+            # 
             # We can initialize the biases of the visible units
             # so that sigmoid(b_i) = E[v_i] where the expectation
             # is taken over the dataset. This should get the biases
