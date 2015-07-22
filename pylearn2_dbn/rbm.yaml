@@ -47,7 +47,7 @@
                 # Every layer in the DBM must have a layer_name field.
                 # These are used to generate unique names of monitoring
                 # channels associated with the different layers.
-                layer_name: 'h',
+                layer_name: 'h1',
                 # The detector layer is the portion of this layer that
                 # precedes the pooling. We control its size with this
                 # argument. Here we request 500 hidden units.
@@ -73,6 +73,7 @@
                # Compute new model parameters using SGD + Momentum
                learning_rule: !obj:pylearn2.training_algorithms.learning_rule.Momentum {
                    init_momentum: 0.5,
+                   nesterov_momentum: True
                },
                # These arguments say to compute the monitoring channels on 10 batches
                # of the training set.
