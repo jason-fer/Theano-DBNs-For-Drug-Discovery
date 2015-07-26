@@ -56,14 +56,19 @@ def logistic_regression(target, X, Y, X_test, Y_test, fold_id):
 
 
 
-def run_predictions(data_type):
+def run_predictions(data_type, curr_target):
 
     fold_path = get_fold_path(data_type)
     targets = build_targets(fold_path, data_type)
-    print "Found " + str(len(targets)) + " targets for " + data_type
+    # print "Found " + str(len(targets)) + " targets for " + data_type
 
     fold_accuracies = {}
+    did_something = False
     for target, fnames in targets.iteritems():
+        if (target != curr_target):
+            continue
+        else:
+            did_something = True
 
         # retrieve our stratified folds
         folds = get_folds(data_type, fold_path, target, fnames)
@@ -129,6 +134,11 @@ def run_predictions(data_type):
             # update fold accuracies
             fold_accuracies[target] = (accuracy, all_auc)
 
+
+    if(did_something == False):
+        print curr_target + ' not found in ' + data_type + '!'
+        exit(0)
+        
     print '####################  Results for ' + data_type + ' ####################'
     # output results
     accuracies = 0.00
@@ -142,32 +152,33 @@ def run_predictions(data_type):
         aucs += auc
         num_targets += 1
 
-    overall_acc = accuracies / num_targets
-    overall_auc = aucs / num_targets
-    print ' overall accuracy: ' + str(overall_acc) + ', overall auc: ' + str(overall_auc)
+    # overall_acc = accuracies / num_targets
+    # overall_auc = aucs / num_targets
+    # print ' overall accuracy: ' + str(overall_acc) + ', overall auc: ' + str(overall_auc)
     print '############################################################'
 
 
 def main(args):
-    if(len(args) < 2):
-        print 'usage: tox21, dud_e, muv, or pcba'
+    if(len(args) < 3 or len(args[2]) < 2):
+        print 'usage: <tox21, dud_e, muv, or pcba> <target> '
         return
 
 
-    print "Running Scikit Learn Logistic Regression Classifier........."
     dataset = args[1]
+    print "Running Scikit Learn Logistic Regression Classifier for " \
+        + dataset + "........."
 
     if(dataset == 'tox21'):
-        run_predictions('Tox21')
+        run_predictions('Tox21', args[2])
 
     elif(dataset == 'dud_e'):
-        run_predictions('DUD-E')
+        run_predictions('DUD-E', args[2])
 
     elif(dataset == 'muv'):
-        run_predictions('MUV')
+        run_predictions('MUV', args[2])
 
     elif(dataset == 'pcba'):
-        run_predictions('PCBA')
+        run_predictions('PCBA', args[2])
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
