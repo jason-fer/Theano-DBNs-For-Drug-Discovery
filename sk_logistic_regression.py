@@ -2,6 +2,7 @@ import generate_folds, os, sys, random
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import linear_model
+from sklearn import metrics
 from lib import helpers
 
 
@@ -19,6 +20,7 @@ def logistic_regression(target, X, Y, X_test, Y_test, fold_id):
     logreg = linear_model.LogisticRegression(class_weight = 'auto')
     logreg.fit(X, Y)
 
+    # Z is our prediction
     Z = logreg.predict(X_test)
 
     """ Debug """
@@ -36,14 +38,21 @@ def logistic_regression(target, X, Y, X_test, Y_test, fold_id):
             num_false += 1
 
     total = len(Z)
-
     percent_correct = num_correct / float(total)
 
-    print 'target:' + target + ' fold:' + str(fold_id) + ' predicted: ' + \
-        str(total) + ' correct: ' + str(num_correct) + ' wrong: ' + \
-        str(num_false) + ' pct correct: ' + str(percent_correct)
 
-    return percent_correct
+    # get the probability of our predictions
+    prob_preds = logreg.predict_proba(X_test)[:, 1]
+    # use that to determine the ROC curve
+    fpr, tpr, thresholds = metrics.roc_curve(Y_test, prob_preds)
+    auc = metrics.auc(fpr, tpr)
+
+
+    print 'target:' + target + ' fold:' + str(fold_id) + ' predicted: ' + \
+        str(total) + ' wrong: ' + \
+        str(num_false) + ' pct correct: ' + str(percent_correct) + ', auc: ' + str(auc)
+
+    return percent_correct, auc
 
 
 
@@ -64,6 +73,7 @@ def run_predictions(data_type):
             random.shuffle(folds[i])
 
         pct_ct = []
+        roc_auc = []
         # run 4 folds vs 1 fold with each possible scenario
         for curr_fl in range(len(folds)):
 
@@ -108,27 +118,34 @@ def run_predictions(data_type):
             X_test = np.array(X_test)
             Y_test = np.array(Y_test)
 
-            pct_ct.append(logistic_regression(target, X, Y, X_test, Y_test, curr_fl))
+            percent_correct, auc = logistic_regression(target, X, Y, X_test, Y_test, curr_fl)
+            pct_ct.append(percent_correct)
+            roc_auc.append(auc)
 
-        # now get the average fold results for this target
-        accuracy = sum(pct_ct) / float(len(pct_ct))
-        print 'Results for '+ target + ':' + str(accuracy)
-        # update fold accuracies
-        fold_accuracies[target] = accuracy
+            # now get the average fold results for this target
+            accuracy = sum(pct_ct) / float(len(pct_ct))
+            all_auc =  sum(roc_auc) / float(len(roc_auc))
+            print 'Results for '+ target + ': accuracy: ' + str(accuracy) + ', auc: ' + str(all_auc)
+            # update fold accuracies
+            fold_accuracies[target] = (accuracy, all_auc)
 
     print '####################  Results for ' + data_type + ' ####################'
     # output results
     accuracies = 0.00
+    aucs = 0.00
     num_targets = 0.00
-    for target, acc in fold_accuracies.iteritems():
-        print target + ' accuracy: ' + str(acc)
+    for target, obj in fold_accuracies.iteritems():
+        acc = obj[0]
+        auc = obj[1]
+        print target + ' accuracy: ' + str(acc) + ', auc:' + str(auc)
         accuracies += acc
+        aucs += auc
         num_targets += 1
 
     overall_acc = accuracies / num_targets
-    print ' overall accuracy: ' + str(overall_acc)
+    overall_auc = aucs / num_targets
+    print ' overall accuracy: ' + str(overall_acc) + ', overall auc: ' + str(overall_auc)
     print '############################################################'
-
 
 
 def main(args):
