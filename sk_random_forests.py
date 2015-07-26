@@ -1,10 +1,10 @@
 import generate_folds, os, sys, random
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.ensemble import RandomForestClassifier
-
-
+from sklearn import linear_model
+from sklearn import metrics
 from lib import helpers
+from sklearn.ensemble import RandomForestClassifier
 
 get_fold_path = helpers.get_fold_path
 get_target = helpers.get_target
@@ -20,6 +20,7 @@ def random_forest(target, X, Y, X_test, Y_test, fold_id):
     clf = RandomForestClassifier(n_estimators=100, max_features=500)
     clf.fit(X, Y)
 
+    # Z is our prediction
     Z = clf.predict(X_test)
 
     """ Debug """
@@ -37,34 +38,43 @@ def random_forest(target, X, Y, X_test, Y_test, fold_id):
             num_false += 1
 
     total = len(Z)
-
     percent_correct = num_correct / float(total)
 
+
+    # get the probability of our predictions
+    prob_preds = clf.predict_proba(X_test)[:, 1]
+    # use that to determine the ROC curve
+    fpr, tpr, thresholds = metrics.roc_curve(Y_test, prob_preds)
+    auc = metrics.auc(fpr, tpr)
+
+
     print 'target:' + target + ' fold:' + str(fold_id) + ' predicted: ' + \
-        str(total) + ' correct: ' + str(num_correct) + ' wrong: ' + \
-        str(num_false) + ' pct correct: ' + str(percent_correct)
+        str(total) + ' wrong: ' + \
+        str(num_false) + ' pct correct: ' + str(percent_correct) + ', auc: ' + str(auc)
 
-    return percent_correct
+    return percent_correct, auc
 
 
 
-def run_predictions(data_type):
+def run_predictions(data_type, curr_target):
 
     fold_path = get_fold_path(data_type)
     targets = build_targets(fold_path, data_type)
-    print "Found " + str(len(targets)) + " targets for " + data_type
+    # print "Found " + str(len(targets)) + " targets for " + data_type
 
     fold_accuracies = {}
+    did_something = False
     for target, fnames in targets.iteritems():
+        if (target != curr_target):
+            continue
+        else:
+            did_something = True
 
         # retrieve our stratified folds
         folds = get_folds(data_type, fold_path, target, fnames)
 
-        # shuffle the folds once upfront
-        for i in range(len(folds)):
-            random.shuffle(folds[i])
-
         pct_ct = []
+        roc_auc = []
         # run 4 folds vs 1 fold with each possible scenario
         for curr_fl in range(len(folds)):
 
@@ -109,49 +119,62 @@ def run_predictions(data_type):
             X_test = np.array(X_test)
             Y_test = np.array(Y_test)
 
-            pct_ct.append(random_forest(target, X, Y, X_test, Y_test, curr_fl))
+            percent_correct, auc = random_forest(target, X, Y, X_test, Y_test, curr_fl)
+            pct_ct.append(percent_correct)
+            roc_auc.append(auc)
 
-        # now get the average fold results for this target
-        accuracy = sum(pct_ct) / float(len(pct_ct))
-        print 'Results for '+ target + ':' + str(accuracy)
-        # update fold accuracies
-        fold_accuracies[target] = accuracy
+            # now get the average fold results for this target
+            accuracy = sum(pct_ct) / float(len(pct_ct))
+            all_auc =  sum(roc_auc) / float(len(roc_auc))
+            print 'Results for '+ target + ': accuracy: ' + str(accuracy) + ', auc: ' + str(all_auc)
+            # update fold accuracies
+            fold_accuracies[target] = (accuracy, all_auc)
 
+
+    if(did_something == False):
+        print curr_target + ' not found in ' + data_type + '!'
+        exit(0)
+        
     print '####################  Results for ' + data_type + ' ####################'
     # output results
     accuracies = 0.00
+    aucs = 0.00
     num_targets = 0.00
-    for target, acc in fold_accuracies.iteritems():
-        print target + ' accuracy: ' + str(acc)
+    for target, obj in fold_accuracies.iteritems():
+        acc = obj[0]
+        auc = obj[1]
+        print target + ' accuracy: ' + str(acc) + ', auc:' + str(auc)
         accuracies += acc
+        aucs += auc
         num_targets += 1
 
-    overall_acc = accuracies / num_targets
-    print ' overall accuracy: ' + str(overall_acc)
+    # overall_acc = accuracies / num_targets
+    # overall_auc = aucs / num_targets
+    # print ' overall accuracy: ' + str(overall_acc) + ', overall auc: ' + str(overall_auc)
     print '############################################################'
 
 
-
 def main(args):
-    if(len(args) < 2):
-        print 'usage: tox21, dud_e, muv, or pcba'
+    if(len(args) < 3 or len(args[2]) < 2):
+        print 'usage: <tox21, dud_e, muv, or pcba> <target> '
         return
 
 
-    print "Running Scikit Learn Random Forest Classifier........."
     dataset = args[1]
+    print "Running Scikit Learn Random Forest Classifier for " \
+        + dataset + "........."
 
     if(dataset == 'tox21'):
-        run_predictions('Tox21')
+        run_predictions('Tox21', args[2])
 
     elif(dataset == 'dud_e'):
-        run_predictions('DUD-E')
+        run_predictions('DUD-E', args[2])
 
     elif(dataset == 'muv'):
-        run_predictions('MUV')
+        run_predictions('MUV', args[2])
 
     elif(dataset == 'pcba'):
-        run_predictions('PCBA')
+        run_predictions('PCBA', args[2])
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
