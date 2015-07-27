@@ -210,9 +210,8 @@ class DBN(object):
         '''
 
         (train_set_x, train_set_y) = datasets[0]
-        # @todo: validiation shouldn't be done with the training set
-        (valid_set_x, valid_set_y) = datasets[0]
-        (test_set_x, test_set_y) = datasets[1]
+        (valid_set_x, valid_set_y) = datasets[1]
+        (test_set_x, test_set_y) = datasets[2]
 
         # compute number of minibatches for training, validation and testing
         n_valid_batches = valid_set_x.get_value(borrow=True).shape[0]
@@ -329,12 +328,11 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     # for curr_fl in range(5):
     #     print 'Building data for target: ' + target + ', fold: ' + str(curr_fl)
 
-    datasets, test_set_labels = helpers.th_load_data(data_type, fold_path, target, fnames, train_fold, test_fold)
+    datasets, test_set_labels = helpers.th_load_data2(data_type, fold_path, target, fnames, train_fold, test_fold)
 
     train_set_x, train_set_y = datasets[0]
-    # @todo: validiation shouldn't be done with the training set
-    valid_set_x, valid_set_y = datasets[0]
-    test_set_x, test_set_y = datasets[1]
+    valid_set_x, valid_set_y = datasets[1]
+    test_set_x, test_set_y = datasets[2]
 
     # compute number of minibatches for training, validation and testing
     n_train_batches = train_set_x.get_value(borrow=True).shape[0] / batch_size
@@ -343,7 +341,7 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     numpy_rng = numpy.random.RandomState(123)
     print '... building the model'
     # construct the Deep Belief Network
-    dbn = DBN(numpy_rng=numpy_rng, n_ins=32 * 32,
+    dbn = DBN(numpy_rng=numpy_rng, n_ins=1024 * 1,
               hidden_layers_sizes=[2000, 100],
               n_outs=10)
 
@@ -480,7 +478,7 @@ def run_predictions(data_type, target, pretraining_epochs, training_epochs):
 def main(args):
     
     # !!! Important !!! This has a major impact on the results.
-    pretraining_epochs = 10 #default 100
+    pretraining_epochs = 1 #default 100
     training_epochs = 100 #default 1000
 
     if(len(args) < 3 or len(args[2]) < 1):
@@ -500,7 +498,7 @@ def main(args):
         target = target_list[int(target)]
 
 
-    print "Running Scikit Learn Deep Belief Net for " \
+    print "Running Theano Learn Deep Belief Net for " \
         + dataset + ", target: "+target+"........." 
 
 

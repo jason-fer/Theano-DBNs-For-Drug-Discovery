@@ -262,6 +262,63 @@ def th_load_data(data_type, fold_path, target, fnames, fold_train, fold_test):
     return datasets, test_y
 
 
+# almost the same as the function above, this is just to get a validation fold
+def th_load_data2(data_type, fold_path, target, fnames, fold_train, fold_test):
+    """ Get just 1 test & 1 valid fold to avoid overloading memory """
+    """The load_files_for_task module takes the input files for a single task"""
+    """The module loads the data from these files into two dictionaries - foldsActive and foldsInactive"""
+    """Each dictionary contains five lists: 0 to 4 corresponding to a fold."""
+
+    fold_test = 4
+    fold_valid = 3
+
+    #fnames contains all files for this target
+    train_folds = []
+    valid_folds = []
+    test_folds = []
+    for fname in fnames:
+        row = []
+        with open(fold_path + '/' + fname) as f:
+            lines = f.readlines()
+            for line in lines:
+                # put each row in it's respective fold
+                curr_fold, row = parse_line(line, data_type)
+                curr_fold = int(curr_fold)
+
+                if(curr_fold == fold_test):
+                    test_folds.append(row)
+                elif(curr_fold == fold_valid):
+                    valid_folds.append(row)
+                else:
+                    train_folds.append(row)
+    
+    # oversample the folds to balance actives / inactives
+    train_folds = oversample(train_folds)
+    valid_folds = oversample(valid_folds)
+    test_folds = oversample(test_folds)
+
+    # shuffle the folds once upfront
+    random.shuffle(train_folds)
+    random.shuffle(valid_folds)
+    random.shuffle(test_folds)
+
+    train_x, train_y = build_data_set(train_folds)
+    valid_x, valid_y = build_data_set(valid_folds)
+    test_x, test_y = build_data_set(test_folds)
+
+    # turn into shared datasets
+    train_set = (train_x, train_y)
+    valid_set = (valid_x, valid_y)
+    test_set = (test_x, test_y)
+
+    train_set_x, train_set_y = shared_dataset(train_set)
+    valid_set_x, valid_set_y = shared_dataset(valid_set)
+    test_set_x, test_set_y = shared_dataset(test_set)
+    
+    datasets = [(train_set_x, train_set_y), (valid_set_x, valid_set_y), (test_set_x, test_set_y)]
+
+    return datasets, test_y
+
 def get_target_list(data_type):
     """Allows a numeric target to be chosen (instead of strings only)"""
     """Of course the number must be in range... the ranges are as follows:"""
