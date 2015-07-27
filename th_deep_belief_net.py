@@ -308,17 +308,12 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     assert(len(data_type)> 0)
     assert(len(target)> 0)
 
-    # @todo: loop through train / test folds (convert this to a 5-fold loop)
-    train_fold = 0 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
-    test_fold = 1 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
-
     fold_path = helpers.get_fold_path(data_type)
     targets = helpers.build_targets(fold_path, data_type)
     fnames = targets[target]
 
     fold_accuracies = {}
     did_something = False
-
 
     avg_acc = [] # what is our average accuracy %?
     avg_auc = [] # what is our average AUC (based on ROC)?
@@ -328,7 +323,11 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     # for curr_fl in range(5):
     #     print 'Building data for target: ' + target + ', fold: ' + str(curr_fl)
 
-    datasets, test_set_labels = helpers.th_load_data2(data_type, fold_path, target, fnames, train_fold, test_fold)
+
+    # @todo: loop through train / test folds (convert this to a 5-fold loop)
+    test_fold = 0 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
+    valid_fold = 1 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
+    datasets, test_set_labels = helpers.th_load_data2(data_type, fold_path, target, fnames, test_fold, valid_fold)
 
     train_set_x, train_set_y = datasets[0]
     valid_set_x, valid_set_y = datasets[1]
@@ -343,7 +342,7 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     # construct the Deep Belief Network
     dbn = DBN(numpy_rng=numpy_rng, n_ins=1024 * 1,
               hidden_layers_sizes=[2000, 100],
-              n_outs=10)
+              n_outs=10) #@todo n_outs should be 1, but if i change it from 10, it blows up!
 
     # start-snippet-2
     #########################
@@ -388,8 +387,8 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     print '... finetuning the model'
     # early-stopping parameters
     # patience = 4 * n_train_batches  # look as this many examples regardless
-    patience = 10000 # look as this many examples regardless
-    patience_increase = 2.    # wait this much longer when a new best is
+    patience = 5000 # look as this many examples regardless
+    patience_increase = 2.0   # wait this much longer when a new best is
                               # found
     improvement_threshold = 0.995  # a relative improvement of this much is
                                    # considered significant
@@ -468,18 +467,21 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
 
 
-def run_predictions(data_type, target, pretraining_epochs, training_epochs):
+def run_predictions(data_type, target, p_epochs, t_epochs, f_lr, p_lr):
 
-    run_DBN(pretraining_epochs=pretraining_epochs, training_epochs=training_epochs, 
-        data_type=data_type, target=target)
+    run_DBN(pretraining_epochs=p_epochs, training_epochs=t_epochs, 
+        data_type=data_type, target=target, finetune_lr=f_lr, 
+        pretrain_lr=p_lr)
 
 
 
 def main(args):
     
     # !!! Important !!! This has a major impact on the results.
-    pretraining_epochs = 1 #default 100
-    training_epochs = 100 #default 1000
+    p_epochs = 100 #default 100 pretraining_epochs
+    t_epochs = 1000 #default 1000 training_epochs
+    f_lr = 0.1 #default 1000 training_epochs
+    p_lr = 0.05 #default 1000 training_epochs
 
     if(len(args) < 3 or len(args[2]) < 1):
         print 'usage: <tox21, dud_e, muv, or pcba> <target> '
@@ -503,16 +505,16 @@ def main(args):
 
 
     if(dataset == 'tox21'):
-        run_predictions('Tox21', target, pretraining_epochs, training_epochs)
+        run_predictions('Tox21', target, p_epochs, t_epochs, f_lr, p_lr)
 
     elif(dataset == 'dud_e'):
-        run_predictions('DUD-E', target, pretraining_epochs, training_epochs)
+        run_predictions('DUD-E', target, p_epochs, t_epochs, f_lr, p_lr)
 
     elif(dataset == 'muv'):
-        run_predictions('MUV', target, pretraining_epochs, training_epochs)
+        run_predictions('MUV', target, p_epochs, t_epochs, f_lr, p_lr)
 
     elif(dataset == 'pcba'):
-        run_predictions('PCBA', target, pretraining_epochs, training_epochs)
+        run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr)
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 

@@ -326,78 +326,79 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
 
 
 
-def run_predictions(data_type, curr_target):
+# def run_predictions(data_type, curr_target):
 
-    fold_path = get_fold_path(data_type)
-    targets = build_targets(fold_path, data_type)
-    # print "Found " + str(len(targets)) + " targets for " + data_type
+#     fold_path = get_fold_path(data_type)
+#     targets = build_targets(fold_path, data_type)
+#     # print "Found " + str(len(targets)) + " targets for " + data_type
 
-    fold_accuracies = {}
-    did_something = False
-    for target, fnames in targets.iteritems():
-        if (target != curr_target):
-            continue
-        else:
-            did_something = True
+#     fold_accuracies = {}
+#     did_something = False
+#     for target, fnames in targets.iteritems():
+#         if (target != curr_target):
+#             continue
+#         else:
+#             did_something = True
 
-        # retrieve our stratified folds
-        folds = get_folds(data_type, fold_path, target, fnames)
+#         # retrieve our stratified folds
+#         folds = get_folds(data_type, fold_path, target, fnames)
 
-        pct_ct = []
-        roc_auc = []
-        # run 4 folds vs 1 fold with each possible scenario
-        for curr_fl in range(5):
-            print 'Building data for target: ' + target + ', fold: ' + str(curr_fl)
+#         pct_ct = []
+#         roc_auc = []
+#         # run 4 folds vs 1 fold with each possible scenario
+#         for curr_fl in range(5):
+#             print 'Building data for target: ' + target + ', fold: ' + str(curr_fl)
 
-            # folds 1-4
-            temp_data = []
-            for i in range(len(folds)):
-                if(i == curr_fl):
-                    # don't include the test fold
-                    continue
-                else:
-                    temp_data += folds[i]
+#             # folds 1-4
+#             temp_data = []
+#             for i in range(len(folds)):
+#                 if(i == curr_fl):
+#                     # don't include the test fold
+#                     continue
+#                 else:
+#                     temp_data += folds[i]
 
-            # vs current 5th test fold
-            test_data = folds[curr_fl]
+#             # vs current 5th test fold
+#             test_data = folds[curr_fl]
             
-            """ Turning 1024 bits into features is a slow process """
-            # build training data
-            X = []
-            Y = []
-            for i in range(len(temp_data)):
-                row = []
-                for bit in temp_data[i][0]:
-                    row.append(int(bit))
-                X.append(row)
-                Y.append(int(temp_data[i][1]))
+#             """ Turning 1024 bits into features is a slow process """
+#             # build training data
+#             X = []
+#             Y = []
+#             for i in range(len(temp_data)):
+#                 row = []
+#                 for bit in temp_data[i][0]:
+#                     row.append(int(bit))
+#                 X.append(row)
+#                 Y.append(int(temp_data[i][1]))
 
-            X = np.array(X)
-            Y = np.array(Y)
+#             X = np.array(X)
+#             Y = np.array(Y)
 
-            # build test data
-            X_test = []
-            Y_test = []
-            for i in range(len(test_data)):
-                row = []
-                for bit in test_data[i][0]:
-                    row.append(int(bit))
-                X_test.append(row)
-                Y_test.append(int(test_data[i][1]))
+#             # build test data
+#             X_test = []
+#             Y_test = []
+#             for i in range(len(test_data)):
+#                 row = []
+#                 for bit in test_data[i][0]:
+#                     row.append(int(bit))
+#                 X_test.append(row)
+#                 Y_test.append(int(test_data[i][1]))
 
-            X_test = np.array(X_test)
-            Y_test = np.array(Y_test)
+#             X_test = np.array(X_test)
+#             Y_test = np.array(Y_test)
 
-            percent_correct, auc = random_forest(target, X, Y, X_test, Y_test, curr_fl)
-            pct_ct.append(percent_correct)
-            roc_auc.append(auc)
+#             percent_correct, auc = random_forest(target, X, Y, X_test, Y_test, curr_fl)
+#             pct_ct.append(percent_correct)
+#             roc_auc.append(auc)
 
-            # now get the average fold results for this target
-            accuracy = sum(pct_ct) / float(len(pct_ct))
-            all_auc =  sum(roc_auc) / float(len(roc_auc))
-            print 'Results for '+ target + ': accuracy: ' + str(accuracy) + ', auc: ' + str(all_auc)
-            # update fold accuracies
-            fold_accuracies[target] = (accuracy, all_auc)
+
+#             # now get the average fold results for this target
+#             accuracy = sum(pct_ct) / float(len(pct_ct))
+#             all_auc =  sum(roc_auc) / float(len(roc_auc))
+#             print 'Results for '+ target + ': accuracy: ' + str(accuracy) + ', auc: ' + str(all_auc)
+#             # update fold accuracies
+#             fold_accuracies[target] = (accuracy, all_auc)
 
 
     if(did_something == False):

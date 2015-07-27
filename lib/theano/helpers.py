@@ -263,14 +263,11 @@ def th_load_data(data_type, fold_path, target, fnames, fold_train, fold_test):
 
 
 # almost the same as the function above, this is just to get a validation fold
-def th_load_data2(data_type, fold_path, target, fnames, fold_train, fold_test):
+def th_load_data2(data_type, fold_path, target, fnames, fold_valid, fold_test):
     """ Get just 1 test & 1 valid fold to avoid overloading memory """
     """The load_files_for_task module takes the input files for a single task"""
     """The module loads the data from these files into two dictionaries - foldsActive and foldsInactive"""
     """Each dictionary contains five lists: 0 to 4 corresponding to a fold."""
-
-    fold_test = 4
-    fold_valid = 3
 
     #fnames contains all files for this target
     train_folds = []
