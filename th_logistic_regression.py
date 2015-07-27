@@ -13,6 +13,7 @@ This tutorial presents a stochastic gradient descent optimization method suitabl
 """
 
 import cPickle, time, os, sys, numpy, theano
+from sklearn import metrics
 import theano.tensor as T
 from lib import helpers
 
@@ -23,7 +24,6 @@ build_targets = helpers.build_targets
 oversample = helpers.oversample
 get_folds = helpers.get_folds
 th_load_data = helpers.th_load_data
-
 
 
 
@@ -214,7 +214,6 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
     # end-snippet-3
 
     ################ TRAIN MODEL ################
-    #print '... training the model'
     # early-stopping parameters
     patience = 5000  # look as this many examples regardless
     patience_increase = 2  # wait this much longer when a new best is found
@@ -243,8 +242,8 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
                                      for i in xrange(n_valid_batches)]
                 this_validation_loss = numpy.mean(validation_losses)
 
-                print( 'epoch %i, minibatch %i/%i, validation error %f %%' %
-                   (epoch,  minibatch_index + 1, n_train_batches, this_validation_loss * 100.) )
+                # print( 'epoch %i, minibatch %i/%i, validation error %f %%' %
+                #    (epoch,  minibatch_index + 1, n_train_batches, this_validation_loss * 100.) )
 
                 # if we got the best validation score until now
                 if this_validation_loss < best_validation_loss:
@@ -260,8 +259,8 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
                                    for i in xrange(n_test_batches)]
                     test_score = numpy.mean(test_losses)
 
-                    print( ('     epoch %i, minibatch %i/%i, test error of best model %f %%' ) %
-                      ( epoch,  minibatch_index + 1,  n_train_batches, test_score * 100. )  )
+                    # print( ('     epoch %i, minibatch %i/%i, test error of best model %f %%' ) %
+                    #   ( epoch,  minibatch_index + 1,  n_train_batches, test_score * 100. )  )
 
                     # save the best model
                     with open(write_model_file, 'w') as f:
@@ -285,14 +284,42 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
     classifier = cPickle.load(open(write_model_file))
 
     # compile a predictor function
-    predict_model = theano.function( inputs=[classifier.input],  outputs=[classifier.y_pred,classifier.p_y_given_x])
+    predict_model = theano.function(inputs=[classifier.input], outputs=[classifier.y_pred,classifier.p_y_given_x])
     # compile a confidence predictor function
     # predict_conf_model = theano.function( inputs=[classifier.input], outputs=classifier.p_y_given_x)
-
     # We can test it on some examples from test test
-    test_set_x = test_set_x.get_value()
 
-    predicted_values, predicted_conf_values = predict_model(test_set_x[:(rows_test-1)])
+    """ *************** build AUC curve *************** """
+    # get the probability of our predictions
+    predicted_values, conf_preds = predict_model(test_set_x.get_value()[:(rows_test)])
+
+    print test_set_y
+    print test_set_y.shape
+    exit(0)
+    # use that to determine the ROC curve
+    fpr, tpr, thresholds = metrics.roc_curve(X, conf_preds)
+    auc = metrics.auc(fpr, tpr)
+
+    """ *********************************************** """
+
+    num_correct = 0
+    num_false = 0
+    Z = predicted_values
+    Y_test = test_set_y.get_value()
+    for i in range(len(Z)):
+        if Z[i] == Y_test[i]:
+            num_correct += 1
+        else:
+            num_false += 1
+
+    total = len(Z)
+    percent_correct = num_correct / float(total)
+
+    print 'target:' + target + ' fold:' + str(fold_id) + ' predicted: ' + \
+        str(total) + ' wrong: ' + \
+        str(num_false) + ' pct correct: ' + str(percent_correct) + ', auc: ' + str(auc)
+
+    exit(0)
 
     print ("Predicted values for test set:")
     print "# of rows in Test: ", rows_test
