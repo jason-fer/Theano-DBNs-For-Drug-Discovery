@@ -243,4 +243,4 @@ def th_load_data(data_type, fold_path, target, fnames, fold_train, fold_test):
     
     datasets = [(train_set_x, train_set_y), (test_set_x, test_set_y)]
 
-    return datasets
+    return datasets, test_y

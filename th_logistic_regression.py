@@ -143,7 +143,8 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
     #     print 'Building data for target: ' + target + ', fold: ' + str(curr_fl)
 
     # loop through all folds, for now just do 1!
-    datasets = helpers.th_load_data(data_type, fold_path, target, fnames, 0, test_fold)
+    datasets, test_set_labels = helpers.th_load_data(data_type, fold_path, target, fnames, 0, test_fold)
+
     train_set_x, train_set_y = datasets[0]
     test_set_x, test_set_y = datasets[1]
     valid_set_x = train_set_x
@@ -291,46 +292,42 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
 
     """ *************** build AUC curve *************** """
     # get the probability of our predictions
-    predicted_values, conf_preds = predict_model(test_set_x.get_value()[:(rows_test)])
+    test_set = test_set_x.get_value()
+    predicted_values, conf_preds = predict_model(test_set[:(rows_test)])
 
-    print test_set_y
-    print test_set_y.shape
-    exit(0)
-    # use that to determine the ROC curve
-    fpr, tpr, thresholds = metrics.roc_curve(X, conf_preds)
-    auc = metrics.auc(fpr, tpr)
+    conf_predictions = []
+    for i in range(len(conf_preds)):
+        # ignore the first column; this gives a lower score that seems wrong.
+        conf_predictions.append(conf_preds[i][1])
 
+    # determine ROC / AUC
+    fpr, tpr, thresholds = metrics.roc_curve(test_set_labels, conf_predictions)
+    auc = metrics.auc(fpr, tpr) # e.g. 0.855
     """ *********************************************** """
 
     num_correct = 0
     num_false = 0
-    Z = predicted_values
-    Y_test = test_set_y.get_value()
-    for i in range(len(Z)):
-        if Z[i] == Y_test[i]:
+    for i in range(len(predicted_values)):
+        if predicted_values[i] == test_set_labels[i]:
             num_correct += 1
         else:
             num_false += 1
 
-    total = len(Z)
+    total = len(predicted_values)
     percent_correct = num_correct / float(total)
 
-    print 'target:' + target + ' fold:' + str(fold_id) + ' predicted: ' + \
+    fold_results = ''
+    fold_results += '####################  Results for ' + data_type + ' ####################' + '\n'
+    fold_results += 'target:' + target + ' fold:' + str(test_fold) + ' predicted: ' + \
         str(total) + ' wrong: ' + \
         str(num_false) + ' pct correct: ' + str(percent_correct) + ', auc: ' + str(auc)
 
-    exit(0)
 
-    print ("Predicted values for test set:")
-    print "# of rows in Test: ", rows_test
+    print fold_results
+
     write_predictions_file = model_dir + '/predictions.' + target + '.' + str(test_fold) +'.txt'
     with open(write_predictions_file, 'w') as f:
-        f.write("rowId|prediction|probOf0|probOf1|compoundId|compoundName|Actual\n")
-        for n in range(0,rows_test-1):
-            printString = str(n) + "|" \
-                          + str(predicted_values[n]) + "|" \
-                          + str(round(predicted_conf_values[n][0],3)) + "|" + str(round(predicted_conf_values[n][1],3)) + "|"
-            f.write(printString)
+        f.write(fold_results + "\n")
 
 
 
