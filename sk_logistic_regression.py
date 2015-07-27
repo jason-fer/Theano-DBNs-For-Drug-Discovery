@@ -159,28 +159,40 @@ def run_predictions(data_type, curr_target):
 
 
 def main(args):
-    if(len(args) < 3 or len(args[2]) < 2):
+    if(len(args) < 3 or len(args[2]) < 1):
         print 'usage: <tox21, dud_e, muv, or pcba> <target> '
         return
 
-
     dataset = args[1]
+    target = args[2]
+
+    # in case of typos
+    if(dataset == 'dude'):
+        dataset = 'dud_e'
+        
     print "Running Scikit Learn Logistic Regression Classifier for " \
         + dataset + "........."
 
+    is_numeric = helpers.is_numeric(target)
+
+    if(is_numeric):
+        target_list = helpers.get_target_list(dataset)
+        target = target_list[int(target)]
+
     if(dataset == 'tox21'):
-        run_predictions('Tox21', args[2])
+        run_predictions('Tox21', target)
 
     elif(dataset == 'dud_e'):
-        run_predictions('DUD-E', args[2])
+        run_predictions('DUD-E', target)
 
     elif(dataset == 'muv'):
-        run_predictions('MUV', args[2])
+        run_predictions('MUV', target)
 
     elif(dataset == 'pcba'):
-        run_predictions('PCBA', args[2])
+        run_predictions('PCBA', target)
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
+
 
 
 

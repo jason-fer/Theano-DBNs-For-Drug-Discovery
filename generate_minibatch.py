@@ -16,9 +16,15 @@ get_folds = helpers.get_folds
 
 
 def main(args):
-    """ Traverse folder structures and convert inconstient raw data into """
-    """ 2x files per target; 1 active file and 1 inactive file. """
+    """ Evenly draw from all datasets to create minibatches """
+    """ Keep files to 30,000 lines or less (to avoid overloading memory) """
 
+
+    # data type: d, m, p, t
+    # target: tells us what file it came from
+    
+    # format: (of the output)
+    # <data type> <target>
 
     # dud_e()
     # muv()

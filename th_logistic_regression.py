@@ -123,7 +123,6 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
     :param n_epochs: maximal number of epochs to run the optimizer
     """
 
-
     test_fold = 1 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
     write_model_file = model_dir + '/model.' + target + '.' + str(test_fold) +'.pkl'
     fold_path = get_fold_path(data_type)
