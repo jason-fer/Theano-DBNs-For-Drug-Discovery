@@ -1,7 +1,16 @@
+"""
+**************************************************************************
+Helper functions. Requred by both our scikit learn & theano scripts
+**************************************************************************
+
+@author: Jason Feriante <feriante@cs.wisc.edu>
+@date: 10 July 2015
+"""
+
 import generate_folds, os, sys, random, time, theano
+import theano.tensor as T
 import numpy as np
 from sklearn import linear_model
-import theano.tensor as T
 
 
 fold_paths = [
@@ -11,6 +20,7 @@ fold_paths = [
     "./folds/PCBA",
     ]
 
+
 def is_numeric(x):
     try:
         float(x)
@@ -19,6 +29,7 @@ def is_numeric(x):
         return False
     except TypeError:
         return False
+
 
 def get_fold_path(data_type):
 
@@ -154,7 +165,6 @@ def get_folds(data_type, fold_path, target, fnames):
     for i in range(len(folds)):
         random.shuffle(folds[i])
 
-
     return folds
 
 
@@ -253,7 +263,14 @@ def th_load_data(data_type, fold_path, target, fnames, fold_train, fold_test):
 
 
 def get_target_list(data_type):
-    # to list files in a single column: ls | tr '\n' '\n' 
+    """Allows a numeric target to be chosen (instead of strings only)"""
+    """Of course the number must be in range... the ranges are as follows:"""
+    """MUV: has 34 total targets, 0 to 33"""
+    """Tox21: 12 targets; 0 to 11"""
+    """DUD-E: 102 targets, 0 to 101"""
+    """PCBA: 128 targets, 0 to 127"""
+     
+    # Note: how to files in a single column in linux: ls | tr '\n' '\n' 
 
     # MUV: has 34 total targets, 0 to 33
     muv = [

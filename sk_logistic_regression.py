@@ -1,3 +1,12 @@
+"""
+**************************************************************************
+Scikit Learn Logistic Regression
+**************************************************************************
+
+@author: Jason Feriante <feriante@cs.wisc.edu>
+@date: 10 July 2015
+"""
+
 import generate_folds, os, sys, random
 import numpy as np
 from sklearn import linear_model

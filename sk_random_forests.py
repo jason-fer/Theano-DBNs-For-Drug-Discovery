@@ -1,8 +1,17 @@
+"""
+**************************************************************************
+Scikit Learn Random Forests
+**************************************************************************
+
+@author Jason Feriante <feriante@cs.wisc.edu>
+@date 10 July 2015
+"""
+
 import generate_folds, os, sys, random
 import numpy as np
 from sklearn import linear_model
 from sklearn import metrics
-from lib import helpers
+from lib.theano import helpers
 from sklearn.ensemble import RandomForestClassifier
 
 get_fold_path = helpers.get_fold_path
@@ -167,7 +176,7 @@ def main(args):
     if(dataset == 'dude'):
         dataset = 'dud_e'
 
-    print "Running Scikit Learn Random Forest Classifier for " \
+    print "Running Scikit Learn Random Forests for " \
         + dataset + "........."
 
     is_numeric = helpers.is_numeric(target)

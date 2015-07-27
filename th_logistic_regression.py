@@ -1,4 +1,14 @@
 """
+**************************************************************************
+A modified version of the Theano Logistic Regression Tutorial
+**************************************************************************
+
+This version was just for local testing (Vee ran his version for our SBEL batch jobs)
+
+@author: Jason Feriante <feriante@cs.wisc.edu>
+@date: 10 July 2015
+
+**************************************************************************
 logistic regression using Theano and stochastic gradient descent. Logistic regression is a
 probabilistic, linear classifier. It is parametrized by a weight matrix :math:`W` and a bias vector :math:`b`.
 Classification is done by projecting data points onto a set of hyperplanes, the distance to
@@ -15,7 +25,7 @@ This tutorial presents a stochastic gradient descent optimization method suitabl
 import cPickle, time, os, sys, numpy, theano
 from sklearn import metrics
 import theano.tensor as T
-from lib import helpers
+from lib.theano import helpers
 
 class LogisticRegression(object):
     """Multi-class Logistic Regression Class
@@ -121,9 +131,6 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
 
     fold_accuracies = {}
     did_something = False
-
-    # retrieve our stratified folds
-    folds = helpers.get_folds(data_type, fold_path, target, fnames)
 
     # pct_ct = []
     # roc_auc = []
@@ -427,7 +434,7 @@ def main(args):
     if(dataset == 'dude'):
         dataset = 'dud_e'
 
-    print "Running Theano Logistic Regression Classifier for " \
+    print "Running Theano Logistic Regression for " \
         + dataset + "........."
 
     is_numeric = helpers.is_numeric(target)

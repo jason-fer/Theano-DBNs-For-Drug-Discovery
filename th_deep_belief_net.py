@@ -1,18 +1,22 @@
 """
+**************************************************************************
+Theano Deep Belief Networks
+**************************************************************************
 
-Theano Deep Belief Network
-
-A modified version as given in the Theano Tutorial to run for our experiments
-
-@author: Jason Feriante feriante@cs.wisc.edu
-@date: 22 July 2015
+@author: Jason Feriante <feriante@cs.wisc.edu>
+@date: 20 July 2015
 """
-import os, sys, timeit, numpy, theano
+
+import os, sys, timeit, numpy, theano, time, cPickle
 import theano.tensor as T
 from theano.sandbox.rng_mrg import MRG_RandomStreams
+
+# lib.theano: our local versions of things (some key things are modified)
 from lib.theano.logistic_sgd import LogisticRegression, load_data
 from lib.theano.mlp import HiddenLayer
 from lib.theano.rbm import RBM
+# helpers is not a theano library
+from lib.theano import helpers
 
 
 # start-snippet-1
@@ -206,8 +210,9 @@ class DBN(object):
         '''
 
         (train_set_x, train_set_y) = datasets[0]
-        (valid_set_x, valid_set_y) = datasets[1]
-        (test_set_x, test_set_y) = datasets[2]
+        # @todo: validiation shouldn't be done with the training set
+        (valid_set_x, valid_set_y) = datasets[0]
+        (test_set_x, test_set_y) = datasets[1]
 
         # compute number of minibatches for training, validation and testing
         n_valid_batches = valid_set_x.get_value(borrow=True).shape[0]
@@ -278,7 +283,7 @@ class DBN(object):
 
 def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
              pretrain_lr=0.01, k=1, training_epochs=1000,
-             dataset='mnist.pkl.gz', batch_size=10):
+             batch_size=100, data_type='', target=''):
     """
     Demonstrates how to train and test a Deep Belief Network.
 
@@ -300,11 +305,36 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     :param batch_size: the size of a minibatch
     """
 
-    datasets = load_data(dataset)
+    # make sure we have something to do
+    assert(len(data_type)> 0)
+    assert(len(target)> 0)
+
+    # @todo: loop through train / test folds (convert this to a 5-fold loop)
+    train_fold = 0 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
+    test_fold = 1 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
+
+    fold_path = helpers.get_fold_path(data_type)
+    targets = helpers.build_targets(fold_path, data_type)
+    fnames = targets[target]
+
+    fold_accuracies = {}
+    did_something = False
+
+
+    avg_acc = [] # what is our average accuracy %?
+    avg_auc = [] # what is our average AUC (based on ROC)?
+
+    # XXXXXXXXXXXXXXX @TODO: convert this too a 5-fold loop)
+    # run 4 folds vs 1 fold with each possible scenario 
+    # for curr_fl in range(5):
+    #     print 'Building data for target: ' + target + ', fold: ' + str(curr_fl)
+
+    datasets, test_set_labels = helpers.th_load_data(data_type, fold_path, target, fnames, train_fold, test_fold)
 
     train_set_x, train_set_y = datasets[0]
-    valid_set_x, valid_set_y = datasets[1]
-    test_set_x, test_set_y = datasets[2]
+    # @todo: validiation shouldn't be done with the training set
+    valid_set_x, valid_set_y = datasets[0]
+    test_set_x, test_set_y = datasets[1]
 
     # compute number of minibatches for training, validation and testing
     n_train_batches = train_set_x.get_value(borrow=True).shape[0] / batch_size
@@ -313,8 +343,8 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     numpy_rng = numpy.random.RandomState(123)
     print '... building the model'
     # construct the Deep Belief Network
-    dbn = DBN(numpy_rng=numpy_rng, n_ins=28 * 28,
-              hidden_layers_sizes=[1000, 1000, 1000],
+    dbn = DBN(numpy_rng=numpy_rng, n_ins=32 * 32,
+              hidden_layers_sizes=[2000, 100],
               n_outs=10)
 
     # start-snippet-2
@@ -359,7 +389,8 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
     print '... finetuning the model'
     # early-stopping parameters
-    patience = 4 * n_train_batches  # look as this many examples regardless
+    # patience = 4 * n_train_batches  # look as this many examples regardless
+    patience = 10000 # look as this many examples regardless
     patience_increase = 2.    # wait this much longer when a new best is
                               # found
     improvement_threshold = 0.995  # a relative improvement of this much is
@@ -438,5 +469,63 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
                                               / 60.))
 
 
+
+def run_predictions(data_type, target, pretraining_epochs, training_epochs):
+
+    run_DBN(pretraining_epochs=pretraining_epochs, training_epochs=training_epochs, 
+        data_type=data_type, target=target)
+
+
+
+def main(args):
+    
+    # !!! Important !!! This has a major impact on the results.
+    pretraining_epochs = 10 #default 100
+    training_epochs = 100 #default 1000
+
+    if(len(args) < 3 or len(args[2]) < 1):
+        print 'usage: <tox21, dud_e, muv, or pcba> <target> '
+        return
+
+    dataset = args[1]
+    target = args[2]
+
+    # in case of typos
+    if(dataset == 'dude'):
+        dataset = 'dud_e'
+
+    is_numeric = helpers.is_numeric(target)
+    if(is_numeric):
+        target_list = helpers.get_target_list(dataset)
+        target = target_list[int(target)]
+
+
+    print "Running Scikit Learn Deep Belief Net for " \
+        + dataset + ", target: "+target+"........." 
+
+
+    if(dataset == 'tox21'):
+        run_predictions('Tox21', target, pretraining_epochs, training_epochs)
+
+    elif(dataset == 'dud_e'):
+        run_predictions('DUD-E', target, pretraining_epochs, training_epochs)
+
+    elif(dataset == 'muv'):
+        run_predictions('MUV', target, pretraining_epochs, training_epochs)
+
+    elif(dataset == 'pcba'):
+        run_predictions('PCBA', target, pretraining_epochs, training_epochs)
+    else:
+        print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
+
+
+
 if __name__ == '__main__':
-    test_DBN(pretraining_epochs = 1, training_epochs=1)
+    start_time = time.clock()
+
+    main(sys.argv)
+
+    end_time = time.clock()
+    print 'runtime: %.2f secs.' % (end_time - start_time)
+
+    
