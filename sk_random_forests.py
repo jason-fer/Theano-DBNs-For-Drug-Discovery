@@ -155,6 +155,7 @@ def run_predictions(data_type, curr_target):
 
 
 def main(args):
+    
     if(len(args) < 3 or len(args[2]) < 1):
         print 'usage: <tox21, dud_e, muv, or pcba> <target> '
         return
@@ -189,7 +190,12 @@ def main(args):
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
 
+
 if __name__ == '__main__':
+    start_time = time.clock()
+
     main(sys.argv)
 
+    end_time = time.clock()
+    print 'runtime: %.2f secs.' % (end_time - start_time)
 

@@ -193,8 +193,11 @@ def main(args):
 
 
 
-
 if __name__ == '__main__':
+    start_time = time.clock()
+
     main(sys.argv)
 
+    end_time = time.clock()
+    print 'runtime: %.2f secs.' % (end_time - start_time)
 

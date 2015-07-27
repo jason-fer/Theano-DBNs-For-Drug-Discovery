@@ -1,18 +1,18 @@
 """
+
+Theano Deep Belief Network
+
+A modified version as given in the Theano Tutorial to run for our experiments
+
+@author: Jason Feriante feriante@cs.wisc.edu
+@date: 22 July 2015
 """
-import os
-import sys
-import timeit
-
-import numpy
-
-import theano
+import os, sys, timeit, numpy, theano
 import theano.tensor as T
 from theano.sandbox.rng_mrg import MRG_RandomStreams
-
-from logistic_sgd import LogisticRegression, load_data
-from mlp import HiddenLayer
-from rbm import RBM
+from lib.theano.logistic_sgd import LogisticRegression, load_data
+from lib.theano.mlp import HiddenLayer
+from lib.theano.rbm import RBM
 
 
 # start-snippet-1
@@ -276,7 +276,7 @@ class DBN(object):
         return train_fn, valid_score, test_score
 
 
-def test_DBN(finetune_lr=0.1, pretraining_epochs=100,
+def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
              pretrain_lr=0.01, k=1, training_epochs=1000,
              dataset='mnist.pkl.gz', batch_size=10):
     """
@@ -439,4 +439,4 @@ def test_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
 
 if __name__ == '__main__':
-    test_DBN()
+    test_DBN(pretraining_epochs = 1, training_epochs=1)

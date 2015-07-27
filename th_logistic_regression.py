@@ -421,13 +421,8 @@ def main(args):
         print 'usage: <tox21, dud_e, muv, or pcba> <target> '
         return
 
-
-    start_time = time.clock()
-    model_dir = 'theano_saved/logistic_regression'
-
     dataset = args[1]
     target = args[2]
-
     # in case of typos
     if(dataset == 'dude'):
         dataset = 'dud_e'
@@ -440,6 +435,7 @@ def main(args):
         target_list = helpers.get_target_list(dataset)
         target = target_list[int(target)]
 
+    model_dir = 'theano_saved/logistic_regression'
     if(dataset == 'tox21'):
         sgd_optimization('Tox21', target, model_dir)
 
@@ -454,15 +450,14 @@ def main(args):
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
-    end_time = time.clock()
-    print 'runtime: %f secs.' % (end_time - start_time)    
 
 
 if __name__ == '__main__':
+    start_time = time.clock()
+
     main(sys.argv)
 
-
-
-
+    end_time = time.clock()
+    print 'runtime: %.2f secs.' % (end_time - start_time)
 
 
