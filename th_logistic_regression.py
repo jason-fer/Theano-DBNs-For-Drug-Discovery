@@ -17,16 +17,6 @@ from sklearn import metrics
 import theano.tensor as T
 from lib import helpers
 
-get_fold_path = helpers.get_fold_path
-get_target = helpers.get_target
-parse_line = helpers.parse_line
-build_targets = helpers.build_targets
-oversample = helpers.oversample
-get_folds = helpers.get_folds
-th_load_data = helpers.th_load_data
-
-
-
 class LogisticRegression(object):
     """Multi-class Logistic Regression Class
     The logistic regression is fully described by a weight matrix :math:`W` and bias vector :math:`b`.
@@ -125,15 +115,15 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
 
     test_fold = 1 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
     write_model_file = model_dir + '/model.' + target + '.' + str(test_fold) +'.pkl'
-    fold_path = get_fold_path(data_type)
-    targets = build_targets(fold_path, data_type)
+    fold_path = helpers.get_fold_path(data_type)
+    targets = helpers.build_targets(fold_path, data_type)
     fnames = targets[target]
 
     fold_accuracies = {}
     did_something = False
 
     # retrieve our stratified folds
-    folds = get_folds(data_type, fold_path, target, fnames)
+    folds = helpers.get_folds(data_type, fold_path, target, fnames)
 
     # pct_ct = []
     # roc_auc = []
@@ -321,7 +311,6 @@ def sgd_optimization(data_type, target, model_dir, learning_rate=0.1, n_epochs=1
         str(total) + ' wrong: ' + \
         str(num_false) + ' pct correct: ' + str(percent_correct) + ', auc: ' + str(auc)
 
-
     print fold_results
 
     write_predictions_file = model_dir + '/predictions.' + target + '.' + str(test_fold) +'.txt'
@@ -428,7 +417,7 @@ def run_predictions(data_type, curr_target):
 
 def main(args):
 
-    if(len(args) < 3 or len(args[2]) < 2):
+    if(len(args) < 3 or len(args[2]) < 1):
         print 'usage: <tox21, dud_e, muv, or pcba> <target> '
         return
 
@@ -437,20 +426,31 @@ def main(args):
     model_dir = 'theano_saved/logistic_regression'
 
     dataset = args[1]
-    print "Running Scikit Learn Random Forest Classifier for " \
+    target = args[2]
+
+    # in case of typos
+    if(dataset == 'dude'):
+        dataset = 'dud_e'
+
+    print "Running Theano Logistic Regression Classifier for " \
         + dataset + "........."
 
+    is_numeric = helpers.is_numeric(target)
+    if(is_numeric):
+        target_list = helpers.get_target_list(dataset)
+        target = target_list[int(target)]
+
     if(dataset == 'tox21'):
-        sgd_optimization('Tox21', args[2], model_dir)
+        sgd_optimization('Tox21', target, model_dir)
 
     elif(dataset == 'dud_e'):
-        sgd_optimization('DUD-E', args[2], model_dir)
+        sgd_optimization('DUD-E', target, model_dir)
 
     elif(dataset == 'muv'):
-        sgd_optimization('MUV', args[2], model_dir)
+        sgd_optimization('MUV', target, model_dir)
 
     elif(dataset == 'pcba'):
-        sgd_optimization('PCBA', args[2], model_dir)
+        sgd_optimization('PCBA', target, model_dir)
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 

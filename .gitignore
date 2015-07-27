@@ -2,4 +2,5 @@
 *.gz*
 *.pyc
 folds
+theano_saved
 !folds/README

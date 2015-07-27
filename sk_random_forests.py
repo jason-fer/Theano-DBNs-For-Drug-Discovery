@@ -159,14 +159,17 @@ def main(args):
         print 'usage: <tox21, dud_e, muv, or pcba> <target> '
         return
 
-
     dataset = args[1]
     target = args[2]
+
+    # in case of typos
+    if(dataset == 'dude'):
+        dataset = 'dud_e'
+
     print "Running Scikit Learn Random Forest Classifier for " \
         + dataset + "........."
 
     is_numeric = helpers.is_numeric(target)
-
     if(is_numeric):
         target_list = helpers.get_target_list(dataset)
         target = target_list[int(target)]
