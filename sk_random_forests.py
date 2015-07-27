@@ -1,6 +1,5 @@
 import generate_folds, os, sys, random
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn import linear_model
 from sklearn import metrics
 from lib import helpers
