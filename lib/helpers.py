@@ -159,8 +159,8 @@ def shared_dataset(data_xy, borrow=True):
     is needed (the default behaviour if the data is not in a shared variable) would lead to a large decrease in performance.
     """
     data_x, data_y = data_xy
-    shared_x = theano.shared(numpy.asarray(data_x, dtype=theano.config.floatX), borrow=borrow)
-    shared_y = theano.shared(numpy.asarray(data_y, dtype=theano.config.floatX), borrow=borrow)
+    shared_x = theano.shared(np.asarray(data_x, dtype=theano.config.floatX), borrow=borrow)
+    shared_y = theano.shared(np.asarray(data_y, dtype=theano.config.floatX), borrow=borrow)
     # When storing data on the GPU it has to be stored as floats therefore we will store the labels as ``floatX`` as well
     # (``shared_y`` does exactly that). But during our computations we need them as ints (we use labels as index, and if they are
     # floats it doesn't make sense) therefore instead of returning  ``shared_y`` we will have to cast it to int. This little hack
@@ -233,10 +233,18 @@ def th_load_data(data_type, fold_path, target, fnames, fold_train, fold_test):
 
     train_x, train_y = build_data_set(train_folds)
     test_x, test_y = build_data_set(test_folds)
-    
-    rval = [(train_x, train_y), (test_x, test_y)]
 
-    return rval
+    # turn into shared datasets
+    train_set = (train_x, train_y)
+    test_set = (test_x, test_y)
+
+    train_set_x, train_set_y = shared_dataset(train_set)
+    test_set_x, test_set_y = shared_dataset(test_set)
+    
+    datasets = [(train_set_x, train_set_y), (test_set_x, test_set_y)]
+
+    return datasets
+
 
 
 

@@ -43,10 +43,10 @@ def logistic_regression(target, X, Y, X_test, Y_test, fold_id):
 
     # get the probability of our predictions
     prob_preds = logreg.predict_proba(X_test)[:, 1]
+
     # use that to determine the ROC curve
     fpr, tpr, thresholds = metrics.roc_curve(Y_test, prob_preds)
     auc = metrics.auc(fpr, tpr)
-
 
     print 'target:' + target + ' fold:' + str(fold_id) + ' predicted: ' + \
         str(total) + ' wrong: ' + \

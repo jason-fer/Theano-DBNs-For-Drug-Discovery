@@ -43,6 +43,7 @@ def random_forest(target, X, Y, X_test, Y_test, fold_id):
 
     # get the probability of our predictions
     prob_preds = clf.predict_proba(X_test)[:, 1]
+    
     # use that to determine the ROC curve
     fpr, tpr, thresholds = metrics.roc_curve(Y_test, prob_preds)
     auc = metrics.auc(fpr, tpr)
