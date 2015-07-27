@@ -1,6 +1,5 @@
 import generate_folds, os, sys, random, time, theano
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn import linear_model
 import theano.tensor as T
 
