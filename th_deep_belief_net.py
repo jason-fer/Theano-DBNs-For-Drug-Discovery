@@ -403,7 +403,8 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
     done_looping = False
     epoch = 0
-
+    auc = 0
+    best_auc = 0
     while (epoch < training_epochs) and (not done_looping):
         epoch = epoch + 1
         for minibatch_index in xrange(n_train_batches):
@@ -425,6 +426,22 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
                     )
                 )
 
+                # get the ROC / AUC 
+                auc = helpers.th_calc_auc(dbn, test_set_labels, test_set_x)
+                if(auc > best_auc):
+
+                    #improve patience if loss improvement is good enough
+                    if (
+                        auc > best_auc *
+                        improvement_threshold
+                    ):
+                        patience = max(patience, iter * patience_increase)
+                        print 'increased patience!!! (for AUC)'
+
+                    best_auc = auc
+                    print '     new best AUC!: ' + str(auc)
+
+                # !!!!!!!! @todo: this needs to be based on AUC, not raw accuracy
                 # if we got the best validation score until now
                 if this_validation_loss < best_validation_loss:
 
@@ -443,11 +460,9 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
                     test_losses = test_model()
                     test_score = numpy.mean(test_losses)
 
-                    # get the AUC
-                    auc = helpers.th_calc_auc(dbn.logLayer, test_set_labels, test_set_x)
 
-                    print(('     epoch %i, minibatch %i/%i, test error of best model %f %%, auc: %f') %
-                          (epoch, minibatch_index + 1, n_train_batches, test_score * 100., auc))
+                    print(('     epoch %i, minibatch %i/%i, best error %f %%, best_auc: %f') %
+                          (epoch, minibatch_index + 1, n_train_batches, test_score * 100., best_auc))
 
             if patience <= iter:
                 done_looping = True
@@ -458,8 +473,8 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
         (
             'Optimization complete with best validation score of %f %%, '
             'obtained at iteration %i, '
-            'with test performance %f %%'
-        ) % (best_validation_loss * 100., best_iter + 1, test_score * 100.)
+            'with test performance %f %%, and best_auc: %f'
+        ) % (best_validation_loss * 100., best_iter + 1, test_score * 100., best_auc)
     )
     print >> sys.stderr, ('The fine tuning code for file ' +
                           os.path.split(__file__)[1] +
@@ -470,6 +485,7 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
 def run_predictions(data_type, target, p_epochs, t_epochs, f_lr, p_lr, pat):
 
+    """ Run the Theano DBN Model """
     run_DBN(pretraining_epochs=p_epochs, training_epochs=t_epochs, 
         data_type=data_type, target=target, finetune_lr=f_lr, 
         pretrain_lr=p_lr, patience=pat)
@@ -489,7 +505,7 @@ def main(args):
     p_epochs = 8 #default 100 pretraining_epochs
     t_epochs = 500 #default 1000 training_epochs
     f_lr = 0.1 #default 1000 training_epochs
-    p_lr = 0.04 #default 1000 training_epochs
+    p_lr = 0.01 #default 1000 training_epochs
     pat = 5000 # patience
 
     if(len(args) < 3 or len(args[2]) < 1):
@@ -515,25 +531,28 @@ def main(args):
 
     # settings specific to any particular dataset can go here 
     if(dataset == 'tox21'):
-        # Tox21 experimenting with the parameters:
-        # 15 p_epochs at p_lr = 0.04 broke the data! (stuck @47%)
-        # 10 p_epochs at p_lr = 0.04 -- best @epoch 144 (18.703704 %)
-        #  8 p_epochs at p_lr = 0.04 -- best @epoch 132 (18.037037 %)
-        #  4 p_epochs at p_lr = 0.04 broke the data! (stuck @47%)
 
-        # run_predictions('Tox21', target, p_epochs, t_epochs, f_lr, p_lr)
-        run_predictions('Tox21', target, 1, t_epochs, 0.1, 0.04, 2000)
+        # Tox21 experimenting with the parameters:
+        #  12 p_epochs at p_lr = 0.04: broken
+        #  8 p_epochs at p_lr = 0.04: broken
+        #  4 p_epochs at p_lr = 0.04: broken
+        #  2 p_epochs at p_lr = 0.04: broken
+        #  2 p_epochs at p_lr = 0.01: broken
+        run_predictions('Tox21', target, 8, t_epochs, 0.1, 0.04, 2000)
 
     elif(dataset == 'dud_e'):
+
         run_predictions('DUD-E', target, p_epochs, t_epochs, f_lr, p_lr, pat)
 
     elif(dataset == 'muv'):
+
         # 8 p_epochs = broken
-        # 4 p_epochs = broken
-        # 1 p_epochs = 
-        run_predictions('MUV', target, 4, t_epochs, f_lr, p_lr, 4000)
+        # 4 p_epochs = not sure.
+        # 1 p_epochs = broken
+        run_predictions('MUV', target, 4, t_epochs, f_lr, 0.04, 4000)
 
     elif(dataset == 'pcba'):
+
         run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr, pat)
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'

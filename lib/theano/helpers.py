@@ -207,20 +207,22 @@ def build_data_set(fold):
 
     return (X, Y)
 
-def th_calc_auc(classifier, test_set_labels, test_set_x):
+def th_calc_auc(dbn, test_set_labels, test_set_x):
     """ *************** build AUC curve *************** """
+
 
     test_set = test_set_x.get_value()
     # compile a confidence predictor function
-    predict_model = theano.function(inputs=[classifier.input], outputs=[classifier.y_pred,classifier.p_y_given_x])
-    
+    predict_model = theano.function(inputs=[dbn.x], outputs=[dbn.logLayer.p_y_given_x]) 
+
     # get the probability of our predictions
-    predicted_values, conf_preds = predict_model(test_set[:(test_set.shape[0])])
+    conf_preds = predict_model(test_set[:(test_set.shape[0])])
 
     conf_predictions = []
-    for i in range(len(conf_preds)):
-        # ignore the first column; this gives a lower score that seems wrong.
-        conf_predictions.append(conf_preds[i][1])
+    for h in range(len(conf_preds)):
+        for i in range(len(conf_preds[h])):
+            # ignore the first column; this gives a lower score that seems wrong.
+            conf_predictions.append(conf_preds[h][i][1])
 
     # determine ROC / AUC
     fpr, tpr, thresholds = metrics.roc_curve(test_set_labels, conf_predictions)
