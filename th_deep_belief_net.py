@@ -386,8 +386,8 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
     print '... finetuning the model'
     # early-stopping parameters
-    # patience = 4 * n_train_batches  # look as this many examples regardless
-    patience = 5000 # look as this many examples regardless
+    # patience = 35 * n_train_batches  # look as this many examples regardless
+    patience = 2000  # look as this many examples regardless
     patience_increase = 2.0   # wait this much longer when a new best is
                               # found
     improvement_threshold = 0.995  # a relative improvement of this much is
@@ -476,12 +476,16 @@ def run_predictions(data_type, target, p_epochs, t_epochs, f_lr, p_lr):
 
 
 def main(args):
-    
+    # 15 p_epochs at p_lr = 0.04 broke the data! (stuck @47% acc)
+    # 10 p_epochs at p_lr = 0.04 -- best @epoch 144 (18.703704 %)
+    #  8 p_epochs at p_lr = 0.04 -- best @epoch 132 (18.037037 %)
+    #  4 p_epochs at p_lr = 0.04 broke the data! (stuck @47% acc)
+
     # !!! Important !!! This has a major impact on the results.
-    p_epochs = 100 #default 100 pretraining_epochs
-    t_epochs = 1000 #default 1000 training_epochs
+    p_epochs = 8 #default 100 pretraining_epochs
+    t_epochs = 500 #default 1000 training_epochs
     f_lr = 0.1 #default 1000 training_epochs
-    p_lr = 0.05 #default 1000 training_epochs
+    p_lr = 0.04 #default 1000 training_epochs
 
     if(len(args) < 3 or len(args[2]) < 1):
         print 'usage: <tox21, dud_e, muv, or pcba> <target> '
@@ -504,6 +508,7 @@ def main(args):
         + dataset + ", target: "+target+"........." 
 
 
+    # settings specific to any particular dataset can go here 
     if(dataset == 'tox21'):
         run_predictions('Tox21', target, p_epochs, t_epochs, f_lr, p_lr)
 
