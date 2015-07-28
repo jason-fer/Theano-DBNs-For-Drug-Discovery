@@ -11,7 +11,7 @@
 
 # Have to make *.sh executable
 # HTCondor will execute this script once your job is assigned to a machine
-Executable = wid-logistic_regression-pcba.sh
+Executable = wid_jobs/sk_logistic_regression/wid-logistic_regression-pcba.sh
 # Leave as vanilla
 Universe = vanilla
 
@@ -22,9 +22,9 @@ Notify_user = feriante@cs.wisc.edu
 #PBS -j oe
 # Set up a path to error and output, can use these special HTCondor env variables
 # to name files if you want
-Output = o-mmnt-lr-pcba.$(Cluster).$(Process).out
-Error = e-mmnt-lr-pcba.$(Cluster).$(Process).err  
-Log = l-mmnt-lr-pcba.$(Cluster).$(Process).log
+Output = htc-wid-o-mmnt-lr-pcba.$(Cluster).$(Process).out
+Error = htc-wid-e-mmnt-lr-pcba.$(Cluster).$(Process).err  
+Log = htc-wid-l-mmnt-lr-pcba.$(Cluster).$(Process).log
 
 #PBS -l nodes=1:ncpus=1,mem=2gb,walltime=10:00:00
 # HTCondor machine requirements http://research.cs.wisc.edu/htcondor/manual/v7.6/2_5Submitting_Job.html#sec:user-man-req-and-rank

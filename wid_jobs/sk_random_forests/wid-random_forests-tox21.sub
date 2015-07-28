@@ -11,7 +11,7 @@
 
 # Have to make *.sh executable
 # HTCondor will execute this script once your job is assigned to a machine
-Executable = wid-random_forests-tox21.sh
+Executable = wid_jobs/sk_random_forests/wid-random_forests-tox21.sh
 # Leave as vanilla
 Universe = vanilla
 
@@ -22,9 +22,9 @@ Notify_user = feriante@cs.wisc.edu
 #PBS -j oe
 # Set up a path to error and output, can use these special HTCondor env variables
 # to name files if you want
-Output = o-mmnt-rf-tox21.$(Cluster).$(Process).out
-Error = e-mmnt-rf-tox21.$(Cluster).$(Process).err  
-Log = l-mmnt-rf-tox21.$(Cluster).$(Process).log
+Output = htc-wid-o-mmnt-rf-tox21.$(Cluster).$(Process).out
+Error = htc-wid-e-mmnt-rf-tox21.$(Cluster).$(Process).err  
+Log = htc-wid-l-mmnt-rf-tox21.$(Cluster).$(Process).log
 
 #PBS -l nodes=1:ncpus=1,mem=2gb,walltime=10:00:00
 # HTCondor machine requirements http://research.cs.wisc.edu/htcondor/manual/v7.6/2_5Submitting_Job.html#sec:user-man-req-and-rank
