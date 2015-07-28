@@ -428,7 +428,7 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
                 # get the ROC / AUC 
                 auc = helpers.th_calc_auc(dbn, test_set_labels, test_set_x)
-                if(auc > best_auc):
+                if(auc > best_auc and best_auc > 0):
 
                     #improve patience if loss improvement is good enough
                     if (
@@ -440,6 +440,9 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
                     best_auc = auc
                     print '     new best AUC!: ' + str(auc)
+                elif(auc > best_auc):
+                    best_auc = auc
+
 
                 # !!!!!!!! @todo: this needs to be based on AUC, not raw accuracy
                 # if we got the best validation score until now
@@ -542,7 +545,10 @@ def main(args):
 
     elif(dataset == 'dud_e'):
 
-        run_predictions('DUD-E', target, p_epochs, t_epochs, f_lr, p_lr, pat)
+        # 8 p_epochs = broken
+        # 2 p_epochs = a magic number that will make all your wishes come true
+        # (i'm getting 99% AUC with 2 p_epochs)
+        run_predictions('DUD-E', target, 2, t_epochs, f_lr, p_lr, pat)
 
     elif(dataset == 'muv'):
 
@@ -552,8 +558,13 @@ def main(args):
         run_predictions('MUV', target, 4, t_epochs, f_lr, 0.04, 4000)
 
     elif(dataset == 'pcba'):
-
-        run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr, pat)
+        # this is a huge dataset... patience--> 30k = wild guess.
+        # it's VERY slow to run; it takes 3.30 minutes per pretrain layer
+        # e.g. 1 p_epochs = about 3.3 minutes - seemed broken. (50% AUC)
+        # e.g. 4 p_epochs = about 13.11 minutes - seemed broken.  (50% AUC)
+        # 8 p_epochs = worked great on small PCBA sets:
+        # 8 p_epochs = aid883 (73% AuC @ 50) and aid899 (63% AUC @ 50 epochs)
+        run_predictions('PCBA', target, 8, t_epochs, f_lr, p_lr, 30000)
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
