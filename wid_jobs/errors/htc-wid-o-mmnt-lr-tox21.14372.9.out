@@ -1,5 +1,0 @@
-_CONDOR_JOB_IWD /mnt/ws/home/jferiante
-Cluster 14372
-Process 9
-RunningOn slot10@mir-exec-01.discovery.wisc.edu
-python sk_logistic_regression.py tox21 9

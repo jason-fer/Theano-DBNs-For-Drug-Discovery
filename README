@@ -83,17 +83,17 @@ All rows in all files are organized the same:
 +-------------------------------------------------------------------------------
 condor_q to do a 'qstat'
 
-condor_submit wid_jobs/sk_logistic_regression/wid-logistic_regression-dude.sub
-condor_submit wid_jobs/sk_logistic_regression/wid-logistic_regression-muv.sub
-condor_submit wid_jobs/sk_logistic_regression/wid-logistic_regression-tox21.sub
-condor_submit wid_jobs/sk_logistic_regression/wid-logistic_regression-pcba.sub
+condor_submit wid-logistic_regression-tox21.sub
+condor_submit wid-logistic_regression-dude.sub
+condor_submit wid-logistic_regression-muv.sub
+condor_submit wid-logistic_regression-pcba.sub
 
-condor_submit wid_jobs/sk_random_forests/wid-random_forests-dude.sub
-condor_submit wid_jobs/sk_random_forests/wid-random_forests-muv.sub
-condor_submit wid_jobs/sk_random_forests/wid-random_forests-tox21.sub
-condor_submit wid_jobs/sk_random_forests/wid-random_forests-pcba.sub
+condor_submit wid-random_forests-tox21.sub
+condor_submit wid-random_forests-dude.sub
+condor_submit wid-random_forests-muv.sub
+condor_submit wid-random_forests-pcba.sub
 
-condor_submit wid_jobs/th_deep_belief_net/wid-stnn_dbn-dude.sub
-condor_submit wid_jobs/th_deep_belief_net/wid-stnn_dbn-muv.sub
-condor_submit wid_jobs/th_deep_belief_net/wid-stnn_dbn-tox21.sub
-condor_submit wid_jobs/th_deep_belief_net/wid-stnn_dbn-pcba.sub
+condor_submit wid-stnn_dbn-tox21.sub
+condor_submit wid-stnn_dbn-dude.sub
+condor_submit wid-stnn_dbn-muv.sub
+condor_submit wid-stnn_dbn-pcba.sub
