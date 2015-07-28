@@ -1,6 +1,7 @@
 *.tgz
 *.gz*
 *.pyc
+*.idea
 folds
 theano_saved
 !folds/README
