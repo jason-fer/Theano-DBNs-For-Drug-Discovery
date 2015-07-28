@@ -69,22 +69,6 @@ class DBN(object):
         self.y = T.ivector('y')  # the labels are presented as 1D vector
                                  # of [int] labels
 
-        """******************************************************************"""
-        """                Custom functions to get AUC / ROC                 """
-        # initialize with 0 the weights W as a matrix of shape (n_in, n_out)
-        self.W = theano.shared( value=numpy.zeros( (n_ins, n_outs), dtype=theano.config.floatX ), name='W', borrow=True )
-        # initialize the baises b as a vector of n_out 0s
-        self.b = theano.shared(value=numpy.zeros( (n_outs,), dtype=theano.config.floatX ), name='b', borrow=True )
-        # symbolic expression for computing the matrix of class-membership probabilities where:
-        # W is a matrix where column-k represent the separation hyper plain for class-k
-        # x is a matrix where row-j  represents input training sample-j
-        # b is a vector where element-k represent the free parameter of hyper plane-k
-        self.p_y_given_x = T.nnet.softmax(T.dot(self.x, self.W) + self.b)
-        # symbolic description of how to compute prediction as class whose probability is maximal
-        self.y_pred = T.argmax(self.p_y_given_x, axis=1)
-        """******************************************************************"""
-
-
         # end-snippet-1
         # The DBN is an MLP, for which all weights of intermediate
         # layers are shared with a different RBM.  We will first
@@ -460,8 +444,7 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
                     test_score = numpy.mean(test_losses)
 
                     # get the AUC
-                    auc = helpers.th_calc_dbn_auc(dbn, test_set_labels, test_set_x)
-                    auc = 1
+                    auc = helpers.th_calc_auc(dbn.logLayer, test_set_labels, test_set_x)
 
                     print(('     epoch %i, minibatch %i/%i, test error of best model %f %%, auc: %f') %
                           (epoch, minibatch_index + 1, n_train_batches, test_score * 100., auc))

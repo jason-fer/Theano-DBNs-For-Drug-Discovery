@@ -207,14 +207,14 @@ def build_data_set(fold):
 
     return (X, Y)
 
-def th_calc_dbn_auc(dbn, test_set_labels, test_set_x):
+def th_calc_auc(classifier, test_set_labels, test_set_x):
     """ *************** build AUC curve *************** """
 
+    test_set = test_set_x.get_value()
     # compile a confidence predictor function
-    predict_model = theano.function(inputs=[dbn.x], outputs=[dbn.y_pred,dbn.p_y_given_x])
+    predict_model = theano.function(inputs=[classifier.input], outputs=[classifier.y_pred,classifier.p_y_given_x])
     
     # get the probability of our predictions
-    test_set = test_set_x.get_value()
     predicted_values, conf_preds = predict_model(test_set[:(test_set.shape[0])])
 
     conf_predictions = []
