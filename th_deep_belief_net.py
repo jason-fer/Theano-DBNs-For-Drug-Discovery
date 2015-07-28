@@ -1,6 +1,8 @@
 """
 **************************************************************************
 Theano Deep Belief Networks
+
+A Single Task Neural Network (STNN)
 **************************************************************************
 
 @author: Jason Feriante <feriante@cs.wisc.edu>

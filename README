@@ -28,11 +28,16 @@ need to be in your root home directory on the SBEL server.
 -View examples in sbel_jobs
 
 +-------------------------------------------------------------------------------
+| HTCondor Jobs:
++-------------------------------------------------------------------------------
+-View examples in wid_jobs
+
++-------------------------------------------------------------------------------
 | Install Requirements:
 +-------------------------------------------------------------------------------
 
 -scikit learn (comes with anaconda)
--pip install Pillow
+-pip install Pillow (maybe needed for DBN image; maybe this can be removed.)
 
 
 +-------------------------------------------------------------------------------
@@ -43,10 +48,10 @@ and run:
 $ python generate_folds.py
 
 The data is organized in folders:
-DUD-E
-MUV
-Tox21
-PCBA
+DUD-E: 102 targets
+MUV: has 17 targets
+Tox21: 12 targets
+PCBA: 128 targets
 
 For each target within each dataset there's always exactly 2x files:
 <target_name>_actives.fl

@@ -347,7 +347,7 @@ def th_load_data2(data_type, fold_path, target, fnames, fold_valid, fold_test):
 def get_target_list(data_type):
     """Allows a numeric target to be chosen (instead of strings only)"""
     """Of course the number must be in range... the ranges are as follows:"""
-    """MUV: has 34 total targets, 0 to 33"""
+    """MUV: has 17 total targets, 0 to 33"""
     """Tox21: 12 targets; 0 to 11"""
     """DUD-E: 102 targets, 0 to 101"""
     """PCBA: 128 targets, 0 to 127"""

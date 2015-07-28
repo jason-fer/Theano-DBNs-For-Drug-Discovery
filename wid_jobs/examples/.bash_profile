@@ -1,8 +1,11 @@
 # .bash_profile
 
+alias ll="ls -l"
+alias la="ls -la"
+
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+  . ~/.bashrc
 fi
 
 # User specific environment and startup programs
@@ -12,6 +15,7 @@ fi
 # GitterLab is a symbolic link to '/mnt/ws/virology/shared/lab folders/GitterLab'
 export PATH=~/GitterLab/progs/anaconda/bin:$PATH
 export PATH=~/GitterLab/progs/bin:$PATH
+export PATH=$PATH:$HOME/bin
 
 # Python matplotlib
 # Initial workaround fails for pyplot
