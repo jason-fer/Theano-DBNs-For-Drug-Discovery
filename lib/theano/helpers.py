@@ -112,9 +112,11 @@ def oversample(data):
     total_actives = len(actives)
     ratio = total_inactives / total_actives
 
-    ratio = ratio
-    # oversample_total = ratio * total_actives
+    # max ratio? 200
+    if(ratio > 50):
+        ratio = 50 # oversampling too much destroys the results
 
+    # oversample_total = ratio * total_actives
     oversamples = []
     for i in range(len(actives)):
         for j in range(ratio):

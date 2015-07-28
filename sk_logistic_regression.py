@@ -7,11 +7,11 @@ Scikit Learn Logistic Regression
 @date: 10 July 2015
 """
 
-import generate_folds, os, sys, random
+import generate_folds, os, sys, random, time
 import numpy as np
 from sklearn import linear_model
 from sklearn import metrics
-from lib import helpers
+from lib.theano import helpers
 
 
 get_fold_path = helpers.get_fold_path
