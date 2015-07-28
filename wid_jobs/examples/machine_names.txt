@@ -1,0 +1,2 @@
+SSH to mir-submit.discovery.wisc.edu
+Gitter lab server: mir-exec-01.discovery.wisc.edu (but won't actually need this, HTCondor will get your jobs running here)
