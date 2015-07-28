@@ -34,3 +34,41 @@ need to be in your root home directory on the SBEL server.
 -scikit learn (comes with anaconda)
 -pip install Pillow
 
+
++-------------------------------------------------------------------------------
+| Fold Data:
++-------------------------------------------------------------------------------
+The generate the fold structures, use the 1024 bit strings provided by Spencer
+and run:
+$ python generate_folds.py
+
+The data is organized in folders:
+DUD-E
+MUV
+Tox21
+PCBA
+
+For each target within each dataset there's always exactly 2x files:
+<target_name>_actives.fl
+<target_name>_inactives.fl
+
+-Each file contains a 'shuffled' version of the original data
+-Aside from being shuffled, it is identical to the original data Spencer gave 
+us (1:1), the big difference is the assigned sha1 hash and the fold_id which we 
+needed for our own deep learning experiments
+
+The data in each row of each file is delimited by a space:
+<sha1 hash> <is_active> <native_id> <fold_id> <1024 bitstring>
+
+
+<sha1 hash> = a sha1 hash for building hashmaps or matrix models; 
+i.e. hash =  sha1_hash(<1024 bit string>)
+<is_active> = {0, 1} inactive = 0 or active = 1
+<native_id> = this is the id used by this particular dataset (e.g. the ID used 
+by Tox21)
+<fold_id> = each file is divided into 5 folds used for testing, validation, and 
+training... this was useful for our stratified k-fold experiments
+<1024 bitstring> = the 1024 bitstring ECP4 fingerprint you generated for us
+
+All rows in all files are organized the same:
+1aadeae8f414b55798d95610ba68ed2d72c21430 1 CHEMBL472111 0 0000000000000000000010000000000000000000000100000000000000000000100000000000000010000100000000000000000000000000000000000100000001000000000000000001000000000010000000000001000000000000000000000000000000001000010110000000000000000000000000000010000000100000000000000000000000000000000000000000000000001001000000000000000000000000000001000000000000000000000010000100000000000000001000000000000000000000000000000000100001000000100000000101000000000000000000001010000000000000001000000000000000000000000000100000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000010000010000000000000001000000000000000000000000000000000000000001100010000001000000000000000000000000001000000000000010000000000000100010100100000000000001000000000000000000001000001010000100000000001000000000000001000000000010000000000000001000000000010000000000000100000000010000010010001000000000000000010000000100000000000000000000000000000000000000000000000000000000000
