@@ -1,0 +1,30 @@
+###################################################################
+#
+# Submit a PCSF run using the paramters set in the outer script
+# Run on the WID pool, with preference to use the Virology machines
+# Assume a shared file system
+# 
+###################################################################
+
+Executable = runPCSF_033115.sh
+Universe = vanilla
+
+# Disable notifications for now
+Notification = Never
+Notify_user = gitter@biostat.wisc.edu
+
+Output = $ENV(outpath)/$(Cluster).$(Process).out
+Error = $ENV(outpath)/$(Cluster).$(Process).err  
+Log = $ENV(outpath)/$(Cluster).$(Process).log
+
+# Prefer to run on the Virology exec nodes in the WID pool but don't require it
+Rank = MachineOwner == "Virology"
+# Use defaults for disk and memory
+Request_cpus = 1
+
+# Copy environment variables set in the submission wrapper script
+# Also copy the Cluster and Process and the machine that runs the job
+Environment = "prizetype=$ENV(prizetype) conf=$ENV(conf) beta=$ENV(beta) mu=$ENV(mu) omega=$ENV(omega) seed=$ENV(seed) outpath=$ENV(outpath) cluster=$(Cluster) process=$(Process) runningon=$$(Name)"
+
+Queue
+#END
