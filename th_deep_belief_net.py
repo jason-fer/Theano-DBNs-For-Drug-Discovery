@@ -282,7 +282,7 @@ class DBN(object):
 
 def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
              pretrain_lr=0.01, k=1, training_epochs=1000,
-             batch_size=100, data_type='', target=''):
+             batch_size=100, data_type='', target='', patience=5000):
     """
     Demonstrates how to train and test a Deep Belief Network.
 
@@ -342,7 +342,7 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     # construct the Deep Belief Network
     dbn = DBN(numpy_rng=numpy_rng, n_ins=1024 * 1,
               hidden_layers_sizes=[2000, 100],
-              n_outs=10) #@todo n_outs should be 1, but if i change it from 10, it blows up!
+              n_outs=2) #@todo n_outs should be 1, but if i change it from 10, it blows up!
 
     # start-snippet-2
     #########################
@@ -387,9 +387,7 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     print '... finetuning the model'
     # early-stopping parameters
     # patience = 35 * n_train_batches  # look as this many examples regardless
-    patience = 2000  # look as this many examples regardless
-    patience_increase = 2.0   # wait this much longer when a new best is
-                              # found
+    patience_increase = 2.0   # wait this much longer when a new best is found
     improvement_threshold = 0.995  # a relative improvement of this much is
                                    # considered significant
     validation_frequency = min(n_train_batches, patience / 2)
@@ -467,25 +465,33 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
 
 
-def run_predictions(data_type, target, p_epochs, t_epochs, f_lr, p_lr):
+def run_predictions(data_type, target, p_epochs, t_epochs, f_lr, p_lr, pat):
 
     run_DBN(pretraining_epochs=p_epochs, training_epochs=t_epochs, 
         data_type=data_type, target=target, finetune_lr=f_lr, 
-        pretrain_lr=p_lr)
+        pretrain_lr=p_lr, patience=pat)
 
 
 
 def main(args):
-    # 15 p_epochs at p_lr = 0.04 broke the data! (stuck @47% acc)
+    # Tox21:
+    # 15 p_epochs at p_lr = 0.04 broke the data! (stuck @47%)
     # 10 p_epochs at p_lr = 0.04 -- best @epoch 144 (18.703704 %)
     #  8 p_epochs at p_lr = 0.04 -- best @epoch 132 (18.037037 %)
-    #  4 p_epochs at p_lr = 0.04 broke the data! (stuck @47% acc)
+    #  4 p_epochs at p_lr = 0.04 broke the data! (stuck @47%)
 
+    # MUV:
+    # 8 p_epochs at p_lr = 0.04 broke the data! (stuck @50%)
+    # 5 p_epochs at p_lr = 0.04 works, but starts @50%
+    # 4 p_epochs at p_lr = 0.04 broke the data! 42.350000 % (33.73% valid)
+    # 2 p_epochs at p_lr = 0.04 works, but starts @50%
+ 
     # !!! Important !!! This has a major impact on the results.
-    p_epochs = 8 #default 100 pretraining_epochs
+    p_epochs = 4 #default 100 pretraining_epochs
     t_epochs = 500 #default 1000 training_epochs
     f_lr = 0.1 #default 1000 training_epochs
     p_lr = 0.04 #default 1000 training_epochs
+    pat = 20000 # patience
 
     if(len(args) < 3 or len(args[2]) < 1):
         print 'usage: <tox21, dud_e, muv, or pcba> <target> '
@@ -510,16 +516,17 @@ def main(args):
 
     # settings specific to any particular dataset can go here 
     if(dataset == 'tox21'):
-        run_predictions('Tox21', target, p_epochs, t_epochs, f_lr, p_lr)
+        # run_predictions('Tox21', target, p_epochs, t_epochs, f_lr, p_lr)
+        run_predictions('Tox21', target, 8, 500, 0.1, 0.04, 2000)
 
     elif(dataset == 'dud_e'):
-        run_predictions('DUD-E', target, p_epochs, t_epochs, f_lr, p_lr)
+        run_predictions('DUD-E', target, 5, t_epochs, f_lr, p_lr, pat)
 
     elif(dataset == 'muv'):
-        run_predictions('MUV', target, p_epochs, t_epochs, f_lr, p_lr)
+        run_predictions('MUV', target, p_epochs, t_epochs, f_lr, p_lr, pat)
 
     elif(dataset == 'pcba'):
-        run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr)
+        run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr, pat)
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
