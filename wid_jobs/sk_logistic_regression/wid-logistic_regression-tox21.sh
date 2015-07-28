@@ -9,3 +9,4 @@ echo RunningOn $runningon
 # $process is your 0-indexed job index that you can use for looping
 CMD="python sk_logistic_regression.py tox21 $process"
 echo $CMD
+$CMD
