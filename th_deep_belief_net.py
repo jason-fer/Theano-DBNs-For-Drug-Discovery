@@ -416,15 +416,15 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
                 validation_losses = validate_model()
                 this_validation_loss = numpy.mean(validation_losses)
-                print(
-                    'epoch %i, minibatch %i/%i, validation error %f %%'
-                    % (
-                        epoch,
-                        minibatch_index + 1,
-                        n_train_batches,
-                        this_validation_loss * 100.
-                    )
-                )
+                # print(
+                #     'epoch %i, minibatch %i/%i, validation error %f %%'
+                #     % (
+                #         epoch,
+                #         minibatch_index + 1,
+                #         n_train_batches,
+                #         this_validation_loss * 100.
+                #     )
+                # )
 
                 # get the ROC / AUC 
                 auc = helpers.th_calc_auc(dbn, test_set_labels, test_set_x)
@@ -436,7 +436,7 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
                         improvement_threshold
                     ):
                         patience = max(patience, iter * patience_increase)
-                        print 'increased patience!!! (for AUC)'
+                        # print 'increased patience!!! (for AUC)'
 
                     best_auc = auc
                     print '     new best AUC!: ' + str(auc)
