@@ -11,6 +11,7 @@ import generate_folds, os, sys, random, time, theano
 import theano.tensor as T
 import numpy as np
 from sklearn import linear_model
+from sklearn import metrics
 
 
 fold_paths = [
@@ -112,9 +113,11 @@ def oversample(data):
     total_actives = len(actives)
     ratio = total_inactives / total_actives
 
-    # max ratio? 200
-    if(ratio > 50):
-        ratio = 50 # oversampling too much destroys the results
+    if(ratio > 30):
+        ratio = 30  # oversampling too much slows things down, & gives 
+                    # diminishing returns in terms of AUC.
+    else:
+        pass
 
     # oversample_total = ratio * total_actives
     oversamples = []
@@ -203,6 +206,27 @@ def build_data_set(fold):
     Y = np.array(Y)
 
     return (X, Y)
+
+def th_calc_dbn_auc(dbn, test_set_labels, test_set_x):
+    """ *************** build AUC curve *************** """
+
+    # compile a confidence predictor function
+    predict_model = theano.function(inputs=[dbn.x], outputs=[dbn.y_pred,dbn.p_y_given_x])
+    
+    # get the probability of our predictions
+    test_set = test_set_x.get_value()
+    predicted_values, conf_preds = predict_model(test_set[:(test_set.shape[0])])
+
+    conf_predictions = []
+    for i in range(len(conf_preds)):
+        # ignore the first column; this gives a lower score that seems wrong.
+        conf_predictions.append(conf_preds[i][1])
+
+    # determine ROC / AUC
+    fpr, tpr, thresholds = metrics.roc_curve(test_set_labels, conf_predictions)
+    auc = metrics.auc(fpr, tpr) # e.g. 0.855
+    
+    return auc
 
 def th_load_data(data_type, fold_path, target, fnames, fold_train, fold_test):
     """ Get just 1 test & 1 valid fold to avoid overloading memory """

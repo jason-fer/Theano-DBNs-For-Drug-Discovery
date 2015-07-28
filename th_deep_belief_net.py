@@ -68,6 +68,23 @@ class DBN(object):
         self.x = T.matrix('x')  # the data is presented as rasterized images
         self.y = T.ivector('y')  # the labels are presented as 1D vector
                                  # of [int] labels
+
+        """******************************************************************"""
+        """                Custom functions to get AUC / ROC                 """
+        # initialize with 0 the weights W as a matrix of shape (n_in, n_out)
+        self.W = theano.shared( value=numpy.zeros( (n_ins, n_outs), dtype=theano.config.floatX ), name='W', borrow=True )
+        # initialize the baises b as a vector of n_out 0s
+        self.b = theano.shared(value=numpy.zeros( (n_outs,), dtype=theano.config.floatX ), name='b', borrow=True )
+        # symbolic expression for computing the matrix of class-membership probabilities where:
+        # W is a matrix where column-k represent the separation hyper plain for class-k
+        # x is a matrix where row-j  represents input training sample-j
+        # b is a vector where element-k represent the free parameter of hyper plane-k
+        self.p_y_given_x = T.nnet.softmax(T.dot(self.x, self.W) + self.b)
+        # symbolic description of how to compute prediction as class whose probability is maximal
+        self.y_pred = T.argmax(self.p_y_given_x, axis=1)
+        """******************************************************************"""
+
+
         # end-snippet-1
         # The DBN is an MLP, for which all weights of intermediate
         # layers are shared with a different RBM.  We will first
@@ -441,10 +458,13 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
                     # test it on the test set
                     test_losses = test_model()
                     test_score = numpy.mean(test_losses)
-                    print(('     epoch %i, minibatch %i/%i, test error of '
-                           'best model %f %%') %
-                          (epoch, minibatch_index + 1, n_train_batches,
-                           test_score * 100.))
+
+                    # get the AUC
+                    auc = helpers.th_calc_dbn_auc(dbn, test_set_labels, test_set_x)
+                    auc = 1
+
+                    print(('     epoch %i, minibatch %i/%i, test error of best model %f %%, auc: %f') %
+                          (epoch, minibatch_index + 1, n_train_batches, test_score * 100., auc))
 
             if patience <= iter:
                 done_looping = True
@@ -474,11 +494,7 @@ def run_predictions(data_type, target, p_epochs, t_epochs, f_lr, p_lr, pat):
 
 
 def main(args):
-    # Tox21:
-    # 15 p_epochs at p_lr = 0.04 broke the data! (stuck @47%)
-    # 10 p_epochs at p_lr = 0.04 -- best @epoch 144 (18.703704 %)
-    #  8 p_epochs at p_lr = 0.04 -- best @epoch 132 (18.037037 %)
-    #  4 p_epochs at p_lr = 0.04 broke the data! (stuck @47%)
+
 
     # MUV:
     # 8 p_epochs at p_lr = 0.04 broke the data! (stuck @50%)
@@ -487,11 +503,11 @@ def main(args):
     # 2 p_epochs at p_lr = 0.04 works, but starts @50%
  
     # !!! Important !!! This has a major impact on the results.
-    p_epochs = 4 #default 100 pretraining_epochs
+    p_epochs = 8 #default 100 pretraining_epochs
     t_epochs = 500 #default 1000 training_epochs
     f_lr = 0.1 #default 1000 training_epochs
     p_lr = 0.04 #default 1000 training_epochs
-    pat = 20000 # patience
+    pat = 5000 # patience
 
     if(len(args) < 3 or len(args[2]) < 1):
         print 'usage: <tox21, dud_e, muv, or pcba> <target> '
@@ -516,14 +532,23 @@ def main(args):
 
     # settings specific to any particular dataset can go here 
     if(dataset == 'tox21'):
+        # Tox21 experimenting with the parameters:
+        # 15 p_epochs at p_lr = 0.04 broke the data! (stuck @47%)
+        # 10 p_epochs at p_lr = 0.04 -- best @epoch 144 (18.703704 %)
+        #  8 p_epochs at p_lr = 0.04 -- best @epoch 132 (18.037037 %)
+        #  4 p_epochs at p_lr = 0.04 broke the data! (stuck @47%)
+
         # run_predictions('Tox21', target, p_epochs, t_epochs, f_lr, p_lr)
-        run_predictions('Tox21', target, 8, 500, 0.1, 0.04, 2000)
+        run_predictions('Tox21', target, 1, t_epochs, 0.1, 0.04, 2000)
 
     elif(dataset == 'dud_e'):
-        run_predictions('DUD-E', target, 5, t_epochs, f_lr, p_lr, pat)
+        run_predictions('DUD-E', target, p_epochs, t_epochs, f_lr, p_lr, pat)
 
     elif(dataset == 'muv'):
-        run_predictions('MUV', target, p_epochs, t_epochs, f_lr, p_lr, pat)
+        # 8 p_epochs = broken
+        # 4 p_epochs = broken
+        # 1 p_epochs = 
+        run_predictions('MUV', target, 4, t_epochs, f_lr, p_lr, 4000)
 
     elif(dataset == 'pcba'):
         run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr, pat)

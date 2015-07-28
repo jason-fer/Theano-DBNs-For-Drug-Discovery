@@ -1,6 +1,6 @@
 """
 **************************************************************************
-A modified version of the Theano Logistic Regression Tutorial
+Theano Logistic Regression
 **************************************************************************
 
 This version was just for local testing (Vee ran his version for our SBEL batch jobs)
