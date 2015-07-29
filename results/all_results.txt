@@ -1,0 +1,46 @@
+Note: Overall Accuracy / AUC results exclude DUD-E
+
+########################  Logistic Regression   ########################
+Tox21: Average Accuracy: 0.7572939262, Average AUC: 0.806720504
+PCBA: Average Accuracy: 0.8462521347, Average AUC: 0.8106815528
+DUD-E: Average Accuracy: 0.9825760982, Average AUC: 0.9927727926
+MUV: Average Accuracy: 0.9518349982, Average AUC: 0.7723486928
+
+LR Accuracy: 0.8517936864, LR AUC: 0.7965835832
+#########################################################################
+
+
+#########################   Random Forests   ############################
+Tox21: Average Accuracy: 0.7459581518, Average AUC: 0.8524818264
+PCBA: Average Accuracy: 0.8658558296, Average AUC: 0.7781837933 (49 / 128 targets completed)
+DUD-E: Average Accuracy: 0.9693393643, Average AUC: 0.9898101778
+MUV: Average Accuracy: 0.9494154643, Average AUC: 0.6849735294
+
+RF Accuracy: 0.907635647, RF AUC: 0.7315786614
+#########################################################################
+
+
+############################  STNN DBN   ################################
+Tox21: Average Accuracy: xxx, Average AUC: xxx
+PCBA: Average Accuracy: xxx, Average AUC: xxx
+DUD-E: Average Accuracy: xxx, Average AUC: xxx
+MUV: Average Accuracy: xxx, Average AUC: xxx
+
+STNN Accuracy: xxx, STNN AUC: xxx
+#########################################################################
+
+
+########################  Tasks completed?   ########################
+****  Logistic Regression (done)  ****:
+MUV: 17
+DUD-E: 102
+PCBA: 128
+Tox21: 12
+
+****  Random Forests  ****:
+MUV: 17
+DUD-E: 102
+PCBA: 49 <--79 need to run again
+Tox21: 12
+
+****  STNN DBN  ****:

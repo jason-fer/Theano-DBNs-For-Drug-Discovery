@@ -1,0 +1,27 @@
+
++-------------------------------------------------------------------------------
+| Saving a few useful commands in case I do this again
++-------------------------------------------------------------------------------
+
+
+LR / RF:
+
+getting fold data:
+
+cat dude.txt | grep fold | grep -v Building > folds-dude.txt
+
+parsing result files:
+cat pcba.txt | grep -v fold | grep -v Building | grep -v Running | grep -v Results | grep -v Cluster | grep -v Process | grep -v CONDOR | grep -v python | grep -v runtime | grep -v "####" > results-pcba.txt
+
+STNN:
+
+cat dude.txt | grep "Optimization complete with best validation\|target" > targets-dude.txt
+cat pcba.txt | grep "Optimization complete with best validation\|target" > targets-pcba.txt
+cat muv.txt | grep "Optimization complete with best validation\|target" > targets-muv.txt
+cat tox21.txt | grep "Optimization complete with best validation\|target" > targets-tox21.txt
+
+
+cat dude.txt | grep "Optimization complete with best validation" > temp-dude.txt
+cat pcba.txt | grep "Optimization complete with best validation" > temp-pcba.txt
+cat muv.txt | grep "Optimization complete with best validation" > temp-muv.txt
+cat tox21.txt | grep "Optimization complete with best validation" > temp-tox21.txt

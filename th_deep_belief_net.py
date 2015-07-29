@@ -543,7 +543,11 @@ def main(args):
         #  4 p_epochs at p_lr = 0.04: broken
         #  2 p_epochs at p_lr = 0.04: broken
         #  2 p_epochs at p_lr = 0.01: broken
-        run_predictions('Tox21', target, 8, t_epochs, 0.1, 0.04, 2000)
+        if(target != 'sr-hse'):
+            run_predictions('Tox21', target, 8, t_epochs, 0.1, 0.04, 2000)
+        else:
+            # sr-hse needs different settings
+            run_predictions('Tox21', target, 8, t_epochs, 0.1, 0.04, 5000)
 
     elif(dataset == 'dud_e'):
 

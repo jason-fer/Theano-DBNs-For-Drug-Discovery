@@ -1,18 +1,12 @@
-####################  Results for Tox21 ####################
-nr-ahr accuracy: 0.801836288181, auc:0.864757167134
-nr-ar-lbd accuracy: 0.829054930573, auc:0.874823445265
-sr-mmp accuracy: 0.80347772626, auc:0.863196952028
-sr-p53 accuracy: 0.761373380713, auc:0.823669692916
-nr-ar accuracy: 0.777665429071, auc:0.789480392565
-nr-aromatase accuracy: 0.74663924627, auc:0.80931146087
-nr-er-lbd accuracy: 0.77590685693, auc:0.823446073629
-nr-er accuracy: 0.680090016975, auc:0.719136851523
-nr-ppar-gamma accuracy: 0.714275885793, auc:0.762828778205
-sr-are accuracy: 0.725892012309, auc:0.767684138028
-sr-atad5 accuracy: 0.777118460995, auc:0.837084769214
-sr-hse accuracy: 0.694196880759, auc:0.745244267974
+########################  Logistic Regression   ########################
+Tox21: Average Accuracy: 0.7572939262, Average AUC: 0.806720504
+PCBA: Average Accuracy: 0.8462521347, Average AUC: 0.8106815528
+DUD-E: Average Accuracy: 0.9825760982, Average AUC: 0.9927727926
+MUV: Average Accuracy: 0.9518349982, Average AUC: 0.7723486928
 
-12 Targets:
-overall accuracy: 0.7572939262
-overall auc: 0.8067219991
 
+tasks completion counts for Logistic Regression:
+MUV: 17
+DUD-E: 102
+PCBA: 128
+Tox21: 12

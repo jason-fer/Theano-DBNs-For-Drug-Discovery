@@ -1,0 +1,40 @@
+*******************With targets*********************:
+Running Theano Learn Deep Belief Net for tox21, target: nr-ahr.........
+best validation score of 19.074074 %, obtained at iteration 9296, with test performance 18.000000 %, and best_auc: 0.894356
+Running Theano Learn Deep Belief Net for tox21, target: nr-ar-lbd.........
+best validation score of 17.718750 %, obtained at iteration 2574, with test performance 21.187500 %, and best_auc: 0.790402
+Running Theano Learn Deep Belief Net for tox21, target: sr-mmp.........
+best validation score of 23.173913 %, obtained at iteration 12993, with test performance 20.173913 %, and best_auc: 0.858080
+Running Theano Learn Deep Belief Net for tox21, target: sr-p53.........
+best validation score of 25.906250 %, obtained at iteration 9216, with test performance 30.468750 %, and best_auc: 0.810437
+Running Theano Learn Deep Belief Net for tox21, target: nr-ar.........
+best validation score of 20.028571 %, obtained at iteration 212, with test performance 22.800000 %, and best_auc: 0.827999
+Running Theano Learn Deep Belief Net for tox21, target: nr-aromatase.........
+best validation score of 21.962963 %, obtained at iteration 6642, with test performance 20.481481 %, and best_auc: 0.863284
+Running Theano Learn Deep Belief Net for tox21, target: nr-er-lbd.........
+best validation score of 35.906250 %, obtained at iteration 776, with test performance 42.218750 %, and best_auc: 0.579880
+Running Theano Learn Deep Belief Net for tox21, target: nr-er.........
+best validation score of 31.769231 %, obtained at iteration 12956, with test performance 28.538462 %, and best_auc: 0.750099
+Running Theano Learn Deep Belief Net for tox21, target: nr-ppar-gamma.........
+best validation score of 31.724138 %, obtained at iteration 1305, with test performance 38.965517 %, and best_auc: 0.621434
+Running Theano Learn Deep Belief Net for tox21, target: sr-are.........
+best validation score of 25.565217 %, obtained at iteration 14973, with test performance 27.173913 %, and best_auc: 0.788955
+Running Theano Learn Deep Belief Net for tox21, target: sr-atad5.........
+best validation score of 30.529412 %, obtained at iteration 13081, with test performance 33.764706 %, and best_auc: 0.722867
+Running Theano Learn Deep Belief Net for tox21, target: sr-hse.........
+best validation score of 49.866667 %, obtained at iteration 90, with test performance 49.866667 %, and best_auc: 0.511509
+
+
+*******************Results Only*********************:
+of 19.074074 %, obtained at iteration 9296, with test performance 18.000000 %, and best_auc: 0.894356
+of 17.718750 %, obtained at iteration 2574, with test performance 21.187500 %, and best_auc: 0.790402
+of 23.173913 %, obtained at iteration 12993, with test performance 20.173913 %, and best_auc: 0.858080
+of 25.906250 %, obtained at iteration 9216, with test performance 30.468750 %, and best_auc: 0.810437
+of 20.028571 %, obtained at iteration 212, with test performance 22.800000 %, and best_auc: 0.827999
+of 21.962963 %, obtained at iteration 6642, with test performance 20.481481 %, and best_auc: 0.863284
+of 35.906250 %, obtained at iteration 776, with test performance 42.218750 %, and best_auc: 0.579880
+of 31.769231 %, obtained at iteration 12956, with test performance 28.538462 %, and best_auc: 0.750099
+of 31.724138 %, obtained at iteration 1305, with test performance 38.965517 %, and best_auc: 0.621434
+of 25.565217 %, obtained at iteration 14973, with test performance 27.173913 %, and best_auc: 0.788955
+of 30.529412 %, obtained at iteration 13081, with test performance 33.764706 %, and best_auc: 0.722867
+of 49.866667 %, obtained at iteration 90, with test performance 49.866667 %, and best_auc: 0.511509

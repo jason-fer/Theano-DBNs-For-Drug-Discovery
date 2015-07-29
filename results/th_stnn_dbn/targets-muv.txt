@@ -1,0 +1,57 @@
+*******************With targets*********************:
+Running Theano Learn Deep Belief Net for muv, target: 466.........
+best validation score of 5.580645 %, obtained at iteration 95, with test performance 5.645161 %, and best_auc: 0.613444
+Running Theano Learn Deep Belief Net for muv, target: 548.........
+best validation score of 4.903226 %, obtained at iteration 1615, with test performance 4.741935 %, and best_auc: 0.866056
+Running Theano Learn Deep Belief Net for muv, target: 737.........
+best validation score of 5.709677 %, obtained at iteration 95, with test performance 5.709677 %, and best_auc: 0.807222
+Running Theano Learn Deep Belief Net for muv, target: 810.........
+best validation score of 5.709677 %, obtained at iteration 95, with test performance 5.612903 %, and best_auc: 0.672667
+Running Theano Learn Deep Belief Net for muv, target: 832.........
+best validation score of 4.806452 %, obtained at iteration 16245, with test performance 3.806452 %, and best_auc: 0.969889
+Running Theano Learn Deep Belief Net for muv, target: 846.........
+best validation score of 2.838710 %, obtained at iteration 5225, with test performance 2.064516 %, and best_auc: 0.875056
+Running Theano Learn Deep Belief Net for muv, target: 852.........
+best validation score of 5.612903 %, obtained at iteration 95, with test performance 5.483871 %, and best_auc: 0.480667
+Running Theano Learn Deep Belief Net for muv, target: 858.........
+best validation score of 5.677419 %, obtained at iteration 95, with test performance 5.774194 %, and best_auc: 0.726806
+Running Theano Learn Deep Belief Net for muv, target: 859.........
+best validation score of 5.677419 %, obtained at iteration 95, with test performance 5.548387 %, and best_auc: 0.831111
+Running Theano Learn Deep Belief Net for muv, target: 600.........
+best validation score of 5.709677 %, obtained at iteration 95, with test performance 5.709677 %, and best_auc: 0.655750
+Running Theano Learn Deep Belief Net for muv, target: 644.........
+best validation score of 4.612903 %, obtained at iteration 11685, with test performance 5.709677 %, and best_auc: 0.612861
+Running Theano Learn Deep Belief Net for muv, target: 652.........
+best validation score of 5.677419 %, obtained at iteration 95, with test performance 5.580645 %, and best_auc: 0.662000
+Running Theano Learn Deep Belief Net for muv, target: 689.........
+best validation score of 5.677419 %, obtained at iteration 95, with test performance 5.580645 %, and best_auc: 0.775611
+Running Theano Learn Deep Belief Net for muv, target: 692.........
+best validation score of 5.709677 %, obtained at iteration 95, with test performance 5.741935 %, and best_auc: 0.532750
+Running Theano Learn Deep Belief Net for muv, target: 712.........
+best validation score of 5.709677 %, obtained at iteration 95, with test performance 5.580645 %, and best_auc: 0.767944
+Running Theano Learn Deep Belief Net for muv, target: 713.........
+best validation score of 5.645161 %, obtained at iteration 95, with test performance 5.645161 %, and best_auc: 0.731667
+Running Theano Learn Deep Belief Net for muv, target: 733.........
+best validation score of 5.709677 %, obtained at iteration 95, with test performance 5.709677 %, and best_auc: 0.565167
+
+
+*******************Results Only*********************:
+of 5.580645 %, obtained at iteration 95, with test performance 5.645161 %, and best_auc: 0.613444
+of 4.903226 %, obtained at iteration 1615, with test performance 4.741935 %, and best_auc: 0.866056
+of 5.709677 %, obtained at iteration 95, with test performance 5.709677 %, and best_auc: 0.807222
+of 5.709677 %, obtained at iteration 95, with test performance 5.612903 %, and best_auc: 0.672667
+of 4.806452 %, obtained at iteration 16245, with test performance 3.806452 %, and best_auc: 0.969889
+of 2.838710 %, obtained at iteration 5225, with test performance 2.064516 %, and best_auc: 0.875056
+of 5.612903 %, obtained at iteration 95, with test performance 5.483871 %, and best_auc: 0.480667
+of 5.677419 %, obtained at iteration 95, with test performance 5.774194 %, and best_auc: 0.726806
+of 5.677419 %, obtained at iteration 95, with test performance 5.548387 %, and best_auc: 0.831111
+of 5.709677 %, obtained at iteration 95, with test performance 5.709677 %, and best_auc: 0.655750
+of 4.612903 %, obtained at iteration 11685, with test performance 5.709677 %, and best_auc: 0.612861
+of 5.677419 %, obtained at iteration 95, with test performance 5.580645 %, and best_auc: 0.662000
+of 5.677419 %, obtained at iteration 95, with test performance 5.580645 %, and best_auc: 0.775611
+of 5.709677 %, obtained at iteration 95, with test performance 5.741935 %, and best_auc: 0.532750
+of 5.709677 %, obtained at iteration 95, with test performance 5.580645 %, and best_auc: 0.767944
+of 5.645161 %, obtained at iteration 95, with test performance 5.645161 %, and best_auc: 0.731667
+of 5.709677 %, obtained at iteration 95, with test performance 5.709677 %, and best_auc: 0.565167
+
+

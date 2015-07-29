@@ -1,0 +1,17 @@
+####################  Results for Tox21 ####################
+nr-ahr accuracy: 0.801836288181, auc:0.864757167134
+nr-ar-lbd accuracy: 0.829054930573, auc:0.874827573025
+sr-mmp accuracy: 0.80347772626, auc:0.863195529135
+sr-p53 accuracy: 0.761373380713, auc:0.823670271603
+nr-ar accuracy: 0.777665429071, auc:0.789472306708
+nr-aromatase accuracy: 0.74663924627, auc:0.809306313024
+nr-er-lbd accuracy: 0.77590685693, auc:0.823447432266
+nr-er accuracy: 0.680090016975, auc:0.719135270673
+nr-ppar-gamma accuracy: 0.714275885793, auc:0.762823309242
+sr-are accuracy: 0.725892012309, auc:0.767684896236
+sr-atad5 accuracy: 0.777118460995, auc:0.837084769214
+sr-hse accuracy: 0.694196880759, auc:0.745241210221
+
+
+Tox21: Average Accuracy: 0.7572939262 Average AUC: 0.806720504
+

@@ -1,0 +1,13 @@
+########################  Random Forests   ########################
+Tox21: Average Accuracy: 0.7459581518, Average AUC: 0.8524818264
+PCBA: Average Accuracy: 0.8658558296, Average AUC: 0.7781837933 (49 / 128 targets completed)
+DUD-E: Average Accuracy: 0.9693393643, Average AUC: 0.9898101778
+MUV: Average Accuracy: 0.9494154643, Average AUC: 0.6849735294
+
+
+tasks completion counts for Random Forests:
+MUV: 17
+DUD-E: 102
+PCBA: 49/128 <--issue
+Tox21: 12
+
