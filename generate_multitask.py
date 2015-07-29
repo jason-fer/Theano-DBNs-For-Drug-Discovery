@@ -11,13 +11,14 @@ Randomly sample with replacement & generate multitask datasets
 @author: Jason Feriante <feriante@cs.wisc.edu>
 @date: 26 July 2015
 """
-import os, hashlib, sys, random, time
+import os, hashlib, sys, random, time, math
 from lib.theano import helpers
 
 
 
 def gen_multitask(data_type):
-    hashmap = helpers.load_hashmap(data_type)
+    hashmap = helpers.load_string_col_hashmap(data_type)
+
     rev_targets, target_columns = helpers.get_rev_targets(data_type)
 
     """Load data from the existing folds"""
@@ -95,15 +96,67 @@ def gen_multitask(data_type):
     # let's give each task an equal proportion for now 
     # (this is very naive, considering variations in batch size)
     # however, each target counts equal weight towards overall accuracy
-    task_count = len(target_columns) 
+    task_count = len(target_columns)
 
+    # this is really 1/2 the ratio since we sample once from each data-type
+    task_ratio = int(math.ceil( (10000.0 / task_count) / 2 ) )
 
+    # build default set of inactive columns
+    inactive_cols = [0] * task_count
+    inactive_cols = ' '.join(str(v) for v in inactive_cols)
+
+    """ where we will store our multitask batches """
+    multitask_path = 'multitask/' + data_type + '/batch'
+
+    batch_count = 0
+    # keep building batches until we make 'enough'
     while(multitask_size > 0):
-        # keep building batches until we make 'enough'
         
+        multitask = []
+        #draw stratified samples based on the ratio
+        for col_id in range(len(target_columns)):
+
+            fold = 0
+            for i in range(task_ratio):
+                target = rev_targets[col_id]['target']
+
+                # generate a foldID
+                fold_id = ' fl' + str(fold) + ' '
+
+                # insert an inactive
+                inactive = random.choice(tasks[target]['inactives'])
+                if inactive in hashmap:
+                    multitask.append(inactive + fold_id + hashmap[inactive])
+                else:
+                    multitask.append(inactive + fold_id + inactive_cols)
+                
+                # insert an active
+                active = random.choice(tasks[target]['actives'])
+                if active in hashmap:
+                    multitask.append(inactive + fold_id + hashmap[active])
+                else:
+                    # this should never happen
+                    raise ValueError('active not in hashmap!!!')
+
+                fold += 1
+                if(fold >= 5):
+                    fold = 0
 
 
+        # pre-shuffle the data
+        random.shuffle(multitask)
 
+        # prevent the files from falling into a strange ordering
+        batch_name = str(batch_count).zfill(5)
+
+        # write the batch to disk
+        filename = multitask_path + batch_name + '.fl'
+        with open(filename, 'w') as file_obj:
+            for row in multitask:
+                file_obj.write(row + '\n')
+
+
+        batch_count += 1
         multitask_size -= 10000
     
     

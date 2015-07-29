@@ -142,6 +142,24 @@ def load_hashmap(data_type):
 
     return hashmap
 
+def load_string_col_hashmap(data_type):
+    """Load a hashmap into memory -- but keep the columns in string format"""
+    hashmap_path = 'hashmaps/' + data_type + '.hm'
+
+    hashmap = {}
+    with open(hashmap_path) as f:
+        lines = f.readlines()
+        for line in lines:
+            # put each row in it's respective fold
+            parts = line.rstrip('\n').split(r' ')
+
+            bitstring = parts[0]
+            row = parts[1:]
+            row = ' '.join(str(v) for v in row)
+
+            hashmap[bitstring] = row
+
+    return hashmap
 
 
 def build_targets(fold_path, data_type):
