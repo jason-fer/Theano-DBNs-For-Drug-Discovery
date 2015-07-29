@@ -124,6 +124,26 @@ def get_rev_targets(data_type):
 
 
 
+def load_hashmap(data_type):
+    """Load a hashmap into memory"""
+    hashmap_path = 'hashmaps/' + data_type + '.hm'
+
+    hashmap = {}
+    with open(hashmap_path) as f:
+        lines = f.readlines()
+        for line in lines:
+            # put each row in it's respective fold
+            parts = line.rstrip('\n').split(r' ')
+
+            bitstring = parts[0]
+            row = parts[1:]
+
+            hashmap[bitstring] = row
+
+    return hashmap
+
+
+
 def build_targets(fold_path, data_type):
     """ for building folds or training on the folds """
 

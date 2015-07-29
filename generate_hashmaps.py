@@ -1,6 +1,6 @@
 """
 **************************************************************************
-Generate Truth Sets
+Generate Hashmaps
 **************************************************************************
 
 Use our active files to build sparse truth sets (items not in the set are 
@@ -17,26 +17,6 @@ row format:
 
 import generate_folds, os, sys, random, time, re
 from lib.theano import helpers
-
-
-
-def load_hashmap(data_type):
-    """Load a hashmap into memory"""
-    hashmap_path = 'hashmaps/' + data_type + '.hm'
-
-    hashmap = {}
-    with open(hashmap_path) as f:
-        lines = f.readlines()
-        for line in lines:
-            # put each row in it's respective fold
-            parts = line.rstrip('\n').split(r' ')
-
-            bitstring = parts[0]
-            row = parts[1:]
-
-            hashmap[bitstring] = row
-
-    return hashmap
 
 
 
