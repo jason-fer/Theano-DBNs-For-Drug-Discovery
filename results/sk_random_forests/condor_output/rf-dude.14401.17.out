@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 17
+RunningOn slot7@opt-a004.discovery.wisc.edu
+python sk_random_forests.py dud_e 17
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: casp3, fold: 0
+Running random forests for target: casp3
+target:casp3 fold:0 predicted: 4264 wrong: 30 pct correct: 0.99296435272, auc: 1.0
+Results for casp3: accuracy: 0.99296435272, auc: 1.0
+Building data for target: casp3, fold: 1
+Running random forests for target: casp3
+target:casp3 fold:1 predicted: 4264 wrong: 60 pct correct: 0.985928705441, auc: 0.991932928439
+Results for casp3: accuracy: 0.989446529081, auc: 0.99596646422
+Building data for target: casp3, fold: 2
+Running random forests for target: casp3
+target:casp3 fold:2 predicted: 4264 wrong: 60 pct correct: 0.985928705441, auc: 0.999953789279
+Results for casp3: accuracy: 0.988273921201, auc: 0.997295572573
+Building data for target: casp3, fold: 3
+Running random forests for target: casp3
+target:casp3 fold:3 predicted: 4264 wrong: 61 pct correct: 0.985694183865, auc: 0.984096910483
+Results for casp3: accuracy: 0.987628986867, auc: 0.99399590705
+Building data for target: casp3, fold: 4
+Running random forests for target: casp3
+target:casp3 fold:4 predicted: 4266 wrong: 61 pct correct: 0.985700890764, auc: 0.999884579871
+Results for casp3: accuracy: 0.987243367646, auc: 0.995173641614
+####################  Results for DUD-E ####################
+casp3 accuracy: 0.987243367646, auc:0.995173641614
+############################################################
+runtime: 1207.44 secs.

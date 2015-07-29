@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 13
+RunningOn slot12@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 13
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: aofb, fold: 0
+Running logistic regression for target: aofb
+target:aofb fold:0 predicted: 2376 wrong: 185 pct correct: 0.922138047138, auc: 0.99210721938
+Results for aofb: accuracy: 0.922138047138, auc: 0.99210721938
+Building data for target: aofb, fold: 1
+Running logistic regression for target: aofb
+target:aofb fold:1 predicted: 2376 wrong: 11 pct correct: 0.99537037037, auc: 0.999584590494
+Results for aofb: accuracy: 0.958754208754, auc: 0.995845904937
+Building data for target: aofb, fold: 2
+Running logistic regression for target: aofb
+target:aofb fold:2 predicted: 2376 wrong: 155 pct correct: 0.934764309764, auc: 0.975490839127
+Results for aofb: accuracy: 0.950757575758, auc: 0.989060883
+Building data for target: aofb, fold: 3
+Running logistic regression for target: aofb
+target:aofb fold:3 predicted: 2376 wrong: 95 pct correct: 0.960016835017, auc: 0.994818313
+Results for aofb: accuracy: 0.953072390572, auc: 0.9905002405
+Building data for target: aofb, fold: 4
+Running logistic regression for target: aofb
+target:aofb fold:4 predicted: 2467 wrong: 32 pct correct: 0.987028779895, auc: 0.999819754867
+Results for aofb: accuracy: 0.959863668437, auc: 0.992364143374
+####################  Results for DUD-E ####################
+aofb accuracy: 0.959863668437, auc:0.992364143374
+############################################################
+runtime: 55.85 secs.

@@ -1,0 +1,69 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14405
+Process 62
+RunningOn slot24@mir-exec-01.discovery.wisc.edu
+python th_deep_belief_net.py dud_e 62
+Running Theano Learn Deep Belief Net for dud_e, target: mapk2.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -107.965974088
+Pre-training layer 0, epoch 1, cost  -70.095349348
+Pre-training layer 1, epoch 0, cost  -1388.82280548
+Pre-training layer 1, epoch 1, cost  -1375.18228255
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 74/74, best error 50.416667 %, best_auc: 0.929096
+     new best AUC!: 0.943382582864
+     new best AUC!: 0.943402126329
+     new best AUC!: 0.943480300188
+     new best AUC!: 0.943538930582
+     new best AUC!: 0.943675734834
+     new best AUC!: 0.943744136961
+     new best AUC!: 0.944144777986
+     new best AUC!: 0.944301125704
+     new best AUC!: 0.944633364603
+     new best AUC!: 0.944985146967
+     new best AUC!: 0.945336929331
+     new best AUC!: 0.945620309568
+     new best AUC!: 0.946235928705
+     new best AUC!: 0.946607254534
+     new best AUC!: 0.946890634772
+     new best AUC!: 0.9472619606
+     new best AUC!: 0.947652829894
+     new best AUC!: 0.948248905566
+     new best AUC!: 0.948717948718
+     new best AUC!: 0.949656035022
+     new best AUC!: 0.950476860538
+     new best AUC!: 0.951336772983
+     new best AUC!: 0.952226000625
+     new best AUC!: 0.953222717323
+     new best AUC!: 0.954385553471
+     new best AUC!: 0.955186835522
+     new best AUC!: 0.956359443402
+     new best AUC!: 0.957610225141
+     new best AUC!: 0.988156660413
+     epoch 35, minibatch 74/74, best error 7.083333 %, best_auc: 0.988157
+     new best AUC!: 0.993413852408
+     epoch 36, minibatch 74/74, best error 2.250000 %, best_auc: 0.993414
+     new best AUC!: 0.9944691995
+     epoch 37, minibatch 74/74, best error 1.500000 %, best_auc: 0.994469
+     new best AUC!: 0.99476235147
+     epoch 38, minibatch 74/74, best error 1.291667 %, best_auc: 0.994762
+     new best AUC!: 0.994879612258
+     new best AUC!: 0.994996873046
+     new best AUC!: 0.995075046904
+     new best AUC!: 0.995133677298
+     new best AUC!: 0.995192307692
+     new best AUC!: 0.995231394622
+     new best AUC!: 0.995270481551
+     new best AUC!: 0.995290025016
+     new best AUC!: 0.99530956848
+     new best AUC!: 0.995329111945
+     new best AUC!: 0.99534865541
+     new best AUC!: 0.99534865541
+     new best AUC!: 0.995358427142
+     new best AUC!: 0.995368198874
+     new best AUC!: 0.995368198874
+Optimization complete with best validation score of 1.250000 %, obtained at iteration 2812, with test performance 1.291667 %, and best_auc: 0.995368
+runtime: 10794.04 secs.

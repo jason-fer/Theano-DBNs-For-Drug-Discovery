@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 55
+RunningOn slot8@opt-a003.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 55
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: jak2, fold: 0
+Running logistic regression for target: jak2
+target:jak2 fold:0 predicted: 2218 wrong: 31 pct correct: 0.986023444545, auc: 0.994056651492
+Results for jak2: accuracy: 0.986023444545, auc: 0.994056651492
+Building data for target: jak2, fold: 1
+Running logistic regression for target: jak2
+target:jak2 fold:1 predicted: 2218 wrong: 62 pct correct: 0.972046889089, auc: 0.998356095094
+Results for jak2: accuracy: 0.979035166817, auc: 0.996206373293
+Building data for target: jak2, fold: 2
+Running logistic regression for target: jak2
+target:jak2 fold:2 predicted: 2218 wrong: 30 pct correct: 0.986474301172, auc: 1.0
+Results for jak2: accuracy: 0.981514878269, auc: 0.997470915529
+Building data for target: jak2, fold: 3
+Running logistic regression for target: jak2
+target:jak2 fold:3 predicted: 2218 wrong: 1 pct correct: 0.999549143372, auc: 1.0
+Results for jak2: accuracy: 0.986023444545, auc: 0.998103186646
+Building data for target: jak2, fold: 4
+Running logistic regression for target: jak2
+target:jak2 fold:4 predicted: 2308 wrong: 31 pct correct: 0.986568457539, auc: 0.99977008323
+Results for jak2: accuracy: 0.986132447144, auc: 0.998436565963
+####################  Results for DUD-E ####################
+jak2 accuracy: 0.986132447144, auc:0.998436565963
+############################################################
+runtime: 118.32 secs.

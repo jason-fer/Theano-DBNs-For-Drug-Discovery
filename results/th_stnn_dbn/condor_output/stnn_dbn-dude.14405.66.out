@@ -1,0 +1,43 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14405
+Process 66
+RunningOn slot12@wid-007.discovery.wisc.edu
+python th_deep_belief_net.py dud_e 66
+Running Theano Learn Deep Belief Net for dud_e, target: mk10.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -115.957068079
+Pre-training layer 0, epoch 1, cost  -80.585708568
+Pre-training layer 1, epoch 0, cost  -1388.4441978
+Pre-training layer 1, epoch 1, cost  -1373.63533858
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 73/73, best error 45.416667 %, best_auc: 0.748973
+     epoch 11, minibatch 73/73, best error 29.750000 %, best_auc: 0.748973
+     new best AUC!: 0.900874048415
+     epoch 12, minibatch 73/73, best error 13.000000 %, best_auc: 0.900874
+     new best AUC!: 0.937426994804
+     epoch 13, minibatch 73/73, best error 9.625000 %, best_auc: 0.937427
+     new best AUC!: 0.955914931325
+     epoch 14, minibatch 73/73, best error 8.500000 %, best_auc: 0.955915
+     new best AUC!: 0.962742175857
+     epoch 15, minibatch 73/73, best error 7.416667 %, best_auc: 0.962742
+     new best AUC!: 0.96517903895
+     epoch 16, minibatch 73/73, best error 6.583333 %, best_auc: 0.965179
+     new best AUC!: 0.965803359246
+     epoch 17, minibatch 73/73, best error 6.458333 %, best_auc: 0.965803
+     new best AUC!: 0.966286703992
+     epoch 18, minibatch 73/73, best error 6.416667 %, best_auc: 0.966287
+     new best AUC!: 0.966629073186
+     epoch 19, minibatch 73/73, best error 6.416667 %, best_auc: 0.966629
+     new best AUC!: 0.966890884924
+     new best AUC!: 0.966951303017
+     epoch 21, minibatch 73/73, best error 6.416667 %, best_auc: 0.966951
+     new best AUC!: 0.96719297539
+     epoch 22, minibatch 73/73, best error 7.625000 %, best_auc: 0.967193
+     epoch 25, minibatch 73/73, best error 7.583333 %, best_auc: 0.967193
+     epoch 29, minibatch 73/73, best error 7.500000 %, best_auc: 0.967193
+     epoch 30, minibatch 73/73, best error 7.500000 %, best_auc: 0.967193
+Optimization complete with best validation score of 6.250000 %, obtained at iteration 2190, with test performance 7.500000 %, and best_auc: 0.967193
+runtime: 3038.01 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 2
+RunningOn slot2@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 2
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ace, fold: 0
+Running logistic regression for target: ace
+target:ace fold:0 predicted: 6805 wrong: 22 pct correct: 0.996767083027, auc: 0.999998185987
+Results for ace: accuracy: 0.996767083027, auc: 0.999998185987
+Building data for target: ace, fold: 1
+Running logistic regression for target: ace
+target:ace fold:1 predicted: 6805 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ace: accuracy: 0.998383541514, auc: 0.999999092994
+Building data for target: ace, fold: 2
+Running logistic regression for target: ace
+target:ace fold:2 predicted: 6805 wrong: 64 pct correct: 0.990595150625, auc: 0.999816784698
+Results for ace: accuracy: 0.995787411217, auc: 0.999938323562
+Building data for target: ace, fold: 3
+Running logistic regression for target: ace
+target:ace fold:3 predicted: 6805 wrong: 21 pct correct: 0.996914033799, auc: 1.0
+Results for ace: accuracy: 0.996069066863, auc: 0.999953742671
+Building data for target: ace, fold: 4
+Running logistic regression for target: ace
+target:ace fold:4 predicted: 6705 wrong: 40 pct correct: 0.994034302759, auc: 0.998985223429
+Results for ace: accuracy: 0.995662114042, auc: 0.999760038823
+####################  Results for DUD-E ####################
+ace accuracy: 0.995662114042, auc:0.999760038823
+############################################################
+runtime: 127.32 secs.

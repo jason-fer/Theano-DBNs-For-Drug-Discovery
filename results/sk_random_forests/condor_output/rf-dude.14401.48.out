@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 48
+RunningOn slot32@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 48
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: hivrt, fold: 0
+Running random forests for target: hivrt
+target:hivrt fold:0 predicted: 7636 wrong: 394 pct correct: 0.948402304872, auc: 0.99610929776
+Results for hivrt: accuracy: 0.948402304872, auc: 0.99610929776
+Building data for target: hivrt, fold: 1
+Running random forests for target: hivrt
+target:hivrt fold:1 predicted: 7636 wrong: 544 pct correct: 0.92875851231, auc: 0.994102720302
+Results for hivrt: accuracy: 0.938580408591, auc: 0.995106009031
+Building data for target: hivrt, fold: 2
+Running random forests for target: hivrt
+target:hivrt fold:2 predicted: 7636 wrong: 512 pct correct: 0.932949188057, auc: 0.992809249602
+Results for hivrt: accuracy: 0.936703335079, auc: 0.994340422554
+Building data for target: hivrt, fold: 3
+Running random forests for target: hivrt
+target:hivrt fold:3 predicted: 7636 wrong: 361 pct correct: 0.952723939235, auc: 0.996794621138
+Results for hivrt: accuracy: 0.940708486118, auc: 0.9949539722
+Building data for target: hivrt, fold: 4
+Running random forests for target: hivrt
+target:hivrt fold:4 predicted: 7629 wrong: 494 pct correct: 0.935247083497, auc: 0.991544256871
+Results for hivrt: accuracy: 0.939616205594, auc: 0.994272029134
+####################  Results for DUD-E ####################
+hivrt accuracy: 0.939616205594, auc:0.994272029134
+############################################################
+runtime: 3690.15 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 97
+RunningOn slot14@opt-a002.discovery.wisc.edu
+python sk_random_forests.py dud_e 97
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: tysy, fold: 0
+Running random forests for target: tysy
+target:tysy fold:0 predicted: 2740 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for tysy: accuracy: 1.0, auc: 1.0
+Building data for target: tysy, fold: 1
+Running random forests for target: tysy
+target:tysy fold:1 predicted: 2740 wrong: 154 pct correct: 0.943795620438, auc: 0.999091569767
+Results for tysy: accuracy: 0.971897810219, auc: 0.999545784884
+Building data for target: tysy, fold: 2
+Running random forests for target: tysy
+target:tysy fold:2 predicted: 2740 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for tysy: accuracy: 0.981265206813, auc: 0.999697189922
+Building data for target: tysy, fold: 3
+Running random forests for target: tysy
+target:tysy fold:3 predicted: 2740 wrong: 44 pct correct: 0.983941605839, auc: 0.998927466242
+Results for tysy: accuracy: 0.981934306569, auc: 0.999504759002
+Building data for target: tysy, fold: 4
+Running random forests for target: tysy
+target:tysy fold:4 predicted: 2700 wrong: 63 pct correct: 0.976666666667, auc: 0.997389079088
+Results for tysy: accuracy: 0.980880778589, auc: 0.999081623019
+####################  Results for DUD-E ####################
+tysy accuracy: 0.980880778589, auc:0.999081623019
+############################################################
+runtime: 371.57 secs.

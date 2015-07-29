@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 12
+RunningOn slot11@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 12
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: andr, fold: 0
+Running logistic regression for target: andr
+target:andr fold:0 predicted: 5708 wrong: 112 pct correct: 0.980378416258, auc: 0.99824933687
+Results for andr: accuracy: 0.980378416258, auc: 0.99824933687
+Building data for target: andr, fold: 1
+Running logistic regression for target: andr
+target:andr fold:1 predicted: 5708 wrong: 87 pct correct: 0.984758234057, auc: 0.999698275862
+Results for andr: accuracy: 0.982568325158, auc: 0.998973806366
+Building data for target: andr, fold: 2
+Running logistic regression for target: andr
+target:andr fold:2 predicted: 5708 wrong: 141 pct correct: 0.97529782761, auc: 0.998590848806
+Results for andr: accuracy: 0.980144825975, auc: 0.998846153846
+Building data for target: andr, fold: 3
+Running logistic regression for target: andr
+target:andr fold:3 predicted: 5708 wrong: 87 pct correct: 0.984758234057, auc: 0.999791114058
+Results for andr: accuracy: 0.981298177996, auc: 0.999082393899
+Building data for target: andr, fold: 4
+Running logistic regression for target: andr
+target:andr fold:4 predicted: 5792 wrong: 140 pct correct: 0.975828729282, auc: 0.99461401515
+Results for andr: accuracy: 0.980204288253, auc: 0.998188718149
+####################  Results for DUD-E ####################
+andr accuracy: 0.980204288253, auc:0.998188718149
+############################################################
+runtime: 116.25 secs.

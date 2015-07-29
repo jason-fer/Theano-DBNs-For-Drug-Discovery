@@ -1,0 +1,23 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14405
+Process 101
+RunningOn slot10@opt-a001.discovery.wisc.edu
+python th_deep_belief_net.py dud_e 101
+Running Theano Learn Deep Belief Net for dud_e, target: xiap.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -122.699318228
+Pre-training layer 0, epoch 1, cost  -75.4513949978
+Pre-training layer 1, epoch 0, cost  -1391.0560532
+Pre-training layer 1, epoch 1, cost  -1374.17038949
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 54/54, best error 41.882353 %, best_auc: 0.999923
+     new best AUC!: 1.0
+     epoch 3, minibatch 54/54, best error 0.000000 %, best_auc: 1.000000
+     epoch 4, minibatch 54/54, best error 0.000000 %, best_auc: 1.000000
+     epoch 12, minibatch 54/54, best error 0.000000 %, best_auc: 1.000000
+     epoch 13, minibatch 54/54, best error 0.000000 %, best_auc: 1.000000
+Optimization complete with best validation score of 0.000000 %, obtained at iteration 702, with test performance 0.000000 %, and best_auc: 1.000000
+runtime: 15410.41 secs.

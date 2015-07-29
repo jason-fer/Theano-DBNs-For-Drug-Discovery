@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 78
+RunningOn slot22@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 78
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: pnph, fold: 0
+Running random forests for target: pnph
+target:pnph fold:0 predicted: 2783 wrong: 2 pct correct: 0.99928135106, auc: 1.0
+Results for pnph: accuracy: 0.99928135106, auc: 1.0
+Building data for target: pnph, fold: 1
+Running random forests for target: pnph
+target:pnph fold:1 predicted: 2783 wrong: 30 pct correct: 0.9892202659, auc: 1.0
+Results for pnph: accuracy: 0.99425080848, auc: 1.0
+Building data for target: pnph, fold: 2
+Running random forests for target: pnph
+target:pnph fold:2 predicted: 2783 wrong: 7 pct correct: 0.99748472871, auc: 1.0
+Results for pnph: accuracy: 0.99532878189, auc: 1.0
+Building data for target: pnph, fold: 3
+Running random forests for target: pnph
+target:pnph fold:3 predicted: 2783 wrong: 32 pct correct: 0.98850161696, auc: 0.999907031516
+Results for pnph: accuracy: 0.993621990658, auc: 0.999976757879
+Building data for target: pnph, fold: 4
+Running random forests for target: pnph
+target:pnph fold:4 predicted: 2776 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pnph: accuracy: 0.994897592526, auc: 0.999981406303
+####################  Results for DUD-E ####################
+pnph accuracy: 0.994897592526, auc:0.999981406303
+############################################################
+runtime: 444.31 secs.

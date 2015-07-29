@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 18
+RunningOn slot8@opt-a004.discovery.wisc.edu
+python sk_random_forests.py dud_e 18
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: cdk2, fold: 0
+Running random forests for target: cdk2
+target:cdk2 fold:0 predicted: 10435 wrong: 271 pct correct: 0.974029707714, auc: 0.998123754489
+Results for cdk2: accuracy: 0.974029707714, auc: 0.998123754489
+Building data for target: cdk2, fold: 1
+Running random forests for target: cdk2
+target:cdk2 fold:1 predicted: 10435 wrong: 272 pct correct: 0.973933876378, auc: 0.99929057936
+Results for cdk2: accuracy: 0.973981792046, auc: 0.998707166925
+Building data for target: cdk2, fold: 2
+Running random forests for target: cdk2
+target:cdk2 fold:2 predicted: 10435 wrong: 364 pct correct: 0.965117393388, auc: 0.997931134018
+Results for cdk2: accuracy: 0.971026992493, auc: 0.998448489289
+Building data for target: cdk2, fold: 3
+Running random forests for target: cdk2
+target:cdk2 fold:3 predicted: 10435 wrong: 304 pct correct: 0.970867273598, auc: 0.999447673289
+Results for cdk2: accuracy: 0.97098706277, auc: 0.998698285289
+Building data for target: cdk2, fold: 4
+Running random forests for target: cdk2
+target:cdk2 fold:4 predicted: 10527 wrong: 451 pct correct: 0.957157784744, auc: 0.99759926976
+Results for cdk2: accuracy: 0.968221207164, auc: 0.998478482183
+####################  Results for DUD-E ####################
+cdk2 accuracy: 0.968221207164, auc:0.998478482183
+############################################################
+runtime: 7284.02 secs.

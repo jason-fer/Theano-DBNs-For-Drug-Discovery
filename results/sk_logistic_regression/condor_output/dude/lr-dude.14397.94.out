@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 94
+RunningOn slot11@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 94
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: thrb, fold: 0
+Running logistic regression for target: thrb
+target:thrb fold:0 predicted: 10624 wrong: 35 pct correct: 0.996705572289, auc: 0.99999255167
+Results for thrb: accuracy: 0.996705572289, auc: 0.99999255167
+Building data for target: thrb, fold: 1
+Running logistic regression for target: thrb
+target:thrb fold:1 predicted: 10624 wrong: 90 pct correct: 0.991528614458, auc: 0.999990423576
+Results for thrb: accuracy: 0.994117093373, auc: 0.999991487623
+Building data for target: thrb, fold: 2
+Running logistic regression for target: thrb
+target:thrb fold:2 predicted: 10624 wrong: 7 pct correct: 0.999341114458, auc: 0.999995743812
+Results for thrb: accuracy: 0.995858433735, auc: 0.999992906353
+Building data for target: thrb, fold: 3
+Running logistic regression for target: thrb
+target:thrb fold:3 predicted: 10624 wrong: 3 pct correct: 0.999717620482, auc: 1.0
+Results for thrb: accuracy: 0.996823230422, auc: 0.999994679764
+Building data for target: thrb, fold: 4
+Running logistic regression for target: thrb
+target:thrb fold:4 predicted: 10655 wrong: 2 pct correct: 0.999812294697, auc: 1.0
+Results for thrb: accuracy: 0.997421043277, auc: 0.999995743812
+####################  Results for DUD-E ####################
+thrb accuracy: 0.997421043277, auc:0.999995743812
+############################################################
+runtime: 234.80 secs.

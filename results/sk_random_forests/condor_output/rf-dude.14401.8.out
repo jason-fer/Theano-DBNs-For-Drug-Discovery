@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 8
+RunningOn slot26@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 8
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: akt1, fold: 0
+Running random forests for target: akt1
+target:akt1 fold:0 predicted: 5835 wrong: 61 pct correct: 0.989545844045, auc: 0.999235078647
+Results for akt1: accuracy: 0.989545844045, auc: 0.999235078647
+Building data for target: akt1, fold: 1
+Running random forests for target: akt1
+target:akt1 fold:1 predicted: 5835 wrong: 30 pct correct: 0.994858611825, auc: 0.999493643611
+Results for akt1: accuracy: 0.992202227935, auc: 0.999364361129
+Building data for target: akt1, fold: 2
+Running random forests for target: akt1
+target:akt1 fold:2 predicted: 5835 wrong: 90 pct correct: 0.984575835476, auc: 0.993212669683
+Results for akt1: accuracy: 0.989660097115, auc: 0.997313797314
+Building data for target: akt1, fold: 3
+Running random forests for target: akt1
+target:akt1 fold:3 predicted: 5835 wrong: 92 pct correct: 0.984233076264, auc: 0.999520577462
+Results for akt1: accuracy: 0.988303341902, auc: 0.997865492351
+Building data for target: akt1, fold: 4
+Running random forests for target: akt1
+target:akt1 fold:4 predicted: 5925 wrong: 150 pct correct: 0.974683544304, auc: 0.991005703785
+Results for akt1: accuracy: 0.985579382383, auc: 0.996493534638
+####################  Results for DUD-E ####################
+akt1 accuracy: 0.985579382383, auc:0.996493534638
+############################################################
+runtime: 1741.96 secs.

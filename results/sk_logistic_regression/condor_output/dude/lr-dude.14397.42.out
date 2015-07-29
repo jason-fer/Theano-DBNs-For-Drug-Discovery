@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 42
+RunningOn slot10@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 42
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: gria2, fold: 0
+Running logistic regression for target: gria2
+target:gria2 fold:0 predicted: 4176 wrong: 63 pct correct: 0.984913793103, auc: 0.997837327585
+Results for gria2: accuracy: 0.984913793103, auc: 0.997837327585
+Building data for target: gria2, fold: 1
+Running logistic regression for target: gria2
+target:gria2 fold:1 predicted: 4176 wrong: 122 pct correct: 0.970785440613, auc: 0.999520971582
+Results for gria2: accuracy: 0.977849616858, auc: 0.998679149584
+Building data for target: gria2, fold: 2
+Running logistic regression for target: gria2
+target:gria2 fold:2 predicted: 4176 wrong: 62 pct correct: 0.985153256705, auc: 0.999964777322
+Results for gria2: accuracy: 0.980284163474, auc: 0.999107692163
+Building data for target: gria2, fold: 3
+Running logistic regression for target: gria2
+target:gria2 fold:3 predicted: 4176 wrong: 61 pct correct: 0.985392720307, auc: 0.999957732787
+Results for gria2: accuracy: 0.981561302682, auc: 0.999320202319
+Building data for target: gria2, fold: 4
+Running logistic regression for target: gria2
+target:gria2 fold:4 predicted: 4239 wrong: 2 pct correct: 0.999528190611, auc: 0.999986389836
+Results for gria2: accuracy: 0.985154680268, auc: 0.999453439822
+####################  Results for DUD-E ####################
+gria2 accuracy: 0.985154680268, auc:0.999453439822
+############################################################
+runtime: 113.31 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 79
+RunningOn slot4@opt-a007.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 79
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ppara, fold: 0
+Running logistic regression for target: ppara
+target:ppara fold:0 predicted: 7206 wrong: 33 pct correct: 0.995420482931, auc: 0.999505052203
+Results for ppara: accuracy: 0.995420482931, auc: 0.999505052203
+Building data for target: ppara, fold: 1
+Running logistic regression for target: ppara
+target:ppara fold:1 predicted: 7206 wrong: 65 pct correct: 0.990979739106, auc: 0.995080872602
+Results for ppara: accuracy: 0.993200111019, auc: 0.997292962403
+Building data for target: ppara, fold: 2
+Running logistic regression for target: ppara
+target:ppara fold:2 predicted: 7206 wrong: 91 pct correct: 0.987371634749, auc: 0.997915149138
+Results for ppara: accuracy: 0.991257285595, auc: 0.997500357981
+Building data for target: ppara, fold: 3
+Running logistic regression for target: ppara
+target:ppara fold:3 predicted: 7206 wrong: 31 pct correct: 0.99569802942, auc: 0.999995330681
+Results for ppara: accuracy: 0.992367471551, auc: 0.998124101156
+Building data for target: ppara, fold: 4
+Running logistic regression for target: ppara
+target:ppara fold:4 predicted: 7327 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ppara: accuracy: 0.993893977241, auc: 0.998499280925
+####################  Results for DUD-E ####################
+ppara accuracy: 0.993893977241, auc:0.998499280925
+############################################################
+runtime: 156.95 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 85
+RunningOn slot5@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 85
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pygm, fold: 0
+Running logistic regression for target: pygm
+target:pygm fold:0 predicted: 1467 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pygm: accuracy: 1.0, auc: 1.0
+Building data for target: pygm, fold: 1
+Running logistic regression for target: pygm
+target:pygm fold:1 predicted: 1467 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pygm: accuracy: 1.0, auc: 1.0
+Building data for target: pygm, fold: 2
+Running logistic regression for target: pygm
+target:pygm fold:2 predicted: 1467 wrong: 1 pct correct: 0.999318336742, auc: 1.0
+Results for pygm: accuracy: 0.999772778914, auc: 1.0
+Building data for target: pygm, fold: 3
+Running logistic regression for target: pygm
+target:pygm fold:3 predicted: 1467 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pygm: accuracy: 0.999829584185, auc: 1.0
+Building data for target: pygm, fold: 4
+Running logistic regression for target: pygm
+target:pygm fold:4 predicted: 1590 wrong: 30 pct correct: 0.981132075472, auc: 1.0
+Results for pygm: accuracy: 0.996090082443, auc: 1.0
+####################  Results for DUD-E ####################
+pygm accuracy: 0.996090082443, auc:1.0
+############################################################
+runtime: 54.19 secs.

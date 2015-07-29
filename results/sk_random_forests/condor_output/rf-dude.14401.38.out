@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 38
+RunningOn slot10@opt-a016.discovery.wisc.edu
+python sk_random_forests.py dud_e 38
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: fnta, fold: 0
+Running random forests for target: fnta
+target:fnta fold:0 predicted: 20547 wrong: 155 pct correct: 0.992456319657, auc: 0.998342319661
+Results for fnta: accuracy: 0.992456319657, auc: 0.998342319661
+Building data for target: fnta, fold: 1
+Running random forests for target: fnta
+target:fnta fold:1 predicted: 20547 wrong: 97 pct correct: 0.995279116173, auc: 0.999956361871
+Results for fnta: accuracy: 0.993867717915, auc: 0.999149340766
+Building data for target: fnta, fold: 2
+Running random forests for target: fnta
+target:fnta fold:2 predicted: 20547 wrong: 93 pct correct: 0.995473791794, auc: 0.999994029963
+Results for fnta: accuracy: 0.994403075875, auc: 0.999430903831
+Building data for target: fnta, fold: 3
+Running random forests for target: fnta
+target:fnta fold:3 predicted: 20547 wrong: 122 pct correct: 0.994062393537, auc: 0.999989197075
+Results for fnta: accuracy: 0.99431790529, auc: 0.999570477142
+Building data for target: fnta, fold: 4
+Running random forests for target: fnta
+target:fnta fold:4 predicted: 20611 wrong: 63 pct correct: 0.996943379749, auc: 0.999964121659
+Results for fnta: accuracy: 0.994843000182, auc: 0.999649206046
+####################  Results for DUD-E ####################
+fnta accuracy: 0.994843000182, auc:0.999649206046
+############################################################
+runtime: 7626.00 secs.

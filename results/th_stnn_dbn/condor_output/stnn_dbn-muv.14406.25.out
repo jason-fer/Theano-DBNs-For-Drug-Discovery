@@ -1,0 +1,5 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14406
+Process 25
+RunningOn slot3@wid-004.discovery.wisc.edu
+python th_deep_belief_net.py muv 25

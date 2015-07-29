@@ -1,0 +1,55 @@
+000 (14403.087.000) 07/28 17:54:24 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14403.087.000) 07/28 18:37:49 Job executing on host: <144.92.142.169:9620?sock=8515_38cd_4>
+...
+006 (14403.087.000) 07/28 18:37:58 Image size of job updated: 18952
+	19  -  MemoryUsage of job (MB)
+	18952  -  ResidentSetSize of job (KB)
+...
+006 (14403.087.000) 07/28 18:42:59 Image size of job updated: 1810120
+	1768  -  MemoryUsage of job (MB)
+	1810120  -  ResidentSetSize of job (KB)
+...
+006 (14403.087.000) 07/28 18:48:00 Image size of job updated: 3270664
+	3195  -  MemoryUsage of job (MB)
+	3270664  -  ResidentSetSize of job (KB)
+...
+006 (14403.087.000) 07/28 18:53:00 Image size of job updated: 6281268
+	6135  -  MemoryUsage of job (MB)
+	6281268  -  ResidentSetSize of job (KB)
+...
+006 (14403.087.000) 07/28 18:58:00 Image size of job updated: 7950768
+	7765  -  MemoryUsage of job (MB)
+	7950768  -  ResidentSetSize of job (KB)
+...
+006 (14403.087.000) 07/29 09:14:28 Image size of job updated: 7950824
+	7765  -  MemoryUsage of job (MB)
+	7950824  -  ResidentSetSize of job (KB)
+...
+004 (14403.087.000) 07/29 09:24:35 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 14:45:21, Sys 0 00:00:24  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         4
+	   Disk (KB)            :        1        1 163214414
+	   Memory (MB)          :     7765     8192     21508
+...
+001 (14403.087.000) 07/29 09:26:34 Job executing on host: <144.92.142.165:9620?sock=9950_ad0a_3>
+...
+004 (14403.087.000) 07/29 12:01:20 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 02:34:24, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         4
+	   Disk (KB)            :        1        1  81587441
+	   Memory (MB)          :     9766     8192     48439
+...
+009 (14403.087.000) 07/29 12:01:20 Job was aborted by the user.
+	via condor_rm (by user jferiante)
+...

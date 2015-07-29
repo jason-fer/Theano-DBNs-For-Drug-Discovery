@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 0
+RunningOn slot20@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 0
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: aa2ar, fold: 0
+Running logistic regression for target: aa2ar
+target:aa2ar fold:0 predicted: 11452 wrong: 39 pct correct: 0.996594481313, auc: 0.999955440692
+Results for aa2ar: accuracy: 0.996594481313, auc: 0.999955440692
+Building data for target: aa2ar, fold: 1
+Running logistic regression for target: aa2ar
+target:aa2ar fold:1 predicted: 11452 wrong: 7 pct correct: 0.999388753056, auc: 0.999993501768
+Results for aa2ar: accuracy: 0.997991617185, auc: 0.99997447123
+Building data for target: aa2ar, fold: 2
+Running logistic regression for target: aa2ar
+target:aa2ar fold:2 predicted: 11452 wrong: 127 pct correct: 0.98891023402, auc: 0.999347391795
+Results for aa2ar: accuracy: 0.994964489463, auc: 0.999765444751
+Building data for target: aa2ar, fold: 3
+Running logistic regression for target: aa2ar
+target:aa2ar fold:3 predicted: 11452 wrong: 9 pct correct: 0.999214111072, auc: 0.999974935389
+Results for aa2ar: accuracy: 0.996026894866, auc: 0.999817817411
+Building data for target: aa2ar, fold: 4
+Running logistic regression for target: aa2ar
+target:aa2ar fold:4 predicted: 11576 wrong: 96 pct correct: 0.991706979959, auc: 0.998595444528
+Results for aa2ar: accuracy: 0.995162911884, auc: 0.999573342834
+####################  Results for DUD-E ####################
+aa2ar accuracy: 0.995162911884, auc:0.999573342834
+############################################################
+runtime: 260.87 secs.

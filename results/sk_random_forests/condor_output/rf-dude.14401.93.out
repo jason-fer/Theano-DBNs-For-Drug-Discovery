@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 93
+RunningOn slot18@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 93
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: thb, fold: 0
+Running random forests for target: thb
+target:thb fold:0 predicted: 2517 wrong: 60 pct correct: 0.976162097735, auc: 1.0
+Results for thb: accuracy: 0.976162097735, auc: 1.0
+Building data for target: thb, fold: 1
+Running random forests for target: thb
+target:thb fold:1 predicted: 2517 wrong: 30 pct correct: 0.988081048868, auc: 0.998898612848
+Results for thb: accuracy: 0.982121573302, auc: 0.999449306424
+Building data for target: thb, fold: 2
+Running random forests for target: thb
+target:thb fold:2 predicted: 2517 wrong: 240 pct correct: 0.904648390942, auc: 0.978091325832
+Results for thb: accuracy: 0.956297179182, auc: 0.99232997956
+Building data for target: thb, fold: 3
+Running random forests for target: thb
+target:thb fold:3 predicted: 2517 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for thb: accuracy: 0.967222884386, auc: 0.99424748467
+Building data for target: thb, fold: 4
+Running random forests for target: thb
+target:thb fold:4 predicted: 2611 wrong: 30 pct correct: 0.988510149368, auc: 0.999628057188
+Results for thb: accuracy: 0.971480337383, auc: 0.995323599174
+####################  Results for DUD-E ####################
+thb accuracy: 0.971480337383, auc:0.995323599174
+############################################################
+runtime: 388.15 secs.

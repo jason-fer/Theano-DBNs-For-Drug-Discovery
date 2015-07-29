@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 0
+RunningOn slot14@opt-a003.discovery.wisc.edu
+python sk_random_forests.py dud_e 0
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: aa2ar, fold: 0
+Running random forests for target: aa2ar
+target:aa2ar fold:0 predicted: 11452 wrong: 63 pct correct: 0.994498777506, auc: 0.999984682738
+Results for aa2ar: accuracy: 0.994498777506, auc: 0.999984682738
+Building data for target: aa2ar, fold: 1
+Running random forests for target: aa2ar
+target:aa2ar fold:1 predicted: 11452 wrong: 217 pct correct: 0.981051344743, auc: 0.99962867243
+Results for aa2ar: accuracy: 0.987775061125, auc: 0.999806677584
+Building data for target: aa2ar, fold: 2
+Running random forests for target: aa2ar
+target:aa2ar fold:2 predicted: 11452 wrong: 241 pct correct: 0.978955640936, auc: 0.996567540772
+Results for aa2ar: accuracy: 0.984835254395, auc: 0.998726965313
+Building data for target: aa2ar, fold: 3
+Running random forests for target: aa2ar
+target:aa2ar fold:3 predicted: 11452 wrong: 62 pct correct: 0.994586098498, auc: 0.999941051748
+Results for aa2ar: accuracy: 0.987272965421, auc: 0.999030486922
+Building data for target: aa2ar, fold: 4
+Running random forests for target: aa2ar
+target:aa2ar fold:4 predicted: 11576 wrong: 243 pct correct: 0.97900829302, auc: 0.996707903207
+Results for aa2ar: accuracy: 0.985620030941, auc: 0.998565970179
+####################  Results for DUD-E ####################
+aa2ar accuracy: 0.985620030941, auc:0.998565970179
+############################################################
+runtime: 7458.30 secs.

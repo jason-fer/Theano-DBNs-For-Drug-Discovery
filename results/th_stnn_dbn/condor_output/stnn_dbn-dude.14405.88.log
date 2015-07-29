@@ -1,0 +1,101 @@
+000 (14405.088.000) 07/28 17:54:47 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14405.088.000) 07/28 18:05:45 Job executing on host: <144.92.142.162:9620?sock=10446_6bfc_3>
+...
+007 (14405.088.000) 07/28 18:05:45 Shadow exception!
+	Error from slot9@opt-a002.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-dude.sh': (errno=13: 'Permission denied')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14405.088.000) 07/28 18:05:45 Job was held.
+	Error from slot9@opt-a002.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-dude.sh': (errno=13: 'Permission denied')
+	Code 6 Subcode 13
+...
+013 (14405.088.000) 07/28 18:09:40 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14405.088.000) 07/28 18:31:46 Job executing on host: <144.92.142.161:9620?sock=10442_34dc_3>
+...
+006 (14405.088.000) 07/28 18:31:54 Image size of job updated: 25616
+	26  -  MemoryUsage of job (MB)
+	25616  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 18:36:54 Image size of job updated: 420900
+	412  -  MemoryUsage of job (MB)
+	420900  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 18:41:55 Image size of job updated: 483104
+	472  -  MemoryUsage of job (MB)
+	483104  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 18:46:56 Image size of job updated: 513804
+	502  -  MemoryUsage of job (MB)
+	513804  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 18:51:56 Image size of job updated: 515412
+	504  -  MemoryUsage of job (MB)
+	515412  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 18:56:57 Image size of job updated: 533028
+	521  -  MemoryUsage of job (MB)
+	533028  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 19:01:58 Image size of job updated: 534060
+	522  -  MemoryUsage of job (MB)
+	534060  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 19:11:58 Image size of job updated: 534088
+	522  -  MemoryUsage of job (MB)
+	534088  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 19:17:00 Image size of job updated: 543416
+	531  -  MemoryUsage of job (MB)
+	543416  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 19:22:00 Image size of job updated: 545292
+	533  -  MemoryUsage of job (MB)
+	545292  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 19:27:00 Image size of job updated: 554100
+	542  -  MemoryUsage of job (MB)
+	554100  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 19:32:01 Image size of job updated: 618324
+	604  -  MemoryUsage of job (MB)
+	618324  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 19:37:02 Image size of job updated: 619256
+	605  -  MemoryUsage of job (MB)
+	619256  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 19:42:02 Image size of job updated: 666736
+	652  -  MemoryUsage of job (MB)
+	666736  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 21:47:15 Image size of job updated: 681772
+	666  -  MemoryUsage of job (MB)
+	681772  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 21:52:16 Image size of job updated: 699388
+	683  -  MemoryUsage of job (MB)
+	699388  -  ResidentSetSize of job (KB)
+...
+006 (14405.088.000) 07/28 21:54:27 Image size of job updated: 708196
+	683  -  MemoryUsage of job (MB)
+	699388  -  ResidentSetSize of job (KB)
+...
+005 (14405.088.000) 07/28 21:54:27 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 1 04:49:42, Sys 0 02:55:53  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 1 04:49:42, Sys 0 02:55:53  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  34974599
+	   Memory (MB)          :      683     3072      3228
+...

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 21
+RunningOn slot5@opt-a007.discovery.wisc.edu
+python sk_random_forests.py dud_e 21
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: cp3a4, fold: 0
+Running random forests for target: cp3a4
+target:cp3a4 fold:0 predicted: 4548 wrong: 336 pct correct: 0.926121372032, auc: 0.994253675786
+Results for cp3a4: accuracy: 0.926121372032, auc: 0.994253675786
+Building data for target: cp3a4, fold: 1
+Running random forests for target: cp3a4
+target:cp3a4 fold:1 predicted: 4548 wrong: 485 pct correct: 0.893359718558, auc: 0.971317815932
+Results for cp3a4: accuracy: 0.909740545295, auc: 0.982785745859
+Building data for target: cp3a4, fold: 2
+Running random forests for target: cp3a4
+target:cp3a4 fold:2 predicted: 4548 wrong: 399 pct correct: 0.912269129288, auc: 0.982615624418
+Results for cp3a4: accuracy: 0.910583406626, auc: 0.982729038712
+Building data for target: cp3a4, fold: 3
+Running random forests for target: cp3a4
+target:cp3a4 fold:3 predicted: 4548 wrong: 306 pct correct: 0.9327176781, auc: 0.985895914759
+Results for cp3a4: accuracy: 0.916116974494, auc: 0.983520757724
+Building data for target: cp3a4, fold: 4
+Running random forests for target: cp3a4
+target:cp3a4 fold:4 predicted: 4638 wrong: 395 pct correct: 0.914833980164, auc: 0.994553322166
+Results for cp3a4: accuracy: 0.915860375628, auc: 0.985727270612
+####################  Results for DUD-E ####################
+cp3a4 accuracy: 0.915860375628, auc:0.985727270612
+############################################################
+runtime: 978.84 secs.

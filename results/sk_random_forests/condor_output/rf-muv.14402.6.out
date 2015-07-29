@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14402
+Process 6
+RunningOn slot17@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py muv 6
+Running Scikit Learn Random Forests for muv.........
+Building data for target: 692, fold: 0
+Running random forests for target: 692
+target:692 fold:0 predicted: 3180 wrong: 181 pct correct: 0.943081761006, auc: 0.455333333333
+Results for 692: accuracy: 0.943081761006, auc: 0.455333333333
+Building data for target: 692, fold: 1
+Running random forests for target: 692
+target:692 fold:1 predicted: 3180 wrong: 182 pct correct: 0.942767295597, auc: 0.459166666667
+Results for 692: accuracy: 0.942924528302, auc: 0.45725
+Building data for target: 692, fold: 2
+Running random forests for target: 692
+target:692 fold:2 predicted: 3180 wrong: 184 pct correct: 0.94213836478, auc: 0.549388888889
+Results for 692: accuracy: 0.942662473795, auc: 0.487962962963
+Building data for target: 692, fold: 3
+Running random forests for target: 692
+target:692 fold:3 predicted: 3180 wrong: 183 pct correct: 0.942452830189, auc: 0.550638888889
+Results for 692: accuracy: 0.942610062893, auc: 0.503631944444
+Building data for target: 692, fold: 4
+Running random forests for target: 692
+target:692 fold:4 predicted: 3180 wrong: 181 pct correct: 0.943081761006, auc: 0.459833333333
+Results for 692: accuracy: 0.942704402516, auc: 0.494872222222
+####################  Results for MUV ####################
+692 accuracy: 0.942704402516, auc:0.494872222222
+############################################################
+runtime: 955.98 secs.

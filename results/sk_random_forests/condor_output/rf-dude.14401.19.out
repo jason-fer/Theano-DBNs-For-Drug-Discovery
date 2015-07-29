@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 19
+RunningOn slot3@opt-a007.discovery.wisc.edu
+python sk_random_forests.py dud_e 19
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: comt, fold: 0
+Running random forests for target: comt
+target:comt fold:0 predicted: 1295 wrong: 1 pct correct: 0.999227799228, auc: 1.0
+Results for comt: accuracy: 0.999227799228, auc: 1.0
+Building data for target: comt, fold: 1
+Running random forests for target: comt
+target:comt fold:1 predicted: 1295 wrong: 1 pct correct: 0.999227799228, auc: 1.0
+Results for comt: accuracy: 0.999227799228, auc: 1.0
+Building data for target: comt, fold: 2
+Running random forests for target: comt
+target:comt fold:2 predicted: 1295 wrong: 30 pct correct: 0.976833976834, auc: 0.999587860622
+Results for comt: accuracy: 0.991763191763, auc: 0.999862620207
+Building data for target: comt, fold: 3
+Running random forests for target: comt
+target:comt fold:3 predicted: 1295 wrong: 1 pct correct: 0.999227799228, auc: 1.0
+Results for comt: accuracy: 0.993629343629, auc: 0.999896965155
+Building data for target: comt, fold: 4
+Running random forests for target: comt
+target:comt fold:4 predicted: 1326 wrong: 1 pct correct: 0.999245852187, auc: 1.0
+Results for comt: accuracy: 0.994752645341, auc: 0.999917572124
+####################  Results for DUD-E ####################
+comt accuracy: 0.994752645341, auc:0.999917572124
+############################################################
+runtime: 59.79 secs.

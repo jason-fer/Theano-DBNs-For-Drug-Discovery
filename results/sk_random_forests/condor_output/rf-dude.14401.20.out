@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 20
+RunningOn slot3@opt-a008.discovery.wisc.edu
+python sk_random_forests.py dud_e 20
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: cp2c9, fold: 0
+Running random forests for target: cp2c9
+target:cp2c9 fold:0 predicted: 2594 wrong: 212 pct correct: 0.918272937548, auc: 0.998403786878
+Results for cp2c9: accuracy: 0.918272937548, auc: 0.998403786878
+Building data for target: cp2c9, fold: 1
+Running random forests for target: cp2c9
+target:cp2c9 fold:1 predicted: 2594 wrong: 123 pct correct: 0.952582883577, auc: 0.993239028328
+Results for cp2c9: accuracy: 0.935427910563, auc: 0.995821407603
+Building data for target: cp2c9, fold: 2
+Running random forests for target: cp2c9
+target:cp2c9 fold:2 predicted: 2594 wrong: 274 pct correct: 0.894371626831, auc: 0.977992440922
+Results for cp2c9: accuracy: 0.921742482652, auc: 0.989878418709
+Building data for target: cp2c9, fold: 3
+Running random forests for target: cp2c9
+target:cp2c9 fold:3 predicted: 2594 wrong: 215 pct correct: 0.917116422513, auc: 0.986505577572
+Results for cp2c9: accuracy: 0.920585967618, auc: 0.989035208425
+Building data for target: cp2c9, fold: 4
+Running random forests for target: cp2c9
+target:cp2c9 fold:4 predicted: 2688 wrong: 271 pct correct: 0.899181547619, auc: 0.995540691193
+Results for cp2c9: accuracy: 0.916305083618, auc: 0.990336304979
+####################  Results for DUD-E ####################
+cp2c9 accuracy: 0.916305083618, auc:0.990336304979
+############################################################
+runtime: 1142.27 secs.

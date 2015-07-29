@@ -1,0 +1,42 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14404
+Process 4
+RunningOn slot2@galaxy-01.discovery.wisc.edu
+python th_deep_belief_net.py tox21 4
+Running Theano Learn Deep Belief Net for tox21, target: nr-er-lbd.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -74.6754423461
+Pre-training layer 0, epoch 1, cost  -46.1532106424
+Pre-training layer 0, epoch 2, cost  -41.2252638228
+Pre-training layer 0, epoch 3, cost  -37.7780657653
+Pre-training layer 0, epoch 4, cost  -35.1264366899
+Pre-training layer 0, epoch 5, cost  -32.940602211
+Pre-training layer 0, epoch 6, cost  -31.2072303186
+Pre-training layer 0, epoch 7, cost  -29.7060609028
+Pre-training layer 1, epoch 0, cost  -1364.22191959
+Pre-training layer 1, epoch 1, cost  -1346.87970699
+Pre-training layer 1, epoch 2, cost  -1345.01488324
+Pre-training layer 1, epoch 3, cost  -1344.44293704
+Pre-training layer 1, epoch 4, cost  -1344.11566542
+Pre-training layer 1, epoch 5, cost  -1343.86071116
+Pre-training layer 1, epoch 6, cost  -1343.53965588
+Pre-training layer 1, epoch 7, cost  -1342.99781836
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 97/97, best error 42.937500 %, best_auc: 0.561187
+     epoch 3, minibatch 97/97, best error 42.843750 %, best_auc: 0.561187
+     new best AUC!: 0.56425052923
+     epoch 4, minibatch 97/97, best error 42.312500 %, best_auc: 0.564251
+     new best AUC!: 0.571384953591
+     epoch 5, minibatch 97/97, best error 42.750000 %, best_auc: 0.571385
+     new best AUC!: 0.574129484883
+     epoch 6, minibatch 97/97, best error 42.500000 %, best_auc: 0.574129
+     new best AUC!: 0.577080958584
+     epoch 7, minibatch 97/97, best error 42.375000 %, best_auc: 0.577081
+     new best AUC!: 0.579367502578
+     epoch 8, minibatch 97/97, best error 42.218750 %, best_auc: 0.579368
+     new best AUC!: 0.579879769853
+Optimization complete with best validation score of 35.906250 %, obtained at iteration 776, with test performance 42.218750 %, and best_auc: 0.579880
+runtime: 3782.44 secs.

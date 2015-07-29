@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 82
+RunningOn slot14@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 82
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: prgr, fold: 0
+Running random forests for target: prgr
+target:prgr fold:0 predicted: 5802 wrong: 182 pct correct: 0.968631506377, auc: 0.999820309355
+Results for prgr: accuracy: 0.968631506377, auc: 0.999820309355
+Building data for target: prgr, fold: 1
+Running random forests for target: prgr
+target:prgr fold:1 predicted: 5802 wrong: 92 pct correct: 0.984143398828, auc: 0.999881404175
+Results for prgr: accuracy: 0.976387452603, auc: 0.999850856765
+Building data for target: prgr, fold: 2
+Running random forests for target: prgr
+target:prgr fold:2 predicted: 5802 wrong: 122 pct correct: 0.978972768011, auc: 0.986059599793
+Results for prgr: accuracy: 0.977249224405, auc: 0.995253771108
+Building data for target: prgr, fold: 3
+Running random forests for target: prgr
+target:prgr fold:3 predicted: 5802 wrong: 272 pct correct: 0.953119613926, auc: 0.998839198436
+Results for prgr: accuracy: 0.971216821786, auc: 0.99615012794
+Building data for target: prgr, fold: 4
+Running random forests for target: prgr
+target:prgr fold:4 predicted: 5926 wrong: 181 pct correct: 0.969456631792, auc: 0.999586297344
+Results for prgr: accuracy: 0.970864783787, auc: 0.996837361821
+####################  Results for DUD-E ####################
+prgr accuracy: 0.970864783787, auc:0.996837361821
+############################################################
+runtime: 1933.83 secs.

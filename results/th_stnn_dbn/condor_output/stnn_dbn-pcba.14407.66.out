@@ -1,0 +1,34 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14407
+Process 66
+RunningOn slot6@wid-005.discovery.wisc.edu
+python th_deep_belief_net.py pcba 66
+Running Theano Learn Deep Belief Net for pcba, target: aid588795.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -65.4515687764
+Pre-training layer 0, epoch 1, cost  -51.0848331205
+Pre-training layer 0, epoch 2, cost  -45.4319015868
+Pre-training layer 0, epoch 3, cost  -41.7684495316
+Pre-training layer 0, epoch 4, cost  -39.0914635305
+Pre-training layer 0, epoch 5, cost  -37.0362479711
+Pre-training layer 0, epoch 6, cost  -35.2965001899
+Pre-training layer 0, epoch 7, cost  -33.8235549394
+Pre-training layer 1, epoch 0, cost  -1352.62116698
+Pre-training layer 1, epoch 1, cost  -1349.36980432
+Pre-training layer 1, epoch 2, cost  -1349.36874044
+Pre-training layer 1, epoch 3, cost  -1349.36875767
+Pre-training layer 1, epoch 4, cost  -1349.3686353
+Pre-training layer 1, epoch 5, cost  -1349.36842514
+Pre-training layer 1, epoch 6, cost  -1349.36827624
+Pre-training layer 1, epoch 7, cost  -1349.36856413
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 2545/2545, best error 9.229953 %, best_auc: 0.500000
+     new best AUC!: 0.503818429093
+     new best AUC!: 0.507623969185
+     new best AUC!: 0.507624018949
+     new best AUC!: 0.507624068714
+Optimization complete with best validation score of 9.231132 %, obtained at iteration 2545, with test performance 9.229953 %, and best_auc: 0.507624
+runtime: 52971.45 secs.

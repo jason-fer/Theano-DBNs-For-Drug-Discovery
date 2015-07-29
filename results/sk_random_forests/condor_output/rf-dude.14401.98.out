@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 98
+RunningOn slot14@opt-a016.discovery.wisc.edu
+python sk_random_forests.py dud_e 98
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: urok, fold: 0
+Running random forests for target: urok
+target:urok fold:0 predicted: 3786 wrong: 31 pct correct: 0.991811938722, auc: 0.99117992615
+Results for urok: accuracy: 0.991811938722, auc: 0.99117992615
+Building data for target: urok, fold: 1
+Running random forests for target: urok
+target:urok fold:1 predicted: 3786 wrong: 31 pct correct: 0.991811938722, auc: 0.991150553877
+Results for urok: accuracy: 0.991811938722, auc: 0.991165240013
+Building data for target: urok, fold: 2
+Running random forests for target: urok
+target:urok fold:2 predicted: 3786 wrong: 31 pct correct: 0.991811938722, auc: 0.999370594159
+Results for urok: accuracy: 0.991811938722, auc: 0.993900358062
+Building data for target: urok, fold: 3
+Running random forests for target: urok
+target:urok fold:3 predicted: 3786 wrong: 33 pct correct: 0.991283676704, auc: 0.999232124874
+Results for urok: accuracy: 0.991679873217, auc: 0.995233299765
+Building data for target: urok, fold: 4
+Running random forests for target: urok
+target:urok fold:4 predicted: 3849 wrong: 34 pct correct: 0.991166536763, auc: 0.999943236186
+Results for urok: accuracy: 0.991577205926, auc: 0.996175287049
+####################  Results for DUD-E ####################
+urok accuracy: 0.991577205926, auc:0.996175287049
+############################################################
+runtime: 472.11 secs.

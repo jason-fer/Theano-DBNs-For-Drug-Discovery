@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 4
+RunningOn slot4@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 4
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ada17, fold: 0
+Running logistic regression for target: ada17
+target:ada17 fold:0 predicted: 13059 wrong: 1 pct correct: 0.999923424458, auc: 1.0
+Results for ada17: accuracy: 0.999923424458, auc: 1.0
+Building data for target: ada17, fold: 1
+Running logistic regression for target: ada17
+target:ada17 fold:1 predicted: 13059 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada17: accuracy: 0.999961712229, auc: 1.0
+Building data for target: ada17, fold: 2
+Running logistic regression for target: ada17
+target:ada17 fold:2 predicted: 13059 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada17: accuracy: 0.999974474819, auc: 1.0
+Building data for target: ada17, fold: 3
+Running logistic regression for target: ada17
+target:ada17 fold:3 predicted: 13059 wrong: 33 pct correct: 0.997473007122, auc: 0.999994285057
+Results for ada17: accuracy: 0.999349107895, auc: 0.999998571264
+Building data for target: ada17, fold: 4
+Running logistic regression for target: ada17
+target:ada17 fold:4 predicted: 13181 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada17: accuracy: 0.999479286316, auc: 0.999998857011
+####################  Results for DUD-E ####################
+ada17 accuracy: 0.999479286316, auc:0.999998857011
+############################################################
+runtime: 236.42 secs.

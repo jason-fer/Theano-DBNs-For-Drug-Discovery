@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 15
+RunningOn slot8@opt-a002.discovery.wisc.edu
+python sk_random_forests.py dud_e 15
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: braf, fold: 0
+Running random forests for target: braf
+target:braf fold:0 predicted: 3519 wrong: 90 pct correct: 0.97442455243, auc: 0.977251114413
+Results for braf: accuracy: 0.97442455243, auc: 0.977251114413
+Building data for target: braf, fold: 1
+Running random forests for target: braf
+target:braf fold:1 predicted: 3519 wrong: 240 pct correct: 0.931798806479, auc: 0.98828132739
+Results for braf: accuracy: 0.953111679454, auc: 0.982766220901
+Building data for target: braf, fold: 2
+Running random forests for target: braf
+target:braf fold:2 predicted: 3519 wrong: 63 pct correct: 0.982097186701, auc: 0.999895988113
+Results for braf: accuracy: 0.962773515203, auc: 0.988476143305
+Building data for target: braf, fold: 3
+Running random forests for target: braf
+target:braf fold:3 predicted: 3519 wrong: 32 pct correct: 0.990906507531, auc: 0.999757305597
+Results for braf: accuracy: 0.969806763285, auc: 0.991296433878
+Building data for target: braf, fold: 4
+Running random forests for target: braf
+target:braf fold:4 predicted: 3552 wrong: 61 pct correct: 0.982826576577, auc: 0.999961210993
+Results for braf: accuracy: 0.972410725943, auc: 0.993029389301
+####################  Results for DUD-E ####################
+braf accuracy: 0.972410725943, auc:0.993029389301
+############################################################
+runtime: 590.00 secs.

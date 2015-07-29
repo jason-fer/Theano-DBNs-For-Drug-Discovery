@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 26
+RunningOn slot25@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 26
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: dpp4, fold: 0
+Running logistic regression for target: dpp4
+target:dpp4 fold:0 predicted: 14724 wrong: 3 pct correct: 0.999796251019, auc: 1.0
+Results for dpp4: accuracy: 0.999796251019, auc: 1.0
+Building data for target: dpp4, fold: 1
+Running logistic regression for target: dpp4
+target:dpp4 fold:1 predicted: 14724 wrong: 38 pct correct: 0.997419179571, auc: 0.999985384308
+Results for dpp4: accuracy: 0.998607715295, auc: 0.999992692154
+Building data for target: dpp4, fold: 2
+Running logistic regression for target: dpp4
+target:dpp4 fold:2 predicted: 14724 wrong: 92 pct correct: 0.993751697908, auc: 0.999940975091
+Results for dpp4: accuracy: 0.996989042833, auc: 0.999975453133
+Building data for target: dpp4, fold: 3
+Running logistic regression for target: dpp4
+target:dpp4 fold:3 predicted: 14724 wrong: 63 pct correct: 0.995721271394, auc: 0.999919613696
+Results for dpp4: accuracy: 0.996672099973, auc: 0.999961493274
+Building data for target: dpp4, fold: 4
+Running logistic regression for target: dpp4
+target:dpp4 fold:4 predicted: 14847 wrong: 64 pct correct: 0.995689364855, auc: 0.999979588043
+Results for dpp4: accuracy: 0.996475552949, auc: 0.999965112228
+####################  Results for DUD-E ####################
+dpp4 accuracy: 0.996475552949, auc:0.999965112228
+############################################################
+runtime: 342.31 secs.

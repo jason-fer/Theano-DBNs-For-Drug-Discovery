@@ -1,0 +1,43 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14405
+Process 67
+RunningOn slot28@wid-007.discovery.wisc.edu
+python th_deep_belief_net.py dud_e 67
+Running Theano Learn Deep Belief Net for dud_e, target: mk14.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -90.9768074289
+Pre-training layer 0, epoch 1, cost  -73.1285525211
+Pre-training layer 1, epoch 0, cost  -1367.97994404
+Pre-training layer 1, epoch 1, cost  -1352.8888704
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 383/383, best error 42.976378 %, best_auc: 0.587053
+     new best AUC!: 0.623986566047
+     new best AUC!: 0.642520876177
+     new best AUC!: 0.68886283898
+     new best AUC!: 0.711861508485
+     new best AUC!: 0.727145329991
+     new best AUC!: 0.746125888559
+     new best AUC!: 0.789741235906
+     new best AUC!: 0.790386608647
+     new best AUC!: 0.81404002586
+     new best AUC!: 0.823735616925
+     new best AUC!: 0.823767116815
+     new best AUC!: 0.838666564667
+     new best AUC!: 0.906174578389
+     epoch 21, minibatch 383/383, best error 28.858268 %, best_auc: 0.906175
+     new best AUC!: 0.997904507334
+     epoch 22, minibatch 383/383, best error 0.834646 %, best_auc: 0.997905
+     new best AUC!: 0.998435505476
+     epoch 23, minibatch 383/383, best error 2.023622 %, best_auc: 0.998436
+     new best AUC!: 0.9985142552
+     new best AUC!: 0.998518005187
+     epoch 26, minibatch 383/383, best error 1.921260 %, best_auc: 0.998518
+     epoch 28, minibatch 383/383, best error 2.385827 %, best_auc: 0.998518
+     epoch 30, minibatch 383/383, best error 2.385827 %, best_auc: 0.998518
+     epoch 36, minibatch 383/383, best error 2.385827 %, best_auc: 0.998518
+     epoch 40, minibatch 383/383, best error 1.700787 %, best_auc: 0.998518
+Optimization complete with best validation score of 0.251969 %, obtained at iteration 15320, with test performance 1.700787 %, and best_auc: 0.998518
+runtime: 19535.95 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 29
+RunningOn slot28@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 29
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: egfr, fold: 0
+Running logistic regression for target: egfr
+target:egfr fold:0 predicted: 12068 wrong: 185 pct correct: 0.984670202188, auc: 0.994068542794
+Results for egfr: accuracy: 0.984670202188, auc: 0.994068542794
+Building data for target: egfr, fold: 1
+Running logistic regression for target: egfr
+target:egfr fold:1 predicted: 12068 wrong: 39 pct correct: 0.996768312894, auc: 0.999746729582
+Results for egfr: accuracy: 0.990719257541, auc: 0.996907636188
+Building data for target: egfr, fold: 2
+Running logistic regression for target: egfr
+target:egfr fold:2 predicted: 12068 wrong: 68 pct correct: 0.994365263507, auc: 0.999958354864
+Results for egfr: accuracy: 0.991934592863, auc: 0.997924542413
+Building data for target: egfr, fold: 3
+Running logistic regression for target: egfr
+target:egfr fold:3 predicted: 12068 wrong: 214 pct correct: 0.982267152801, auc: 0.998997117137
+Results for egfr: accuracy: 0.989517732847, auc: 0.998192686094
+Building data for target: egfr, fold: 4
+Running logistic regression for target: egfr
+target:egfr fold:4 predicted: 12130 wrong: 124 pct correct: 0.989777411377, auc: 0.999446739203
+Results for egfr: accuracy: 0.989569668553, auc: 0.998443496716
+####################  Results for DUD-E ####################
+egfr accuracy: 0.989569668553, auc:0.998443496716
+############################################################
+runtime: 281.90 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 39
+RunningOn slot7@opt-a014.discovery.wisc.edu
+python sk_random_forests.py dud_e 39
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: fpps, fold: 0
+Running random forests for target: fpps
+target:fpps fold:0 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 1
+Running random forests for target: fpps
+target:fpps fold:1 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 2
+Running random forests for target: fpps
+target:fpps fold:2 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 3
+Running random forests for target: fpps
+target:fpps fold:3 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 4
+Running random forests for target: fpps
+target:fpps fold:4 predicted: 3151 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+####################  Results for DUD-E ####################
+fpps accuracy: 1.0, auc:1.0
+############################################################
+runtime: 126.87 secs.

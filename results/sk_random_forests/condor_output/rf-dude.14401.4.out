@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 4
+RunningOn slot9@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 4
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: ada17, fold: 0
+Running random forests for target: ada17
+target:ada17 fold:0 predicted: 13059 wrong: 151 pct correct: 0.988437093192, auc: 0.999979640516
+Results for ada17: accuracy: 0.988437093192, auc: 0.999979640516
+Building data for target: ada17, fold: 1
+Running random forests for target: ada17
+target:ada17 fold:1 predicted: 13059 wrong: 121 pct correct: 0.990734359446, auc: 0.999961424135
+Results for ada17: accuracy: 0.989585726319, auc: 0.999970532326
+Building data for target: ada17, fold: 2
+Running random forests for target: ada17
+target:ada17 fold:2 predicted: 13059 wrong: 2 pct correct: 0.999846848916, auc: 0.999992499137
+Results for ada17: accuracy: 0.993006100518, auc: 0.999977854596
+Building data for target: ada17, fold: 3
+Running random forests for target: ada17
+target:ada17 fold:3 predicted: 13059 wrong: 212 pct correct: 0.983765985144, auc: 0.999823193953
+Results for ada17: accuracy: 0.990696071675, auc: 0.999939189435
+Building data for target: ada17, fold: 4
+Running random forests for target: ada17
+target:ada17 fold:4 predicted: 13181 wrong: 153 pct correct: 0.988392382975, auc: 0.999963974551
+Results for ada17: accuracy: 0.990235333935, auc: 0.999944146459
+####################  Results for DUD-E ####################
+ada17 accuracy: 0.990235333935, auc:0.999944146459
+############################################################
+runtime: 5655.64 secs.

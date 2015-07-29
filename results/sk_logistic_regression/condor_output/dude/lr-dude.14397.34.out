@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 34
+RunningOn slot15@wid-007.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 34
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fabp4, fold: 0
+Running logistic regression for target: fabp4
+target:fabp4 fold:0 predicted: 901 wrong: 30 pct correct: 0.966703662597, auc: 0.985352650852
+Results for fabp4: accuracy: 0.966703662597, auc: 0.985352650852
+Building data for target: fabp4, fold: 1
+Running logistic regression for target: fabp4
+target:fabp4 fold:1 predicted: 901 wrong: 60 pct correct: 0.933407325194, auc: 0.953351377169
+Results for fabp4: accuracy: 0.950055493896, auc: 0.969352014011
+Building data for target: fabp4, fold: 2
+Running logistic regression for target: fabp4
+target:fabp4 fold:2 predicted: 901 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fabp4: accuracy: 0.966703662597, auc: 0.97956800934
+Building data for target: fabp4, fold: 3
+Running logistic regression for target: fabp4
+target:fabp4 fold:3 predicted: 901 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fabp4: accuracy: 0.975027746948, auc: 0.984676007005
+Building data for target: fabp4, fold: 4
+Running logistic regression for target: fabp4
+target:fabp4 fold:4 predicted: 961 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fabp4: accuracy: 0.980022197558, auc: 0.987740805604
+####################  Results for DUD-E ####################
+fabp4 accuracy: 0.980022197558, auc:0.987740805604
+############################################################
+runtime: 27.59 secs.

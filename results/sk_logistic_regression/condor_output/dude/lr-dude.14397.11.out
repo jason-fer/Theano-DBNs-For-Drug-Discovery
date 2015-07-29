@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 11
+RunningOn slot10@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 11
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ampc, fold: 0
+Running logistic regression for target: ampc
+target:ampc fold:0 predicted: 940 wrong: 32 pct correct: 0.965957446809, auc: 0.999425287356
+Results for ampc: accuracy: 0.965957446809, auc: 0.999425287356
+Building data for target: ampc, fold: 1
+Running logistic regression for target: ampc
+target:ampc fold:1 predicted: 940 wrong: 91 pct correct: 0.903191489362, auc: 0.98433908046
+Results for ampc: accuracy: 0.934574468085, auc: 0.991882183908
+Building data for target: ampc, fold: 2
+Running logistic regression for target: ampc
+target:ampc fold:2 predicted: 940 wrong: 210 pct correct: 0.776595744681, auc: 0.902586206897
+Results for ampc: accuracy: 0.881914893617, auc: 0.962116858238
+Building data for target: ampc, fold: 3
+Running logistic regression for target: ampc
+target:ampc fold:3 predicted: 940 wrong: 93 pct correct: 0.901063829787, auc: 0.997270114943
+Results for ampc: accuracy: 0.88670212766, auc: 0.970905172414
+Building data for target: ampc, fold: 4
+Running logistic regression for target: ampc
+target:ampc fold:4 predicted: 1001 wrong: 32 pct correct: 0.968031968032, auc: 0.999754118515
+Results for ampc: accuracy: 0.902968095734, auc: 0.976674961634
+####################  Results for DUD-E ####################
+ampc accuracy: 0.902968095734, auc:0.976674961634
+############################################################
+runtime: 33.29 secs.

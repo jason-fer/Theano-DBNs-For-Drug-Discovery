@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 99
+RunningOn slot6@wid-005.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 99
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: vgfr2, fold: 0
+Running logistic regression for target: vgfr2
+target:vgfr2 fold:0 predicted: 8776 wrong: 41 pct correct: 0.99532816773, auc: 0.999779884647
+Results for vgfr2: accuracy: 0.99532816773, auc: 0.999779884647
+Building data for target: vgfr2, fold: 1
+Running logistic regression for target: vgfr2
+target:vgfr2 fold:1 predicted: 8776 wrong: 152 pct correct: 0.982680036463, auc: 0.999944173642
+Results for vgfr2: accuracy: 0.989004102097, auc: 0.999862029145
+Building data for target: vgfr2, fold: 2
+Running logistic regression for target: vgfr2
+target:vgfr2 fold:2 predicted: 8776 wrong: 68 pct correct: 0.99225159526, auc: 0.999944173642
+Results for vgfr2: accuracy: 0.990086599818, auc: 0.999889410644
+Building data for target: vgfr2, fold: 3
+Running logistic regression for target: vgfr2
+target:vgfr2 fold:3 predicted: 8776 wrong: 64 pct correct: 0.992707383774, auc: 0.999905892711
+Results for vgfr2: accuracy: 0.990741795807, auc: 0.999893531161
+Building data for target: vgfr2, fold: 4
+Running logistic regression for target: vgfr2
+target:vgfr2 fold:4 predicted: 8776 wrong: 32 pct correct: 0.996353691887, auc: 0.999990429767
+Results for vgfr2: accuracy: 0.991864175023, auc: 0.999912910882
+####################  Results for DUD-E ####################
+vgfr2 accuracy: 0.991864175023, auc:0.999912910882
+############################################################
+runtime: 281.90 secs.

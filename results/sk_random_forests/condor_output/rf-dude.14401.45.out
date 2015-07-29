@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 45
+RunningOn slot2@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 45
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: hdac8, fold: 0
+Running random forests for target: hdac8
+target:hdac8 fold:0 predicted: 3482 wrong: 3 pct correct: 0.999138426192, auc: 1.0
+Results for hdac8: accuracy: 0.999138426192, auc: 1.0
+Building data for target: hdac8, fold: 1
+Running random forests for target: hdac8
+target:hdac8 fold:1 predicted: 3482 wrong: 91 pct correct: 0.973865594486, auc: 0.966000289579
+Results for hdac8: accuracy: 0.986502010339, auc: 0.98300014479
+Building data for target: hdac8, fold: 2
+Running random forests for target: hdac8
+target:hdac8 fold:2 predicted: 3482 wrong: 2 pct correct: 0.999425617461, auc: 0.999974144707
+Results for hdac8: accuracy: 0.99080987938, auc: 0.988658144762
+Building data for target: hdac8, fold: 3
+Running random forests for target: hdac8
+target:hdac8 fold:3 predicted: 3482 wrong: 121 pct correct: 0.965249856404, auc: 0.988546105159
+Results for hdac8: accuracy: 0.984419873636, auc: 0.988630134861
+Building data for target: hdac8, fold: 4
+Running random forests for target: hdac8
+target:hdac8 fold:4 predicted: 3606 wrong: 30 pct correct: 0.991680532446, auc: 0.999952516619
+Results for hdac8: accuracy: 0.985872005398, auc: 0.990894611213
+####################  Results for DUD-E ####################
+hdac8 accuracy: 0.985872005398, auc:0.990894611213
+############################################################
+runtime: 379.83 secs.

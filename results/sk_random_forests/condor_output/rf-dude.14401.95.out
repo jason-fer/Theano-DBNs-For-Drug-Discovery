@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 95
+RunningOn slot11@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 95
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: try1, fold: 0
+Running random forests for target: try1
+target:try1 fold:0 predicted: 9743 wrong: 96 pct correct: 0.990146772041, auc: 0.999761586878
+Results for try1: accuracy: 0.990146772041, auc: 0.999761586878
+Building data for target: try1, fold: 1
+Running random forests for target: try1
+target:try1 fold:1 predicted: 9743 wrong: 66 pct correct: 0.993225905779, auc: 0.999943416619
+Results for try1: accuracy: 0.99168633891, auc: 0.999852501748
+Building data for target: try1, fold: 2
+Running random forests for target: try1
+target:try1 fold:2 predicted: 9743 wrong: 181 pct correct: 0.981422559787, auc: 0.992766227987
+Results for try1: accuracy: 0.988265079202, auc: 0.997490410494
+Building data for target: try1, fold: 3
+Running random forests for target: try1
+target:try1 fold:3 predicted: 9743 wrong: 243 pct correct: 0.97505901673, auc: 0.996379935152
+Results for try1: accuracy: 0.984963563584, auc: 0.997212791659
+Building data for target: try1, fold: 4
+Running random forests for target: try1
+target:try1 fold:4 predicted: 9867 wrong: 186 pct correct: 0.981149285497, auc: 0.996448186843
+Results for try1: accuracy: 0.984200707967, auc: 0.997059870696
+####################  Results for DUD-E ####################
+try1 accuracy: 0.984200707967, auc:0.997059870696
+############################################################
+runtime: 3210.11 secs.

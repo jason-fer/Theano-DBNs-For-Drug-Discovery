@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 28
+RunningOn slot13@opt-a001.discovery.wisc.edu
+python sk_random_forests.py dud_e 28
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: dyr, fold: 0
+Running random forests for target: dyr
+target:dyr fold:0 predicted: 6866 wrong: 31 pct correct: 0.995484998544, auc: 0.999993635243
+Results for dyr: accuracy: 0.995484998544, auc: 0.999993635243
+Building data for target: dyr, fold: 1
+Running random forests for target: dyr
+target:dyr fold:1 predicted: 6866 wrong: 31 pct correct: 0.995484998544, auc: 0.999992362292
+Results for dyr: accuracy: 0.995484998544, auc: 0.999992998768
+Building data for target: dyr, fold: 2
+Running random forests for target: dyr
+target:dyr fold:2 predicted: 6866 wrong: 1 pct correct: 0.999854354792, auc: 1.0
+Results for dyr: accuracy: 0.996941450626, auc: 0.999995332512
+Building data for target: dyr, fold: 3
+Running random forests for target: dyr
+target:dyr fold:3 predicted: 6866 wrong: 60 pct correct: 0.991261287504, auc: 0.999646119535
+Results for dyr: accuracy: 0.995521409846, auc: 0.999908029268
+Building data for target: dyr, fold: 4
+Running random forests for target: dyr
+target:dyr fold:4 predicted: 6900 wrong: 121 pct correct: 0.982463768116, auc: 0.990643274854
+Results for dyr: accuracy: 0.9929098815, auc: 0.998055078385
+####################  Results for DUD-E ####################
+dyr accuracy: 0.9929098815, auc:0.998055078385
+############################################################
+runtime: 2871.96 secs.

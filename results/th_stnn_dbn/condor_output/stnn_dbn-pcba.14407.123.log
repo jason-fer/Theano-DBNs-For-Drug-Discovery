@@ -1,0 +1,51 @@
+000 (14407.123.000) 07/28 17:55:14 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14407.123.000) 07/29 05:07:49 Job executing on host: <144.92.142.152:9620?sock=7919_1bbb_3>
+...
+006 (14407.123.000) 07/29 05:07:58 Image size of job updated: 26832
+	27  -  MemoryUsage of job (MB)
+	26832  -  ResidentSetSize of job (KB)
+...
+006 (14407.123.000) 07/29 05:13:00 Image size of job updated: 768564
+	751  -  MemoryUsage of job (MB)
+	768564  -  ResidentSetSize of job (KB)
+...
+006 (14407.123.000) 07/29 05:18:00 Image size of job updated: 768568
+	751  -  MemoryUsage of job (MB)
+	768568  -  ResidentSetSize of job (KB)
+...
+006 (14407.123.000) 07/29 05:58:03 Image size of job updated: 773928
+	756  -  MemoryUsage of job (MB)
+	773928  -  ResidentSetSize of job (KB)
+...
+006 (14407.123.000) 07/29 06:03:04 Image size of job updated: 884408
+	864  -  MemoryUsage of job (MB)
+	884408  -  ResidentSetSize of job (KB)
+...
+006 (14407.123.000) 07/29 06:08:05 Image size of job updated: 884888
+	865  -  MemoryUsage of job (MB)
+	884888  -  ResidentSetSize of job (KB)
+...
+006 (14407.123.000) 07/29 06:13:05 Image size of job updated: 885364
+	865  -  MemoryUsage of job (MB)
+	885364  -  ResidentSetSize of job (KB)
+...
+006 (14407.123.000) 07/29 06:18:06 Image size of job updated: 1194964
+	1167  -  MemoryUsage of job (MB)
+	1194964  -  ResidentSetSize of job (KB)
+...
+005 (14407.123.000) 07/29 08:05:47 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 03:52:43, Sys 0 00:16:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 03:52:43, Sys 0 00:16:09  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1 140438976
+	   Memory (MB)          :     1167     8192     21265
+...

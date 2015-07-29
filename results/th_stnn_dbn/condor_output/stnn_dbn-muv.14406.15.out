@@ -1,0 +1,39 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14406
+Process 15
+RunningOn slot11@wid-006.discovery.wisc.edu
+python th_deep_belief_net.py muv 15
+Running Theano Learn Deep Belief Net for muv, target: 858.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -94.7425937907
+Pre-training layer 0, epoch 1, cost  -65.1812499699
+Pre-training layer 0, epoch 2, cost  -59.0260949678
+Pre-training layer 0, epoch 3, cost  -54.6817506925
+Pre-training layer 1, epoch 0, cost  -1346.20793183
+Pre-training layer 1, epoch 1, cost  -1326.55076385
+Pre-training layer 1, epoch 2, cost  -1325.45198655
+Pre-training layer 1, epoch 3, cost  -1324.76827677
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 95/95, best error 5.774194 %, best_auc: 0.671861
+     new best AUC!: 0.682166666667
+     new best AUC!: 0.684777777778
+     new best AUC!: 0.687222222222
+     new best AUC!: 0.691277777778
+     new best AUC!: 0.695222222222
+     new best AUC!: 0.698944444444
+     new best AUC!: 0.702888888889
+     new best AUC!: 0.705638888889
+     new best AUC!: 0.705833333333
+     new best AUC!: 0.706805555556
+     new best AUC!: 0.709138888889
+     new best AUC!: 0.710333333333
+     new best AUC!: 0.712388888889
+     new best AUC!: 0.713611111111
+     new best AUC!: 0.714111111111
+     new best AUC!: 0.717333333333
+     new best AUC!: 0.726805555556
+Optimization complete with best validation score of 5.677419 %, obtained at iteration 95, with test performance 5.774194 %, and best_auc: 0.726806
+runtime: 3633.94 secs.

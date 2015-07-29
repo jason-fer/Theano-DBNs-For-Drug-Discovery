@@ -1,0 +1,61 @@
+000 (14405.089.000) 07/28 17:54:47 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14405.089.000) 07/28 18:05:45 Job executing on host: <144.92.142.192:9620?sock=11062_0af0_13>
+...
+007 (14405.089.000) 07/28 18:05:45 Shadow exception!
+	Error from slot8@opt-a018.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-dude.sh': (errno=13: 'Permission denied')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14405.089.000) 07/28 18:05:45 Job was held.
+	Error from slot8@opt-a018.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-dude.sh': (errno=13: 'Permission denied')
+	Code 6 Subcode 13
+...
+013 (14405.089.000) 07/28 18:09:40 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14405.089.000) 07/28 18:32:53 Job executing on host: <144.92.142.162:9620?sock=10446_6bfc_3>
+...
+006 (14405.089.000) 07/28 18:33:02 Image size of job updated: 35248
+	35  -  MemoryUsage of job (MB)
+	35248  -  ResidentSetSize of job (KB)
+...
+006 (14405.089.000) 07/28 18:38:03 Image size of job updated: 368164
+	360  -  MemoryUsage of job (MB)
+	368164  -  ResidentSetSize of job (KB)
+...
+006 (14405.089.000) 07/28 18:43:03 Image size of job updated: 404172
+	395  -  MemoryUsage of job (MB)
+	404172  -  ResidentSetSize of job (KB)
+...
+006 (14405.089.000) 07/28 18:48:04 Image size of job updated: 445412
+	435  -  MemoryUsage of job (MB)
+	445412  -  ResidentSetSize of job (KB)
+...
+006 (14405.089.000) 07/28 18:53:05 Image size of job updated: 489212
+	478  -  MemoryUsage of job (MB)
+	489212  -  ResidentSetSize of job (KB)
+...
+006 (14405.089.000) 07/28 18:58:05 Image size of job updated: 519700
+	508  -  MemoryUsage of job (MB)
+	519700  -  ResidentSetSize of job (KB)
+...
+006 (14405.089.000) 07/28 19:09:37 Image size of job updated: 519752
+	508  -  MemoryUsage of job (MB)
+	519700  -  ResidentSetSize of job (KB)
+...
+005 (14405.089.000) 07/28 19:09:37 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 05:17:21, Sys 0 00:35:42  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 05:17:21, Sys 0 00:35:42  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  34974598
+	   Memory (MB)          :      508     3072      3228
+...

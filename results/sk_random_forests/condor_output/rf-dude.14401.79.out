@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 79
+RunningOn slot6@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 79
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: ppara, fold: 0
+Running random forests for target: ppara
+target:ppara fold:0 predicted: 7206 wrong: 211 pct correct: 0.970718845407, auc: 0.999514390841
+Results for ppara: accuracy: 0.970718845407, auc: 0.999514390841
+Building data for target: ppara, fold: 1
+Running random forests for target: ppara
+target:ppara fold:1 predicted: 7206 wrong: 211 pct correct: 0.970718845407, auc: 0.989440335444
+Results for ppara: accuracy: 0.970718845407, auc: 0.994477363142
+Building data for target: ppara, fold: 2
+Running random forests for target: ppara
+target:ppara fold:2 predicted: 7206 wrong: 93 pct correct: 0.98709408826, auc: 0.989390140266
+Results for ppara: accuracy: 0.976177259691, auc: 0.992781622184
+Building data for target: ppara, fold: 3
+Running random forests for target: ppara
+target:ppara fold:3 predicted: 7206 wrong: 180 pct correct: 0.975020815987, auc: 0.999934629536
+Results for ppara: accuracy: 0.975888148765, auc: 0.994569874022
+Building data for target: ppara, fold: 4
+Running random forests for target: ppara
+target:ppara fold:4 predicted: 7327 wrong: 62 pct correct: 0.991538146581, auc: 0.999983119666
+Results for ppara: accuracy: 0.979018148328, auc: 0.995652523151
+####################  Results for DUD-E ####################
+ppara accuracy: 0.979018148328, auc:0.995652523151
+############################################################
+runtime: 2500.66 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 23
+RunningOn slot22@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 23
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: cxcr4, fold: 0
+Running logistic regression for target: cxcr4
+target:cxcr4 fold:0 predicted: 1354 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for cxcr4: accuracy: 1.0, auc: 1.0
+Building data for target: cxcr4, fold: 1
+Running logistic regression for target: cxcr4
+target:cxcr4 fold:1 predicted: 1354 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for cxcr4: accuracy: 1.0, auc: 1.0
+Building data for target: cxcr4, fold: 2
+Running logistic regression for target: cxcr4
+target:cxcr4 fold:2 predicted: 1354 wrong: 28 pct correct: 0.979320531758, auc: 0.999511241447
+Results for cxcr4: accuracy: 0.993106843919, auc: 0.999837080482
+Building data for target: cxcr4, fold: 3
+Running logistic regression for target: cxcr4
+target:cxcr4 fold:3 predicted: 1354 wrong: 28 pct correct: 0.979320531758, auc: 0.999938905181
+Results for cxcr4: accuracy: 0.989660265879, auc: 0.999862536657
+Building data for target: cxcr4, fold: 4
+Running logistic regression for target: cxcr4
+target:cxcr4 fold:4 predicted: 1361 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for cxcr4: accuracy: 0.991728212703, auc: 0.999890029326
+####################  Results for DUD-E ####################
+cxcr4 accuracy: 0.991728212703, auc:0.999890029326
+############################################################
+runtime: 38.46 secs.

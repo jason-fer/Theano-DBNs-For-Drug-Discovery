@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 16
+RunningOn slot4@opt-a014.discovery.wisc.edu
+python sk_random_forests.py dud_e 16
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: cah2, fold: 0
+Running random forests for target: cah2
+target:cah2 fold:0 predicted: 11351 wrong: 31 pct correct: 0.997268963087, auc: 0.99690352775
+Results for cah2: accuracy: 0.997268963087, auc: 0.99690352775
+Building data for target: cah2, fold: 1
+Running random forests for target: cah2
+target:cah2 fold:1 predicted: 11351 wrong: 7 pct correct: 0.999383314245, auc: 0.999981113314
+Results for cah2: accuracy: 0.998326138666, auc: 0.998442320532
+Building data for target: cah2, fold: 2
+Running random forests for target: cah2
+target:cah2 fold:2 predicted: 11351 wrong: 32 pct correct: 0.997180865122, auc: 0.999990556657
+Results for cah2: accuracy: 0.997944380818, auc: 0.99895839924
+Building data for target: cah2, fold: 3
+Running random forests for target: cah2
+target:cah2 fold:3 predicted: 11351 wrong: 65 pct correct: 0.994273632279, auc: 0.993845773207
+Results for cah2: accuracy: 0.997026693683, auc: 0.997680242732
+Building data for target: cah2, fold: 4
+Running random forests for target: cah2
+target:cah2 fold:4 predicted: 11353 wrong: 2 pct correct: 0.99982383511, auc: 0.999996223854
+Results for cah2: accuracy: 0.997586121969, auc: 0.998143438956
+####################  Results for DUD-E ####################
+cah2 accuracy: 0.997586121969, auc:0.998143438956
+############################################################
+runtime: 1829.12 secs.

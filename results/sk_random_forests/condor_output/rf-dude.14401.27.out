@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 27
+RunningOn slot11@opt-a002.discovery.wisc.edu
+python sk_random_forests.py dud_e 27
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: drd3, fold: 0
+Running random forests for target: drd3
+target:drd3 fold:0 predicted: 12087 wrong: 242 pct correct: 0.979978489286, auc: 0.999592971019
+Results for drd3: accuracy: 0.979978489286, auc: 0.999592971019
+Building data for target: drd3, fold: 1
+Running random forests for target: drd3
+target:drd3 fold:1 predicted: 12087 wrong: 390 pct correct: 0.967733929015, auc: 0.999703295096
+Results for drd3: accuracy: 0.97385620915, auc: 0.999648133058
+Building data for target: drd3, fold: 2
+Running random forests for target: drd3
+target:drd3 fold:2 predicted: 12087 wrong: 301 pct correct: 0.975097211881, auc: 0.999322593452
+Results for drd3: accuracy: 0.974269876727, auc: 0.999539619856
+Building data for target: drd3, fold: 3
+Running random forests for target: drd3
+target:drd3 fold:3 predicted: 12087 wrong: 363 pct correct: 0.969967733929, auc: 0.995867026056
+Results for drd3: accuracy: 0.973194341028, auc: 0.998621471406
+Building data for target: drd3, fold: 4
+Running random forests for target: drd3
+target:drd3 fold:4 predicted: 12148 wrong: 542 pct correct: 0.955383602239, auc: 0.986031036266
+Results for drd3: accuracy: 0.96963219327, auc: 0.996103384378
+####################  Results for DUD-E ####################
+drd3 accuracy: 0.96963219327, auc:0.996103384378
+############################################################
+runtime: 5959.17 secs.

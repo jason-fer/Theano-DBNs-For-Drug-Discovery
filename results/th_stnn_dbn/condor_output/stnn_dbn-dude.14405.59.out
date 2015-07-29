@@ -1,0 +1,45 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14405
+Process 59
+RunningOn slot13@opt-a018.discovery.wisc.edu
+python th_deep_belief_net.py dud_e 59
+Running Theano Learn Deep Belief Net for dud_e, target: kpcb.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -105.180017065
+Pre-training layer 0, epoch 1, cost  -75.3652913864
+Pre-training layer 1, epoch 0, cost  -1385.32189771
+Pre-training layer 1, epoch 1, cost  -1371.02133955
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 98/98, best error 45.312500 %, best_auc: 0.898202
+     new best AUC!: 0.942717471604
+     new best AUC!: 0.945926447502
+     epoch 38, minibatch 98/98, best error 23.687500 %, best_auc: 0.945926
+     new best AUC!: 0.990176839967
+     epoch 39, minibatch 98/98, best error 4.343750 %, best_auc: 0.990177
+     new best AUC!: 0.995475113122
+     epoch 40, minibatch 98/98, best error 2.031250 %, best_auc: 0.995475
+     new best AUC!: 0.997702927325
+     epoch 41, minibatch 98/98, best error 1.937500 %, best_auc: 0.997703
+     new best AUC!: 0.998430141287
+     epoch 42, minibatch 98/98, best error 1.937500 %, best_auc: 0.998430
+     new best AUC!: 0.998649459784
+     new best AUC!: 0.99877643365
+     new best AUC!: 0.998903407517
+     new best AUC!: 0.998949579832
+     new best AUC!: 0.998984209068
+     new best AUC!: 0.999007295226
+     epoch 49, minibatch 98/98, best error 1.875000 %, best_auc: 0.999007
+     new best AUC!: 0.999030381383
+     new best AUC!: 0.999030381383
+     new best AUC!: 0.999041924462
+     epoch 85, minibatch 98/98, best error 1.843750 %, best_auc: 0.999042
+     new best AUC!: 0.999053467541
+     new best AUC!: 0.99906501062
+     new best AUC!: 0.999076553698
+     new best AUC!: 0.999088096777
+     new best AUC!: 0.999099639856
+Optimization complete with best validation score of 6.531250 %, obtained at iteration 8330, with test performance 1.843750 %, and best_auc: 0.999100
+runtime: 62011.50 secs.

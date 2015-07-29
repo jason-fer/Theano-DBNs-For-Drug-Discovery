@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 98
+RunningOn slot3@wid-004.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 98
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: urok, fold: 0
+Running logistic regression for target: urok
+target:urok fold:0 predicted: 3786 wrong: 32 pct correct: 0.991547807713, auc: 0.988100033568
+Results for urok: accuracy: 0.991547807713, auc: 0.988100033568
+Building data for target: urok, fold: 1
+Running logistic regression for target: urok
+target:urok fold:1 predicted: 3786 wrong: 31 pct correct: 0.991811938722, auc: 0.999471299094
+Results for urok: accuracy: 0.991679873217, auc: 0.993785666331
+Building data for target: urok, fold: 2
+Running logistic regression for target: urok
+target:urok fold:2 predicted: 3786 wrong: 60 pct correct: 0.984152139461, auc: 0.999958039611
+Results for urok: accuracy: 0.989170628632, auc: 0.995843124091
+Building data for target: urok, fold: 3
+Running logistic regression for target: urok
+target:urok fold:3 predicted: 3786 wrong: 32 pct correct: 0.991547807713, auc: 0.998422289359
+Results for urok: accuracy: 0.989764923402, auc: 0.996487915408
+Building data for target: urok, fold: 4
+Running logistic regression for target: urok
+target:urok fold:4 predicted: 3849 wrong: 1 pct correct: 0.999740192258, auc: 1.0
+Results for urok: accuracy: 0.991759977173, auc: 0.997190332326
+####################  Results for DUD-E ####################
+urok accuracy: 0.991759977173, auc:0.997190332326
+############################################################
+runtime: 126.41 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 55
+RunningOn slot23@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 55
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: jak2, fold: 0
+Running random forests for target: jak2
+target:jak2 fold:0 predicted: 2218 wrong: 90 pct correct: 0.959422903517, auc: 0.978515427415
+Results for jak2: accuracy: 0.959422903517, auc: 0.978515427415
+Building data for target: jak2, fold: 1
+Running random forests for target: jak2
+target:jak2 fold:1 predicted: 2218 wrong: 241 pct correct: 0.89134355275, auc: 0.993424380374
+Results for jak2: accuracy: 0.925383228133, auc: 0.985969903895
+Building data for target: jak2, fold: 2
+Running random forests for target: jak2
+target:jak2 fold:2 predicted: 2218 wrong: 60 pct correct: 0.972948602344, auc: 1.0
+Results for jak2: accuracy: 0.94123835287, auc: 0.990646602597
+Building data for target: jak2, fold: 3
+Running random forests for target: jak2
+target:jak2 fold:3 predicted: 2218 wrong: 90 pct correct: 0.959422903517, auc: 0.998811330298
+Results for jak2: accuracy: 0.945784490532, auc: 0.992687784522
+Building data for target: jak2, fold: 4
+Running random forests for target: jak2
+target:jak2 fold:4 predicted: 2308 wrong: 151 pct correct: 0.934575389948, auc: 0.996194877454
+Results for jak2: accuracy: 0.943542670415, auc: 0.993389203108
+####################  Results for DUD-E ####################
+jak2 accuracy: 0.943542670415, auc:0.993389203108
+############################################################
+runtime: 447.64 secs.

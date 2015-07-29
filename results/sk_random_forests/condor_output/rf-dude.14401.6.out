@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 6
+RunningOn slot25@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 6
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: adrb1, fold: 0
+Running random forests for target: adrb1
+target:adrb1 fold:0 predicted: 5921 wrong: 31 pct correct: 0.994764397906, auc: 0.993995819286
+Results for adrb1: accuracy: 0.994764397906, auc: 0.993995819286
+Building data for target: adrb1, fold: 1
+Running random forests for target: adrb1
+target:adrb1 fold:1 predicted: 5921 wrong: 1 pct correct: 0.99983110961, auc: 1.0
+Results for adrb1: accuracy: 0.997297753758, auc: 0.996997909643
+Building data for target: adrb1, fold: 2
+Running random forests for target: adrb1
+target:adrb1 fold:2 predicted: 5921 wrong: 120 pct correct: 0.979733153184, auc: 0.993427600291
+Results for adrb1: accuracy: 0.9914428869, auc: 0.995807806525
+Building data for target: adrb1, fold: 3
+Running random forests for target: adrb1
+target:adrb1 fold:3 predicted: 5921 wrong: 30 pct correct: 0.994933288296, auc: 0.999979337491
+Results for adrb1: accuracy: 0.992315487249, auc: 0.996850689267
+Building data for target: adrb1, fold: 4
+Running random forests for target: adrb1
+target:adrb1 fold:4 predicted: 6014 wrong: 62 pct correct: 0.989690721649, auc: 0.994159594452
+Results for adrb1: accuracy: 0.991790534129, auc: 0.996312470304
+####################  Results for DUD-E ####################
+adrb1 accuracy: 0.991790534129, auc:0.996312470304
+############################################################
+runtime: 1456.83 secs.

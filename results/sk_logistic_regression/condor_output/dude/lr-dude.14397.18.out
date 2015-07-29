@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 18
+RunningOn slot17@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 18
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: cdk2, fold: 0
+Running logistic regression for target: cdk2
+target:cdk2 fold:0 predicted: 10435 wrong: 297 pct correct: 0.971538092956, auc: 0.998435721938
+Results for cdk2: accuracy: 0.971538092956, auc: 0.998435721938
+Building data for target: cdk2, fold: 1
+Running logistic regression for target: cdk2
+target:cdk2 fold:1 predicted: 10435 wrong: 76 pct correct: 0.9927168184, auc: 0.999757975431
+Results for cdk2: accuracy: 0.982127455678, auc: 0.999096848685
+Building data for target: cdk2, fold: 2
+Running logistic regression for target: cdk2
+target:cdk2 fold:2 predicted: 10435 wrong: 169 pct correct: 0.983804504073, auc: 0.997774040089
+Results for cdk2: accuracy: 0.98268647181, auc: 0.998655912486
+Building data for target: cdk2, fold: 3
+Running logistic regression for target: cdk2
+target:cdk2 fold:3 predicted: 10435 wrong: 134 pct correct: 0.987158600862, auc: 0.99963030192
+Results for cdk2: accuracy: 0.983804504073, auc: 0.998899509845
+Building data for target: cdk2, fold: 4
+Running logistic regression for target: cdk2
+target:cdk2 fold:4 predicted: 10527 wrong: 415 pct correct: 0.960577562458, auc: 0.995493729127
+Results for cdk2: accuracy: 0.97915911575, auc: 0.998218353701
+####################  Results for DUD-E ####################
+cdk2 accuracy: 0.97915911575, auc:0.998218353701
+############################################################
+runtime: 222.25 secs.

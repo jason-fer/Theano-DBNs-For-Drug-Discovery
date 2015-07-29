@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 76
+RunningOn slot19@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 76
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pgh2, fold: 0
+Running logistic regression for target: pgh2
+target:pgh2 fold:0 predicted: 7861 wrong: 310 pct correct: 0.960564813637, auc: 0.982628490123
+Results for pgh2: accuracy: 0.960564813637, auc: 0.982628490123
+Building data for target: pgh2, fold: 1
+Running logistic regression for target: pgh2
+target:pgh2 fold:1 predicted: 7861 wrong: 198 pct correct: 0.974812364839, auc: 0.996741141427
+Results for pgh2: accuracy: 0.967688589238, auc: 0.989684815775
+Building data for target: pgh2, fold: 2
+Running logistic regression for target: pgh2
+target:pgh2 fold:2 predicted: 7861 wrong: 113 pct correct: 0.985625238519, auc: 0.998986267247
+Results for pgh2: accuracy: 0.973667472332, auc: 0.992785299599
+Building data for target: pgh2, fold: 3
+Running logistic regression for target: pgh2
+target:pgh2 fold:3 predicted: 7861 wrong: 375 pct correct: 0.952296145529, auc: 0.992250889787
+Results for pgh2: accuracy: 0.968324640631, auc: 0.992651697146
+Building data for target: pgh2, fold: 4
+Running logistic regression for target: pgh2
+target:pgh2 fold:4 predicted: 7891 wrong: 162 pct correct: 0.9794702826, auc: 0.999257287863
+Results for pgh2: accuracy: 0.970553769025, auc: 0.993972815289
+####################  Results for DUD-E ####################
+pgh2 accuracy: 0.970553769025, auc:0.993972815289
+############################################################
+runtime: 184.52 secs.

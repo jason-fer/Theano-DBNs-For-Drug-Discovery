@@ -1,0 +1,54 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14406
+Process 11
+RunningOn slot10@opt-a018.discovery.wisc.edu
+python th_deep_belief_net.py muv 11
+Running Theano Learn Deep Belief Net for muv, target: 810.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -94.2668247012
+Pre-training layer 0, epoch 1, cost  -65.6362271308
+Pre-training layer 0, epoch 2, cost  -59.8865783622
+Pre-training layer 0, epoch 3, cost  -55.7712624964
+Pre-training layer 1, epoch 0, cost  -1347.27404182
+Pre-training layer 1, epoch 1, cost  -1326.90718997
+Pre-training layer 1, epoch 2, cost  -1325.572453
+Pre-training layer 1, epoch 3, cost  -1324.96199179
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 95/95, best error 5.612903 %, best_auc: 0.542750
+     new best AUC!: 0.570194444444
+     new best AUC!: 0.591416666667
+     new best AUC!: 0.596138888889
+     new best AUC!: 0.602722222222
+     new best AUC!: 0.611027777778
+     new best AUC!: 0.613666666667
+     new best AUC!: 0.618222222222
+     new best AUC!: 0.620388888889
+     new best AUC!: 0.621583333333
+     new best AUC!: 0.623694444444
+     new best AUC!: 0.625083333333
+     new best AUC!: 0.631388888889
+     new best AUC!: 0.634166666667
+     new best AUC!: 0.634277777778
+     new best AUC!: 0.637083333333
+     new best AUC!: 0.642638888889
+     new best AUC!: 0.646361111111
+     new best AUC!: 0.649555555556
+     new best AUC!: 0.654638888889
+     new best AUC!: 0.658805555556
+     new best AUC!: 0.6605
+     new best AUC!: 0.663027777778
+     new best AUC!: 0.664694444444
+     new best AUC!: 0.664861111111
+     new best AUC!: 0.665166666667
+     new best AUC!: 0.66925
+     new best AUC!: 0.669611111111
+     new best AUC!: 0.671055555556
+     new best AUC!: 0.671388888889
+     new best AUC!: 0.671638888889
+     new best AUC!: 0.671777777778
+     new best AUC!: 0.672666666667
+Optimization complete with best validation score of 5.709677 %, obtained at iteration 95, with test performance 5.612903 %, and best_auc: 0.672667
+runtime: 33937.53 secs.

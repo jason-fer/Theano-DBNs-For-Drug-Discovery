@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 69
+RunningOn slot13@opt-a003.discovery.wisc.edu
+python sk_random_forests.py dud_e 69
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: mp2k1, fold: 0
+Running random forests for target: mp2k1
+target:mp2k1 fold:0 predicted: 3088 wrong: 30 pct correct: 0.990284974093, auc: 0.999949433657
+Results for mp2k1: accuracy: 0.990284974093, auc: 0.999949433657
+Building data for target: mp2k1, fold: 1
+Running random forests for target: mp2k1
+target:mp2k1 fold:1 predicted: 3088 wrong: 150 pct correct: 0.951424870466, auc: 0.999367920712
+Results for mp2k1: accuracy: 0.97085492228, auc: 0.999658677184
+Building data for target: mp2k1, fold: 2
+Running random forests for target: mp2k1
+target:mp2k1 fold:2 predicted: 3088 wrong: 93 pct correct: 0.969883419689, auc: 0.986618881472
+Results for mp2k1: accuracy: 0.970531088083, auc: 0.995312078614
+Building data for target: mp2k1, fold: 3
+Running random forests for target: mp2k1
+target:mp2k1 fold:3 predicted: 3088 wrong: 62 pct correct: 0.979922279793, auc: 0.987857756877
+Results for mp2k1: accuracy: 0.97287888601, auc: 0.99344849818
+Building data for target: mp2k1, fold: 4
+Running random forests for target: mp2k1
+target:mp2k1 fold:4 predicted: 3149 wrong: 182 pct correct: 0.942203874246, auc: 0.963735597332
+Results for mp2k1: accuracy: 0.966743883657, auc: 0.98750591801
+####################  Results for DUD-E ####################
+mp2k1 accuracy: 0.966743883657, auc:0.98750591801
+############################################################
+runtime: 979.14 secs.

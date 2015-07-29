@@ -1,0 +1,51 @@
+000 (14403.081.000) 07/28 17:54:24 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14403.081.000) 07/28 18:35:45 Job executing on host: <144.92.142.172:9620?sock=8528_d259_4>
+...
+006 (14403.081.000) 07/28 18:35:53 Image size of job updated: 27156
+	27  -  MemoryUsage of job (MB)
+	27156  -  ResidentSetSize of job (KB)
+...
+006 (14403.081.000) 07/28 18:40:53 Image size of job updated: 4125320
+	4029  -  MemoryUsage of job (MB)
+	4125320  -  ResidentSetSize of job (KB)
+...
+006 (14403.081.000) 07/28 18:45:54 Image size of job updated: 8937280
+	8728  -  MemoryUsage of job (MB)
+	8937280  -  ResidentSetSize of job (KB)
+...
+006 (14403.081.000) 07/28 23:11:22 Image size of job updated: 8937332
+	8728  -  MemoryUsage of job (MB)
+	8937332  -  ResidentSetSize of job (KB)
+...
+006 (14403.081.000) 07/29 03:11:46 Image size of job updated: 8937336
+	8728  -  MemoryUsage of job (MB)
+	8937336  -  ResidentSetSize of job (KB)
+...
+004 (14403.081.000) 07/29 09:24:10 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 14:47:29, Sys 0 00:00:28  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         4
+	   Disk (KB)            :        1        1 163200507
+	   Memory (MB)          :     8728     8192     21508
+...
+001 (14403.081.000) 07/29 09:24:35 Job executing on host: <144.92.142.165:9620?sock=9950_ad0a_3>
+...
+004 (14403.081.000) 07/29 12:01:20 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 02:36:10, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  81509661
+	   Memory (MB)          :     9766     8192     12109
+...
+009 (14403.081.000) 07/29 12:01:20 Job was aborted by the user.
+	via condor_rm (by user jferiante)
+...

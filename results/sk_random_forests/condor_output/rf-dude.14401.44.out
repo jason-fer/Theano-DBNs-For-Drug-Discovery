@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 44
+RunningOn slot11@opt-a015.discovery.wisc.edu
+python sk_random_forests.py dud_e 44
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: hdac2, fold: 0
+Running random forests for target: hdac2
+target:hdac2 fold:0 predicted: 3483 wrong: 2 pct correct: 0.999425782372, auc: 0.999989736326
+Results for hdac2: accuracy: 0.999425782372, auc: 0.999989736326
+Building data for target: hdac2, fold: 1
+Running random forests for target: hdac2
+target:hdac2 fold:1 predicted: 3483 wrong: 3 pct correct: 0.999138673557, auc: 0.999928154284
+Results for hdac2: accuracy: 0.999282227964, auc: 0.999958945305
+Building data for target: hdac2, fold: 2
+Running random forests for target: hdac2
+target:hdac2 fold:2 predicted: 3483 wrong: 120 pct correct: 0.965546942291, auc: 0.988674035984
+Results for hdac2: accuracy: 0.98803713274, auc: 0.996197308865
+Building data for target: hdac2, fold: 3
+Running random forests for target: hdac2
+target:hdac2 fold:3 predicted: 3483 wrong: 2 pct correct: 0.999425782372, auc: 1.0
+Results for hdac2: accuracy: 0.990884295148, auc: 0.997147981649
+Building data for target: hdac2, fold: 4
+Running random forests for target: hdac2
+target:hdac2 fold:4 predicted: 3574 wrong: 154 pct correct: 0.956911024063, auc: 0.988958534233
+Results for hdac2: accuracy: 0.984089640931, auc: 0.995510092166
+####################  Results for DUD-E ####################
+hdac2 accuracy: 0.984089640931, auc:0.995510092166
+############################################################
+runtime: 330.22 secs.

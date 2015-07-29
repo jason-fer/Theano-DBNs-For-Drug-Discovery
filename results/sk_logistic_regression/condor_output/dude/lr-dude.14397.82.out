@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 82
+RunningOn slot2@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 82
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: prgr, fold: 0
+Running logistic regression for target: prgr
+target:prgr fold:0 predicted: 5802 wrong: 97 pct correct: 0.983281627025, auc: 0.999769995975
+Results for prgr: accuracy: 0.983281627025, auc: 0.999769995975
+Building data for target: prgr, fold: 1
+Running logistic regression for target: prgr
+target:prgr fold:1 predicted: 5802 wrong: 94 pct correct: 0.983798690107, auc: 0.999823903168
+Results for prgr: accuracy: 0.983540158566, auc: 0.999796949572
+Building data for target: prgr, fold: 2
+Running logistic regression for target: prgr
+target:prgr fold:2 predicted: 5802 wrong: 124 pct correct: 0.97862805929, auc: 0.999349519867
+Results for prgr: accuracy: 0.981902792141, auc: 0.999647806337
+Building data for target: prgr, fold: 3
+Running logistic regression for target: prgr
+target:prgr fold:3 predicted: 5802 wrong: 94 pct correct: 0.983798690107, auc: 0.999902967052
+Results for prgr: accuracy: 0.982376766632, auc: 0.999711596515
+Building data for target: prgr, fold: 4
+Running logistic regression for target: prgr
+target:prgr fold:4 predicted: 5926 wrong: 94 pct correct: 0.984137698279, auc: 0.999749375154
+Results for prgr: accuracy: 0.982728952962, auc: 0.999719152243
+####################  Results for DUD-E ####################
+prgr accuracy: 0.982728952962, auc:0.999719152243
+############################################################
+runtime: 144.48 secs.

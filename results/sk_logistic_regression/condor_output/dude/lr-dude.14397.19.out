@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 19
+RunningOn slot18@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 19
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: comt, fold: 0
+Running logistic regression for target: comt
+target:comt fold:0 predicted: 1295 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for comt: accuracy: 1.0, auc: 1.0
+Building data for target: comt, fold: 1
+Running logistic regression for target: comt
+target:comt fold:1 predicted: 1295 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for comt: accuracy: 1.0, auc: 1.0
+Building data for target: comt, fold: 2
+Running logistic regression for target: comt
+target:comt fold:2 predicted: 1295 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for comt: accuracy: 1.0, auc: 1.0
+Building data for target: comt, fold: 3
+Running logistic regression for target: comt
+target:comt fold:3 predicted: 1295 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for comt: accuracy: 1.0, auc: 1.0
+Building data for target: comt, fold: 4
+Running logistic regression for target: comt
+target:comt fold:4 predicted: 1326 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for comt: accuracy: 1.0, auc: 1.0
+####################  Results for DUD-E ####################
+comt accuracy: 1.0, auc:1.0
+############################################################
+runtime: 38.32 secs.

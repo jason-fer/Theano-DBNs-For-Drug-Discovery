@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 59
+RunningOn slot6@opt-a014.discovery.wisc.edu
+python sk_random_forests.py dud_e 59
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: kpcb, fold: 0
+Running random forests for target: kpcb
+target:kpcb fold:0 predicted: 3238 wrong: 180 pct correct: 0.94441012971, auc: 0.961267199187
+Results for kpcb: accuracy: 0.94441012971, auc: 0.961267199187
+Building data for target: kpcb, fold: 1
+Running random forests for target: kpcb
+target:kpcb fold:1 predicted: 3238 wrong: 60 pct correct: 0.981470043237, auc: 0.9998095392
+Results for kpcb: accuracy: 0.962940086473, auc: 0.980538369194
+Building data for target: kpcb, fold: 2
+Running random forests for target: kpcb
+target:kpcb fold:2 predicted: 3238 wrong: 210 pct correct: 0.935145151328, auc: 0.991025256256
+Results for kpcb: accuracy: 0.953675108091, auc: 0.984033998215
+Building data for target: kpcb, fold: 3
+Running random forests for target: kpcb
+target:kpcb fold:3 predicted: 3238 wrong: 90 pct correct: 0.972205064855, auc: 0.97569027611
+Results for kpcb: accuracy: 0.958307597282, auc: 0.981948067689
+Building data for target: kpcb, fold: 4
+Running random forests for target: kpcb
+target:kpcb fold:4 predicted: 3331 wrong: 120 pct correct: 0.963974782348, auc: 1.0
+Results for kpcb: accuracy: 0.959441034295, auc: 0.985558454151
+####################  Results for DUD-E ####################
+kpcb accuracy: 0.959441034295, auc:0.985558454151
+############################################################
+runtime: 405.53 secs.

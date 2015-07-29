@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14374
+Process 2
+RunningOn slot8@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py tox21 2
+Running Scikit Learn Logistic Regression Classifier for tox21.........
+Building data for target: nr-ar, fold: 0
+Running logistic regression for target: nr-ar
+target:nr-ar fold:0 predicted: 3538 wrong: 696 pct correct: 0.803278688525, auc: 0.836485592473
+Results for nr-ar: accuracy: 0.803278688525, auc: 0.836485592473
+Building data for target: nr-ar, fold: 1
+Running logistic regression for target: nr-ar
+target:nr-ar fold:1 predicted: 3538 wrong: 703 pct correct: 0.801300169587, auc: 0.808122610997
+Results for nr-ar: accuracy: 0.802289429056, auc: 0.822304101735
+Building data for target: nr-ar, fold: 2
+Running logistic regression for target: nr-ar
+target:nr-ar fold:2 predicted: 3538 wrong: 817 pct correct: 0.769078575466, auc: 0.75530726257
+Results for nr-ar: accuracy: 0.791219144526, auc: 0.799971822013
+Building data for target: nr-ar, fold: 3
+Running logistic regression for target: nr-ar
+target:nr-ar fold:3 predicted: 3538 wrong: 654 pct correct: 0.815149802148, auc: 0.819652308145
+Results for nr-ar: accuracy: 0.797201808932, auc: 0.804891943546
+Building data for target: nr-ar, fold: 4
+Running logistic regression for target: nr-ar
+target:nr-ar fold:4 predicted: 3541 wrong: 1064 pct correct: 0.69951990963, auc: 0.727793759357
+Results for nr-ar: accuracy: 0.777665429071, auc: 0.789472306708
+####################  Results for Tox21 ####################
+nr-ar accuracy: 0.777665429071, auc:0.789472306708
+############################################################
+runtime: 104.99 secs.

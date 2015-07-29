@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 8
+RunningOn slot11@galaxy-01.discovery.wisc.edu
+python sk_random_forests.py tox21 8
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: sr-atad5, fold: 0
+Running random forests for target: sr-atad5
+target:sr-atad5 fold:0 predicted: 3487 wrong: 828 pct correct: 0.762546601663, auc: 0.883201471154
+Results for sr-atad5: accuracy: 0.762546601663, auc: 0.883201471154
+Building data for target: sr-atad5, fold: 1
+Running random forests for target: sr-atad5
+target:sr-atad5 fold:1 predicted: 3487 wrong: 1194 pct correct: 0.657585316891, auc: 0.870671000299
+Results for sr-atad5: accuracy: 0.710065959277, auc: 0.876936235727
+Building data for target: sr-atad5, fold: 2
+Running random forests for target: sr-atad5
+target:sr-atad5 fold:2 predicted: 3487 wrong: 958 pct correct: 0.725265271007, auc: 0.876324680323
+Results for sr-atad5: accuracy: 0.71513239652, auc: 0.876732383926
+Building data for target: sr-atad5, fold: 3
+Running random forests for target: sr-atad5
+target:sr-atad5 fold:3 predicted: 3487 wrong: 1135 pct correct: 0.67450530542, auc: 0.85738356926
+Results for sr-atad5: accuracy: 0.704975623745, auc: 0.871895180259
+Building data for target: sr-atad5, fold: 4
+Running random forests for target: sr-atad5
+target:sr-atad5 fold:4 predicted: 3429 wrong: 782 pct correct: 0.77194517352, auc: 0.888144245691
+Results for sr-atad5: accuracy: 0.7183695337, auc: 0.875144993346
+####################  Results for Tox21 ####################
+sr-atad5 accuracy: 0.7183695337, auc:0.875144993346
+############################################################
+runtime: 1207.76 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 68
+RunningOn slot12@opt-a015.discovery.wisc.edu
+python sk_random_forests.py dud_e 68
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: mmp13, fold: 0
+Running random forests for target: mmp13
+target:mmp13 fold:0 predicted: 13811 wrong: 240 pct correct: 0.982622547245, auc: 0.994286284477
+Results for mmp13: accuracy: 0.982622547245, auc: 0.994286284477
+Building data for target: mmp13, fold: 1
+Running random forests for target: mmp13
+target:mmp13 fold:1 predicted: 13811 wrong: 361 pct correct: 0.973861414814, auc: 0.999745456833
+Results for mmp13: accuracy: 0.97824198103, auc: 0.997015870655
+Building data for target: mmp13, fold: 2
+Running random forests for target: mmp13
+target:mmp13 fold:2 predicted: 13811 wrong: 121 pct correct: 0.991238867569, auc: 0.999989830985
+Results for mmp13: accuracy: 0.982574276543, auc: 0.998007190765
+Building data for target: mmp13, fold: 3
+Running random forests for target: mmp13
+target:mmp13 fold:3 predicted: 13811 wrong: 181 pct correct: 0.986894504381, auc: 0.999989830985
+Results for mmp13: accuracy: 0.983654333502, auc: 0.99850285082
+Building data for target: mmp13, fold: 4
+Running random forests for target: mmp13
+target:mmp13 fold:4 predicted: 13904 wrong: 121 pct correct: 0.991297468354, auc: 0.997363229879
+Results for mmp13: accuracy: 0.985182960473, auc: 0.998274926632
+####################  Results for DUD-E ####################
+mmp13 accuracy: 0.985182960473, auc:0.998274926632
+############################################################
+runtime: 4279.10 secs.

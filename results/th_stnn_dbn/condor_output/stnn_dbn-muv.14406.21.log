@@ -1,0 +1,41 @@
+000 (14406.021.000) 07/28 17:54:54 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14406.021.000) 07/28 18:05:47 Job executing on host: <144.92.142.141:9620?sock=4744_8b2e_3>
+...
+007 (14406.021.000) 07/28 18:05:47 Shadow exception!
+	Error from slot12@mir-exec-01.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-muv.sh': (errno=13: 'Permission denied')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14406.021.000) 07/28 18:05:48 Job was held.
+	Error from slot12@mir-exec-01.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-muv.sh': (errno=13: 'Permission denied')
+	Code 6 Subcode 13
+...
+013 (14406.021.000) 07/28 18:09:42 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14406.021.000) 07/28 18:57:47 Job executing on host: <144.92.142.162:9620?sock=10446_6bfc_3>
+...
+006 (14406.021.000) 07/28 18:57:56 Image size of job updated: 31644
+	31  -  MemoryUsage of job (MB)
+	31644  -  ResidentSetSize of job (KB)
+...
+006 (14406.021.000) 07/28 18:58:06 Image size of job updated: 42540
+	31  -  MemoryUsage of job (MB)
+	31644  -  ResidentSetSize of job (KB)
+...
+005 (14406.021.000) 07/28 18:58:06 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         4
+	   Disk (KB)            :        1        1  34974598
+	   Memory (MB)          :       31     3072     12915
+...

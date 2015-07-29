@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14398
+Process 7
+RunningOn slot8@opt-a018.discovery.wisc.edu
+python sk_logistic_regression.py muv 7
+Running Scikit Learn Logistic Regression Classifier for muv.........
+Building data for target: 712, fold: 0
+Running logistic regression for target: 712
+target:712 fold:0 predicted: 3180 wrong: 191 pct correct: 0.939937106918, auc: 0.873166666667
+Results for 712: accuracy: 0.939937106918, auc: 0.873166666667
+Building data for target: 712, fold: 1
+Running logistic regression for target: 712
+target:712 fold:1 predicted: 3180 wrong: 99 pct correct: 0.968867924528, auc: 0.801138888889
+Results for 712: accuracy: 0.954402515723, auc: 0.837152777778
+Building data for target: 712, fold: 2
+Running logistic regression for target: 712
+target:712 fold:2 predicted: 3180 wrong: 126 pct correct: 0.960377358491, auc: 0.781055555556
+Results for 712: accuracy: 0.956394129979, auc: 0.818453703704
+Building data for target: 712, fold: 3
+Running logistic regression for target: 712
+target:712 fold:3 predicted: 3180 wrong: 156 pct correct: 0.950943396226, auc: 0.894777777778
+Results for 712: accuracy: 0.955031446541, auc: 0.837534722222
+Building data for target: 712, fold: 4
+Running logistic regression for target: 712
+target:712 fold:4 predicted: 3180 wrong: 126 pct correct: 0.960377358491, auc: 0.756916666667
+Results for 712: accuracy: 0.956100628931, auc: 0.821411111111
+####################  Results for MUV ####################
+712 accuracy: 0.956100628931, auc:0.821411111111
+############################################################
+runtime: 138.64 secs.

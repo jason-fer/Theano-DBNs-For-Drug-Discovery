@@ -1,0 +1,5 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14403
+Process 60
+RunningOn slot18@roy-exec-1.discovery.wisc.edu
+python sk_random_forests.py pcba 60

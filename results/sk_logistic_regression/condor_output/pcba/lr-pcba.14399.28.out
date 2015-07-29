@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14399
+Process 28
+RunningOn slot11@wid-002.discovery.wisc.edu
+python sk_logistic_regression.py pcba 28
+Running Scikit Learn Logistic Regression Classifier for pcba.........
+Building data for target: aid2675, fold: 0
+Running logistic regression for target: aid2675
+target:aid2675 fold:0 predicted: 56437 wrong: 790 pct correct: 0.986002090827, auc: 0.83533212809
+Results for aid2675: accuracy: 0.986002090827, auc: 0.83533212809
+Building data for target: aid2675, fold: 1
+Running logistic regression for target: aid2675
+target:aid2675 fold:1 predicted: 56437 wrong: 792 pct correct: 0.985966653082, auc: 0.900498175648
+Results for aid2675: accuracy: 0.985984371955, auc: 0.867915151869
+Building data for target: aid2675, fold: 2
+Running logistic regression for target: aid2675
+target:aid2675 fold:2 predicted: 56437 wrong: 838 pct correct: 0.985151584953, auc: 0.80022242676
+Results for aid2675: accuracy: 0.985706776287, auc: 0.845350910166
+Building data for target: aid2675, fold: 3
+Running logistic regression for target: aid2675
+target:aid2675 fold:3 predicted: 56437 wrong: 752 pct correct: 0.986675407977, auc: 0.664312705081
+Results for aid2675: accuracy: 0.98594893421, auc: 0.800091358895
+Building data for target: aid2675, fold: 4
+Running logistic regression for target: aid2675
+target:aid2675 fold:4 predicted: 56557 wrong: 939 pct correct: 0.98339728062, auc: 0.667597189287
+Results for aid2675: accuracy: 0.985438603492, auc: 0.773592524973
+####################  Results for PCBA ####################
+aid2675 accuracy: 0.985438603492, auc:0.773592524973
+############################################################
+runtime: 1894.78 secs.

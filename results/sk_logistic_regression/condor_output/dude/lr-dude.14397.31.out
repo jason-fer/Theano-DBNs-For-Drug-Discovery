@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 31
+RunningOn slot30@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 31
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: esr2, fold: 0
+Running logistic regression for target: esr2
+target:esr2 fold:0 predicted: 7632 wrong: 61 pct correct: 0.992007337526, auc: 0.999400055443
+Results for esr2: accuracy: 0.992007337526, auc: 0.999400055443
+Building data for target: esr2, fold: 1
+Running logistic regression for target: esr2
+target:esr2 fold:1 predicted: 7632 wrong: 31 pct correct: 0.995938155136, auc: 0.999877942314
+Results for esr2: accuracy: 0.993972746331, auc: 0.999638998879
+Building data for target: esr2, fold: 2
+Running logistic regression for target: esr2
+target:esr2 fold:2 predicted: 7632 wrong: 1 pct correct: 0.999868972746, auc: 0.999995862451
+Results for esr2: accuracy: 0.995938155136, auc: 0.999757953403
+Building data for target: esr2, fold: 3
+Running logistic regression for target: esr2
+target:esr2 fold:3 predicted: 7632 wrong: 121 pct correct: 0.984145702306, auc: 0.999439362155
+Results for esr2: accuracy: 0.992990041929, auc: 0.999678305591
+Building data for target: esr2, fold: 4
+Running logistic regression for target: esr2
+target:esr2 fold:4 predicted: 7635 wrong: 32 pct correct: 0.995808775377, auc: 0.997130660382
+Results for esr2: accuracy: 0.993553788618, auc: 0.999168776549
+####################  Results for DUD-E ####################
+esr2 accuracy: 0.993553788618, auc:0.999168776549
+############################################################
+runtime: 176.25 secs.

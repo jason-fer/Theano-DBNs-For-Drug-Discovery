@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 74
+RunningOn slot17@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 74
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pde5a, fold: 0
+Running logistic regression for target: pde5a
+target:pde5a fold:0 predicted: 9794 wrong: 2 pct correct: 0.999795793343, auc: 0.999994901367
+Results for pde5a: accuracy: 0.999795793343, auc: 0.999994901367
+Building data for target: pde5a, fold: 1
+Running logistic regression for target: pde5a
+target:pde5a fold:1 predicted: 9794 wrong: 154 pct correct: 0.9842760874, auc: 0.999347374969
+Results for pde5a: accuracy: 0.992035940372, auc: 0.999671138168
+Building data for target: pde5a, fold: 2
+Running logistic regression for target: pde5a
+target:pde5a fold:2 predicted: 9794 wrong: 65 pct correct: 0.993363283643, auc: 0.999945189695
+Results for pde5a: accuracy: 0.992478388129, auc: 0.999762488677
+Building data for target: pde5a, fold: 3
+Running logistic regression for target: pde5a
+target:pde5a fold:3 predicted: 9794 wrong: 64 pct correct: 0.993465386972, auc: 0.999895478022
+Results for pde5a: accuracy: 0.992725137839, auc: 0.999795736013
+Building data for target: pde5a, fold: 4
+Running logistic regression for target: pde5a
+target:pde5a fold:4 predicted: 9828 wrong: 62 pct correct: 0.993691493691, auc: 0.997163747572
+Results for pde5a: accuracy: 0.99291840901, auc: 0.999269338325
+####################  Results for DUD-E ####################
+pde5a accuracy: 0.99291840901, auc:0.999269338325
+############################################################
+runtime: 231.30 secs.

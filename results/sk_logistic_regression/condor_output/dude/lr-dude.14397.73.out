@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 73
+RunningOn slot16@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 73
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: parp1, fold: 0
+Running logistic regression for target: parp1
+target:parp1 fold:0 predicted: 10525 wrong: 69 pct correct: 0.993444180523, auc: 0.999954473784
+Results for parp1: accuracy: 0.993444180523, auc: 0.999954473784
+Building data for target: parp1, fold: 1
+Running logistic regression for target: parp1
+target:parp1 fold:1 predicted: 10525 wrong: 63 pct correct: 0.994014251781, auc: 0.999918941127
+Results for parp1: accuracy: 0.993729216152, auc: 0.999936707455
+Building data for target: parp1, fold: 2
+Running logistic regression for target: parp1
+target:parp1 fold:2 predicted: 10525 wrong: 93 pct correct: 0.991163895487, auc: 0.999920051522
+Results for parp1: accuracy: 0.992874109264, auc: 0.999931155478
+Building data for target: parp1, fold: 3
+Running logistic regression for target: parp1
+target:parp1 fold:3 predicted: 10525 wrong: 36 pct correct: 0.996579572447, auc: 0.999963356948
+Results for parp1: accuracy: 0.993800475059, auc: 0.999939205845
+Building data for target: parp1, fold: 4
+Running logistic regression for target: parp1
+target:parp1 fold:4 predicted: 10587 wrong: 3 pct correct: 0.999716633607, auc: 0.99999890477
+Results for parp1: accuracy: 0.994983706769, auc: 0.99995114563
+####################  Results for DUD-E ####################
+parp1 accuracy: 0.994983706769, auc:0.99995114563
+############################################################
+runtime: 258.01 secs.

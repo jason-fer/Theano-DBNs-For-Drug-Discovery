@@ -1,0 +1,5 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14407
+Process 21
+RunningOn slot9@wid-006.discovery.wisc.edu
+python th_deep_belief_net.py pcba 21

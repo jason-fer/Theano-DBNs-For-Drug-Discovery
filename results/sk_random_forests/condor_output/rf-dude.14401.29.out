@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 29
+RunningOn slot12@opt-a002.discovery.wisc.edu
+python sk_random_forests.py dud_e 29
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: egfr, fold: 0
+Running random forests for target: egfr
+target:egfr fold:0 predicted: 12068 wrong: 303 pct correct: 0.974892277096, auc: 0.992842985939
+Results for egfr: accuracy: 0.974892277096, auc: 0.992842985939
+Building data for target: egfr, fold: 1
+Running random forests for target: egfr
+target:egfr fold:1 predicted: 12068 wrong: 186 pct correct: 0.984587338416, auc: 0.999374048111
+Results for egfr: accuracy: 0.979739807756, auc: 0.996108517025
+Building data for target: egfr, fold: 2
+Running random forests for target: egfr
+target:egfr fold:2 predicted: 12068 wrong: 152 pct correct: 0.987404706662, auc: 0.999649415948
+Results for egfr: accuracy: 0.982294774058, auc: 0.997288816666
+Building data for target: egfr, fold: 3
+Running random forests for target: egfr
+target:egfr fold:3 predicted: 12068 wrong: 392 pct correct: 0.967517401392, auc: 0.992506000299
+Results for egfr: accuracy: 0.978600430892, auc: 0.996093112574
+Building data for target: egfr, fold: 4
+Running random forests for target: egfr
+target:egfr fold:4 predicted: 12130 wrong: 181 pct correct: 0.985078318219, auc: 0.993325189737
+Results for egfr: accuracy: 0.979896008357, auc: 0.995539528007
+####################  Results for DUD-E ####################
+egfr accuracy: 0.979896008357, auc:0.995539528007
+############################################################
+runtime: 5580.65 secs.

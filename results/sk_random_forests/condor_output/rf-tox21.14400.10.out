@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 10
+RunningOn slot5@galaxy-01.discovery.wisc.edu
+python sk_random_forests.py tox21 10
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: sr-mmp, fold: 0
+Running random forests for target: sr-mmp
+target:sr-mmp fold:0 predicted: 2367 wrong: 421 pct correct: 0.822137727081, auc: 0.915752474398
+Results for sr-mmp: accuracy: 0.822137727081, auc: 0.915752474398
+Building data for target: sr-mmp, fold: 1
+Running random forests for target: sr-mmp
+target:sr-mmp fold:1 predicted: 2367 wrong: 483 pct correct: 0.795944233207, auc: 0.90523628354
+Results for sr-mmp: accuracy: 0.809040980144, auc: 0.910494378969
+Building data for target: sr-mmp, fold: 2
+Running random forests for target: sr-mmp
+target:sr-mmp fold:2 predicted: 2367 wrong: 489 pct correct: 0.793409378961, auc: 0.90239358659
+Results for sr-mmp: accuracy: 0.803830446416, auc: 0.907794114843
+Building data for target: sr-mmp, fold: 3
+Running random forests for target: sr-mmp
+target:sr-mmp fold:3 predicted: 2367 wrong: 494 pct correct: 0.791297000422, auc: 0.895365510041
+Results for sr-mmp: accuracy: 0.800697084918, auc: 0.904686963642
+Building data for target: sr-mmp, fold: 4
+Running random forests for target: sr-mmp
+target:sr-mmp fold:4 predicted: 2379 wrong: 434 pct correct: 0.817570407734, auc: 0.921503542284
+Results for sr-mmp: accuracy: 0.804071749481, auc: 0.908050279371
+####################  Results for Tox21 ####################
+sr-mmp accuracy: 0.804071749481, auc:0.908050279371
+############################################################
+runtime: 1064.93 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 62
+RunningOn slot7@opt-a015.discovery.wisc.edu
+python sk_random_forests.py dud_e 62
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: mapk2, fold: 0
+Running random forests for target: mapk2
+target:mapk2 fold:0 predicted: 2478 wrong: 90 pct correct: 0.963680387409, auc: 0.99983388055
+Results for mapk2: accuracy: 0.963680387409, auc: 0.99983388055
+Building data for target: mapk2, fold: 1
+Running random forests for target: mapk2
+target:mapk2 fold:1 predicted: 2478 wrong: 30 pct correct: 0.98789346247, auc: 0.999081457161
+Results for mapk2: accuracy: 0.975786924939, auc: 0.999457668856
+Building data for target: mapk2, fold: 2
+Running random forests for target: mapk2
+target:mapk2 fold:2 predicted: 2478 wrong: 90 pct correct: 0.963680387409, auc: 0.999853424015
+Results for mapk2: accuracy: 0.971751412429, auc: 0.999589587242
+Building data for target: mapk2, fold: 3
+Running random forests for target: mapk2
+target:mapk2 fold:3 predicted: 2478 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for mapk2: accuracy: 0.978813559322, auc: 0.999692190432
+Building data for target: mapk2, fold: 4
+Running random forests for target: mapk2
+target:mapk2 fold:4 predicted: 2470 wrong: 30 pct correct: 0.987854251012, auc: 0.99981933668
+Results for mapk2: accuracy: 0.98062169766, auc: 0.999717619681
+####################  Results for DUD-E ####################
+mapk2 accuracy: 0.98062169766, auc:0.999717619681
+############################################################
+runtime: 219.61 secs.

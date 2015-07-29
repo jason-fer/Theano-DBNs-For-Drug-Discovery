@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14374
+Process 10
+RunningOn slot28@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py tox21 10
+Running Scikit Learn Logistic Regression Classifier for tox21.........
+Building data for target: sr-mmp, fold: 0
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:0 predicted: 2367 wrong: 445 pct correct: 0.811998310097, auc: 0.872212726701
+Results for sr-mmp: accuracy: 0.811998310097, auc: 0.872212726701
+Building data for target: sr-mmp, fold: 1
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:1 predicted: 2367 wrong: 500 pct correct: 0.788762146177, auc: 0.856484924767
+Results for sr-mmp: accuracy: 0.800380228137, auc: 0.864348825734
+Building data for target: sr-mmp, fold: 2
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:2 predicted: 2367 wrong: 501 pct correct: 0.788339670469, auc: 0.850016448309
+Results for sr-mmp: accuracy: 0.796366708914, auc: 0.859571366592
+Building data for target: sr-mmp, fold: 3
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:3 predicted: 2367 wrong: 454 pct correct: 0.808196028728, auc: 0.861689384404
+Results for sr-mmp: accuracy: 0.799324038868, auc: 0.860100871045
+Building data for target: sr-mmp, fold: 4
+Running logistic regression for target: sr-mmp
+target:sr-mmp fold:4 predicted: 2379 wrong: 428 pct correct: 0.82009247583, auc: 0.875574161494
+Results for sr-mmp: accuracy: 0.80347772626, auc: 0.863195529135
+####################  Results for Tox21 ####################
+sr-mmp accuracy: 0.80347772626, auc:0.863195529135
+############################################################
+runtime: 73.03 secs.

@@ -1,0 +1,45 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14405
+Process 97
+RunningOn slot4@opt-a008.discovery.wisc.edu
+python th_deep_belief_net.py dud_e 97
+Running Theano Learn Deep Belief Net for dud_e, target: tysy.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -108.526802529
+Pre-training layer 0, epoch 1, cost  -72.4263942465
+Pre-training layer 1, epoch 0, cost  -1384.69981955
+Pre-training layer 1, epoch 1, cost  -1364.99518434
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 82/82, best error 9.777778 %, best_auc: 0.953477
+     new best AUC!: 0.989227775694
+     epoch 2, minibatch 82/82, best error 5.740741 %, best_auc: 0.989228
+     new best AUC!: 0.996225618905
+     epoch 3, minibatch 82/82, best error 4.148148 %, best_auc: 0.996226
+     new best AUC!: 0.998851275319
+     epoch 4, minibatch 82/82, best error 3.333333 %, best_auc: 0.998851
+     new best AUC!: 0.99943735934
+     epoch 5, minibatch 82/82, best error 2.481481 %, best_auc: 0.999437
+     new best AUC!: 0.999601462866
+     new best AUC!: 0.999683514629
+     epoch 7, minibatch 82/82, best error 2.481481 %, best_auc: 0.999684
+     new best AUC!: 0.99973040135
+     new best AUC!: 0.999777288072
+     new best AUC!: 0.999800731433
+     epoch 10, minibatch 82/82, best error 1.592593 %, best_auc: 0.999801
+     new best AUC!: 0.999824174794
+     new best AUC!: 0.999835896474
+     new best AUC!: 0.999835896474
+     new best AUC!: 0.999871061515
+     new best AUC!: 0.999894504876
+     new best AUC!: 0.999906226557
+     new best AUC!: 0.999917948237
+     new best AUC!: 0.999941391598
+     new best AUC!: 0.999953113278
+     new best AUC!: 0.999953113278
+     new best AUC!: 0.999964834959
+     new best AUC!: 0.999976556639
+Optimization complete with best validation score of 0.925926 %, obtained at iteration 820, with test performance 1.592593 %, and best_auc: 0.999977
+runtime: 8503.24 secs.

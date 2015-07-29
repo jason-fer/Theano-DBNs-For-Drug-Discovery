@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 25
+RunningOn slot10@opt-a001.discovery.wisc.edu
+python sk_random_forests.py dud_e 25
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: dhi1, fold: 0
+Running random forests for target: dhi1
+target:dhi1 fold:0 predicted: 7014 wrong: 211 pct correct: 0.969917308241, auc: 0.999748869293
+Results for dhi1: accuracy: 0.969917308241, auc: 0.999748869293
+Building data for target: dhi1, fold: 1
+Running random forests for target: dhi1
+target:dhi1 fold:1 predicted: 7014 wrong: 270 pct correct: 0.961505560308, auc: 0.998808675514
+Results for dhi1: accuracy: 0.965711434274, auc: 0.999278772404
+Building data for target: dhi1, fold: 2
+Running random forests for target: dhi1
+target:dhi1 fold:2 predicted: 7014 wrong: 182 pct correct: 0.974051896208, auc: 0.999486604713
+Results for dhi1: accuracy: 0.968491588252, auc: 0.99934804984
+Building data for target: dhi1, fold: 3
+Running random forests for target: dhi1
+target:dhi1 fold:3 predicted: 7014 wrong: 272 pct correct: 0.96122041631, auc: 0.993327098364
+Results for dhi1: accuracy: 0.966673795267, auc: 0.997842811971
+Building data for target: dhi1, fold: 4
+Running random forests for target: dhi1
+target:dhi1 fold:4 predicted: 7136 wrong: 273 pct correct: 0.961743273543, auc: 0.998868078137
+Results for dhi1: accuracy: 0.965687690922, auc: 0.998047865204
+####################  Results for DUD-E ####################
+dhi1 accuracy: 0.965687690922, auc:0.998047865204
+############################################################
+runtime: 2659.59 secs.

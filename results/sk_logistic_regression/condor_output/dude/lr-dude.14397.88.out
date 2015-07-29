@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 88
+RunningOn slot8@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 88
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: rock1, fold: 0
+Running logistic regression for target: rock1
+target:rock1 fold:0 predicted: 2475 wrong: 1 pct correct: 0.999595959596, auc: 1.0
+Results for rock1: accuracy: 0.999595959596, auc: 1.0
+Building data for target: rock1, fold: 1
+Running logistic regression for target: rock1
+target:rock1 fold:1 predicted: 2475 wrong: 90 pct correct: 0.963636363636, auc: 0.993960784314
+Results for rock1: accuracy: 0.981616161616, auc: 0.996980392157
+Building data for target: rock1, fold: 2
+Running logistic regression for target: rock1
+target:rock1 fold:2 predicted: 2475 wrong: 30 pct correct: 0.987878787879, auc: 0.999843137255
+Results for rock1: accuracy: 0.983703703704, auc: 0.997934640523
+Building data for target: rock1, fold: 3
+Running logistic regression for target: rock1
+target:rock1 fold:3 predicted: 2475 wrong: 3 pct correct: 0.998787878788, auc: 1.0
+Results for rock1: accuracy: 0.987474747475, auc: 0.998450980392
+Building data for target: rock1, fold: 4
+Running logistic regression for target: rock1
+target:rock1 fold:4 predicted: 2524 wrong: 2 pct correct: 0.999207606973, auc: 0.999945366138
+Results for rock1: accuracy: 0.989821319374, auc: 0.998749857541
+####################  Results for DUD-E ####################
+rock1 accuracy: 0.989821319374, auc:0.998749857541
+############################################################
+runtime: 70.81 secs.

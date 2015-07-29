@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14374
+Process 6
+RunningOn slot23@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py tox21 6
+Running Scikit Learn Logistic Regression Classifier for tox21.........
+Building data for target: nr-ppar-gamma, fold: 0
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:0 predicted: 2907 wrong: 813 pct correct: 0.720330237358, auc: 0.757840694277
+Results for nr-ppar-gamma: accuracy: 0.720330237358, auc: 0.757840694277
+Building data for target: nr-ppar-gamma, fold: 1
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:1 predicted: 2907 wrong: 888 pct correct: 0.694530443756, auc: 0.717856733688
+Results for nr-ppar-gamma: accuracy: 0.707430340557, auc: 0.737848713983
+Building data for target: nr-ppar-gamma, fold: 2
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:2 predicted: 2907 wrong: 904 pct correct: 0.689026487788, auc: 0.754725897921
+Results for nr-ppar-gamma: accuracy: 0.701295722968, auc: 0.743474441962
+Building data for target: nr-ppar-gamma, fold: 3
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:3 predicted: 2907 wrong: 902 pct correct: 0.689714482284, auc: 0.741794122701
+Results for nr-ppar-gamma: accuracy: 0.698400412797, auc: 0.743054362147
+Building data for target: nr-ppar-gamma, fold: 4
+Running logistic regression for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:4 predicted: 2970 wrong: 660 pct correct: 0.777777777778, auc: 0.841899097621
+Results for nr-ppar-gamma: accuracy: 0.714275885793, auc: 0.762823309242
+####################  Results for Tox21 ####################
+nr-ppar-gamma accuracy: 0.714275885793, auc:0.762823309242
+############################################################
+runtime: 77.88 secs.

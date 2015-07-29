@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14398
+Process 14
+RunningOn slot13@opt-a003.discovery.wisc.edu
+python sk_logistic_regression.py muv 14
+Running Scikit Learn Logistic Regression Classifier for muv.........
+Building data for target: 852, fold: 0
+Running logistic regression for target: 852
+target:852 fold:0 predicted: 3180 wrong: 127 pct correct: 0.960062893082, auc: 0.796111111111
+Results for 852: accuracy: 0.960062893082, auc: 0.796111111111
+Building data for target: 852, fold: 1
+Running logistic regression for target: 852
+target:852 fold:1 predicted: 3180 wrong: 132 pct correct: 0.958490566038, auc: 0.759722222222
+Results for 852: accuracy: 0.95927672956, auc: 0.777916666667
+Building data for target: 852, fold: 2
+Running logistic regression for target: 852
+target:852 fold:2 predicted: 3180 wrong: 10 pct correct: 0.996855345912, auc: 0.999444444444
+Results for 852: accuracy: 0.97180293501, auc: 0.851759259259
+Building data for target: 852, fold: 3
+Running logistic regression for target: 852
+target:852 fold:3 predicted: 3180 wrong: 101 pct correct: 0.968238993711, auc: 0.959611111111
+Results for 852: accuracy: 0.970911949686, auc: 0.878722222222
+Building data for target: 852, fold: 4
+Running logistic regression for target: 852
+target:852 fold:4 predicted: 3180 wrong: 159 pct correct: 0.95, auc: 0.839555555556
+Results for 852: accuracy: 0.966729559748, auc: 0.870888888889
+####################  Results for MUV ####################
+852 accuracy: 0.966729559748, auc:0.870888888889
+############################################################
+runtime: 147.31 secs.

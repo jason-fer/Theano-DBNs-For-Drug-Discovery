@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 6
+RunningOn slot6@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 6
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: adrb1, fold: 0
+Running logistic regression for target: adrb1
+target:adrb1 fold:0 predicted: 5921 wrong: 30 pct correct: 0.994933288296, auc: 0.999845031183
+Results for adrb1: accuracy: 0.994933288296, auc: 0.999845031183
+Building data for target: adrb1, fold: 1
+Running logistic regression for target: adrb1
+target:adrb1 fold:1 predicted: 5921 wrong: 33 pct correct: 0.994426617125, auc: 0.999989668746
+Results for adrb1: accuracy: 0.994679952711, auc: 0.999917349964
+Building data for target: adrb1, fold: 2
+Running logistic regression for target: adrb1
+target:adrb1 fold:2 predicted: 5921 wrong: 121 pct correct: 0.979564262793, auc: 0.999108068365
+Results for adrb1: accuracy: 0.989641389405, auc: 0.999647589431
+Building data for target: adrb1, fold: 3
+Running logistic regression for target: adrb1
+target:adrb1 fold:3 predicted: 5921 wrong: 34 pct correct: 0.994257726735, auc: 0.999934568722
+Results for adrb1: accuracy: 0.990795473738, auc: 0.999719334254
+Building data for target: adrb1, fold: 4
+Running logistic regression for target: adrb1
+target:adrb1 fold:4 predicted: 6014 wrong: 60 pct correct: 0.990023279016, auc: 0.999806818636
+Results for adrb1: accuracy: 0.990641034793, auc: 0.99973683113
+####################  Results for DUD-E ####################
+adrb1 accuracy: 0.990641034793, auc:0.99973683113
+############################################################
+runtime: 116.28 secs.

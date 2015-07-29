@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 52
+RunningOn slot7@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 52
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: igf1r, fold: 0
+Running random forests for target: igf1r
+target:igf1r fold:0 predicted: 3230 wrong: 31 pct correct: 0.99040247678, auc: 0.986643026005
+Results for igf1r: accuracy: 0.99040247678, auc: 0.986643026005
+Building data for target: igf1r, fold: 1
+Running random forests for target: igf1r
+target:igf1r fold:1 predicted: 3230 wrong: 60 pct correct: 0.981424148607, auc: 0.999438534279
+Results for igf1r: accuracy: 0.985913312693, auc: 0.993040780142
+Building data for target: igf1r, fold: 2
+Running random forests for target: igf1r
+target:igf1r fold:2 predicted: 3230 wrong: 150 pct correct: 0.953560371517, auc: 0.998634751773
+Results for igf1r: accuracy: 0.975128998968, auc: 0.994905437352
+Building data for target: igf1r, fold: 3
+Running random forests for target: igf1r
+target:igf1r fold:3 predicted: 3230 wrong: 153 pct correct: 0.952631578947, auc: 0.995786052009
+Results for igf1r: accuracy: 0.969504643963, auc: 0.995125591017
+Building data for target: igf1r, fold: 4
+Running random forests for target: igf1r
+target:igf1r fold:4 predicted: 3264 wrong: 60 pct correct: 0.981617647059, auc: 0.998811501892
+Results for igf1r: accuracy: 0.971927244582, auc: 0.995862773192
+####################  Results for DUD-E ####################
+igf1r accuracy: 0.971927244582, auc:0.995862773192
+############################################################
+runtime: 759.45 secs.

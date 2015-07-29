@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 22
+RunningOn slot5@opt-a008.discovery.wisc.edu
+python sk_random_forests.py dud_e 22
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: csf1r, fold: 0
+Running random forests for target: csf1r
+target:csf1r fold:0 predicted: 4196 wrong: 210 pct correct: 0.949952335558, auc: 0.999629504171
+Results for csf1r: accuracy: 0.949952335558, auc: 0.999629504171
+Building data for target: csf1r, fold: 1
+Running random forests for target: csf1r
+target:csf1r fold:1 predicted: 4196 wrong: 90 pct correct: 0.978551000953, auc: 0.99987650139
+Results for csf1r: accuracy: 0.964251668255, auc: 0.99975300278
+Building data for target: csf1r, fold: 2
+Running random forests for target: csf1r
+target:csf1r fold:2 predicted: 4196 wrong: 92 pct correct: 0.97807435653, auc: 0.999908258176
+Results for csf1r: accuracy: 0.968859231014, auc: 0.999804754579
+Building data for target: csf1r, fold: 3
+Running random forests for target: csf1r
+target:csf1r fold:3 predicted: 4196 wrong: 120 pct correct: 0.971401334604, auc: 0.99952364822
+Results for csf1r: accuracy: 0.969494756911, auc: 0.999734477989
+Building data for target: csf1r, fold: 4
+Running random forests for target: csf1r
+target:csf1r fold:4 predicted: 4230 wrong: 211 pct correct: 0.95011820331, auc: 0.99799889212
+Results for csf1r: accuracy: 0.965619446191, auc: 0.999387360815
+####################  Results for DUD-E ####################
+csf1r accuracy: 0.965619446191, auc:0.999387360815
+############################################################
+runtime: 1692.45 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14374
+Process 11
+RunningOn slot29@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py tox21 11
+Running Scikit Learn Logistic Regression Classifier for tox21.........
+Building data for target: sr-p53, fold: 0
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:0 predicted: 3220 wrong: 809 pct correct: 0.748757763975, auc: 0.818023205347
+Results for sr-p53: accuracy: 0.748757763975, auc: 0.818023205347
+Building data for target: sr-p53, fold: 1
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:1 predicted: 3220 wrong: 730 pct correct: 0.773291925466, auc: 0.814698648766
+Results for sr-p53: accuracy: 0.76102484472, auc: 0.816360927057
+Building data for target: sr-p53, fold: 2
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:2 predicted: 3220 wrong: 800 pct correct: 0.751552795031, auc: 0.827128844651
+Results for sr-p53: accuracy: 0.757867494824, auc: 0.819950232922
+Building data for target: sr-p53, fold: 3
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:3 predicted: 3220 wrong: 733 pct correct: 0.772360248447, auc: 0.825902028298
+Results for sr-p53: accuracy: 0.76149068323, auc: 0.821438181766
+Building data for target: sr-p53, fold: 4
+Running logistic regression for target: sr-p53
+target:sr-p53 fold:4 predicted: 3141 wrong: 751 pct correct: 0.760904170646, auc: 0.832598630954
+Results for sr-p53: accuracy: 0.761373380713, auc: 0.823670271603
+####################  Results for Tox21 ####################
+sr-p53 accuracy: 0.761373380713, auc:0.823670271603
+############################################################
+runtime: 92.67 secs.

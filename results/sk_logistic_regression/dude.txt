@@ -1,0 +1,3061 @@
+
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 0
+RunningOn slot20@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 0
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: aa2ar, fold: 0
+Running logistic regression for target: aa2ar
+target:aa2ar fold:0 predicted: 11452 wrong: 39 pct correct: 0.996594481313, auc: 0.999955440692
+Results for aa2ar: accuracy: 0.996594481313, auc: 0.999955440692
+Building data for target: aa2ar, fold: 1
+Running logistic regression for target: aa2ar
+target:aa2ar fold:1 predicted: 11452 wrong: 7 pct correct: 0.999388753056, auc: 0.999993501768
+Results for aa2ar: accuracy: 0.997991617185, auc: 0.99997447123
+Building data for target: aa2ar, fold: 2
+Running logistic regression for target: aa2ar
+target:aa2ar fold:2 predicted: 11452 wrong: 127 pct correct: 0.98891023402, auc: 0.999347391795
+Results for aa2ar: accuracy: 0.994964489463, auc: 0.999765444751
+Building data for target: aa2ar, fold: 3
+Running logistic regression for target: aa2ar
+target:aa2ar fold:3 predicted: 11452 wrong: 9 pct correct: 0.999214111072, auc: 0.999974935389
+Results for aa2ar: accuracy: 0.996026894866, auc: 0.999817817411
+Building data for target: aa2ar, fold: 4
+Running logistic regression for target: aa2ar
+target:aa2ar fold:4 predicted: 11576 wrong: 96 pct correct: 0.991706979959, auc: 0.998595444528
+Results for aa2ar: accuracy: 0.995162911884, auc: 0.999573342834
+####################  Results for DUD-E ####################
+aa2ar accuracy: 0.995162911884, auc:0.999573342834
+############################################################
+runtime: 260.87 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 1
+RunningOn slot1@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 1
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: abl1, fold: 0
+Running logistic regression for target: abl1
+target:abl1 fold:0 predicted: 3947 wrong: 3 pct correct: 0.99923992906, auc: 1.0
+Results for abl1: accuracy: 0.99923992906, auc: 1.0
+Building data for target: abl1, fold: 1
+Running logistic regression for target: abl1
+target:abl1 fold:1 predicted: 3947 wrong: 33 pct correct: 0.991639219661, auc: 0.997181629205
+Results for abl1: accuracy: 0.99543957436, auc: 0.998590814603
+Building data for target: abl1, fold: 2
+Running logistic regression for target: abl1
+target:abl1 fold:2 predicted: 3947 wrong: 2 pct correct: 0.99949328604, auc: 0.999976643336
+Results for abl1: accuracy: 0.996790811587, auc: 0.999052757514
+Building data for target: abl1, fold: 3
+Running logistic regression for target: abl1
+target:abl1 fold:3 predicted: 3947 wrong: 121 pct correct: 0.969343805422, auc: 0.989785352257
+Results for abl1: accuracy: 0.989929060046, auc: 0.9967359062
+Building data for target: abl1, fold: 4
+Running logistic regression for target: abl1
+target:abl1 fold:4 predicted: 3947 wrong: 93 pct correct: 0.976437800861, auc: 0.998723169032
+Results for abl1: accuracy: 0.987230808209, auc: 0.997133358766
+####################  Results for DUD-E ####################
+abl1 accuracy: 0.987230808209, auc:0.997133358766
+############################################################
+runtime: 78.10 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 10
+RunningOn slot10@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 10
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: aldr, fold: 0
+Running logistic regression for target: aldr
+target:aldr fold:0 predicted: 3147 wrong: 63 pct correct: 0.979980934223, auc: 0.999577051301
+Results for aldr: accuracy: 0.979980934223, auc: 0.999577051301
+Building data for target: aldr, fold: 1
+Running logistic regression for target: aldr
+target:aldr fold:1 predicted: 3147 wrong: 121 pct correct: 0.96155068319, auc: 0.9991167836
+Results for aldr: accuracy: 0.970765808707, auc: 0.99934691745
+Building data for target: aldr, fold: 2
+Running logistic regression for target: aldr
+target:aldr fold:2 predicted: 3147 wrong: 2 pct correct: 0.999364474102, auc: 1.0
+Results for aldr: accuracy: 0.980298697172, auc: 0.999564611634
+Building data for target: aldr, fold: 3
+Running logistic regression for target: aldr
+target:aldr fold:3 predicted: 3147 wrong: 92 pct correct: 0.970765808707, auc: 0.998544558889
+Results for aldr: accuracy: 0.977915475056, auc: 0.999309598448
+Building data for target: aldr, fold: 4
+Running logistic regression for target: aldr
+target:aldr fold:4 predicted: 3148 wrong: 93 pct correct: 0.970457433291, auc: 0.998184802069
+Results for aldr: accuracy: 0.976423866703, auc: 0.999084639172
+####################  Results for DUD-E ####################
+aldr accuracy: 0.976423866703, auc:0.999084639172
+############################################################
+runtime: 98.76 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 100
+RunningOn slot3@wid-007.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 100
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: wee1, fold: 0
+Running logistic regression for target: wee1
+target:wee1 fold:0 predicted: 2056 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for wee1: accuracy: 1.0, auc: 1.0
+Building data for target: wee1, fold: 1
+Running logistic regression for target: wee1
+target:wee1 fold:1 predicted: 2056 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for wee1: accuracy: 1.0, auc: 1.0
+Building data for target: wee1, fold: 2
+Running logistic regression for target: wee1
+target:wee1 fold:2 predicted: 2056 wrong: 60 pct correct: 0.970817120623, auc: 0.994917067951
+Results for wee1: accuracy: 0.990272373541, auc: 0.998305689317
+Building data for target: wee1, fold: 3
+Running logistic regression for target: wee1
+target:wee1 fold:3 predicted: 2056 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for wee1: accuracy: 0.992704280156, auc: 0.998729266988
+Building data for target: wee1, fold: 4
+Running logistic regression for target: wee1
+target:wee1 fold:4 predicted: 2120 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for wee1: accuracy: 0.994163424125, auc: 0.99898341359
+####################  Results for DUD-E ####################
+wee1 accuracy: 0.994163424125, auc:0.99898341359
+############################################################
+runtime: 48.95 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 101
+RunningOn slot4@wid-007.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 101
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: xiap, fold: 0
+Running logistic regression for target: xiap
+target:xiap fold:0 predicted: 1792 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for xiap: accuracy: 1.0, auc: 1.0
+Building data for target: xiap, fold: 1
+Running logistic regression for target: xiap
+target:xiap fold:1 predicted: 1792 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for xiap: accuracy: 1.0, auc: 1.0
+Building data for target: xiap, fold: 2
+Running logistic regression for target: xiap
+target:xiap fold:2 predicted: 1792 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for xiap: accuracy: 1.0, auc: 1.0
+Building data for target: xiap, fold: 3
+Running logistic regression for target: xiap
+target:xiap fold:3 predicted: 1792 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for xiap: accuracy: 1.0, auc: 1.0
+Building data for target: xiap, fold: 4
+Running logistic regression for target: xiap
+target:xiap fold:4 predicted: 1915 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for xiap: accuracy: 1.0, auc: 1.0
+####################  Results for DUD-E ####################
+xiap accuracy: 1.0, auc:1.0
+############################################################
+runtime: 46.61 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 11
+RunningOn slot10@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 11
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ampc, fold: 0
+Running logistic regression for target: ampc
+target:ampc fold:0 predicted: 940 wrong: 32 pct correct: 0.965957446809, auc: 0.999425287356
+Results for ampc: accuracy: 0.965957446809, auc: 0.999425287356
+Building data for target: ampc, fold: 1
+Running logistic regression for target: ampc
+target:ampc fold:1 predicted: 940 wrong: 91 pct correct: 0.903191489362, auc: 0.98433908046
+Results for ampc: accuracy: 0.934574468085, auc: 0.991882183908
+Building data for target: ampc, fold: 2
+Running logistic regression for target: ampc
+target:ampc fold:2 predicted: 940 wrong: 210 pct correct: 0.776595744681, auc: 0.902586206897
+Results for ampc: accuracy: 0.881914893617, auc: 0.962116858238
+Building data for target: ampc, fold: 3
+Running logistic regression for target: ampc
+target:ampc fold:3 predicted: 940 wrong: 93 pct correct: 0.901063829787, auc: 0.997270114943
+Results for ampc: accuracy: 0.88670212766, auc: 0.970905172414
+Building data for target: ampc, fold: 4
+Running logistic regression for target: ampc
+target:ampc fold:4 predicted: 1001 wrong: 32 pct correct: 0.968031968032, auc: 0.999754118515
+Results for ampc: accuracy: 0.902968095734, auc: 0.976674961634
+####################  Results for DUD-E ####################
+ampc accuracy: 0.902968095734, auc:0.976674961634
+############################################################
+runtime: 33.29 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 12
+RunningOn slot11@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 12
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: andr, fold: 0
+Running logistic regression for target: andr
+target:andr fold:0 predicted: 5708 wrong: 112 pct correct: 0.980378416258, auc: 0.99824933687
+Results for andr: accuracy: 0.980378416258, auc: 0.99824933687
+Building data for target: andr, fold: 1
+Running logistic regression for target: andr
+target:andr fold:1 predicted: 5708 wrong: 87 pct correct: 0.984758234057, auc: 0.999698275862
+Results for andr: accuracy: 0.982568325158, auc: 0.998973806366
+Building data for target: andr, fold: 2
+Running logistic regression for target: andr
+target:andr fold:2 predicted: 5708 wrong: 141 pct correct: 0.97529782761, auc: 0.998590848806
+Results for andr: accuracy: 0.980144825975, auc: 0.998846153846
+Building data for target: andr, fold: 3
+Running logistic regression for target: andr
+target:andr fold:3 predicted: 5708 wrong: 87 pct correct: 0.984758234057, auc: 0.999791114058
+Results for andr: accuracy: 0.981298177996, auc: 0.999082393899
+Building data for target: andr, fold: 4
+Running logistic regression for target: andr
+target:andr fold:4 predicted: 5792 wrong: 140 pct correct: 0.975828729282, auc: 0.99461401515
+Results for andr: accuracy: 0.980204288253, auc: 0.998188718149
+####################  Results for DUD-E ####################
+andr accuracy: 0.980204288253, auc:0.998188718149
+############################################################
+runtime: 116.25 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 13
+RunningOn slot12@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 13
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: aofb, fold: 0
+Running logistic regression for target: aofb
+target:aofb fold:0 predicted: 2376 wrong: 185 pct correct: 0.922138047138, auc: 0.99210721938
+Results for aofb: accuracy: 0.922138047138, auc: 0.99210721938
+Building data for target: aofb, fold: 1
+Running logistic regression for target: aofb
+target:aofb fold:1 predicted: 2376 wrong: 11 pct correct: 0.99537037037, auc: 0.999584590494
+Results for aofb: accuracy: 0.958754208754, auc: 0.995845904937
+Building data for target: aofb, fold: 2
+Running logistic regression for target: aofb
+target:aofb fold:2 predicted: 2376 wrong: 155 pct correct: 0.934764309764, auc: 0.975490839127
+Results for aofb: accuracy: 0.950757575758, auc: 0.989060883
+Building data for target: aofb, fold: 3
+Running logistic regression for target: aofb
+target:aofb fold:3 predicted: 2376 wrong: 95 pct correct: 0.960016835017, auc: 0.994818313
+Results for aofb: accuracy: 0.953072390572, auc: 0.9905002405
+Building data for target: aofb, fold: 4
+Running logistic regression for target: aofb
+target:aofb fold:4 predicted: 2467 wrong: 32 pct correct: 0.987028779895, auc: 0.999819754867
+Results for aofb: accuracy: 0.959863668437, auc: 0.992364143374
+####################  Results for DUD-E ####################
+aofb accuracy: 0.959863668437, auc:0.992364143374
+############################################################
+runtime: 55.85 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 14
+RunningOn slot13@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 14
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: bace1, fold: 0
+Running logistic regression for target: bace1
+target:bace1 fold:0 predicted: 6554 wrong: 92 pct correct: 0.985962770827, auc: 0.99938325393
+Results for bace1: accuracy: 0.985962770827, auc: 0.99938325393
+Building data for target: bace1, fold: 1
+Running logistic regression for target: bace1
+target:bace1 fold:1 predicted: 6554 wrong: 60 pct correct: 0.990845285322, auc: 0.998964545588
+Results for bace1: accuracy: 0.988404028074, auc: 0.999173899759
+Building data for target: bace1, fold: 2
+Running logistic regression for target: bace1
+target:bace1 fold:2 predicted: 6554 wrong: 33 pct correct: 0.994964906927, auc: 0.999340817273
+Results for bace1: accuracy: 0.990590987692, auc: 0.99922953893
+Building data for target: bace1, fold: 3
+Running logistic regression for target: bace1
+target:bace1 fold:3 predicted: 6554 wrong: 3 pct correct: 0.999542264266, auc: 1.0
+Results for bace1: accuracy: 0.992828806836, auc: 0.999422154198
+Building data for target: bace1, fold: 4
+Running logistic regression for target: bace1
+target:bace1 fold:4 predicted: 6555 wrong: 62 pct correct: 0.99054157132, auc: 0.99977373326
+Results for bace1: accuracy: 0.992371359732, auc: 0.99949247001
+####################  Results for DUD-E ####################
+bace1 accuracy: 0.992371359732, auc:0.99949247001
+############################################################
+runtime: 131.08 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 15
+RunningOn slot14@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 15
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: braf, fold: 0
+Running logistic regression for target: braf
+target:braf fold:0 predicted: 3519 wrong: 61 pct correct: 0.98266552998, auc: 0.977345220406
+Results for braf: accuracy: 0.98266552998, auc: 0.977345220406
+Building data for target: braf, fold: 1
+Running logistic regression for target: braf
+target:braf fold:1 predicted: 3519 wrong: 91 pct correct: 0.97414038079, auc: 0.9995047053
+Results for braf: accuracy: 0.978402955385, auc: 0.988424962853
+Building data for target: braf, fold: 2
+Running logistic regression for target: braf
+target:braf fold:2 predicted: 3519 wrong: 31 pct correct: 0.99119067917, auc: 0.999940564636
+Results for braf: accuracy: 0.98266552998, auc: 0.992263496781
+Building data for target: braf, fold: 3
+Running logistic regression for target: braf
+target:braf fold:3 predicted: 3519 wrong: 31 pct correct: 0.99119067917, auc: 0.999990094106
+Results for braf: accuracy: 0.984796817278, auc: 0.994195146112
+Building data for target: braf, fold: 4
+Running logistic regression for target: braf
+target:braf fold:4 predicted: 3552 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for braf: accuracy: 0.987837453822, auc: 0.99535611689
+####################  Results for DUD-E ####################
+braf accuracy: 0.987837453822, auc:0.99535611689
+############################################################
+runtime: 77.01 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 16
+RunningOn slot15@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 16
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: cah2, fold: 0
+Running logistic regression for target: cah2
+target:cah2 fold:0 predicted: 11351 wrong: 31 pct correct: 0.997268963087, auc: 0.999996222663
+Results for cah2: accuracy: 0.997268963087, auc: 0.999996222663
+Building data for target: cah2, fold: 1
+Running logistic regression for target: cah2
+target:cah2 fold:1 predicted: 11351 wrong: 4 pct correct: 0.99964760814, auc: 0.999978280311
+Results for cah2: accuracy: 0.998458285614, auc: 0.999987251487
+Building data for target: cah2, fold: 2
+Running logistic regression for target: cah2
+target:cah2 fold:2 predicted: 11351 wrong: 1 pct correct: 0.999911902035, auc: 1.0
+Results for cah2: accuracy: 0.998942824421, auc: 0.999991500991
+Building data for target: cah2, fold: 3
+Running logistic regression for target: cah2
+target:cah2 fold:3 predicted: 11351 wrong: 62 pct correct: 0.994537926174, auc: 0.999522166832
+Results for cah2: accuracy: 0.997841599859, auc: 0.999874167451
+Building data for target: cah2, fold: 4
+Running logistic regression for target: cah2
+target:cah2 fold:4 predicted: 11353 wrong: 1 pct correct: 0.999911917555, auc: 1.0
+Results for cah2: accuracy: 0.998255663398, auc: 0.999899333961
+####################  Results for DUD-E ####################
+cah2 accuracy: 0.998255663398, auc:0.999899333961
+############################################################
+runtime: 241.67 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 17
+RunningOn slot16@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 17
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: casp3, fold: 0
+Running logistic regression for target: casp3
+target:casp3 fold:0 predicted: 4264 wrong: 30 pct correct: 0.99296435272, auc: 1.0
+Results for casp3: accuracy: 0.99296435272, auc: 1.0
+Building data for target: casp3, fold: 1
+Running logistic regression for target: casp3
+target:casp3 fold:1 predicted: 4264 wrong: 30 pct correct: 0.99296435272, auc: 0.998646686031
+Results for casp3: accuracy: 0.99296435272, auc: 0.999323343016
+Building data for target: casp3, fold: 2
+Running logistic regression for target: casp3
+target:casp3 fold:2 predicted: 4264 wrong: 30 pct correct: 0.99296435272, auc: 0.999762344864
+Results for casp3: accuracy: 0.99296435272, auc: 0.999469676965
+Building data for target: casp3, fold: 3
+Running logistic regression for target: casp3
+target:casp3 fold:3 predicted: 4264 wrong: 60 pct correct: 0.985928705441, auc: 0.998950356483
+Results for casp3: accuracy: 0.991205440901, auc: 0.999339846844
+Building data for target: casp3, fold: 4
+Running logistic regression for target: casp3
+target:casp3 fold:4 predicted: 4266 wrong: 1 pct correct: 0.999765588373, auc: 0.999993404564
+Results for casp3: accuracy: 0.992917470395, auc: 0.999470558388
+####################  Results for DUD-E ####################
+casp3 accuracy: 0.992917470395, auc:0.999470558388
+############################################################
+runtime: 91.66 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 18
+RunningOn slot17@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 18
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: cdk2, fold: 0
+Running logistic regression for target: cdk2
+target:cdk2 fold:0 predicted: 10435 wrong: 297 pct correct: 0.971538092956, auc: 0.998435721938
+Results for cdk2: accuracy: 0.971538092956, auc: 0.998435721938
+Building data for target: cdk2, fold: 1
+Running logistic regression for target: cdk2
+target:cdk2 fold:1 predicted: 10435 wrong: 76 pct correct: 0.9927168184, auc: 0.999757975431
+Results for cdk2: accuracy: 0.982127455678, auc: 0.999096848685
+Building data for target: cdk2, fold: 2
+Running logistic regression for target: cdk2
+target:cdk2 fold:2 predicted: 10435 wrong: 169 pct correct: 0.983804504073, auc: 0.997774040089
+Results for cdk2: accuracy: 0.98268647181, auc: 0.998655912486
+Building data for target: cdk2, fold: 3
+Running logistic regression for target: cdk2
+target:cdk2 fold:3 predicted: 10435 wrong: 134 pct correct: 0.987158600862, auc: 0.99963030192
+Results for cdk2: accuracy: 0.983804504073, auc: 0.998899509845
+Building data for target: cdk2, fold: 4
+Running logistic regression for target: cdk2
+target:cdk2 fold:4 predicted: 10527 wrong: 415 pct correct: 0.960577562458, auc: 0.995493729127
+Results for cdk2: accuracy: 0.97915911575, auc: 0.998218353701
+####################  Results for DUD-E ####################
+cdk2 accuracy: 0.97915911575, auc:0.998218353701
+############################################################
+runtime: 222.25 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 19
+RunningOn slot18@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 19
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: comt, fold: 0
+Running logistic regression for target: comt
+target:comt fold:0 predicted: 1295 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for comt: accuracy: 1.0, auc: 1.0
+Building data for target: comt, fold: 1
+Running logistic regression for target: comt
+target:comt fold:1 predicted: 1295 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for comt: accuracy: 1.0, auc: 1.0
+Building data for target: comt, fold: 2
+Running logistic regression for target: comt
+target:comt fold:2 predicted: 1295 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for comt: accuracy: 1.0, auc: 1.0
+Building data for target: comt, fold: 3
+Running logistic regression for target: comt
+target:comt fold:3 predicted: 1295 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for comt: accuracy: 1.0, auc: 1.0
+Building data for target: comt, fold: 4
+Running logistic regression for target: comt
+target:comt fold:4 predicted: 1326 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for comt: accuracy: 1.0, auc: 1.0
+####################  Results for DUD-E ####################
+comt accuracy: 1.0, auc:1.0
+############################################################
+runtime: 38.32 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 2
+RunningOn slot2@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 2
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ace, fold: 0
+Running logistic regression for target: ace
+target:ace fold:0 predicted: 6805 wrong: 22 pct correct: 0.996767083027, auc: 0.999998185987
+Results for ace: accuracy: 0.996767083027, auc: 0.999998185987
+Building data for target: ace, fold: 1
+Running logistic regression for target: ace
+target:ace fold:1 predicted: 6805 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ace: accuracy: 0.998383541514, auc: 0.999999092994
+Building data for target: ace, fold: 2
+Running logistic regression for target: ace
+target:ace fold:2 predicted: 6805 wrong: 64 pct correct: 0.990595150625, auc: 0.999816784698
+Results for ace: accuracy: 0.995787411217, auc: 0.999938323562
+Building data for target: ace, fold: 3
+Running logistic regression for target: ace
+target:ace fold:3 predicted: 6805 wrong: 21 pct correct: 0.996914033799, auc: 1.0
+Results for ace: accuracy: 0.996069066863, auc: 0.999953742671
+Building data for target: ace, fold: 4
+Running logistic regression for target: ace
+target:ace fold:4 predicted: 6705 wrong: 40 pct correct: 0.994034302759, auc: 0.998985223429
+Results for ace: accuracy: 0.995662114042, auc: 0.999760038823
+####################  Results for DUD-E ####################
+ace accuracy: 0.995662114042, auc:0.999760038823
+############################################################
+runtime: 127.32 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 20
+RunningOn slot19@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 20
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: cp2c9, fold: 0
+Running logistic regression for target: cp2c9
+target:cp2c9 fold:0 predicted: 2594 wrong: 36 pct correct: 0.986121819584, auc: 0.999467928959
+Results for cp2c9: accuracy: 0.986121819584, auc: 0.999467928959
+Building data for target: cp2c9, fold: 1
+Running logistic regression for target: cp2c9
+target:cp2c9 fold:1 predicted: 2594 wrong: 67 pct correct: 0.974171164225, auc: 0.994697636871
+Results for cp2c9: accuracy: 0.980146491904, auc: 0.997082782915
+Building data for target: cp2c9, fold: 2
+Running logistic regression for target: cp2c9
+target:cp2c9 fold:2 predicted: 2594 wrong: 128 pct correct: 0.95065535852, auc: 0.996385586379
+Results for cp2c9: accuracy: 0.970316114109, auc: 0.99685038407
+Building data for target: cp2c9, fold: 3
+Running logistic regression for target: cp2c9
+target:cp2c9 fold:3 predicted: 2594 wrong: 186 pct correct: 0.928296067849, auc: 0.990330984882
+Results for cp2c9: accuracy: 0.959811102544, auc: 0.995220534273
+Building data for target: cp2c9, fold: 4
+Running logistic regression for target: cp2c9
+target:cp2c9 fold:4 predicted: 2688 wrong: 187 pct correct: 0.930431547619, auc: 0.98760177021
+Results for cp2c9: accuracy: 0.953935191559, auc: 0.99369678146
+####################  Results for DUD-E ####################
+cp2c9 accuracy: 0.953935191559, auc:0.99369678146
+############################################################
+runtime: 59.00 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 21
+RunningOn slot20@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 21
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: cp3a4, fold: 0
+Running logistic regression for target: cp3a4
+target:cp3a4 fold:0 predicted: 4548 wrong: 227 pct correct: 0.950087950748, auc: 0.986524055462
+Results for cp3a4: accuracy: 0.950087950748, auc: 0.986524055462
+Building data for target: cp3a4, fold: 1
+Running logistic regression for target: cp3a4
+target:cp3a4 fold:1 predicted: 4548 wrong: 492 pct correct: 0.891820580475, auc: 0.969953936348
+Results for cp3a4: accuracy: 0.920954265611, auc: 0.978238995905
+Building data for target: cp3a4, fold: 2
+Running logistic regression for target: cp3a4
+target:cp3a4 fold:2 predicted: 4548 wrong: 223 pct correct: 0.950967458223, auc: 0.973487227806
+Results for cp3a4: accuracy: 0.930958663149, auc: 0.976655073206
+Building data for target: cp3a4, fold: 3
+Running logistic regression for target: cp3a4
+target:cp3a4 fold:3 predicted: 4548 wrong: 257 pct correct: 0.943491644679, auc: 0.98035897078
+Results for cp3a4: accuracy: 0.934091908531, auc: 0.977581047599
+Building data for target: cp3a4, fold: 4
+Running logistic regression for target: cp3a4
+target:cp3a4 fold:4 predicted: 4638 wrong: 143 pct correct: 0.969167744718, auc: 0.986278615299
+Results for cp3a4: accuracy: 0.941107075768, auc: 0.979320561139
+####################  Results for DUD-E ####################
+cp3a4 accuracy: 0.941107075768, auc:0.979320561139
+############################################################
+runtime: 98.19 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 22
+RunningOn slot21@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 22
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: csf1r, fold: 0
+Running logistic regression for target: csf1r
+target:csf1r fold:0 predicted: 4196 wrong: 122 pct correct: 0.970924690181, auc: 0.999894144049
+Results for csf1r: accuracy: 0.970924690181, auc: 0.999894144049
+Building data for target: csf1r, fold: 1
+Running logistic regression for target: csf1r
+target:csf1r fold:1 predicted: 4196 wrong: 34 pct correct: 0.991897044805, auc: 0.999745945717
+Results for csf1r: accuracy: 0.981410867493, auc: 0.999820044883
+Building data for target: csf1r, fold: 2
+Running logistic regression for target: csf1r
+target:csf1r fold:2 predicted: 4196 wrong: 7 pct correct: 0.998331744519, auc: 0.999908258176
+Results for csf1r: accuracy: 0.987051159835, auc: 0.999849449314
+Building data for target: csf1r, fold: 3
+Running logistic regression for target: csf1r
+target:csf1r fold:3 predicted: 4196 wrong: 65 pct correct: 0.984509056244, auc: 0.999809459288
+Results for csf1r: accuracy: 0.986415633937, auc: 0.999839451807
+Building data for target: csf1r, fold: 4
+Running logistic regression for target: csf1r
+target:csf1r fold:4 predicted: 4230 wrong: 150 pct correct: 0.964539007092, auc: 0.998511286525
+Results for csf1r: accuracy: 0.982040308568, auc: 0.999573818751
+####################  Results for DUD-E ####################
+csf1r accuracy: 0.982040308568, auc:0.999573818751
+############################################################
+runtime: 87.72 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 23
+RunningOn slot22@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 23
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: cxcr4, fold: 0
+Running logistic regression for target: cxcr4
+target:cxcr4 fold:0 predicted: 1354 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for cxcr4: accuracy: 1.0, auc: 1.0
+Building data for target: cxcr4, fold: 1
+Running logistic regression for target: cxcr4
+target:cxcr4 fold:1 predicted: 1354 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for cxcr4: accuracy: 1.0, auc: 1.0
+Building data for target: cxcr4, fold: 2
+Running logistic regression for target: cxcr4
+target:cxcr4 fold:2 predicted: 1354 wrong: 28 pct correct: 0.979320531758, auc: 0.999511241447
+Results for cxcr4: accuracy: 0.993106843919, auc: 0.999837080482
+Building data for target: cxcr4, fold: 3
+Running logistic regression for target: cxcr4
+target:cxcr4 fold:3 predicted: 1354 wrong: 28 pct correct: 0.979320531758, auc: 0.999938905181
+Results for cxcr4: accuracy: 0.989660265879, auc: 0.999862536657
+Building data for target: cxcr4, fold: 4
+Running logistic regression for target: cxcr4
+target:cxcr4 fold:4 predicted: 1361 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for cxcr4: accuracy: 0.991728212703, auc: 0.999890029326
+####################  Results for DUD-E ####################
+cxcr4 accuracy: 0.991728212703, auc:0.999890029326
+############################################################
+runtime: 38.46 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 24
+RunningOn slot23@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 24
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: def, fold: 0
+Running logistic regression for target: def
+target:def fold:0 predicted: 2107 wrong: 30 pct correct: 0.985761746559, auc: 1.0
+Results for def: accuracy: 0.985761746559, auc: 1.0
+Building data for target: def, fold: 1
+Running logistic regression for target: def
+target:def fold:1 predicted: 2107 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for def: accuracy: 0.99288087328, auc: 1.0
+Building data for target: def, fold: 2
+Running logistic regression for target: def
+target:def fold:2 predicted: 2107 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for def: accuracy: 0.99525391552, auc: 1.0
+Building data for target: def, fold: 3
+Running logistic regression for target: def
+target:def fold:3 predicted: 2107 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for def: accuracy: 0.99644043664, auc: 1.0
+Building data for target: def, fold: 4
+Running logistic regression for target: def
+target:def fold:4 predicted: 2140 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for def: accuracy: 0.997152349312, auc: 1.0
+####################  Results for DUD-E ####################
+def accuracy: 0.997152349312, auc:1.0
+############################################################
+runtime: 51.15 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 25
+RunningOn slot24@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 25
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: dhi1, fold: 0
+Running logistic regression for target: dhi1
+target:dhi1 fold:0 predicted: 7014 wrong: 67 pct correct: 0.990447676076, auc: 0.999849074157
+Results for dhi1: accuracy: 0.990447676076, auc: 0.999849074157
+Building data for target: dhi1, fold: 1
+Running logistic regression for target: dhi1
+target:dhi1 fold:1 predicted: 7014 wrong: 38 pct correct: 0.994582264043, auc: 0.999527428916
+Results for dhi1: accuracy: 0.99251497006, auc: 0.999688251536
+Building data for target: dhi1, fold: 2
+Running logistic regression for target: dhi1
+target:dhi1 fold:2 predicted: 7014 wrong: 36 pct correct: 0.994867408041, auc: 0.999945567729
+Results for dhi1: accuracy: 0.993299116054, auc: 0.999774023601
+Building data for target: dhi1, fold: 3
+Running logistic regression for target: dhi1
+target:dhi1 fold:3 predicted: 7014 wrong: 94 pct correct: 0.986598232107, auc: 0.998099818889
+Results for dhi1: accuracy: 0.991623895067, auc: 0.999355472423
+Building data for target: dhi1, fold: 4
+Running logistic regression for target: dhi1
+target:dhi1 fold:4 predicted: 7136 wrong: 67 pct correct: 0.990610986547, auc: 0.999335843954
+Results for dhi1: accuracy: 0.991421313363, auc: 0.999351546729
+####################  Results for DUD-E ####################
+dhi1 accuracy: 0.991421313363, auc:0.999351546729
+############################################################
+runtime: 142.69 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 26
+RunningOn slot25@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 26
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: dpp4, fold: 0
+Running logistic regression for target: dpp4
+target:dpp4 fold:0 predicted: 14724 wrong: 3 pct correct: 0.999796251019, auc: 1.0
+Results for dpp4: accuracy: 0.999796251019, auc: 1.0
+Building data for target: dpp4, fold: 1
+Running logistic regression for target: dpp4
+target:dpp4 fold:1 predicted: 14724 wrong: 38 pct correct: 0.997419179571, auc: 0.999985384308
+Results for dpp4: accuracy: 0.998607715295, auc: 0.999992692154
+Building data for target: dpp4, fold: 2
+Running logistic regression for target: dpp4
+target:dpp4 fold:2 predicted: 14724 wrong: 92 pct correct: 0.993751697908, auc: 0.999940975091
+Results for dpp4: accuracy: 0.996989042833, auc: 0.999975453133
+Building data for target: dpp4, fold: 3
+Running logistic regression for target: dpp4
+target:dpp4 fold:3 predicted: 14724 wrong: 63 pct correct: 0.995721271394, auc: 0.999919613696
+Results for dpp4: accuracy: 0.996672099973, auc: 0.999961493274
+Building data for target: dpp4, fold: 4
+Running logistic regression for target: dpp4
+target:dpp4 fold:4 predicted: 14847 wrong: 64 pct correct: 0.995689364855, auc: 0.999979588043
+Results for dpp4: accuracy: 0.996475552949, auc: 0.999965112228
+####################  Results for DUD-E ####################
+dpp4 accuracy: 0.996475552949, auc:0.999965112228
+############################################################
+runtime: 342.31 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 27
+RunningOn slot26@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 27
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: drd3, fold: 0
+Running logistic regression for target: drd3
+target:drd3 fold:0 predicted: 12087 wrong: 137 pct correct: 0.988665508397, auc: 0.999435007
+Results for drd3: accuracy: 0.988665508397, auc: 0.999435007
+Building data for target: drd3, fold: 1
+Running logistic regression for target: drd3
+target:drd3 fold:1 predicted: 12087 wrong: 196 pct correct: 0.983784230992, auc: 0.998666081615
+Results for drd3: accuracy: 0.986224869695, auc: 0.999050544307
+Building data for target: drd3, fold: 2
+Running logistic regression for target: drd3
+target:drd3 fold:2 predicted: 12087 wrong: 137 pct correct: 0.988665508397, auc: 0.996943521595
+Results for drd3: accuracy: 0.987038415929, auc: 0.998348203403
+Building data for target: drd3, fold: 3
+Running logistic regression for target: drd3
+target:drd3 fold:3 predicted: 12087 wrong: 288 pct correct: 0.97617274758, auc: 0.998840761403
+Results for drd3: accuracy: 0.984321998842, auc: 0.998471342903
+Building data for target: drd3, fold: 4
+Running logistic regression for target: drd3
+target:drd3 fold:4 predicted: 12148 wrong: 280 pct correct: 0.976950938426, auc: 0.995087274007
+Results for drd3: accuracy: 0.982847786759, auc: 0.997794529124
+####################  Results for DUD-E ####################
+drd3 accuracy: 0.982847786759, auc:0.997794529124
+############################################################
+runtime: 276.89 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 28
+RunningOn slot27@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 28
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: dyr, fold: 0
+Running logistic regression for target: dyr
+target:dyr fold:0 predicted: 6866 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for dyr: accuracy: 1.0, auc: 1.0
+Building data for target: dyr, fold: 1
+Running logistic regression for target: dyr
+target:dyr fold:1 predicted: 6866 wrong: 32 pct correct: 0.995339353335, auc: 0.999994908195
+Results for dyr: accuracy: 0.997669676668, auc: 0.999997454097
+Building data for target: dyr, fold: 2
+Running logistic regression for target: dyr
+target:dyr fold:2 predicted: 6866 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for dyr: accuracy: 0.998446451112, auc: 0.999998302732
+Building data for target: dyr, fold: 3
+Running logistic regression for target: dyr
+target:dyr fold:3 predicted: 6866 wrong: 30 pct correct: 0.995630643752, auc: 0.999674124464
+Results for dyr: accuracy: 0.997742499272, auc: 0.999917258165
+Building data for target: dyr, fold: 4
+Running logistic regression for target: dyr
+target:dyr fold:4 predicted: 6900 wrong: 63 pct correct: 0.990869565217, auc: 0.998969046179
+Results for dyr: accuracy: 0.996367912461, auc: 0.999727615768
+####################  Results for DUD-E ####################
+dyr accuracy: 0.996367912461, auc:0.999727615768
+############################################################
+runtime: 169.48 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 29
+RunningOn slot28@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 29
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: egfr, fold: 0
+Running logistic regression for target: egfr
+target:egfr fold:0 predicted: 12068 wrong: 185 pct correct: 0.984670202188, auc: 0.994068542794
+Results for egfr: accuracy: 0.984670202188, auc: 0.994068542794
+Building data for target: egfr, fold: 1
+Running logistic regression for target: egfr
+target:egfr fold:1 predicted: 12068 wrong: 39 pct correct: 0.996768312894, auc: 0.999746729582
+Results for egfr: accuracy: 0.990719257541, auc: 0.996907636188
+Building data for target: egfr, fold: 2
+Running logistic regression for target: egfr
+target:egfr fold:2 predicted: 12068 wrong: 68 pct correct: 0.994365263507, auc: 0.999958354864
+Results for egfr: accuracy: 0.991934592863, auc: 0.997924542413
+Building data for target: egfr, fold: 3
+Running logistic regression for target: egfr
+target:egfr fold:3 predicted: 12068 wrong: 214 pct correct: 0.982267152801, auc: 0.998997117137
+Results for egfr: accuracy: 0.989517732847, auc: 0.998192686094
+Building data for target: egfr, fold: 4
+Running logistic regression for target: egfr
+target:egfr fold:4 predicted: 12130 wrong: 124 pct correct: 0.989777411377, auc: 0.999446739203
+Results for egfr: accuracy: 0.989569668553, auc: 0.998443496716
+####################  Results for DUD-E ####################
+egfr accuracy: 0.989569668553, auc:0.998443496716
+############################################################
+runtime: 281.90 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 3
+RunningOn slot3@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 3
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: aces, fold: 0
+Running logistic regression for target: aces
+target:aces fold:0 predicted: 9234 wrong: 248 pct correct: 0.973142733377, auc: 0.994983969387
+Results for aces: accuracy: 0.973142733377, auc: 0.994983969387
+Building data for target: aces, fold: 1
+Running logistic regression for target: aces
+target:aces fold:1 predicted: 9234 wrong: 223 pct correct: 0.975850119125, auc: 0.996904482826
+Results for aces: accuracy: 0.974496426251, auc: 0.995944226106
+Building data for target: aces, fold: 2
+Running logistic regression for target: aces
+target:aces fold:2 predicted: 9234 wrong: 37 pct correct: 0.995993069092, auc: 0.999977017042
+Results for aces: accuracy: 0.981661973865, auc: 0.997288489752
+Building data for target: aces, fold: 3
+Running logistic regression for target: aces
+target:aces fold:3 predicted: 9234 wrong: 161 pct correct: 0.982564435781, auc: 0.996236540605
+Results for aces: accuracy: 0.981887589344, auc: 0.997025502465
+Building data for target: aces, fold: 4
+Running logistic regression for target: aces
+target:aces fold:4 predicted: 9357 wrong: 161 pct correct: 0.982793630437, auc: 0.998511854998
+Results for aces: accuracy: 0.982068797562, auc: 0.997322772972
+####################  Results for DUD-E ####################
+aces accuracy: 0.982068797562, auc:0.997322772972
+############################################################
+runtime: 173.59 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 30
+RunningOn slot29@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 30
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: esr1, fold: 0
+Running logistic regression for target: esr1
+target:esr1 fold:0 predicted: 7913 wrong: 61 pct correct: 0.992291166435, auc: 0.999909680519
+Results for esr1: accuracy: 0.992291166435, auc: 0.999909680519
+Building data for target: esr1, fold: 1
+Running logistic regression for target: esr1
+target:esr1 fold:1 predicted: 7913 wrong: 63 pct correct: 0.992038417794, auc: 0.999765553687
+Results for esr1: accuracy: 0.992164792114, auc: 0.999837617103
+Building data for target: esr1, fold: 2
+Running logistic regression for target: esr1
+target:esr1 fold:2 predicted: 7913 wrong: 122 pct correct: 0.98458233287, auc: 0.999423492674
+Results for esr1: accuracy: 0.989637305699, auc: 0.999699575627
+Building data for target: esr1, fold: 3
+Running logistic regression for target: esr1
+target:esr1 fold:3 predicted: 7913 wrong: 90 pct correct: 0.988626311134, auc: 0.999940427576
+Results for esr1: accuracy: 0.989384557058, auc: 0.999759788614
+Building data for target: esr1, fold: 4
+Running logistic regression for target: esr1
+target:esr1 fold:4 predicted: 7976 wrong: 60 pct correct: 0.992477432297, auc: 0.998605131152
+Results for esr1: accuracy: 0.990003132106, auc: 0.999528857122
+####################  Results for DUD-E ####################
+esr1 accuracy: 0.990003132106, auc:0.999528857122
+############################################################
+runtime: 177.27 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 31
+RunningOn slot30@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 31
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: esr2, fold: 0
+Running logistic regression for target: esr2
+target:esr2 fold:0 predicted: 7632 wrong: 61 pct correct: 0.992007337526, auc: 0.999400055443
+Results for esr2: accuracy: 0.992007337526, auc: 0.999400055443
+Building data for target: esr2, fold: 1
+Running logistic regression for target: esr2
+target:esr2 fold:1 predicted: 7632 wrong: 31 pct correct: 0.995938155136, auc: 0.999877942314
+Results for esr2: accuracy: 0.993972746331, auc: 0.999638998879
+Building data for target: esr2, fold: 2
+Running logistic regression for target: esr2
+target:esr2 fold:2 predicted: 7632 wrong: 1 pct correct: 0.999868972746, auc: 0.999995862451
+Results for esr2: accuracy: 0.995938155136, auc: 0.999757953403
+Building data for target: esr2, fold: 3
+Running logistic regression for target: esr2
+target:esr2 fold:3 predicted: 7632 wrong: 121 pct correct: 0.984145702306, auc: 0.999439362155
+Results for esr2: accuracy: 0.992990041929, auc: 0.999678305591
+Building data for target: esr2, fold: 4
+Running logistic regression for target: esr2
+target:esr2 fold:4 predicted: 7635 wrong: 32 pct correct: 0.995808775377, auc: 0.997130660382
+Results for esr2: accuracy: 0.993553788618, auc: 0.999168776549
+####################  Results for DUD-E ####################
+esr2 accuracy: 0.993553788618, auc:0.999168776549
+############################################################
+runtime: 176.25 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 32
+RunningOn slot31@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 32
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fa10, fold: 0
+Running logistic regression for target: fa10
+target:fa10 fold:0 predicted: 8033 wrong: 1 pct correct: 0.999875513507, auc: 1.0
+Results for fa10: accuracy: 0.999875513507, auc: 1.0
+Building data for target: fa10, fold: 1
+Running logistic regression for target: fa10
+target:fa10 fold:1 predicted: 8033 wrong: 52 pct correct: 0.993526702353, auc: 0.999507063868
+Results for fa10: accuracy: 0.99670110793, auc: 0.999753531934
+Building data for target: fa10, fold: 2
+Running logistic regression for target: fa10
+target:fa10 fold:2 predicted: 8033 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fa10: accuracy: 0.99780073862, auc: 0.999835687956
+Building data for target: fa10, fold: 3
+Running logistic regression for target: fa10
+target:fa10 fold:3 predicted: 8033 wrong: 1 pct correct: 0.999875513507, auc: 1.0
+Results for fa10: accuracy: 0.998319432342, auc: 0.999876765967
+Building data for target: fa10, fold: 4
+Running logistic regression for target: fa10
+target:fa10 fold:4 predicted: 8084 wrong: 51 pct correct: 0.993691241959, auc: 0.999207272282
+Results for fa10: accuracy: 0.997393794265, auc: 0.99974286723
+####################  Results for DUD-E ####################
+fa10 accuracy: 0.997393794265, auc:0.99974286723
+############################################################
+runtime: 165.35 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 33
+RunningOn slot32@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 33
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fa7, fold: 0
+Running logistic regression for target: fa7
+target:fa7 fold:0 predicted: 2370 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fa7: accuracy: 1.0, auc: 1.0
+Building data for target: fa7, fold: 1
+Running logistic regression for target: fa7
+target:fa7 fold:1 predicted: 2370 wrong: 1 pct correct: 0.999578059072, auc: 1.0
+Results for fa7: accuracy: 0.999789029536, auc: 1.0
+Building data for target: fa7, fold: 2
+Running logistic regression for target: fa7
+target:fa7 fold:2 predicted: 2370 wrong: 30 pct correct: 0.987341772152, auc: 1.0
+Results for fa7: accuracy: 0.995639943741, auc: 1.0
+Building data for target: fa7, fold: 3
+Running logistic regression for target: fa7
+target:fa7 fold:3 predicted: 2370 wrong: 31 pct correct: 0.986919831224, auc: 0.999978549979
+Results for fa7: accuracy: 0.993459915612, auc: 0.999994637495
+Building data for target: fa7, fold: 4
+Running logistic regression for target: fa7
+target:fa7 fold:4 predicted: 2372 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fa7: accuracy: 0.994767932489, auc: 0.999995709996
+####################  Results for DUD-E ####################
+fa7 accuracy: 0.994767932489, auc:0.999995709996
+############################################################
+runtime: 55.56 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 34
+RunningOn slot15@wid-007.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 34
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fabp4, fold: 0
+Running logistic regression for target: fabp4
+target:fabp4 fold:0 predicted: 901 wrong: 30 pct correct: 0.966703662597, auc: 0.985352650852
+Results for fabp4: accuracy: 0.966703662597, auc: 0.985352650852
+Building data for target: fabp4, fold: 1
+Running logistic regression for target: fabp4
+target:fabp4 fold:1 predicted: 901 wrong: 60 pct correct: 0.933407325194, auc: 0.953351377169
+Results for fabp4: accuracy: 0.950055493896, auc: 0.969352014011
+Building data for target: fabp4, fold: 2
+Running logistic regression for target: fabp4
+target:fabp4 fold:2 predicted: 901 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fabp4: accuracy: 0.966703662597, auc: 0.97956800934
+Building data for target: fabp4, fold: 3
+Running logistic regression for target: fabp4
+target:fabp4 fold:3 predicted: 901 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fabp4: accuracy: 0.975027746948, auc: 0.984676007005
+Building data for target: fabp4, fold: 4
+Running logistic regression for target: fabp4
+target:fabp4 fold:4 predicted: 961 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fabp4: accuracy: 0.980022197558, auc: 0.987740805604
+####################  Results for DUD-E ####################
+fabp4 accuracy: 0.980022197558, auc:0.987740805604
+############################################################
+runtime: 27.59 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 35
+RunningOn slot23@wid-007.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 35
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fak1, fold: 0
+Running logistic regression for target: fak1
+target:fak1 fold:0 predicted: 1740 wrong: 30 pct correct: 0.98275862069, auc: 0.996127946128
+Results for fak1: accuracy: 0.98275862069, auc: 0.996127946128
+Building data for target: fak1, fold: 1
+Running logistic regression for target: fak1
+target:fak1 fold:1 predicted: 1740 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fak1: accuracy: 0.991379310345, auc: 0.998063973064
+Building data for target: fak1, fold: 2
+Running logistic regression for target: fak1
+target:fak1 fold:2 predicted: 1740 wrong: 60 pct correct: 0.965517241379, auc: 1.0
+Results for fak1: accuracy: 0.98275862069, auc: 0.998709315376
+Building data for target: fak1, fold: 3
+Running logistic regression for target: fak1
+target:fak1 fold:3 predicted: 1740 wrong: 90 pct correct: 0.948275862069, auc: 0.995580808081
+Results for fak1: accuracy: 0.974137931034, auc: 0.997927188552
+Building data for target: fak1, fold: 4
+Running logistic regression for target: fak1
+target:fak1 fold:4 predicted: 1861 wrong: 60 pct correct: 0.96775926921, auc: 0.995588130648
+Results for fak1: accuracy: 0.97286219867, auc: 0.997459376971
+####################  Results for DUD-E ####################
+fak1 accuracy: 0.97286219867, auc:0.997459376971
+############################################################
+runtime: 38.83 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 36
+RunningOn slot7@opt-a014.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 36
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fgfr1, fold: 0
+Running logistic regression for target: fgfr1
+target:fgfr1 fold:0 predicted: 194 wrong: 103 pct correct: 0.469072164948, auc: 0.468537414966
+Results for fgfr1: accuracy: 0.469072164948, auc: 0.468537414966
+Building data for target: fgfr1, fold: 1
+Running logistic regression for target: fgfr1
+target:fgfr1 fold:1 predicted: 194 wrong: 111 pct correct: 0.427835051546, auc: 0.416241496599
+Results for fgfr1: accuracy: 0.448453608247, auc: 0.442389455782
+Building data for target: fgfr1, fold: 2
+Running logistic regression for target: fgfr1
+target:fgfr1 fold:2 predicted: 194 wrong: 100 pct correct: 0.484536082474, auc: 0.506058673469
+Results for fgfr1: accuracy: 0.460481099656, auc: 0.463612528345
+Building data for target: fgfr1, fold: 3
+Running logistic regression for target: fgfr1
+target:fgfr1 fold:3 predicted: 194 wrong: 94 pct correct: 0.515463917526, auc: 0.55431547619
+Results for fgfr1: accuracy: 0.474226804124, auc: 0.486288265306
+Building data for target: fgfr1, fold: 4
+Running logistic regression for target: fgfr1
+target:fgfr1 fold:4 predicted: 202 wrong: 111 pct correct: 0.450495049505, auc: 0.489803921569
+Results for fgfr1: accuracy: 0.4694804532, auc: 0.486991396559
+####################  Results for DUD-E ####################
+fgfr1 accuracy: 0.4694804532, auc:0.486991396559
+############################################################
+runtime: 13.99 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 37
+RunningOn slot13@opt-a002.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 37
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fkb1a, fold: 0
+Running logistic regression for target: fkb1a
+target:fkb1a fold:0 predicted: 2300 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fkb1a: accuracy: 1.0, auc: 1.0
+Building data for target: fkb1a, fold: 1
+Running logistic regression for target: fkb1a
+target:fkb1a fold:1 predicted: 2300 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fkb1a: accuracy: 1.0, auc: 1.0
+Building data for target: fkb1a, fold: 2
+Running logistic regression for target: fkb1a
+target:fkb1a fold:2 predicted: 2300 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fkb1a: accuracy: 1.0, auc: 1.0
+Building data for target: fkb1a, fold: 3
+Running logistic regression for target: fkb1a
+target:fkb1a fold:3 predicted: 2300 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fkb1a: accuracy: 1.0, auc: 1.0
+Building data for target: fkb1a, fold: 4
+Running logistic regression for target: fkb1a
+target:fkb1a fold:4 predicted: 2308 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fkb1a: accuracy: 1.0, auc: 1.0
+####################  Results for DUD-E ####################
+fkb1a accuracy: 1.0, auc:1.0
+############################################################
+runtime: 98.26 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 38
+RunningOn slot14@opt-a002.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 38
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fnta, fold: 0
+Running logistic regression for target: fnta
+target:fnta fold:0 predicted: 20547 wrong: 62 pct correct: 0.996982527863, auc: 0.99757872347
+Results for fnta: accuracy: 0.996982527863, auc: 0.99757872347
+Building data for target: fnta, fold: 1
+Running logistic regression for target: fnta
+target:fnta fold:1 predicted: 20547 wrong: 1 pct correct: 0.999951331095, auc: 1.0
+Results for fnta: accuracy: 0.998466929479, auc: 0.998789361735
+Building data for target: fnta, fold: 2
+Running logistic regression for target: fnta
+target:fnta fold:2 predicted: 20547 wrong: 2 pct correct: 0.999902662189, auc: 0.999999431425
+Results for fnta: accuracy: 0.998945507049, auc: 0.999192718298
+Building data for target: fnta, fold: 3
+Running logistic regression for target: fnta
+target:fnta fold:3 predicted: 20547 wrong: 32 pct correct: 0.998442595026, auc: 0.999998578563
+Results for fnta: accuracy: 0.998819779043, auc: 0.999394183364
+Building data for target: fnta, fold: 4
+Running logistic regression for target: fnta
+target:fnta fold:4 predicted: 20611 wrong: 94 pct correct: 0.995439328514, auc: 0.999990959788
+Results for fnta: accuracy: 0.998143688937, auc: 0.999513538649
+####################  Results for DUD-E ####################
+fnta accuracy: 0.998143688937, auc:0.999513538649
+############################################################
+runtime: 672.21 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 39
+RunningOn slot7@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 39
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fpps, fold: 0
+Running logistic regression for target: fpps
+target:fpps fold:0 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 1
+Running logistic regression for target: fpps
+target:fpps fold:1 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 2
+Running logistic regression for target: fpps
+target:fpps fold:2 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 3
+Running logistic regression for target: fpps
+target:fpps fold:3 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 4
+Running logistic regression for target: fpps
+target:fpps fold:4 predicted: 3151 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+####################  Results for DUD-E ####################
+fpps accuracy: 1.0, auc:1.0
+############################################################
+runtime: 99.76 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 4
+RunningOn slot4@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 4
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ada17, fold: 0
+Running logistic regression for target: ada17
+target:ada17 fold:0 predicted: 13059 wrong: 1 pct correct: 0.999923424458, auc: 1.0
+Results for ada17: accuracy: 0.999923424458, auc: 1.0
+Building data for target: ada17, fold: 1
+Running logistic regression for target: ada17
+target:ada17 fold:1 predicted: 13059 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada17: accuracy: 0.999961712229, auc: 1.0
+Building data for target: ada17, fold: 2
+Running logistic regression for target: ada17
+target:ada17 fold:2 predicted: 13059 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada17: accuracy: 0.999974474819, auc: 1.0
+Building data for target: ada17, fold: 3
+Running logistic regression for target: ada17
+target:ada17 fold:3 predicted: 13059 wrong: 33 pct correct: 0.997473007122, auc: 0.999994285057
+Results for ada17: accuracy: 0.999349107895, auc: 0.999998571264
+Building data for target: ada17, fold: 4
+Running logistic regression for target: ada17
+target:ada17 fold:4 predicted: 13181 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada17: accuracy: 0.999479286316, auc: 0.999998857011
+####################  Results for DUD-E ####################
+ada17 accuracy: 0.999479286316, auc:0.999998857011
+############################################################
+runtime: 236.42 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 40
+RunningOn slot8@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 40
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: gcr, fold: 0
+Running logistic regression for target: gcr
+target:gcr fold:0 predicted: 6061 wrong: 3 pct correct: 0.999505032173, auc: 0.999994120137
+Results for gcr: accuracy: 0.999505032173, auc: 0.999994120137
+Building data for target: gcr, fold: 1
+Running logistic regression for target: gcr
+target:gcr fold:1 predicted: 6061 wrong: 27 pct correct: 0.995545289556, auc: 0.999864763159
+Results for gcr: accuracy: 0.997525160865, auc: 0.999929441648
+Building data for target: gcr, fold: 2
+Running logistic regression for target: gcr
+target:gcr fold:2 predicted: 6061 wrong: 59 pct correct: 0.990265632734, auc: 0.999223858131
+Results for gcr: accuracy: 0.995105318154, auc: 0.999694247142
+Building data for target: gcr, fold: 3
+Running logistic regression for target: gcr
+target:gcr fold:3 predicted: 6061 wrong: 27 pct correct: 0.995545289556, auc: 0.999994120137
+Results for gcr: accuracy: 0.995215311005, auc: 0.999769215391
+Building data for target: gcr, fold: 4
+Running logistic regression for target: gcr
+target:gcr fold:4 predicted: 6027 wrong: 55 pct correct: 0.99087439854, auc: 0.999908376401
+Results for gcr: accuracy: 0.994347128512, auc: 0.999797047593
+####################  Results for DUD-E ####################
+gcr accuracy: 0.994347128512, auc:0.999797047593
+############################################################
+runtime: 158.29 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 41
+RunningOn slot9@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 41
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: glcm, fold: 0
+Running logistic regression for target: glcm
+target:glcm fold:0 predicted: 1511 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for glcm: accuracy: 1.0, auc: 1.0
+Building data for target: glcm, fold: 1
+Running logistic regression for target: glcm
+target:glcm fold:1 predicted: 1511 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for glcm: accuracy: 1.0, auc: 1.0
+Building data for target: glcm, fold: 2
+Running logistic regression for target: glcm
+target:glcm fold:2 predicted: 1511 wrong: 12 pct correct: 0.992058239576, auc: 1.0
+Results for glcm: accuracy: 0.997352746525, auc: 1.0
+Building data for target: glcm, fold: 3
+Running logistic regression for target: glcm
+target:glcm fold:3 predicted: 1511 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for glcm: accuracy: 0.998014559894, auc: 1.0
+Building data for target: glcm, fold: 4
+Running logistic regression for target: glcm
+target:glcm fold:4 predicted: 1484 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for glcm: accuracy: 0.998411647915, auc: 1.0
+####################  Results for DUD-E ####################
+glcm accuracy: 0.998411647915, auc:1.0
+############################################################
+runtime: 52.84 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 42
+RunningOn slot10@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 42
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: gria2, fold: 0
+Running logistic regression for target: gria2
+target:gria2 fold:0 predicted: 4176 wrong: 63 pct correct: 0.984913793103, auc: 0.997837327585
+Results for gria2: accuracy: 0.984913793103, auc: 0.997837327585
+Building data for target: gria2, fold: 1
+Running logistic regression for target: gria2
+target:gria2 fold:1 predicted: 4176 wrong: 122 pct correct: 0.970785440613, auc: 0.999520971582
+Results for gria2: accuracy: 0.977849616858, auc: 0.998679149584
+Building data for target: gria2, fold: 2
+Running logistic regression for target: gria2
+target:gria2 fold:2 predicted: 4176 wrong: 62 pct correct: 0.985153256705, auc: 0.999964777322
+Results for gria2: accuracy: 0.980284163474, auc: 0.999107692163
+Building data for target: gria2, fold: 3
+Running logistic regression for target: gria2
+target:gria2 fold:3 predicted: 4176 wrong: 61 pct correct: 0.985392720307, auc: 0.999957732787
+Results for gria2: accuracy: 0.981561302682, auc: 0.999320202319
+Building data for target: gria2, fold: 4
+Running logistic regression for target: gria2
+target:gria2 fold:4 predicted: 4239 wrong: 2 pct correct: 0.999528190611, auc: 0.999986389836
+Results for gria2: accuracy: 0.985154680268, auc: 0.999453439822
+####################  Results for DUD-E ####################
+gria2 accuracy: 0.985154680268, auc:0.999453439822
+############################################################
+runtime: 113.31 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 43
+RunningOn slot12@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 43
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: grik1, fold: 0
+Running logistic regression for target: grik1
+target:grik1 fold:0 predicted: 2223 wrong: 30 pct correct: 0.986504723347, auc: 1.0
+Results for grik1: accuracy: 0.986504723347, auc: 1.0
+Building data for target: grik1, fold: 1
+Running logistic regression for target: grik1
+target:grik1 fold:1 predicted: 2223 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for grik1: accuracy: 0.993252361673, auc: 1.0
+Building data for target: grik1, fold: 2
+Running logistic regression for target: grik1
+target:grik1 fold:2 predicted: 2223 wrong: 30 pct correct: 0.986504723347, auc: 0.999974804737
+Results for grik1: accuracy: 0.991003148898, auc: 0.999991601579
+Building data for target: grik1, fold: 3
+Running logistic regression for target: grik1
+target:grik1 fold:3 predicted: 2223 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for grik1: accuracy: 0.993252361673, auc: 0.999993701184
+Building data for target: grik1, fold: 4
+Running logistic regression for target: grik1
+target:grik1 fold:4 predicted: 2284 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for grik1: accuracy: 0.994601889339, auc: 0.999994960947
+####################  Results for DUD-E ####################
+grik1 accuracy: 0.994601889339, auc:0.999994960947
+############################################################
+runtime: 74.06 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 44
+RunningOn slot13@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 44
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hdac2, fold: 0
+Running logistic regression for target: hdac2
+target:hdac2 fold:0 predicted: 3483 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hdac2: accuracy: 1.0, auc: 1.0
+Building data for target: hdac2, fold: 1
+Running logistic regression for target: hdac2
+target:hdac2 fold:1 predicted: 3483 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hdac2: accuracy: 1.0, auc: 1.0
+Building data for target: hdac2, fold: 2
+Running logistic regression for target: hdac2
+target:hdac2 fold:2 predicted: 3483 wrong: 63 pct correct: 0.981912144703, auc: 0.998870995884
+Results for hdac2: accuracy: 0.993970714901, auc: 0.999623665295
+Building data for target: hdac2, fold: 3
+Running logistic regression for target: hdac2
+target:hdac2 fold:3 predicted: 3483 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hdac2: accuracy: 0.995478036176, auc: 0.999717748971
+Building data for target: hdac2, fold: 4
+Running logistic regression for target: hdac2
+target:hdac2 fold:4 predicted: 3574 wrong: 31 pct correct: 0.991326245104, auc: 0.999296046287
+Results for hdac2: accuracy: 0.994647677961, auc: 0.999633408434
+####################  Results for DUD-E ####################
+hdac2 accuracy: 0.994647677961, auc:0.999633408434
+############################################################
+runtime: 105.02 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 45
+RunningOn slot14@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 45
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hdac8, fold: 0
+Running logistic regression for target: hdac8
+target:hdac8 fold:0 predicted: 3482 wrong: 1 pct correct: 0.999712808731, auc: 1.0
+Results for hdac8: accuracy: 0.999712808731, auc: 1.0
+Building data for target: hdac8, fold: 1
+Running logistic regression for target: hdac8
+target:hdac8 fold:1 predicted: 3482 wrong: 120 pct correct: 0.965537047674, auc: 0.998355603359
+Results for hdac8: accuracy: 0.982624928202, auc: 0.99917780168
+Building data for target: hdac8, fold: 2
+Running logistic regression for target: hdac8
+target:hdac8 fold:2 predicted: 3482 wrong: 32 pct correct: 0.99080987938, auc: 0.999958631531
+Results for hdac8: accuracy: 0.985353245261, auc: 0.999438078297
+Building data for target: hdac8, fold: 3
+Running logistic regression for target: hdac8
+target:hdac8 fold:3 predicted: 3482 wrong: 30 pct correct: 0.991384261918, auc: 0.999824184007
+Results for hdac8: accuracy: 0.986860999426, auc: 0.999534604724
+Building data for target: hdac8, fold: 4
+Running logistic regression for target: hdac8
+target:hdac8 fold:4 predicted: 3606 wrong: 1 pct correct: 0.999722684415, auc: 1.0
+Results for hdac8: accuracy: 0.989433336423, auc: 0.999627683779
+####################  Results for DUD-E ####################
+hdac8 accuracy: 0.989433336423, auc:0.999627683779
+############################################################
+runtime: 108.12 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 46
+RunningOn slot7@wid-004.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 46
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hivint, fold: 0
+Running logistic regression for target: hivint
+target:hivint fold:0 predicted: 2609 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hivint: accuracy: 1.0, auc: 1.0
+Building data for target: hivint, fold: 1
+Running logistic regression for target: hivint
+target:hivint fold:1 predicted: 2609 wrong: 1 pct correct: 0.999616711384, auc: 1.0
+Results for hivint: accuracy: 0.999808355692, auc: 1.0
+Building data for target: hivint, fold: 2
+Running logistic regression for target: hivint
+target:hivint fold:2 predicted: 2609 wrong: 32 pct correct: 0.987734764278, auc: 0.99911751209
+Results for hivint: accuracy: 0.99578382522, auc: 0.999705837363
+Building data for target: hivint, fold: 3
+Running logistic regression for target: hivint
+target:hivint fold:3 predicted: 2609 wrong: 30 pct correct: 0.98850134151, auc: 0.999823502418
+Results for hivint: accuracy: 0.993963204293, auc: 0.999735253627
+Building data for target: hivint, fold: 4
+Running logistic regression for target: hivint
+target:hivint fold:4 predicted: 2643 wrong: 30 pct correct: 0.988649262202, auc: 0.999948435002
+Results for hivint: accuracy: 0.992900415875, auc: 0.999777889902
+####################  Results for DUD-E ####################
+hivint accuracy: 0.992900415875, auc:0.999777889902
+############################################################
+runtime: 86.08 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 47
+RunningOn slot7@opt-a016.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 47
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hivpr, fold: 0
+Running logistic regression for target: hivpr
+target:hivpr fold:0 predicted: 14222 wrong: 30 pct correct: 0.997890592041, auc: 0.999308575592
+Results for hivpr: accuracy: 0.997890592041, auc: 0.999308575592
+Building data for target: hivpr, fold: 1
+Running logistic regression for target: hivpr
+target:hivpr fold:1 predicted: 14222 wrong: 50 pct correct: 0.996484320068, auc: 0.999985657147
+Results for hivpr: accuracy: 0.997187456054, auc: 0.999647116369
+Building data for target: hivpr, fold: 2
+Running logistic regression for target: hivpr
+target:hivpr fold:2 predicted: 14222 wrong: 81 pct correct: 0.994304598509, auc: 0.997358689518
+Results for hivpr: accuracy: 0.996226503539, auc: 0.998884307419
+Building data for target: hivpr, fold: 3
+Running logistic regression for target: hivpr
+target:hivpr fold:3 predicted: 14222 wrong: 78 pct correct: 0.994515539305, auc: 0.999507397203
+Results for hivpr: accuracy: 0.995798762481, auc: 0.999040079865
+Building data for target: hivpr, fold: 4
+Running logistic regression for target: hivpr
+target:hivpr fold:4 predicted: 14222 wrong: 52 pct correct: 0.99634369287, auc: 0.998378763082
+Results for hivpr: accuracy: 0.995907748559, auc: 0.998907816508
+####################  Results for DUD-E ####################
+hivpr accuracy: 0.995907748559, auc:0.998907816508
+############################################################
+runtime: 326.85 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 48
+RunningOn slot8@opt-a016.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 48
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hivrt, fold: 0
+Running logistic regression for target: hivrt
+target:hivrt fold:0 predicted: 7636 wrong: 224 pct correct: 0.970665269775, auc: 0.997083774094
+Results for hivrt: accuracy: 0.970665269775, auc: 0.997083774094
+Building data for target: hivrt, fold: 1
+Running logistic regression for target: hivrt
+target:hivrt fold:1 predicted: 7636 wrong: 160 pct correct: 0.979046621268, auc: 0.99072858313
+Results for hivrt: accuracy: 0.974855945521, auc: 0.993906178612
+Building data for target: hivrt, fold: 2
+Running logistic regression for target: hivrt
+target:hivrt fold:2 predicted: 7636 wrong: 198 pct correct: 0.974070193819, auc: 0.99908211944
+Results for hivrt: accuracy: 0.974594028287, auc: 0.995631492221
+Building data for target: hivrt, fold: 3
+Running logistic regression for target: hivrt
+target:hivrt fold:3 predicted: 7636 wrong: 249 pct correct: 0.967391304348, auc: 0.995488802269
+Results for hivrt: accuracy: 0.972793347302, auc: 0.995595819733
+Building data for target: hivrt, fold: 4
+Running logistic regression for target: hivrt
+target:hivrt fold:4 predicted: 7629 wrong: 268 pct correct: 0.964870887403, auc: 0.991112749885
+Results for hivrt: accuracy: 0.971208855322, auc: 0.994699205764
+####################  Results for DUD-E ####################
+hivrt accuracy: 0.971208855322, auc:0.994699205764
+############################################################
+runtime: 207.54 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 49
+RunningOn slot10@opt-a016.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 49
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hmdh, fold: 0
+Running logistic regression for target: hmdh
+target:hmdh fold:0 predicted: 3546 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hmdh: accuracy: 1.0, auc: 1.0
+Building data for target: hmdh, fold: 1
+Running logistic regression for target: hmdh
+target:hmdh fold:1 predicted: 3546 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hmdh: accuracy: 1.0, auc: 1.0
+Building data for target: hmdh, fold: 2
+Running logistic regression for target: hmdh
+target:hmdh fold:2 predicted: 3546 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hmdh: accuracy: 1.0, auc: 1.0
+Building data for target: hmdh, fold: 3
+Running logistic regression for target: hmdh
+target:hmdh fold:3 predicted: 3546 wrong: 30 pct correct: 0.991539763113, auc: 0.999980913117
+Results for hmdh: accuracy: 0.997884940778, auc: 0.999995228279
+Building data for target: hmdh, fold: 4
+Running logistic regression for target: hmdh
+target:hmdh fold:4 predicted: 3544 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hmdh: accuracy: 0.998307952623, auc: 0.999996182623
+####################  Results for DUD-E ####################
+hmdh accuracy: 0.998307952623, auc:0.999996182623
+############################################################
+runtime: 113.89 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 5
+RunningOn slot5@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 5
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ada, fold: 0
+Running logistic regression for target: ada
+target:ada fold:0 predicted: 2186 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada: accuracy: 1.0, auc: 1.0
+Building data for target: ada, fold: 1
+Running logistic regression for target: ada
+target:ada fold:1 predicted: 2186 wrong: 2 pct correct: 0.999085086917, auc: 1.0
+Results for ada: accuracy: 0.999542543458, auc: 1.0
+Building data for target: ada, fold: 2
+Running logistic regression for target: ada
+target:ada fold:2 predicted: 2186 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada: accuracy: 0.999695028972, auc: 1.0
+Building data for target: ada, fold: 3
+Running logistic regression for target: ada
+target:ada fold:3 predicted: 2186 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada: accuracy: 0.999771271729, auc: 1.0
+Building data for target: ada, fold: 4
+Running logistic regression for target: ada
+target:ada fold:4 predicted: 2176 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada: accuracy: 0.999817017383, auc: 1.0
+####################  Results for DUD-E ####################
+ada accuracy: 0.999817017383, auc:1.0
+############################################################
+runtime: 54.17 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 50
+RunningOn slot11@opt-a016.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 50
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hs90a, fold: 0
+Running logistic regression for target: hs90a
+target:hs90a fold:0 predicted: 1738 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hs90a: accuracy: 1.0, auc: 1.0
+Building data for target: hs90a, fold: 1
+Running logistic regression for target: hs90a
+target:hs90a fold:1 predicted: 1738 wrong: 1 pct correct: 0.999424626007, auc: 1.0
+Results for hs90a: accuracy: 0.999712313003, auc: 1.0
+Building data for target: hs90a, fold: 2
+Running logistic regression for target: hs90a
+target:hs90a fold:2 predicted: 1738 wrong: 30 pct correct: 0.982738780207, auc: 1.0
+Results for hs90a: accuracy: 0.994054468738, auc: 1.0
+Building data for target: hs90a, fold: 3
+Running logistic regression for target: hs90a
+target:hs90a fold:3 predicted: 1738 wrong: 30 pct correct: 0.982738780207, auc: 0.99995951417
+Results for hs90a: accuracy: 0.991225546605, auc: 0.999989878543
+Building data for target: hs90a, fold: 4
+Running logistic regression for target: hs90a
+target:hs90a fold:4 predicted: 1740 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hs90a: accuracy: 0.992980437284, auc: 0.999991902834
+####################  Results for DUD-E ####################
+hs90a accuracy: 0.992980437284, auc:0.999991902834
+############################################################
+runtime: 80.43 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 51
+RunningOn slot12@opt-a016.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 51
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hxk4, fold: 0
+Running logistic regression for target: hxk4
+target:hxk4 fold:0 predicted: 1710 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hxk4: accuracy: 1.0, auc: 1.0
+Building data for target: hxk4, fold: 1
+Running logistic regression for target: hxk4
+target:hxk4 fold:1 predicted: 1710 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hxk4: accuracy: 1.0, auc: 1.0
+Building data for target: hxk4, fold: 2
+Running logistic regression for target: hxk4
+target:hxk4 fold:2 predicted: 1710 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hxk4: accuracy: 1.0, auc: 1.0
+Building data for target: hxk4, fold: 3
+Running logistic regression for target: hxk4
+target:hxk4 fold:3 predicted: 1710 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hxk4: accuracy: 1.0, auc: 1.0
+Building data for target: hxk4, fold: 4
+Running logistic regression for target: hxk4
+target:hxk4 fold:4 predicted: 1773 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hxk4: accuracy: 1.0, auc: 1.0
+####################  Results for DUD-E ####################
+hxk4 accuracy: 1.0, auc:1.0
+############################################################
+runtime: 60.92 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 52
+RunningOn slot13@opt-a016.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 52
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: igf1r, fold: 0
+Running logistic regression for target: igf1r
+target:igf1r fold:0 predicted: 3230 wrong: 32 pct correct: 0.990092879257, auc: 0.983764775414
+Results for igf1r: accuracy: 0.990092879257, auc: 0.983764775414
+Building data for target: igf1r, fold: 1
+Running logistic regression for target: igf1r
+target:igf1r fold:1 predicted: 3230 wrong: 60 pct correct: 0.981424148607, auc: 0.9968321513
+Results for igf1r: accuracy: 0.985758513932, auc: 0.990298463357
+Building data for target: igf1r, fold: 2
+Running logistic regression for target: igf1r
+target:igf1r fold:2 predicted: 3230 wrong: 60 pct correct: 0.981424148607, auc: 0.999799054374
+Results for igf1r: accuracy: 0.98431372549, auc: 0.993465327029
+Building data for target: igf1r, fold: 3
+Running logistic regression for target: igf1r
+target:igf1r fold:3 predicted: 3230 wrong: 63 pct correct: 0.980495356037, auc: 0.999787234043
+Results for igf1r: accuracy: 0.983359133127, auc: 0.995045803783
+Building data for target: igf1r, fold: 4
+Running logistic regression for target: igf1r
+target:igf1r fold:4 predicted: 3264 wrong: 31 pct correct: 0.99050245098, auc: 0.999942305917
+Results for igf1r: accuracy: 0.984787796698, auc: 0.996025104209
+####################  Results for DUD-E ####################
+igf1r accuracy: 0.984787796698, auc:0.996025104209
+############################################################
+runtime: 96.15 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 53
+RunningOn slot14@opt-a016.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 53
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: inha, fold: 0
+Running logistic regression for target: inha
+target:inha fold:0 predicted: 883 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for inha: accuracy: 1.0, auc: 1.0
+Building data for target: inha, fold: 1
+Running logistic regression for target: inha
+target:inha fold:1 predicted: 883 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for inha: accuracy: 1.0, auc: 1.0
+Building data for target: inha, fold: 2
+Running logistic regression for target: inha
+target:inha fold:2 predicted: 883 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for inha: accuracy: 1.0, auc: 1.0
+Building data for target: inha, fold: 3
+Running logistic regression for target: inha
+target:inha fold:3 predicted: 883 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for inha: accuracy: 1.0, auc: 1.0
+Building data for target: inha, fold: 4
+Running logistic regression for target: inha
+target:inha fold:4 predicted: 916 wrong: 60 pct correct: 0.934497816594, auc: 0.999856938484
+Results for inha: accuracy: 0.986899563319, auc: 0.999971387697
+####################  Results for DUD-E ####################
+inha accuracy: 0.986899563319, auc:0.999971387697
+############################################################
+runtime: 41.75 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 54
+RunningOn slot7@opt-a003.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 54
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ital, fold: 0
+Running logistic regression for target: ital
+target:ital fold:0 predicted: 3118 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ital: accuracy: 1.0, auc: 1.0
+Building data for target: ital, fold: 1
+Running logistic regression for target: ital
+target:ital fold:1 predicted: 3118 wrong: 31 pct correct: 0.990057729314, auc: 0.99998749187
+Results for ital: accuracy: 0.995028864657, auc: 0.999993745935
+Building data for target: ital, fold: 2
+Running logistic regression for target: ital
+target:ital fold:2 predicted: 3118 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ital: accuracy: 0.996685909771, auc: 0.999995830623
+Building data for target: ital, fold: 3
+Running logistic regression for target: ital
+target:ital fold:3 predicted: 3118 wrong: 1 pct correct: 0.999679281591, auc: 1.0
+Results for ital: accuracy: 0.997434252726, auc: 0.999996872967
+Building data for target: ital, fold: 4
+Running logistic regression for target: ital
+target:ital fold:4 predicted: 3208 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ital: accuracy: 0.997947402181, auc: 0.999997498374
+####################  Results for DUD-E ####################
+ital accuracy: 0.997947402181, auc:0.999997498374
+############################################################
+runtime: 156.30 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 55
+RunningOn slot8@opt-a003.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 55
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: jak2, fold: 0
+Running logistic regression for target: jak2
+target:jak2 fold:0 predicted: 2218 wrong: 31 pct correct: 0.986023444545, auc: 0.994056651492
+Results for jak2: accuracy: 0.986023444545, auc: 0.994056651492
+Building data for target: jak2, fold: 1
+Running logistic regression for target: jak2
+target:jak2 fold:1 predicted: 2218 wrong: 62 pct correct: 0.972046889089, auc: 0.998356095094
+Results for jak2: accuracy: 0.979035166817, auc: 0.996206373293
+Building data for target: jak2, fold: 2
+Running logistic regression for target: jak2
+target:jak2 fold:2 predicted: 2218 wrong: 30 pct correct: 0.986474301172, auc: 1.0
+Results for jak2: accuracy: 0.981514878269, auc: 0.997470915529
+Building data for target: jak2, fold: 3
+Running logistic regression for target: jak2
+target:jak2 fold:3 predicted: 2218 wrong: 1 pct correct: 0.999549143372, auc: 1.0
+Results for jak2: accuracy: 0.986023444545, auc: 0.998103186646
+Building data for target: jak2, fold: 4
+Running logistic regression for target: jak2
+target:jak2 fold:4 predicted: 2308 wrong: 31 pct correct: 0.986568457539, auc: 0.99977008323
+Results for jak2: accuracy: 0.986132447144, auc: 0.998436565963
+####################  Results for DUD-E ####################
+jak2 accuracy: 0.986132447144, auc:0.998436565963
+############################################################
+runtime: 118.32 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 56
+RunningOn slot9@opt-a003.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 56
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: kif11, fold: 0
+Running logistic regression for target: kif11
+target:kif11 fold:0 predicted: 2552 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for kif11: accuracy: 1.0, auc: 1.0
+Building data for target: kif11, fold: 1
+Running logistic regression for target: kif11
+target:kif11 fold:1 predicted: 2552 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for kif11: accuracy: 1.0, auc: 1.0
+Building data for target: kif11, fold: 2
+Running logistic regression for target: kif11
+target:kif11 fold:2 predicted: 2552 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for kif11: accuracy: 1.0, auc: 1.0
+Building data for target: kif11, fold: 3
+Running logistic regression for target: kif11
+target:kif11 fold:3 predicted: 2552 wrong: 30 pct correct: 0.988244514107, auc: 0.999981446436
+Results for kif11: accuracy: 0.997061128527, auc: 0.999995361609
+Building data for target: kif11, fold: 4
+Running logistic regression for target: kif11
+target:kif11 fold:4 predicted: 2613 wrong: 150 pct correct: 0.942594718714, auc: 0.955011198702
+Results for kif11: accuracy: 0.986167846564, auc: 0.990998529028
+####################  Results for DUD-E ####################
+kif11 accuracy: 0.986167846564, auc:0.990998529028
+############################################################
+runtime: 127.42 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 57
+RunningOn slot10@opt-a003.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 57
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: kit, fold: 0
+Running logistic regression for target: kit
+target:kit fold:0 predicted: 3621 wrong: 60 pct correct: 0.983429991715, auc: 0.999085337105
+Results for kit: accuracy: 0.983429991715, auc: 0.999085337105
+Building data for target: kit, fold: 1
+Running logistic regression for target: kit
+target:kit fold:1 predicted: 3621 wrong: 33 pct correct: 0.990886495443, auc: 0.999858557284
+Results for kit: accuracy: 0.987158243579, auc: 0.999471947195
+Building data for target: kit, fold: 2
+Running logistic regression for target: kit
+target:kit fold:2 predicted: 3621 wrong: 122 pct correct: 0.96630764982, auc: 0.99399339934
+Results for kit: accuracy: 0.98020804566, auc: 0.997645764576
+Building data for target: kit, fold: 3
+Running logistic regression for target: kit
+target:kit fold:3 predicted: 3621 wrong: 36 pct correct: 0.990057995029, auc: 0.99984912777
+Results for kit: accuracy: 0.982670533002, auc: 0.998196605375
+Building data for target: kit, fold: 4
+Running logistic regression for target: kit
+target:kit fold:4 predicted: 3685 wrong: 180 pct correct: 0.951153324288, auc: 0.985846153846
+Results for kit: accuracy: 0.976367091259, auc: 0.995726515069
+####################  Results for DUD-E ####################
+kit accuracy: 0.976367091259, auc:0.995726515069
+############################################################
+runtime: 186.73 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 58
+RunningOn slot13@opt-a003.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 58
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: kith, fold: 0
+Running logistic regression for target: kith
+target:kith fold:0 predicted: 1145 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for kith: accuracy: 1.0, auc: 1.0
+Building data for target: kith, fold: 1
+Running logistic regression for target: kith
+target:kith fold:1 predicted: 1145 wrong: 22 pct correct: 0.980786026201, auc: 1.0
+Results for kith: accuracy: 0.9903930131, auc: 1.0
+Building data for target: kith, fold: 2
+Running logistic regression for target: kith
+target:kith fold:2 predicted: 1145 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for kith: accuracy: 0.993595342067, auc: 1.0
+Building data for target: kith, fold: 3
+Running logistic regression for target: kith
+target:kith fold:3 predicted: 1145 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for kith: accuracy: 0.99519650655, auc: 1.0
+Building data for target: kith, fold: 4
+Running logistic regression for target: kith
+target:kith fold:4 predicted: 1134 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for kith: accuracy: 0.99615720524, auc: 1.0
+####################  Results for DUD-E ####################
+kith accuracy: 0.99615720524, auc:1.0
+############################################################
+runtime: 74.73 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 59
+RunningOn slot14@opt-a003.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 59
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: kpcb, fold: 0
+Running logistic regression for target: kpcb
+target:kpcb fold:0 predicted: 3238 wrong: 150 pct correct: 0.953675108091, auc: 0.990580847724
+Results for kpcb: accuracy: 0.953675108091, auc: 0.990580847724
+Building data for target: kpcb, fold: 1
+Running logistic regression for target: kpcb
+target:kpcb fold:1 predicted: 3238 wrong: 31 pct correct: 0.990426189006, auc: 0.999930741527
+Results for kpcb: accuracy: 0.972050648548, auc: 0.995255794626
+Building data for target: kpcb, fold: 2
+Running logistic regression for target: kpcb
+target:kpcb fold:2 predicted: 3238 wrong: 151 pct correct: 0.953366275479, auc: 0.997518238064
+Results for kpcb: accuracy: 0.965822524192, auc: 0.996009942439
+Building data for target: kpcb, fold: 3
+Running logistic regression for target: kpcb
+target:kpcb fold:3 predicted: 3238 wrong: 91 pct correct: 0.971896232242, auc: 0.991065657032
+Results for kpcb: accuracy: 0.967340951204, auc: 0.994773871087
+Building data for target: kpcb, fold: 4
+Running logistic regression for target: kpcb
+target:kpcb fold:4 predicted: 3331 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for kpcb: accuracy: 0.973872760964, auc: 0.99581909687
+####################  Results for DUD-E ####################
+kpcb accuracy: 0.973872760964, auc:0.99581909687
+############################################################
+runtime: 137.61 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 6
+RunningOn slot6@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 6
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: adrb1, fold: 0
+Running logistic regression for target: adrb1
+target:adrb1 fold:0 predicted: 5921 wrong: 30 pct correct: 0.994933288296, auc: 0.999845031183
+Results for adrb1: accuracy: 0.994933288296, auc: 0.999845031183
+Building data for target: adrb1, fold: 1
+Running logistic regression for target: adrb1
+target:adrb1 fold:1 predicted: 5921 wrong: 33 pct correct: 0.994426617125, auc: 0.999989668746
+Results for adrb1: accuracy: 0.994679952711, auc: 0.999917349964
+Building data for target: adrb1, fold: 2
+Running logistic regression for target: adrb1
+target:adrb1 fold:2 predicted: 5921 wrong: 121 pct correct: 0.979564262793, auc: 0.999108068365
+Results for adrb1: accuracy: 0.989641389405, auc: 0.999647589431
+Building data for target: adrb1, fold: 3
+Running logistic regression for target: adrb1
+target:adrb1 fold:3 predicted: 5921 wrong: 34 pct correct: 0.994257726735, auc: 0.999934568722
+Results for adrb1: accuracy: 0.990795473738, auc: 0.999719334254
+Building data for target: adrb1, fold: 4
+Running logistic regression for target: adrb1
+target:adrb1 fold:4 predicted: 6014 wrong: 60 pct correct: 0.990023279016, auc: 0.999806818636
+Results for adrb1: accuracy: 0.990641034793, auc: 0.99973683113
+####################  Results for DUD-E ####################
+adrb1 accuracy: 0.990641034793, auc:0.99973683113
+############################################################
+runtime: 116.28 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 60
+RunningOn slot1@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 60
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: lck, fold: 0
+Running logistic regression for target: lck
+target:lck fold:0 predicted: 9651 wrong: 189 pct correct: 0.980416537146, auc: 0.999483934662
+Results for lck: accuracy: 0.980416537146, auc: 0.999483934662
+Building data for target: lck, fold: 1
+Running logistic regression for target: lck
+target:lck fold:1 predicted: 9651 wrong: 128 pct correct: 0.986737125686, auc: 0.996520848512
+Results for lck: accuracy: 0.983576831416, auc: 0.998002391587
+Building data for target: lck, fold: 2
+Running logistic regression for target: lck
+target:lck fold:2 predicted: 9651 wrong: 131 pct correct: 0.98642627707, auc: 0.999516931167
+Results for lck: accuracy: 0.984526646634, auc: 0.998507238113
+Building data for target: lck, fold: 3
+Running logistic regression for target: lck
+target:lck fold:3 predicted: 9651 wrong: 248 pct correct: 0.974303181018, auc: 0.998911115335
+Results for lck: accuracy: 0.98197078023, auc: 0.998608207419
+Building data for target: lck, fold: 4
+Running logistic regression for target: lck
+target:lck fold:4 predicted: 9742 wrong: 187 pct correct: 0.980804762882, auc: 0.999550682498
+Results for lck: accuracy: 0.98173757676, auc: 0.998796702434
+####################  Results for DUD-E ####################
+lck accuracy: 0.98173757676, auc:0.998796702434
+############################################################
+runtime: 386.64 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 61
+RunningOn slot2@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 61
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: lkha4, fold: 0
+Running logistic regression for target: lkha4
+target:lkha4 fold:0 predicted: 3335 wrong: 30 pct correct: 0.991004497751, auc: 0.999934036939
+Results for lkha4: accuracy: 0.991004497751, auc: 0.999934036939
+Building data for target: lkha4, fold: 1
+Running logistic regression for target: lkha4
+target:lkha4 fold:1 predicted: 3335 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for lkha4: accuracy: 0.995502248876, auc: 0.99996701847
+Building data for target: lkha4, fold: 2
+Running logistic regression for target: lkha4
+target:lkha4 fold:2 predicted: 3335 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for lkha4: accuracy: 0.99700149925, auc: 0.999978012313
+Building data for target: lkha4, fold: 3
+Running logistic regression for target: lkha4
+target:lkha4 fold:3 predicted: 3335 wrong: 30 pct correct: 0.991004497751, auc: 0.999945030783
+Results for lkha4: accuracy: 0.995502248876, auc: 0.999969766931
+Building data for target: lkha4, fold: 4
+Running logistic regression for target: lkha4
+target:lkha4 fold:4 predicted: 3457 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for lkha4: accuracy: 0.9964017991, auc: 0.999975813544
+####################  Results for DUD-E ####################
+lkha4 accuracy: 0.9964017991, auc:0.999975813544
+############################################################
+runtime: 132.47 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 62
+RunningOn slot3@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 62
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: mapk2, fold: 0
+Running logistic regression for target: mapk2
+target:mapk2 fold:0 predicted: 2478 wrong: 30 pct correct: 0.98789346247, auc: 1.0
+Results for mapk2: accuracy: 0.98789346247, auc: 1.0
+Building data for target: mapk2, fold: 1
+Running logistic regression for target: mapk2
+target:mapk2 fold:1 predicted: 2478 wrong: 30 pct correct: 0.98789346247, auc: 0.993687460913
+Results for mapk2: accuracy: 0.98789346247, auc: 0.996843730457
+Building data for target: mapk2, fold: 2
+Running logistic regression for target: mapk2
+target:mapk2 fold:2 predicted: 2478 wrong: 30 pct correct: 0.98789346247, auc: 0.999941369606
+Results for mapk2: accuracy: 0.98789346247, auc: 0.99787627684
+Building data for target: mapk2, fold: 3
+Running logistic regression for target: mapk2
+target:mapk2 fold:3 predicted: 2478 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for mapk2: accuracy: 0.990920096852, auc: 0.99840720763
+Building data for target: mapk2, fold: 4
+Running logistic regression for target: mapk2
+target:mapk2 fold:4 predicted: 2470 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for mapk2: accuracy: 0.992736077482, auc: 0.998725766104
+####################  Results for DUD-E ####################
+mapk2 accuracy: 0.992736077482, auc:0.998725766104
+############################################################
+runtime: 99.58 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 63
+RunningOn slot5@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 63
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: mcr, fold: 0
+Running logistic regression for target: mcr
+target:mcr fold:0 predicted: 2074 wrong: 27 pct correct: 0.986981677917, auc: 0.999974889514
+Results for mcr: accuracy: 0.986981677917, auc: 0.999974889514
+Building data for target: mcr, fold: 1
+Running logistic regression for target: mcr
+target:mcr fold:1 predicted: 2074 wrong: 1 pct correct: 0.999517839923, auc: 1.0
+Results for mcr: accuracy: 0.99324975892, auc: 0.999987444757
+Building data for target: mcr, fold: 2
+Running logistic regression for target: mcr
+target:mcr fold:2 predicted: 2074 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for mcr: accuracy: 0.99549983928, auc: 0.999991629838
+Building data for target: mcr, fold: 3
+Running logistic regression for target: mcr
+target:mcr fold:3 predicted: 2074 wrong: 28 pct correct: 0.98649951784, auc: 0.999824226597
+Results for mcr: accuracy: 0.99324975892, auc: 0.999949779028
+Building data for target: mcr, fold: 4
+Running logistic regression for target: mcr
+target:mcr fold:4 predicted: 2073 wrong: 50 pct correct: 0.975880366618, auc: 0.9999301806
+Results for mcr: accuracy: 0.98977588046, auc: 0.999945859342
+####################  Results for DUD-E ####################
+mcr accuracy: 0.98977588046, auc:0.999945859342
+############################################################
+runtime: 86.20 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 64
+RunningOn slot8@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 64
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: met, fold: 0
+Running logistic regression for target: met
+target:met fold:0 predicted: 3726 wrong: 30 pct correct: 0.991948470209, auc: 1.0
+Results for met: accuracy: 0.991948470209, auc: 1.0
+Building data for target: met, fold: 1
+Running logistic regression for target: met
+target:met fold:1 predicted: 3726 wrong: 5 pct correct: 0.998658078368, auc: 0.999972659668
+Results for met: accuracy: 0.995303274289, auc: 0.999986329834
+Building data for target: met, fold: 2
+Running logistic regression for target: met
+target:met fold:2 predicted: 3726 wrong: 60 pct correct: 0.983896940419, auc: 0.999544327792
+Results for met: accuracy: 0.991501162999, auc: 0.99983899582
+Building data for target: met, fold: 3
+Running logistic regression for target: met
+target:met fold:3 predicted: 3726 wrong: 61 pct correct: 0.983628556092, auc: 0.999662802566
+Results for met: accuracy: 0.989533011272, auc: 0.999794947507
+Building data for target: met, fold: 4
+Running logistic regression for target: met
+target:met fold:4 predicted: 3848 wrong: 30 pct correct: 0.992203742204, auc: 0.999983189887
+Results for met: accuracy: 0.990067157458, auc: 0.999832595983
+####################  Results for DUD-E ####################
+met accuracy: 0.990067157458, auc:0.999832595983
+############################################################
+runtime: 150.83 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 65
+RunningOn slot9@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 65
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: mk01, fold: 0
+Running logistic regression for target: mk01
+target:mk01 fold:0 predicted: 1735 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for mk01: accuracy: 1.0, auc: 1.0
+Building data for target: mk01, fold: 1
+Running logistic regression for target: mk01
+target:mk01 fold:1 predicted: 1735 wrong: 31 pct correct: 0.982132564841, auc: 0.99975975976
+Results for mk01: accuracy: 0.991066282421, auc: 0.99987987988
+Building data for target: mk01, fold: 2
+Running logistic regression for target: mk01
+target:mk01 fold:2 predicted: 1735 wrong: 30 pct correct: 0.982708933718, auc: 0.991151151151
+Results for mk01: accuracy: 0.98828049952, auc: 0.996970303637
+Building data for target: mk01, fold: 3
+Running logistic regression for target: mk01
+target:mk01 fold:3 predicted: 1735 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for mk01: accuracy: 0.99121037464, auc: 0.997727727728
+Building data for target: mk01, fold: 4
+Running logistic regression for target: mk01
+target:mk01 fold:4 predicted: 1827 wrong: 87 pct correct: 0.952380952381, auc: 1.0
+Results for mk01: accuracy: 0.983444490188, auc: 0.998182182182
+####################  Results for DUD-E ####################
+mk01 accuracy: 0.983444490188, auc:0.998182182182
+############################################################
+runtime: 76.99 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 66
+RunningOn slot11@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 66
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: mk10, fold: 0
+Running logistic regression for target: mk10
+target:mk10 fold:0 predicted: 2452 wrong: 120 pct correct: 0.951060358891, auc: 0.999073589238
+Results for mk10: accuracy: 0.951060358891, auc: 0.999073589238
+Building data for target: mk10, fold: 1
+Running logistic regression for target: mk10
+target:mk10 fold:1 predicted: 2452 wrong: 122 pct correct: 0.950244698206, auc: 0.950195351835
+Results for mk10: accuracy: 0.950652528548, auc: 0.974634470536
+Building data for target: mk10, fold: 2
+Running logistic regression for target: mk10
+target:mk10 fold:2 predicted: 2452 wrong: 91 pct correct: 0.962887438825, auc: 0.994401256696
+Results for mk10: accuracy: 0.954730831974, auc: 0.981223399256
+Building data for target: mk10, fold: 3
+Running logistic regression for target: mk10
+target:mk10 fold:3 predicted: 2452 wrong: 121 pct correct: 0.950652528548, auc: 0.986023281105
+Results for mk10: accuracy: 0.953711256117, auc: 0.982423369718
+Building data for target: mk10, fold: 4
+Running logistic regression for target: mk10
+target:mk10 fold:4 predicted: 2486 wrong: 91 pct correct: 0.963395012068, auc: 0.983029639478
+Results for mk10: accuracy: 0.955648007307, auc: 0.98254462367
+####################  Results for DUD-E ####################
+mk10 accuracy: 0.955648007307, auc:0.98254462367
+############################################################
+runtime: 102.15 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 67
+RunningOn slot12@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 67
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: mk14, fold: 0
+Running logistic regression for target: mk14
+target:mk14 fold:0 predicted: 12776 wrong: 37 pct correct: 0.997103944897, auc: 0.999976000084
+Results for mk14: accuracy: 0.997103944897, auc: 0.999976000084
+Building data for target: mk14, fold: 1
+Running logistic regression for target: mk14
+target:mk14 fold:1 predicted: 12776 wrong: 129 pct correct: 0.989902943018, auc: 0.999290502483
+Results for mk14: accuracy: 0.993503443957, auc: 0.999633251284
+Building data for target: mk14, fold: 2
+Running logistic regression for target: mk14
+target:mk14 fold:2 predicted: 12776 wrong: 39 pct correct: 0.996947401378, auc: 0.99968275111
+Results for mk14: accuracy: 0.994651429764, auc: 0.999649751226
+Building data for target: mk14, fold: 3
+Running logistic regression for target: mk14
+target:mk14 fold:3 predicted: 12776 wrong: 71 pct correct: 0.994442705072, auc: 0.999952000168
+Results for mk14: accuracy: 0.994599248591, auc: 0.999725313461
+Building data for target: mk14, fold: 4
+Running logistic regression for target: mk14
+target:mk14 fold:4 predicted: 12778 wrong: 131 pct correct: 0.989748004383, auc: 0.997468328805
+Results for mk14: accuracy: 0.993628999749, auc: 0.99927391653
+####################  Results for DUD-E ####################
+mk14 accuracy: 0.993628999749, auc:0.99927391653
+############################################################
+runtime: 538.65 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 68
+RunningOn slot13@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 68
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: mmp13, fold: 0
+Running logistic regression for target: mmp13
+target:mmp13 fold:0 predicted: 13811 wrong: 32 pct correct: 0.997683006299, auc: 0.999971399644
+Results for mmp13: accuracy: 0.997683006299, auc: 0.999971399644
+Building data for target: mmp13, fold: 1
+Running logistic regression for target: mmp13
+target:mmp13 fold:1 predicted: 13811 wrong: 211 pct correct: 0.984722322786, auc: 0.999792806311
+Results for mmp13: accuracy: 0.991202664543, auc: 0.999882102978
+Building data for target: mmp13, fold: 2
+Running logistic regression for target: mmp13
+target:mmp13 fold:2 predicted: 13811 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for mmp13: accuracy: 0.994135109695, auc: 0.999921401985
+Building data for target: mmp13, fold: 3
+Running logistic regression for target: mmp13
+target:mmp13 fold:3 predicted: 13811 wrong: 4 pct correct: 0.999710375787, auc: 0.999996822183
+Results for mmp13: accuracy: 0.995528926218, auc: 0.999940257035
+Building data for target: mmp13, fold: 4
+Running logistic regression for target: mmp13
+target:mmp13 fold:4 predicted: 13904 wrong: 34 pct correct: 0.997554660529, auc: 0.999682497933
+Results for mmp13: accuracy: 0.99593407308, auc: 0.999888705214
+####################  Results for DUD-E ####################
+mmp13 accuracy: 0.99593407308, auc:0.999888705214
+############################################################
+runtime: 567.97 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 69
+RunningOn slot17@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 69
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: mp2k1, fold: 0
+Running logistic regression for target: mp2k1
+target:mp2k1 fold:0 predicted: 3088 wrong: 2 pct correct: 0.999352331606, auc: 1.0
+Results for mp2k1: accuracy: 0.999352331606, auc: 1.0
+Building data for target: mp2k1, fold: 1
+Running logistic regression for target: mp2k1
+target:mp2k1 fold:1 predicted: 3088 wrong: 121 pct correct: 0.960816062176, auc: 0.999898867314
+Results for mp2k1: accuracy: 0.980084196891, auc: 0.999949433657
+Building data for target: mp2k1, fold: 2
+Running logistic regression for target: mp2k1
+target:mp2k1 fold:2 predicted: 3088 wrong: 61 pct correct: 0.98024611399, auc: 0.997067152104
+Results for mp2k1: accuracy: 0.980138169257, auc: 0.998988673139
+Building data for target: mp2k1, fold: 3
+Running logistic regression for target: mp2k1
+target:mp2k1 fold:3 predicted: 3088 wrong: 60 pct correct: 0.980569948187, auc: 0.999620752427
+Results for mp2k1: accuracy: 0.98024611399, auc: 0.999146692961
+Building data for target: mp2k1, fold: 4
+Running logistic regression for target: mp2k1
+target:mp2k1 fold:4 predicted: 3149 wrong: 151 pct correct: 0.952048269292, auc: 0.999684657368
+Results for mp2k1: accuracy: 0.97460654505, auc: 0.999254285843
+####################  Results for DUD-E ####################
+mp2k1 accuracy: 0.97460654505, auc:0.999254285843
+############################################################
+runtime: 127.38 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 7
+RunningOn slot7@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 7
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: adrb2, fold: 0
+Running logistic regression for target: adrb2
+target:adrb2 fold:0 predicted: 5721 wrong: 63 pct correct: 0.988987939171, auc: 0.999296601961
+Results for adrb2: accuracy: 0.988987939171, auc: 0.999296601961
+Building data for target: adrb2, fold: 1
+Running logistic regression for target: adrb2
+target:adrb2 fold:1 predicted: 5721 wrong: 33 pct correct: 0.994231777661, auc: 0.999955807453
+Results for adrb2: accuracy: 0.991609858416, auc: 0.999626204707
+Building data for target: adrb2, fold: 2
+Running logistic regression for target: adrb2
+target:adrb2 fold:2 predicted: 5721 wrong: 2 pct correct: 0.999650410767, auc: 0.999996317288
+Results for adrb2: accuracy: 0.994290042533, auc: 0.999749575567
+Building data for target: adrb2, fold: 3
+Running logistic regression for target: adrb2
+target:adrb2 fold:3 predicted: 5721 wrong: 120 pct correct: 0.979024646041, auc: 0.999473372149
+Results for adrb2: accuracy: 0.99047369341, auc: 0.999680524713
+Building data for target: adrb2, fold: 4
+Running logistic regression for target: adrb2
+target:adrb2 fold:4 predicted: 5781 wrong: 32 pct correct: 0.994464625497, auc: 0.999981991132
+Results for adrb2: accuracy: 0.991271879828, auc: 0.999740817997
+####################  Results for DUD-E ####################
+adrb2 accuracy: 0.991271879828, auc:0.999740817997
+############################################################
+runtime: 112.67 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 70
+RunningOn slot21@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 70
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: nos1, fold: 0
+Running logistic regression for target: nos1
+target:nos1 fold:0 predicted: 2994 wrong: 34 pct correct: 0.988643954576, auc: 0.999272668498
+Results for nos1: accuracy: 0.988643954576, auc: 0.999272668498
+Building data for target: nos1, fold: 1
+Running logistic regression for target: nos1
+target:nos1 fold:1 predicted: 2994 wrong: 31 pct correct: 0.989645958584, auc: 0.999649803351
+Results for nos1: accuracy: 0.98914495658, auc: 0.999461235925
+Building data for target: nos1, fold: 2
+Running logistic regression for target: nos1
+target:nos1 fold:2 predicted: 2994 wrong: 64 pct correct: 0.978623914496, auc: 0.998841657238
+Results for nos1: accuracy: 0.985637942552, auc: 0.999254709696
+Building data for target: nos1, fold: 3
+Running logistic regression for target: nos1
+target:nos1 fold:3 predicted: 2994 wrong: 63 pct correct: 0.978957915832, auc: 0.999609396045
+Results for nos1: accuracy: 0.983967935872, auc: 0.999343381283
+Building data for target: nos1, fold: 4
+Running logistic regression for target: nos1
+target:nos1 fold:4 predicted: 3117 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for nos1: accuracy: 0.987174348697, auc: 0.999474705027
+####################  Results for DUD-E ####################
+nos1 accuracy: 0.987174348697, auc:0.999474705027
+############################################################
+runtime: 121.87 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 71
+RunningOn slot22@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 71
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: nram, fold: 0
+Running logistic regression for target: nram
+target:nram fold:0 predicted: 2477 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for nram: accuracy: 1.0, auc: 1.0
+Building data for target: nram, fold: 1
+Running logistic regression for target: nram
+target:nram fold:1 predicted: 2477 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for nram: accuracy: 1.0, auc: 1.0
+Building data for target: nram, fold: 2
+Running logistic regression for target: nram
+target:nram fold:2 predicted: 2477 wrong: 28 pct correct: 0.98869600323, auc: 0.999799196787
+Results for nram: accuracy: 0.996232001077, auc: 0.999933065596
+Building data for target: nram, fold: 3
+Running logistic regression for target: nram
+target:nram fold:3 predicted: 2477 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for nram: accuracy: 0.997174000807, auc: 0.999949799197
+Building data for target: nram, fold: 4
+Running logistic regression for target: nram
+target:nram fold:4 predicted: 2489 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for nram: accuracy: 0.997739200646, auc: 0.999959839357
+####################  Results for DUD-E ####################
+nram accuracy: 0.997739200646, auc:0.999959839357
+############################################################
+runtime: 103.14 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 72
+RunningOn slot15@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 72
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pa2ga, fold: 0
+Running logistic regression for target: pa2ga
+target:pa2ga fold:0 predicted: 1792 wrong: 31 pct correct: 0.982700892857, auc: 0.999884836852
+Results for pa2ga: accuracy: 0.982700892857, auc: 0.999884836852
+Building data for target: pa2ga, fold: 1
+Running logistic regression for target: pa2ga
+target:pa2ga fold:1 predicted: 1792 wrong: 1 pct correct: 0.999441964286, auc: 1.0
+Results for pa2ga: accuracy: 0.991071428571, auc: 0.999942418426
+Building data for target: pa2ga, fold: 2
+Running logistic regression for target: pa2ga
+target:pa2ga fold:2 predicted: 1792 wrong: 30 pct correct: 0.983258928571, auc: 0.997696737044
+Results for pa2ga: accuracy: 0.988467261905, auc: 0.999193857965
+Building data for target: pa2ga, fold: 3
+Running logistic regression for target: pa2ga
+target:pa2ga fold:3 predicted: 1792 wrong: 31 pct correct: 0.982700892857, auc: 0.996545105566
+Results for pa2ga: accuracy: 0.987025669643, auc: 0.998531669866
+Building data for target: pa2ga, fold: 4
+Running logistic regression for target: pa2ga
+target:pa2ga fold:4 predicted: 1856 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pa2ga: accuracy: 0.989620535714, auc: 0.998825335893
+####################  Results for DUD-E ####################
+pa2ga accuracy: 0.989620535714, auc:0.998825335893
+############################################################
+runtime: 63.70 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 73
+RunningOn slot16@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 73
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: parp1, fold: 0
+Running logistic regression for target: parp1
+target:parp1 fold:0 predicted: 10525 wrong: 69 pct correct: 0.993444180523, auc: 0.999954473784
+Results for parp1: accuracy: 0.993444180523, auc: 0.999954473784
+Building data for target: parp1, fold: 1
+Running logistic regression for target: parp1
+target:parp1 fold:1 predicted: 10525 wrong: 63 pct correct: 0.994014251781, auc: 0.999918941127
+Results for parp1: accuracy: 0.993729216152, auc: 0.999936707455
+Building data for target: parp1, fold: 2
+Running logistic regression for target: parp1
+target:parp1 fold:2 predicted: 10525 wrong: 93 pct correct: 0.991163895487, auc: 0.999920051522
+Results for parp1: accuracy: 0.992874109264, auc: 0.999931155478
+Building data for target: parp1, fold: 3
+Running logistic regression for target: parp1
+target:parp1 fold:3 predicted: 10525 wrong: 36 pct correct: 0.996579572447, auc: 0.999963356948
+Results for parp1: accuracy: 0.993800475059, auc: 0.999939205845
+Building data for target: parp1, fold: 4
+Running logistic regression for target: parp1
+target:parp1 fold:4 predicted: 10587 wrong: 3 pct correct: 0.999716633607, auc: 0.99999890477
+Results for parp1: accuracy: 0.994983706769, auc: 0.99995114563
+####################  Results for DUD-E ####################
+parp1 accuracy: 0.994983706769, auc:0.99995114563
+############################################################
+runtime: 258.01 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 74
+RunningOn slot17@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 74
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pde5a, fold: 0
+Running logistic regression for target: pde5a
+target:pde5a fold:0 predicted: 9794 wrong: 2 pct correct: 0.999795793343, auc: 0.999994901367
+Results for pde5a: accuracy: 0.999795793343, auc: 0.999994901367
+Building data for target: pde5a, fold: 1
+Running logistic regression for target: pde5a
+target:pde5a fold:1 predicted: 9794 wrong: 154 pct correct: 0.9842760874, auc: 0.999347374969
+Results for pde5a: accuracy: 0.992035940372, auc: 0.999671138168
+Building data for target: pde5a, fold: 2
+Running logistic regression for target: pde5a
+target:pde5a fold:2 predicted: 9794 wrong: 65 pct correct: 0.993363283643, auc: 0.999945189695
+Results for pde5a: accuracy: 0.992478388129, auc: 0.999762488677
+Building data for target: pde5a, fold: 3
+Running logistic regression for target: pde5a
+target:pde5a fold:3 predicted: 9794 wrong: 64 pct correct: 0.993465386972, auc: 0.999895478022
+Results for pde5a: accuracy: 0.992725137839, auc: 0.999795736013
+Building data for target: pde5a, fold: 4
+Running logistic regression for target: pde5a
+target:pde5a fold:4 predicted: 9828 wrong: 62 pct correct: 0.993691493691, auc: 0.997163747572
+Results for pde5a: accuracy: 0.99291840901, auc: 0.999269338325
+####################  Results for DUD-E ####################
+pde5a accuracy: 0.99291840901, auc:0.999269338325
+############################################################
+runtime: 231.30 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 75
+RunningOn slot18@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 75
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pgh1, fold: 0
+Running logistic regression for target: pgh1
+target:pgh1 fold:0 predicted: 3688 wrong: 283 pct correct: 0.923264642082, auc: 0.993491773309
+Results for pgh1: accuracy: 0.923264642082, auc: 0.993491773309
+Building data for target: pgh1, fold: 1
+Running logistic regression for target: pgh1
+target:pgh1 fold:1 predicted: 3688 wrong: 254 pct correct: 0.931127982646, auc: 0.992833638026
+Results for pgh1: accuracy: 0.927196312364, auc: 0.993162705667
+Building data for target: pgh1, fold: 2
+Running logistic regression for target: pgh1
+target:pgh1 fold:2 predicted: 3688 wrong: 167 pct correct: 0.954718004338, auc: 0.987431444241
+Results for pgh1: accuracy: 0.936370209689, auc: 0.991252285192
+Building data for target: pgh1, fold: 3
+Running logistic regression for target: pgh1
+target:pgh1 fold:3 predicted: 3688 wrong: 199 pct correct: 0.946041214751, auc: 0.992623400366
+Results for pgh1: accuracy: 0.938787960954, auc: 0.991595063985
+Building data for target: pgh1, fold: 4
+Running logistic regression for target: pgh1
+target:pgh1 fold:4 predicted: 3720 wrong: 341 pct correct: 0.908333333333, auc: 0.962574984332
+Results for pgh1: accuracy: 0.93269703543, auc: 0.985791048055
+####################  Results for DUD-E ####################
+pgh1 accuracy: 0.93269703543, auc:0.985791048055
+############################################################
+runtime: 97.72 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 76
+RunningOn slot19@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 76
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pgh2, fold: 0
+Running logistic regression for target: pgh2
+target:pgh2 fold:0 predicted: 7861 wrong: 310 pct correct: 0.960564813637, auc: 0.982628490123
+Results for pgh2: accuracy: 0.960564813637, auc: 0.982628490123
+Building data for target: pgh2, fold: 1
+Running logistic regression for target: pgh2
+target:pgh2 fold:1 predicted: 7861 wrong: 198 pct correct: 0.974812364839, auc: 0.996741141427
+Results for pgh2: accuracy: 0.967688589238, auc: 0.989684815775
+Building data for target: pgh2, fold: 2
+Running logistic regression for target: pgh2
+target:pgh2 fold:2 predicted: 7861 wrong: 113 pct correct: 0.985625238519, auc: 0.998986267247
+Results for pgh2: accuracy: 0.973667472332, auc: 0.992785299599
+Building data for target: pgh2, fold: 3
+Running logistic regression for target: pgh2
+target:pgh2 fold:3 predicted: 7861 wrong: 375 pct correct: 0.952296145529, auc: 0.992250889787
+Results for pgh2: accuracy: 0.968324640631, auc: 0.992651697146
+Building data for target: pgh2, fold: 4
+Running logistic regression for target: pgh2
+target:pgh2 fold:4 predicted: 7891 wrong: 162 pct correct: 0.9794702826, auc: 0.999257287863
+Results for pgh2: accuracy: 0.970553769025, auc: 0.993972815289
+####################  Results for DUD-E ####################
+pgh2 accuracy: 0.970553769025, auc:0.993972815289
+############################################################
+runtime: 184.52 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 77
+RunningOn slot4@opt-a005.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 77
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: plk1, fold: 0
+Running logistic regression for target: plk1
+target:plk1 fold:0 predicted: 2305 wrong: 91 pct correct: 0.960520607375, auc: 0.978674486804
+Results for plk1: accuracy: 0.960520607375, auc: 0.978674486804
+Building data for target: plk1, fold: 1
+Running logistic regression for target: plk1
+target:plk1 fold:1 predicted: 2305 wrong: 30 pct correct: 0.986984815618, auc: 0.999953079179
+Results for plk1: accuracy: 0.973752711497, auc: 0.989313782991
+Building data for target: plk1, fold: 2
+Running logistic regression for target: plk1
+target:plk1 fold:2 predicted: 2305 wrong: 92 pct correct: 0.960086767896, auc: 0.943835777126
+Results for plk1: accuracy: 0.969197396963, auc: 0.974154447703
+Building data for target: plk1, fold: 3
+Running logistic regression for target: plk1
+target:plk1 fold:3 predicted: 2305 wrong: 1 pct correct: 0.999566160521, auc: 0.999929618768
+Results for plk1: accuracy: 0.976789587852, auc: 0.980598240469
+Building data for target: plk1, fold: 4
+Running logistic regression for target: plk1
+target:plk1 fold:4 predicted: 2309 wrong: 60 pct correct: 0.974014724989, auc: 0.999695899319
+Results for plk1: accuracy: 0.97623461528, auc: 0.984417772239
+####################  Results for DUD-E ####################
+plk1 accuracy: 0.97623461528, auc:0.984417772239
+############################################################
+runtime: 48.46 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 78
+RunningOn slot6@opt-a006.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 78
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pnph, fold: 0
+Running logistic regression for target: pnph
+target:pnph fold:0 predicted: 2783 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pnph: accuracy: 1.0, auc: 1.0
+Building data for target: pnph, fold: 1
+Running logistic regression for target: pnph
+target:pnph fold:1 predicted: 2783 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pnph: accuracy: 1.0, auc: 1.0
+Building data for target: pnph, fold: 2
+Running logistic regression for target: pnph
+target:pnph fold:2 predicted: 2783 wrong: 1 pct correct: 0.99964067553, auc: 1.0
+Results for pnph: accuracy: 0.999880225177, auc: 1.0
+Building data for target: pnph, fold: 3
+Running logistic regression for target: pnph
+target:pnph fold:3 predicted: 2783 wrong: 1 pct correct: 0.99964067553, auc: 1.0
+Results for pnph: accuracy: 0.999820337765, auc: 1.0
+Building data for target: pnph, fold: 4
+Running logistic regression for target: pnph
+target:pnph fold:4 predicted: 2776 wrong: 1 pct correct: 0.999639769452, auc: 1.0
+Results for pnph: accuracy: 0.999784224102, auc: 1.0
+####################  Results for DUD-E ####################
+pnph accuracy: 0.999784224102, auc:1.0
+############################################################
+runtime: 83.05 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 79
+RunningOn slot4@opt-a007.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 79
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ppara, fold: 0
+Running logistic regression for target: ppara
+target:ppara fold:0 predicted: 7206 wrong: 33 pct correct: 0.995420482931, auc: 0.999505052203
+Results for ppara: accuracy: 0.995420482931, auc: 0.999505052203
+Building data for target: ppara, fold: 1
+Running logistic regression for target: ppara
+target:ppara fold:1 predicted: 7206 wrong: 65 pct correct: 0.990979739106, auc: 0.995080872602
+Results for ppara: accuracy: 0.993200111019, auc: 0.997292962403
+Building data for target: ppara, fold: 2
+Running logistic regression for target: ppara
+target:ppara fold:2 predicted: 7206 wrong: 91 pct correct: 0.987371634749, auc: 0.997915149138
+Results for ppara: accuracy: 0.991257285595, auc: 0.997500357981
+Building data for target: ppara, fold: 3
+Running logistic regression for target: ppara
+target:ppara fold:3 predicted: 7206 wrong: 31 pct correct: 0.99569802942, auc: 0.999995330681
+Results for ppara: accuracy: 0.992367471551, auc: 0.998124101156
+Building data for target: ppara, fold: 4
+Running logistic regression for target: ppara
+target:ppara fold:4 predicted: 7327 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ppara: accuracy: 0.993893977241, auc: 0.998499280925
+####################  Results for DUD-E ####################
+ppara accuracy: 0.993893977241, auc:0.998499280925
+############################################################
+runtime: 156.95 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 8
+RunningOn slot8@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 8
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: akt1, fold: 0
+Running logistic regression for target: akt1
+target:akt1 fold:0 predicted: 5835 wrong: 62 pct correct: 0.989374464439, auc: 0.999762982116
+Results for akt1: accuracy: 0.989374464439, auc: 0.999762982116
+Building data for target: akt1, fold: 1
+Running logistic regression for target: akt1
+target:akt1 fold:1 predicted: 5835 wrong: 32 pct correct: 0.994515852614, auc: 0.998290598291
+Results for akt1: accuracy: 0.991945158526, auc: 0.999026790203
+Building data for target: akt1, fold: 2
+Running logistic regression for target: akt1
+target:akt1 fold:2 predicted: 5835 wrong: 30 pct correct: 0.994858611825, auc: 0.99999281764
+Results for akt1: accuracy: 0.992916309626, auc: 0.999348799349
+Building data for target: akt1, fold: 3
+Running logistic regression for target: akt1
+target:akt1 fold:3 predicted: 5835 wrong: 33 pct correct: 0.994344473008, auc: 0.999798893917
+Results for akt1: accuracy: 0.993273350471, auc: 0.999461322991
+Building data for target: akt1, fold: 4
+Running logistic regression for target: akt1
+target:akt1 fold:4 predicted: 5925 wrong: 120 pct correct: 0.979746835443, auc: 0.998633865571
+Results for akt1: accuracy: 0.990568047466, auc: 0.999295831507
+####################  Results for DUD-E ####################
+akt1 accuracy: 0.990568047466, auc:0.999295831507
+############################################################
+runtime: 113.21 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 80
+RunningOn slot4@opt-a008.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 80
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ppard, fold: 0
+Running logistic regression for target: ppard
+target:ppard fold:0 predicted: 4356 wrong: 60 pct correct: 0.986225895317, auc: 0.984332524433
+Results for ppard: accuracy: 0.986225895317, auc: 0.984332524433
+Building data for target: ppard, fold: 1
+Running logistic regression for target: ppard
+target:ppard fold:1 predicted: 4356 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ppard: accuracy: 0.993112947658, auc: 0.992166262216
+Building data for target: ppard, fold: 2
+Running logistic regression for target: ppard
+target:ppard fold:2 predicted: 4356 wrong: 121 pct correct: 0.972222222222, auc: 0.993986288473
+Results for ppard: accuracy: 0.986149372513, auc: 0.992772937635
+Building data for target: ppard, fold: 3
+Running logistic regression for target: ppard
+target:ppard fold:3 predicted: 4356 wrong: 60 pct correct: 0.986225895317, auc: 0.998322525891
+Results for ppard: accuracy: 0.986168503214, auc: 0.994160334699
+Building data for target: ppard, fold: 4
+Running logistic regression for target: ppard
+target:ppard fold:4 predicted: 4448 wrong: 30 pct correct: 0.993255395683, auc: 1.0
+Results for ppard: accuracy: 0.987585881708, auc: 0.995328267759
+####################  Results for DUD-E ####################
+ppard accuracy: 0.987585881708, auc:0.995328267759
+############################################################
+runtime: 185.27 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 81
+RunningOn slot1@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 81
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pparg, fold: 0
+Running logistic regression for target: pparg
+target:pparg fold:0 predicted: 9493 wrong: 308 pct correct: 0.967555040556, auc: 0.986968930558
+Results for pparg: accuracy: 0.967555040556, auc: 0.986968930558
+Building data for target: pparg, fold: 1
+Running logistic regression for target: pparg
+target:pparg fold:1 predicted: 9493 wrong: 123 pct correct: 0.987043084378, auc: 0.996992262173
+Results for pparg: accuracy: 0.977299062467, auc: 0.991980596366
+Building data for target: pparg, fold: 2
+Running logistic regression for target: pparg
+target:pparg fold:2 predicted: 9493 wrong: 123 pct correct: 0.987043084378, auc: 0.99982145542
+Results for pparg: accuracy: 0.980547069771, auc: 0.994594216051
+Building data for target: pparg, fold: 3
+Running logistic regression for target: pparg
+target:pparg fold:3 predicted: 9493 wrong: 162 pct correct: 0.982934794059, auc: 0.999500612153
+Results for pparg: accuracy: 0.981144000843, auc: 0.995820815076
+Building data for target: pparg, fold: 4
+Running logistic regression for target: pparg
+target:pparg fold:4 predicted: 9584 wrong: 7 pct correct: 0.999269616027, auc: 0.999988166894
+Results for pparg: accuracy: 0.98476912388, auc: 0.99665428544
+####################  Results for DUD-E ####################
+pparg accuracy: 0.98476912388, auc:0.99665428544
+############################################################
+runtime: 203.72 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 82
+RunningOn slot2@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 82
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: prgr, fold: 0
+Running logistic regression for target: prgr
+target:prgr fold:0 predicted: 5802 wrong: 97 pct correct: 0.983281627025, auc: 0.999769995975
+Results for prgr: accuracy: 0.983281627025, auc: 0.999769995975
+Building data for target: prgr, fold: 1
+Running logistic regression for target: prgr
+target:prgr fold:1 predicted: 5802 wrong: 94 pct correct: 0.983798690107, auc: 0.999823903168
+Results for prgr: accuracy: 0.983540158566, auc: 0.999796949572
+Building data for target: prgr, fold: 2
+Running logistic regression for target: prgr
+target:prgr fold:2 predicted: 5802 wrong: 124 pct correct: 0.97862805929, auc: 0.999349519867
+Results for prgr: accuracy: 0.981902792141, auc: 0.999647806337
+Building data for target: prgr, fold: 3
+Running logistic regression for target: prgr
+target:prgr fold:3 predicted: 5802 wrong: 94 pct correct: 0.983798690107, auc: 0.999902967052
+Results for prgr: accuracy: 0.982376766632, auc: 0.999711596515
+Building data for target: prgr, fold: 4
+Running logistic regression for target: prgr
+target:prgr fold:4 predicted: 5926 wrong: 94 pct correct: 0.984137698279, auc: 0.999749375154
+Results for prgr: accuracy: 0.982728952962, auc: 0.999719152243
+####################  Results for DUD-E ####################
+prgr accuracy: 0.982728952962, auc:0.999719152243
+############################################################
+runtime: 144.48 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 83
+RunningOn slot3@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 83
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ptn1, fold: 0
+Running logistic regression for target: ptn1
+target:ptn1 fold:0 predicted: 2829 wrong: 61 pct correct: 0.978437610463, auc: 0.997310495079
+Results for ptn1: accuracy: 0.978437610463, auc: 0.997310495079
+Building data for target: ptn1, fold: 1
+Running logistic regression for target: ptn1
+target:ptn1 fold:1 predicted: 2829 wrong: 92 pct correct: 0.967479674797, auc: 0.998287130944
+Results for ptn1: accuracy: 0.97295864263, auc: 0.997798813012
+Building data for target: ptn1, fold: 2
+Running logistic regression for target: ptn1
+target:ptn1 fold:2 predicted: 2829 wrong: 34 pct correct: 0.987981618947, auc: 0.997100142739
+Results for ptn1: accuracy: 0.977966301402, auc: 0.997565922921
+Building data for target: ptn1, fold: 3
+Running logistic regression for target: ptn1
+target:ptn1 fold:3 predicted: 2829 wrong: 90 pct correct: 0.968186638388, auc: 0.993328825783
+Results for ptn1: accuracy: 0.975521385649, auc: 0.996506648636
+Building data for target: ptn1, fold: 4
+Running logistic regression for target: ptn1
+target:ptn1 fold:4 predicted: 2833 wrong: 91 pct correct: 0.96787857395, auc: 0.998456582003
+Results for ptn1: accuracy: 0.973992823309, auc: 0.99689663531
+####################  Results for DUD-E ####################
+ptn1 accuracy: 0.973992823309, auc:0.99689663531
+############################################################
+runtime: 71.62 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 84
+RunningOn slot4@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 84
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pur2, fold: 0
+Running logistic regression for target: pur2
+target:pur2 fold:0 predicted: 1065 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pur2: accuracy: 1.0, auc: 1.0
+Building data for target: pur2, fold: 1
+Running logistic regression for target: pur2
+target:pur2 fold:1 predicted: 1065 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pur2: accuracy: 1.0, auc: 1.0
+Building data for target: pur2, fold: 2
+Running logistic regression for target: pur2
+target:pur2 fold:2 predicted: 1065 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pur2: accuracy: 1.0, auc: 1.0
+Building data for target: pur2, fold: 3
+Running logistic regression for target: pur2
+target:pur2 fold:3 predicted: 1065 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pur2: accuracy: 1.0, auc: 1.0
+Building data for target: pur2, fold: 4
+Running logistic regression for target: pur2
+target:pur2 fold:4 predicted: 1078 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pur2: accuracy: 1.0, auc: 1.0
+####################  Results for DUD-E ####################
+pur2 accuracy: 1.0, auc:1.0
+############################################################
+runtime: 34.88 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 85
+RunningOn slot5@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 85
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pygm, fold: 0
+Running logistic regression for target: pygm
+target:pygm fold:0 predicted: 1467 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pygm: accuracy: 1.0, auc: 1.0
+Building data for target: pygm, fold: 1
+Running logistic regression for target: pygm
+target:pygm fold:1 predicted: 1467 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pygm: accuracy: 1.0, auc: 1.0
+Building data for target: pygm, fold: 2
+Running logistic regression for target: pygm
+target:pygm fold:2 predicted: 1467 wrong: 1 pct correct: 0.999318336742, auc: 1.0
+Results for pygm: accuracy: 0.999772778914, auc: 1.0
+Building data for target: pygm, fold: 3
+Running logistic regression for target: pygm
+target:pygm fold:3 predicted: 1467 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pygm: accuracy: 0.999829584185, auc: 1.0
+Building data for target: pygm, fold: 4
+Running logistic regression for target: pygm
+target:pygm fold:4 predicted: 1590 wrong: 30 pct correct: 0.981132075472, auc: 1.0
+Results for pygm: accuracy: 0.996090082443, auc: 1.0
+####################  Results for DUD-E ####################
+pygm accuracy: 0.996090082443, auc:1.0
+############################################################
+runtime: 54.19 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 86
+RunningOn slot6@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 86
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: pyrd, fold: 0
+Running logistic regression for target: pyrd
+target:pyrd fold:0 predicted: 2109 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pyrd: accuracy: 1.0, auc: 1.0
+Building data for target: pyrd, fold: 1
+Running logistic regression for target: pyrd
+target:pyrd fold:1 predicted: 2109 wrong: 120 pct correct: 0.943100995733, auc: 0.998842391619
+Results for pyrd: accuracy: 0.971550497866, auc: 0.999421195809
+Building data for target: pyrd, fold: 2
+Running logistic regression for target: pyrd
+target:pyrd fold:2 predicted: 2109 wrong: 31 pct correct: 0.985301090564, auc: 0.99997105979
+Results for pyrd: accuracy: 0.976134028766, auc: 0.999604483803
+Building data for target: pyrd, fold: 3
+Running logistic regression for target: pyrd
+target:pyrd fold:3 predicted: 2109 wrong: 60 pct correct: 0.971550497866, auc: 0.999884239162
+Results for pyrd: accuracy: 0.974988146041, auc: 0.999674422643
+Building data for target: pyrd, fold: 4
+Running logistic regression for target: pyrd
+target:pyrd fold:4 predicted: 2232 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for pyrd: accuracy: 0.979990516833, auc: 0.999739538114
+####################  Results for DUD-E ####################
+pyrd accuracy: 0.979990516833, auc:0.999739538114
+############################################################
+runtime: 64.30 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 87
+RunningOn slot7@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 87
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: reni, fold: 0
+Running logistic regression for target: reni
+target:reni fold:0 predicted: 2782 wrong: 18 pct correct: 0.993529834651, auc: 1.0
+Results for reni: accuracy: 0.993529834651, auc: 1.0
+Building data for target: reni, fold: 1
+Running logistic regression for target: reni
+target:reni fold:1 predicted: 2782 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for reni: accuracy: 0.996764917326, auc: 1.0
+Building data for target: reni, fold: 2
+Running logistic regression for target: reni
+target:reni fold:2 predicted: 2782 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for reni: accuracy: 0.997843278217, auc: 1.0
+Building data for target: reni, fold: 3
+Running logistic regression for target: reni
+target:reni fold:3 predicted: 2782 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for reni: accuracy: 0.998382458663, auc: 1.0
+Building data for target: reni, fold: 4
+Running logistic regression for target: reni
+target:reni fold:4 predicted: 2743 wrong: 17 pct correct: 0.993802406125, auc: 0.99986437613
+Results for reni: accuracy: 0.997466448155, auc: 0.999972875226
+####################  Results for DUD-E ####################
+reni accuracy: 0.997466448155, auc:0.999972875226
+############################################################
+runtime: 75.57 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 88
+RunningOn slot8@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 88
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: rock1, fold: 0
+Running logistic regression for target: rock1
+target:rock1 fold:0 predicted: 2475 wrong: 1 pct correct: 0.999595959596, auc: 1.0
+Results for rock1: accuracy: 0.999595959596, auc: 1.0
+Building data for target: rock1, fold: 1
+Running logistic regression for target: rock1
+target:rock1 fold:1 predicted: 2475 wrong: 90 pct correct: 0.963636363636, auc: 0.993960784314
+Results for rock1: accuracy: 0.981616161616, auc: 0.996980392157
+Building data for target: rock1, fold: 2
+Running logistic regression for target: rock1
+target:rock1 fold:2 predicted: 2475 wrong: 30 pct correct: 0.987878787879, auc: 0.999843137255
+Results for rock1: accuracy: 0.983703703704, auc: 0.997934640523
+Building data for target: rock1, fold: 3
+Running logistic regression for target: rock1
+target:rock1 fold:3 predicted: 2475 wrong: 3 pct correct: 0.998787878788, auc: 1.0
+Results for rock1: accuracy: 0.987474747475, auc: 0.998450980392
+Building data for target: rock1, fold: 4
+Running logistic regression for target: rock1
+target:rock1 fold:4 predicted: 2524 wrong: 2 pct correct: 0.999207606973, auc: 0.999945366138
+Results for rock1: accuracy: 0.989821319374, auc: 0.998749857541
+####################  Results for DUD-E ####################
+rock1 accuracy: 0.989821319374, auc:0.998749857541
+############################################################
+runtime: 70.81 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 89
+RunningOn slot9@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 89
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: rxra, fold: 0
+Running logistic regression for target: rxra
+target:rxra fold:0 predicted: 2501 wrong: 1 pct correct: 0.999600159936, auc: 1.0
+Results for rxra: accuracy: 0.999600159936, auc: 1.0
+Building data for target: rxra, fold: 1
+Running logistic regression for target: rxra
+target:rxra fold:1 predicted: 2501 wrong: 30 pct correct: 0.988004798081, auc: 1.0
+Results for rxra: accuracy: 0.993802479008, auc: 1.0
+Building data for target: rxra, fold: 2
+Running logistic regression for target: rxra
+target:rxra fold:2 predicted: 2501 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for rxra: accuracy: 0.995868319339, auc: 1.0
+Building data for target: rxra, fold: 3
+Running logistic regression for target: rxra
+target:rxra fold:3 predicted: 2501 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for rxra: accuracy: 0.996901239504, auc: 1.0
+Building data for target: rxra, fold: 4
+Running logistic regression for target: rxra
+target:rxra fold:4 predicted: 2563 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for rxra: accuracy: 0.997520991603, auc: 1.0
+####################  Results for DUD-E ####################
+rxra accuracy: 0.997520991603, auc:1.0
+############################################################
+runtime: 67.69 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 9
+RunningOn slot9@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 9
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: akt2, fold: 0
+Running logistic regression for target: akt2
+target:akt2 fold:0 predicted: 2530 wrong: 61 pct correct: 0.975889328063, auc: 0.979477470655
+Results for akt2: accuracy: 0.975889328063, auc: 0.979477470655
+Building data for target: akt2, fold: 1
+Running logistic regression for target: akt2
+target:akt2 fold:1 predicted: 2530 wrong: 31 pct correct: 0.987747035573, auc: 0.998390761075
+Results for akt2: accuracy: 0.981818181818, auc: 0.988934115865
+Building data for target: akt2, fold: 2
+Running logistic regression for target: akt2
+target:akt2 fold:2 predicted: 2530 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for akt2: accuracy: 0.987878787879, auc: 0.99262274391
+Building data for target: akt2, fold: 3
+Running logistic regression for target: akt2
+target:akt2 fold:3 predicted: 2530 wrong: 1 pct correct: 0.999604743083, auc: 1.0
+Results for akt2: accuracy: 0.99081027668, auc: 0.994467057933
+Building data for target: akt2, fold: 4
+Running logistic regression for target: akt2
+target:akt2 fold:4 predicted: 2532 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for akt2: accuracy: 0.992648221344, auc: 0.995573646346
+####################  Results for DUD-E ####################
+akt2 accuracy: 0.992648221344, auc:0.995573646346
+############################################################
+runtime: 63.64 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 90
+RunningOn slot23@wid-007.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 90
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: sahh, fold: 0
+Running logistic regression for target: sahh
+target:sahh fold:0 predicted: 1380 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for sahh: accuracy: 1.0, auc: 1.0
+Building data for target: sahh, fold: 1
+Running logistic regression for target: sahh
+target:sahh fold:1 predicted: 1380 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for sahh: accuracy: 1.0, auc: 1.0
+Building data for target: sahh, fold: 2
+Running logistic regression for target: sahh
+target:sahh fold:2 predicted: 1380 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for sahh: accuracy: 1.0, auc: 1.0
+Building data for target: sahh, fold: 3
+Running logistic regression for target: sahh
+target:sahh fold:3 predicted: 1380 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for sahh: accuracy: 1.0, auc: 1.0
+Building data for target: sahh, fold: 4
+Running logistic regression for target: sahh
+target:sahh fold:4 predicted: 1383 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for sahh: accuracy: 1.0, auc: 1.0
+####################  Results for DUD-E ####################
+sahh accuracy: 1.0, auc:1.0
+############################################################
+runtime: 39.56 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 91
+RunningOn slot1@wid-007.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 91
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: src, fold: 0
+Running logistic regression for target: src
+target:src fold:0 predicted: 11971 wrong: 134 pct correct: 0.988806281848, auc: 0.999811289213
+Results for src: accuracy: 0.988806281848, auc: 0.999811289213
+Building data for target: src, fold: 1
+Running logistic regression for target: src
+target:src fold:1 predicted: 11971 wrong: 162 pct correct: 0.986467295965, auc: 0.999510558325
+Results for src: accuracy: 0.987636788907, auc: 0.999660923769
+Building data for target: src, fold: 2
+Running logistic regression for target: src
+target:src fold:2 predicted: 11971 wrong: 186 pct correct: 0.984462450923, auc: 0.997528664221
+Results for src: accuracy: 0.986578676245, auc: 0.998950170587
+Building data for target: src, fold: 3
+Running logistic regression for target: src
+target:src fold:3 predicted: 11971 wrong: 195 pct correct: 0.983710634032, auc: 0.999730290063
+Results for src: accuracy: 0.985861665692, auc: 0.999145200456
+Building data for target: src, fold: 4
+Running logistic regression for target: src
+target:src fold:4 predicted: 12003 wrong: 254 pct correct: 0.978838623677, auc: 0.995468522415
+Results for src: accuracy: 0.984457057289, auc: 0.998409864847
+####################  Results for DUD-E ####################
+src accuracy: 0.984457057289, auc:0.998409864847
+############################################################
+runtime: 204.02 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 92
+RunningOn slot4@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 92
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: tgfr1, fold: 0
+Running logistic regression for target: tgfr1
+target:tgfr1 fold:0 predicted: 3415 wrong: 1 pct correct: 0.999707174231, auc: 1.0
+Results for tgfr1: accuracy: 0.999707174231, auc: 1.0
+Building data for target: tgfr1, fold: 1
+Running logistic regression for target: tgfr1
+target:tgfr1 fold:1 predicted: 3415 wrong: 1 pct correct: 0.999707174231, auc: 1.0
+Results for tgfr1: accuracy: 0.999707174231, auc: 1.0
+Building data for target: tgfr1, fold: 2
+Running logistic regression for target: tgfr1
+target:tgfr1 fold:2 predicted: 3415 wrong: 1 pct correct: 0.999707174231, auc: 1.0
+Results for tgfr1: accuracy: 0.999707174231, auc: 1.0
+Building data for target: tgfr1, fold: 3
+Running logistic regression for target: tgfr1
+target:tgfr1 fold:3 predicted: 3415 wrong: 30 pct correct: 0.99121522694, auc: 0.999361877316
+Results for tgfr1: accuracy: 0.997584187408, auc: 0.999840469329
+Building data for target: tgfr1, fold: 4
+Running logistic regression for target: tgfr1
+target:tgfr1 fold:4 predicted: 3446 wrong: 30 pct correct: 0.991294254208, auc: 1.0
+Results for tgfr1: accuracy: 0.996326200768, auc: 0.999872375463
+####################  Results for DUD-E ####################
+tgfr1 accuracy: 0.996326200768, auc:0.999872375463
+############################################################
+runtime: 110.30 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 93
+RunningOn slot6@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 93
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: thb, fold: 0
+Running logistic regression for target: thb
+target:thb fold:0 predicted: 2517 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for thb: accuracy: 1.0, auc: 1.0
+Building data for target: thb, fold: 1
+Running logistic regression for target: thb
+target:thb fold:1 predicted: 2517 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for thb: accuracy: 1.0, auc: 1.0
+Building data for target: thb, fold: 2
+Running logistic regression for target: thb
+target:thb fold:2 predicted: 2517 wrong: 120 pct correct: 0.952324195471, auc: 0.999622948542
+Results for thb: accuracy: 0.984108065157, auc: 0.999874316181
+Building data for target: thb, fold: 3
+Running logistic regression for target: thb
+target:thb fold:3 predicted: 2517 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for thb: accuracy: 0.988081048868, auc: 0.999905737136
+Building data for target: thb, fold: 4
+Running logistic regression for target: thb
+target:thb fold:4 predicted: 2611 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for thb: accuracy: 0.990464839094, auc: 0.999924589708
+####################  Results for DUD-E ####################
+thb accuracy: 0.990464839094, auc:0.999924589708
+############################################################
+runtime: 87.05 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 94
+RunningOn slot11@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 94
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: thrb, fold: 0
+Running logistic regression for target: thrb
+target:thrb fold:0 predicted: 10624 wrong: 35 pct correct: 0.996705572289, auc: 0.99999255167
+Results for thrb: accuracy: 0.996705572289, auc: 0.99999255167
+Building data for target: thrb, fold: 1
+Running logistic regression for target: thrb
+target:thrb fold:1 predicted: 10624 wrong: 90 pct correct: 0.991528614458, auc: 0.999990423576
+Results for thrb: accuracy: 0.994117093373, auc: 0.999991487623
+Building data for target: thrb, fold: 2
+Running logistic regression for target: thrb
+target:thrb fold:2 predicted: 10624 wrong: 7 pct correct: 0.999341114458, auc: 0.999995743812
+Results for thrb: accuracy: 0.995858433735, auc: 0.999992906353
+Building data for target: thrb, fold: 3
+Running logistic regression for target: thrb
+target:thrb fold:3 predicted: 10624 wrong: 3 pct correct: 0.999717620482, auc: 1.0
+Results for thrb: accuracy: 0.996823230422, auc: 0.999994679764
+Building data for target: thrb, fold: 4
+Running logistic regression for target: thrb
+target:thrb fold:4 predicted: 10655 wrong: 2 pct correct: 0.999812294697, auc: 1.0
+Results for thrb: accuracy: 0.997421043277, auc: 0.999995743812
+####################  Results for DUD-E ####################
+thrb accuracy: 0.997421043277, auc:0.999995743812
+############################################################
+runtime: 234.80 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 95
+RunningOn slot12@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 95
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: try1, fold: 0
+Running logistic regression for target: try1
+target:try1 fold:0 predicted: 9743 wrong: 62 pct correct: 0.993636456943, auc: 0.999966940047
+Results for try1: accuracy: 0.993636456943, auc: 0.999966940047
+Building data for target: try1, fold: 1
+Running logistic regression for target: try1
+target:try1 fold:1 predicted: 9743 wrong: 5 pct correct: 0.999486811044, auc: 1.0
+Results for try1: accuracy: 0.996561633994, auc: 0.999983470024
+Building data for target: try1, fold: 2
+Running logistic regression for target: try1
+target:try1 fold:2 predicted: 9743 wrong: 62 pct correct: 0.993636456943, auc: 0.998034204336
+Results for try1: accuracy: 0.995586574977, auc: 0.999333714794
+Building data for target: try1, fold: 3
+Running logistic regression for target: try1
+target:try1 fold:3 predicted: 9743 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for try1: accuracy: 0.996689931233, auc: 0.999500286096
+Building data for target: try1, fold: 4
+Running logistic regression for target: try1
+target:try1 fold:4 predicted: 9867 wrong: 32 pct correct: 0.996756866322, auc: 0.99975743715
+Results for try1: accuracy: 0.996703318251, auc: 0.999551716307
+####################  Results for DUD-E ####################
+try1 accuracy: 0.996703318251, auc:0.999551716307
+############################################################
+runtime: 217.52 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 96
+RunningOn slot13@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 96
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: tryb1, fold: 0
+Running logistic regression for target: tryb1
+target:tryb1 fold:0 predicted: 2562 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for tryb1: accuracy: 1.0, auc: 1.0
+Building data for target: tryb1, fold: 1
+Running logistic regression for target: tryb1
+target:tryb1 fold:1 predicted: 2562 wrong: 1 pct correct: 0.999609679938, auc: 1.0
+Results for tryb1: accuracy: 0.999804839969, auc: 1.0
+Building data for target: tryb1, fold: 2
+Running logistic regression for target: tryb1
+target:tryb1 fold:2 predicted: 2562 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for tryb1: accuracy: 0.999869893313, auc: 1.0
+Building data for target: tryb1, fold: 3
+Running logistic regression for target: tryb1
+target:tryb1 fold:3 predicted: 2562 wrong: 60 pct correct: 0.976580796253, auc: 0.958991378653
+Results for tryb1: accuracy: 0.994047619048, auc: 0.989747844663
+Building data for target: tryb1, fold: 4
+Running logistic regression for target: tryb1
+target:tryb1 fold:4 predicted: 2595 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for tryb1: accuracy: 0.995238095238, auc: 0.991798275731
+####################  Results for DUD-E ####################
+tryb1 accuracy: 0.995238095238, auc:0.991798275731
+############################################################
+runtime: 70.24 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 97
+RunningOn slot14@roy-exec-1.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 97
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: tysy, fold: 0
+Running logistic regression for target: tysy
+target:tysy fold:0 predicted: 2740 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for tysy: accuracy: 1.0, auc: 1.0
+Building data for target: tysy, fold: 1
+Running logistic regression for target: tysy
+target:tysy fold:1 predicted: 2740 wrong: 22 pct correct: 0.99197080292, auc: 1.0
+Results for tysy: accuracy: 0.99598540146, auc: 1.0
+Building data for target: tysy, fold: 2
+Running logistic regression for target: tysy
+target:tysy fold:2 predicted: 2740 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for tysy: accuracy: 0.997323600973, auc: 1.0
+Building data for target: tysy, fold: 3
+Running logistic regression for target: tysy
+target:tysy fold:3 predicted: 2740 wrong: 23 pct correct: 0.991605839416, auc: 0.999566297824
+Results for tysy: accuracy: 0.995894160584, auc: 0.999891574456
+Building data for target: tysy, fold: 4
+Running logistic regression for target: tysy
+target:tysy fold:4 predicted: 2700 wrong: 21 pct correct: 0.992222222222, auc: 0.999930836532
+Results for tysy: accuracy: 0.995159772912, auc: 0.999899426871
+####################  Results for DUD-E ####################
+tysy accuracy: 0.995159772912, auc:0.999899426871
+############################################################
+runtime: 81.48 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 98
+RunningOn slot3@wid-004.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 98
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: urok, fold: 0
+Running logistic regression for target: urok
+target:urok fold:0 predicted: 3786 wrong: 32 pct correct: 0.991547807713, auc: 0.988100033568
+Results for urok: accuracy: 0.991547807713, auc: 0.988100033568
+Building data for target: urok, fold: 1
+Running logistic regression for target: urok
+target:urok fold:1 predicted: 3786 wrong: 31 pct correct: 0.991811938722, auc: 0.999471299094
+Results for urok: accuracy: 0.991679873217, auc: 0.993785666331
+Building data for target: urok, fold: 2
+Running logistic regression for target: urok
+target:urok fold:2 predicted: 3786 wrong: 60 pct correct: 0.984152139461, auc: 0.999958039611
+Results for urok: accuracy: 0.989170628632, auc: 0.995843124091
+Building data for target: urok, fold: 3
+Running logistic regression for target: urok
+target:urok fold:3 predicted: 3786 wrong: 32 pct correct: 0.991547807713, auc: 0.998422289359
+Results for urok: accuracy: 0.989764923402, auc: 0.996487915408
+Building data for target: urok, fold: 4
+Running logistic regression for target: urok
+target:urok fold:4 predicted: 3849 wrong: 1 pct correct: 0.999740192258, auc: 1.0
+Results for urok: accuracy: 0.991759977173, auc: 0.997190332326
+####################  Results for DUD-E ####################
+urok accuracy: 0.991759977173, auc:0.997190332326
+############################################################
+runtime: 126.41 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 99
+RunningOn slot6@wid-005.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 99
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: vgfr2, fold: 0
+Running logistic regression for target: vgfr2
+target:vgfr2 fold:0 predicted: 8776 wrong: 41 pct correct: 0.99532816773, auc: 0.999779884647
+Results for vgfr2: accuracy: 0.99532816773, auc: 0.999779884647
+Building data for target: vgfr2, fold: 1
+Running logistic regression for target: vgfr2
+target:vgfr2 fold:1 predicted: 8776 wrong: 152 pct correct: 0.982680036463, auc: 0.999944173642
+Results for vgfr2: accuracy: 0.989004102097, auc: 0.999862029145
+Building data for target: vgfr2, fold: 2
+Running logistic regression for target: vgfr2
+target:vgfr2 fold:2 predicted: 8776 wrong: 68 pct correct: 0.99225159526, auc: 0.999944173642
+Results for vgfr2: accuracy: 0.990086599818, auc: 0.999889410644
+Building data for target: vgfr2, fold: 3
+Running logistic regression for target: vgfr2
+target:vgfr2 fold:3 predicted: 8776 wrong: 64 pct correct: 0.992707383774, auc: 0.999905892711
+Results for vgfr2: accuracy: 0.990741795807, auc: 0.999893531161
+Building data for target: vgfr2, fold: 4
+Running logistic regression for target: vgfr2
+target:vgfr2 fold:4 predicted: 8776 wrong: 32 pct correct: 0.996353691887, auc: 0.999990429767
+Results for vgfr2: accuracy: 0.991864175023, auc: 0.999912910882
+####################  Results for DUD-E ####################
+vgfr2 accuracy: 0.991864175023, auc:0.999912910882
+############################################################
+runtime: 281.90 secs.

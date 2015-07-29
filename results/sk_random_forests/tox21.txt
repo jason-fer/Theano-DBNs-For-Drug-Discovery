@@ -1,38 +1,360 @@
-Getting about 72% accuracy with 512 Features & 100 Trees.
-
-Running Scikit Learn Random Forest Classifier.........
-Found 12 targets for Tox21
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 0
+RunningOn slot13@opt-a002.discovery.wisc.edu
+python sk_random_forests.py tox21 0
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: nr-ahr, fold: 0
+Running random forests for target: nr-ahr
+target:nr-ahr fold:0 predicted: 2762 wrong: 565 pct correct: 0.795438088342, auc: 0.908010412875
+Results for nr-ahr: accuracy: 0.795438088342, auc: 0.908010412875
+Building data for target: nr-ahr, fold: 1
+Running random forests for target: nr-ahr
+target:nr-ahr fold:1 predicted: 2762 wrong: 585 pct correct: 0.788196958726, auc: 0.915025866728
+Results for nr-ahr: accuracy: 0.791817523534, auc: 0.911518139802
+Building data for target: nr-ahr, fold: 2
+Running random forests for target: nr-ahr
+target:nr-ahr fold:2 predicted: 2762 wrong: 603 pct correct: 0.781679942071, auc: 0.903695614606
+Results for nr-ahr: accuracy: 0.788438329713, auc: 0.908910631403
+Building data for target: nr-ahr, fold: 3
+Running random forests for target: nr-ahr
+target:nr-ahr fold:3 predicted: 2762 wrong: 538 pct correct: 0.805213613324, auc: 0.916799952936
+Results for nr-ahr: accuracy: 0.792632150615, auc: 0.910882961786
+Building data for target: nr-ahr, fold: 4
+Running random forests for target: nr-ahr
+target:nr-ahr fold:4 predicted: 2790 wrong: 517 pct correct: 0.814695340502, auc: 0.932370637353
+Results for nr-ahr: accuracy: 0.797044788593, auc: 0.9151804969
+####################  Results for Tox21 ####################
+nr-ahr accuracy: 0.797044788593, auc:0.9151804969
+############################################################
+runtime: 664.89 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 1
+RunningOn slot9@opt-a015.discovery.wisc.edu
+python sk_random_forests.py tox21 1
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: nr-ar-lbd, fold: 0
+Running random forests for target: nr-ar-lbd
+target:nr-ar-lbd fold:0 predicted: 3274 wrong: 497 pct correct: 0.84819792303, auc: 0.876652559452
+Results for nr-ar-lbd: accuracy: 0.84819792303, auc: 0.876652559452
+Building data for target: nr-ar-lbd, fold: 1
+Running random forests for target: nr-ar-lbd
+target:nr-ar-lbd fold:1 predicted: 3274 wrong: 589 pct correct: 0.820097739768, auc: 0.907945384925
+Results for nr-ar-lbd: accuracy: 0.834147831399, auc: 0.892298972189
+Building data for target: nr-ar-lbd, fold: 2
+Running random forests for target: nr-ar-lbd
+target:nr-ar-lbd fold:2 predicted: 3274 wrong: 581 pct correct: 0.822541233965, auc: 0.892084844821
+Results for nr-ar-lbd: accuracy: 0.830278965587, auc: 0.892227596399
+Building data for target: nr-ar-lbd, fold: 3
+Running random forests for target: nr-ar-lbd
+target:nr-ar-lbd fold:3 predicted: 3274 wrong: 399 pct correct: 0.87813072694, auc: 0.905698307134
+Results for nr-ar-lbd: accuracy: 0.842241905925, auc: 0.895595274083
+Building data for target: nr-ar-lbd, fold: 4
+Running random forests for target: nr-ar-lbd
+target:nr-ar-lbd fold:4 predicted: 3293 wrong: 686 pct correct: 0.791679319769, auc: 0.866647484774
+Results for nr-ar-lbd: accuracy: 0.832129388694, auc: 0.889805716221
+####################  Results for Tox21 ####################
+nr-ar-lbd accuracy: 0.832129388694, auc:0.889805716221
+############################################################
+runtime: 871.43 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 10
+RunningOn slot5@galaxy-01.discovery.wisc.edu
+python sk_random_forests.py tox21 10
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: sr-mmp, fold: 0
+Running random forests for target: sr-mmp
+target:sr-mmp fold:0 predicted: 2367 wrong: 421 pct correct: 0.822137727081, auc: 0.915752474398
+Results for sr-mmp: accuracy: 0.822137727081, auc: 0.915752474398
+Building data for target: sr-mmp, fold: 1
+Running random forests for target: sr-mmp
+target:sr-mmp fold:1 predicted: 2367 wrong: 483 pct correct: 0.795944233207, auc: 0.90523628354
+Results for sr-mmp: accuracy: 0.809040980144, auc: 0.910494378969
+Building data for target: sr-mmp, fold: 2
+Running random forests for target: sr-mmp
+target:sr-mmp fold:2 predicted: 2367 wrong: 489 pct correct: 0.793409378961, auc: 0.90239358659
+Results for sr-mmp: accuracy: 0.803830446416, auc: 0.907794114843
+Building data for target: sr-mmp, fold: 3
+Running random forests for target: sr-mmp
+target:sr-mmp fold:3 predicted: 2367 wrong: 494 pct correct: 0.791297000422, auc: 0.895365510041
+Results for sr-mmp: accuracy: 0.800697084918, auc: 0.904686963642
+Building data for target: sr-mmp, fold: 4
+Running random forests for target: sr-mmp
+target:sr-mmp fold:4 predicted: 2379 wrong: 434 pct correct: 0.817570407734, auc: 0.921503542284
+Results for sr-mmp: accuracy: 0.804071749481, auc: 0.908050279371
+####################  Results for Tox21 ####################
+sr-mmp accuracy: 0.804071749481, auc:0.908050279371
+############################################################
+runtime: 1064.93 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 11
+RunningOn slot19@galaxy-01.discovery.wisc.edu
+python sk_random_forests.py tox21 11
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: sr-p53, fold: 0
+Running random forests for target: sr-p53
+target:sr-p53 fold:0 predicted: 3220 wrong: 884 pct correct: 0.725465838509, auc: 0.871294233384
+Results for sr-p53: accuracy: 0.725465838509, auc: 0.871294233384
+Building data for target: sr-p53, fold: 1
+Running random forests for target: sr-p53
+target:sr-p53 fold:1 predicted: 3220 wrong: 729 pct correct: 0.773602484472, auc: 0.913492086456
+Results for sr-p53: accuracy: 0.749534161491, auc: 0.89239315992
+Building data for target: sr-p53, fold: 2
+Running random forests for target: sr-p53
+target:sr-p53 fold:2 predicted: 3220 wrong: 872 pct correct: 0.729192546584, auc: 0.880920690952
+Results for sr-p53: accuracy: 0.742753623188, auc: 0.888569003598
+Building data for target: sr-p53, fold: 3
+Running random forests for target: sr-p53
+target:sr-p53 fold:3 predicted: 3220 wrong: 877 pct correct: 0.727639751553, auc: 0.900370359654
+Results for sr-p53: accuracy: 0.73897515528, auc: 0.891519342612
+Building data for target: sr-p53, fold: 4
+Running random forests for target: sr-p53
+target:sr-p53 fold:4 predicted: 3141 wrong: 834 pct correct: 0.734479465138, auc: 0.85646320334
+Results for sr-p53: accuracy: 0.738076017251, auc: 0.884508114757
+####################  Results for Tox21 ####################
+sr-p53 accuracy: 0.738076017251, auc:0.884508114757
+############################################################
+runtime: 1279.39 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 2
+RunningOn slot3@wid-007.discovery.wisc.edu
+python sk_random_forests.py tox21 2
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: nr-ar, fold: 0
+Running random forests for target: nr-ar
+target:nr-ar fold:0 predicted: 3538 wrong: 832 pct correct: 0.764838892029, auc: 0.8402896207
+Results for nr-ar: accuracy: 0.764838892029, auc: 0.8402896207
+Building data for target: nr-ar, fold: 1
+Running random forests for target: nr-ar
+target:nr-ar fold:1 predicted: 3538 wrong: 711 pct correct: 0.799039005088, auc: 0.849621434872
+Results for nr-ar: accuracy: 0.781938948559, auc: 0.844955527786
+Building data for target: nr-ar, fold: 2
+Running random forests for target: nr-ar
+target:nr-ar fold:2 predicted: 3538 wrong: 762 pct correct: 0.784624081402, auc: 0.822691855337
+Results for nr-ar: accuracy: 0.78283399284, auc: 0.837534303636
+Building data for target: nr-ar, fold: 3
+Running random forests for target: nr-ar
+target:nr-ar fold:3 predicted: 3538 wrong: 651 pct correct: 0.815997738836, auc: 0.842237577183
+Results for nr-ar: accuracy: 0.791124929339, auc: 0.838710122023
+Building data for target: nr-ar, fold: 4
+Running random forests for target: nr-ar
+target:nr-ar fold:4 predicted: 3541 wrong: 964 pct correct: 0.727760519627, auc: 0.80030161153
+Results for nr-ar: accuracy: 0.778452047396, auc: 0.831028419924
+####################  Results for Tox21 ####################
+nr-ar accuracy: 0.778452047396, auc:0.831028419924
+############################################################
+runtime: 1219.33 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 3
+RunningOn slot11@opt-a016.discovery.wisc.edu
+python sk_random_forests.py tox21 3
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: nr-aromatase, fold: 0
+Running random forests for target: nr-aromatase
+target:nr-aromatase fold:0 predicted: 2717 wrong: 769 pct correct: 0.716967243283, auc: 0.840257186393
+Results for nr-aromatase: accuracy: 0.716967243283, auc: 0.840257186393
+Building data for target: nr-aromatase, fold: 1
+Running random forests for target: nr-aromatase
+target:nr-aromatase fold:1 predicted: 2717 wrong: 753 pct correct: 0.722856091277, auc: 0.844658594844
+Results for nr-aromatase: accuracy: 0.71991166728, auc: 0.842457890619
+Building data for target: nr-aromatase, fold: 2
+Running random forests for target: nr-aromatase
+target:nr-aromatase fold:2 predicted: 2717 wrong: 754 pct correct: 0.722488038278, auc: 0.866161148176
+Results for nr-aromatase: accuracy: 0.720770457613, auc: 0.850358976471
+Building data for target: nr-aromatase, fold: 3
+Running random forests for target: nr-aromatase
+target:nr-aromatase fold:3 predicted: 2717 wrong: 781 pct correct: 0.712550607287, auc: 0.803362573099
+Results for nr-aromatase: accuracy: 0.718715495031, auc: 0.838609875628
+Building data for target: nr-aromatase, fold: 4
+Running random forests for target: nr-aromatase
+target:nr-aromatase fold:4 predicted: 2740 wrong: 766 pct correct: 0.720437956204, auc: 0.847596776806
+Results for nr-aromatase: accuracy: 0.719059987266, auc: 0.840407255864
+####################  Results for Tox21 ####################
+nr-aromatase accuracy: 0.719059987266, auc:0.840407255864
+############################################################
+runtime: 467.73 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 4
+RunningOn slot6@wid-007.discovery.wisc.edu
+python sk_random_forests.py tox21 4
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: nr-er-lbd, fold: 0
+Running random forests for target: nr-er-lbd
+target:nr-er-lbd fold:0 predicted: 3258 wrong: 691 pct correct: 0.787906691222, auc: 0.852619687347
+Results for nr-er-lbd: accuracy: 0.787906691222, auc: 0.852619687347
+Building data for target: nr-er-lbd, fold: 1
+Running random forests for target: nr-er-lbd
+target:nr-er-lbd fold:1 predicted: 3258 wrong: 814 pct correct: 0.750153468386, auc: 0.842845899148
+Results for nr-er-lbd: accuracy: 0.769030079804, auc: 0.847732793248
+Building data for target: nr-er-lbd, fold: 2
+Running random forests for target: nr-er-lbd
+target:nr-er-lbd fold:2 predicted: 3258 wrong: 632 pct correct: 0.806015960712, auc: 0.856744965532
+Results for nr-er-lbd: accuracy: 0.781358706773, auc: 0.850736850676
+Building data for target: nr-er-lbd, fold: 3
+Running random forests for target: nr-er-lbd
+target:nr-er-lbd fold:3 predicted: 3258 wrong: 687 pct correct: 0.789134438306, auc: 0.80381859632
+Results for nr-er-lbd: accuracy: 0.783302639656, auc: 0.839007287087
+Building data for target: nr-er-lbd, fold: 4
+Running random forests for target: nr-er-lbd
+target:nr-er-lbd fold:4 predicted: 3260 wrong: 804 pct correct: 0.753374233129, auc: 0.807907862458
+Results for nr-er-lbd: accuracy: 0.777316958351, auc: 0.832787402161
+####################  Results for Tox21 ####################
+nr-er-lbd accuracy: 0.777316958351, auc:0.832787402161
+############################################################
+runtime: 1385.84 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 5
+RunningOn slot7@opt-a001.discovery.wisc.edu
+python sk_random_forests.py tox21 5
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: nr-er, fold: 0
+Running random forests for target: nr-er
+target:nr-er fold:0 predicted: 2657 wrong: 834 pct correct: 0.686112156568, auc: 0.73585743982
+Results for nr-er: accuracy: 0.686112156568, auc: 0.73585743982
+Building data for target: nr-er, fold: 1
+Running random forests for target: nr-er
+target:nr-er fold:1 predicted: 2657 wrong: 777 pct correct: 0.707564922845, auc: 0.768151271839
+Results for nr-er: accuracy: 0.696838539706, auc: 0.752004355829
+Building data for target: nr-er, fold: 2
+Running random forests for target: nr-er
+target:nr-er fold:2 predicted: 2657 wrong: 853 pct correct: 0.678961234475, auc: 0.731876497564
+Results for nr-er: accuracy: 0.690879437963, auc: 0.745295069741
+Building data for target: nr-er, fold: 3
+Running random forests for target: nr-er
+target:nr-er fold:3 predicted: 2657 wrong: 809 pct correct: 0.695521264584, auc: 0.729934622892
+Results for nr-er: accuracy: 0.692039894618, auc: 0.741454958029
+Building data for target: nr-er, fold: 4
+Running random forests for target: nr-er
+target:nr-er fold:4 predicted: 2667 wrong: 819 pct correct: 0.692913385827, auc: 0.749685024489
+Results for nr-er: accuracy: 0.69221459286, auc: 0.743100971321
+####################  Results for Tox21 ####################
+nr-er accuracy: 0.69221459286, auc:0.743100971321
+############################################################
+runtime: 807.42 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 6
+RunningOn slot14@opt-a018.discovery.wisc.edu
+python sk_random_forests.py tox21 6
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: nr-ppar-gamma, fold: 0
+Running random forests for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:0 predicted: 2907 wrong: 909 pct correct: 0.687306501548, auc: 0.880069599588
+Results for nr-ppar-gamma: accuracy: 0.687306501548, auc: 0.880069599588
+Building data for target: nr-ppar-gamma, fold: 1
+Running random forests for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:1 predicted: 2907 wrong: 834 pct correct: 0.71310629515, auc: 0.801705619522
+Results for nr-ppar-gamma: accuracy: 0.700206398349, auc: 0.840887609555
+Building data for target: nr-ppar-gamma, fold: 2
+Running random forests for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:2 predicted: 2907 wrong: 820 pct correct: 0.717922256622, auc: 0.867639055966
+Results for nr-ppar-gamma: accuracy: 0.70611168444, auc: 0.849804758359
+Building data for target: nr-ppar-gamma, fold: 3
+Running random forests for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:3 predicted: 2907 wrong: 969 pct correct: 0.666666666667, auc: 0.864803517214
+Results for nr-ppar-gamma: accuracy: 0.696250429997, auc: 0.853554448072
+Building data for target: nr-ppar-gamma, fold: 4
+Running random forests for target: nr-ppar-gamma
+target:nr-ppar-gamma fold:4 predicted: 2970 wrong: 679 pct correct: 0.77138047138, auc: 0.893006562756
+Results for nr-ppar-gamma: accuracy: 0.711276438273, auc: 0.861444871009
+####################  Results for Tox21 ####################
+nr-ppar-gamma accuracy: 0.711276438273, auc:0.861444871009
+############################################################
+runtime: 626.24 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 7
+RunningOn slot10@opt-a015.discovery.wisc.edu
+python sk_random_forests.py tox21 7
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: sr-are, fold: 0
+Running random forests for target: sr-are
+target:sr-are fold:0 predicted: 2300 wrong: 676 pct correct: 0.706086956522, auc: 0.844087876261
+Results for sr-are: accuracy: 0.706086956522, auc: 0.844087876261
+Building data for target: sr-are, fold: 1
+Running random forests for target: sr-are
+target:sr-are fold:1 predicted: 2300 wrong: 686 pct correct: 0.701739130435, auc: 0.840514822959
+Results for sr-are: accuracy: 0.703913043478, auc: 0.84230134961
+Building data for target: sr-are, fold: 2
+Running random forests for target: sr-are
+target:sr-are fold:2 predicted: 2300 wrong: 574 pct correct: 0.750434782609, auc: 0.852248085526
+Results for sr-are: accuracy: 0.719420289855, auc: 0.845616928248
+Building data for target: sr-are, fold: 3
+Running random forests for target: sr-are
+target:sr-are fold:3 predicted: 2300 wrong: 635 pct correct: 0.723913043478, auc: 0.853169307756
+Results for sr-are: accuracy: 0.720543478261, auc: 0.847505023125
+Building data for target: sr-are, fold: 4
+Running random forests for target: sr-are
+target:sr-are fold:4 predicted: 2303 wrong: 640 pct correct: 0.7221016066, auc: 0.838054108019
+Results for sr-are: accuracy: 0.720855103929, auc: 0.845614840104
+####################  Results for Tox21 ####################
+sr-are accuracy: 0.720855103929, auc:0.845614840104
+############################################################
+runtime: 524.01 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 8
+RunningOn slot11@galaxy-01.discovery.wisc.edu
+python sk_random_forests.py tox21 8
+Running Scikit Learn Random Forests for tox21.........
 Building data for target: sr-atad5, fold: 0
 Running random forests for target: sr-atad5
-target:sr-atad5 fold:0 predicted: 3487 correct: 2637 wrong: 850 pct correct: 0.756237453398
+target:sr-atad5 fold:0 predicted: 3487 wrong: 828 pct correct: 0.762546601663, auc: 0.883201471154
+Results for sr-atad5: accuracy: 0.762546601663, auc: 0.883201471154
 Building data for target: sr-atad5, fold: 1
 Running random forests for target: sr-atad5
-target:sr-atad5 fold:1 predicted: 3487 correct: 2320 wrong: 1167 pct correct: 0.665328362489
+target:sr-atad5 fold:1 predicted: 3487 wrong: 1194 pct correct: 0.657585316891, auc: 0.870671000299
+Results for sr-atad5: accuracy: 0.710065959277, auc: 0.876936235727
 Building data for target: sr-atad5, fold: 2
 Running random forests for target: sr-atad5
-target:sr-atad5 fold:2 predicted: 3487 correct: 2606 wrong: 881 pct correct: 0.747347289934
+target:sr-atad5 fold:2 predicted: 3487 wrong: 958 pct correct: 0.725265271007, auc: 0.876324680323
+Results for sr-atad5: accuracy: 0.71513239652, auc: 0.876732383926
 Building data for target: sr-atad5, fold: 3
 Running random forests for target: sr-atad5
-target:sr-atad5 fold:3 predicted: 3487 correct: 2354 wrong: 1133 pct correct: 0.675078864353
+target:sr-atad5 fold:3 predicted: 3487 wrong: 1135 pct correct: 0.67450530542, auc: 0.85738356926
+Results for sr-atad5: accuracy: 0.704975623745, auc: 0.871895180259
 Building data for target: sr-atad5, fold: 4
 Running random forests for target: sr-atad5
-target:sr-atad5 fold:4 predicted: 3429 correct: 2623 wrong: 806 pct correct: 0.764946048411
-Results for sr-atad5:0.721787603717
-
-
-400 worse.
-500 features, 16 trees = 0.7209
-500 features, 20 trees = 0.7163
-500 features, 24 trees = 0.7254  acc (the best so far, but just random chance.)
-500 features, 30 trees = 0.7241
-502 features, 30 trees = 0.7236
-600 worse.
-1024 features, 40 trees = 0.7243
-512 features, 100 trees = 0.7217
-1024 features, 150 trees = 
-(where is the sweet spot on # features?)
-
-n = the number of targets
-PCBA
-MUV
-Tox21
+target:sr-atad5 fold:4 predicted: 3429 wrong: 782 pct correct: 0.77194517352, auc: 0.888144245691
+Results for sr-atad5: accuracy: 0.7183695337, auc: 0.875144993346
+####################  Results for Tox21 ####################
+sr-atad5 accuracy: 0.7183695337, auc:0.875144993346
+############################################################
+runtime: 1207.76 secs.
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 9
+RunningOn slot4@opt-a008.discovery.wisc.edu
+python sk_random_forests.py tox21 9
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: sr-hse, fold: 0
+Running random forests for target: sr-hse
+target:sr-hse fold:0 predicted: 3069 wrong: 1021 pct correct: 0.667318344738, auc: 0.778809769522
+Results for sr-hse: accuracy: 0.667318344738, auc: 0.778809769522
+Building data for target: sr-hse, fold: 1
+Running random forests for target: sr-hse
+target:sr-hse fold:1 predicted: 3069 wrong: 1002 pct correct: 0.673509286413, auc: 0.783721285785
+Results for sr-hse: accuracy: 0.670413815575, auc: 0.781265527654
+Building data for target: sr-hse, fold: 2
+Running random forests for target: sr-hse
+target:sr-hse fold:2 predicted: 3069 wrong: 1052 pct correct: 0.657217334637, auc: 0.842858234912
+Results for sr-hse: accuracy: 0.666014988596, auc: 0.801796430073
+Building data for target: sr-hse, fold: 3
+Running random forests for target: sr-hse
+target:sr-hse fold:3 predicted: 3069 wrong: 1189 pct correct: 0.612577386771, auc: 0.811936704506
+Results for sr-hse: accuracy: 0.652655588139, auc: 0.804331498681
+Building data for target: sr-hse, fold: 4
+Running random forests for target: sr-hse
+target:sr-hse fold:4 predicted: 3039 wrong: 904 pct correct: 0.7025337282, auc: 0.796216785483
+Results for sr-hse: accuracy: 0.662631216152, auc: 0.802708556042
+####################  Results for Tox21 ####################
+sr-hse accuracy: 0.662631216152, auc:0.802708556042
+############################################################
+runtime: 2114.54 secs.

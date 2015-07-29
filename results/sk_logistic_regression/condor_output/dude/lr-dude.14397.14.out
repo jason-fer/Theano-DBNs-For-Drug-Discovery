@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 14
+RunningOn slot13@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 14
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: bace1, fold: 0
+Running logistic regression for target: bace1
+target:bace1 fold:0 predicted: 6554 wrong: 92 pct correct: 0.985962770827, auc: 0.99938325393
+Results for bace1: accuracy: 0.985962770827, auc: 0.99938325393
+Building data for target: bace1, fold: 1
+Running logistic regression for target: bace1
+target:bace1 fold:1 predicted: 6554 wrong: 60 pct correct: 0.990845285322, auc: 0.998964545588
+Results for bace1: accuracy: 0.988404028074, auc: 0.999173899759
+Building data for target: bace1, fold: 2
+Running logistic regression for target: bace1
+target:bace1 fold:2 predicted: 6554 wrong: 33 pct correct: 0.994964906927, auc: 0.999340817273
+Results for bace1: accuracy: 0.990590987692, auc: 0.99922953893
+Building data for target: bace1, fold: 3
+Running logistic regression for target: bace1
+target:bace1 fold:3 predicted: 6554 wrong: 3 pct correct: 0.999542264266, auc: 1.0
+Results for bace1: accuracy: 0.992828806836, auc: 0.999422154198
+Building data for target: bace1, fold: 4
+Running logistic regression for target: bace1
+target:bace1 fold:4 predicted: 6555 wrong: 62 pct correct: 0.99054157132, auc: 0.99977373326
+Results for bace1: accuracy: 0.992371359732, auc: 0.99949247001
+####################  Results for DUD-E ####################
+bace1 accuracy: 0.992371359732, auc:0.99949247001
+############################################################
+runtime: 131.08 secs.

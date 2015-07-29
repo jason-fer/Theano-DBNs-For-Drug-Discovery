@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 35
+RunningOn slot13@opt-a015.discovery.wisc.edu
+python sk_random_forests.py dud_e 35
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: fak1, fold: 0
+Running random forests for target: fak1
+target:fak1 fold:0 predicted: 1740 wrong: 30 pct correct: 0.98275862069, auc: 0.999747474747
+Results for fak1: accuracy: 0.98275862069, auc: 0.999747474747
+Building data for target: fak1, fold: 1
+Running random forests for target: fak1
+target:fak1 fold:1 predicted: 1740 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fak1: accuracy: 0.991379310345, auc: 0.999873737374
+Building data for target: fak1, fold: 2
+Running random forests for target: fak1
+target:fak1 fold:2 predicted: 1740 wrong: 60 pct correct: 0.965517241379, auc: 0.99978956229
+Results for fak1: accuracy: 0.98275862069, auc: 0.999845679012
+Building data for target: fak1, fold: 3
+Running random forests for target: fak1
+target:fak1 fold:3 predicted: 1740 wrong: 90 pct correct: 0.948275862069, auc: 0.972811447811
+Results for fak1: accuracy: 0.974137931034, auc: 0.993087121212
+Building data for target: fak1, fold: 4
+Running random forests for target: fak1
+target:fak1 fold:4 predicted: 1861 wrong: 60 pct correct: 0.96775926921, auc: 0.979079200171
+Results for fak1: accuracy: 0.97286219867, auc: 0.990285537004
+####################  Results for DUD-E ####################
+fak1 accuracy: 0.97286219867, auc:0.990285537004
+############################################################
+runtime: 119.70 secs.

@@ -1,0 +1,24 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14405
+Process 5
+RunningOn slot4@opt-a007.discovery.wisc.edu
+python th_deep_belief_net.py dud_e 5
+Running Theano Learn Deep Belief Net for dud_e, target: ada.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -103.342994927
+Pre-training layer 0, epoch 1, cost  -61.754149925
+Pre-training layer 1, epoch 0, cost  -1390.67889975
+Pre-training layer 1, epoch 1, cost  -1376.27422926
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 64/64, best error 50.000000 %, best_auc: 0.974801
+     epoch 13, minibatch 64/64, best error 19.761905 %, best_auc: 0.974801
+     new best AUC!: 1.0
+     epoch 14, minibatch 64/64, best error 0.571429 %, best_auc: 1.000000
+     epoch 15, minibatch 64/64, best error 0.142857 %, best_auc: 1.000000
+     epoch 16, minibatch 64/64, best error 0.142857 %, best_auc: 1.000000
+     epoch 17, minibatch 64/64, best error 0.095238 %, best_auc: 1.000000
+Optimization complete with best validation score of 0.000000 %, obtained at iteration 1088, with test performance 0.095238 %, and best_auc: 1.000000
+runtime: 5926.53 secs.

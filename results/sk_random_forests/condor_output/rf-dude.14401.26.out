@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 26
+RunningOn slot12@opt-a001.discovery.wisc.edu
+python sk_random_forests.py dud_e 26
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: dpp4, fold: 0
+Running random forests for target: dpp4
+target:dpp4 fold:0 predicted: 14724 wrong: 62 pct correct: 0.995789187721, auc: 0.999969082191
+Results for dpp4: accuracy: 0.995789187721, auc: 0.999969082191
+Building data for target: dpp4, fold: 1
+Running random forests for target: dpp4
+target:dpp4 fold:1 predicted: 14724 wrong: 333 pct correct: 0.977383863081, auc: 0.999891506597
+Results for dpp4: accuracy: 0.986586525401, auc: 0.999930294394
+Building data for target: dpp4, fold: 2
+Running random forests for target: dpp4
+target:dpp4 fold:2 predicted: 14724 wrong: 210 pct correct: 0.985737571312, auc: 0.999969082191
+Results for dpp4: accuracy: 0.986303540705, auc: 0.999943223659
+Building data for target: dpp4, fold: 3
+Running random forests for target: dpp4
+target:dpp4 fold:3 predicted: 14724 wrong: 212 pct correct: 0.985601738658, auc: 0.997298907758
+Results for dpp4: accuracy: 0.986128090193, auc: 0.999282144684
+Building data for target: dpp4, fold: 4
+Running random forests for target: dpp4
+target:dpp4 fold:4 predicted: 14847 wrong: 156 pct correct: 0.989492826834, auc: 0.999898491887
+Results for dpp4: accuracy: 0.986801037521, auc: 0.999405414125
+####################  Results for DUD-E ####################
+dpp4 accuracy: 0.986801037521, auc:0.999405414125
+############################################################
+runtime: 6150.86 secs.

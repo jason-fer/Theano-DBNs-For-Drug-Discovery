@@ -1,0 +1,36 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14405
+Process 50
+RunningOn slot23@mir-exec-01.discovery.wisc.edu
+python th_deep_belief_net.py dud_e 50
+Running Theano Learn Deep Belief Net for dud_e, target: hs90a.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -124.923913024
+Pre-training layer 0, epoch 1, cost  -77.0881246318
+Pre-training layer 1, epoch 0, cost  -1392.49622363
+Pre-training layer 1, epoch 1, cost  -1377.06976561
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 52/52, best error 43.235294 %, best_auc: 0.826194
+     epoch 9, minibatch 52/52, best error 36.176471 %, best_auc: 0.826194
+     new best AUC!: 0.917935222672
+     epoch 10, minibatch 52/52, best error 20.647059 %, best_auc: 0.917935
+     new best AUC!: 0.995384615385
+     epoch 11, minibatch 52/52, best error 5.294118 %, best_auc: 0.995385
+     new best AUC!: 0.999271255061
+     epoch 12, minibatch 52/52, best error 3.588235 %, best_auc: 0.999271
+     new best AUC!: 0.99975708502
+     new best AUC!: 0.99979757085
+     epoch 14, minibatch 52/52, best error 1.882353 %, best_auc: 0.999798
+     epoch 15, minibatch 52/52, best error 0.117647 %, best_auc: 0.999798
+     new best AUC!: 0.99983805668
+     new best AUC!: 0.99983805668
+     new best AUC!: 0.99987854251
+     new best AUC!: 0.99987854251
+     new best AUC!: 0.99995951417
+     new best AUC!: 0.99995951417
+     new best AUC!: 1.0
+Optimization complete with best validation score of 0.000000 %, obtained at iteration 780, with test performance 0.117647 %, and best_auc: 1.000000
+runtime: 3045.17 secs.

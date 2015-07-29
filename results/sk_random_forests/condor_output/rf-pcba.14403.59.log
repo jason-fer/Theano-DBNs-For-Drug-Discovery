@@ -1,0 +1,38 @@
+000 (14403.059.000) 07/28 17:54:24 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14403.059.000) 07/28 18:31:46 Job executing on host: <144.92.142.136:9620?sock=6083_9576_4>
+...
+006 (14403.059.000) 07/28 18:31:54 Image size of job updated: 20128
+	20  -  MemoryUsage of job (MB)
+	20128  -  ResidentSetSize of job (KB)
+...
+006 (14403.059.000) 07/28 18:36:54 Image size of job updated: 5438968
+	5312  -  MemoryUsage of job (MB)
+	5438968  -  ResidentSetSize of job (KB)
+...
+006 (14403.059.000) 07/28 18:41:54 Image size of job updated: 6862440
+	6702  -  MemoryUsage of job (MB)
+	6862440  -  ResidentSetSize of job (KB)
+...
+006 (14403.059.000) 07/29 07:13:13 Image size of job updated: 6862752
+	6702  -  MemoryUsage of job (MB)
+	6862752  -  ResidentSetSize of job (KB)
+...
+006 (14403.059.000) 07/29 12:01:20 Image size of job updated: 7414880
+	6702  -  MemoryUsage of job (MB)
+	6862752  -  ResidentSetSize of job (KB)
+...
+004 (14403.059.000) 07/29 12:01:21 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 17:28:09, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  26198091
+	   Memory (MB)          :     6702     8192     12288
+...
+009 (14403.059.000) 07/29 12:01:21 Job was aborted by the user.
+	via condor_rm (by user jferiante)
+...

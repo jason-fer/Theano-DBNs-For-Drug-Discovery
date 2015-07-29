@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 17
+RunningOn slot16@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 17
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: casp3, fold: 0
+Running logistic regression for target: casp3
+target:casp3 fold:0 predicted: 4264 wrong: 30 pct correct: 0.99296435272, auc: 1.0
+Results for casp3: accuracy: 0.99296435272, auc: 1.0
+Building data for target: casp3, fold: 1
+Running logistic regression for target: casp3
+target:casp3 fold:1 predicted: 4264 wrong: 30 pct correct: 0.99296435272, auc: 0.998646686031
+Results for casp3: accuracy: 0.99296435272, auc: 0.999323343016
+Building data for target: casp3, fold: 2
+Running logistic regression for target: casp3
+target:casp3 fold:2 predicted: 4264 wrong: 30 pct correct: 0.99296435272, auc: 0.999762344864
+Results for casp3: accuracy: 0.99296435272, auc: 0.999469676965
+Building data for target: casp3, fold: 3
+Running logistic regression for target: casp3
+target:casp3 fold:3 predicted: 4264 wrong: 60 pct correct: 0.985928705441, auc: 0.998950356483
+Results for casp3: accuracy: 0.991205440901, auc: 0.999339846844
+Building data for target: casp3, fold: 4
+Running logistic regression for target: casp3
+target:casp3 fold:4 predicted: 4266 wrong: 1 pct correct: 0.999765588373, auc: 0.999993404564
+Results for casp3: accuracy: 0.992917470395, auc: 0.999470558388
+####################  Results for DUD-E ####################
+casp3 accuracy: 0.992917470395, auc:0.999470558388
+############################################################
+runtime: 91.66 secs.

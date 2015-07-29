@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 74
+RunningOn slot20@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 74
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: pde5a, fold: 0
+Running random forests for target: pde5a
+target:pde5a fold:0 predicted: 9794 wrong: 60 pct correct: 0.993873800286, auc: 0.999592746685
+Results for pde5a: accuracy: 0.993873800286, auc: 0.999592746685
+Building data for target: pde5a, fold: 1
+Running random forests for target: pde5a
+target:pde5a fold:1 predicted: 9794 wrong: 331 pct correct: 0.966203798244, auc: 0.997971381373
+Results for pde5a: accuracy: 0.980038799265, auc: 0.998782064029
+Building data for target: pde5a, fold: 2
+Running random forests for target: pde5a
+target:pde5a fold:2 predicted: 9794 wrong: 454 pct correct: 0.95364508883, auc: 0.999325068449
+Results for pde5a: accuracy: 0.971240895787, auc: 0.998963065502
+Building data for target: pde5a, fold: 3
+Running random forests for target: pde5a
+target:pde5a fold:3 predicted: 9794 wrong: 150 pct correct: 0.984684500715, auc: 0.99994136572
+Results for pde5a: accuracy: 0.974601797019, auc: 0.999207640557
+Building data for target: pde5a, fold: 4
+Running random forests for target: pde5a
+target:pde5a fold:4 predicted: 9828 wrong: 151 pct correct: 0.984635734636, auc: 0.999351804072
+Results for pde5a: accuracy: 0.976608584542, auc: 0.99923647326
+####################  Results for DUD-E ####################
+pde5a accuracy: 0.976608584542, auc:0.99923647326
+############################################################
+runtime: 3672.33 secs.

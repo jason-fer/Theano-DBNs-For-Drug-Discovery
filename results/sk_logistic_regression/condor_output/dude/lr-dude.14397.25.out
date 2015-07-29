@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 25
+RunningOn slot24@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 25
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: dhi1, fold: 0
+Running logistic regression for target: dhi1
+target:dhi1 fold:0 predicted: 7014 wrong: 67 pct correct: 0.990447676076, auc: 0.999849074157
+Results for dhi1: accuracy: 0.990447676076, auc: 0.999849074157
+Building data for target: dhi1, fold: 1
+Running logistic regression for target: dhi1
+target:dhi1 fold:1 predicted: 7014 wrong: 38 pct correct: 0.994582264043, auc: 0.999527428916
+Results for dhi1: accuracy: 0.99251497006, auc: 0.999688251536
+Building data for target: dhi1, fold: 2
+Running logistic regression for target: dhi1
+target:dhi1 fold:2 predicted: 7014 wrong: 36 pct correct: 0.994867408041, auc: 0.999945567729
+Results for dhi1: accuracy: 0.993299116054, auc: 0.999774023601
+Building data for target: dhi1, fold: 3
+Running logistic regression for target: dhi1
+target:dhi1 fold:3 predicted: 7014 wrong: 94 pct correct: 0.986598232107, auc: 0.998099818889
+Results for dhi1: accuracy: 0.991623895067, auc: 0.999355472423
+Building data for target: dhi1, fold: 4
+Running logistic regression for target: dhi1
+target:dhi1 fold:4 predicted: 7136 wrong: 67 pct correct: 0.990610986547, auc: 0.999335843954
+Results for dhi1: accuracy: 0.991421313363, auc: 0.999351546729
+####################  Results for DUD-E ####################
+dhi1 accuracy: 0.991421313363, auc:0.999351546729
+############################################################
+runtime: 142.69 secs.

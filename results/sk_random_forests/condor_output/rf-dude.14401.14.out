@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 14
+RunningOn slot9@opt-a001.discovery.wisc.edu
+python sk_random_forests.py dud_e 14
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: bace1, fold: 0
+Running random forests for target: bace1
+target:bace1 fold:0 predicted: 6554 wrong: 211 pct correct: 0.967805920049, auc: 0.99402633336
+Results for bace1: accuracy: 0.967805920049, auc: 0.99402633336
+Building data for target: bace1, fold: 1
+Running random forests for target: bace1
+target:bace1 fold:1 predicted: 6554 wrong: 120 pct correct: 0.981690570644, auc: 0.999715674403
+Results for bace1: accuracy: 0.974748245346, auc: 0.996871003882
+Building data for target: bace1, fold: 2
+Running random forests for target: bace1
+target:bace1 fold:2 predicted: 6554 wrong: 60 pct correct: 0.990845285322, auc: 0.994050380798
+Results for bace1: accuracy: 0.980113925338, auc: 0.995930796187
+Building data for target: bace1, fold: 3
+Running random forests for target: bace1
+target:bace1 fold:3 predicted: 6554 wrong: 30 pct correct: 0.995422642661, auc: 0.999939174126
+Results for bace1: accuracy: 0.983941104669, auc: 0.996932890672
+Building data for target: bace1, fold: 4
+Running random forests for target: bace1
+target:bace1 fold:4 predicted: 6555 wrong: 61 pct correct: 0.990694126621, auc: 0.999635144881
+Results for bace1: accuracy: 0.985291709059, auc: 0.997473341514
+####################  Results for DUD-E ####################
+bace1 accuracy: 0.985291709059, auc:0.997473341514
+############################################################
+runtime: 1902.11 secs.

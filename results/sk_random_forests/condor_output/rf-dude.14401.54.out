@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 54
+RunningOn slot3@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 54
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: ital, fold: 0
+Running random forests for target: ital
+target:ital fold:0 predicted: 3118 wrong: 1 pct correct: 0.999679281591, auc: 0.99998749187
+Results for ital: accuracy: 0.999679281591, auc: 0.99998749187
+Building data for target: ital, fold: 1
+Running random forests for target: ital
+target:ital fold:1 predicted: 3118 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ital: accuracy: 0.999839640795, auc: 0.999993745935
+Building data for target: ital, fold: 2
+Running random forests for target: ital
+target:ital fold:2 predicted: 3118 wrong: 1 pct correct: 0.999679281591, auc: 1.0
+Results for ital: accuracy: 0.999786187727, auc: 0.999995830623
+Building data for target: ital, fold: 3
+Running random forests for target: ital
+target:ital fold:3 predicted: 3118 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ital: accuracy: 0.999839640795, auc: 0.999996872967
+Building data for target: ital, fold: 4
+Running random forests for target: ital
+target:ital fold:4 predicted: 3208 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ital: accuracy: 0.999871712636, auc: 0.999997498374
+####################  Results for DUD-E ####################
+ital accuracy: 0.999871712636, auc:0.999997498374
+############################################################
+runtime: 444.02 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 39
+RunningOn slot7@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 39
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fpps, fold: 0
+Running logistic regression for target: fpps
+target:fpps fold:0 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 1
+Running logistic regression for target: fpps
+target:fpps fold:1 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 2
+Running logistic regression for target: fpps
+target:fpps fold:2 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 3
+Running logistic regression for target: fpps
+target:fpps fold:3 predicted: 3058 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+Building data for target: fpps, fold: 4
+Running logistic regression for target: fpps
+target:fpps fold:4 predicted: 3151 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fpps: accuracy: 1.0, auc: 1.0
+####################  Results for DUD-E ####################
+fpps accuracy: 1.0, auc:1.0
+############################################################
+runtime: 99.76 secs.

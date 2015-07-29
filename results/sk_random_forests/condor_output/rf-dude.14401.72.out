@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 72
+RunningOn slot31@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 72
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: pa2ga, fold: 0
+Running random forests for target: pa2ga
+target:pa2ga fold:0 predicted: 1792 wrong: 60 pct correct: 0.966517857143, auc: 0.996333973129
+Results for pa2ga: accuracy: 0.966517857143, auc: 0.996333973129
+Building data for target: pa2ga, fold: 1
+Running random forests for target: pa2ga
+target:pa2ga fold:1 predicted: 1792 wrong: 2 pct correct: 0.998883928571, auc: 1.0
+Results for pa2ga: accuracy: 0.982700892857, auc: 0.998166986564
+Building data for target: pa2ga, fold: 2
+Running random forests for target: pa2ga
+target:pa2ga fold:2 predicted: 1792 wrong: 30 pct correct: 0.983258928571, auc: 0.999558541267
+Results for pa2ga: accuracy: 0.982886904762, auc: 0.998630838132
+Building data for target: pa2ga, fold: 3
+Running random forests for target: pa2ga
+target:pa2ga fold:3 predicted: 1792 wrong: 30 pct correct: 0.983258928571, auc: 0.999443378119
+Results for pa2ga: accuracy: 0.982979910714, auc: 0.998833973129
+Building data for target: pa2ga, fold: 4
+Running random forests for target: pa2ga
+target:pa2ga fold:4 predicted: 1856 wrong: 30 pct correct: 0.983836206897, auc: 1.0
+Results for pa2ga: accuracy: 0.983151169951, auc: 0.999067178503
+####################  Results for DUD-E ####################
+pa2ga accuracy: 0.983151169951, auc:0.999067178503
+############################################################
+runtime: 220.89 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 71
+RunningOn slot22@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 71
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: nram, fold: 0
+Running logistic regression for target: nram
+target:nram fold:0 predicted: 2477 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for nram: accuracy: 1.0, auc: 1.0
+Building data for target: nram, fold: 1
+Running logistic regression for target: nram
+target:nram fold:1 predicted: 2477 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for nram: accuracy: 1.0, auc: 1.0
+Building data for target: nram, fold: 2
+Running logistic regression for target: nram
+target:nram fold:2 predicted: 2477 wrong: 28 pct correct: 0.98869600323, auc: 0.999799196787
+Results for nram: accuracy: 0.996232001077, auc: 0.999933065596
+Building data for target: nram, fold: 3
+Running logistic regression for target: nram
+target:nram fold:3 predicted: 2477 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for nram: accuracy: 0.997174000807, auc: 0.999949799197
+Building data for target: nram, fold: 4
+Running logistic regression for target: nram
+target:nram fold:4 predicted: 2489 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for nram: accuracy: 0.997739200646, auc: 0.999959839357
+####################  Results for DUD-E ####################
+nram accuracy: 0.997739200646, auc:0.999959839357
+############################################################
+runtime: 103.14 secs.

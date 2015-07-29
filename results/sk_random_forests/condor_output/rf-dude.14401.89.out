@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 89
+RunningOn slot13@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 89
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: rxra, fold: 0
+Running random forests for target: rxra
+target:rxra fold:0 predicted: 2501 wrong: 31 pct correct: 0.987604958017, auc: 0.999918883842
+Results for rxra: accuracy: 0.987604958017, auc: 0.999918883842
+Building data for target: rxra, fold: 1
+Running random forests for target: rxra
+target:rxra fold:1 predicted: 2501 wrong: 60 pct correct: 0.976009596162, auc: 0.983594256976
+Results for rxra: accuracy: 0.981807277089, auc: 0.991756570409
+Building data for target: rxra, fold: 2
+Running random forests for target: rxra
+target:rxra fold:2 predicted: 2501 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for rxra: accuracy: 0.987871518059, auc: 0.994504380273
+Building data for target: rxra, fold: 3
+Running random forests for target: rxra
+target:rxra fold:3 predicted: 2501 wrong: 90 pct correct: 0.964014394242, auc: 0.996937865023
+Results for rxra: accuracy: 0.981907237105, auc: 0.99511275146
+Building data for target: rxra, fold: 4
+Running random forests for target: rxra
+target:rxra fold:4 predicted: 2563 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for rxra: accuracy: 0.985525789684, auc: 0.996090201168
+####################  Results for DUD-E ####################
+rxra accuracy: 0.985525789684, auc:0.996090201168
+############################################################
+runtime: 313.44 secs.

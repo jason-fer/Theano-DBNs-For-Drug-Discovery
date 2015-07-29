@@ -1,0 +1,51 @@
+000 (14401.025.000) 07/28 17:53:58 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14401.025.000) 07/28 17:54:25 Job executing on host: <144.92.142.161:9620?sock=10442_34dc_3>
+...
+006 (14401.025.000) 07/28 17:54:34 Image size of job updated: 2500
+	3  -  MemoryUsage of job (MB)
+	2500  -  ResidentSetSize of job (KB)
+...
+006 (14401.025.000) 07/28 17:59:35 Image size of job updated: 41852
+	41  -  MemoryUsage of job (MB)
+	41852  -  ResidentSetSize of job (KB)
+...
+006 (14401.025.000) 07/28 18:04:36 Image size of job updated: 524852
+	513  -  MemoryUsage of job (MB)
+	524852  -  ResidentSetSize of job (KB)
+...
+006 (14401.025.000) 07/28 18:09:36 Image size of job updated: 524960
+	513  -  MemoryUsage of job (MB)
+	524960  -  ResidentSetSize of job (KB)
+...
+006 (14401.025.000) 07/28 18:19:38 Image size of job updated: 525004
+	513  -  MemoryUsage of job (MB)
+	525004  -  ResidentSetSize of job (KB)
+...
+006 (14401.025.000) 07/28 18:29:38 Image size of job updated: 525032
+	513  -  MemoryUsage of job (MB)
+	525032  -  ResidentSetSize of job (KB)
+...
+006 (14401.025.000) 07/28 18:39:39 Image size of job updated: 525640
+	514  -  MemoryUsage of job (MB)
+	525640  -  ResidentSetSize of job (KB)
+...
+006 (14401.025.000) 07/28 18:44:19 Image size of job updated: 1077824
+	514  -  MemoryUsage of job (MB)
+	525640  -  ResidentSetSize of job (KB)
+...
+005 (14401.025.000) 07/28 18:44:19 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:44:16, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:44:16, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  33967945
+	   Memory (MB)          :      514     3072      3228
+...

@@ -1,0 +1,36 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14404
+Process 2
+RunningOn slot14@galaxy-01.discovery.wisc.edu
+python th_deep_belief_net.py tox21 2
+Running Theano Learn Deep Belief Net for tox21, target: nr-ar.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -77.9076243507
+Pre-training layer 0, epoch 1, cost  -48.4548610118
+Pre-training layer 0, epoch 2, cost  -42.1517307899
+Pre-training layer 0, epoch 3, cost  -38.0481107116
+Pre-training layer 0, epoch 4, cost  -34.8559913456
+Pre-training layer 0, epoch 5, cost  -32.417350125
+Pre-training layer 0, epoch 6, cost  -30.5110889845
+Pre-training layer 0, epoch 7, cost  -29.0770291245
+Pre-training layer 1, epoch 0, cost  -1353.21243629
+Pre-training layer 1, epoch 1, cost  -1328.90392713
+Pre-training layer 1, epoch 2, cost  -1323.34114169
+Pre-training layer 1, epoch 3, cost  -1320.7084976
+Pre-training layer 1, epoch 4, cost  -1319.04501587
+Pre-training layer 1, epoch 5, cost  -1317.86417268
+Pre-training layer 1, epoch 6, cost  -1316.94370408
+Pre-training layer 1, epoch 7, cost  -1316.22093768
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 106/106, best error 22.571429 %, best_auc: 0.818245
+     new best AUC!: 0.825191120259
+     epoch 2, minibatch 106/106, best error 22.800000 %, best_auc: 0.825191
+     new best AUC!: 0.826503234343
+     new best AUC!: 0.827208909144
+     new best AUC!: 0.827962364011
+     new best AUC!: 0.827999117906
+Optimization complete with best validation score of 20.028571 %, obtained at iteration 212, with test performance 22.800000 %, and best_auc: 0.827999
+runtime: 3904.68 secs.

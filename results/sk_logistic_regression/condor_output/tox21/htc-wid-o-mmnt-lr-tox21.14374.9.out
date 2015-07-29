@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14374
+Process 9
+RunningOn slot27@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py tox21 9
+Running Scikit Learn Logistic Regression Classifier for tox21.........
+Building data for target: sr-hse, fold: 0
+Running logistic regression for target: sr-hse
+target:sr-hse fold:0 predicted: 3069 wrong: 956 pct correct: 0.688497882046, auc: 0.77078698926
+Results for sr-hse: accuracy: 0.688497882046, auc: 0.77078698926
+Building data for target: sr-hse, fold: 1
+Running logistic regression for target: sr-hse
+target:sr-hse fold:1 predicted: 3069 wrong: 913 pct correct: 0.702508960573, auc: 0.733440354699
+Results for sr-hse: accuracy: 0.69550342131, auc: 0.75211367198
+Building data for target: sr-hse, fold: 2
+Running logistic regression for target: sr-hse
+target:sr-hse fold:2 predicted: 3069 wrong: 892 pct correct: 0.709351580319, auc: 0.767874479226
+Results for sr-hse: accuracy: 0.700119474313, auc: 0.757367274395
+Building data for target: sr-hse, fold: 3
+Running logistic regression for target: sr-hse
+target:sr-hse fold:3 predicted: 3069 wrong: 1057 pct correct: 0.655588139459, auc: 0.688586935749
+Results for sr-hse: accuracy: 0.6889866406, auc: 0.740172189734
+Building data for target: sr-hse, fold: 4
+Running logistic regression for target: sr-hse
+target:sr-hse fold:4 predicted: 3039 wrong: 866 pct correct: 0.715037841395, auc: 0.76551729217
+Results for sr-hse: accuracy: 0.694196880759, auc: 0.745241210221
+####################  Results for Tox21 ####################
+sr-hse accuracy: 0.694196880759, auc:0.745241210221
+############################################################
+runtime: 92.43 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 30
+RunningOn slot14@opt-a004.discovery.wisc.edu
+python sk_random_forests.py dud_e 30
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: esr1, fold: 0
+Running random forests for target: esr1
+target:esr1 fold:0 predicted: 7913 wrong: 93 pct correct: 0.988247188171, auc: 0.999846264713
+Results for esr1: accuracy: 0.988247188171, auc: 0.999846264713
+Building data for target: esr1, fold: 1
+Running random forests for target: esr1
+target:esr1 fold:1 predicted: 7913 wrong: 91 pct correct: 0.988499936813, auc: 0.99568292097
+Results for esr1: accuracy: 0.988373562492, auc: 0.997764592842
+Building data for target: esr1, fold: 2
+Running random forests for target: esr1
+target:esr1 fold:2 predicted: 7913 wrong: 122 pct correct: 0.98458233287, auc: 0.991239010329
+Results for esr1: accuracy: 0.987109819285, auc: 0.995589398671
+Building data for target: esr1, fold: 3
+Running random forests for target: esr1
+target:esr1 fold:3 predicted: 7913 wrong: 91 pct correct: 0.988499936813, auc: 0.999865481624
+Results for esr1: accuracy: 0.987457348667, auc: 0.996658419409
+Building data for target: esr1, fold: 4
+Running random forests for target: esr1
+target:esr1 fold:4 predicted: 7976 wrong: 61 pct correct: 0.992352056169, auc: 0.995805943124
+Results for esr1: accuracy: 0.988436290167, auc: 0.996487924152
+####################  Results for DUD-E ####################
+esr1 accuracy: 0.988436290167, auc:0.996487924152
+############################################################
+runtime: 3036.19 secs.

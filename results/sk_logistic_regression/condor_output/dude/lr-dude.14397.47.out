@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 47
+RunningOn slot7@opt-a016.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 47
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hivpr, fold: 0
+Running logistic regression for target: hivpr
+target:hivpr fold:0 predicted: 14222 wrong: 30 pct correct: 0.997890592041, auc: 0.999308575592
+Results for hivpr: accuracy: 0.997890592041, auc: 0.999308575592
+Building data for target: hivpr, fold: 1
+Running logistic regression for target: hivpr
+target:hivpr fold:1 predicted: 14222 wrong: 50 pct correct: 0.996484320068, auc: 0.999985657147
+Results for hivpr: accuracy: 0.997187456054, auc: 0.999647116369
+Building data for target: hivpr, fold: 2
+Running logistic regression for target: hivpr
+target:hivpr fold:2 predicted: 14222 wrong: 81 pct correct: 0.994304598509, auc: 0.997358689518
+Results for hivpr: accuracy: 0.996226503539, auc: 0.998884307419
+Building data for target: hivpr, fold: 3
+Running logistic regression for target: hivpr
+target:hivpr fold:3 predicted: 14222 wrong: 78 pct correct: 0.994515539305, auc: 0.999507397203
+Results for hivpr: accuracy: 0.995798762481, auc: 0.999040079865
+Building data for target: hivpr, fold: 4
+Running logistic regression for target: hivpr
+target:hivpr fold:4 predicted: 14222 wrong: 52 pct correct: 0.99634369287, auc: 0.998378763082
+Results for hivpr: accuracy: 0.995907748559, auc: 0.998907816508
+####################  Results for DUD-E ####################
+hivpr accuracy: 0.995907748559, auc:0.998907816508
+############################################################
+runtime: 326.85 secs.

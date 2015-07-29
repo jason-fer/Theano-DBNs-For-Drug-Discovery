@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 36
+RunningOn slot7@opt-a014.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 36
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fgfr1, fold: 0
+Running logistic regression for target: fgfr1
+target:fgfr1 fold:0 predicted: 194 wrong: 103 pct correct: 0.469072164948, auc: 0.468537414966
+Results for fgfr1: accuracy: 0.469072164948, auc: 0.468537414966
+Building data for target: fgfr1, fold: 1
+Running logistic regression for target: fgfr1
+target:fgfr1 fold:1 predicted: 194 wrong: 111 pct correct: 0.427835051546, auc: 0.416241496599
+Results for fgfr1: accuracy: 0.448453608247, auc: 0.442389455782
+Building data for target: fgfr1, fold: 2
+Running logistic regression for target: fgfr1
+target:fgfr1 fold:2 predicted: 194 wrong: 100 pct correct: 0.484536082474, auc: 0.506058673469
+Results for fgfr1: accuracy: 0.460481099656, auc: 0.463612528345
+Building data for target: fgfr1, fold: 3
+Running logistic regression for target: fgfr1
+target:fgfr1 fold:3 predicted: 194 wrong: 94 pct correct: 0.515463917526, auc: 0.55431547619
+Results for fgfr1: accuracy: 0.474226804124, auc: 0.486288265306
+Building data for target: fgfr1, fold: 4
+Running logistic regression for target: fgfr1
+target:fgfr1 fold:4 predicted: 202 wrong: 111 pct correct: 0.450495049505, auc: 0.489803921569
+Results for fgfr1: accuracy: 0.4694804532, auc: 0.486991396559
+####################  Results for DUD-E ####################
+fgfr1 accuracy: 0.4694804532, auc:0.486991396559
+############################################################
+runtime: 13.99 secs.

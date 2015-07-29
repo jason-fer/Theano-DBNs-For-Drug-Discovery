@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 5
+RunningOn slot5@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 5
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: ada, fold: 0
+Running logistic regression for target: ada
+target:ada fold:0 predicted: 2186 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada: accuracy: 1.0, auc: 1.0
+Building data for target: ada, fold: 1
+Running logistic regression for target: ada
+target:ada fold:1 predicted: 2186 wrong: 2 pct correct: 0.999085086917, auc: 1.0
+Results for ada: accuracy: 0.999542543458, auc: 1.0
+Building data for target: ada, fold: 2
+Running logistic regression for target: ada
+target:ada fold:2 predicted: 2186 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada: accuracy: 0.999695028972, auc: 1.0
+Building data for target: ada, fold: 3
+Running logistic regression for target: ada
+target:ada fold:3 predicted: 2186 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada: accuracy: 0.999771271729, auc: 1.0
+Building data for target: ada, fold: 4
+Running logistic regression for target: ada
+target:ada fold:4 predicted: 2176 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for ada: accuracy: 0.999817017383, auc: 1.0
+####################  Results for DUD-E ####################
+ada accuracy: 0.999817017383, auc:1.0
+############################################################
+runtime: 54.17 secs.

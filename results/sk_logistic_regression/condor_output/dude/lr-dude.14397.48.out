@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 48
+RunningOn slot8@opt-a016.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 48
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hivrt, fold: 0
+Running logistic regression for target: hivrt
+target:hivrt fold:0 predicted: 7636 wrong: 224 pct correct: 0.970665269775, auc: 0.997083774094
+Results for hivrt: accuracy: 0.970665269775, auc: 0.997083774094
+Building data for target: hivrt, fold: 1
+Running logistic regression for target: hivrt
+target:hivrt fold:1 predicted: 7636 wrong: 160 pct correct: 0.979046621268, auc: 0.99072858313
+Results for hivrt: accuracy: 0.974855945521, auc: 0.993906178612
+Building data for target: hivrt, fold: 2
+Running logistic regression for target: hivrt
+target:hivrt fold:2 predicted: 7636 wrong: 198 pct correct: 0.974070193819, auc: 0.99908211944
+Results for hivrt: accuracy: 0.974594028287, auc: 0.995631492221
+Building data for target: hivrt, fold: 3
+Running logistic regression for target: hivrt
+target:hivrt fold:3 predicted: 7636 wrong: 249 pct correct: 0.967391304348, auc: 0.995488802269
+Results for hivrt: accuracy: 0.972793347302, auc: 0.995595819733
+Building data for target: hivrt, fold: 4
+Running logistic regression for target: hivrt
+target:hivrt fold:4 predicted: 7629 wrong: 268 pct correct: 0.964870887403, auc: 0.991112749885
+Results for hivrt: accuracy: 0.971208855322, auc: 0.994699205764
+####################  Results for DUD-E ####################
+hivrt accuracy: 0.971208855322, auc:0.994699205764
+############################################################
+runtime: 207.54 secs.

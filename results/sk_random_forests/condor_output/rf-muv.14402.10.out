@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14402
+Process 10
+RunningOn slot30@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py muv 10
+Running Scikit Learn Random Forests for muv.........
+Building data for target: 737, fold: 0
+Running random forests for target: 737
+target:737 fold:0 predicted: 3180 wrong: 181 pct correct: 0.943081761006, auc: 0.524444444444
+Results for 737: accuracy: 0.943081761006, auc: 0.524444444444
+Building data for target: 737, fold: 1
+Running random forests for target: 737
+target:737 fold:1 predicted: 3180 wrong: 150 pct correct: 0.952830188679, auc: 0.626555555556
+Results for 737: accuracy: 0.947955974843, auc: 0.5755
+Building data for target: 737, fold: 2
+Running random forests for target: 737
+target:737 fold:2 predicted: 3180 wrong: 181 pct correct: 0.943081761006, auc: 0.629777777778
+Results for 737: accuracy: 0.946331236897, auc: 0.593592592593
+Building data for target: 737, fold: 3
+Running random forests for target: 737
+target:737 fold:3 predicted: 3180 wrong: 181 pct correct: 0.943081761006, auc: 0.6165
+Results for 737: accuracy: 0.945518867925, auc: 0.599319444444
+Building data for target: 737, fold: 4
+Running random forests for target: 737
+target:737 fold:4 predicted: 3180 wrong: 181 pct correct: 0.943081761006, auc: 0.629472222222
+Results for 737: accuracy: 0.945031446541, auc: 0.60535
+####################  Results for MUV ####################
+737 accuracy: 0.945031446541, auc:0.60535
+############################################################
+runtime: 774.48 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 47
+RunningOn slot1@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 47
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: hivpr, fold: 0
+Running random forests for target: hivpr
+target:hivpr fold:0 predicted: 14222 wrong: 125 pct correct: 0.991210800169, auc: 0.999943865043
+Results for hivpr: accuracy: 0.991210800169, auc: 0.999943865043
+Building data for target: hivpr, fold: 1
+Running random forests for target: hivpr
+target:hivpr fold:1 predicted: 14222 wrong: 25 pct correct: 0.998242160034, auc: 0.999976754687
+Results for hivpr: accuracy: 0.994726480101, auc: 0.999960309865
+Building data for target: hivpr, fold: 2
+Running random forests for target: hivpr
+target:hivpr fold:2 predicted: 14222 wrong: 127 pct correct: 0.991070172971, auc: 0.993983420652
+Results for hivpr: accuracy: 0.993507711058, auc: 0.997968013461
+Building data for target: hivpr, fold: 3
+Running random forests for target: hivpr
+target:hivpr fold:3 predicted: 14222 wrong: 250 pct correct: 0.982421600338, auc: 0.99763713869
+Results for hivpr: accuracy: 0.990736183378, auc: 0.997885294768
+Building data for target: hivpr, fold: 4
+Running random forests for target: hivpr
+target:hivpr fold:4 predicted: 14222 wrong: 75 pct correct: 0.994726480101, auc: 0.997810489373
+Results for hivpr: accuracy: 0.991534242723, auc: 0.997870333689
+####################  Results for DUD-E ####################
+hivpr accuracy: 0.991534242723, auc:0.997870333689
+############################################################
+runtime: 5887.18 secs.

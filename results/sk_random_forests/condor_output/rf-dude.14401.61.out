@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 61
+RunningOn slot12@opt-a016.discovery.wisc.edu
+python sk_random_forests.py dud_e 61
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: lkha4, fold: 0
+Running random forests for target: lkha4
+target:lkha4 fold:0 predicted: 3335 wrong: 65 pct correct: 0.980509745127, auc: 0.998070580475
+Results for lkha4: accuracy: 0.980509745127, auc: 0.998070580475
+Building data for target: lkha4, fold: 1
+Running random forests for target: lkha4
+target:lkha4 fold:1 predicted: 3335 wrong: 62 pct correct: 0.981409295352, auc: 0.999901055409
+Results for lkha4: accuracy: 0.98095952024, auc: 0.998985817942
+Building data for target: lkha4, fold: 2
+Running random forests for target: lkha4
+target:lkha4 fold:2 predicted: 3335 wrong: 64 pct correct: 0.980809595202, auc: 0.999433817062
+Results for lkha4: accuracy: 0.980909545227, auc: 0.999135150982
+Building data for target: lkha4, fold: 3
+Running random forests for target: lkha4
+target:lkha4 fold:3 predicted: 3335 wrong: 120 pct correct: 0.964017991004, auc: 0.999851583113
+Results for lkha4: accuracy: 0.976686656672, auc: 0.999314259015
+Building data for target: lkha4, fold: 4
+Running random forests for target: lkha4
+target:lkha4 fold:4 predicted: 3457 wrong: 92 pct correct: 0.973387330055, auc: 0.999878350432
+Results for lkha4: accuracy: 0.976026791348, auc: 0.999427077298
+####################  Results for DUD-E ####################
+lkha4 accuracy: 0.976026791348, auc:0.999427077298
+############################################################
+runtime: 351.82 secs.

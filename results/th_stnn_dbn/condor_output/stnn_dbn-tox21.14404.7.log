@@ -1,0 +1,105 @@
+000 (14404.007.000) 07/28 17:54:29 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14404.007.000) 07/28 17:54:49 Job executing on host: <144.92.142.146:9620?sock=3552_510a_3>
+...
+007 (14404.007.000) 07/28 17:54:49 Shadow exception!
+	Error from slot19@galaxy-01.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-tox21.sh': (errno=13: 'Permission denied')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14404.007.000) 07/28 17:54:49 Job was held.
+	Error from slot19@galaxy-01.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-tox21.sh': (errno=13: 'Permission denied')
+	Code 6 Subcode 13
+...
+013 (14404.007.000) 07/28 18:09:39 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14404.007.000) 07/28 18:09:58 Job executing on host: <144.92.142.146:9620?sock=3552_510a_3>
+...
+006 (14404.007.000) 07/28 18:10:06 Image size of job updated: 3528
+	4  -  MemoryUsage of job (MB)
+	3528  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 18:15:06 Image size of job updated: 218124
+	214  -  MemoryUsage of job (MB)
+	218124  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 18:20:07 Image size of job updated: 219704
+	215  -  MemoryUsage of job (MB)
+	219704  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 18:25:08 Image size of job updated: 221268
+	217  -  MemoryUsage of job (MB)
+	221268  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 18:35:08 Image size of job updated: 253772
+	248  -  MemoryUsage of job (MB)
+	253772  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 18:40:09 Image size of job updated: 260520
+	255  -  MemoryUsage of job (MB)
+	260520  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 18:45:09 Image size of job updated: 261552
+	256  -  MemoryUsage of job (MB)
+	261552  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 18:50:09 Image size of job updated: 262228
+	257  -  MemoryUsage of job (MB)
+	262228  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 18:55:10 Image size of job updated: 269236
+	263  -  MemoryUsage of job (MB)
+	269236  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 19:00:11 Image size of job updated: 269328
+	264  -  MemoryUsage of job (MB)
+	269328  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 19:05:11 Image size of job updated: 281048
+	275  -  MemoryUsage of job (MB)
+	281048  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 19:10:12 Image size of job updated: 283868
+	278  -  MemoryUsage of job (MB)
+	283868  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 19:15:13 Image size of job updated: 285448
+	279  -  MemoryUsage of job (MB)
+	285448  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 19:25:13 Image size of job updated: 321536
+	314  -  MemoryUsage of job (MB)
+	321536  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 20:00:17 Image size of job updated: 359484
+	352  -  MemoryUsage of job (MB)
+	359484  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 20:10:18 Image size of job updated: 359488
+	352  -  MemoryUsage of job (MB)
+	359488  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 21:20:24 Image size of job updated: 364376
+	356  -  MemoryUsage of job (MB)
+	364376  -  ResidentSetSize of job (KB)
+...
+006 (14404.007.000) 07/28 21:50:28 Image size of job updated: 392428
+	384  -  MemoryUsage of job (MB)
+	392428  -  ResidentSetSize of job (KB)
+...
+005 (14404.007.000) 07/28 21:52:33 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 06:47:36, Sys 0 00:30:15  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 06:47:36, Sys 0 00:30:15  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  19954801
+	   Memory (MB)          :      384     2048      2683
+...

@@ -1,0 +1,22 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14406
+Process 4
+RunningOn slot14@opt-a004.discovery.wisc.edu
+python th_deep_belief_net.py muv 4
+Running Theano Learn Deep Belief Net for muv, target: 652.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -96.0170752776
+Pre-training layer 0, epoch 1, cost  -65.4549024388
+Pre-training layer 0, epoch 2, cost  -58.8981606379
+Pre-training layer 0, epoch 3, cost  -54.1371059421
+Pre-training layer 1, epoch 0, cost  -1341.86705672
+Pre-training layer 1, epoch 1, cost  -1322.73798652
+Pre-training layer 1, epoch 2, cost  -1320.30073266
+Pre-training layer 1, epoch 3, cost  -1318.35235779
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 95/95, best error 5.580645 %, best_auc: 0.662000
+Optimization complete with best validation score of 5.677419 %, obtained at iteration 95, with test performance 5.580645 %, and best_auc: 0.662000
+runtime: 18783.78 secs.

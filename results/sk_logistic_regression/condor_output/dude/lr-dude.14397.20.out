@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 20
+RunningOn slot19@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 20
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: cp2c9, fold: 0
+Running logistic regression for target: cp2c9
+target:cp2c9 fold:0 predicted: 2594 wrong: 36 pct correct: 0.986121819584, auc: 0.999467928959
+Results for cp2c9: accuracy: 0.986121819584, auc: 0.999467928959
+Building data for target: cp2c9, fold: 1
+Running logistic regression for target: cp2c9
+target:cp2c9 fold:1 predicted: 2594 wrong: 67 pct correct: 0.974171164225, auc: 0.994697636871
+Results for cp2c9: accuracy: 0.980146491904, auc: 0.997082782915
+Building data for target: cp2c9, fold: 2
+Running logistic regression for target: cp2c9
+target:cp2c9 fold:2 predicted: 2594 wrong: 128 pct correct: 0.95065535852, auc: 0.996385586379
+Results for cp2c9: accuracy: 0.970316114109, auc: 0.99685038407
+Building data for target: cp2c9, fold: 3
+Running logistic regression for target: cp2c9
+target:cp2c9 fold:3 predicted: 2594 wrong: 186 pct correct: 0.928296067849, auc: 0.990330984882
+Results for cp2c9: accuracy: 0.959811102544, auc: 0.995220534273
+Building data for target: cp2c9, fold: 4
+Running logistic regression for target: cp2c9
+target:cp2c9 fold:4 predicted: 2688 wrong: 187 pct correct: 0.930431547619, auc: 0.98760177021
+Results for cp2c9: accuracy: 0.953935191559, auc: 0.99369678146
+####################  Results for DUD-E ####################
+cp2c9 accuracy: 0.953935191559, auc:0.99369678146
+############################################################
+runtime: 59.00 secs.

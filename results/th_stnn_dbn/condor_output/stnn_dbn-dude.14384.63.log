@@ -1,0 +1,59 @@
+013 (14384.063.000) 07/28 18:09:39 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14384.063.000) 07/28 18:09:53 Job executing on host: <144.92.142.162:9620?sock=10446_6bfc_3>
+...
+007 (14384.063.000) 07/28 18:09:53 Shadow exception!
+	Error from slot8@opt-a002.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/th_deep_belief_net/wid-stnn_dbn-dude.sh': (errno=2: 'No such file or directory')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14384.063.000) 07/28 18:09:54 Job was held.
+	Error from slot8@opt-a002.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/th_deep_belief_net/wid-stnn_dbn-dude.sh': (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+013 (14384.063.000) 07/28 18:10:34 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14384.063.000) 07/28 18:11:03 Job executing on host: <144.92.142.163:9620?sock=10480_4475_3>
+...
+007 (14384.063.000) 07/28 18:11:03 Shadow exception!
+	Error from slot8@opt-a003.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/th_deep_belief_net/wid-stnn_dbn-dude.sh': (errno=2: 'No such file or directory')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14384.063.000) 07/28 18:11:03 Job was held.
+	Error from slot8@opt-a003.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/th_deep_belief_net/wid-stnn_dbn-dude.sh': (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+013 (14384.063.000) 07/28 19:07:45 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14384.063.000) 07/28 19:08:21 Job executing on host: <144.92.142.181:9620?sock=7576_d24e_3>
+...
+007 (14384.063.000) 07/28 19:08:21 Shadow exception!
+	Error from slot7@opt-a016.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/th_deep_belief_net/wid-stnn_dbn-dude.sh': (errno=2: 'No such file or directory')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14384.063.000) 07/28 19:08:21 Job was held.
+	Error from slot7@opt-a016.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/th_deep_belief_net/wid-stnn_dbn-dude.sh': (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+013 (14384.063.000) 07/28 19:37:51 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14384.063.000) 07/28 19:38:06 Job executing on host: <144.92.142.180:9620?sock=7678_2498_3>
+...
+007 (14384.063.000) 07/28 19:38:06 Shadow exception!
+	Error from slot7@opt-a015.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/th_deep_belief_net/wid-stnn_dbn-dude.sh': (errno=2: 'No such file or directory')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14384.063.000) 07/28 19:38:06 Job was held.
+	Error from slot7@opt-a015.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/th_deep_belief_net/wid-stnn_dbn-dude.sh': (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+009 (14384.063.000) 07/29 12:01:20 Job was aborted by the user.
+	via condor_rm (by user jferiante)
+...

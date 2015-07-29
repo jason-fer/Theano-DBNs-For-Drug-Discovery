@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 45
+RunningOn slot14@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 45
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: hdac8, fold: 0
+Running logistic regression for target: hdac8
+target:hdac8 fold:0 predicted: 3482 wrong: 1 pct correct: 0.999712808731, auc: 1.0
+Results for hdac8: accuracy: 0.999712808731, auc: 1.0
+Building data for target: hdac8, fold: 1
+Running logistic regression for target: hdac8
+target:hdac8 fold:1 predicted: 3482 wrong: 120 pct correct: 0.965537047674, auc: 0.998355603359
+Results for hdac8: accuracy: 0.982624928202, auc: 0.99917780168
+Building data for target: hdac8, fold: 2
+Running logistic regression for target: hdac8
+target:hdac8 fold:2 predicted: 3482 wrong: 32 pct correct: 0.99080987938, auc: 0.999958631531
+Results for hdac8: accuracy: 0.985353245261, auc: 0.999438078297
+Building data for target: hdac8, fold: 3
+Running logistic regression for target: hdac8
+target:hdac8 fold:3 predicted: 3482 wrong: 30 pct correct: 0.991384261918, auc: 0.999824184007
+Results for hdac8: accuracy: 0.986860999426, auc: 0.999534604724
+Building data for target: hdac8, fold: 4
+Running logistic regression for target: hdac8
+target:hdac8 fold:4 predicted: 3606 wrong: 1 pct correct: 0.999722684415, auc: 1.0
+Results for hdac8: accuracy: 0.989433336423, auc: 0.999627683779
+####################  Results for DUD-E ####################
+hdac8 accuracy: 0.989433336423, auc:0.999627683779
+############################################################
+runtime: 108.12 secs.

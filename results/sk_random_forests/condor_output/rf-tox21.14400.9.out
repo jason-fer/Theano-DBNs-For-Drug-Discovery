@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 9
+RunningOn slot4@opt-a008.discovery.wisc.edu
+python sk_random_forests.py tox21 9
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: sr-hse, fold: 0
+Running random forests for target: sr-hse
+target:sr-hse fold:0 predicted: 3069 wrong: 1021 pct correct: 0.667318344738, auc: 0.778809769522
+Results for sr-hse: accuracy: 0.667318344738, auc: 0.778809769522
+Building data for target: sr-hse, fold: 1
+Running random forests for target: sr-hse
+target:sr-hse fold:1 predicted: 3069 wrong: 1002 pct correct: 0.673509286413, auc: 0.783721285785
+Results for sr-hse: accuracy: 0.670413815575, auc: 0.781265527654
+Building data for target: sr-hse, fold: 2
+Running random forests for target: sr-hse
+target:sr-hse fold:2 predicted: 3069 wrong: 1052 pct correct: 0.657217334637, auc: 0.842858234912
+Results for sr-hse: accuracy: 0.666014988596, auc: 0.801796430073
+Building data for target: sr-hse, fold: 3
+Running random forests for target: sr-hse
+target:sr-hse fold:3 predicted: 3069 wrong: 1189 pct correct: 0.612577386771, auc: 0.811936704506
+Results for sr-hse: accuracy: 0.652655588139, auc: 0.804331498681
+Building data for target: sr-hse, fold: 4
+Running random forests for target: sr-hse
+target:sr-hse fold:4 predicted: 3039 wrong: 904 pct correct: 0.7025337282, auc: 0.796216785483
+Results for sr-hse: accuracy: 0.662631216152, auc: 0.802708556042
+####################  Results for Tox21 ####################
+sr-hse accuracy: 0.662631216152, auc:0.802708556042
+############################################################
+runtime: 2114.54 secs.

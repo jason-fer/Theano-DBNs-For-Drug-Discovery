@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 49
+RunningOn slot10@opt-a003.discovery.wisc.edu
+python sk_random_forests.py dud_e 49
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: hmdh, fold: 0
+Running random forests for target: hmdh
+target:hmdh fold:0 predicted: 3546 wrong: 30 pct correct: 0.991539763113, auc: 1.0
+Results for hmdh: accuracy: 0.991539763113, auc: 1.0
+Building data for target: hmdh, fold: 1
+Running random forests for target: hmdh
+target:hmdh fold:1 predicted: 3546 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hmdh: accuracy: 0.995769881557, auc: 1.0
+Building data for target: hmdh, fold: 2
+Running random forests for target: hmdh
+target:hmdh fold:2 predicted: 3546 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hmdh: accuracy: 0.997179921038, auc: 1.0
+Building data for target: hmdh, fold: 3
+Running random forests for target: hmdh
+target:hmdh fold:3 predicted: 3546 wrong: 60 pct correct: 0.983079526227, auc: 0.999427393495
+Results for hmdh: accuracy: 0.993654822335, auc: 0.999856848374
+Building data for target: hmdh, fold: 4
+Running random forests for target: hmdh
+target:hmdh fold:4 predicted: 3544 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for hmdh: accuracy: 0.994923857868, auc: 0.999885478699
+####################  Results for DUD-E ####################
+hmdh accuracy: 0.994923857868, auc:0.999885478699
+############################################################
+runtime: 1343.32 secs.

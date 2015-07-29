@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 88
+RunningOn slot32@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 88
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: rock1, fold: 0
+Running random forests for target: rock1
+target:rock1 fold:0 predicted: 2475 wrong: 32 pct correct: 0.987070707071, auc: 0.999823529412
+Results for rock1: accuracy: 0.987070707071, auc: 0.999823529412
+Building data for target: rock1, fold: 1
+Running random forests for target: rock1
+target:rock1 fold:1 predicted: 2475 wrong: 152 pct correct: 0.938585858586, auc: 0.968960784314
+Results for rock1: accuracy: 0.962828282828, auc: 0.984392156863
+Building data for target: rock1, fold: 2
+Running random forests for target: rock1
+target:rock1 fold:2 predicted: 2475 wrong: 60 pct correct: 0.975757575758, auc: 0.996637254902
+Results for rock1: accuracy: 0.967138047138, auc: 0.988473856209
+Building data for target: rock1, fold: 3
+Running random forests for target: rock1
+target:rock1 fold:3 predicted: 2475 wrong: 64 pct correct: 0.974141414141, auc: 0.998568627451
+Results for rock1: accuracy: 0.968888888889, auc: 0.99099754902
+Building data for target: rock1, fold: 4
+Running random forests for target: rock1
+target:rock1 fold:4 predicted: 2524 wrong: 61 pct correct: 0.975832012678, auc: 0.999253337218
+Results for rock1: accuracy: 0.970277513647, auc: 0.992648706659
+####################  Results for DUD-E ####################
+rock1 accuracy: 0.970277513647, auc:0.992648706659
+############################################################
+runtime: 416.61 secs.

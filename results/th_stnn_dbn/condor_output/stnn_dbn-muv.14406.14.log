@@ -1,0 +1,49 @@
+000 (14406.014.000) 07/28 17:54:54 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14406.014.000) 07/28 18:05:47 Job executing on host: <144.92.142.162:9620?sock=10446_6bfc_3>
+...
+007 (14406.014.000) 07/28 18:05:47 Shadow exception!
+	Error from slot9@opt-a002.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-muv.sh': (errno=13: 'Permission denied')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14406.014.000) 07/28 18:05:47 Job was held.
+	Error from slot9@opt-a002.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-muv.sh': (errno=13: 'Permission denied')
+	Code 6 Subcode 13
+...
+013 (14406.014.000) 07/28 18:09:41 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14406.014.000) 07/28 18:55:08 Job executing on host: <144.92.142.162:9620?sock=10446_6bfc_3>
+...
+006 (14406.014.000) 07/28 18:55:16 Image size of job updated: 27812
+	28  -  MemoryUsage of job (MB)
+	27812  -  ResidentSetSize of job (KB)
+...
+006 (14406.014.000) 07/28 19:00:16 Image size of job updated: 438364
+	429  -  MemoryUsage of job (MB)
+	438364  -  ResidentSetSize of job (KB)
+...
+006 (14406.014.000) 07/28 19:05:17 Image size of job updated: 515900
+	504  -  MemoryUsage of job (MB)
+	515900  -  ResidentSetSize of job (KB)
+...
+006 (14406.014.000) 07/28 19:08:30 Image size of job updated: 528216
+	504  -  MemoryUsage of job (MB)
+	515900  -  ResidentSetSize of job (KB)
+...
+005 (14406.014.000) 07/28 19:08:30 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 03:39:15, Sys 0 00:21:43  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 03:39:15, Sys 0 00:21:43  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         4
+	   Disk (KB)            :        1        1  34974598
+	   Memory (MB)          :      504     3072     12915
+...

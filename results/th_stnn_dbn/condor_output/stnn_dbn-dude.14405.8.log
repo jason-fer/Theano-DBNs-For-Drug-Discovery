@@ -1,0 +1,53 @@
+000 (14405.008.000) 07/28 17:54:46 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14405.008.000) 07/28 18:05:21 Job executing on host: <144.92.142.141:9620?sock=4744_8b2e_3>
+...
+007 (14405.008.000) 07/28 18:05:21 Shadow exception!
+	Error from slot17@mir-exec-01.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-dude.sh': (errno=13: 'Permission denied')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14405.008.000) 07/28 18:05:21 Job was held.
+	Error from slot17@mir-exec-01.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-dude.sh': (errno=13: 'Permission denied')
+	Code 6 Subcode 13
+...
+013 (14405.008.000) 07/28 18:09:40 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14405.008.000) 07/28 18:09:56 Job executing on host: <144.92.142.192:9620?sock=11062_0af0_13>
+...
+006 (14405.008.000) 07/28 18:10:05 Image size of job updated: 13124
+	13  -  MemoryUsage of job (MB)
+	13124  -  ResidentSetSize of job (KB)
+...
+006 (14405.008.000) 07/28 18:15:06 Image size of job updated: 532040
+	519  -  MemoryUsage of job (MB)
+	531272  -  ResidentSetSize of job (KB)
+...
+006 (14405.008.000) 07/28 18:20:06 Image size of job updated: 585732
+	572  -  MemoryUsage of job (MB)
+	584964  -  ResidentSetSize of job (KB)
+...
+006 (14405.008.000) 07/28 18:25:07 Image size of job updated: 603388
+	589  -  MemoryUsage of job (MB)
+	602620  -  ResidentSetSize of job (KB)
+...
+006 (14405.008.000) 07/28 18:30:08 Image size of job updated: 641184
+	626  -  MemoryUsage of job (MB)
+	640416  -  ResidentSetSize of job (KB)
+...
+005 (14405.008.000) 07/28 18:34:09 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 05:48:47, Sys 0 00:32:41  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 05:48:47, Sys 0 00:32:41  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  37428483
+	   Memory (MB)          :      626     3072      3228
+...

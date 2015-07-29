@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 92
+RunningOn slot2@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 92
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: tgfr1, fold: 0
+Running random forests for target: tgfr1
+target:tgfr1 fold:0 predicted: 3415 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for tgfr1: accuracy: 1.0, auc: 1.0
+Building data for target: tgfr1, fold: 1
+Running random forests for target: tgfr1
+target:tgfr1 fold:1 predicted: 3415 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for tgfr1: accuracy: 1.0, auc: 1.0
+Building data for target: tgfr1, fold: 2
+Running random forests for target: tgfr1
+target:tgfr1 fold:2 predicted: 3415 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for tgfr1: accuracy: 1.0, auc: 1.0
+Building data for target: tgfr1, fold: 3
+Running random forests for target: tgfr1
+target:tgfr1 fold:3 predicted: 3415 wrong: 61 pct correct: 0.982137628111, auc: 0.999660354055
+Results for tgfr1: accuracy: 0.995534407028, auc: 0.999915088514
+Building data for target: tgfr1, fold: 4
+Running random forests for target: tgfr1
+target:tgfr1 fold:4 predicted: 3446 wrong: 30 pct correct: 0.991294254208, auc: 1.0
+Results for tgfr1: accuracy: 0.994686376464, auc: 0.999932070811
+####################  Results for DUD-E ####################
+tgfr1 accuracy: 0.994686376464, auc:0.999932070811
+############################################################
+runtime: 536.24 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14374
+Process 8
+RunningOn slot26@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py tox21 8
+Running Scikit Learn Logistic Regression Classifier for tox21.........
+Building data for target: sr-atad5, fold: 0
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:0 predicted: 3487 wrong: 662 pct correct: 0.810151993117, auc: 0.867553350725
+Results for sr-atad5: accuracy: 0.810151993117, auc: 0.867553350725
+Building data for target: sr-atad5, fold: 1
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:1 predicted: 3487 wrong: 925 pct correct: 0.734728993404, auc: 0.805243125347
+Results for sr-atad5: accuracy: 0.772440493261, auc: 0.836398238036
+Building data for target: sr-atad5, fold: 2
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:2 predicted: 3487 wrong: 679 pct correct: 0.805276742185, auc: 0.838344096138
+Results for sr-atad5: accuracy: 0.783385909569, auc: 0.837046857404
+Building data for target: sr-atad5, fold: 3
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:3 predicted: 3487 wrong: 842 pct correct: 0.758531689131, auc: 0.808613094984
+Results for sr-atad5: accuracy: 0.777172354459, auc: 0.829938416799
+Building data for target: sr-atad5, fold: 4
+Running logistic regression for target: sr-atad5
+target:sr-atad5 fold:4 predicted: 3429 wrong: 765 pct correct: 0.776902887139, auc: 0.865670178878
+Results for sr-atad5: accuracy: 0.777118460995, auc: 0.837084769214
+####################  Results for Tox21 ####################
+sr-atad5 accuracy: 0.777118460995, auc:0.837084769214
+############################################################
+runtime: 93.29 secs.

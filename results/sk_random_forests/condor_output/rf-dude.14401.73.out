@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 73
+RunningOn slot4@wid-007.discovery.wisc.edu
+python sk_random_forests.py dud_e 73
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: parp1, fold: 0
+Running random forests for target: parp1
+target:parp1 fold:0 predicted: 10525 wrong: 212 pct correct: 0.979857482185, auc: 0.999566945746
+Results for parp1: accuracy: 0.979857482185, auc: 0.999566945746
+Building data for target: parp1, fold: 1
+Running random forests for target: parp1
+target:parp1 fold:1 predicted: 10525 wrong: 180 pct correct: 0.982897862233, auc: 0.999227164716
+Results for parp1: accuracy: 0.981377672209, auc: 0.999397055231
+Building data for target: parp1, fold: 2
+Running random forests for target: parp1
+target:parp1 fold:2 predicted: 10525 wrong: 151 pct correct: 0.985653206651, auc: 0.996170801039
+Results for parp1: accuracy: 0.982802850356, auc: 0.998321637167
+Building data for target: parp1, fold: 3
+Running random forests for target: parp1
+target:parp1 fold:3 predicted: 10525 wrong: 241 pct correct: 0.977102137767, auc: 0.992124519754
+Results for parp1: accuracy: 0.981377672209, auc: 0.996772357814
+Building data for target: parp1, fold: 4
+Running random forests for target: parp1
+target:parp1 fold:4 predicted: 10587 wrong: 91 pct correct: 0.991404552753, auc: 0.999987952467
+Results for parp1: accuracy: 0.983383048318, auc: 0.997415476744
+####################  Results for DUD-E ####################
+parp1 accuracy: 0.983383048318, auc:0.997415476744
+############################################################
+runtime: 4469.44 secs.

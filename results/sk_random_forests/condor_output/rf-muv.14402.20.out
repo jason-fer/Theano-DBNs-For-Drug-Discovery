@@ -1,0 +1,6 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14402
+Process 20
+RunningOn slot13@opt-a015.discovery.wisc.edu
+python sk_random_forests.py muv 20
+Running Scikit Learn Random Forests for muv.........

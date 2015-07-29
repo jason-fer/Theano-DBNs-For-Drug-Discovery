@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 16
+RunningOn slot15@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 16
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: cah2, fold: 0
+Running logistic regression for target: cah2
+target:cah2 fold:0 predicted: 11351 wrong: 31 pct correct: 0.997268963087, auc: 0.999996222663
+Results for cah2: accuracy: 0.997268963087, auc: 0.999996222663
+Building data for target: cah2, fold: 1
+Running logistic regression for target: cah2
+target:cah2 fold:1 predicted: 11351 wrong: 4 pct correct: 0.99964760814, auc: 0.999978280311
+Results for cah2: accuracy: 0.998458285614, auc: 0.999987251487
+Building data for target: cah2, fold: 2
+Running logistic regression for target: cah2
+target:cah2 fold:2 predicted: 11351 wrong: 1 pct correct: 0.999911902035, auc: 1.0
+Results for cah2: accuracy: 0.998942824421, auc: 0.999991500991
+Building data for target: cah2, fold: 3
+Running logistic regression for target: cah2
+target:cah2 fold:3 predicted: 11351 wrong: 62 pct correct: 0.994537926174, auc: 0.999522166832
+Results for cah2: accuracy: 0.997841599859, auc: 0.999874167451
+Building data for target: cah2, fold: 4
+Running logistic regression for target: cah2
+target:cah2 fold:4 predicted: 11353 wrong: 1 pct correct: 0.999911917555, auc: 1.0
+Results for cah2: accuracy: 0.998255663398, auc: 0.999899333961
+####################  Results for DUD-E ####################
+cah2 accuracy: 0.998255663398, auc:0.999899333961
+############################################################
+runtime: 241.67 secs.

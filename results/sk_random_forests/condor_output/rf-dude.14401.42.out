@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 42
+RunningOn slot9@opt-a003.discovery.wisc.edu
+python sk_random_forests.py dud_e 42
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: gria2, fold: 0
+Running random forests for target: gria2
+target:gria2 fold:0 predicted: 4176 wrong: 120 pct correct: 0.971264367816, auc: 0.999668906829
+Results for gria2: accuracy: 0.971264367816, auc: 0.999668906829
+Building data for target: gria2, fold: 1
+Running random forests for target: gria2
+target:gria2 fold:1 predicted: 4176 wrong: 240 pct correct: 0.942528735632, auc: 0.998587570621
+Results for gria2: accuracy: 0.956896551724, auc: 0.999128238725
+Building data for target: gria2, fold: 2
+Running random forests for target: gria2
+target:gria2 fold:2 predicted: 4176 wrong: 152 pct correct: 0.963601532567, auc: 0.999464615298
+Results for gria2: accuracy: 0.959131545338, auc: 0.999240364249
+Building data for target: gria2, fold: 3
+Running random forests for target: gria2
+target:gria2 fold:3 predicted: 4176 wrong: 61 pct correct: 0.985392720307, auc: 0.99825647745
+Results for gria2: accuracy: 0.96569683908, auc: 0.99899439255
+Building data for target: gria2, fold: 4
+Running random forests for target: gria2
+target:gria2 fold:4 predicted: 4239 wrong: 183 pct correct: 0.956829440906, auc: 0.999493021388
+Results for gria2: accuracy: 0.963923359446, auc: 0.999094118317
+####################  Results for DUD-E ####################
+gria2 accuracy: 0.963923359446, auc:0.999094118317
+############################################################
+runtime: 1696.57 secs.

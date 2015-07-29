@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 53
+RunningOn slot13@opt-a015.discovery.wisc.edu
+python sk_random_forests.py dud_e 53
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: inha, fold: 0
+Running random forests for target: inha
+target:inha fold:0 predicted: 883 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for inha: accuracy: 1.0, auc: 1.0
+Building data for target: inha, fold: 1
+Running random forests for target: inha
+target:inha fold:1 predicted: 883 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for inha: accuracy: 1.0, auc: 1.0
+Building data for target: inha, fold: 2
+Running random forests for target: inha
+target:inha fold:2 predicted: 883 wrong: 1 pct correct: 0.998867497169, auc: 1.0
+Results for inha: accuracy: 0.999622499056, auc: 1.0
+Building data for target: inha, fold: 3
+Running random forests for target: inha
+target:inha fold:3 predicted: 883 wrong: 33 pct correct: 0.962627406569, auc: 0.99938290651
+Results for inha: accuracy: 0.990373725934, auc: 0.999845726628
+Building data for target: inha, fold: 4
+Running random forests for target: inha
+target:inha fold:4 predicted: 916 wrong: 60 pct correct: 0.934497816594, auc: 1.0
+Results for inha: accuracy: 0.979198544066, auc: 0.999876581302
+####################  Results for DUD-E ####################
+inha accuracy: 0.979198544066, auc:0.999876581302
+############################################################
+runtime: 58.20 secs.

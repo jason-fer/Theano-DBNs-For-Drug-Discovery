@@ -1,0 +1,44 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14405
+Process 42
+RunningOn slot19@mir-exec-01.discovery.wisc.edu
+python th_deep_belief_net.py dud_e 42
+Running Theano Learn Deep Belief Net for dud_e, target: gria2.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -97.5735802314
+Pre-training layer 0, epoch 1, cost  -73.3539343876
+Pre-training layer 1, epoch 0, cost  -1383.46303889
+Pre-training layer 1, epoch 1, cost  -1369.93292245
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 125/125, best error 42.219512 %, best_auc: 0.679974
+     new best AUC!: 0.70923327275
+     new best AUC!: 0.757481296758
+     new best AUC!: 0.757689110557
+     new best AUC!: 0.781150936219
+     new best AUC!: 0.802129563098
+     new best AUC!: 0.815774828466
+     new best AUC!: 0.818029079843
+     new best AUC!: 0.818867379574
+     new best AUC!: 0.941452865013
+     epoch 42, minibatch 125/125, best error 8.731707 %, best_auc: 0.941453
+     new best AUC!: 0.959810924666
+     epoch 43, minibatch 125/125, best error 7.024390 %, best_auc: 0.959811
+     new best AUC!: 0.971723234287
+     epoch 44, minibatch 125/125, best error 5.243902 %, best_auc: 0.971723
+     new best AUC!: 0.976999591417
+     epoch 45, minibatch 125/125, best error 3.000000 %, best_auc: 0.977000
+     new best AUC!: 0.980197810558
+     epoch 46, minibatch 125/125, best error 5.756098 %, best_auc: 0.980198
+     new best AUC!: 0.983945503473
+     new best AUC!: 0.991926962255
+     new best AUC!: 0.995181537681
+     new best AUC!: 0.997337165561
+     epoch 50, minibatch 125/125, best error 1.487805 %, best_auc: 0.997337
+     new best AUC!: 0.997379432774
+     epoch 51, minibatch 125/125, best error 2.170732 %, best_auc: 0.997379
+     epoch 84, minibatch 125/125, best error 0.756098 %, best_auc: 0.997379
+Optimization complete with best validation score of 2.951220 %, obtained at iteration 10500, with test performance 0.756098 %, and best_auc: 0.997379
+runtime: 12788.97 secs.

@@ -1,0 +1,59 @@
+013 (14383.035.000) 07/28 18:09:40 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14383.035.000) 07/28 18:09:58 Job executing on host: <144.92.142.155:9620?sock=2739_f5d7_3>
+...
+007 (14383.035.000) 07/28 18:09:58 Shadow exception!
+	Error from slot11@wid-005.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/sk_random_forests/wid-random_forests-pcba.sh': (errno=2: 'No such file or directory')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14383.035.000) 07/28 18:09:58 Job was held.
+	Error from slot11@wid-005.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/sk_random_forests/wid-random_forests-pcba.sh': (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+013 (14383.035.000) 07/28 18:10:35 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14383.035.000) 07/28 18:10:54 Job executing on host: <144.92.142.136:9620?sock=6083_9576_4>
+...
+007 (14383.035.000) 07/28 18:10:54 Shadow exception!
+	Error from slot12@roy-exec-1.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/sk_random_forests/wid-random_forests-pcba.sh': (errno=2: 'No such file or directory')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14383.035.000) 07/28 18:10:54 Job was held.
+	Error from slot12@roy-exec-1.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/sk_random_forests/wid-random_forests-pcba.sh': (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+013 (14383.035.000) 07/28 19:07:45 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14383.035.000) 07/28 19:08:12 Job executing on host: <144.92.142.161:9620?sock=10442_34dc_3>
+...
+007 (14383.035.000) 07/28 19:08:12 Shadow exception!
+	Error from slot5@opt-a001.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/sk_random_forests/wid-random_forests-pcba.sh': (errno=2: 'No such file or directory')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14383.035.000) 07/28 19:08:12 Job was held.
+	Error from slot5@opt-a001.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/sk_random_forests/wid-random_forests-pcba.sh': (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+013 (14383.035.000) 07/28 19:37:52 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14383.035.000) 07/28 19:47:03 Job executing on host: <144.92.142.164:9620?sock=10436_0991_3>
+...
+007 (14383.035.000) 07/28 19:47:03 Shadow exception!
+	Error from slot6@opt-a004.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/sk_random_forests/wid-random_forests-pcba.sh': (errno=2: 'No such file or directory')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14383.035.000) 07/28 19:47:03 Job was held.
+	Error from slot6@opt-a004.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid_jobs/sk_random_forests/wid-random_forests-pcba.sh': (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+009 (14383.035.000) 07/29 12:01:21 Job was aborted by the user.
+	via condor_rm (by user jferiante)
+...

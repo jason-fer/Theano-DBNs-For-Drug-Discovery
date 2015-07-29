@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 3
+RunningOn slot11@opt-a016.discovery.wisc.edu
+python sk_random_forests.py tox21 3
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: nr-aromatase, fold: 0
+Running random forests for target: nr-aromatase
+target:nr-aromatase fold:0 predicted: 2717 wrong: 769 pct correct: 0.716967243283, auc: 0.840257186393
+Results for nr-aromatase: accuracy: 0.716967243283, auc: 0.840257186393
+Building data for target: nr-aromatase, fold: 1
+Running random forests for target: nr-aromatase
+target:nr-aromatase fold:1 predicted: 2717 wrong: 753 pct correct: 0.722856091277, auc: 0.844658594844
+Results for nr-aromatase: accuracy: 0.71991166728, auc: 0.842457890619
+Building data for target: nr-aromatase, fold: 2
+Running random forests for target: nr-aromatase
+target:nr-aromatase fold:2 predicted: 2717 wrong: 754 pct correct: 0.722488038278, auc: 0.866161148176
+Results for nr-aromatase: accuracy: 0.720770457613, auc: 0.850358976471
+Building data for target: nr-aromatase, fold: 3
+Running random forests for target: nr-aromatase
+target:nr-aromatase fold:3 predicted: 2717 wrong: 781 pct correct: 0.712550607287, auc: 0.803362573099
+Results for nr-aromatase: accuracy: 0.718715495031, auc: 0.838609875628
+Building data for target: nr-aromatase, fold: 4
+Running random forests for target: nr-aromatase
+target:nr-aromatase fold:4 predicted: 2740 wrong: 766 pct correct: 0.720437956204, auc: 0.847596776806
+Results for nr-aromatase: accuracy: 0.719059987266, auc: 0.840407255864
+####################  Results for Tox21 ####################
+nr-aromatase accuracy: 0.719059987266, auc:0.840407255864
+############################################################
+runtime: 467.73 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 60
+RunningOn slot1@galaxy-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 60
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: lck, fold: 0
+Running logistic regression for target: lck
+target:lck fold:0 predicted: 9651 wrong: 189 pct correct: 0.980416537146, auc: 0.999483934662
+Results for lck: accuracy: 0.980416537146, auc: 0.999483934662
+Building data for target: lck, fold: 1
+Running logistic regression for target: lck
+target:lck fold:1 predicted: 9651 wrong: 128 pct correct: 0.986737125686, auc: 0.996520848512
+Results for lck: accuracy: 0.983576831416, auc: 0.998002391587
+Building data for target: lck, fold: 2
+Running logistic regression for target: lck
+target:lck fold:2 predicted: 9651 wrong: 131 pct correct: 0.98642627707, auc: 0.999516931167
+Results for lck: accuracy: 0.984526646634, auc: 0.998507238113
+Building data for target: lck, fold: 3
+Running logistic regression for target: lck
+target:lck fold:3 predicted: 9651 wrong: 248 pct correct: 0.974303181018, auc: 0.998911115335
+Results for lck: accuracy: 0.98197078023, auc: 0.998608207419
+Building data for target: lck, fold: 4
+Running logistic regression for target: lck
+target:lck fold:4 predicted: 9742 wrong: 187 pct correct: 0.980804762882, auc: 0.999550682498
+Results for lck: accuracy: 0.98173757676, auc: 0.998796702434
+####################  Results for DUD-E ####################
+lck accuracy: 0.98173757676, auc:0.998796702434
+############################################################
+runtime: 386.64 secs.

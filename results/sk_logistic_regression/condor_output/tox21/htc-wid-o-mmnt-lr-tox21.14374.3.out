@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14374
+Process 3
+RunningOn slot12@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py tox21 3
+Running Scikit Learn Logistic Regression Classifier for tox21.........
+Building data for target: nr-aromatase, fold: 0
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:0 predicted: 2717 wrong: 694 pct correct: 0.744571218255, auc: 0.792480026357
+Results for nr-aromatase: accuracy: 0.744571218255, auc: 0.792480026357
+Building data for target: nr-aromatase, fold: 1
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:1 predicted: 2717 wrong: 606 pct correct: 0.776959882223, auc: 0.843896713615
+Results for nr-aromatase: accuracy: 0.760765550239, auc: 0.818188369986
+Building data for target: nr-aromatase, fold: 2
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:2 predicted: 2717 wrong: 688 pct correct: 0.746779536253, auc: 0.796701260193
+Results for nr-aromatase: accuracy: 0.756103545577, auc: 0.811026000055
+Building data for target: nr-aromatase, fold: 3
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:3 predicted: 2717 wrong: 734 pct correct: 0.72984909827, auc: 0.817570628449
+Results for nr-aromatase: accuracy: 0.74953993375, auc: 0.812662157153
+Building data for target: nr-aromatase, fold: 4
+Running logistic regression for target: nr-aromatase
+target:nr-aromatase fold:4 predicted: 2740 wrong: 726 pct correct: 0.73503649635, auc: 0.795882936508
+Results for nr-aromatase: accuracy: 0.74663924627, auc: 0.809306313024
+####################  Results for Tox21 ####################
+nr-aromatase accuracy: 0.74663924627, auc:0.809306313024
+############################################################
+runtime: 72.65 secs.

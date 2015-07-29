@@ -17,14 +17,27 @@ from lib.theano import helpers
 
 
 def gen_multitask(data_type):
-    hashmap = helpers.load_string_col_hashmap(data_type)
 
+    print "Loading hashmap for " + str(data_type)
+    hashmap = helpers.load_string_col_hashmap(data_type)
     rev_targets, target_columns = helpers.get_rev_targets(data_type)
 
     """Load data from the existing folds"""
     fold_path = helpers.get_fold_path(data_type)
 
+    # Limit PCBA to 5 targets
+    new_target_columns = []
+    new_targets = {}
+    if(data_type == 'PCBA'):
+        for col_id in range(5):
+            new_targets[col_id] = rev_targets[col_id]
+            new_target_columns.append(target_columns[col_id])
 
+        # wipe out the rev target data
+        rev_targets.clear()
+        rev_targets = new_targets
+        target_columns = new_target_columns
+        
     tasks = {}
     # build task object to contain the datasets
     for col_id in range(len(target_columns)):
@@ -33,6 +46,8 @@ def gen_multitask(data_type):
         tasks[target] = {'actives': [], 'inactives': [], 
             'active_count':0, 'inactive_count':0}
 
+
+    print "Building active / inactive sets for " + str(data_type)
 
     # Load actives
     count_actives = 0
@@ -108,6 +123,8 @@ def gen_multitask(data_type):
     """ where we will store our multitask batches """
     multitask_path = 'multitask/' + data_type + '/batch'
 
+    print "Writing out multitask files for " + str(data_type)
+
     batch_count = 0
     # keep building batches until we make 'enough'
     while(multitask_size > 0):
@@ -158,7 +175,6 @@ def gen_multitask(data_type):
 
         batch_count += 1
         multitask_size -= 10000
-    
     
 
 def main(args):

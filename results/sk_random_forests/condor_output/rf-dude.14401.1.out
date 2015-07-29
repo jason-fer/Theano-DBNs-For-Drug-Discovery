@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 1
+RunningOn slot8@opt-a016.discovery.wisc.edu
+python sk_random_forests.py dud_e 1
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: abl1, fold: 0
+Running random forests for target: abl1
+target:abl1 fold:0 predicted: 3947 wrong: 211 pct correct: 0.946541677223, auc: 0.99913580343
+Results for abl1: accuracy: 0.946541677223, auc: 0.99913580343
+Building data for target: abl1, fold: 1
+Running random forests for target: abl1
+target:abl1 fold:1 predicted: 3947 wrong: 151 pct correct: 0.961743096022, auc: 0.989104116223
+Results for abl1: accuracy: 0.954142386623, auc: 0.994119959827
+Building data for target: abl1, fold: 2
+Running random forests for target: abl1
+target:abl1 fold:2 predicted: 3947 wrong: 241 pct correct: 0.938940967824, auc: 0.998579136271
+Results for abl1: accuracy: 0.949075247023, auc: 0.995606351975
+Building data for target: abl1, fold: 3
+Running random forests for target: abl1
+target:abl1 fold:3 predicted: 3947 wrong: 300 pct correct: 0.923992906005, auc: 0.982595392509
+Results for abl1: accuracy: 0.942804661768, auc: 0.992353612108
+Building data for target: abl1, fold: 4
+Running random forests for target: abl1
+target:abl1 fold:4 predicted: 3947 wrong: 151 pct correct: 0.961743096022, auc: 0.985939288245
+Results for abl1: accuracy: 0.946592348619, auc: 0.991070747335
+####################  Results for DUD-E ####################
+abl1 accuracy: 0.946592348619, auc:0.991070747335
+############################################################
+runtime: 547.37 secs.

@@ -1,0 +1,28 @@
+013 (14374.005.000) 07/28 18:09:41 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14374.005.000) 07/28 18:09:52 Job executing on host: <144.92.142.141:9620?sock=4744_8b2e_3>
+...
+006 (14374.005.000) 07/28 18:10:01 Image size of job updated: 9992
+	10  -  MemoryUsage of job (MB)
+	9992  -  ResidentSetSize of job (KB)
+...
+006 (14374.005.000) 07/28 18:12:05 Image size of job updated: 216096
+	10  -  MemoryUsage of job (MB)
+	9992  -  ResidentSetSize of job (KB)
+...
+005 (14374.005.000) 07/28 18:12:05 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:01:07, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:01:07, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  10268442
+	   Memory (MB)          :       10     2048      4031
+...

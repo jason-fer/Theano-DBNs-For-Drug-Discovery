@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 94
+RunningOn slot7@opt-a018.discovery.wisc.edu
+python sk_random_forests.py dud_e 94
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: thrb, fold: 0
+Running random forests for target: thrb
+target:thrb fold:0 predicted: 10624 wrong: 123 pct correct: 0.988422439759, auc: 0.999927644796
+Results for thrb: accuracy: 0.988422439759, auc: 0.999927644796
+Building data for target: thrb, fold: 1
+Running random forests for target: thrb
+target:thrb fold:1 predicted: 10624 wrong: 122 pct correct: 0.988516566265, auc: 0.999948925738
+Results for thrb: accuracy: 0.988469503012, auc: 0.999938285267
+Building data for target: thrb, fold: 2
+Running random forests for target: thrb
+target:thrb fold:2 predicted: 10624 wrong: 91 pct correct: 0.991434487952, auc: 0.999841456978
+Results for thrb: accuracy: 0.989457831325, auc: 0.999906009171
+Building data for target: thrb, fold: 3
+Running random forests for target: thrb
+target:thrb fold:3 predicted: 10624 wrong: 124 pct correct: 0.988328313253, auc: 0.999944137526
+Results for thrb: accuracy: 0.989175451807, auc: 0.999915541259
+Building data for target: thrb, fold: 4
+Running random forests for target: thrb
+target:thrb fold:4 predicted: 10655 wrong: 125 pct correct: 0.988268418583, auc: 0.999836056037
+Results for thrb: accuracy: 0.988994045162, auc: 0.999899644215
+####################  Results for DUD-E ####################
+thrb accuracy: 0.988994045162, auc:0.999899644215
+############################################################
+runtime: 3287.20 secs.

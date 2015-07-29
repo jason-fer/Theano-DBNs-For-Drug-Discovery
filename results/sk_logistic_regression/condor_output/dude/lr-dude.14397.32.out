@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 32
+RunningOn slot31@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 32
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fa10, fold: 0
+Running logistic regression for target: fa10
+target:fa10 fold:0 predicted: 8033 wrong: 1 pct correct: 0.999875513507, auc: 1.0
+Results for fa10: accuracy: 0.999875513507, auc: 1.0
+Building data for target: fa10, fold: 1
+Running logistic regression for target: fa10
+target:fa10 fold:1 predicted: 8033 wrong: 52 pct correct: 0.993526702353, auc: 0.999507063868
+Results for fa10: accuracy: 0.99670110793, auc: 0.999753531934
+Building data for target: fa10, fold: 2
+Running logistic regression for target: fa10
+target:fa10 fold:2 predicted: 8033 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for fa10: accuracy: 0.99780073862, auc: 0.999835687956
+Building data for target: fa10, fold: 3
+Running logistic regression for target: fa10
+target:fa10 fold:3 predicted: 8033 wrong: 1 pct correct: 0.999875513507, auc: 1.0
+Results for fa10: accuracy: 0.998319432342, auc: 0.999876765967
+Building data for target: fa10, fold: 4
+Running logistic regression for target: fa10
+target:fa10 fold:4 predicted: 8084 wrong: 51 pct correct: 0.993691241959, auc: 0.999207272282
+Results for fa10: accuracy: 0.997393794265, auc: 0.99974286723
+####################  Results for DUD-E ####################
+fa10 accuracy: 0.997393794265, auc:0.99974286723
+############################################################
+runtime: 165.35 secs.

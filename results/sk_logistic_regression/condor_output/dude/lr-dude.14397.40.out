@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 40
+RunningOn slot8@opt-a015.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 40
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: gcr, fold: 0
+Running logistic regression for target: gcr
+target:gcr fold:0 predicted: 6061 wrong: 3 pct correct: 0.999505032173, auc: 0.999994120137
+Results for gcr: accuracy: 0.999505032173, auc: 0.999994120137
+Building data for target: gcr, fold: 1
+Running logistic regression for target: gcr
+target:gcr fold:1 predicted: 6061 wrong: 27 pct correct: 0.995545289556, auc: 0.999864763159
+Results for gcr: accuracy: 0.997525160865, auc: 0.999929441648
+Building data for target: gcr, fold: 2
+Running logistic regression for target: gcr
+target:gcr fold:2 predicted: 6061 wrong: 59 pct correct: 0.990265632734, auc: 0.999223858131
+Results for gcr: accuracy: 0.995105318154, auc: 0.999694247142
+Building data for target: gcr, fold: 3
+Running logistic regression for target: gcr
+target:gcr fold:3 predicted: 6061 wrong: 27 pct correct: 0.995545289556, auc: 0.999994120137
+Results for gcr: accuracy: 0.995215311005, auc: 0.999769215391
+Building data for target: gcr, fold: 4
+Running logistic regression for target: gcr
+target:gcr fold:4 predicted: 6027 wrong: 55 pct correct: 0.99087439854, auc: 0.999908376401
+Results for gcr: accuracy: 0.994347128512, auc: 0.999797047593
+####################  Results for DUD-E ####################
+gcr accuracy: 0.994347128512, auc:0.999797047593
+############################################################
+runtime: 158.29 secs.

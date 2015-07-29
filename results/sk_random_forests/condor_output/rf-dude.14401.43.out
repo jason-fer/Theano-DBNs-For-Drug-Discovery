@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 43
+RunningOn slot7@opt-a016.discovery.wisc.edu
+python sk_random_forests.py dud_e 43
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: grik1, fold: 0
+Running random forests for target: grik1
+target:grik1 fold:0 predicted: 2223 wrong: 31 pct correct: 0.986054880792, auc: 0.997039556563
+Results for grik1: accuracy: 0.986054880792, auc: 0.997039556563
+Building data for target: grik1, fold: 1
+Running random forests for target: grik1
+target:grik1 fold:1 predicted: 2223 wrong: 30 pct correct: 0.986504723347, auc: 0.999798437894
+Results for grik1: accuracy: 0.986279802069, auc: 0.998418997229
+Building data for target: grik1, fold: 2
+Running random forests for target: grik1
+target:grik1 fold:2 predicted: 2223 wrong: 61 pct correct: 0.972559604139, auc: 0.999559082892
+Results for grik1: accuracy: 0.981706402759, auc: 0.998799025783
+Building data for target: grik1, fold: 3
+Running random forests for target: grik1
+target:grik1 fold:3 predicted: 2223 wrong: 1 pct correct: 0.999550157445, auc: 0.999974804737
+Results for grik1: accuracy: 0.98616734143, auc: 0.999092970522
+Building data for target: grik1, fold: 4
+Running random forests for target: grik1
+target:grik1 fold:4 predicted: 2284 wrong: 30 pct correct: 0.986865148862, auc: 0.999964595921
+Results for grik1: accuracy: 0.986306902917, auc: 0.999267295602
+####################  Results for DUD-E ####################
+grik1 accuracy: 0.986306902917, auc:0.999267295602
+############################################################
+runtime: 203.37 secs.

@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 46
+RunningOn slot10@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 46
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: hivint, fold: 0
+Running random forests for target: hivint
+target:hivint fold:0 predicted: 2609 wrong: 31 pct correct: 0.988118052894, auc: 0.999841152176
+Results for hivint: accuracy: 0.988118052894, auc: 0.999841152176
+Building data for target: hivint, fold: 1
+Running random forests for target: hivint
+target:hivint fold:1 predicted: 2609 wrong: 62 pct correct: 0.976236105788, auc: 0.998111475873
+Results for hivint: accuracy: 0.982177079341, auc: 0.998976314024
+Building data for target: hivint, fold: 2
+Running random forests for target: hivint
+target:hivint fold:2 predicted: 2609 wrong: 31 pct correct: 0.988118052894, auc: 0.98618906421
+Results for hivint: accuracy: 0.984157403858, auc: 0.99471389742
+Building data for target: hivint, fold: 3
+Running random forests for target: hivint
+target:hivint fold:3 predicted: 2609 wrong: 93 pct correct: 0.964354158681, auc: 0.999664654594
+Results for hivint: accuracy: 0.979206592564, auc: 0.995951586713
+Building data for target: hivint, fold: 4
+Running random forests for target: hivint
+target:hivint fold:4 predicted: 2643 wrong: 30 pct correct: 0.988649262202, auc: 0.99993124667
+Results for hivint: accuracy: 0.981095126492, auc: 0.996747518705
+####################  Results for DUD-E ####################
+hivint accuracy: 0.981095126492, auc:0.996747518705
+############################################################
+runtime: 445.15 secs.

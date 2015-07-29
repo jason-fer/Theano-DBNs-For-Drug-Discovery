@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14403
+Process 109
+RunningOn slot16@wid-001.discovery.wisc.edu
+python sk_random_forests.py pcba 109
+Running Scikit Learn Random Forests for pcba.........
+Building data for target: aid881, fold: 0
+Running random forests for target: aid881
+target:aid881 fold:0 predicted: 24871 wrong: 2317 pct correct: 0.90683929074, auc: 0.896703413271
+Results for aid881: accuracy: 0.90683929074, auc: 0.896703413271
+Building data for target: aid881, fold: 1
+Running random forests for target: aid881
+target:aid881 fold:1 predicted: 24871 wrong: 2878 pct correct: 0.884282899763, auc: 0.860062024792
+Results for aid881: accuracy: 0.895561095251, auc: 0.878382719032
+Building data for target: aid881, fold: 2
+Running random forests for target: aid881
+target:aid881 fold:2 predicted: 24871 wrong: 2509 pct correct: 0.899119456395, auc: 0.884294084602
+Results for aid881: accuracy: 0.896747215633, auc: 0.880353174222
+Building data for target: aid881, fold: 3
+Running random forests for target: aid881
+target:aid881 fold:3 predicted: 24871 wrong: 2594 pct correct: 0.895701821398, auc: 0.886751715693
+Results for aid881: accuracy: 0.896485867074, auc: 0.88195280959
+Building data for target: aid881, fold: 4
+Running random forests for target: aid881
+target:aid881 fold:4 predicted: 24875 wrong: 2633 pct correct: 0.894150753769, auc: 0.853139585228
+Results for aid881: accuracy: 0.896018844413, auc: 0.876190164717
+####################  Results for PCBA ####################
+aid881 accuracy: 0.896018844413, auc:0.876190164717
+############################################################
+runtime: 23009.68 secs.

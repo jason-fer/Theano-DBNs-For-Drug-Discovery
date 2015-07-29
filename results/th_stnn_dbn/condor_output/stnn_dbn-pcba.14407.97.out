@@ -1,0 +1,5 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14407
+Process 97
+RunningOn slot2@roy-exec-1.discovery.wisc.edu
+python th_deep_belief_net.py pcba 97

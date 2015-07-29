@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 11
+RunningOn slot19@galaxy-01.discovery.wisc.edu
+python sk_random_forests.py tox21 11
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: sr-p53, fold: 0
+Running random forests for target: sr-p53
+target:sr-p53 fold:0 predicted: 3220 wrong: 884 pct correct: 0.725465838509, auc: 0.871294233384
+Results for sr-p53: accuracy: 0.725465838509, auc: 0.871294233384
+Building data for target: sr-p53, fold: 1
+Running random forests for target: sr-p53
+target:sr-p53 fold:1 predicted: 3220 wrong: 729 pct correct: 0.773602484472, auc: 0.913492086456
+Results for sr-p53: accuracy: 0.749534161491, auc: 0.89239315992
+Building data for target: sr-p53, fold: 2
+Running random forests for target: sr-p53
+target:sr-p53 fold:2 predicted: 3220 wrong: 872 pct correct: 0.729192546584, auc: 0.880920690952
+Results for sr-p53: accuracy: 0.742753623188, auc: 0.888569003598
+Building data for target: sr-p53, fold: 3
+Running random forests for target: sr-p53
+target:sr-p53 fold:3 predicted: 3220 wrong: 877 pct correct: 0.727639751553, auc: 0.900370359654
+Results for sr-p53: accuracy: 0.73897515528, auc: 0.891519342612
+Building data for target: sr-p53, fold: 4
+Running random forests for target: sr-p53
+target:sr-p53 fold:4 predicted: 3141 wrong: 834 pct correct: 0.734479465138, auc: 0.85646320334
+Results for sr-p53: accuracy: 0.738076017251, auc: 0.884508114757
+####################  Results for Tox21 ####################
+sr-p53 accuracy: 0.738076017251, auc:0.884508114757
+############################################################
+runtime: 1279.39 secs.

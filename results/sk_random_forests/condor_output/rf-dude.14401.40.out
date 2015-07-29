@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 40
+RunningOn slot8@opt-a015.discovery.wisc.edu
+python sk_random_forests.py dud_e 40
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: gcr, fold: 0
+Running random forests for target: gcr
+target:gcr fold:0 predicted: 6061 wrong: 29 pct correct: 0.995215311005, auc: 0.999979420481
+Results for gcr: accuracy: 0.995215311005, auc: 0.999979420481
+Building data for target: gcr, fold: 1
+Running random forests for target: gcr
+target:gcr fold:1 predicted: 6061 wrong: 108 pct correct: 0.982181158225, auc: 0.994517028082
+Results for gcr: accuracy: 0.988698234615, auc: 0.997248224281
+Building data for target: gcr, fold: 2
+Running random forests for target: gcr
+target:gcr fold:2 predicted: 6061 wrong: 84 pct correct: 0.986140900841, auc: 0.999805964533
+Results for gcr: accuracy: 0.987845790024, auc: 0.998100804365
+Building data for target: gcr, fold: 3
+Running random forests for target: gcr
+target:gcr fold:3 predicted: 6061 wrong: 54 pct correct: 0.991090579112, auc: 0.999970600687
+Results for gcr: accuracy: 0.988656987296, auc: 0.998568253446
+Building data for target: gcr, fold: 4
+Running random forests for target: gcr
+target:gcr fold:4 predicted: 6027 wrong: 53 pct correct: 0.991206238593, auc: 0.999610599705
+Results for gcr: accuracy: 0.989166837555, auc: 0.998776722697
+####################  Results for DUD-E ####################
+gcr accuracy: 0.989166837555, auc:0.998776722697
+############################################################
+runtime: 1646.04 secs.

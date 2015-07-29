@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 81
+RunningOn slot9@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 81
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: pparg, fold: 0
+Running random forests for target: pparg
+target:pparg fold:0 predicted: 9493 wrong: 480 pct correct: 0.949436426841, auc: 0.991184864789
+Results for pparg: accuracy: 0.949436426841, auc: 0.991184864789
+Building data for target: pparg, fold: 1
+Running random forests for target: pparg
+target:pparg fold:1 predicted: 9493 wrong: 392 pct correct: 0.958706415253, auc: 0.995358512146
+Results for pparg: accuracy: 0.954071421047, auc: 0.993271688468
+Building data for target: pparg, fold: 2
+Running random forests for target: pparg
+target:pparg fold:2 predicted: 9493 wrong: 302 pct correct: 0.968187085221, auc: 0.999665732328
+Results for pparg: accuracy: 0.958776642438, auc: 0.995403036421
+Building data for target: pparg, fold: 3
+Running random forests for target: pparg
+target:pparg fold:3 predicted: 9493 wrong: 273 pct correct: 0.971241967766, auc: 0.99901263505
+Results for pparg: accuracy: 0.96189297377, auc: 0.996305436078
+Building data for target: pparg, fold: 4
+Running random forests for target: pparg
+target:pparg fold:4 predicted: 9584 wrong: 32 pct correct: 0.996661101836, auc: 0.999963185893
+Results for pparg: accuracy: 0.968846599383, auc: 0.997036986041
+####################  Results for DUD-E ####################
+pparg accuracy: 0.968846599383, auc:0.997036986041
+############################################################
+runtime: 3611.98 secs.

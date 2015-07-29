@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 21
+RunningOn slot20@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 21
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: cp3a4, fold: 0
+Running logistic regression for target: cp3a4
+target:cp3a4 fold:0 predicted: 4548 wrong: 227 pct correct: 0.950087950748, auc: 0.986524055462
+Results for cp3a4: accuracy: 0.950087950748, auc: 0.986524055462
+Building data for target: cp3a4, fold: 1
+Running logistic regression for target: cp3a4
+target:cp3a4 fold:1 predicted: 4548 wrong: 492 pct correct: 0.891820580475, auc: 0.969953936348
+Results for cp3a4: accuracy: 0.920954265611, auc: 0.978238995905
+Building data for target: cp3a4, fold: 2
+Running logistic regression for target: cp3a4
+target:cp3a4 fold:2 predicted: 4548 wrong: 223 pct correct: 0.950967458223, auc: 0.973487227806
+Results for cp3a4: accuracy: 0.930958663149, auc: 0.976655073206
+Building data for target: cp3a4, fold: 3
+Running logistic regression for target: cp3a4
+target:cp3a4 fold:3 predicted: 4548 wrong: 257 pct correct: 0.943491644679, auc: 0.98035897078
+Results for cp3a4: accuracy: 0.934091908531, auc: 0.977581047599
+Building data for target: cp3a4, fold: 4
+Running logistic regression for target: cp3a4
+target:cp3a4 fold:4 predicted: 4638 wrong: 143 pct correct: 0.969167744718, auc: 0.986278615299
+Results for cp3a4: accuracy: 0.941107075768, auc: 0.979320561139
+####################  Results for DUD-E ####################
+cp3a4 accuracy: 0.941107075768, auc:0.979320561139
+############################################################
+runtime: 98.19 secs.

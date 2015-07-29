@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 75
+RunningOn slot13@opt-a018.discovery.wisc.edu
+python sk_random_forests.py dud_e 75
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: pgh1, fold: 0
+Running random forests for target: pgh1
+target:pgh1 fold:0 predicted: 3688 wrong: 482 pct correct: 0.869305856833, auc: 0.996389396709
+Results for pgh1: accuracy: 0.869305856833, auc: 0.996389396709
+Building data for target: pgh1, fold: 1
+Running random forests for target: pgh1
+target:pgh1 fold:1 predicted: 3688 wrong: 450 pct correct: 0.877982646421, auc: 0.962842778793
+Results for pgh1: accuracy: 0.873644251627, auc: 0.979616087751
+Building data for target: pgh1, fold: 2
+Running random forests for target: pgh1
+target:pgh1 fold:2 predicted: 3688 wrong: 330 pct correct: 0.910520607375, auc: 0.996494515539
+Results for pgh1: accuracy: 0.88593637021, auc: 0.985242230347
+Building data for target: pgh1, fold: 3
+Running random forests for target: pgh1
+target:pgh1 fold:3 predicted: 3688 wrong: 455 pct correct: 0.876626898048, auc: 0.975717550274
+Results for pgh1: accuracy: 0.883609002169, auc: 0.982861060329
+Building data for target: pgh1, fold: 4
+Running random forests for target: pgh1
+target:pgh1 fold:4 predicted: 3720 wrong: 668 pct correct: 0.820430107527, auc: 0.970727012266
+Results for pgh1: accuracy: 0.870973223241, auc: 0.980434250716
+####################  Results for DUD-E ####################
+pgh1 accuracy: 0.870973223241, auc:0.980434250716
+############################################################
+runtime: 793.49 secs.

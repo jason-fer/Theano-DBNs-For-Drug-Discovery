@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 99
+RunningOn slot20@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 99
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: vgfr2, fold: 0
+Running random forests for target: vgfr2
+target:vgfr2 fold:0 predicted: 8776 wrong: 333 pct correct: 0.962055606199, auc: 0.999681789761
+Results for vgfr2: accuracy: 0.962055606199, auc: 0.999681789761
+Building data for target: vgfr2, fold: 1
+Running random forests for target: vgfr2
+target:vgfr2 fold:1 predicted: 8776 wrong: 303 pct correct: 0.965474020055, auc: 0.999667434412
+Results for vgfr2: accuracy: 0.963764813127, auc: 0.999674612087
+Building data for target: vgfr2, fold: 2
+Running random forests for target: vgfr2
+target:vgfr2 fold:2 predicted: 8776 wrong: 540 pct correct: 0.938468550593, auc: 0.998227911903
+Results for vgfr2: accuracy: 0.955332725615, auc: 0.999192378692
+Building data for target: vgfr2, fold: 3
+Running random forests for target: vgfr2
+target:vgfr2 fold:3 predicted: 8776 wrong: 303 pct correct: 0.965474020055, auc: 0.998637836872
+Results for vgfr2: accuracy: 0.957868049225, auc: 0.999053743237
+Building data for target: vgfr2, fold: 4
+Running random forests for target: vgfr2
+target:vgfr2 fold:4 predicted: 8776 wrong: 424 pct correct: 0.951686417502, auc: 0.999677004645
+Results for vgfr2: accuracy: 0.956631722881, auc: 0.999178395519
+####################  Results for DUD-E ####################
+vgfr2 accuracy: 0.956631722881, auc:0.999178395519
+############################################################
+runtime: 3977.72 secs.

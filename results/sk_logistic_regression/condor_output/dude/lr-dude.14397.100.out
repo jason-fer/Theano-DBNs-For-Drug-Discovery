@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 100
+RunningOn slot3@wid-007.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 100
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: wee1, fold: 0
+Running logistic regression for target: wee1
+target:wee1 fold:0 predicted: 2056 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for wee1: accuracy: 1.0, auc: 1.0
+Building data for target: wee1, fold: 1
+Running logistic regression for target: wee1
+target:wee1 fold:1 predicted: 2056 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for wee1: accuracy: 1.0, auc: 1.0
+Building data for target: wee1, fold: 2
+Running logistic regression for target: wee1
+target:wee1 fold:2 predicted: 2056 wrong: 60 pct correct: 0.970817120623, auc: 0.994917067951
+Results for wee1: accuracy: 0.990272373541, auc: 0.998305689317
+Building data for target: wee1, fold: 3
+Running logistic regression for target: wee1
+target:wee1 fold:3 predicted: 2056 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for wee1: accuracy: 0.992704280156, auc: 0.998729266988
+Building data for target: wee1, fold: 4
+Running logistic regression for target: wee1
+target:wee1 fold:4 predicted: 2120 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for wee1: accuracy: 0.994163424125, auc: 0.99898341359
+####################  Results for DUD-E ####################
+wee1 accuracy: 0.994163424125, auc:0.99898341359
+############################################################
+runtime: 48.95 secs.

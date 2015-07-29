@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 63
+RunningOn slot3@opt-a007.discovery.wisc.edu
+python sk_random_forests.py dud_e 63
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: mcr, fold: 0
+Running random forests for target: mcr
+target:mcr fold:0 predicted: 2074 wrong: 56 pct correct: 0.97299903568, auc: 0.998593812776
+Results for mcr: accuracy: 0.97299903568, auc: 0.998593812776
+Building data for target: mcr, fold: 1
+Running random forests for target: mcr
+target:mcr fold:1 predicted: 2074 wrong: 1 pct correct: 0.999517839923, auc: 1.0
+Results for mcr: accuracy: 0.986258437801, auc: 0.999296906388
+Building data for target: mcr, fold: 2
+Running random forests for target: mcr
+target:mcr fold:2 predicted: 2074 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for mcr: accuracy: 0.990838958534, auc: 0.999531270925
+Building data for target: mcr, fold: 3
+Running random forests for target: mcr
+target:mcr fold:3 predicted: 2074 wrong: 81 pct correct: 0.960945033751, auc: 0.998706809964
+Results for mcr: accuracy: 0.983365477338, auc: 0.999325155685
+Building data for target: mcr, fold: 4
+Running random forests for target: mcr
+target:mcr fold:4 predicted: 2073 wrong: 51 pct correct: 0.975397973951, auc: 0.997917054552
+Results for mcr: accuracy: 0.981771976661, auc: 0.999043535458
+####################  Results for DUD-E ####################
+mcr accuracy: 0.981771976661, auc:0.999043535458
+############################################################
+runtime: 246.97 secs.

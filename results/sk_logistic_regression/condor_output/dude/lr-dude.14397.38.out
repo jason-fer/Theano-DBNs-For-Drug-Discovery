@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 38
+RunningOn slot14@opt-a002.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 38
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: fnta, fold: 0
+Running logistic regression for target: fnta
+target:fnta fold:0 predicted: 20547 wrong: 62 pct correct: 0.996982527863, auc: 0.99757872347
+Results for fnta: accuracy: 0.996982527863, auc: 0.99757872347
+Building data for target: fnta, fold: 1
+Running logistic regression for target: fnta
+target:fnta fold:1 predicted: 20547 wrong: 1 pct correct: 0.999951331095, auc: 1.0
+Results for fnta: accuracy: 0.998466929479, auc: 0.998789361735
+Building data for target: fnta, fold: 2
+Running logistic regression for target: fnta
+target:fnta fold:2 predicted: 20547 wrong: 2 pct correct: 0.999902662189, auc: 0.999999431425
+Results for fnta: accuracy: 0.998945507049, auc: 0.999192718298
+Building data for target: fnta, fold: 3
+Running logistic regression for target: fnta
+target:fnta fold:3 predicted: 20547 wrong: 32 pct correct: 0.998442595026, auc: 0.999998578563
+Results for fnta: accuracy: 0.998819779043, auc: 0.999394183364
+Building data for target: fnta, fold: 4
+Running logistic regression for target: fnta
+target:fnta fold:4 predicted: 20611 wrong: 94 pct correct: 0.995439328514, auc: 0.999990959788
+Results for fnta: accuracy: 0.998143688937, auc: 0.999513538649
+####################  Results for DUD-E ####################
+fnta accuracy: 0.998143688937, auc:0.999513538649
+############################################################
+runtime: 672.21 secs.

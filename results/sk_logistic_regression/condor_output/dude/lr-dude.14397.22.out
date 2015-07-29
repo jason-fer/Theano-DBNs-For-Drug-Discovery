@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 22
+RunningOn slot21@mir-exec-01.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 22
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: csf1r, fold: 0
+Running logistic regression for target: csf1r
+target:csf1r fold:0 predicted: 4196 wrong: 122 pct correct: 0.970924690181, auc: 0.999894144049
+Results for csf1r: accuracy: 0.970924690181, auc: 0.999894144049
+Building data for target: csf1r, fold: 1
+Running logistic regression for target: csf1r
+target:csf1r fold:1 predicted: 4196 wrong: 34 pct correct: 0.991897044805, auc: 0.999745945717
+Results for csf1r: accuracy: 0.981410867493, auc: 0.999820044883
+Building data for target: csf1r, fold: 2
+Running logistic regression for target: csf1r
+target:csf1r fold:2 predicted: 4196 wrong: 7 pct correct: 0.998331744519, auc: 0.999908258176
+Results for csf1r: accuracy: 0.987051159835, auc: 0.999849449314
+Building data for target: csf1r, fold: 3
+Running logistic regression for target: csf1r
+target:csf1r fold:3 predicted: 4196 wrong: 65 pct correct: 0.984509056244, auc: 0.999809459288
+Results for csf1r: accuracy: 0.986415633937, auc: 0.999839451807
+Building data for target: csf1r, fold: 4
+Running logistic regression for target: csf1r
+target:csf1r fold:4 predicted: 4230 wrong: 150 pct correct: 0.964539007092, auc: 0.998511286525
+Results for csf1r: accuracy: 0.982040308568, auc: 0.999573818751
+####################  Results for DUD-E ####################
+csf1r accuracy: 0.982040308568, auc:0.999573818751
+############################################################
+runtime: 87.72 secs.

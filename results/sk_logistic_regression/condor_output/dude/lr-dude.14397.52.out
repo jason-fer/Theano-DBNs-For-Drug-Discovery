@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 52
+RunningOn slot13@opt-a016.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 52
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: igf1r, fold: 0
+Running logistic regression for target: igf1r
+target:igf1r fold:0 predicted: 3230 wrong: 32 pct correct: 0.990092879257, auc: 0.983764775414
+Results for igf1r: accuracy: 0.990092879257, auc: 0.983764775414
+Building data for target: igf1r, fold: 1
+Running logistic regression for target: igf1r
+target:igf1r fold:1 predicted: 3230 wrong: 60 pct correct: 0.981424148607, auc: 0.9968321513
+Results for igf1r: accuracy: 0.985758513932, auc: 0.990298463357
+Building data for target: igf1r, fold: 2
+Running logistic regression for target: igf1r
+target:igf1r fold:2 predicted: 3230 wrong: 60 pct correct: 0.981424148607, auc: 0.999799054374
+Results for igf1r: accuracy: 0.98431372549, auc: 0.993465327029
+Building data for target: igf1r, fold: 3
+Running logistic regression for target: igf1r
+target:igf1r fold:3 predicted: 3230 wrong: 63 pct correct: 0.980495356037, auc: 0.999787234043
+Results for igf1r: accuracy: 0.983359133127, auc: 0.995045803783
+Building data for target: igf1r, fold: 4
+Running logistic regression for target: igf1r
+target:igf1r fold:4 predicted: 3264 wrong: 31 pct correct: 0.99050245098, auc: 0.999942305917
+Results for igf1r: accuracy: 0.984787796698, auc: 0.996025104209
+####################  Results for DUD-E ####################
+igf1r accuracy: 0.984787796698, auc:0.996025104209
+############################################################
+runtime: 96.15 secs.

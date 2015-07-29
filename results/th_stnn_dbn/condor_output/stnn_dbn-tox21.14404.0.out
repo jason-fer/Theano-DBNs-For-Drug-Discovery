@@ -1,0 +1,193 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14404
+Process 0
+RunningOn slot12@galaxy-01.discovery.wisc.edu
+python th_deep_belief_net.py tox21 0
+Running Theano Learn Deep Belief Net for tox21, target: nr-ahr.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -79.7809548063
+Pre-training layer 0, epoch 1, cost  -50.8662430094
+Pre-training layer 0, epoch 2, cost  -46.6404088695
+Pre-training layer 0, epoch 3, cost  -43.7145224559
+Pre-training layer 0, epoch 4, cost  -40.9763356486
+Pre-training layer 0, epoch 5, cost  -38.8973590457
+Pre-training layer 0, epoch 6, cost  -37.1247191702
+Pre-training layer 0, epoch 7, cost  -35.6982731972
+Pre-training layer 1, epoch 0, cost  -1368.34285789
+Pre-training layer 1, epoch 1, cost  -1348.45671318
+Pre-training layer 1, epoch 2, cost  -1345.87670705
+Pre-training layer 1, epoch 3, cost  -1345.24621275
+Pre-training layer 1, epoch 4, cost  -1344.93581895
+Pre-training layer 1, epoch 5, cost  -1344.71296142
+Pre-training layer 1, epoch 6, cost  -1344.5291343
+Pre-training layer 1, epoch 7, cost  -1344.38445805
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 83/83, best error 33.555556 %, best_auc: 0.712912
+     new best AUC!: 0.717900070228
+     new best AUC!: 0.723207621401
+     new best AUC!: 0.724845663692
+     epoch 8, minibatch 83/83, best error 33.740741 %, best_auc: 0.724846
+     new best AUC!: 0.729129208629
+     epoch 9, minibatch 83/83, best error 33.333333 %, best_auc: 0.729129
+     new best AUC!: 0.731600060301
+     epoch 10, minibatch 83/83, best error 32.925926 %, best_auc: 0.731600
+     new best AUC!: 0.73439263745
+     epoch 11, minibatch 83/83, best error 32.888889 %, best_auc: 0.734393
+     new best AUC!: 0.734488235878
+     epoch 12, minibatch 83/83, best error 32.370370 %, best_auc: 0.734488
+     epoch 13, minibatch 83/83, best error 32.074074 %, best_auc: 0.734488
+     epoch 14, minibatch 83/83, best error 31.925926 %, best_auc: 0.734488
+     epoch 15, minibatch 83/83, best error 31.814815 %, best_auc: 0.734488
+     new best AUC!: 0.735539818584
+     new best AUC!: 0.735740207596
+     epoch 17, minibatch 83/83, best error 31.666667 %, best_auc: 0.735740
+     new best AUC!: 0.736166723658
+     epoch 18, minibatch 83/83, best error 31.333333 %, best_auc: 0.736167
+     new best AUC!: 0.739110052175
+     epoch 19, minibatch 83/83, best error 31.518519 %, best_auc: 0.739110
+     epoch 20, minibatch 83/83, best error 31.370370 %, best_auc: 0.739110
+     new best AUC!: 0.739310441187
+     epoch 21, minibatch 83/83, best error 31.333333 %, best_auc: 0.739310
+     new best AUC!: 0.739558629413
+     new best AUC!: 0.741080850532
+     epoch 23, minibatch 83/83, best error 31.259259 %, best_auc: 0.741081
+     new best AUC!: 0.743016718694
+     epoch 24, minibatch 83/83, best error 31.037037 %, best_auc: 0.743017
+     new best AUC!: 0.750947711337
+     epoch 25, minibatch 83/83, best error 31.037037 %, best_auc: 0.750948
+     epoch 26, minibatch 83/83, best error 30.925926 %, best_auc: 0.750948
+     epoch 27, minibatch 83/83, best error 30.777778 %, best_auc: 0.750948
+     new best AUC!: 0.754400285325
+     epoch 28, minibatch 83/83, best error 30.888889 %, best_auc: 0.754400
+     epoch 29, minibatch 83/83, best error 30.777778 %, best_auc: 0.754400
+     new best AUC!: 0.75564858018
+     epoch 31, minibatch 83/83, best error 30.518519 %, best_auc: 0.755649
+     new best AUC!: 0.756575149556
+     epoch 32, minibatch 83/83, best error 30.259259 %, best_auc: 0.756575
+     new best AUC!: 0.757225954238
+     epoch 33, minibatch 83/83, best error 29.962963 %, best_auc: 0.757226
+     epoch 34, minibatch 83/83, best error 29.888889 %, best_auc: 0.757226
+     new best AUC!: 0.758919149468
+     new best AUC!: 0.759044162797
+     new best AUC!: 0.761301756437
+     new best AUC!: 0.766158891941
+     epoch 39, minibatch 83/83, best error 29.925926 %, best_auc: 0.766159
+     epoch 40, minibatch 83/83, best error 29.814815 %, best_auc: 0.766159
+     new best AUC!: 0.76622875233
+     epoch 41, minibatch 83/83, best error 29.666667 %, best_auc: 0.766229
+     new best AUC!: 0.767671920903
+     epoch 42, minibatch 83/83, best error 29.407407 %, best_auc: 0.767672
+     new best AUC!: 0.770999481562
+     epoch 43, minibatch 83/83, best error 29.000000 %, best_auc: 0.770999
+     new best AUC!: 0.771606163892
+     epoch 44, minibatch 83/83, best error 28.740741 %, best_auc: 0.771606
+     new best AUC!: 0.773317743436
+     epoch 45, minibatch 83/83, best error 28.444444 %, best_auc: 0.773318
+     new best AUC!: 0.773898687728
+     new best AUC!: 0.774966816315
+     new best AUC!: 0.778829360483
+     epoch 48, minibatch 83/83, best error 28.037037 %, best_auc: 0.778829
+     new best AUC!: 0.782423493681
+     epoch 50, minibatch 83/83, best error 27.703704 %, best_auc: 0.782423
+     new best AUC!: 0.78439613047
+     epoch 51, minibatch 83/83, best error 27.407407 %, best_auc: 0.784396
+     new best AUC!: 0.788102407977
+     epoch 52, minibatch 83/83, best error 27.333333 %, best_auc: 0.788102
+     epoch 53, minibatch 83/83, best error 27.259259 %, best_auc: 0.788102
+     new best AUC!: 0.789565799295
+     epoch 54, minibatch 83/83, best error 27.296296 %, best_auc: 0.789566
+     new best AUC!: 0.790582451806
+     new best AUC!: 0.793926558346
+     epoch 56, minibatch 83/83, best error 27.148148 %, best_auc: 0.793927
+     new best AUC!: 0.795419364565
+     epoch 57, minibatch 83/83, best error 27.148148 %, best_auc: 0.795419
+     new best AUC!: 0.79999705851
+     epoch 58, minibatch 83/83, best error 27.000000 %, best_auc: 0.799997
+     epoch 59, minibatch 83/83, best error 26.888889 %, best_auc: 0.799997
+     new best AUC!: 0.8037492968
+     new best AUC!: 0.80633045435
+     new best AUC!: 0.807177971181
+     epoch 62, minibatch 83/83, best error 26.703704 %, best_auc: 0.807178
+     new best AUC!: 0.812994767825
+     epoch 63, minibatch 83/83, best error 26.740741 %, best_auc: 0.812995
+     new best AUC!: 0.815346121461
+     new best AUC!: 0.818664489964
+     new best AUC!: 0.82339845057
+     epoch 66, minibatch 83/83, best error 25.777778 %, best_auc: 0.823398
+     new best AUC!: 0.826801386913
+     epoch 67, minibatch 83/83, best error 26.111111 %, best_auc: 0.826801
+     new best AUC!: 0.831000364009
+     epoch 68, minibatch 83/83, best error 25.370370 %, best_auc: 0.831000
+     new best AUC!: 0.835499005409
+     epoch 69, minibatch 83/83, best error 24.629630 %, best_auc: 0.835499
+     new best AUC!: 0.840264219347
+     epoch 70, minibatch 83/83, best error 24.481481 %, best_auc: 0.840264
+     new best AUC!: 0.845603023852
+     epoch 71, minibatch 83/83, best error 24.259259 %, best_auc: 0.845603
+     new best AUC!: 0.850324115439
+     epoch 72, minibatch 83/83, best error 23.000000 %, best_auc: 0.850324
+     new best AUC!: 0.853997301183
+     epoch 73, minibatch 83/83, best error 22.740741 %, best_auc: 0.853997
+     new best AUC!: 0.857098734792
+     epoch 74, minibatch 83/83, best error 22.000000 %, best_auc: 0.857099
+     new best AUC!: 0.86015788448
+     new best AUC!: 0.862836478889
+     epoch 76, minibatch 83/83, best error 21.518519 %, best_auc: 0.862836
+     new best AUC!: 0.865551841924
+     epoch 77, minibatch 83/83, best error 21.000000 %, best_auc: 0.865552
+     new best AUC!: 0.867866426935
+     epoch 78, minibatch 83/83, best error 20.518519 %, best_auc: 0.867866
+     new best AUC!: 0.869699342945
+     epoch 79, minibatch 83/83, best error 19.851852 %, best_auc: 0.869699
+     new best AUC!: 0.872085626776
+     epoch 80, minibatch 83/83, best error 19.592593 %, best_auc: 0.872086
+     new best AUC!: 0.874185115325
+     epoch 81, minibatch 83/83, best error 19.000000 %, best_auc: 0.874185
+     new best AUC!: 0.875722043894
+     new best AUC!: 0.87728103364
+     new best AUC!: 0.878560581827
+     new best AUC!: 0.879880575503
+     new best AUC!: 0.880851267231
+     new best AUC!: 0.881746583275
+     epoch 87, minibatch 83/83, best error 18.037037 %, best_auc: 0.881747
+     new best AUC!: 0.88282574245
+     epoch 88, minibatch 83/83, best error 17.703704 %, best_auc: 0.882826
+     new best AUC!: 0.884006015347
+     new best AUC!: 0.885149519618
+     epoch 90, minibatch 83/83, best error 18.148148 %, best_auc: 0.885150
+     new best AUC!: 0.886017259193
+     new best AUC!: 0.886864776024
+     new best AUC!: 0.887596471683
+     new best AUC!: 0.888177415974
+     new best AUC!: 0.88879145203
+     new best AUC!: 0.889499248082
+     new best AUC!: 0.890350441775
+     epoch 97, minibatch 83/83, best error 18.444444 %, best_auc: 0.890350
+     new best AUC!: 0.890951608811
+     epoch 98, minibatch 83/83, best error 18.629630 %, best_auc: 0.890952
+     new best AUC!: 0.89159873663
+     epoch 99, minibatch 83/83, best error 18.444444 %, best_auc: 0.891599
+     new best AUC!: 0.892082244063
+     new best AUC!: 0.892547367183
+     new best AUC!: 0.892705472275
+     epoch 102, minibatch 83/83, best error 18.222222 %, best_auc: 0.892705
+     new best AUC!: 0.893018005596
+     epoch 103, minibatch 83/83, best error 18.740741 %, best_auc: 0.893018
+     new best AUC!: 0.893385691857
+     new best AUC!: 0.893567696556
+     epoch 105, minibatch 83/83, best error 18.666667 %, best_auc: 0.893568
+     new best AUC!: 0.89388390674
+     epoch 106, minibatch 83/83, best error 18.481481 %, best_auc: 0.893884
+     new best AUC!: 0.894034658107
+     epoch 107, minibatch 83/83, best error 18.296296 %, best_auc: 0.894035
+     new best AUC!: 0.894086134183
+     new best AUC!: 0.894111872222
+     new best AUC!: 0.894301230646
+     epoch 111, minibatch 83/83, best error 18.333333 %, best_auc: 0.894301
+     new best AUC!: 0.894356383585
+     epoch 112, minibatch 83/83, best error 18.000000 %, best_auc: 0.894356
+Optimization complete with best validation score of 19.074074 %, obtained at iteration 9296, with test performance 18.000000 %, and best_auc: 0.894356
+runtime: 17579.94 secs.

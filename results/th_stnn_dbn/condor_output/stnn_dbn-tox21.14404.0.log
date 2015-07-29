@@ -1,0 +1,101 @@
+000 (14404.000.000) 07/28 17:54:29 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14404.000.000) 07/28 17:54:47 Job executing on host: <144.92.142.146:9620?sock=3552_510a_3>
+...
+007 (14404.000.000) 07/28 17:54:47 Shadow exception!
+	Error from slot19@galaxy-01.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-tox21.sh': (errno=13: 'Permission denied')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14404.000.000) 07/28 17:54:47 Job was held.
+	Error from slot19@galaxy-01.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-tox21.sh': (errno=13: 'Permission denied')
+	Code 6 Subcode 13
+...
+013 (14404.000.000) 07/28 18:09:39 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14404.000.000) 07/28 18:09:53 Job executing on host: <144.92.142.146:9620?sock=3552_510a_3>
+...
+006 (14404.000.000) 07/28 18:10:02 Image size of job updated: 8744
+	9  -  MemoryUsage of job (MB)
+	8744  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 18:15:03 Image size of job updated: 236768
+	232  -  MemoryUsage of job (MB)
+	236768  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 18:20:03 Image size of job updated: 241508
+	236  -  MemoryUsage of job (MB)
+	241508  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 18:25:03 Image size of job updated: 246000
+	241  -  MemoryUsage of job (MB)
+	246000  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 18:40:05 Image size of job updated: 281988
+	276  -  MemoryUsage of job (MB)
+	281988  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 18:45:06 Image size of job updated: 284432
+	278  -  MemoryUsage of job (MB)
+	284432  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 18:50:07 Image size of job updated: 288928
+	283  -  MemoryUsage of job (MB)
+	288928  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 18:55:07 Image size of job updated: 289728
+	283  -  MemoryUsage of job (MB)
+	289728  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 19:05:08 Image size of job updated: 290424
+	284  -  MemoryUsage of job (MB)
+	290424  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 19:10:08 Image size of job updated: 291408
+	285  -  MemoryUsage of job (MB)
+	291408  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 19:15:08 Image size of job updated: 294124
+	288  -  MemoryUsage of job (MB)
+	294124  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 19:20:09 Image size of job updated: 294972
+	289  -  MemoryUsage of job (MB)
+	294972  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 19:25:10 Image size of job updated: 301984
+	295  -  MemoryUsage of job (MB)
+	301984  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 19:30:10 Image size of job updated: 301992
+	295  -  MemoryUsage of job (MB)
+	301992  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 19:35:11 Image size of job updated: 307088
+	300  -  MemoryUsage of job (MB)
+	307088  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 19:45:12 Image size of job updated: 358472
+	351  -  MemoryUsage of job (MB)
+	358472  -  ResidentSetSize of job (KB)
+...
+006 (14404.000.000) 07/28 20:15:15 Image size of job updated: 385480
+	377  -  MemoryUsage of job (MB)
+	385480  -  ResidentSetSize of job (KB)
+...
+005 (14404.000.000) 07/28 21:10:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 04:32:14, Sys 0 00:20:11  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 04:32:14, Sys 0 00:20:11  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  19954801
+	   Memory (MB)          :      377     2048      2683
+...

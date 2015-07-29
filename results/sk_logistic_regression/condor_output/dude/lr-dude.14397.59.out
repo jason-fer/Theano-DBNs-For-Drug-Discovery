@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14397
+Process 59
+RunningOn slot14@opt-a003.discovery.wisc.edu
+python sk_logistic_regression.py dud_e 59
+Running Scikit Learn Logistic Regression Classifier for dud_e.........
+Building data for target: kpcb, fold: 0
+Running logistic regression for target: kpcb
+target:kpcb fold:0 predicted: 3238 wrong: 150 pct correct: 0.953675108091, auc: 0.990580847724
+Results for kpcb: accuracy: 0.953675108091, auc: 0.990580847724
+Building data for target: kpcb, fold: 1
+Running logistic regression for target: kpcb
+target:kpcb fold:1 predicted: 3238 wrong: 31 pct correct: 0.990426189006, auc: 0.999930741527
+Results for kpcb: accuracy: 0.972050648548, auc: 0.995255794626
+Building data for target: kpcb, fold: 2
+Running logistic regression for target: kpcb
+target:kpcb fold:2 predicted: 3238 wrong: 151 pct correct: 0.953366275479, auc: 0.997518238064
+Results for kpcb: accuracy: 0.965822524192, auc: 0.996009942439
+Building data for target: kpcb, fold: 3
+Running logistic regression for target: kpcb
+target:kpcb fold:3 predicted: 3238 wrong: 91 pct correct: 0.971896232242, auc: 0.991065657032
+Results for kpcb: accuracy: 0.967340951204, auc: 0.994773871087
+Building data for target: kpcb, fold: 4
+Running logistic regression for target: kpcb
+target:kpcb fold:4 predicted: 3331 wrong: 0 pct correct: 1.0, auc: 1.0
+Results for kpcb: accuracy: 0.973872760964, auc: 0.99581909687
+####################  Results for DUD-E ####################
+kpcb accuracy: 0.973872760964, auc:0.99581909687
+############################################################
+runtime: 137.61 secs.

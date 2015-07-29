@@ -1,0 +1,69 @@
+000 (14405.053.000) 07/28 17:54:47 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14405.053.000) 07/28 18:05:43 Job executing on host: <144.92.142.192:9620?sock=11062_0af0_13>
+...
+007 (14405.053.000) 07/28 18:05:43 Shadow exception!
+	Error from slot8@opt-a018.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-dude.sh': (errno=13: 'Permission denied')
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (14405.053.000) 07/28 18:05:43 Job was held.
+	Error from slot8@opt-a018.discovery.wisc.edu: Failed to execute '/mnt/ws/home/jferiante/wid-stnn_dbn-dude.sh': (errno=13: 'Permission denied')
+	Code 6 Subcode 13
+...
+013 (14405.053.000) 07/28 18:09:40 Job was released.
+	via condor_release (by user jferiante)
+...
+001 (14405.053.000) 07/28 18:13:12 Job executing on host: <144.92.142.178:9620?sock=3470_c397_3>
+...
+006 (14405.053.000) 07/28 18:13:21 Image size of job updated: 18256
+	18  -  MemoryUsage of job (MB)
+	18256  -  ResidentSetSize of job (KB)
+...
+006 (14405.053.000) 07/28 18:18:22 Image size of job updated: 209720
+	205  -  MemoryUsage of job (MB)
+	209720  -  ResidentSetSize of job (KB)
+...
+006 (14405.053.000) 07/28 18:23:22 Image size of job updated: 242432
+	237  -  MemoryUsage of job (MB)
+	242432  -  ResidentSetSize of job (KB)
+...
+006 (14405.053.000) 07/28 18:28:22 Image size of job updated: 242476
+	237  -  MemoryUsage of job (MB)
+	242476  -  ResidentSetSize of job (KB)
+...
+006 (14405.053.000) 07/28 18:33:23 Image size of job updated: 244724
+	239  -  MemoryUsage of job (MB)
+	244724  -  ResidentSetSize of job (KB)
+...
+006 (14405.053.000) 07/28 18:43:23 Image size of job updated: 249604
+	244  -  MemoryUsage of job (MB)
+	249604  -  ResidentSetSize of job (KB)
+...
+006 (14405.053.000) 07/28 18:48:24 Image size of job updated: 249652
+	244  -  MemoryUsage of job (MB)
+	249652  -  ResidentSetSize of job (KB)
+...
+006 (14405.053.000) 07/28 18:58:25 Image size of job updated: 256792
+	251  -  MemoryUsage of job (MB)
+	256792  -  ResidentSetSize of job (KB)
+...
+006 (14405.053.000) 07/28 19:00:15 Image size of job updated: 257356
+	251  -  MemoryUsage of job (MB)
+	256792  -  ResidentSetSize of job (KB)
+...
+005 (14405.053.000) 07/28 19:00:15 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:41:57, Sys 0 00:04:11  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:41:57, Sys 0 00:04:11  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  48717544
+	   Memory (MB)          :      251     3072      4031
+...

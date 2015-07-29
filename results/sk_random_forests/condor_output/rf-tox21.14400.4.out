@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14400
+Process 4
+RunningOn slot6@wid-007.discovery.wisc.edu
+python sk_random_forests.py tox21 4
+Running Scikit Learn Random Forests for tox21.........
+Building data for target: nr-er-lbd, fold: 0
+Running random forests for target: nr-er-lbd
+target:nr-er-lbd fold:0 predicted: 3258 wrong: 691 pct correct: 0.787906691222, auc: 0.852619687347
+Results for nr-er-lbd: accuracy: 0.787906691222, auc: 0.852619687347
+Building data for target: nr-er-lbd, fold: 1
+Running random forests for target: nr-er-lbd
+target:nr-er-lbd fold:1 predicted: 3258 wrong: 814 pct correct: 0.750153468386, auc: 0.842845899148
+Results for nr-er-lbd: accuracy: 0.769030079804, auc: 0.847732793248
+Building data for target: nr-er-lbd, fold: 2
+Running random forests for target: nr-er-lbd
+target:nr-er-lbd fold:2 predicted: 3258 wrong: 632 pct correct: 0.806015960712, auc: 0.856744965532
+Results for nr-er-lbd: accuracy: 0.781358706773, auc: 0.850736850676
+Building data for target: nr-er-lbd, fold: 3
+Running random forests for target: nr-er-lbd
+target:nr-er-lbd fold:3 predicted: 3258 wrong: 687 pct correct: 0.789134438306, auc: 0.80381859632
+Results for nr-er-lbd: accuracy: 0.783302639656, auc: 0.839007287087
+Building data for target: nr-er-lbd, fold: 4
+Running random forests for target: nr-er-lbd
+target:nr-er-lbd fold:4 predicted: 3260 wrong: 804 pct correct: 0.753374233129, auc: 0.807907862458
+Results for nr-er-lbd: accuracy: 0.777316958351, auc: 0.832787402161
+####################  Results for Tox21 ####################
+nr-er-lbd accuracy: 0.777316958351, auc:0.832787402161
+############################################################
+runtime: 1385.84 secs.

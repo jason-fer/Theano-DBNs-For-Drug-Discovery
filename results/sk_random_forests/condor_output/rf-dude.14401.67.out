@@ -1,0 +1,30 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14401
+Process 67
+RunningOn slot1@mir-exec-01.discovery.wisc.edu
+python sk_random_forests.py dud_e 67
+Running Scikit Learn Random Forests for dud_e.........
+Building data for target: mk14, fold: 0
+Running random forests for target: mk14
+target:mk14 fold:0 predicted: 12776 wrong: 244 pct correct: 0.98090169067, auc: 0.999882625411
+Results for mk14: accuracy: 0.98090169067, auc: 0.999882625411
+Building data for target: mk14, fold: 1
+Running random forests for target: mk14
+target:mk14 fold:1 predicted: 12776 wrong: 244 pct correct: 0.98090169067, auc: 0.996514762198
+Results for mk14: accuracy: 0.98090169067, auc: 0.998198693805
+Building data for target: mk14, fold: 2
+Running random forests for target: mk14
+target:mk14 fold:2 predicted: 12776 wrong: 301 pct correct: 0.976440200376, auc: 0.999955750155
+Results for mk14: accuracy: 0.979414527239, auc: 0.998784379255
+Building data for target: mk14, fold: 3
+Running random forests for target: mk14
+target:mk14 fold:3 predicted: 12776 wrong: 302 pct correct: 0.976361928616, auc: 0.999695126067
+Results for mk14: accuracy: 0.978651377583, auc: 0.999012065958
+Building data for target: mk14, fold: 4
+Running random forests for target: mk14
+target:mk14 fold:4 predicted: 12778 wrong: 123 pct correct: 0.990374080451, auc: 0.99668629621
+Results for mk14: accuracy: 0.980995918157, auc: 0.998546912008
+####################  Results for DUD-E ####################
+mk14 accuracy: 0.980995918157, auc:0.998546912008
+############################################################
+runtime: 4641.41 secs.

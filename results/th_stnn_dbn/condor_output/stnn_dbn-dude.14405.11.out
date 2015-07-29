@@ -1,0 +1,116 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14405
+Process 11
+RunningOn slot12@opt-a016.discovery.wisc.edu
+python th_deep_belief_net.py dud_e 11
+Running Theano Learn Deep Belief Net for dud_e, target: ampc.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -146.063452129
+Pre-training layer 0, epoch 1, cost  -66.9521435706
+Pre-training layer 1, epoch 0, cost  -1403.93314865
+Pre-training layer 1, epoch 1, cost  -1382.37217634
+... getting the finetuning functions
+... finetuning the model
+     epoch 1, minibatch 28/28, best error 38.444444 %, best_auc: 0.667385
+     new best AUC!: 0.683692528736
+     new best AUC!: 0.689870689655
+     new best AUC!: 0.692385057471
+     new best AUC!: 0.749568965517
+     new best AUC!: 0.812212643678
+     epoch 75, minibatch 28/28, best error 38.444444 %, best_auc: 0.812213
+     new best AUC!: 0.830603448276
+     epoch 76, minibatch 28/28, best error 25.888889 %, best_auc: 0.830603
+     new best AUC!: 0.841379310345
+     epoch 77, minibatch 28/28, best error 22.888889 %, best_auc: 0.841379
+     new best AUC!: 0.847413793103
+     epoch 78, minibatch 28/28, best error 23.000000 %, best_auc: 0.847414
+     new best AUC!: 0.854454022989
+     epoch 79, minibatch 28/28, best error 19.666667 %, best_auc: 0.854454
+     new best AUC!: 0.861063218391
+     epoch 80, minibatch 28/28, best error 19.777778 %, best_auc: 0.861063
+     new best AUC!: 0.87025862069
+     new best AUC!: 0.882327586207
+     epoch 82, minibatch 28/28, best error 13.777778 %, best_auc: 0.882328
+     new best AUC!: 0.902442528736
+     new best AUC!: 0.918534482759
+     new best AUC!: 0.927729885057
+     new best AUC!: 0.935344827586
+     new best AUC!: 0.94224137931
+     new best AUC!: 0.947557471264
+     new best AUC!: 0.950287356322
+     new best AUC!: 0.951436781609
+     new best AUC!: 0.952442528736
+     new best AUC!: 0.953591954023
+     new best AUC!: 0.954166666667
+     new best AUC!: 0.954454022989
+     new best AUC!: 0.955028735632
+     new best AUC!: 0.955316091954
+     new best AUC!: 0.955747126437
+     new best AUC!: 0.95632183908
+     new best AUC!: 0.956609195402
+     new best AUC!: 0.956752873563
+     new best AUC!: 0.957040229885
+     new best AUC!: 0.957327586207
+     new best AUC!: 0.957471264368
+     new best AUC!: 0.95775862069
+     new best AUC!: 0.957902298851
+     new best AUC!: 0.958189655172
+     new best AUC!: 0.958333333333
+     new best AUC!: 0.958620689655
+     new best AUC!: 0.958764367816
+     new best AUC!: 0.958908045977
+     new best AUC!: 0.959051724138
+     new best AUC!: 0.959195402299
+     new best AUC!: 0.95933908046
+     new best AUC!: 0.959626436782
+     new best AUC!: 0.959913793103
+     new best AUC!: 0.960057471264
+     new best AUC!: 0.960201149425
+     new best AUC!: 0.960344827586
+     new best AUC!: 0.960344827586
+     new best AUC!: 0.960488505747
+     new best AUC!: 0.960775862069
+     new best AUC!: 0.96091954023
+     new best AUC!: 0.961063218391
+     new best AUC!: 0.961350574713
+     new best AUC!: 0.961494252874
+     new best AUC!: 0.961637931034
+     new best AUC!: 0.961781609195
+     new best AUC!: 0.961925287356
+     new best AUC!: 0.962068965517
+     new best AUC!: 0.962212643678
+     new best AUC!: 0.962356321839
+     new best AUC!: 0.9625
+     new best AUC!: 0.962643678161
+     new best AUC!: 0.962787356322
+     new best AUC!: 0.962931034483
+     new best AUC!: 0.963074712644
+     new best AUC!: 0.963074712644
+     new best AUC!: 0.963218390805
+     new best AUC!: 0.963362068966
+     new best AUC!: 0.963362068966
+     new best AUC!: 0.963505747126
+     new best AUC!: 0.963649425287
+     new best AUC!: 0.963649425287
+     new best AUC!: 0.963793103448
+     new best AUC!: 0.963936781609
+     new best AUC!: 0.96408045977
+     new best AUC!: 0.964224137931
+     new best AUC!: 0.964367816092
+     new best AUC!: 0.964367816092
+     new best AUC!: 0.964439655172
+     new best AUC!: 0.964511494253
+     new best AUC!: 0.964655172414
+     new best AUC!: 0.964798850575
+     new best AUC!: 0.964798850575
+     new best AUC!: 0.964942528736
+     new best AUC!: 0.964942528736
+     new best AUC!: 0.965014367816
+     new best AUC!: 0.965086206897
+     new best AUC!: 0.965229885057
+     new best AUC!: 0.965229885057
+     new best AUC!: 0.965373563218
+Optimization complete with best validation score of 0.555556 %, obtained at iteration 2296, with test performance 13.777778 %, and best_auc: 0.965374
+runtime: 28468.91 secs.
