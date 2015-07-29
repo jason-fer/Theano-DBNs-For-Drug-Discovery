@@ -1,3 +1,15 @@
+"""
+**************************************************************************
+Generate Folds
+**************************************************************************
+
+Build out the datasets for testing, validation, training etc.
+actives / inactives kept in separate files to simplify the oversampling
+
+@author: Jason Feriante <feriante@cs.wisc.edu>
+@date: 10 July 2015
+"""
+
 # Traverse the data directories in ./data & generate the fold files in /folds
 # 
 # Details for generating stratified fold files: 

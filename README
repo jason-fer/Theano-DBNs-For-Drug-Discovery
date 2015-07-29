@@ -81,7 +81,14 @@ All rows in all files are organized the same:
 +-------------------------------------------------------------------------------
 | HTCondor Job List
 +-------------------------------------------------------------------------------
+Beware: HTCondor has 2-3 day limit
+
 condor_q to do a 'qstat'
+condor_rm remove job
+condor_rm -constraint 'JobStatus =!= 2'   # kill jobs not running
+condor_rm <username>                      # wipes out ALL jobs for  user
+condor_release <username>                 # release held jobs.
+condor_submit <file>.sh
 
 condor_submit wid-logistic_regression-tox21.sub
 condor_submit wid-logistic_regression-dude.sub

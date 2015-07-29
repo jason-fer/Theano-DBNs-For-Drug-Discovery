@@ -72,7 +72,60 @@ def parse_line(line, data_type):
 
 
 
+def get_col_index(target, target_cols):
+    """return the column index for this target"""
+
+    for i in range(len(target_cols)):
+        if(target == target_cols[i]):
+            return i
+
+    # this should never happen
+    raise ValueError('get_col_index can\'t find ' + str(target) + '!');
+
+
+
+def get_rev_targets(data_type):
+    """ for the hashmap generating function; only includes actives """
+    """ builds object for each target with fname / col_id """
+
+
+    fold_path = get_fold_path(data_type)
+    target_columns = get_target_list(data_type)
+
+    # init targets
+    targets = {}
+    rev_targets = {}
+    for dir_name, sub, files in os.walk(fold_path):
+        for fname in files:
+            if fname.startswith('.'):
+                # ignore system files
+                pass
+            else:
+                target = get_target(fname, data_type)
+
+                # store the filename & column index for this target
+                targets[target] = {'fname': '', 'col_id': -1}
+                # print "file:" + fname + ", target:" + target
+
+        for fname in files:
+            if fname.startswith('.') or 'inactives' in fname:
+                # ignore system files & inactives
+                pass
+            else:
+                target = get_target(fname, data_type)
+                col_id = get_col_index(target, target_columns)
+                targets[target]['fname'] = fname
+                targets[target]['col_id'] = col_id
+                # print "file:" + fname + ", target:" + target
+                rev_targets[col_id] = {'target':target, 'fname':fname}
+                
+    
+    return rev_targets, target_columns
+
+
+
 def build_targets(fold_path, data_type):
+    """ for building folds or training on the folds """
 
     # init targets
     targets = {}
@@ -630,16 +683,17 @@ def get_target_list(data_type):
         'aid995',
         ]
 
-    if(data_type == 'tox21'):
+
+    if(data_type == 'tox21' or data_type == 'Tox21'):
         return tox21
 
-    elif(data_type == 'dud_e'):
+    elif(data_type == 'dud_e' or data_type == 'DUD-E' or data_type == 'dude'):
         return dude
 
-    elif(data_type == 'muv'):
+    elif(data_type == 'muv' or data_type == 'MUV'):
         return muv
 
-    elif(data_type == 'pcba'):
+    elif(data_type == 'pcba' or data_type == 'PCBA'):
         return pcba
     else:
         raise ValueError('data_type does not exist:' + str(data_type))

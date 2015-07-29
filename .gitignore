@@ -4,4 +4,5 @@
 *.idea
 folds
 theano_saved
+hashmaps/PCBA.hm
 !folds/README
