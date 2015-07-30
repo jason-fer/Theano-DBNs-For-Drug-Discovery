@@ -575,7 +575,8 @@ def main(args):
         # only run PCBA for items where it didn't finish
         skip_jobs = [96, 109, 110, 111, 112, 113, 115, 120, 121, 123]
 
-        if(int(args[2]) in skip_jobs):
+
+        if(is_numeric and int(args[2]) in skip_jobs):
             print '+------------------------------------------------------------------------+'
             print '| Skipping PCBA target: ' + target + ' which already completed.'
             print '+------------------------------------------------------------------------+'
