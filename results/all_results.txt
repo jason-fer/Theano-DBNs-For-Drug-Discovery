@@ -1,4 +1,11 @@
-Note: Overall Accuracy / AUC results exclude DUD-E
+AUC Scores in the Stanford-Google MTNN format:
+
+                    PCBA MUV  Tox21 Overall
+Logistic Regression:0.81 0.77 0.80   0.79
+Random Forests     :0.78 0.68 0.85   0.73
+Single Task STNN   :0.52 0.71 0.77   0.67 (0.74 without PCBA)
+Multitask NN       : TBD.
+
 
 ########################  Logistic Regression   ########################
 Tox21: Average Accuracy: 0.7572939262, Average AUC: 0.806720504
@@ -7,8 +14,6 @@ DUD-E: Average Accuracy: 0.9825760982, Average AUC: 0.9927727926
 MUV: Average Accuracy: 0.9518349982, Average AUC: 0.7723486928
 
 LR Accuracy: 0.8517936864, LR AUC: 0.7965835832
-#########################################################################
-
 
 #########################   Random Forests   ############################
 Tox21: Average Accuracy: 0.7459581518, Average AUC: 0.8524818264
@@ -17,30 +22,24 @@ DUD-E: Average Accuracy: 0.9693393643, Average AUC: 0.9898101778
 MUV: Average Accuracy: 0.9494154643, Average AUC: 0.6849735294
 
 RF Accuracy: 0.907635647, RF AUC: 0.7315786614
-#########################################################################
-
 
 ############################  STNN DBN   ################################
-Tox21: Average Accuracy: xxx, Average AUC: xxx
-PCBA: Average Accuracy: xxx, Average AUC: xxx
-DUD-E: Average Accuracy: xxx, Average AUC: xxx
-MUV: Average Accuracy: xxx, Average AUC: xxx
+Tox21: Average Accuracy: 72.705191833, Average AUC: 0.7711051493
+PCBA: Average Accuracy: 82.4630999744, Average AUC: 0.5298386838 <--this calculation seems wrong.
+DUD-E: Average Accuracy: 95.5900103824, Average AUC: 0.9855164412
+MUV: Average Accuracy:  94.7267554117, Average AUC: 0.7145098823
 
-STNN Accuracy: xxx, STNN AUC: xxx
+STNN Accuracy: 83.298349073, STNN AUC: 0.6718179051
+                             STNN AUC: 0.7428075158 <--without broken PCBA result
 #########################################################################
 
+Note: Overall Accuracy / AUC results exclude DUD-E
 
-########################  Tasks completed?   ########################
-****  Logistic Regression (done)  ****:
-MUV: 17
-DUD-E: 102
-PCBA: 128
-Tox21: 12
+########################  Tasks Analysis   ########################
+Logistic Regression: Done
 
-****  Random Forests  ****:
-MUV: 17
-DUD-E: 102
-PCBA: 49 <--79 need to run again
-Tox21: 12
+Random Forests: nearly done.
+PCBA: 49 <--79 tasks didn't complete all folds
 
-****  STNN DBN  ****:
+****  STNN DBN  ****: PCBA incomplete.
+PCBA: 117 <--11 tasks incomplete
