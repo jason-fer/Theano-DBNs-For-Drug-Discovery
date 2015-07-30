@@ -389,7 +389,7 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
     print '... finetuning the model'
     # early-stopping parameters
-    # patience = 35 * n_train_batches  # look as this many examples regardless
+    patience = 30 * n_train_batches  # look as this many examples regardless
     patience_increase = 2.0   # wait this much longer when a new best is found
     improvement_threshold = 0.995  # a relative improvement of this much is
                                    # considered significant
@@ -418,15 +418,15 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
                 validation_losses = validate_model()
                 this_validation_loss = numpy.mean(validation_losses)
-                # print(
-                #     'epoch %i, minibatch %i/%i, validation error %f %%'
-                #     % (
-                #         epoch,
-                #         minibatch_index + 1,
-                #         n_train_batches,
-                #         this_validation_loss * 100.
-                #     )
-                # )
+                print(
+                    'epoch %i, minibatch %i/%i, validation error %f %%'
+                    % (
+                        epoch,
+                        minibatch_index + 1,
+                        n_train_batches,
+                        this_validation_loss * 100.
+                    )
+                )
 
                 # get the ROC / AUC 
                 auc = helpers.th_calc_auc(dbn, test_set_labels, test_set_x)
@@ -488,30 +488,22 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
 
 
-def run_predictions(data_type, target, p_epochs, t_epochs, f_lr, p_lr, pat):
+def run_predictions(data_type, target, p_epochs, t_epochs, f_lr, p_lr):
 
     """ Run the Theano DBN Model """
     run_DBN(pretraining_epochs=p_epochs, training_epochs=t_epochs, 
         data_type=data_type, target=target, finetune_lr=f_lr, 
-        pretrain_lr=p_lr, patience=pat)
+        pretrain_lr=p_lr, patience=2000)
 
 
 
 def main(args):
 
-
-    # MUV:
-    # 8 p_epochs at p_lr = 0.04 broke the data! (stuck @50%)
-    # 5 p_epochs at p_lr = 0.04 works, but starts @50%
-    # 4 p_epochs at p_lr = 0.04 broke the data! 42.350000 % (33.73% valid)
-    # 2 p_epochs at p_lr = 0.04 works, but starts @50%
- 
     # !!! Important !!! This has a major impact on the results.
     p_epochs = 8 #default 100 pretraining_epochs
     t_epochs = 500 #default 1000 training_epochs
-    f_lr = 0.1 #default 1000 training_epochs
-    p_lr = 0.01 #default 1000 training_epochs
-    pat = 5000 # patience
+    f_lr = 0.1 # fine_tune learning rate
+    p_lr = 0.01 # unserupvised pre-training learning rate
 
     if(len(args) < 3 or len(args[2]) < 1):
         print 'usage: <tox21, dud_e, muv, or pcba> <target> '
@@ -523,6 +515,7 @@ def main(args):
     # in case of typos
     if(dataset == 'dude'):
         dataset = 'dud_e'
+
 
     is_numeric = helpers.is_numeric(target)
     if(is_numeric):
@@ -539,38 +532,62 @@ def main(args):
 
         # Tox21 experimenting with the parameters:
         #  12 p_epochs at p_lr = 0.04: broken
-        #  8 p_epochs at p_lr = 0.04: broken
+        #  8 p_epochs at p_lr = 0.04: works.
         #  4 p_epochs at p_lr = 0.04: broken
         #  2 p_epochs at p_lr = 0.04: broken
         #  2 p_epochs at p_lr = 0.01: broken
         if(target != 'sr-hse'):
-            run_predictions('Tox21', target, 8, t_epochs, 0.1, 0.04, 2000)
+
+            run_predictions('Tox21', target, 8, t_epochs, 0.1, 0.04) # patience = 2000
         else:
             # sr-hse needs different settings
-            run_predictions('Tox21', target, 8, t_epochs, 0.1, 0.04, 5000)
+            # 8 p_epochs at p_lr = 0.04: broken
+            # 4 p_epochs at p_lr = 0.04: broken
+            # 2 p_epochs at p_lr = 0.04: broken
+            # 1 p_epochs at p_lr = 0.04: broken
+            # 3 p_epochs at p_lr = 0.01: broken
+            # 4 p_epochs at p_lr = 0.05: broken
+            # 4 p_epochs at p_lr = 0.003 f_lr: 0.01: broken
+            # 20 p_epochs at p_lr = 0.003 f_lr: 0.01: broken
+            # 5 p_epochs at p_lr = 0.04: broken
+            # 6 p_epochs at p_lr = 0.04: works!!!!!!!!!!
+            
+            run_predictions('Tox21', target, 6, t_epochs, 0.1, 0.04) # patience = 5000
 
     elif(dataset == 'dud_e'):
 
         # 8 p_epochs = broken
         # 2 p_epochs = a magic number that will make all your wishes come true
         # (i'm getting 99% AUC with 2 p_epochs)
-        run_predictions('DUD-E', target, 2, t_epochs, f_lr, p_lr, pat)
+        run_predictions('DUD-E', target, 2, t_epochs, f_lr, p_lr)
 
     elif(dataset == 'muv'):
 
-        # 8 p_epochs = broken
-        # 4 p_epochs = not sure.
+        # MUV:
+        # 8 p_epochs at p_lr = 0.04 broke
+        # 5 p_epochs at p_lr = 0.04 works, but starts @50%
+        # 4 p_epochs at p_lr = 0.04 BEST starts @42.350000 % (33.73% valid)
+        # 2 p_epochs at p_lr = 0.04 works, but starts @50%
         # 1 p_epochs = broken
-        run_predictions('MUV', target, 4, t_epochs, f_lr, 0.04, 4000)
+        run_predictions('MUV', target, 4, t_epochs, f_lr, 0.04) # patience = 4000
 
     elif(dataset == 'pcba'):
+        # only run PCBA for items where it didn't finish
+        skip_jobs = [96, 109, 110, 111, 112, 113, 115, 120, 121, 123]
+
+        if(int(args[2]) in skip_jobs):
+            print '+------------------------------------------------------------------------+'
+            print '| Skipping PCBA target: ' + target + ' which already completed.'
+            print '+------------------------------------------------------------------------+'
+            exit(0)
+
         # this is a huge dataset... patience--> 30k = wild guess.
         # it's VERY slow to run; it takes 3.30 minutes per pretrain layer
         # e.g. 1 p_epochs = about 3.3 minutes - seemed broken. (50% AUC)
         # e.g. 4 p_epochs = about 13.11 minutes - seemed broken.  (50% AUC)
         # 8 p_epochs = worked great on small PCBA sets:
         # 8 p_epochs = aid883 (73% AuC @ 50) and aid899 (63% AUC @ 50 epochs)
-        run_predictions('PCBA', target, 8, t_epochs, f_lr, p_lr, 30000)
+        run_predictions('PCBA', target, 8, t_epochs, f_lr, p_lr)
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
