@@ -21,6 +21,12 @@ fold_paths = [
     "./folds/PCBA",
     ]
 
+multitask_paths = [
+    "./multitask/DUD-E",
+    "./multitask/MUV",
+    "./multitask/Tox21",
+    "./multitask/PCBA",
+    ]
 
 def is_numeric(x):
     try:
@@ -50,6 +56,24 @@ def get_fold_path(data_type):
 
 
 
+def get_multitask_path(data_type):
+
+    if(data_type == 'DUD-E'):
+        return multitask_paths[0]
+
+    if(data_type == 'MUV'):
+        return multitask_paths[1]
+
+    if(data_type == 'Tox21'):
+        return multitask_paths[2]
+
+    if(data_type == 'PCBA'):
+        return multitask_paths[3]
+
+    raise ValueError('data_type does not exist:' + str(data_type))
+
+
+    
 def get_target(fname, data_type):
     return generate_folds.get_target(fname, data_type)
 
@@ -188,6 +212,8 @@ def build_targets(fold_path, data_type):
     # init targets
     targets = {}
     for dir_name, sub, files in os.walk(fold_path):
+
+        # part1: build the target list
         for fname in files:
             if fname.startswith('.'):
                 # ignore system files
@@ -197,9 +223,7 @@ def build_targets(fold_path, data_type):
                 targets[target] = []
                 # print "file:" + fname + ", target:" + target
 
-        print targets
-        exit(0)
-        exit(0)
+        # part2: build the file list based on the targets
         for fname in files:
             if fname.startswith('.'):
                 # ignore system files
@@ -210,6 +234,26 @@ def build_targets(fold_path, data_type):
                 # print "file:" + fname + ", target:" + target
     
     return targets
+
+
+def build_multi_list(fold_path, data_type):
+    """ first run generate_folds if you don't have them yet """
+    """ for building folds or training on the folds """
+
+    # init targets
+    fnames = []
+    for dir_name, sub, files in os.walk(fold_path):
+
+        # build the file list
+        for fname in files:
+            if fname.startswith('.'):
+                # ignore system files
+                pass
+            else:
+                fnames.append(fname)
+                # print "file:" + fname + ", target:" + target
+    
+    return fnames
 
 
 
