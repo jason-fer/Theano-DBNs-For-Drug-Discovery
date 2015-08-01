@@ -182,6 +182,7 @@ def load_string_col_hashmap(data_type, count = False):
 
 
 def build_targets(fold_path, data_type):
+    """ first run generate_folds if you don't have them yet """
     """ for building folds or training on the folds """
 
     # init targets
@@ -196,6 +197,9 @@ def build_targets(fold_path, data_type):
                 targets[target] = []
                 # print "file:" + fname + ", target:" + target
 
+        print targets
+        exit(0)
+        exit(0)
         for fname in files:
             if fname.startswith('.'):
                 # ignore system files

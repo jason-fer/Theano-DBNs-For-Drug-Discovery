@@ -2,7 +2,7 @@
 **************************************************************************
 Theano Deep Belief Networks
 
-A Single Task Neural Network (STNN)
+A Pyramidal Multitask Neural Network (P-MTNN [2000, 100])
 **************************************************************************
 
 @author: Jason Feriante <feriante@cs.wisc.edu>
@@ -582,13 +582,29 @@ def main(args):
             print '+------------------------------------------------------------------------+'
             exit(0)
 
-        # this is a huge dataset... patience--> 30k = wild guess.
-        # it's VERY slow to run; it takes 3.30 minutes per pretrain layer
-        # e.g. 1 p_epochs = about 3.3 minutes - seemed broken. (50% AUC)
-        # e.g. 4 p_epochs = about 13.11 minutes - seemed broken.  (50% AUC)
-        # 8 p_epochs = worked great on small PCBA sets:
-        # 8 p_epochs = aid883 (73% AuC @ 50) and aid899 (63% AUC @ 50 epochs)
-        run_predictions('PCBA', target, 8, t_epochs, f_lr, p_lr)
+        if(is_numeric and int(args[2]) in skip_jobs):
+            # ***These settings ONLY work for the small datasets (e.g. inactives
+            # of less than 50mb!!!!)
+            # it's VERY slow to run; it takes 3.30 minutes per pre-train layer
+            # e.g. 1 p_epochs = about 3.3 minutes - seemed broken. (50% AUC)
+            # e.g. 4 p_epochs = about 13.11 minutes - seemed broken.  (50% AUC)
+            # 8 p_epochs = worked great on small PCBA sets:
+            # 8 p_epochs = aid883 (73% AuC @ 50) and aid899 (63% AUC @ 50 epochs)
+            # p_epochs = 8
+            # t_epochs = 500
+            # f_lr = 0.1
+            # p_lr = 0.01
+            run_predictions('PCBA', target, 8, t_epochs, f_lr, p_lr)
+        else:
+            # we need completely different settings for larger datasets.
+            # aid493208 is the smallest dataset for which the settings above
+            # completely fail
+            p_epochs = 100
+            t_epochs = 1000
+            f_lr = 0.1
+            p_lr = 0.001
+            run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr)
+
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
