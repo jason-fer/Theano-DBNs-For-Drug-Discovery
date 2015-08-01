@@ -37,6 +37,11 @@ Note: Overall Accuracy / AUC results exclude DUD-E
 
 ########################  Tasks Analysis   ########################
 Logistic Regression: Done
+MUV: 17
+DUD-E: 102
+PCBA: 128
+Tox21: 12
+
 
 Random Forests: nearly done.
 PCBA: 49 <--79 tasks didn't complete all folds

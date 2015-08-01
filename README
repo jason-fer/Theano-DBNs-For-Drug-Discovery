@@ -83,6 +83,8 @@ All rows in all files are organized the same:
 +-------------------------------------------------------------------------------
 Beware: HTCondor has 2-3 day limit
 
+condor_submit wid-stnn_dbn-pcba.sub
+
 condor_q to do a 'qstat'
 condor_rm remove job
 condor_rm -constraint 'JobStatus =!= 2'   # kill jobs not running
