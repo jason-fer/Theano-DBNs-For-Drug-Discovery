@@ -320,15 +320,11 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     avg_auc = [] # what is our average AUC (based on ROC)?
 
     # XXXXXXXXXXXXXXX @TODO: convert this too a 5-fold loop)
-    # run 4 folds vs 1 fold with each possible scenario 
-    # for curr_fl in range(5):
-    #     print 'Building data for target: ' + target + ', fold: ' + str(curr_fl)
-
-
-    # @todo: loop through train / test folds (convert this to a 5-fold loop)
     test_fold = 0 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
     valid_fold = 1 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
-    datasets, test_set_labels = helpers.th_load_data2(data_type, fold_path, target, fnames, test_fold, valid_fold)
+
+    # !!!!!!!!!!!!! this needs to only load 1 file at a time!
+    datasets, test_set_labels = helpers.th_load_multi(data_type, fold_path, fnames, test_fold, valid_fold)
 
     train_set_x, train_set_y = datasets[0]
     valid_set_x, valid_set_y = datasets[1]

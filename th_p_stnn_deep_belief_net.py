@@ -596,13 +596,17 @@ def main(args):
             # p_lr = 0.01
             run_predictions('PCBA', target, 8, t_epochs, f_lr, p_lr)
         else:
+            # BROKEN!!: p_epochs = 100, t_epochs = 1000, f_lr = 0.1, p_lr = 0.001
+            # p_epochs = 100, t_epochs = 1000, f_lr = 0.1, p_lr = 0.001
+            # p_epochs = 10, t_epochs = 1000, f_lr = 0.1, p_lr = 0.0001
+            
             # we need completely different settings for larger datasets.
             # aid493208 is the smallest dataset for which the settings above
             # completely fail
-            p_epochs = 100
+            p_epochs = 10
             t_epochs = 1000
             f_lr = 0.1
-            p_lr = 0.001
+            p_lr = 0.0003
             run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr)
 
     else:
