@@ -527,90 +527,118 @@ def main(args):
         + dataset + ", target: "+target+"........." 
 
 
-    # settings specific to any particular dataset can go here 
+    p_epochs = 10
+    t_epochs = 1000
+    f_lr = 0.05
+    p_lr = 0.0000003
+
     if(dataset == 'tox21'):
-
-        # Tox21 experimenting with the parameters:
-        #  12 p_epochs at p_lr = 0.04: broken
-        #  8 p_epochs at p_lr = 0.04: works.
-        #  4 p_epochs at p_lr = 0.04: broken
-        #  2 p_epochs at p_lr = 0.04: broken
-        #  2 p_epochs at p_lr = 0.01: broken
-        if(target != 'sr-hse'):
-
-            run_predictions('Tox21', target, 8, t_epochs, 0.1, 0.04) # patience = 2000
-        else:
-            # sr-hse needs different settings
-            # 8 p_epochs at p_lr = 0.04: broken
-            # 4 p_epochs at p_lr = 0.04: broken
-            # 2 p_epochs at p_lr = 0.04: broken
-            # 1 p_epochs at p_lr = 0.04: broken
-            # 3 p_epochs at p_lr = 0.01: broken
-            # 4 p_epochs at p_lr = 0.05: broken
-            # 4 p_epochs at p_lr = 0.003 f_lr: 0.01: broken
-            # 20 p_epochs at p_lr = 0.003 f_lr: 0.01: broken
-            # 5 p_epochs at p_lr = 0.04: broken
-            # 6 p_epochs at p_lr = 0.04: works!!!!!!!!!!
-            
-            run_predictions('Tox21', target, 6, t_epochs, 0.1, 0.04) # patience = 5000
+        run_predictions('Tox21', target, p_epochs, t_epochs, f_lr, p_lr)
 
     elif(dataset == 'dud_e'):
-
-        # 8 p_epochs = broken
-        # 2 p_epochs = a magic number that will make all your wishes come true
-        # (i'm getting 99% AUC with 2 p_epochs)
-        run_predictions('DUD-E', target, 2, t_epochs, f_lr, p_lr)
+        run_predictions('DUD-E', target, p_epochs, t_epochs, f_lr, p_lr)
 
     elif(dataset == 'muv'):
-
-        # MUV:
-        # 8 p_epochs at p_lr = 0.04 broke
-        # 5 p_epochs at p_lr = 0.04 works, but starts @50%
-        # 4 p_epochs at p_lr = 0.04 BEST starts @42.350000 % (33.73% valid)
-        # 2 p_epochs at p_lr = 0.04 works, but starts @50%
-        # 1 p_epochs = broken
-        run_predictions('MUV', target, 4, t_epochs, f_lr, 0.04) # patience = 4000
+        run_predictions('MUV', target, p_epochs, t_epochs, f_lr, p_lr)
 
     elif(dataset == 'pcba'):
-        # only run PCBA for items where it didn't finish
-        skip_jobs = [96, 109, 110, 111, 112, 113, 115, 120, 121, 123]
-
-
-        if(is_numeric and int(args[2]) in skip_jobs):
-            print '+------------------------------------------------------------------------+'
-            print '| Skipping PCBA target: ' + target + ' which already completed.'
-            print '+------------------------------------------------------------------------+'
-            exit(0)
-
-        if(is_numeric and int(args[2]) in skip_jobs):
-            # ***These settings ONLY work for the small datasets (e.g. inactives
-            # of less than 50mb!!!!)
-            # it's VERY slow to run; it takes 3.30 minutes per pre-train layer
-            # e.g. 1 p_epochs = about 3.3 minutes - seemed broken. (50% AUC)
-            # e.g. 4 p_epochs = about 13.11 minutes - seemed broken.  (50% AUC)
-            # 8 p_epochs = worked great on small PCBA sets:
-            # 8 p_epochs = aid883 (73% AuC @ 50) and aid899 (63% AUC @ 50 epochs)
-            # p_epochs = 8
-            # t_epochs = 500
-            # f_lr = 0.1
-            # p_lr = 0.01
-            run_predictions('PCBA', target, 8, t_epochs, f_lr, p_lr)
-        else:
-            # BROKEN!!: p_epochs = 100, t_epochs = 1000, f_lr = 0.1, p_lr = 0.001
-            # p_epochs = 100, t_epochs = 1000, f_lr = 0.1, p_lr = 0.001
-            # p_epochs = 10, t_epochs = 1000, f_lr = 0.1, p_lr = 0.0001
-            
-            # we need completely different settings for larger datasets.
-            # aid493208 is the smallest dataset for which the settings above
-            # completely fail
-            p_epochs = 10
-            t_epochs = 1000
-            f_lr = 0.1
-            p_lr = 0.0003
-            run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr)
-
+        run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr)
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
+
+    # # settings specific to any particular dataset can go here 
+    # if(dataset == 'tox21'):
+
+        
+
+    #     run_predictions('Tox21', target, 6, t_epochs, 0.1, 0.04) # patience = 5000
+
+    #     # Tox21 experimenting with the parameters:
+    #     #  12 p_epochs at p_lr = 0.04: broken
+    #     #  8 p_epochs at p_lr = 0.04: works.
+    #     #  4 p_epochs at p_lr = 0.04: broken
+    #     #  2 p_epochs at p_lr = 0.04: broken
+    #     #  2 p_epochs at p_lr = 0.01: broken
+    #     if(target != 'sr-hse'):
+
+    #         run_predictions('Tox21', target, 8, t_epochs, 0.1, 0.04) # patience = 2000
+    #     else:
+    #         # sr-hse needs different settings
+    #         # 8 p_epochs at p_lr = 0.04: broken
+    #         # 4 p_epochs at p_lr = 0.04: broken
+    #         # 2 p_epochs at p_lr = 0.04: broken
+    #         # 1 p_epochs at p_lr = 0.04: broken
+    #         # 3 p_epochs at p_lr = 0.01: broken
+    #         # 4 p_epochs at p_lr = 0.05: broken
+    #         # 4 p_epochs at p_lr = 0.003 f_lr: 0.01: broken
+    #         # 20 p_epochs at p_lr = 0.003 f_lr: 0.01: broken
+    #         # 5 p_epochs at p_lr = 0.04: broken
+    #         # 6 p_epochs at p_lr = 0.04: works!!!!!!!!!!
+            
+    #         run_predictions('Tox21', target, 6, t_epochs, 0.1, 0.04) # patience = 5000
+
+    # elif(dataset == 'dud_e'):
+
+    #     # 8 p_epochs = broken
+    #     # 2 p_epochs = a magic number that will make all your wishes come true
+    #     # (i'm getting 99% AUC with 2 p_epochs)
+    #     run_predictions('DUD-E', target, 2, t_epochs, f_lr, p_lr)
+
+    # elif(dataset == 'muv'):
+
+    #     # MUV:
+    #     # 8 p_epochs at p_lr = 0.04 broke
+    #     # 5 p_epochs at p_lr = 0.04 works, but starts @50%
+    #     # 4 p_epochs at p_lr = 0.04 BEST starts @42.350000 % (33.73% valid)
+    #     # 2 p_epochs at p_lr = 0.04 works, but starts @50%
+    #     # 1 p_epochs = broken
+    #     run_predictions('MUV', target, 4, t_epochs, f_lr, 0.04) # patience = 4000
+
+    # elif(dataset == 'pcba'):
+    #     # only run PCBA for items where it didn't finish
+    #     skip_jobs = [96, 109, 110, 111, 112, 113, 115, 120, 121, 123]
+
+
+    #     if(is_numeric and int(args[2]) in skip_jobs):
+    #         print '+------------------------------------------------------------------------+'
+    #         print '| Skipping PCBA target: ' + target + ' which already completed.'
+    #         print '+------------------------------------------------------------------------+'
+    #         exit(0)
+
+    #     if(is_numeric and int(args[2]) in skip_jobs):
+    #         # ***These settings ONLY work for the small datasets (e.g. inactives
+    #         # of less than 50mb!!!!)
+    #         # it's VERY slow to run; it takes 3.30 minutes per pre-train layer
+    #         # e.g. 1 p_epochs = about 3.3 minutes - seemed broken. (50% AUC)
+    #         # e.g. 4 p_epochs = about 13.11 minutes - seemed broken.  (50% AUC)
+    #         # 8 p_epochs = worked great on small PCBA sets:
+    #         # 8 p_epochs = aid883 (73% AuC @ 50) and aid899 (63% AUC @ 50 epochs)
+    #         # p_epochs = 8
+    #         # t_epochs = 500
+    #         # f_lr = 0.1
+    #         # p_lr = 0.01
+    #         run_predictions('PCBA', target, 8, t_epochs, f_lr, p_lr)
+    #     else:
+
+    #         # these settings work, but the f_lr (fine-tune learning rate) might
+    #         # be too aggressive
+    #         # p_epochs = 10
+    #         # t_epochs = 1000
+    #         # f_lr = 0.01
+    #         # p_lr = 0.0000003
+
+            
+    #         # we need completely different settings for larger datasets.
+    #         # aid493208 is the smallest dataset for which the settings above
+    #         # completely fail
+    #         p_epochs = 10
+    #         t_epochs = 1000
+    #         f_lr = 0.05
+    #         p_lr = 0.0000003
+    #         run_predictions('PCBA', target, p_epochs, t_epochs, f_lr, p_lr)
+
+    # else:
+    #     print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
 
 

@@ -323,12 +323,15 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     test_fold = 0 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
     valid_fold = 1 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
 
+    print 'batch_size'
+    print batch_size
+    exit(0)
     # !!!!!!!!!!!!! this needs to only load 1 file at a time!
-    datasets, test_set_labels = helpers.th_load_multi(data_type, fold_path, fnames, test_fold, valid_fold)
-
+    datasets, test_set_labels = helpers.th_load_multi(data_type, fold_path, [fnames[0]], test_fold, valid_fold)
     train_set_x, train_set_y = datasets[0]
     valid_set_x, valid_set_y = datasets[1]
     test_set_x, test_set_y = datasets[2]
+
 
     # compute number of minibatches for training, validation and testing
     n_train_batches = train_set_x.get_value(borrow=True).shape[0] / batch_size
@@ -359,6 +362,9 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
             # go through the training set
             c = []
             for batch_index in xrange(n_train_batches):
+                print 'batch_index'
+                print batch_index
+                exit(0)
                 c.append(pretraining_fns[i](index=batch_index,
                                             lr=pretrain_lr))
             print 'Pre-training layer %i, epoch %d, cost ' % (i, epoch),

@@ -34,8 +34,8 @@ Log = rf-muv.$(Cluster).$(Process).log
 # For single task, could drop this or prefer MachineOwner != "Virology"
 Rank = MachineOwner == "Virology"
 # Use defaults for disk and memory
-Request_cpus = 1
-Request_memory = 3GB
+Request_cpus = 4
+Request_memory = 6GB
 # Don't remember how to set the wall time
 
 # Copy the Cluster and Process and the machine that runs the job
