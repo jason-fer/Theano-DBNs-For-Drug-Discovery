@@ -110,6 +110,11 @@ def main(args):
         print 'usage: <tox21, dud_e, muv, or pcba>'
         return
 
+    ################################################################################
+    print "Remove this if you want to generate the hashmaps... it could take a while!"
+    exit(0)
+    ################################################################################
+    #
     dataset = args[1]
 
     # in case of typos

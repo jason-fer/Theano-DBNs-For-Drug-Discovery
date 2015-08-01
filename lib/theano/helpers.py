@@ -142,22 +142,41 @@ def load_hashmap(data_type):
 
     return hashmap
 
-def load_string_col_hashmap(data_type):
+def load_string_col_hashmap(data_type, count = False):
     """Load a hashmap into memory -- but keep the columns in string format"""
+    """If a count is passed in, then the first n columns will be loaded and"""
+    """the rest will not be included"""
     hashmap_path = 'hashmaps/' + data_type + '.hm'
 
-    hashmap = {}
-    with open(hashmap_path) as f:
-        lines = f.readlines()
-        for line in lines:
-            # put each row in it's respective fold
-            parts = line.rstrip('\n').split(r' ')
+    if(count == False):
+        hashmap = {}
+        with open(hashmap_path) as f:
+            lines = f.readlines()
+            for line in lines:
+                # put each row in it's respective fold
+                parts = line.rstrip('\n').split(r' ')
 
-            bitstring = parts[0]
-            row = parts[1:]
-            row = ' '.join(str(v) for v in row)
+                bitstring = parts[0]
+                row = parts[1:]
+                row = ' '.join(str(v) for v in row)
 
-            hashmap[bitstring] = row
+                hashmap[bitstring] = row
+
+    if(is_numeric(count) and count > 0):
+        hashmap = {}
+        with open(hashmap_path) as f:
+            lines = f.readlines()
+            for line in lines:
+                # put each row in it's respective fold
+                parts = line.rstrip('\n').split(r' ')
+
+                bitstring = parts[0]
+                # truncate the column since the entire set of labels is not
+                # required for this task
+                row = parts[1:count + 1]
+                row = ' '.join(str(v) for v in row)
+
+                hashmap[bitstring] = row
 
     return hashmap
 

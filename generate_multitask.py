@@ -16,20 +16,21 @@ from lib.theano import helpers
 
 
 
-def gen_multitask(data_type):
+def gen_multitask(data_type, size = False):
 
     print "Loading hashmap for " + str(data_type)
-    hashmap = helpers.load_string_col_hashmap(data_type)
+    hashmap = helpers.load_string_col_hashmap(data_type, size)
     rev_targets, target_columns = helpers.get_rev_targets(data_type)
 
     """Load data from the existing folds"""
     fold_path = helpers.get_fold_path(data_type)
 
-    # Limit PCBA to 5 targets
-    new_target_columns = []
-    new_targets = {}
-    if(data_type == 'PCBA'):
-        for col_id in range(5):
+    if(helpers.is_numeric(size) and size > 0 and size < 260):
+        # Hardcode PCBA to 40 targets
+        new_target_columns = []
+        new_targets = {}
+        # truncate things to contain 40 columns for PCBA
+        for col_id in range(size):
             new_targets[col_id] = rev_targets[col_id]
             new_target_columns.append(target_columns[col_id])
 
@@ -38,8 +39,9 @@ def gen_multitask(data_type):
         rev_targets = new_targets
         target_columns = new_target_columns
         
-    tasks = {}
+
     # build task object to contain the datasets
+    tasks = {}
     for col_id in range(len(target_columns)):
 
         target = rev_targets[col_id]['target']
@@ -180,8 +182,15 @@ def gen_multitask(data_type):
 def main(args):
     """ Evenly draw from all datasets to create minibatches """
     """ Keep files to 30,000 lines or less (to avoid overloading memory) """
+    """ The number of columns included can be truncated to generate a smaller """
+    """ dataset """
+
     if(len(args) < 2):
         print 'usage: <tox21, dud_e, muv, or pcba>'
+        print 'usage: <tox21, dud_e, muv, or pcba> <number of label columns>'
+        print 'e.g. python generate_multitask.py pcba 10'
+        print 'This will generate a PCBA multitask dataset that only includes'
+        print 'the first 10 PCBA datasets'
         return
 
     dataset = args[1]
@@ -203,7 +212,12 @@ def main(args):
         gen_multitask('MUV')
 
     elif(dataset == 'pcba'):
-        gen_multitask('PCBA')
+        # PCBA is massive; this setting allows a smaller multitask dataset
+        # to be created
+        if(len(args) > 2):
+            size = int(args[2])
+
+        gen_multitask('PCBA', size)
     else:
         print 'dataset param not found. options: tox21, dud_e, muv, or pcba'
 
