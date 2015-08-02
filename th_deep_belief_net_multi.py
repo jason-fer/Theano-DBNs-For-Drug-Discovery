@@ -323,9 +323,6 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     test_fold = 0 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
     valid_fold = 1 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
 
-    print 'batch_size'
-    print batch_size
-    exit(0)
     # !!!!!!!!!!!!! this needs to only load 1 file at a time!
     datasets, test_set_labels = helpers.th_load_multi(data_type, fold_path, [fnames[0]], test_fold, valid_fold)
     train_set_x, train_set_y = datasets[0]
