@@ -1,0 +1,517 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14409
+Process 111
+RunningOn slot1@opt-a002.discovery.wisc.edu
+python th_deep_belief_net.py pcba 111
+Running Theano Learn Deep Belief Net for pcba, target: aid884.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -1447.39050344
+Pre-training layer 0, epoch 1, cost  -1442.42006632
+Pre-training layer 0, epoch 2, cost  -1437.07383738
+Pre-training layer 0, epoch 3, cost  -1431.55952414
+Pre-training layer 0, epoch 4, cost  -1427.11125113
+Pre-training layer 0, epoch 5, cost  -1420.80063486
+Pre-training layer 0, epoch 6, cost  -1415.57368188
+Pre-training layer 0, epoch 7, cost  -1409.85247726
+Pre-training layer 0, epoch 8, cost  -1404.83621051
+Pre-training layer 0, epoch 9, cost  -1399.87514818
+Pre-training layer 1, epoch 0, cost  -1537.95850356
+Pre-training layer 1, epoch 1, cost  -1537.59705294
+Pre-training layer 1, epoch 2, cost  -1537.51619666
+Pre-training layer 1, epoch 3, cost  -1537.20192398
+Pre-training layer 1, epoch 4, cost  -1537.45053211
+Pre-training layer 1, epoch 5, cost  -1536.84609807
+Pre-training layer 1, epoch 6, cost  -1536.71459374
+Pre-training layer 1, epoch 7, cost  -1536.58471104
+Pre-training layer 1, epoch 8, cost  -1536.26716204
+Pre-training layer 1, epoch 9, cost  -1536.22982542
+... getting the finetuning functions
+... finetuning the model
+epoch 1, minibatch 98/98, validation error 32.687500 %
+     epoch 1, minibatch 98/98, best error 30.250000 %, best_auc: 0.773124
+epoch 2, minibatch 98/98, validation error 29.250000 %
+     new best AUC!: 0.792312376081
+     epoch 2, minibatch 98/98, best error 27.593750 %, best_auc: 0.792312
+epoch 3, minibatch 98/98, validation error 29.093750 %
+     new best AUC!: 0.806652509961
+     epoch 3, minibatch 98/98, best error 27.687500 %, best_auc: 0.806653
+epoch 4, minibatch 98/98, validation error 28.500000 %
+     new best AUC!: 0.818531203739
+     epoch 4, minibatch 98/98, best error 26.875000 %, best_auc: 0.818531
+epoch 5, minibatch 98/98, validation error 27.625000 %
+     new best AUC!: 0.828543647939
+     epoch 5, minibatch 98/98, best error 25.812500 %, best_auc: 0.828544
+epoch 6, minibatch 98/98, validation error 27.250000 %
+     new best AUC!: 0.836574153357
+     epoch 6, minibatch 98/98, best error 25.343750 %, best_auc: 0.836574
+epoch 7, minibatch 98/98, validation error 26.468750 %
+     new best AUC!: 0.843091565724
+     epoch 7, minibatch 98/98, best error 24.750000 %, best_auc: 0.843092
+epoch 8, minibatch 98/98, validation error 26.125000 %
+     new best AUC!: 0.848342105163
+     epoch 8, minibatch 98/98, best error 23.781250 %, best_auc: 0.848342
+epoch 9, minibatch 98/98, validation error 25.187500 %
+     new best AUC!: 0.852671697625
+     epoch 9, minibatch 98/98, best error 23.125000 %, best_auc: 0.852672
+epoch 10, minibatch 98/98, validation error 25.093750 %
+     new best AUC!: 0.856184996175
+     epoch 10, minibatch 98/98, best error 22.812500 %, best_auc: 0.856185
+epoch 11, minibatch 98/98, validation error 24.718750 %
+     new best AUC!: 0.858900267531
+     epoch 11, minibatch 98/98, best error 22.125000 %, best_auc: 0.858900
+epoch 12, minibatch 98/98, validation error 24.687500 %
+     new best AUC!: 0.861232698945
+     epoch 12, minibatch 98/98, best error 21.906250 %, best_auc: 0.861233
+epoch 13, minibatch 98/98, validation error 24.125000 %
+     new best AUC!: 0.86320778771
+     epoch 13, minibatch 98/98, best error 21.781250 %, best_auc: 0.863208
+epoch 14, minibatch 98/98, validation error 23.812500 %
+     new best AUC!: 0.86492029242
+     epoch 14, minibatch 98/98, best error 21.812500 %, best_auc: 0.864920
+epoch 15, minibatch 98/98, validation error 23.718750 %
+     new best AUC!: 0.866418924319
+     epoch 15, minibatch 98/98, best error 21.968750 %, best_auc: 0.866419
+epoch 16, minibatch 98/98, validation error 23.656250 %
+     new best AUC!: 0.867807955916
+     epoch 16, minibatch 98/98, best error 21.781250 %, best_auc: 0.867808
+epoch 17, minibatch 98/98, validation error 23.718750 %
+     new best AUC!: 0.869038675967
+epoch 18, minibatch 98/98, validation error 23.468750 %
+     new best AUC!: 0.870060089887
+     epoch 18, minibatch 98/98, best error 22.062500 %, best_auc: 0.870060
+epoch 19, minibatch 98/98, validation error 23.500000 %
+     new best AUC!: 0.871014525846
+epoch 20, minibatch 98/98, validation error 23.375000 %
+     new best AUC!: 0.871879150445
+     epoch 20, minibatch 98/98, best error 22.093750 %, best_auc: 0.871879
+epoch 21, minibatch 98/98, validation error 23.156250 %
+     new best AUC!: 0.872657769253
+     epoch 21, minibatch 98/98, best error 22.062500 %, best_auc: 0.872658
+epoch 22, minibatch 98/98, validation error 23.031250 %
+     new best AUC!: 0.873373976778
+     epoch 22, minibatch 98/98, best error 22.062500 %, best_auc: 0.873374
+epoch 23, minibatch 98/98, validation error 22.718750 %
+     new best AUC!: 0.873960795059
+     epoch 23, minibatch 98/98, best error 22.281250 %, best_auc: 0.873961
+epoch 24, minibatch 98/98, validation error 22.625000 %
+     new best AUC!: 0.874611546848
+     epoch 24, minibatch 98/98, best error 22.281250 %, best_auc: 0.874612
+epoch 25, minibatch 98/98, validation error 22.656250 %
+     new best AUC!: 0.87515345945
+epoch 26, minibatch 98/98, validation error 22.656250 %
+     new best AUC!: 0.875716683221
+epoch 27, minibatch 98/98, validation error 22.718750 %
+     new best AUC!: 0.8761939012
+epoch 28, minibatch 98/98, validation error 22.656250 %
+     new best AUC!: 0.876633063519
+epoch 29, minibatch 98/98, validation error 22.656250 %
+     new best AUC!: 0.877092775894
+epoch 30, minibatch 98/98, validation error 22.531250 %
+     new best AUC!: 0.87751214927
+     epoch 30, minibatch 98/98, best error 22.031250 %, best_auc: 0.877512
+epoch 31, minibatch 98/98, validation error 22.437500 %
+     new best AUC!: 0.877859978004
+     epoch 31, minibatch 98/98, best error 21.937500 %, best_auc: 0.877860
+epoch 32, minibatch 98/98, validation error 22.500000 %
+     new best AUC!: 0.878202478946
+epoch 33, minibatch 98/98, validation error 22.468750 %
+     new best AUC!: 0.87851225202
+epoch 34, minibatch 98/98, validation error 22.468750 %
+     new best AUC!: 0.878820502867
+epoch 35, minibatch 98/98, validation error 22.531250 %
+     new best AUC!: 0.879091459168
+epoch 36, minibatch 98/98, validation error 22.406250 %
+     new best AUC!: 0.879328165375
+     epoch 36, minibatch 98/98, best error 21.812500 %, best_auc: 0.879328
+epoch 37, minibatch 98/98, validation error 22.437500 %
+     new best AUC!: 0.879524532581
+epoch 38, minibatch 98/98, validation error 22.500000 %
+     new best AUC!: 0.87974982209
+epoch 39, minibatch 98/98, validation error 22.343750 %
+     new best AUC!: 0.879986528296
+     epoch 39, minibatch 98/98, best error 21.937500 %, best_auc: 0.879987
+epoch 40, minibatch 98/98, validation error 22.375000 %
+     new best AUC!: 0.880169956578
+epoch 41, minibatch 98/98, validation error 22.500000 %
+     new best AUC!: 0.880347295955
+epoch 42, minibatch 98/98, validation error 22.625000 %
+     new best AUC!: 0.880526918671
+epoch 43, minibatch 98/98, validation error 22.593750 %
+     new best AUC!: 0.880727852557
+epoch 44, minibatch 98/98, validation error 22.375000 %
+     new best AUC!: 0.880886164104
+epoch 45, minibatch 98/98, validation error 22.281250 %
+     new best AUC!: 0.881095470235
+     epoch 45, minibatch 98/98, best error 21.562500 %, best_auc: 0.881095
+epoch 46, minibatch 98/98, validation error 22.281250 %
+     new best AUC!: 0.881255304008
+epoch 47, minibatch 98/98, validation error 22.218750 %
+     new best AUC!: 0.881412093328
+     epoch 47, minibatch 98/98, best error 21.500000 %, best_auc: 0.881412
+epoch 48, minibatch 98/98, validation error 22.312500 %
+     new best AUC!: 0.881532349214
+epoch 49, minibatch 98/98, validation error 22.343750 %
+     new best AUC!: 0.881591716044
+epoch 50, minibatch 98/98, validation error 22.562500 %
+     new best AUC!: 0.881713494157
+epoch 51, minibatch 98/98, validation error 22.562500 %
+     new best AUC!: 0.88184973342
+epoch 52, minibatch 98/98, validation error 22.656250 %
+     new best AUC!: 0.881978361552
+epoch 53, minibatch 98/98, validation error 22.593750 %
+     new best AUC!: 0.882055995098
+epoch 54, minibatch 98/98, validation error 22.437500 %
+     new best AUC!: 0.882191473249
+epoch 55, minibatch 98/98, validation error 22.437500 %
+     new best AUC!: 0.882272912362
+epoch 56, minibatch 98/98, validation error 22.500000 %
+     new best AUC!: 0.882393168248
+epoch 57, minibatch 98/98, validation error 22.500000 %
+     new best AUC!: 0.882510379681
+epoch 58, minibatch 98/98, validation error 22.562500 %
+     new best AUC!: 0.882624546662
+epoch 59, minibatch 98/98, validation error 22.562500 %
+     new best AUC!: 0.882705224662
+epoch 60, minibatch 98/98, validation error 22.500000 %
+     new best AUC!: 0.88279503602
+epoch 61, minibatch 98/98, validation error 22.531250 %
+     new best AUC!: 0.882885608491
+epoch 62, minibatch 98/98, validation error 22.562500 %
+     new best AUC!: 0.882965525377
+epoch 63, minibatch 98/98, validation error 22.437500 %
+     new best AUC!: 0.882984553208
+epoch 64, minibatch 98/98, validation error 22.406250 %
+     new best AUC!: 0.883016519962
+epoch 65, minibatch 98/98, validation error 22.375000 %
+     new best AUC!: 0.883069797886
+epoch 66, minibatch 98/98, validation error 22.343750 %
+     new best AUC!: 0.883114703565
+epoch 67, minibatch 98/98, validation error 22.281250 %
+     new best AUC!: 0.883172548169
+epoch 68, minibatch 98/98, validation error 22.531250 %
+     new best AUC!: 0.883258553961
+epoch 69, minibatch 98/98, validation error 22.593750 %
+     new best AUC!: 0.883309548546
+epoch 70, minibatch 98/98, validation error 22.656250 %
+     new best AUC!: 0.883374243168
+epoch 71, minibatch 98/98, validation error 22.656250 %
+     new best AUC!: 0.883428282206
+epoch 72, minibatch 98/98, validation error 22.687500 %
+epoch 73, minibatch 98/98, validation error 22.656250 %
+     new best AUC!: 0.883452637828
+epoch 74, minibatch 98/98, validation error 22.593750 %
+     new best AUC!: 0.883457965621
+epoch 75, minibatch 98/98, validation error 22.656250 %
+     new best AUC!: 0.883558432563
+epoch 76, minibatch 98/98, validation error 22.625000 %
+     new best AUC!: 0.883611710488
+epoch 77, minibatch 98/98, validation error 22.625000 %
+     new best AUC!: 0.88361932162
+epoch 78, minibatch 98/98, validation error 22.531250 %
+     new best AUC!: 0.883629216091
+epoch 79, minibatch 98/98, validation error 22.500000 %
+epoch 80, minibatch 98/98, validation error 22.562500 %
+epoch 81, minibatch 98/98, validation error 22.562500 %
+epoch 82, minibatch 98/98, validation error 22.656250 %
+epoch 83, minibatch 98/98, validation error 22.562500 %
+epoch 84, minibatch 98/98, validation error 22.531250 %
+     new best AUC!: 0.883646721695
+epoch 85, minibatch 98/98, validation error 22.468750 %
+     new best AUC!: 0.883665749525
+epoch 86, minibatch 98/98, validation error 22.406250 %
+epoch 87, minibatch 98/98, validation error 22.468750 %
+epoch 88, minibatch 98/98, validation error 22.500000 %
+epoch 89, minibatch 98/98, validation error 22.500000 %
+epoch 90, minibatch 98/98, validation error 22.468750 %
+epoch 91, minibatch 98/98, validation error 22.468750 %
+epoch 92, minibatch 98/98, validation error 22.468750 %
+epoch 93, minibatch 98/98, validation error 22.406250 %
+epoch 94, minibatch 98/98, validation error 22.375000 %
+epoch 95, minibatch 98/98, validation error 22.312500 %
+epoch 96, minibatch 98/98, validation error 22.343750 %
+epoch 97, minibatch 98/98, validation error 22.312500 %
+epoch 98, minibatch 98/98, validation error 22.312500 %
+epoch 99, minibatch 98/98, validation error 22.250000 %
+epoch 100, minibatch 98/98, validation error 22.281250 %
+epoch 101, minibatch 98/98, validation error 22.281250 %
+epoch 102, minibatch 98/98, validation error 22.281250 %
+epoch 103, minibatch 98/98, validation error 22.281250 %
+epoch 104, minibatch 98/98, validation error 22.250000 %
+epoch 105, minibatch 98/98, validation error 22.187500 %
+     epoch 105, minibatch 98/98, best error 20.343750 %, best_auc: 0.883666
+epoch 106, minibatch 98/98, validation error 22.062500 %
+     epoch 106, minibatch 98/98, best error 20.343750 %, best_auc: 0.883666
+epoch 107, minibatch 98/98, validation error 21.906250 %
+     epoch 107, minibatch 98/98, best error 20.437500 %, best_auc: 0.883666
+epoch 108, minibatch 98/98, validation error 21.906250 %
+epoch 109, minibatch 98/98, validation error 21.937500 %
+epoch 110, minibatch 98/98, validation error 21.906250 %
+epoch 111, minibatch 98/98, validation error 21.968750 %
+epoch 112, minibatch 98/98, validation error 22.000000 %
+epoch 113, minibatch 98/98, validation error 21.937500 %
+epoch 114, minibatch 98/98, validation error 21.906250 %
+epoch 115, minibatch 98/98, validation error 21.937500 %
+epoch 116, minibatch 98/98, validation error 21.968750 %
+epoch 117, minibatch 98/98, validation error 21.906250 %
+epoch 118, minibatch 98/98, validation error 21.875000 %
+     epoch 118, minibatch 98/98, best error 20.593750 %, best_auc: 0.883666
+epoch 119, minibatch 98/98, validation error 21.843750 %
+     epoch 119, minibatch 98/98, best error 20.750000 %, best_auc: 0.883666
+epoch 120, minibatch 98/98, validation error 21.781250 %
+     epoch 120, minibatch 98/98, best error 20.687500 %, best_auc: 0.883666
+epoch 121, minibatch 98/98, validation error 21.937500 %
+epoch 122, minibatch 98/98, validation error 21.906250 %
+epoch 123, minibatch 98/98, validation error 21.875000 %
+epoch 124, minibatch 98/98, validation error 21.718750 %
+     epoch 124, minibatch 98/98, best error 20.531250 %, best_auc: 0.883666
+epoch 125, minibatch 98/98, validation error 21.687500 %
+     epoch 125, minibatch 98/98, best error 20.531250 %, best_auc: 0.883666
+epoch 126, minibatch 98/98, validation error 21.625000 %
+     epoch 126, minibatch 98/98, best error 20.500000 %, best_auc: 0.883666
+epoch 127, minibatch 98/98, validation error 23.375000 %
+epoch 128, minibatch 98/98, validation error 25.843750 %
+epoch 129, minibatch 98/98, validation error 22.875000 %
+epoch 130, minibatch 98/98, validation error 22.156250 %
+epoch 131, minibatch 98/98, validation error 22.843750 %
+epoch 132, minibatch 98/98, validation error 22.718750 %
+epoch 133, minibatch 98/98, validation error 22.031250 %
+epoch 134, minibatch 98/98, validation error 22.437500 %
+epoch 135, minibatch 98/98, validation error 25.125000 %
+epoch 136, minibatch 98/98, validation error 22.187500 %
+epoch 137, minibatch 98/98, validation error 22.750000 %
+epoch 138, minibatch 98/98, validation error 22.406250 %
+epoch 139, minibatch 98/98, validation error 22.218750 %
+epoch 140, minibatch 98/98, validation error 22.906250 %
+epoch 141, minibatch 98/98, validation error 27.625000 %
+epoch 142, minibatch 98/98, validation error 22.500000 %
+epoch 143, minibatch 98/98, validation error 22.281250 %
+epoch 144, minibatch 98/98, validation error 22.500000 %
+epoch 145, minibatch 98/98, validation error 27.531250 %
+epoch 146, minibatch 98/98, validation error 23.312500 %
+epoch 147, minibatch 98/98, validation error 22.625000 %
+epoch 148, minibatch 98/98, validation error 23.343750 %
+epoch 149, minibatch 98/98, validation error 22.187500 %
+epoch 150, minibatch 98/98, validation error 22.218750 %
+epoch 151, minibatch 98/98, validation error 22.156250 %
+epoch 152, minibatch 98/98, validation error 22.156250 %
+epoch 153, minibatch 98/98, validation error 22.062500 %
+epoch 154, minibatch 98/98, validation error 23.187500 %
+epoch 155, minibatch 98/98, validation error 24.968750 %
+epoch 156, minibatch 98/98, validation error 26.781250 %
+epoch 157, minibatch 98/98, validation error 22.437500 %
+epoch 158, minibatch 98/98, validation error 28.281250 %
+epoch 159, minibatch 98/98, validation error 27.187500 %
+epoch 160, minibatch 98/98, validation error 21.281250 %
+     epoch 160, minibatch 98/98, best error 20.312500 %, best_auc: 0.883666
+epoch 161, minibatch 98/98, validation error 22.156250 %
+epoch 162, minibatch 98/98, validation error 21.437500 %
+epoch 163, minibatch 98/98, validation error 23.156250 %
+epoch 164, minibatch 98/98, validation error 24.000000 %
+epoch 165, minibatch 98/98, validation error 23.781250 %
+epoch 166, minibatch 98/98, validation error 23.187500 %
+epoch 167, minibatch 98/98, validation error 22.125000 %
+epoch 168, minibatch 98/98, validation error 21.343750 %
+epoch 169, minibatch 98/98, validation error 21.937500 %
+epoch 170, minibatch 98/98, validation error 23.562500 %
+epoch 171, minibatch 98/98, validation error 25.031250 %
+epoch 172, minibatch 98/98, validation error 27.250000 %
+epoch 173, minibatch 98/98, validation error 21.625000 %
+epoch 174, minibatch 98/98, validation error 27.625000 %
+epoch 175, minibatch 98/98, validation error 29.156250 %
+epoch 176, minibatch 98/98, validation error 27.718750 %
+epoch 177, minibatch 98/98, validation error 21.156250 %
+     epoch 177, minibatch 98/98, best error 19.625000 %, best_auc: 0.883666
+epoch 178, minibatch 98/98, validation error 21.281250 %
+epoch 179, minibatch 98/98, validation error 25.062500 %
+epoch 180, minibatch 98/98, validation error 25.093750 %
+epoch 181, minibatch 98/98, validation error 23.031250 %
+epoch 182, minibatch 98/98, validation error 21.718750 %
+epoch 183, minibatch 98/98, validation error 20.968750 %
+     epoch 183, minibatch 98/98, best error 19.843750 %, best_auc: 0.883666
+epoch 184, minibatch 98/98, validation error 28.875000 %
+epoch 185, minibatch 98/98, validation error 21.187500 %
+epoch 186, minibatch 98/98, validation error 21.593750 %
+epoch 187, minibatch 98/98, validation error 21.968750 %
+epoch 188, minibatch 98/98, validation error 25.281250 %
+epoch 189, minibatch 98/98, validation error 21.437500 %
+epoch 190, minibatch 98/98, validation error 22.437500 %
+epoch 191, minibatch 98/98, validation error 22.781250 %
+epoch 192, minibatch 98/98, validation error 25.718750 %
+epoch 193, minibatch 98/98, validation error 21.218750 %
+epoch 194, minibatch 98/98, validation error 27.093750 %
+epoch 195, minibatch 98/98, validation error 25.093750 %
+epoch 196, minibatch 98/98, validation error 26.000000 %
+epoch 197, minibatch 98/98, validation error 20.937500 %
+     epoch 197, minibatch 98/98, best error 19.343750 %, best_auc: 0.883666
+epoch 198, minibatch 98/98, validation error 21.343750 %
+epoch 199, minibatch 98/98, validation error 22.437500 %
+epoch 200, minibatch 98/98, validation error 22.312500 %
+epoch 201, minibatch 98/98, validation error 26.125000 %
+epoch 202, minibatch 98/98, validation error 21.343750 %
+epoch 203, minibatch 98/98, validation error 24.750000 %
+epoch 204, minibatch 98/98, validation error 26.250000 %
+epoch 205, minibatch 98/98, validation error 21.312500 %
+epoch 206, minibatch 98/98, validation error 25.093750 %
+epoch 207, minibatch 98/98, validation error 24.218750 %
+epoch 208, minibatch 98/98, validation error 21.593750 %
+epoch 209, minibatch 98/98, validation error 21.218750 %
+epoch 210, minibatch 98/98, validation error 22.437500 %
+epoch 211, minibatch 98/98, validation error 24.500000 %
+epoch 212, minibatch 98/98, validation error 21.375000 %
+epoch 213, minibatch 98/98, validation error 22.031250 %
+epoch 214, minibatch 98/98, validation error 22.187500 %
+epoch 215, minibatch 98/98, validation error 26.468750 %
+epoch 216, minibatch 98/98, validation error 21.625000 %
+epoch 217, minibatch 98/98, validation error 21.718750 %
+epoch 218, minibatch 98/98, validation error 24.406250 %
+epoch 219, minibatch 98/98, validation error 21.406250 %
+epoch 220, minibatch 98/98, validation error 22.406250 %
+epoch 221, minibatch 98/98, validation error 21.687500 %
+epoch 222, minibatch 98/98, validation error 21.875000 %
+epoch 223, minibatch 98/98, validation error 21.781250 %
+epoch 224, minibatch 98/98, validation error 21.656250 %
+epoch 225, minibatch 98/98, validation error 21.875000 %
+epoch 226, minibatch 98/98, validation error 21.312500 %
+epoch 227, minibatch 98/98, validation error 21.750000 %
+epoch 228, minibatch 98/98, validation error 23.125000 %
+epoch 229, minibatch 98/98, validation error 21.500000 %
+epoch 230, minibatch 98/98, validation error 21.562500 %
+epoch 231, minibatch 98/98, validation error 22.531250 %
+epoch 232, minibatch 98/98, validation error 21.343750 %
+epoch 233, minibatch 98/98, validation error 21.500000 %
+epoch 234, minibatch 98/98, validation error 21.656250 %
+epoch 235, minibatch 98/98, validation error 21.968750 %
+epoch 236, minibatch 98/98, validation error 21.968750 %
+epoch 237, minibatch 98/98, validation error 21.625000 %
+epoch 238, minibatch 98/98, validation error 22.375000 %
+epoch 239, minibatch 98/98, validation error 21.437500 %
+epoch 240, minibatch 98/98, validation error 21.593750 %
+epoch 241, minibatch 98/98, validation error 21.656250 %
+epoch 242, minibatch 98/98, validation error 24.000000 %
+epoch 243, minibatch 98/98, validation error 21.875000 %
+epoch 244, minibatch 98/98, validation error 22.250000 %
+epoch 245, minibatch 98/98, validation error 21.593750 %
+epoch 246, minibatch 98/98, validation error 22.375000 %
+epoch 247, minibatch 98/98, validation error 21.687500 %
+epoch 248, minibatch 98/98, validation error 22.343750 %
+epoch 249, minibatch 98/98, validation error 22.781250 %
+epoch 250, minibatch 98/98, validation error 21.937500 %
+epoch 251, minibatch 98/98, validation error 21.875000 %
+epoch 252, minibatch 98/98, validation error 21.593750 %
+epoch 253, minibatch 98/98, validation error 21.968750 %
+epoch 254, minibatch 98/98, validation error 23.937500 %
+epoch 255, minibatch 98/98, validation error 21.718750 %
+epoch 256, minibatch 98/98, validation error 21.687500 %
+epoch 257, minibatch 98/98, validation error 22.156250 %
+epoch 258, minibatch 98/98, validation error 21.968750 %
+epoch 259, minibatch 98/98, validation error 21.843750 %
+epoch 260, minibatch 98/98, validation error 21.875000 %
+epoch 261, minibatch 98/98, validation error 21.406250 %
+epoch 262, minibatch 98/98, validation error 21.562500 %
+epoch 263, minibatch 98/98, validation error 21.812500 %
+epoch 264, minibatch 98/98, validation error 21.875000 %
+epoch 265, minibatch 98/98, validation error 22.031250 %
+epoch 266, minibatch 98/98, validation error 21.593750 %
+epoch 267, minibatch 98/98, validation error 23.781250 %
+epoch 268, minibatch 98/98, validation error 21.843750 %
+epoch 269, minibatch 98/98, validation error 21.718750 %
+epoch 270, minibatch 98/98, validation error 21.750000 %
+epoch 271, minibatch 98/98, validation error 21.750000 %
+epoch 272, minibatch 98/98, validation error 21.718750 %
+epoch 273, minibatch 98/98, validation error 21.718750 %
+epoch 274, minibatch 98/98, validation error 22.125000 %
+epoch 275, minibatch 98/98, validation error 22.156250 %
+epoch 276, minibatch 98/98, validation error 22.250000 %
+epoch 277, minibatch 98/98, validation error 21.437500 %
+epoch 278, minibatch 98/98, validation error 21.687500 %
+epoch 279, minibatch 98/98, validation error 21.906250 %
+epoch 280, minibatch 98/98, validation error 21.750000 %
+epoch 281, minibatch 98/98, validation error 21.781250 %
+epoch 282, minibatch 98/98, validation error 21.750000 %
+epoch 283, minibatch 98/98, validation error 21.843750 %
+epoch 284, minibatch 98/98, validation error 22.250000 %
+epoch 285, minibatch 98/98, validation error 21.687500 %
+epoch 286, minibatch 98/98, validation error 21.968750 %
+epoch 287, minibatch 98/98, validation error 21.843750 %
+epoch 288, minibatch 98/98, validation error 21.468750 %
+epoch 289, minibatch 98/98, validation error 21.531250 %
+epoch 290, minibatch 98/98, validation error 21.937500 %
+epoch 291, minibatch 98/98, validation error 21.906250 %
+epoch 292, minibatch 98/98, validation error 21.718750 %
+epoch 293, minibatch 98/98, validation error 21.625000 %
+epoch 294, minibatch 98/98, validation error 21.718750 %
+epoch 295, minibatch 98/98, validation error 21.625000 %
+epoch 296, minibatch 98/98, validation error 21.593750 %
+epoch 297, minibatch 98/98, validation error 21.906250 %
+epoch 298, minibatch 98/98, validation error 21.812500 %
+epoch 299, minibatch 98/98, validation error 21.500000 %
+epoch 300, minibatch 98/98, validation error 21.343750 %
+epoch 301, minibatch 98/98, validation error 21.343750 %
+epoch 302, minibatch 98/98, validation error 21.437500 %
+epoch 303, minibatch 98/98, validation error 21.531250 %
+epoch 304, minibatch 98/98, validation error 21.593750 %
+epoch 305, minibatch 98/98, validation error 21.562500 %
+epoch 306, minibatch 98/98, validation error 21.562500 %
+epoch 307, minibatch 98/98, validation error 21.656250 %
+epoch 308, minibatch 98/98, validation error 21.750000 %
+epoch 309, minibatch 98/98, validation error 21.656250 %
+epoch 310, minibatch 98/98, validation error 21.718750 %
+epoch 311, minibatch 98/98, validation error 21.687500 %
+epoch 312, minibatch 98/98, validation error 21.468750 %
+epoch 313, minibatch 98/98, validation error 21.468750 %
+epoch 314, minibatch 98/98, validation error 21.500000 %
+epoch 315, minibatch 98/98, validation error 21.531250 %
+epoch 316, minibatch 98/98, validation error 21.593750 %
+epoch 317, minibatch 98/98, validation error 21.687500 %
+epoch 318, minibatch 98/98, validation error 21.750000 %
+epoch 319, minibatch 98/98, validation error 21.687500 %
+epoch 320, minibatch 98/98, validation error 21.718750 %
+epoch 321, minibatch 98/98, validation error 21.687500 %
+epoch 322, minibatch 98/98, validation error 21.656250 %
+epoch 323, minibatch 98/98, validation error 21.656250 %
+epoch 324, minibatch 98/98, validation error 21.625000 %
+epoch 325, minibatch 98/98, validation error 21.625000 %
+epoch 326, minibatch 98/98, validation error 21.593750 %
+epoch 327, minibatch 98/98, validation error 21.687500 %
+epoch 328, minibatch 98/98, validation error 21.687500 %
+epoch 329, minibatch 98/98, validation error 21.687500 %
+epoch 330, minibatch 98/98, validation error 21.687500 %
+epoch 331, minibatch 98/98, validation error 21.687500 %
+epoch 332, minibatch 98/98, validation error 21.718750 %
+epoch 333, minibatch 98/98, validation error 21.718750 %
+epoch 334, minibatch 98/98, validation error 21.718750 %
+epoch 335, minibatch 98/98, validation error 21.687500 %
+epoch 336, minibatch 98/98, validation error 21.656250 %
+epoch 337, minibatch 98/98, validation error 21.656250 %
+epoch 338, minibatch 98/98, validation error 21.625000 %
+epoch 339, minibatch 98/98, validation error 21.562500 %
+epoch 340, minibatch 98/98, validation error 21.562500 %
+epoch 341, minibatch 98/98, validation error 21.562500 %
+epoch 342, minibatch 98/98, validation error 21.625000 %
+epoch 343, minibatch 98/98, validation error 21.625000 %
+epoch 344, minibatch 98/98, validation error 21.625000 %
+epoch 345, minibatch 98/98, validation error 21.625000 %
+epoch 346, minibatch 98/98, validation error 21.625000 %
+epoch 347, minibatch 98/98, validation error 21.625000 %
+epoch 348, minibatch 98/98, validation error 21.718750 %
+epoch 349, minibatch 98/98, validation error 21.781250 %
+epoch 350, minibatch 98/98, validation error 21.750000 %
+epoch 351, minibatch 98/98, validation error 21.750000 %
+epoch 352, minibatch 98/98, validation error 21.812500 %
+epoch 353, minibatch 98/98, validation error 21.875000 %
+epoch 354, minibatch 98/98, validation error 21.875000 %
+epoch 355, minibatch 98/98, validation error 21.937500 %
+epoch 356, minibatch 98/98, validation error 21.937500 %
+epoch 357, minibatch 98/98, validation error 21.937500 %
+epoch 358, minibatch 98/98, validation error 21.906250 %
+epoch 359, minibatch 98/98, validation error 21.843750 %
+epoch 360, minibatch 98/98, validation error 21.843750 %
+epoch 361, minibatch 98/98, validation error 21.843750 %
+epoch 362, minibatch 98/98, validation error 21.812500 %
+epoch 363, minibatch 98/98, validation error 21.812500 %
+epoch 364, minibatch 98/98, validation error 21.781250 %
+epoch 365, minibatch 98/98, validation error 21.718750 %
+Optimization complete with best validation score of 20.937500 %, obtained at iteration 19306, with test performance 19.343750 %, and best_auc: 0.883666
+runtime: 112602.44 secs.

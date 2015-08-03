@@ -1,0 +1,51 @@
+000 (14411.005.000) 08/01 05:08:37 Job submitted from host: <144.92.142.140:9620?sock=9267_cb64_3>
+...
+001 (14411.005.000) 08/01 05:09:06 Job executing on host: <144.92.142.164:9620?sock=10436_0991_3>
+...
+006 (14411.005.000) 08/01 05:09:14 Image size of job updated: 4744
+	5  -  MemoryUsage of job (MB)
+	4744  -  ResidentSetSize of job (KB)
+...
+006 (14411.005.000) 08/01 05:14:14 Image size of job updated: 345496
+	338  -  MemoryUsage of job (MB)
+	345496  -  ResidentSetSize of job (KB)
+...
+006 (14411.005.000) 08/01 05:19:15 Image size of job updated: 347080
+	339  -  MemoryUsage of job (MB)
+	347080  -  ResidentSetSize of job (KB)
+...
+006 (14411.005.000) 08/01 05:24:16 Image size of job updated: 355272
+	347  -  MemoryUsage of job (MB)
+	355272  -  ResidentSetSize of job (KB)
+...
+006 (14411.005.000) 08/01 05:29:16 Image size of job updated: 397268
+	388  -  MemoryUsage of job (MB)
+	397268  -  ResidentSetSize of job (KB)
+...
+006 (14411.005.000) 08/01 05:34:18 Image size of job updated: 401136
+	392  -  MemoryUsage of job (MB)
+	401136  -  ResidentSetSize of job (KB)
+...
+006 (14411.005.000) 08/01 05:39:18 Image size of job updated: 419508
+	410  -  MemoryUsage of job (MB)
+	419508  -  ResidentSetSize of job (KB)
+...
+006 (14411.005.000) 08/01 05:44:18 Image size of job updated: 428316
+	419  -  MemoryUsage of job (MB)
+	428316  -  ResidentSetSize of job (KB)
+...
+005 (14411.005.000) 08/01 05:45:15 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 04:35:52, Sys 0 00:29:44  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 04:35:52, Sys 0 00:29:44  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 4         4
+	   Disk (KB)            :        1        1  33964140
+	   Memory (MB)          :      419     6144     12915
+...

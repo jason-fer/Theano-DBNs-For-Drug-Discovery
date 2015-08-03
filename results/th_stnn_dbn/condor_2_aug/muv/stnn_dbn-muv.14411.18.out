@@ -1,0 +1,5 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14411
+Process 18
+RunningOn slot6@opt-a016.discovery.wisc.edu
+python th_deep_belief_net.py muv 18

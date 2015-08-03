@@ -39,4 +39,5 @@ of 25.565217 %, obtained at iteration 14973, with test performance 27.173913 %, 
 of 30.529412 %, obtained at iteration 13081, with test performance 33.764706 %, and best_auc: 0.722867
 of 37.866667 %, obtained at iteration 11000, with test performance 23.764706 %, and best_auc: 0.745468
 
-
+MAX results (combined with second run)
+0.82149275

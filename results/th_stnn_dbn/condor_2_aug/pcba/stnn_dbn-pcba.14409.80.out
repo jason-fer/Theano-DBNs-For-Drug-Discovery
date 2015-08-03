@@ -1,0 +1,75 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14409
+Process 80
+RunningOn slot2@opt-a016.discovery.wisc.edu
+python th_deep_belief_net.py pcba 80
+Running Theano Learn Deep Belief Net for pcba, target: aid624291.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -1391.63632436
+Pre-training layer 0, epoch 1, cost  -1286.83420973
+Pre-training layer 0, epoch 2, cost  -1193.11304285
+Pre-training layer 0, epoch 3, cost  -1109.32512959
+Pre-training layer 0, epoch 4, cost  -1033.9402428
+Pre-training layer 0, epoch 5, cost  -966.43116618
+Pre-training layer 0, epoch 6, cost  -905.510509279
+Pre-training layer 0, epoch 7, cost  -850.502403879
+Pre-training layer 0, epoch 8, cost  -800.756874837
+Pre-training layer 0, epoch 9, cost  -755.514739551
+Pre-training layer 1, epoch 0, cost  -1537.04423089
+Pre-training layer 1, epoch 1, cost  -1532.70375131
+Pre-training layer 1, epoch 2, cost  -1528.51075249
+Pre-training layer 1, epoch 3, cost  -1524.50212249
+Pre-training layer 1, epoch 4, cost  -1520.71181015
+Pre-training layer 1, epoch 5, cost  -1517.01048492
+Pre-training layer 1, epoch 6, cost  -1513.47164542
+Pre-training layer 1, epoch 7, cost  -1510.05494161
+Pre-training layer 1, epoch 8, cost  -1506.8313102
+Pre-training layer 1, epoch 9, cost  -1503.65118432
+... getting the finetuning functions
+... finetuning the model
+epoch 1, minibatch 2113/2113, validation error 1.875000 %
+     epoch 1, minibatch 2113/2113, best error 1.875000 %, best_auc: 0.484108
+epoch 2, minibatch 2113/2113, validation error 1.875000 %
+     new best AUC!: 0.510793514685
+epoch 3, minibatch 2113/2113, validation error 1.875000 %
+     new best AUC!: 0.525552071113
+epoch 4, minibatch 2113/2113, validation error 1.875000 %
+     new best AUC!: 0.530827176195
+epoch 5, minibatch 2113/2113, validation error 1.875000 %
+     new best AUC!: 0.532708840766
+epoch 6, minibatch 2113/2113, validation error 1.883523 %
+     new best AUC!: 0.533485113709
+epoch 7, minibatch 2113/2113, validation error 1.893466 %
+     new best AUC!: 0.537356450332
+epoch 8, minibatch 2113/2113, validation error 1.919034 %
+     new best AUC!: 0.543687464162
+epoch 9, minibatch 2113/2113, validation error 1.950284 %
+     new best AUC!: 0.548964377588
+epoch 10, minibatch 2113/2113, validation error 1.998580 %
+     new best AUC!: 0.552010122783
+epoch 11, minibatch 2113/2113, validation error 2.017045 %
+     new best AUC!: 0.553565134593
+epoch 12, minibatch 2113/2113, validation error 2.029830 %
+     new best AUC!: 0.554129995634
+epoch 13, minibatch 2113/2113, validation error 2.036932 %
+epoch 14, minibatch 2113/2113, validation error 2.035511 %
+epoch 15, minibatch 2113/2113, validation error 2.039773 %
+epoch 16, minibatch 2113/2113, validation error 2.041193 %
+epoch 17, minibatch 2113/2113, validation error 2.036932 %
+epoch 18, minibatch 2113/2113, validation error 2.035511 %
+epoch 19, minibatch 2113/2113, validation error 2.022727 %
+epoch 20, minibatch 2113/2113, validation error 2.014205 %
+epoch 21, minibatch 2113/2113, validation error 2.004261 %
+epoch 22, minibatch 2113/2113, validation error 1.997159 %
+epoch 23, minibatch 2113/2113, validation error 1.990057 %
+epoch 24, minibatch 2113/2113, validation error 1.982955 %
+epoch 25, minibatch 2113/2113, validation error 1.978693 %
+epoch 26, minibatch 2113/2113, validation error 1.975852 %
+epoch 27, minibatch 2113/2113, validation error 1.973011 %
+epoch 28, minibatch 2113/2113, validation error 1.963068 %
+epoch 29, minibatch 2113/2113, validation error 1.963068 %
+epoch 30, minibatch 2113/2113, validation error 1.958807 %
+Optimization complete with best validation score of 1.875000 %, obtained at iteration 2113, with test performance 1.875000 %, and best_auc: 0.554130
+runtime: 244593.81 secs.

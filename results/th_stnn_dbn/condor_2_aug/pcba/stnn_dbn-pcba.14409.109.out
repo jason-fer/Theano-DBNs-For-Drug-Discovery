@@ -1,0 +1,75 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14409
+Process 109
+RunningOn slot1@opt-a018.discovery.wisc.edu
+python th_deep_belief_net.py pcba 109
+Running Theano Learn Deep Belief Net for pcba, target: aid881.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -1430.33064504
+Pre-training layer 0, epoch 1, cost  -1390.58889338
+Pre-training layer 0, epoch 2, cost  -1352.33990899
+Pre-training layer 0, epoch 3, cost  -1315.63611968
+Pre-training layer 0, epoch 4, cost  -1280.14903212
+Pre-training layer 0, epoch 5, cost  -1246.50663584
+Pre-training layer 0, epoch 6, cost  -1213.95832996
+Pre-training layer 0, epoch 7, cost  -1182.32616301
+Pre-training layer 0, epoch 8, cost  -1151.87709519
+Pre-training layer 0, epoch 9, cost  -1123.1749332
+Pre-training layer 1, epoch 0, cost  -1537.86670909
+Pre-training layer 1, epoch 1, cost  -1536.25680567
+Pre-training layer 1, epoch 2, cost  -1534.71621663
+Pre-training layer 1, epoch 3, cost  -1533.16215894
+Pre-training layer 1, epoch 4, cost  -1531.81159651
+Pre-training layer 1, epoch 5, cost  -1530.29797524
+Pre-training layer 1, epoch 6, cost  -1528.78608293
+Pre-training layer 1, epoch 7, cost  -1527.40809237
+Pre-training layer 1, epoch 8, cost  -1526.09910521
+Pre-training layer 1, epoch 9, cost  -1524.68328548
+... getting the finetuning functions
+... finetuning the model
+epoch 1, minibatch 746/746, validation error 11.572581 %
+     epoch 1, minibatch 746/746, best error 12.012097 %, best_auc: 0.834018
+epoch 2, minibatch 746/746, validation error 9.854839 %
+     new best AUC!: 0.87919308971
+     epoch 2, minibatch 746/746, best error 10.116935 %, best_auc: 0.879193
+epoch 3, minibatch 746/746, validation error 9.407258 %
+     new best AUC!: 0.889546446685
+     epoch 3, minibatch 746/746, best error 9.572581 %, best_auc: 0.889546
+epoch 4, minibatch 746/746, validation error 9.129032 %
+     new best AUC!: 0.892293701615
+     epoch 4, minibatch 746/746, best error 9.302419 %, best_auc: 0.892294
+epoch 5, minibatch 746/746, validation error 9.633065 %
+     new best AUC!: 0.892464535978
+epoch 6, minibatch 746/746, validation error 9.362903 %
+epoch 7, minibatch 746/746, validation error 8.991935 %
+     epoch 7, minibatch 746/746, best error 9.455645 %, best_auc: 0.892465
+epoch 8, minibatch 746/746, validation error 8.818548 %
+     epoch 8, minibatch 746/746, best error 9.548387 %, best_auc: 0.892465
+epoch 9, minibatch 746/746, validation error 8.778226 %
+     epoch 9, minibatch 746/746, best error 9.407258 %, best_auc: 0.892465
+epoch 10, minibatch 746/746, validation error 8.846774 %
+epoch 11, minibatch 746/746, validation error 8.786290 %
+epoch 12, minibatch 746/746, validation error 8.774194 %
+     epoch 12, minibatch 746/746, best error 9.810484 %, best_auc: 0.892465
+epoch 13, minibatch 746/746, validation error 8.963710 %
+epoch 14, minibatch 746/746, validation error 9.056452 %
+epoch 15, minibatch 746/746, validation error 9.028226 %
+epoch 16, minibatch 746/746, validation error 9.004032 %
+epoch 17, minibatch 746/746, validation error 8.979839 %
+epoch 18, minibatch 746/746, validation error 8.935484 %
+epoch 19, minibatch 746/746, validation error 8.907258 %
+epoch 20, minibatch 746/746, validation error 8.991935 %
+epoch 21, minibatch 746/746, validation error 9.052419 %
+epoch 22, minibatch 746/746, validation error 9.250000 %
+epoch 23, minibatch 746/746, validation error 9.217742 %
+epoch 24, minibatch 746/746, validation error 9.302419 %
+epoch 25, minibatch 746/746, validation error 9.270161 %
+epoch 26, minibatch 746/746, validation error 9.213710 %
+epoch 27, minibatch 746/746, validation error 9.407258 %
+epoch 28, minibatch 746/746, validation error 9.383065 %
+epoch 29, minibatch 746/746, validation error 9.584677 %
+epoch 30, minibatch 746/746, validation error 9.564516 %
+Optimization complete with best validation score of 8.774194 %, obtained at iteration 8952, with test performance 9.810484 %, and best_auc: 0.892465
+runtime: 131215.71 secs.

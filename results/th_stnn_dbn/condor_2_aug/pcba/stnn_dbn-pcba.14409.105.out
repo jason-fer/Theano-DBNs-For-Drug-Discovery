@@ -1,0 +1,74 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14409
+Process 105
+RunningOn slot1@opt-a016.discovery.wisc.edu
+python th_deep_belief_net.py pcba 105
+Running Theano Learn Deep Belief Net for pcba, target: aid720711.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -1388.25423926
+Pre-training layer 0, epoch 1, cost  -1278.10684959
+Pre-training layer 0, epoch 2, cost  -1179.96331228
+Pre-training layer 0, epoch 3, cost  -1092.92795952
+Pre-training layer 0, epoch 4, cost  -1015.14387771
+Pre-training layer 0, epoch 5, cost  -945.832135067
+Pre-training layer 0, epoch 6, cost  -883.73044859
+Pre-training layer 0, epoch 7, cost  -827.742084841
+Pre-training layer 0, epoch 8, cost  -777.501208696
+Pre-training layer 0, epoch 9, cost  -732.085566778
+Pre-training layer 1, epoch 0, cost  -1536.98826705
+Pre-training layer 1, epoch 1, cost  -1532.4343254
+Pre-training layer 1, epoch 2, cost  -1527.95970375
+Pre-training layer 1, epoch 3, cost  -1523.81702749
+Pre-training layer 1, epoch 4, cost  -1519.77680695
+Pre-training layer 1, epoch 5, cost  -1515.90736441
+Pre-training layer 1, epoch 6, cost  -1512.2026565
+Pre-training layer 1, epoch 7, cost  -1508.67948009
+Pre-training layer 1, epoch 8, cost  -1505.28908148
+Pre-training layer 1, epoch 9, cost  -1501.9899415
+... getting the finetuning functions
+... finetuning the model
+epoch 1, minibatch 2238/2238, validation error 2.332440 %
+     epoch 1, minibatch 2238/2238, best error 2.332440 %, best_auc: 0.849436
+epoch 2, minibatch 2238/2238, validation error 2.336461 %
+     new best AUC!: 0.887984867946
+epoch 3, minibatch 2238/2238, validation error 2.206434 %
+     new best AUC!: 0.907283040495
+     epoch 3, minibatch 2238/2238, best error 1.939678 %, best_auc: 0.907283
+epoch 4, minibatch 2238/2238, validation error 1.965147 %
+     new best AUC!: 0.912613736501
+     epoch 4, minibatch 2238/2238, best error 1.781501 %, best_auc: 0.912614
+epoch 5, minibatch 2238/2238, validation error 1.958445 %
+     epoch 5, minibatch 2238/2238, best error 1.725201 %, best_auc: 0.912614
+epoch 6, minibatch 2238/2238, validation error 1.977212 %
+epoch 7, minibatch 2238/2238, validation error 1.950402 %
+     epoch 7, minibatch 2238/2238, best error 1.643432 %, best_auc: 0.912614
+epoch 8, minibatch 2238/2238, validation error 1.963807 %
+epoch 9, minibatch 2238/2238, validation error 1.898123 %
+     epoch 9, minibatch 2238/2238, best error 1.639410 %, best_auc: 0.912614
+epoch 10, minibatch 2238/2238, validation error 1.907507 %
+epoch 11, minibatch 2238/2238, validation error 1.907507 %
+epoch 12, minibatch 2238/2238, validation error 1.910188 %
+epoch 13, minibatch 2238/2238, validation error 1.908847 %
+epoch 14, minibatch 2238/2238, validation error 1.906166 %
+epoch 15, minibatch 2238/2238, validation error 1.902145 %
+epoch 16, minibatch 2238/2238, validation error 1.853887 %
+     epoch 16, minibatch 2238/2238, best error 1.667560 %, best_auc: 0.912614
+epoch 17, minibatch 2238/2238, validation error 1.855228 %
+epoch 18, minibatch 2238/2238, validation error 1.926273 %
+epoch 19, minibatch 2238/2238, validation error 1.958445 %
+epoch 20, minibatch 2238/2238, validation error 1.953083 %
+epoch 21, minibatch 2238/2238, validation error 1.939678 %
+epoch 22, minibatch 2238/2238, validation error 2.013405 %
+epoch 23, minibatch 2238/2238, validation error 2.012064 %
+epoch 24, minibatch 2238/2238, validation error 2.049598 %
+epoch 25, minibatch 2238/2238, validation error 2.041555 %
+epoch 26, minibatch 2238/2238, validation error 2.036193 %
+epoch 27, minibatch 2238/2238, validation error 2.033512 %
+epoch 28, minibatch 2238/2238, validation error 2.030831 %
+epoch 29, minibatch 2238/2238, validation error 2.025469 %
+epoch 30, minibatch 2238/2238, validation error 2.021448 %
+epoch 31, minibatch 2238/2238, validation error 2.020107 %
+Optimization complete with best validation score of 1.853887 %, obtained at iteration 35808, with test performance 1.667560 %, and best_auc: 0.912614
+runtime: 276708.09 secs.

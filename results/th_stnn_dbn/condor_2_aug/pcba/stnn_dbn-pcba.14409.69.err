@@ -1,0 +1,5 @@
+Vendor:  Continuum Analytics, Inc.
+Package: mkl
+Message: trial mode expires in 30 days
+The pretraining code for file th_deep_belief_net.py ran for 150.79m
+The fine tuning code for file th_deep_belief_net.py ran for 242.60m

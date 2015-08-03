@@ -15,13 +15,13 @@ cat pcba.txt | grep -v fold | grep -v Building | grep -v Running | grep -v Resul
 
 STNN:
 
-cat dude.txt | grep "Optimization complete with best validation\|target" > targets-dude.txt
-cat pcba.txt | grep "Optimization complete with best validation\|target" > targets-pcba.txt
-cat muv.txt | grep "Optimization complete with best validation\|target" > targets-muv.txt
-cat tox21.txt | grep "Optimization complete with best validation\|target" > targets-tox21.txt
+cat dude/*.out | grep "Optimization complete with best validation\|target" > dude.txt
+cat pcba/*.out | grep "Optimization complete with best validation\|target" > pcba.txt
+cat muv/*.out | grep "Optimization complete with best validation\|target" > muv.txt
+cat tox21/*.out | grep "Optimization complete with best validation\|target" > tox21.txt
 
 
-cat dude.txt | grep "Optimization complete with best validation" > temp-dude.txt
-cat pcba.txt | grep "Optimization complete with best validation" > temp-pcba.txt
-cat muv.txt | grep "Optimization complete with best validation" > temp-muv.txt
-cat tox21.txt | grep "Optimization complete with best validation" > temp-tox21.txt
+cat dude/*.out | grep "Optimization complete with best validation" > temp-dude.txt
+cat pcba/*.out | grep "Optimization complete with best validation" > temp-pcba.txt
+cat muv/*.out | grep "Optimization complete with best validation" > temp-muv.txt
+cat tox21/*.out | grep "Optimization complete with best validation" > temp-tox21.txt

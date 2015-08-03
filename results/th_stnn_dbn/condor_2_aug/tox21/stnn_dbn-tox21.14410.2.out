@@ -1,0 +1,104 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14410
+Process 2
+RunningOn slot4@opt-a001.discovery.wisc.edu
+python th_deep_belief_net.py tox21 2
+Running Theano Learn Deep Belief Net for tox21, target: nr-ar.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -1457.57954802
+Pre-training layer 0, epoch 1, cost  -1451.93321864
+Pre-training layer 0, epoch 2, cost  -1447.34385397
+Pre-training layer 0, epoch 3, cost  -1441.06326674
+Pre-training layer 0, epoch 4, cost  -1435.30305717
+Pre-training layer 0, epoch 5, cost  -1429.50865819
+Pre-training layer 0, epoch 6, cost  -1423.18226761
+Pre-training layer 0, epoch 7, cost  -1417.82003153
+Pre-training layer 0, epoch 8, cost  -1411.92169413
+Pre-training layer 0, epoch 9, cost  -1406.52519829
+Pre-training layer 1, epoch 0, cost  -1539.46676212
+Pre-training layer 1, epoch 1, cost  -1539.39256486
+Pre-training layer 1, epoch 2, cost  -1539.08098174
+Pre-training layer 1, epoch 3, cost  -1538.84100479
+Pre-training layer 1, epoch 4, cost  -1538.84246406
+Pre-training layer 1, epoch 5, cost  -1538.47039359
+Pre-training layer 1, epoch 6, cost  -1538.24778188
+Pre-training layer 1, epoch 7, cost  -1537.95195529
+Pre-training layer 1, epoch 8, cost  -1537.87831111
+Pre-training layer 1, epoch 9, cost  -1537.65771398
+... getting the finetuning functions
+... finetuning the model
+epoch 1, minibatch 106/106, validation error 36.714286 %
+     epoch 1, minibatch 106/106, best error 38.314286 %, best_auc: 0.804234
+epoch 2, minibatch 106/106, validation error 25.685714 %
+     new best AUC!: 0.815598353425
+     epoch 2, minibatch 106/106, best error 26.457143 %, best_auc: 0.815598
+epoch 3, minibatch 106/106, validation error 25.485714 %
+     new best AUC!: 0.822177300794
+     epoch 3, minibatch 106/106, best error 26.857143 %, best_auc: 0.822177
+epoch 4, minibatch 106/106, validation error 25.971429 %
+     new best AUC!: 0.825242575713
+epoch 5, minibatch 106/106, validation error 26.000000 %
+     new best AUC!: 0.827219935313
+epoch 6, minibatch 106/106, validation error 24.457143 %
+     new best AUC!: 0.827932960894
+     epoch 6, minibatch 106/106, best error 26.800000 %, best_auc: 0.827933
+epoch 7, minibatch 106/106, validation error 24.257143 %
+     new best AUC!: 0.828476918553
+     epoch 7, minibatch 106/106, best error 26.857143 %, best_auc: 0.828477
+epoch 8, minibatch 106/106, validation error 24.885714 %
+epoch 9, minibatch 106/106, validation error 23.600000 %
+     epoch 9, minibatch 106/106, best error 25.685714 %, best_auc: 0.828477
+epoch 10, minibatch 106/106, validation error 23.228571 %
+     epoch 10, minibatch 106/106, best error 26.371429 %, best_auc: 0.828477
+epoch 11, minibatch 106/106, validation error 23.314286 %
+epoch 12, minibatch 106/106, validation error 22.885714 %
+     epoch 12, minibatch 106/106, best error 24.542857 %, best_auc: 0.828477
+epoch 13, minibatch 106/106, validation error 21.857143 %
+     epoch 13, minibatch 106/106, best error 23.314286 %, best_auc: 0.828477
+epoch 14, minibatch 106/106, validation error 21.800000 %
+     epoch 14, minibatch 106/106, best error 22.257143 %, best_auc: 0.828477
+epoch 15, minibatch 106/106, validation error 21.000000 %
+     epoch 15, minibatch 106/106, best error 21.000000 %, best_auc: 0.828477
+epoch 16, minibatch 106/106, validation error 20.514286 %
+     epoch 16, minibatch 106/106, best error 20.485714 %, best_auc: 0.828477
+epoch 17, minibatch 106/106, validation error 20.228571 %
+     epoch 17, minibatch 106/106, best error 20.228571 %, best_auc: 0.828477
+epoch 18, minibatch 106/106, validation error 20.485714 %
+epoch 19, minibatch 106/106, validation error 20.314286 %
+epoch 20, minibatch 106/106, validation error 20.200000 %
+     epoch 20, minibatch 106/106, best error 20.085714 %, best_auc: 0.828477
+epoch 21, minibatch 106/106, validation error 20.114286 %
+     epoch 21, minibatch 106/106, best error 19.828571 %, best_auc: 0.828477
+epoch 22, minibatch 106/106, validation error 19.942857 %
+     epoch 22, minibatch 106/106, best error 19.685714 %, best_auc: 0.828477
+epoch 23, minibatch 106/106, validation error 19.942857 %
+epoch 24, minibatch 106/106, validation error 19.314286 %
+     epoch 24, minibatch 106/106, best error 19.742857 %, best_auc: 0.828477
+epoch 25, minibatch 106/106, validation error 19.257143 %
+     epoch 25, minibatch 106/106, best error 19.800000 %, best_auc: 0.828477
+epoch 26, minibatch 106/106, validation error 19.571429 %
+epoch 27, minibatch 106/106, validation error 20.314286 %
+epoch 28, minibatch 106/106, validation error 20.514286 %
+epoch 29, minibatch 106/106, validation error 20.142857 %
+epoch 30, minibatch 106/106, validation error 19.714286 %
+epoch 31, minibatch 106/106, validation error 19.542857 %
+epoch 32, minibatch 106/106, validation error 19.485714 %
+epoch 33, minibatch 106/106, validation error 19.542857 %
+epoch 34, minibatch 106/106, validation error 19.657143 %
+epoch 35, minibatch 106/106, validation error 19.714286 %
+epoch 36, minibatch 106/106, validation error 19.742857 %
+epoch 37, minibatch 106/106, validation error 19.771429 %
+epoch 38, minibatch 106/106, validation error 19.771429 %
+epoch 39, minibatch 106/106, validation error 19.714286 %
+epoch 40, minibatch 106/106, validation error 19.714286 %
+epoch 41, minibatch 106/106, validation error 19.657143 %
+epoch 42, minibatch 106/106, validation error 19.628571 %
+epoch 43, minibatch 106/106, validation error 19.685714 %
+epoch 44, minibatch 106/106, validation error 19.714286 %
+epoch 45, minibatch 106/106, validation error 19.685714 %
+epoch 46, minibatch 106/106, validation error 19.685714 %
+epoch 47, minibatch 106/106, validation error 19.714286 %
+Optimization complete with best validation score of 19.257143 %, obtained at iteration 2650, with test performance 19.800000 %, and best_auc: 0.828477
+runtime: 28194.59 secs.

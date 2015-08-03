@@ -1,0 +1,73 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14409
+Process 11
+RunningOn slot2@opt-a016.discovery.wisc.edu
+python th_deep_belief_net.py pcba 11
+Running Theano Learn Deep Belief Net for pcba, target: aid1479.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -1399.15460649
+Pre-training layer 0, epoch 1, cost  -1308.8066087
+Pre-training layer 0, epoch 2, cost  -1226.59487685
+Pre-training layer 0, epoch 3, cost  -1151.65508004
+Pre-training layer 0, epoch 4, cost  -1083.55097067
+Pre-training layer 0, epoch 5, cost  -1021.42784028
+Pre-training layer 0, epoch 6, cost  -964.74708406
+Pre-training layer 0, epoch 7, cost  -912.798332348
+Pre-training layer 0, epoch 8, cost  -865.265370173
+Pre-training layer 0, epoch 9, cost  -821.359490461
+Pre-training layer 1, epoch 0, cost  -1537.14777921
+Pre-training layer 1, epoch 1, cost  -1533.45758408
+Pre-training layer 1, epoch 2, cost  -1529.9189307
+Pre-training layer 1, epoch 3, cost  -1526.50486757
+Pre-training layer 1, epoch 4, cost  -1523.13400983
+Pre-training layer 1, epoch 5, cost  -1519.9458093
+Pre-training layer 1, epoch 6, cost  -1516.82112565
+Pre-training layer 1, epoch 7, cost  -1513.80683588
+Pre-training layer 1, epoch 8, cost  -1510.87907818
+Pre-training layer 1, epoch 9, cost  -1508.08986173
+... getting the finetuning functions
+... finetuning the model
+epoch 1, minibatch 1795/1795, validation error 7.918060 %
+     epoch 1, minibatch 1795/1795, best error 7.919732 %, best_auc: 0.709832
+epoch 2, minibatch 1795/1795, validation error 7.556856 %
+     new best AUC!: 0.744184201844
+     epoch 2, minibatch 1795/1795, best error 7.652174 %, best_auc: 0.744184
+epoch 3, minibatch 1795/1795, validation error 7.506689 %
+     new best AUC!: 0.747846566545
+     epoch 3, minibatch 1795/1795, best error 7.928094 %, best_auc: 0.747847
+epoch 4, minibatch 1795/1795, validation error 7.794314 %
+epoch 5, minibatch 1795/1795, validation error 7.958194 %
+epoch 6, minibatch 1795/1795, validation error 8.016722 %
+epoch 7, minibatch 1795/1795, validation error 8.003344 %
+epoch 8, minibatch 1795/1795, validation error 7.996656 %
+epoch 9, minibatch 1795/1795, validation error 8.028428 %
+epoch 10, minibatch 1795/1795, validation error 7.974916 %
+epoch 11, minibatch 1795/1795, validation error 7.795987 %
+epoch 12, minibatch 1795/1795, validation error 7.515050 %
+epoch 13, minibatch 1795/1795, validation error 7.391304 %
+     epoch 13, minibatch 1795/1795, best error 7.894649 %, best_auc: 0.747847
+epoch 14, minibatch 1795/1795, validation error 7.337793 %
+     epoch 14, minibatch 1795/1795, best error 7.747492 %, best_auc: 0.747847
+epoch 15, minibatch 1795/1795, validation error 7.322742 %
+     epoch 15, minibatch 1795/1795, best error 7.668896 %, best_auc: 0.747847
+epoch 16, minibatch 1795/1795, validation error 7.260870 %
+     epoch 16, minibatch 1795/1795, best error 7.642140 %, best_auc: 0.747847
+epoch 17, minibatch 1795/1795, validation error 7.275920 %
+epoch 18, minibatch 1795/1795, validation error 7.327759 %
+epoch 19, minibatch 1795/1795, validation error 7.384615 %
+epoch 20, minibatch 1795/1795, validation error 7.344482 %
+epoch 21, minibatch 1795/1795, validation error 7.458194 %
+epoch 22, minibatch 1795/1795, validation error 7.458194 %
+epoch 23, minibatch 1795/1795, validation error 7.419732 %
+epoch 24, minibatch 1795/1795, validation error 7.416388 %
+epoch 25, minibatch 1795/1795, validation error 7.389632 %
+epoch 26, minibatch 1795/1795, validation error 7.409699 %
+epoch 27, minibatch 1795/1795, validation error 7.379599 %
+epoch 28, minibatch 1795/1795, validation error 7.352843 %
+epoch 29, minibatch 1795/1795, validation error 7.376254 %
+epoch 30, minibatch 1795/1795, validation error 7.414716 %
+epoch 31, minibatch 1795/1795, validation error 7.444816 %
+Optimization complete with best validation score of 7.260870 %, obtained at iteration 28720, with test performance 7.642140 %, and best_auc: 0.747847
+runtime: 221378.64 secs.

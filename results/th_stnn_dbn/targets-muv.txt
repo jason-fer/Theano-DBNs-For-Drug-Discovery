@@ -55,3 +55,25 @@ of 5.645161 %, obtained at iteration 95, with test performance 5.645161 %, and b
 of 5.709677 %, obtained at iteration 95, with test performance 5.709677 %, and best_auc: 0.565167
 
 
+
+********************NEW MUV RESULTS**********************:
+0.613444
+0.866056
+0.807222
+0.771139
+0.991056
+0.935806
+0.870889
+0.802000
+0.831111
+0.737111
+0.824111
+0.771528
+0.777000
+0.678833
+0.767944
+0.824889
+0.685944
+
+MAX (considering previous & current run)
+0.7974166471

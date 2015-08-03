@@ -1,0 +1,1148 @@
+_CONDOR_JOB_IWD /mnt/ws/home/jferiante
+Cluster 14411
+Process 6
+RunningOn slot5@opt-a015.discovery.wisc.edu
+python th_deep_belief_net.py muv 6
+Running Theano Learn Deep Belief Net for muv, target: 692.........
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  -1447.46732378
+Pre-training layer 0, epoch 1, cost  -1442.73134628
+Pre-training layer 0, epoch 2, cost  -1437.95770626
+Pre-training layer 0, epoch 3, cost  -1432.04000422
+Pre-training layer 0, epoch 4, cost  -1427.61638726
+Pre-training layer 0, epoch 5, cost  -1422.27808653
+Pre-training layer 0, epoch 6, cost  -1416.98987386
+Pre-training layer 0, epoch 7, cost  -1411.66315525
+Pre-training layer 0, epoch 8, cost  -1406.38889855
+Pre-training layer 0, epoch 9, cost  -1401.16250473
+Pre-training layer 1, epoch 0, cost  -1537.73405265
+Pre-training layer 1, epoch 1, cost  -1537.48521204
+Pre-training layer 1, epoch 2, cost  -1537.33533261
+Pre-training layer 1, epoch 3, cost  -1536.96755796
+Pre-training layer 1, epoch 4, cost  -1537.22176143
+Pre-training layer 1, epoch 5, cost  -1536.67417866
+Pre-training layer 1, epoch 6, cost  -1536.60131051
+Pre-training layer 1, epoch 7, cost  -1536.35951537
+Pre-training layer 1, epoch 8, cost  -1536.05229342
+Pre-training layer 1, epoch 9, cost  -1535.81682786
+... getting the finetuning functions
+... finetuning the model
+epoch 1, minibatch 95/95, validation error 5.645161 %
+     epoch 1, minibatch 95/95, best error 5.741935 %, best_auc: 0.556278
+epoch 2, minibatch 95/95, validation error 5.645161 %
+epoch 3, minibatch 95/95, validation error 5.645161 %
+epoch 4, minibatch 95/95, validation error 5.645161 %
+epoch 5, minibatch 95/95, validation error 5.645161 %
+epoch 6, minibatch 95/95, validation error 5.645161 %
+epoch 7, minibatch 95/95, validation error 5.645161 %
+epoch 8, minibatch 95/95, validation error 5.645161 %
+epoch 9, minibatch 95/95, validation error 5.645161 %
+epoch 10, minibatch 95/95, validation error 5.645161 %
+epoch 11, minibatch 95/95, validation error 5.645161 %
+epoch 12, minibatch 95/95, validation error 5.645161 %
+epoch 13, minibatch 95/95, validation error 5.677419 %
+epoch 14, minibatch 95/95, validation error 5.677419 %
+epoch 15, minibatch 95/95, validation error 5.741935 %
+epoch 16, minibatch 95/95, validation error 5.806452 %
+epoch 17, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.557888888889
+epoch 18, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.564444444444
+epoch 19, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.569222222222
+epoch 20, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.575277777778
+epoch 21, minibatch 95/95, validation error 5.838710 %
+     new best AUC!: 0.580472222222
+epoch 22, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.584666666667
+epoch 23, minibatch 95/95, validation error 5.774194 %
+     new best AUC!: 0.588388888889
+epoch 24, minibatch 95/95, validation error 5.774194 %
+     new best AUC!: 0.591777777778
+epoch 25, minibatch 95/95, validation error 5.774194 %
+     new best AUC!: 0.593388888889
+epoch 26, minibatch 95/95, validation error 5.774194 %
+     new best AUC!: 0.596722222222
+epoch 27, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.599055555556
+epoch 28, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.600666666667
+epoch 29, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.602777777778
+epoch 30, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.605138888889
+epoch 31, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.606777777778
+epoch 32, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.6085
+epoch 33, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.609638888889
+epoch 34, minibatch 95/95, validation error 5.806452 %
+     new best AUC!: 0.610777777778
+epoch 35, minibatch 95/95, validation error 5.774194 %
+     new best AUC!: 0.611666666667
+epoch 36, minibatch 95/95, validation error 5.774194 %
+     new best AUC!: 0.612333333333
+epoch 37, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.613111111111
+epoch 38, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.613777777778
+epoch 39, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.614944444444
+epoch 40, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.615666666667
+epoch 41, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.616388888889
+epoch 42, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.616777777778
+epoch 43, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.618222222222
+epoch 44, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.618777777778
+epoch 45, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.619333333333
+epoch 46, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.6205
+epoch 47, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.621027777778
+epoch 48, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.621527777778
+epoch 49, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.622083333333
+epoch 50, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.622638888889
+epoch 51, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.623527777778
+epoch 52, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.62375
+epoch 53, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.624388888889
+epoch 54, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.624666666667
+epoch 55, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.625
+epoch 56, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.625833333333
+epoch 57, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.626416666667
+epoch 58, minibatch 95/95, validation error 5.741935 %
+epoch 59, minibatch 95/95, validation error 5.741935 %
+epoch 60, minibatch 95/95, validation error 5.741935 %
+epoch 61, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.626555555556
+epoch 62, minibatch 95/95, validation error 5.741935 %
+     new best AUC!: 0.627055555556
+epoch 63, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.62775
+epoch 64, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.628111111111
+epoch 65, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.628305555556
+epoch 66, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.628694444444
+epoch 67, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.628916666667
+epoch 68, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.628944444444
+epoch 69, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.629027777778
+epoch 70, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.62925
+epoch 71, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.629638888889
+epoch 72, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.630166666667
+epoch 73, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.630222222222
+epoch 74, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.63025
+epoch 75, minibatch 95/95, validation error 5.709677 %
+epoch 76, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.630305555556
+epoch 77, minibatch 95/95, validation error 5.709677 %
+epoch 78, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.630777777778
+epoch 79, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.631
+epoch 80, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.631333333333
+epoch 81, minibatch 95/95, validation error 5.709677 %
+epoch 82, minibatch 95/95, validation error 5.709677 %
+epoch 83, minibatch 95/95, validation error 5.709677 %
+epoch 84, minibatch 95/95, validation error 5.709677 %
+epoch 85, minibatch 95/95, validation error 5.709677 %
+epoch 86, minibatch 95/95, validation error 5.709677 %
+epoch 87, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.631555555556
+epoch 88, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.631611111111
+epoch 89, minibatch 95/95, validation error 5.709677 %
+epoch 90, minibatch 95/95, validation error 5.709677 %
+epoch 91, minibatch 95/95, validation error 5.709677 %
+epoch 92, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.631833333333
+epoch 93, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.631972222222
+epoch 94, minibatch 95/95, validation error 5.709677 %
+epoch 95, minibatch 95/95, validation error 5.709677 %
+epoch 96, minibatch 95/95, validation error 5.709677 %
+epoch 97, minibatch 95/95, validation error 5.709677 %
+epoch 98, minibatch 95/95, validation error 5.709677 %
+epoch 99, minibatch 95/95, validation error 5.709677 %
+epoch 100, minibatch 95/95, validation error 5.709677 %
+epoch 101, minibatch 95/95, validation error 5.709677 %
+epoch 102, minibatch 95/95, validation error 5.709677 %
+epoch 103, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.63225
+epoch 104, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.632416666667
+epoch 105, minibatch 95/95, validation error 5.709677 %
+epoch 106, minibatch 95/95, validation error 5.709677 %
+epoch 107, minibatch 95/95, validation error 5.709677 %
+epoch 108, minibatch 95/95, validation error 5.709677 %
+epoch 109, minibatch 95/95, validation error 5.709677 %
+epoch 110, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.632777777778
+epoch 111, minibatch 95/95, validation error 5.709677 %
+epoch 112, minibatch 95/95, validation error 5.709677 %
+epoch 113, minibatch 95/95, validation error 5.709677 %
+epoch 114, minibatch 95/95, validation error 5.709677 %
+epoch 115, minibatch 95/95, validation error 5.709677 %
+epoch 116, minibatch 95/95, validation error 5.709677 %
+epoch 117, minibatch 95/95, validation error 5.709677 %
+epoch 118, minibatch 95/95, validation error 5.709677 %
+epoch 119, minibatch 95/95, validation error 5.709677 %
+epoch 120, minibatch 95/95, validation error 5.709677 %
+epoch 121, minibatch 95/95, validation error 5.709677 %
+epoch 122, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.635305555556
+epoch 123, minibatch 95/95, validation error 5.709677 %
+epoch 124, minibatch 95/95, validation error 5.709677 %
+epoch 125, minibatch 95/95, validation error 5.709677 %
+epoch 126, minibatch 95/95, validation error 5.709677 %
+epoch 127, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.635722222222
+epoch 128, minibatch 95/95, validation error 5.709677 %
+epoch 129, minibatch 95/95, validation error 5.709677 %
+epoch 130, minibatch 95/95, validation error 5.709677 %
+epoch 131, minibatch 95/95, validation error 5.709677 %
+epoch 132, minibatch 95/95, validation error 5.709677 %
+epoch 133, minibatch 95/95, validation error 5.709677 %
+epoch 134, minibatch 95/95, validation error 5.709677 %
+epoch 135, minibatch 95/95, validation error 5.709677 %
+epoch 136, minibatch 95/95, validation error 5.709677 %
+epoch 137, minibatch 95/95, validation error 5.709677 %
+epoch 138, minibatch 95/95, validation error 5.709677 %
+epoch 139, minibatch 95/95, validation error 5.709677 %
+epoch 140, minibatch 95/95, validation error 5.709677 %
+epoch 141, minibatch 95/95, validation error 5.709677 %
+epoch 142, minibatch 95/95, validation error 5.709677 %
+epoch 143, minibatch 95/95, validation error 5.709677 %
+epoch 144, minibatch 95/95, validation error 5.709677 %
+epoch 145, minibatch 95/95, validation error 5.709677 %
+epoch 146, minibatch 95/95, validation error 5.709677 %
+epoch 147, minibatch 95/95, validation error 5.709677 %
+epoch 148, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.636333333333
+epoch 149, minibatch 95/95, validation error 5.709677 %
+epoch 150, minibatch 95/95, validation error 5.709677 %
+epoch 151, minibatch 95/95, validation error 5.709677 %
+epoch 152, minibatch 95/95, validation error 5.709677 %
+epoch 153, minibatch 95/95, validation error 5.709677 %
+epoch 154, minibatch 95/95, validation error 5.709677 %
+epoch 155, minibatch 95/95, validation error 5.709677 %
+epoch 156, minibatch 95/95, validation error 5.709677 %
+epoch 157, minibatch 95/95, validation error 5.709677 %
+epoch 158, minibatch 95/95, validation error 5.709677 %
+epoch 159, minibatch 95/95, validation error 5.709677 %
+epoch 160, minibatch 95/95, validation error 5.709677 %
+epoch 161, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.638888888889
+epoch 162, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.638944444444
+epoch 163, minibatch 95/95, validation error 5.709677 %
+epoch 164, minibatch 95/95, validation error 5.709677 %
+epoch 165, minibatch 95/95, validation error 5.709677 %
+epoch 166, minibatch 95/95, validation error 5.709677 %
+epoch 167, minibatch 95/95, validation error 5.709677 %
+epoch 168, minibatch 95/95, validation error 5.709677 %
+epoch 169, minibatch 95/95, validation error 5.709677 %
+epoch 170, minibatch 95/95, validation error 5.709677 %
+epoch 171, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.643861111111
+epoch 172, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.645111111111
+epoch 173, minibatch 95/95, validation error 5.709677 %
+epoch 174, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.645666666667
+epoch 175, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.645805555556
+epoch 176, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.645916666667
+epoch 177, minibatch 95/95, validation error 5.709677 %
+epoch 178, minibatch 95/95, validation error 5.709677 %
+epoch 179, minibatch 95/95, validation error 5.709677 %
+epoch 180, minibatch 95/95, validation error 5.709677 %
+epoch 181, minibatch 95/95, validation error 5.709677 %
+epoch 182, minibatch 95/95, validation error 5.709677 %
+epoch 183, minibatch 95/95, validation error 5.709677 %
+epoch 184, minibatch 95/95, validation error 5.709677 %
+epoch 185, minibatch 95/95, validation error 5.709677 %
+epoch 186, minibatch 95/95, validation error 5.709677 %
+epoch 187, minibatch 95/95, validation error 5.709677 %
+epoch 188, minibatch 95/95, validation error 5.709677 %
+epoch 189, minibatch 95/95, validation error 5.709677 %
+epoch 190, minibatch 95/95, validation error 5.709677 %
+epoch 191, minibatch 95/95, validation error 5.709677 %
+epoch 192, minibatch 95/95, validation error 5.709677 %
+epoch 193, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.645972222222
+epoch 194, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.647027777778
+epoch 195, minibatch 95/95, validation error 5.709677 %
+epoch 196, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.648333333333
+epoch 197, minibatch 95/95, validation error 5.709677 %
+epoch 198, minibatch 95/95, validation error 5.709677 %
+epoch 199, minibatch 95/95, validation error 5.709677 %
+epoch 200, minibatch 95/95, validation error 5.709677 %
+epoch 201, minibatch 95/95, validation error 5.709677 %
+epoch 202, minibatch 95/95, validation error 5.709677 %
+epoch 203, minibatch 95/95, validation error 5.709677 %
+epoch 204, minibatch 95/95, validation error 5.709677 %
+epoch 205, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.648361111111
+epoch 206, minibatch 95/95, validation error 5.709677 %
+epoch 207, minibatch 95/95, validation error 5.709677 %
+epoch 208, minibatch 95/95, validation error 5.709677 %
+epoch 209, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.652027777778
+epoch 210, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.652111111111
+epoch 211, minibatch 95/95, validation error 5.709677 %
+epoch 212, minibatch 95/95, validation error 5.709677 %
+epoch 213, minibatch 95/95, validation error 5.709677 %
+epoch 214, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.652305555556
+epoch 215, minibatch 95/95, validation error 5.709677 %
+epoch 216, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.6525
+epoch 217, minibatch 95/95, validation error 5.709677 %
+epoch 218, minibatch 95/95, validation error 5.709677 %
+epoch 219, minibatch 95/95, validation error 5.709677 %
+epoch 220, minibatch 95/95, validation error 5.709677 %
+epoch 221, minibatch 95/95, validation error 5.709677 %
+epoch 222, minibatch 95/95, validation error 5.709677 %
+epoch 223, minibatch 95/95, validation error 5.709677 %
+epoch 224, minibatch 95/95, validation error 5.709677 %
+epoch 225, minibatch 95/95, validation error 5.709677 %
+epoch 226, minibatch 95/95, validation error 5.709677 %
+epoch 227, minibatch 95/95, validation error 5.709677 %
+epoch 228, minibatch 95/95, validation error 5.709677 %
+epoch 229, minibatch 95/95, validation error 5.709677 %
+epoch 230, minibatch 95/95, validation error 5.709677 %
+     new best AUC!: 0.658777777778
+epoch 231, minibatch 95/95, validation error 5.709677 %
+epoch 232, minibatch 95/95, validation error 5.709677 %
+epoch 233, minibatch 95/95, validation error 5.677419 %
+epoch 234, minibatch 95/95, validation error 5.677419 %
+epoch 235, minibatch 95/95, validation error 5.677419 %
+epoch 236, minibatch 95/95, validation error 5.677419 %
+epoch 237, minibatch 95/95, validation error 5.677419 %
+epoch 238, minibatch 95/95, validation error 5.677419 %
+epoch 239, minibatch 95/95, validation error 5.677419 %
+epoch 240, minibatch 95/95, validation error 5.677419 %
+epoch 241, minibatch 95/95, validation error 5.677419 %
+epoch 242, minibatch 95/95, validation error 5.677419 %
+epoch 243, minibatch 95/95, validation error 5.677419 %
+epoch 244, minibatch 95/95, validation error 5.677419 %
+epoch 245, minibatch 95/95, validation error 5.677419 %
+epoch 246, minibatch 95/95, validation error 5.677419 %
+epoch 247, minibatch 95/95, validation error 5.677419 %
+epoch 248, minibatch 95/95, validation error 5.677419 %
+epoch 249, minibatch 95/95, validation error 5.677419 %
+epoch 250, minibatch 95/95, validation error 5.677419 %
+epoch 251, minibatch 95/95, validation error 5.677419 %
+epoch 252, minibatch 95/95, validation error 5.677419 %
+epoch 253, minibatch 95/95, validation error 5.677419 %
+epoch 254, minibatch 95/95, validation error 5.677419 %
+epoch 255, minibatch 95/95, validation error 5.677419 %
+epoch 256, minibatch 95/95, validation error 5.677419 %
+epoch 257, minibatch 95/95, validation error 5.677419 %
+epoch 258, minibatch 95/95, validation error 5.677419 %
+epoch 259, minibatch 95/95, validation error 5.677419 %
+epoch 260, minibatch 95/95, validation error 5.677419 %
+epoch 261, minibatch 95/95, validation error 5.677419 %
+epoch 262, minibatch 95/95, validation error 5.677419 %
+epoch 263, minibatch 95/95, validation error 5.677419 %
+epoch 264, minibatch 95/95, validation error 5.677419 %
+epoch 265, minibatch 95/95, validation error 5.677419 %
+epoch 266, minibatch 95/95, validation error 5.677419 %
+epoch 267, minibatch 95/95, validation error 5.677419 %
+epoch 268, minibatch 95/95, validation error 5.677419 %
+epoch 269, minibatch 95/95, validation error 5.677419 %
+epoch 270, minibatch 95/95, validation error 5.677419 %
+epoch 271, minibatch 95/95, validation error 5.677419 %
+epoch 272, minibatch 95/95, validation error 5.677419 %
+epoch 273, minibatch 95/95, validation error 5.677419 %
+epoch 274, minibatch 95/95, validation error 5.677419 %
+epoch 275, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.659388888889
+epoch 276, minibatch 95/95, validation error 5.677419 %
+epoch 277, minibatch 95/95, validation error 5.677419 %
+epoch 278, minibatch 95/95, validation error 5.677419 %
+epoch 279, minibatch 95/95, validation error 5.677419 %
+epoch 280, minibatch 95/95, validation error 5.677419 %
+epoch 281, minibatch 95/95, validation error 5.677419 %
+epoch 282, minibatch 95/95, validation error 5.677419 %
+epoch 283, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.661583333333
+epoch 284, minibatch 95/95, validation error 5.677419 %
+epoch 285, minibatch 95/95, validation error 5.677419 %
+epoch 286, minibatch 95/95, validation error 5.677419 %
+epoch 287, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.661583333333
+epoch 288, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.661611111111
+epoch 289, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.661638888889
+epoch 290, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.661666666667
+epoch 291, minibatch 95/95, validation error 5.677419 %
+epoch 292, minibatch 95/95, validation error 5.677419 %
+epoch 293, minibatch 95/95, validation error 5.677419 %
+epoch 294, minibatch 95/95, validation error 5.677419 %
+epoch 295, minibatch 95/95, validation error 5.677419 %
+epoch 296, minibatch 95/95, validation error 5.677419 %
+epoch 297, minibatch 95/95, validation error 5.677419 %
+epoch 298, minibatch 95/95, validation error 5.677419 %
+epoch 299, minibatch 95/95, validation error 5.677419 %
+epoch 300, minibatch 95/95, validation error 5.677419 %
+epoch 301, minibatch 95/95, validation error 5.677419 %
+epoch 302, minibatch 95/95, validation error 5.677419 %
+epoch 303, minibatch 95/95, validation error 5.677419 %
+epoch 304, minibatch 95/95, validation error 5.677419 %
+epoch 305, minibatch 95/95, validation error 5.677419 %
+epoch 306, minibatch 95/95, validation error 5.677419 %
+epoch 307, minibatch 95/95, validation error 5.677419 %
+epoch 308, minibatch 95/95, validation error 5.677419 %
+epoch 309, minibatch 95/95, validation error 5.677419 %
+epoch 310, minibatch 95/95, validation error 5.677419 %
+epoch 311, minibatch 95/95, validation error 5.677419 %
+epoch 312, minibatch 95/95, validation error 5.677419 %
+epoch 313, minibatch 95/95, validation error 5.677419 %
+epoch 314, minibatch 95/95, validation error 5.677419 %
+epoch 315, minibatch 95/95, validation error 5.677419 %
+epoch 316, minibatch 95/95, validation error 5.677419 %
+epoch 317, minibatch 95/95, validation error 5.677419 %
+epoch 318, minibatch 95/95, validation error 5.677419 %
+epoch 319, minibatch 95/95, validation error 5.677419 %
+epoch 320, minibatch 95/95, validation error 5.677419 %
+epoch 321, minibatch 95/95, validation error 5.677419 %
+epoch 322, minibatch 95/95, validation error 5.677419 %
+epoch 323, minibatch 95/95, validation error 5.677419 %
+epoch 324, minibatch 95/95, validation error 5.677419 %
+epoch 325, minibatch 95/95, validation error 5.677419 %
+epoch 326, minibatch 95/95, validation error 5.677419 %
+epoch 327, minibatch 95/95, validation error 5.677419 %
+epoch 328, minibatch 95/95, validation error 5.677419 %
+epoch 329, minibatch 95/95, validation error 5.677419 %
+epoch 330, minibatch 95/95, validation error 5.677419 %
+epoch 331, minibatch 95/95, validation error 5.677419 %
+epoch 332, minibatch 95/95, validation error 5.677419 %
+epoch 333, minibatch 95/95, validation error 5.677419 %
+epoch 334, minibatch 95/95, validation error 5.677419 %
+epoch 335, minibatch 95/95, validation error 5.677419 %
+epoch 336, minibatch 95/95, validation error 5.677419 %
+epoch 337, minibatch 95/95, validation error 5.677419 %
+epoch 338, minibatch 95/95, validation error 5.677419 %
+epoch 339, minibatch 95/95, validation error 5.677419 %
+epoch 340, minibatch 95/95, validation error 5.677419 %
+epoch 341, minibatch 95/95, validation error 5.677419 %
+epoch 342, minibatch 95/95, validation error 5.677419 %
+epoch 343, minibatch 95/95, validation error 5.677419 %
+epoch 344, minibatch 95/95, validation error 5.677419 %
+epoch 345, minibatch 95/95, validation error 5.677419 %
+epoch 346, minibatch 95/95, validation error 5.677419 %
+epoch 347, minibatch 95/95, validation error 5.677419 %
+epoch 348, minibatch 95/95, validation error 5.677419 %
+epoch 349, minibatch 95/95, validation error 5.677419 %
+epoch 350, minibatch 95/95, validation error 5.677419 %
+epoch 351, minibatch 95/95, validation error 5.677419 %
+epoch 352, minibatch 95/95, validation error 5.677419 %
+epoch 353, minibatch 95/95, validation error 5.677419 %
+epoch 354, minibatch 95/95, validation error 5.677419 %
+epoch 355, minibatch 95/95, validation error 5.677419 %
+epoch 356, minibatch 95/95, validation error 5.677419 %
+epoch 357, minibatch 95/95, validation error 5.677419 %
+epoch 358, minibatch 95/95, validation error 5.677419 %
+epoch 359, minibatch 95/95, validation error 5.677419 %
+epoch 360, minibatch 95/95, validation error 5.677419 %
+epoch 361, minibatch 95/95, validation error 5.677419 %
+epoch 362, minibatch 95/95, validation error 5.677419 %
+epoch 363, minibatch 95/95, validation error 5.677419 %
+epoch 364, minibatch 95/95, validation error 5.677419 %
+epoch 365, minibatch 95/95, validation error 5.677419 %
+epoch 366, minibatch 95/95, validation error 5.677419 %
+epoch 367, minibatch 95/95, validation error 5.677419 %
+epoch 368, minibatch 95/95, validation error 5.677419 %
+epoch 369, minibatch 95/95, validation error 5.677419 %
+epoch 370, minibatch 95/95, validation error 5.677419 %
+epoch 371, minibatch 95/95, validation error 5.677419 %
+epoch 372, minibatch 95/95, validation error 5.677419 %
+epoch 373, minibatch 95/95, validation error 5.677419 %
+epoch 374, minibatch 95/95, validation error 5.677419 %
+epoch 375, minibatch 95/95, validation error 5.677419 %
+epoch 376, minibatch 95/95, validation error 5.677419 %
+epoch 377, minibatch 95/95, validation error 5.677419 %
+epoch 378, minibatch 95/95, validation error 5.677419 %
+epoch 379, minibatch 95/95, validation error 5.677419 %
+epoch 380, minibatch 95/95, validation error 5.677419 %
+epoch 381, minibatch 95/95, validation error 5.677419 %
+epoch 382, minibatch 95/95, validation error 5.677419 %
+epoch 383, minibatch 95/95, validation error 5.677419 %
+epoch 384, minibatch 95/95, validation error 5.677419 %
+epoch 385, minibatch 95/95, validation error 5.677419 %
+epoch 386, minibatch 95/95, validation error 5.677419 %
+epoch 387, minibatch 95/95, validation error 5.677419 %
+epoch 388, minibatch 95/95, validation error 5.677419 %
+epoch 389, minibatch 95/95, validation error 5.677419 %
+epoch 390, minibatch 95/95, validation error 5.677419 %
+epoch 391, minibatch 95/95, validation error 5.677419 %
+epoch 392, minibatch 95/95, validation error 5.677419 %
+epoch 393, minibatch 95/95, validation error 5.677419 %
+epoch 394, minibatch 95/95, validation error 5.677419 %
+epoch 395, minibatch 95/95, validation error 5.677419 %
+epoch 396, minibatch 95/95, validation error 5.677419 %
+epoch 397, minibatch 95/95, validation error 5.677419 %
+epoch 398, minibatch 95/95, validation error 5.677419 %
+epoch 399, minibatch 95/95, validation error 5.677419 %
+epoch 400, minibatch 95/95, validation error 5.677419 %
+epoch 401, minibatch 95/95, validation error 5.677419 %
+epoch 402, minibatch 95/95, validation error 5.677419 %
+epoch 403, minibatch 95/95, validation error 5.677419 %
+epoch 404, minibatch 95/95, validation error 5.677419 %
+epoch 405, minibatch 95/95, validation error 5.677419 %
+epoch 406, minibatch 95/95, validation error 5.677419 %
+epoch 407, minibatch 95/95, validation error 5.677419 %
+epoch 408, minibatch 95/95, validation error 5.677419 %
+epoch 409, minibatch 95/95, validation error 5.677419 %
+epoch 410, minibatch 95/95, validation error 5.677419 %
+epoch 411, minibatch 95/95, validation error 5.677419 %
+epoch 412, minibatch 95/95, validation error 5.677419 %
+epoch 413, minibatch 95/95, validation error 5.677419 %
+epoch 414, minibatch 95/95, validation error 5.677419 %
+epoch 415, minibatch 95/95, validation error 5.677419 %
+epoch 416, minibatch 95/95, validation error 5.677419 %
+epoch 417, minibatch 95/95, validation error 5.677419 %
+epoch 418, minibatch 95/95, validation error 5.677419 %
+epoch 419, minibatch 95/95, validation error 5.677419 %
+epoch 420, minibatch 95/95, validation error 5.677419 %
+epoch 421, minibatch 95/95, validation error 5.677419 %
+epoch 422, minibatch 95/95, validation error 5.677419 %
+epoch 423, minibatch 95/95, validation error 5.677419 %
+epoch 424, minibatch 95/95, validation error 5.677419 %
+epoch 425, minibatch 95/95, validation error 5.677419 %
+epoch 426, minibatch 95/95, validation error 5.677419 %
+epoch 427, minibatch 95/95, validation error 5.677419 %
+epoch 428, minibatch 95/95, validation error 5.677419 %
+epoch 429, minibatch 95/95, validation error 5.677419 %
+epoch 430, minibatch 95/95, validation error 5.677419 %
+epoch 431, minibatch 95/95, validation error 5.677419 %
+epoch 432, minibatch 95/95, validation error 5.677419 %
+epoch 433, minibatch 95/95, validation error 5.677419 %
+epoch 434, minibatch 95/95, validation error 5.677419 %
+epoch 435, minibatch 95/95, validation error 5.677419 %
+epoch 436, minibatch 95/95, validation error 5.677419 %
+epoch 437, minibatch 95/95, validation error 5.677419 %
+epoch 438, minibatch 95/95, validation error 5.677419 %
+epoch 439, minibatch 95/95, validation error 5.677419 %
+epoch 440, minibatch 95/95, validation error 5.677419 %
+epoch 441, minibatch 95/95, validation error 5.677419 %
+epoch 442, minibatch 95/95, validation error 5.677419 %
+epoch 443, minibatch 95/95, validation error 5.677419 %
+epoch 444, minibatch 95/95, validation error 5.677419 %
+epoch 445, minibatch 95/95, validation error 5.677419 %
+epoch 446, minibatch 95/95, validation error 5.677419 %
+epoch 447, minibatch 95/95, validation error 5.677419 %
+epoch 448, minibatch 95/95, validation error 5.677419 %
+epoch 449, minibatch 95/95, validation error 5.677419 %
+epoch 450, minibatch 95/95, validation error 5.677419 %
+epoch 451, minibatch 95/95, validation error 5.677419 %
+epoch 452, minibatch 95/95, validation error 5.677419 %
+epoch 453, minibatch 95/95, validation error 5.677419 %
+epoch 454, minibatch 95/95, validation error 5.677419 %
+epoch 455, minibatch 95/95, validation error 5.677419 %
+epoch 456, minibatch 95/95, validation error 5.677419 %
+epoch 457, minibatch 95/95, validation error 5.677419 %
+epoch 458, minibatch 95/95, validation error 5.677419 %
+epoch 459, minibatch 95/95, validation error 5.677419 %
+epoch 460, minibatch 95/95, validation error 5.677419 %
+epoch 461, minibatch 95/95, validation error 5.677419 %
+epoch 462, minibatch 95/95, validation error 5.677419 %
+epoch 463, minibatch 95/95, validation error 5.677419 %
+epoch 464, minibatch 95/95, validation error 5.677419 %
+epoch 465, minibatch 95/95, validation error 5.677419 %
+epoch 466, minibatch 95/95, validation error 5.677419 %
+epoch 467, minibatch 95/95, validation error 5.677419 %
+epoch 468, minibatch 95/95, validation error 5.677419 %
+epoch 469, minibatch 95/95, validation error 5.677419 %
+epoch 470, minibatch 95/95, validation error 5.677419 %
+epoch 471, minibatch 95/95, validation error 5.677419 %
+epoch 472, minibatch 95/95, validation error 5.677419 %
+epoch 473, minibatch 95/95, validation error 5.677419 %
+epoch 474, minibatch 95/95, validation error 5.677419 %
+epoch 475, minibatch 95/95, validation error 5.677419 %
+epoch 476, minibatch 95/95, validation error 5.677419 %
+epoch 477, minibatch 95/95, validation error 5.677419 %
+epoch 478, minibatch 95/95, validation error 5.677419 %
+epoch 479, minibatch 95/95, validation error 5.677419 %
+epoch 480, minibatch 95/95, validation error 5.677419 %
+epoch 481, minibatch 95/95, validation error 5.677419 %
+epoch 482, minibatch 95/95, validation error 5.677419 %
+epoch 483, minibatch 95/95, validation error 5.677419 %
+epoch 484, minibatch 95/95, validation error 5.677419 %
+epoch 485, minibatch 95/95, validation error 5.677419 %
+epoch 486, minibatch 95/95, validation error 5.677419 %
+epoch 487, minibatch 95/95, validation error 5.677419 %
+epoch 488, minibatch 95/95, validation error 5.677419 %
+epoch 489, minibatch 95/95, validation error 5.677419 %
+epoch 490, minibatch 95/95, validation error 5.677419 %
+epoch 491, minibatch 95/95, validation error 5.677419 %
+epoch 492, minibatch 95/95, validation error 5.677419 %
+epoch 493, minibatch 95/95, validation error 5.677419 %
+epoch 494, minibatch 95/95, validation error 5.677419 %
+epoch 495, minibatch 95/95, validation error 5.677419 %
+epoch 496, minibatch 95/95, validation error 5.677419 %
+epoch 497, minibatch 95/95, validation error 5.677419 %
+epoch 498, minibatch 95/95, validation error 5.677419 %
+epoch 499, minibatch 95/95, validation error 5.677419 %
+epoch 500, minibatch 95/95, validation error 5.677419 %
+epoch 501, minibatch 95/95, validation error 5.677419 %
+epoch 502, minibatch 95/95, validation error 5.677419 %
+epoch 503, minibatch 95/95, validation error 5.677419 %
+epoch 504, minibatch 95/95, validation error 5.677419 %
+epoch 505, minibatch 95/95, validation error 5.677419 %
+epoch 506, minibatch 95/95, validation error 5.677419 %
+epoch 507, minibatch 95/95, validation error 5.677419 %
+epoch 508, minibatch 95/95, validation error 5.677419 %
+epoch 509, minibatch 95/95, validation error 5.677419 %
+epoch 510, minibatch 95/95, validation error 5.677419 %
+epoch 511, minibatch 95/95, validation error 5.677419 %
+epoch 512, minibatch 95/95, validation error 5.677419 %
+epoch 513, minibatch 95/95, validation error 5.677419 %
+epoch 514, minibatch 95/95, validation error 5.677419 %
+epoch 515, minibatch 95/95, validation error 5.677419 %
+epoch 516, minibatch 95/95, validation error 5.677419 %
+epoch 517, minibatch 95/95, validation error 5.677419 %
+epoch 518, minibatch 95/95, validation error 5.677419 %
+epoch 519, minibatch 95/95, validation error 5.677419 %
+epoch 520, minibatch 95/95, validation error 5.677419 %
+epoch 521, minibatch 95/95, validation error 5.677419 %
+epoch 522, minibatch 95/95, validation error 5.677419 %
+epoch 523, minibatch 95/95, validation error 5.677419 %
+epoch 524, minibatch 95/95, validation error 5.677419 %
+epoch 525, minibatch 95/95, validation error 5.677419 %
+epoch 526, minibatch 95/95, validation error 5.677419 %
+epoch 527, minibatch 95/95, validation error 5.677419 %
+epoch 528, minibatch 95/95, validation error 5.677419 %
+epoch 529, minibatch 95/95, validation error 5.677419 %
+epoch 530, minibatch 95/95, validation error 5.677419 %
+epoch 531, minibatch 95/95, validation error 5.677419 %
+epoch 532, minibatch 95/95, validation error 5.677419 %
+epoch 533, minibatch 95/95, validation error 5.677419 %
+epoch 534, minibatch 95/95, validation error 5.677419 %
+epoch 535, minibatch 95/95, validation error 5.677419 %
+epoch 536, minibatch 95/95, validation error 5.677419 %
+epoch 537, minibatch 95/95, validation error 5.677419 %
+epoch 538, minibatch 95/95, validation error 5.677419 %
+epoch 539, minibatch 95/95, validation error 5.677419 %
+epoch 540, minibatch 95/95, validation error 5.677419 %
+epoch 541, minibatch 95/95, validation error 5.677419 %
+epoch 542, minibatch 95/95, validation error 5.677419 %
+epoch 543, minibatch 95/95, validation error 5.677419 %
+epoch 544, minibatch 95/95, validation error 5.677419 %
+epoch 545, minibatch 95/95, validation error 5.677419 %
+epoch 546, minibatch 95/95, validation error 5.677419 %
+epoch 547, minibatch 95/95, validation error 5.677419 %
+epoch 548, minibatch 95/95, validation error 5.677419 %
+epoch 549, minibatch 95/95, validation error 5.677419 %
+epoch 550, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.662333333333
+epoch 551, minibatch 95/95, validation error 5.677419 %
+epoch 552, minibatch 95/95, validation error 5.677419 %
+epoch 553, minibatch 95/95, validation error 5.677419 %
+epoch 554, minibatch 95/95, validation error 5.677419 %
+epoch 555, minibatch 95/95, validation error 5.677419 %
+epoch 556, minibatch 95/95, validation error 5.677419 %
+epoch 557, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.663722222222
+epoch 558, minibatch 95/95, validation error 5.677419 %
+epoch 559, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.66375
+epoch 560, minibatch 95/95, validation error 5.677419 %
+epoch 561, minibatch 95/95, validation error 5.677419 %
+epoch 562, minibatch 95/95, validation error 5.677419 %
+epoch 563, minibatch 95/95, validation error 5.677419 %
+epoch 564, minibatch 95/95, validation error 5.677419 %
+epoch 565, minibatch 95/95, validation error 5.677419 %
+epoch 566, minibatch 95/95, validation error 5.677419 %
+epoch 567, minibatch 95/95, validation error 5.677419 %
+epoch 568, minibatch 95/95, validation error 5.677419 %
+epoch 569, minibatch 95/95, validation error 5.677419 %
+epoch 570, minibatch 95/95, validation error 5.677419 %
+epoch 571, minibatch 95/95, validation error 5.677419 %
+epoch 572, minibatch 95/95, validation error 5.677419 %
+epoch 573, minibatch 95/95, validation error 5.677419 %
+epoch 574, minibatch 95/95, validation error 5.677419 %
+epoch 575, minibatch 95/95, validation error 5.677419 %
+epoch 576, minibatch 95/95, validation error 5.677419 %
+epoch 577, minibatch 95/95, validation error 5.677419 %
+epoch 578, minibatch 95/95, validation error 5.677419 %
+epoch 579, minibatch 95/95, validation error 5.677419 %
+epoch 580, minibatch 95/95, validation error 5.677419 %
+epoch 581, minibatch 95/95, validation error 5.677419 %
+epoch 582, minibatch 95/95, validation error 5.677419 %
+epoch 583, minibatch 95/95, validation error 5.677419 %
+epoch 584, minibatch 95/95, validation error 5.677419 %
+epoch 585, minibatch 95/95, validation error 5.677419 %
+epoch 586, minibatch 95/95, validation error 5.677419 %
+epoch 587, minibatch 95/95, validation error 5.677419 %
+epoch 588, minibatch 95/95, validation error 5.677419 %
+epoch 589, minibatch 95/95, validation error 5.677419 %
+epoch 590, minibatch 95/95, validation error 5.677419 %
+epoch 591, minibatch 95/95, validation error 5.677419 %
+epoch 592, minibatch 95/95, validation error 5.677419 %
+epoch 593, minibatch 95/95, validation error 5.677419 %
+epoch 594, minibatch 95/95, validation error 5.677419 %
+epoch 595, minibatch 95/95, validation error 5.677419 %
+epoch 596, minibatch 95/95, validation error 5.677419 %
+epoch 597, minibatch 95/95, validation error 5.677419 %
+epoch 598, minibatch 95/95, validation error 5.677419 %
+epoch 599, minibatch 95/95, validation error 5.677419 %
+epoch 600, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.665055555556
+epoch 601, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.665138888889
+epoch 602, minibatch 95/95, validation error 5.677419 %
+epoch 603, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.665694444444
+epoch 604, minibatch 95/95, validation error 5.677419 %
+epoch 605, minibatch 95/95, validation error 5.677419 %
+epoch 606, minibatch 95/95, validation error 5.677419 %
+epoch 607, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.666055555556
+epoch 608, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.66675
+epoch 609, minibatch 95/95, validation error 5.677419 %
+epoch 610, minibatch 95/95, validation error 5.677419 %
+epoch 611, minibatch 95/95, validation error 5.677419 %
+epoch 612, minibatch 95/95, validation error 5.677419 %
+epoch 613, minibatch 95/95, validation error 5.677419 %
+epoch 614, minibatch 95/95, validation error 5.677419 %
+epoch 615, minibatch 95/95, validation error 5.677419 %
+epoch 616, minibatch 95/95, validation error 5.677419 %
+epoch 617, minibatch 95/95, validation error 5.677419 %
+epoch 618, minibatch 95/95, validation error 5.677419 %
+epoch 619, minibatch 95/95, validation error 5.677419 %
+epoch 620, minibatch 95/95, validation error 5.677419 %
+epoch 621, minibatch 95/95, validation error 5.677419 %
+epoch 622, minibatch 95/95, validation error 5.677419 %
+epoch 623, minibatch 95/95, validation error 5.677419 %
+epoch 624, minibatch 95/95, validation error 5.677419 %
+epoch 625, minibatch 95/95, validation error 5.677419 %
+epoch 626, minibatch 95/95, validation error 5.677419 %
+epoch 627, minibatch 95/95, validation error 5.677419 %
+epoch 628, minibatch 95/95, validation error 5.677419 %
+epoch 629, minibatch 95/95, validation error 5.677419 %
+epoch 630, minibatch 95/95, validation error 5.677419 %
+epoch 631, minibatch 95/95, validation error 5.677419 %
+epoch 632, minibatch 95/95, validation error 5.677419 %
+epoch 633, minibatch 95/95, validation error 5.677419 %
+epoch 634, minibatch 95/95, validation error 5.677419 %
+epoch 635, minibatch 95/95, validation error 5.677419 %
+epoch 636, minibatch 95/95, validation error 5.677419 %
+epoch 637, minibatch 95/95, validation error 5.677419 %
+epoch 638, minibatch 95/95, validation error 5.677419 %
+epoch 639, minibatch 95/95, validation error 5.677419 %
+epoch 640, minibatch 95/95, validation error 5.677419 %
+epoch 641, minibatch 95/95, validation error 5.677419 %
+epoch 642, minibatch 95/95, validation error 5.677419 %
+epoch 643, minibatch 95/95, validation error 5.677419 %
+epoch 644, minibatch 95/95, validation error 5.677419 %
+epoch 645, minibatch 95/95, validation error 5.677419 %
+epoch 646, minibatch 95/95, validation error 5.677419 %
+epoch 647, minibatch 95/95, validation error 5.677419 %
+epoch 648, minibatch 95/95, validation error 5.677419 %
+epoch 649, minibatch 95/95, validation error 5.677419 %
+epoch 650, minibatch 95/95, validation error 5.677419 %
+epoch 651, minibatch 95/95, validation error 5.677419 %
+epoch 652, minibatch 95/95, validation error 5.677419 %
+epoch 653, minibatch 95/95, validation error 5.677419 %
+epoch 654, minibatch 95/95, validation error 5.677419 %
+epoch 655, minibatch 95/95, validation error 5.677419 %
+epoch 656, minibatch 95/95, validation error 5.677419 %
+epoch 657, minibatch 95/95, validation error 5.677419 %
+epoch 658, minibatch 95/95, validation error 5.677419 %
+epoch 659, minibatch 95/95, validation error 5.677419 %
+epoch 660, minibatch 95/95, validation error 5.677419 %
+epoch 661, minibatch 95/95, validation error 5.677419 %
+epoch 662, minibatch 95/95, validation error 5.677419 %
+epoch 663, minibatch 95/95, validation error 5.677419 %
+epoch 664, minibatch 95/95, validation error 5.677419 %
+epoch 665, minibatch 95/95, validation error 5.677419 %
+epoch 666, minibatch 95/95, validation error 5.677419 %
+epoch 667, minibatch 95/95, validation error 5.677419 %
+epoch 668, minibatch 95/95, validation error 5.677419 %
+epoch 669, minibatch 95/95, validation error 5.677419 %
+epoch 670, minibatch 95/95, validation error 5.677419 %
+epoch 671, minibatch 95/95, validation error 5.677419 %
+epoch 672, minibatch 95/95, validation error 5.677419 %
+epoch 673, minibatch 95/95, validation error 5.677419 %
+epoch 674, minibatch 95/95, validation error 5.677419 %
+epoch 675, minibatch 95/95, validation error 5.677419 %
+epoch 676, minibatch 95/95, validation error 5.677419 %
+epoch 677, minibatch 95/95, validation error 5.677419 %
+epoch 678, minibatch 95/95, validation error 5.677419 %
+epoch 679, minibatch 95/95, validation error 5.677419 %
+epoch 680, minibatch 95/95, validation error 5.677419 %
+epoch 681, minibatch 95/95, validation error 5.677419 %
+epoch 682, minibatch 95/95, validation error 5.677419 %
+epoch 683, minibatch 95/95, validation error 5.677419 %
+epoch 684, minibatch 95/95, validation error 5.677419 %
+epoch 685, minibatch 95/95, validation error 5.677419 %
+epoch 686, minibatch 95/95, validation error 5.677419 %
+epoch 687, minibatch 95/95, validation error 5.677419 %
+epoch 688, minibatch 95/95, validation error 5.677419 %
+epoch 689, minibatch 95/95, validation error 5.677419 %
+epoch 690, minibatch 95/95, validation error 5.677419 %
+epoch 691, minibatch 95/95, validation error 5.677419 %
+epoch 692, minibatch 95/95, validation error 5.677419 %
+epoch 693, minibatch 95/95, validation error 5.677419 %
+epoch 694, minibatch 95/95, validation error 5.677419 %
+epoch 695, minibatch 95/95, validation error 5.677419 %
+epoch 696, minibatch 95/95, validation error 5.677419 %
+epoch 697, minibatch 95/95, validation error 5.677419 %
+epoch 698, minibatch 95/95, validation error 5.677419 %
+epoch 699, minibatch 95/95, validation error 5.677419 %
+epoch 700, minibatch 95/95, validation error 5.677419 %
+epoch 701, minibatch 95/95, validation error 5.677419 %
+epoch 702, minibatch 95/95, validation error 5.677419 %
+epoch 703, minibatch 95/95, validation error 5.677419 %
+epoch 704, minibatch 95/95, validation error 5.677419 %
+epoch 705, minibatch 95/95, validation error 5.677419 %
+epoch 706, minibatch 95/95, validation error 5.677419 %
+epoch 707, minibatch 95/95, validation error 5.677419 %
+epoch 708, minibatch 95/95, validation error 5.677419 %
+epoch 709, minibatch 95/95, validation error 5.677419 %
+epoch 710, minibatch 95/95, validation error 5.677419 %
+epoch 711, minibatch 95/95, validation error 5.677419 %
+epoch 712, minibatch 95/95, validation error 5.677419 %
+epoch 713, minibatch 95/95, validation error 5.677419 %
+epoch 714, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.667083333333
+epoch 715, minibatch 95/95, validation error 5.677419 %
+epoch 716, minibatch 95/95, validation error 5.677419 %
+epoch 717, minibatch 95/95, validation error 5.677419 %
+epoch 718, minibatch 95/95, validation error 5.677419 %
+epoch 719, minibatch 95/95, validation error 5.677419 %
+epoch 720, minibatch 95/95, validation error 5.677419 %
+epoch 721, minibatch 95/95, validation error 5.677419 %
+epoch 722, minibatch 95/95, validation error 5.677419 %
+epoch 723, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.667083333333
+epoch 724, minibatch 95/95, validation error 5.677419 %
+epoch 725, minibatch 95/95, validation error 5.677419 %
+epoch 726, minibatch 95/95, validation error 5.677419 %
+epoch 727, minibatch 95/95, validation error 5.677419 %
+epoch 728, minibatch 95/95, validation error 5.677419 %
+epoch 729, minibatch 95/95, validation error 5.677419 %
+epoch 730, minibatch 95/95, validation error 5.677419 %
+epoch 731, minibatch 95/95, validation error 5.677419 %
+epoch 732, minibatch 95/95, validation error 5.677419 %
+epoch 733, minibatch 95/95, validation error 5.677419 %
+epoch 734, minibatch 95/95, validation error 5.677419 %
+epoch 735, minibatch 95/95, validation error 5.677419 %
+epoch 736, minibatch 95/95, validation error 5.677419 %
+epoch 737, minibatch 95/95, validation error 5.677419 %
+epoch 738, minibatch 95/95, validation error 5.677419 %
+epoch 739, minibatch 95/95, validation error 5.677419 %
+epoch 740, minibatch 95/95, validation error 5.677419 %
+epoch 741, minibatch 95/95, validation error 5.677419 %
+epoch 742, minibatch 95/95, validation error 5.677419 %
+epoch 743, minibatch 95/95, validation error 5.677419 %
+epoch 744, minibatch 95/95, validation error 5.677419 %
+epoch 745, minibatch 95/95, validation error 5.677419 %
+epoch 746, minibatch 95/95, validation error 5.677419 %
+epoch 747, minibatch 95/95, validation error 5.677419 %
+epoch 748, minibatch 95/95, validation error 5.677419 %
+epoch 749, minibatch 95/95, validation error 5.677419 %
+epoch 750, minibatch 95/95, validation error 5.677419 %
+epoch 751, minibatch 95/95, validation error 5.677419 %
+epoch 752, minibatch 95/95, validation error 5.677419 %
+epoch 753, minibatch 95/95, validation error 5.677419 %
+epoch 754, minibatch 95/95, validation error 5.677419 %
+epoch 755, minibatch 95/95, validation error 5.677419 %
+epoch 756, minibatch 95/95, validation error 5.677419 %
+epoch 757, minibatch 95/95, validation error 5.677419 %
+epoch 758, minibatch 95/95, validation error 5.677419 %
+epoch 759, minibatch 95/95, validation error 5.677419 %
+epoch 760, minibatch 95/95, validation error 5.677419 %
+epoch 761, minibatch 95/95, validation error 5.677419 %
+epoch 762, minibatch 95/95, validation error 5.677419 %
+epoch 763, minibatch 95/95, validation error 5.677419 %
+epoch 764, minibatch 95/95, validation error 5.677419 %
+epoch 765, minibatch 95/95, validation error 5.677419 %
+epoch 766, minibatch 95/95, validation error 5.677419 %
+epoch 767, minibatch 95/95, validation error 5.677419 %
+epoch 768, minibatch 95/95, validation error 5.677419 %
+epoch 769, minibatch 95/95, validation error 5.677419 %
+epoch 770, minibatch 95/95, validation error 5.677419 %
+epoch 771, minibatch 95/95, validation error 5.677419 %
+epoch 772, minibatch 95/95, validation error 5.677419 %
+epoch 773, minibatch 95/95, validation error 5.677419 %
+epoch 774, minibatch 95/95, validation error 5.677419 %
+epoch 775, minibatch 95/95, validation error 5.677419 %
+epoch 776, minibatch 95/95, validation error 5.677419 %
+epoch 777, minibatch 95/95, validation error 5.677419 %
+epoch 778, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.673166666667
+epoch 779, minibatch 95/95, validation error 5.677419 %
+epoch 780, minibatch 95/95, validation error 5.677419 %
+epoch 781, minibatch 95/95, validation error 5.677419 %
+epoch 782, minibatch 95/95, validation error 5.677419 %
+epoch 783, minibatch 95/95, validation error 5.677419 %
+epoch 784, minibatch 95/95, validation error 5.677419 %
+epoch 785, minibatch 95/95, validation error 5.677419 %
+epoch 786, minibatch 95/95, validation error 5.677419 %
+epoch 787, minibatch 95/95, validation error 5.677419 %
+epoch 788, minibatch 95/95, validation error 5.677419 %
+epoch 789, minibatch 95/95, validation error 5.677419 %
+epoch 790, minibatch 95/95, validation error 5.677419 %
+epoch 791, minibatch 95/95, validation error 5.677419 %
+epoch 792, minibatch 95/95, validation error 5.677419 %
+epoch 793, minibatch 95/95, validation error 5.677419 %
+epoch 794, minibatch 95/95, validation error 5.677419 %
+epoch 795, minibatch 95/95, validation error 5.677419 %
+epoch 796, minibatch 95/95, validation error 5.677419 %
+epoch 797, minibatch 95/95, validation error 5.677419 %
+epoch 798, minibatch 95/95, validation error 5.677419 %
+epoch 799, minibatch 95/95, validation error 5.677419 %
+epoch 800, minibatch 95/95, validation error 5.677419 %
+epoch 801, minibatch 95/95, validation error 5.677419 %
+epoch 802, minibatch 95/95, validation error 5.677419 %
+epoch 803, minibatch 95/95, validation error 5.677419 %
+epoch 804, minibatch 95/95, validation error 5.677419 %
+epoch 805, minibatch 95/95, validation error 5.677419 %
+epoch 806, minibatch 95/95, validation error 5.677419 %
+epoch 807, minibatch 95/95, validation error 5.677419 %
+epoch 808, minibatch 95/95, validation error 5.677419 %
+epoch 809, minibatch 95/95, validation error 5.677419 %
+epoch 810, minibatch 95/95, validation error 5.677419 %
+epoch 811, minibatch 95/95, validation error 5.677419 %
+epoch 812, minibatch 95/95, validation error 5.677419 %
+epoch 813, minibatch 95/95, validation error 5.677419 %
+epoch 814, minibatch 95/95, validation error 5.677419 %
+epoch 815, minibatch 95/95, validation error 5.677419 %
+epoch 816, minibatch 95/95, validation error 5.677419 %
+epoch 817, minibatch 95/95, validation error 5.677419 %
+epoch 818, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.67325
+epoch 819, minibatch 95/95, validation error 5.677419 %
+epoch 820, minibatch 95/95, validation error 5.677419 %
+epoch 821, minibatch 95/95, validation error 5.677419 %
+epoch 822, minibatch 95/95, validation error 5.677419 %
+epoch 823, minibatch 95/95, validation error 5.677419 %
+epoch 824, minibatch 95/95, validation error 5.677419 %
+epoch 825, minibatch 95/95, validation error 5.677419 %
+epoch 826, minibatch 95/95, validation error 5.677419 %
+epoch 827, minibatch 95/95, validation error 5.677419 %
+epoch 828, minibatch 95/95, validation error 5.677419 %
+epoch 829, minibatch 95/95, validation error 5.677419 %
+epoch 830, minibatch 95/95, validation error 5.677419 %
+epoch 831, minibatch 95/95, validation error 5.677419 %
+epoch 832, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.673527777778
+epoch 833, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.673527777778
+epoch 834, minibatch 95/95, validation error 5.677419 %
+epoch 835, minibatch 95/95, validation error 5.677419 %
+epoch 836, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.673638888889
+epoch 837, minibatch 95/95, validation error 5.677419 %
+epoch 838, minibatch 95/95, validation error 5.677419 %
+epoch 839, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.674194444444
+epoch 840, minibatch 95/95, validation error 5.677419 %
+epoch 841, minibatch 95/95, validation error 5.677419 %
+epoch 842, minibatch 95/95, validation error 5.677419 %
+epoch 843, minibatch 95/95, validation error 5.677419 %
+epoch 844, minibatch 95/95, validation error 5.677419 %
+epoch 845, minibatch 95/95, validation error 5.677419 %
+epoch 846, minibatch 95/95, validation error 5.677419 %
+epoch 847, minibatch 95/95, validation error 5.677419 %
+epoch 848, minibatch 95/95, validation error 5.677419 %
+epoch 849, minibatch 95/95, validation error 5.677419 %
+epoch 850, minibatch 95/95, validation error 5.677419 %
+epoch 851, minibatch 95/95, validation error 5.677419 %
+epoch 852, minibatch 95/95, validation error 5.677419 %
+epoch 853, minibatch 95/95, validation error 5.677419 %
+epoch 854, minibatch 95/95, validation error 5.677419 %
+epoch 855, minibatch 95/95, validation error 5.677419 %
+epoch 856, minibatch 95/95, validation error 5.677419 %
+epoch 857, minibatch 95/95, validation error 5.677419 %
+epoch 858, minibatch 95/95, validation error 5.677419 %
+epoch 859, minibatch 95/95, validation error 5.677419 %
+epoch 860, minibatch 95/95, validation error 5.677419 %
+epoch 861, minibatch 95/95, validation error 5.677419 %
+epoch 862, minibatch 95/95, validation error 5.677419 %
+epoch 863, minibatch 95/95, validation error 5.677419 %
+epoch 864, minibatch 95/95, validation error 5.677419 %
+epoch 865, minibatch 95/95, validation error 5.677419 %
+epoch 866, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.677722222222
+epoch 867, minibatch 95/95, validation error 5.677419 %
+epoch 868, minibatch 95/95, validation error 5.677419 %
+epoch 869, minibatch 95/95, validation error 5.677419 %
+epoch 870, minibatch 95/95, validation error 5.677419 %
+epoch 871, minibatch 95/95, validation error 5.677419 %
+epoch 872, minibatch 95/95, validation error 5.677419 %
+epoch 873, minibatch 95/95, validation error 5.677419 %
+epoch 874, minibatch 95/95, validation error 5.677419 %
+epoch 875, minibatch 95/95, validation error 5.677419 %
+epoch 876, minibatch 95/95, validation error 5.677419 %
+epoch 877, minibatch 95/95, validation error 5.677419 %
+epoch 878, minibatch 95/95, validation error 5.677419 %
+epoch 879, minibatch 95/95, validation error 5.677419 %
+epoch 880, minibatch 95/95, validation error 5.677419 %
+epoch 881, minibatch 95/95, validation error 5.677419 %
+epoch 882, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.677777777778
+epoch 883, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.677805555556
+epoch 884, minibatch 95/95, validation error 5.677419 %
+epoch 885, minibatch 95/95, validation error 5.677419 %
+epoch 886, minibatch 95/95, validation error 5.677419 %
+epoch 887, minibatch 95/95, validation error 5.677419 %
+epoch 888, minibatch 95/95, validation error 5.677419 %
+epoch 889, minibatch 95/95, validation error 5.677419 %
+epoch 890, minibatch 95/95, validation error 5.677419 %
+epoch 891, minibatch 95/95, validation error 5.677419 %
+epoch 892, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.678166666667
+epoch 893, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.678222222222
+epoch 894, minibatch 95/95, validation error 5.677419 %
+epoch 895, minibatch 95/95, validation error 5.677419 %
+epoch 896, minibatch 95/95, validation error 5.677419 %
+epoch 897, minibatch 95/95, validation error 5.677419 %
+epoch 898, minibatch 95/95, validation error 5.677419 %
+epoch 899, minibatch 95/95, validation error 5.677419 %
+epoch 900, minibatch 95/95, validation error 5.677419 %
+epoch 901, minibatch 95/95, validation error 5.677419 %
+epoch 902, minibatch 95/95, validation error 5.677419 %
+epoch 903, minibatch 95/95, validation error 5.677419 %
+epoch 904, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.678583333333
+epoch 905, minibatch 95/95, validation error 5.677419 %
+epoch 906, minibatch 95/95, validation error 5.677419 %
+epoch 907, minibatch 95/95, validation error 5.677419 %
+epoch 908, minibatch 95/95, validation error 5.677419 %
+epoch 909, minibatch 95/95, validation error 5.677419 %
+epoch 910, minibatch 95/95, validation error 5.677419 %
+epoch 911, minibatch 95/95, validation error 5.677419 %
+epoch 912, minibatch 95/95, validation error 5.677419 %
+epoch 913, minibatch 95/95, validation error 5.677419 %
+epoch 914, minibatch 95/95, validation error 5.677419 %
+epoch 915, minibatch 95/95, validation error 5.677419 %
+epoch 916, minibatch 95/95, validation error 5.677419 %
+epoch 917, minibatch 95/95, validation error 5.677419 %
+epoch 918, minibatch 95/95, validation error 5.677419 %
+epoch 919, minibatch 95/95, validation error 5.677419 %
+epoch 920, minibatch 95/95, validation error 5.677419 %
+epoch 921, minibatch 95/95, validation error 5.677419 %
+epoch 922, minibatch 95/95, validation error 5.677419 %
+epoch 923, minibatch 95/95, validation error 5.677419 %
+epoch 924, minibatch 95/95, validation error 5.677419 %
+epoch 925, minibatch 95/95, validation error 5.677419 %
+epoch 926, minibatch 95/95, validation error 5.677419 %
+epoch 927, minibatch 95/95, validation error 5.677419 %
+epoch 928, minibatch 95/95, validation error 5.677419 %
+epoch 929, minibatch 95/95, validation error 5.677419 %
+epoch 930, minibatch 95/95, validation error 5.677419 %
+epoch 931, minibatch 95/95, validation error 5.677419 %
+epoch 932, minibatch 95/95, validation error 5.677419 %
+epoch 933, minibatch 95/95, validation error 5.677419 %
+epoch 934, minibatch 95/95, validation error 5.677419 %
+epoch 935, minibatch 95/95, validation error 5.677419 %
+epoch 936, minibatch 95/95, validation error 5.677419 %
+epoch 937, minibatch 95/95, validation error 5.677419 %
+epoch 938, minibatch 95/95, validation error 5.677419 %
+epoch 939, minibatch 95/95, validation error 5.677419 %
+epoch 940, minibatch 95/95, validation error 5.677419 %
+epoch 941, minibatch 95/95, validation error 5.677419 %
+epoch 942, minibatch 95/95, validation error 5.677419 %
+epoch 943, minibatch 95/95, validation error 5.677419 %
+epoch 944, minibatch 95/95, validation error 5.677419 %
+epoch 945, minibatch 95/95, validation error 5.677419 %
+epoch 946, minibatch 95/95, validation error 5.677419 %
+epoch 947, minibatch 95/95, validation error 5.677419 %
+epoch 948, minibatch 95/95, validation error 5.677419 %
+     new best AUC!: 0.678833333333
+epoch 949, minibatch 95/95, validation error 5.677419 %
+epoch 950, minibatch 95/95, validation error 5.677419 %
+epoch 951, minibatch 95/95, validation error 5.677419 %
+epoch 952, minibatch 95/95, validation error 5.677419 %
+epoch 953, minibatch 95/95, validation error 5.677419 %
+epoch 954, minibatch 95/95, validation error 5.677419 %
+epoch 955, minibatch 95/95, validation error 5.677419 %
+epoch 956, minibatch 95/95, validation error 5.677419 %
+epoch 957, minibatch 95/95, validation error 5.677419 %
+epoch 958, minibatch 95/95, validation error 5.677419 %
+epoch 959, minibatch 95/95, validation error 5.677419 %
+epoch 960, minibatch 95/95, validation error 5.677419 %
+epoch 961, minibatch 95/95, validation error 5.677419 %
+epoch 962, minibatch 95/95, validation error 5.677419 %
+epoch 963, minibatch 95/95, validation error 5.677419 %
+epoch 964, minibatch 95/95, validation error 5.677419 %
+epoch 965, minibatch 95/95, validation error 5.677419 %
+epoch 966, minibatch 95/95, validation error 5.677419 %
+epoch 967, minibatch 95/95, validation error 5.677419 %
+epoch 968, minibatch 95/95, validation error 5.677419 %
+epoch 969, minibatch 95/95, validation error 5.677419 %
+epoch 970, minibatch 95/95, validation error 5.677419 %
+epoch 971, minibatch 95/95, validation error 5.677419 %
+epoch 972, minibatch 95/95, validation error 5.677419 %
+epoch 973, minibatch 95/95, validation error 5.677419 %
+epoch 974, minibatch 95/95, validation error 5.677419 %
+epoch 975, minibatch 95/95, validation error 5.677419 %
+epoch 976, minibatch 95/95, validation error 5.677419 %
+epoch 977, minibatch 95/95, validation error 5.677419 %
+epoch 978, minibatch 95/95, validation error 5.677419 %
+epoch 979, minibatch 95/95, validation error 5.677419 %
+epoch 980, minibatch 95/95, validation error 5.677419 %
+epoch 981, minibatch 95/95, validation error 5.677419 %
+epoch 982, minibatch 95/95, validation error 5.677419 %
+epoch 983, minibatch 95/95, validation error 5.677419 %
+epoch 984, minibatch 95/95, validation error 5.677419 %
+epoch 985, minibatch 95/95, validation error 5.677419 %
+epoch 986, minibatch 95/95, validation error 5.677419 %
+epoch 987, minibatch 95/95, validation error 5.677419 %
+epoch 988, minibatch 95/95, validation error 5.677419 %
+epoch 989, minibatch 95/95, validation error 5.677419 %
+epoch 990, minibatch 95/95, validation error 5.677419 %
+epoch 991, minibatch 95/95, validation error 5.677419 %
+epoch 992, minibatch 95/95, validation error 5.677419 %
+epoch 993, minibatch 95/95, validation error 5.677419 %
+epoch 994, minibatch 95/95, validation error 5.677419 %
+epoch 995, minibatch 95/95, validation error 5.677419 %
+epoch 996, minibatch 95/95, validation error 5.677419 %
+epoch 997, minibatch 95/95, validation error 5.677419 %
+epoch 998, minibatch 95/95, validation error 5.677419 %
+epoch 999, minibatch 95/95, validation error 5.677419 %
+epoch 1000, minibatch 95/95, validation error 5.677419 %
+Optimization complete with best validation score of 5.645161 %, obtained at iteration 95, with test performance 5.741935 %, and best_auc: 0.678833
+runtime: 182934.64 secs.
