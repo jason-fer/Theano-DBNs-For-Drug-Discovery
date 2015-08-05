@@ -345,7 +345,7 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     # construct the Deep Belief Network
     dbn = DBN(numpy_rng=numpy_rng, n_ins=1024 * 1,
               hidden_layers_sizes=[2000, 100],
-              n_outs=2) #@todo n_outs should be 1, but if i change it from 10, it blows up!
+              n_outs=2)
 
     # start-snippet-2
     #########################

@@ -99,7 +99,7 @@ def parse_line(line, data_type):
 def parse_line_multi(line):
 
     # row format: [hash_id, is_active, native_id, fold, bitstring]
-    parts = line.rstrip('\n').split(r'fl')
+    parts = line.rstrip('\n').split(r' fl')
     bitstring = parts[0]
 
     parts = parts[1].rstrip('\n').split(r' ')
@@ -111,6 +111,18 @@ def parse_line_multi(line):
 
     return fold, [bitstring, labels]
 
+def num_labels_multi(line):
+
+    # row format: [hash_id, is_active, native_id, fold, bitstring]
+    parts = line.rstrip('\n').split(r' fl')
+    bitstring = parts[0]
+
+    parts = parts[1].rstrip('\n').split(r' ')
+
+    # cast labels to int
+    labels = parts[1:]
+
+    return len(labels)
 
 def get_col_index(target, target_cols):
     """return the column index for this target"""
@@ -381,6 +393,24 @@ def build_data_set(fold):
 
     return (X, Y)
 
+def build_multi_data_set(fold):
+    """ Featurizing 1024 bits is a slow process """
+    """ ** Built for Theano ** """
+    # build training data
+    X = []
+    Y = []
+    for i in range(len(fold)):
+        row = []
+        for bit in fold[i][0]:
+            row.append(int(bit))
+        X.append(row)
+        Y.append(fold[i][1])
+
+    X = np.array(X)
+    Y = np.array(Y)
+
+    return (X, Y)
+
 def th_calc_auc(dbn, test_set_labels, test_set_x):
     """ *************** build AUC curve *************** """
 
@@ -522,7 +552,7 @@ def th_load_data2(data_type, fold_path, target, fnames, fold_valid, fold_test):
 
 
 # almost the same as the function above, this is just to get a validation fold
-def th_load_multi(data_type, fold_path, fnames, fold_valid, fold_test):
+def th_load_multi(data_type, fold_path, fname, fold_valid, fold_test):
     """ Get just 1 test & 1 valid fold to avoid overloading memory """
     """The load_files_for_task module takes the input files for a single task"""
     """The module loads the data from these files into two dictionaries - foldsActive and foldsInactive"""
@@ -532,22 +562,25 @@ def th_load_multi(data_type, fold_path, fnames, fold_valid, fold_test):
     train_folds = []
     valid_folds = []
     test_folds = []
-    for fname in fnames:
-        row = []
-        with open(fold_path + '/' + fname) as f:
-            lines = f.readlines()
-            for line in lines:
-                # put each row in it's respective fold
-                curr_fold, row = parse_line_multi(line)
-                curr_fold = int(curr_fold)
+    row = []
+    with open(fold_path + '/' + fname) as f:
+        lines = f.readlines()
+        for line in lines:
+            # put each row in it's respective fold
+            curr_fold, row = parse_line_multi(line)
 
-                if(curr_fold == fold_test):
-                    test_folds.append(row)
-                elif(curr_fold == fold_valid):
-                    valid_folds.append(row)
-                else:
-                    train_folds.append(row)
+            if(curr_fold == fold_test):
+                test_folds.append(row)
+            elif(curr_fold == fold_valid):
+                valid_folds.append(row)
+            else:
+                train_folds.append(row)
     
+
+    with open(fold_path + '/' + fname) as f:
+        lines = f.readlines()
+        num_labels = num_labels_multi(lines[0])
+
     """multibatch is ALREADY oversampled!  (don't do it again)"""
 
     # shuffle the folds once upfront
@@ -555,9 +588,9 @@ def th_load_multi(data_type, fold_path, fnames, fold_valid, fold_test):
     random.shuffle(valid_folds)
     random.shuffle(test_folds)
 
-    train_x, train_y = build_data_set(train_folds)
-    valid_x, valid_y = build_data_set(valid_folds)
-    test_x, test_y = build_data_set(test_folds)
+    train_x, train_y = build_multi_data_set(train_folds)
+    valid_x, valid_y = build_multi_data_set(valid_folds)
+    test_x, test_y = build_multi_data_set(test_folds)
 
     # turn into shared datasets
     train_set = (train_x, train_y)
@@ -570,7 +603,7 @@ def th_load_multi(data_type, fold_path, fnames, fold_valid, fold_test):
     
     datasets = [(train_set_x, train_set_y), (valid_set_x, valid_set_y), (test_set_x, test_set_y)]
 
-    return datasets, test_y
+    return num_labels, datasets, test_y
 
 
 

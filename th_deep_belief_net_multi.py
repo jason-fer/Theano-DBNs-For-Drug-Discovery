@@ -323,15 +323,24 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     test_fold = 0 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
     valid_fold = 1 #xxxxxxxxxxxx TEMP XXXXXXXXXXXXXXXX
 
-    # !!!!!!!!!!!!! this needs to only load 1 file at a time!
-    datasets, test_set_labels = helpers.th_load_multi(data_type, fold_path, [fnames[0]], test_fold, valid_fold)
-    train_set_x, train_set_y = datasets[0]
-    valid_set_x, valid_set_y = datasets[1]
-    test_set_x, test_set_y = datasets[2]
+    # pickle everything -- this will take a while.
+    # for fname in fnames:
+    #     # Load one file
+    #     num_labels, datasets, test_set_labels = helpers.th_load_multi(data_type, fold_path, fname, test_fold, valid_fold)
 
+    #     print 'creating data file: ' + fold_path + '/pkd_' + fname
+    #     with open(fold_path + '/pkd_' + fname, 'w') as f:
+    #         cPickle.dump(datasets, f)
 
-    # compute number of minibatches for training, validation and testing
-    n_train_batches = train_set_x.get_value(borrow=True).shape[0] / batch_size
+    #     print 'creating label file: ' + fold_path + '/pkl_' + fname
+    #     with open(fold_path + '/pkl_' + fname, 'w') as f:
+    #         cPickle.dump(test_set_labels, f)
+
+    # enable lines above / remove this line..... (temp)
+    num_labels, datasets, test_set_labels = helpers.th_load_multi(data_type, fold_path, fnames[0], test_fold, valid_fold)
+
+    # 2x classes per column; odds of negative / odds of true
+    n_outs = num_labels * 2
 
     # numpy random generator
     numpy_rng = numpy.random.RandomState(123)
@@ -339,33 +348,43 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     # construct the Deep Belief Network
     dbn = DBN(numpy_rng=numpy_rng, n_ins=1024 * 1,
               hidden_layers_sizes=[2000, 100],
-              n_outs=2) #@todo n_outs should be 1, but if i change it from 10, it blows up!
+              n_outs=n_outs) # double the number of truth columns
 
     # start-snippet-2
     #########################
     # PRETRAINING THE MODEL #
     #########################
     print '... getting the pretraining functions'
-    pretraining_fns = dbn.pretraining_functions(train_set_x=train_set_x,
-                                                batch_size=batch_size,
-                                                k=k)
-
     print '... pre-training the model'
     start_time = timeit.default_timer()
     ## Pre-train layer-wise
-    for i in xrange(dbn.n_layers):
-        # go through pretraining epochs
-        for epoch in xrange(pretraining_epochs):
-            # go through the training set
-            c = []
-            for batch_index in xrange(n_train_batches):
-                print 'batch_index'
-                print batch_index
-                exit(0)
-                c.append(pretraining_fns[i](index=batch_index,
-                                            lr=pretrain_lr))
-            print 'Pre-training layer %i, epoch %d, cost ' % (i, epoch),
-            print numpy.mean(c)
+    for fname in fnames:
+
+        print '... loading ' + fname
+
+        # load our relevant pickled data / labels
+        datasets = cPickle.load(open(fold_path + '/pkd_' + fname))
+        test_set_labels = cPickle.load(open(fold_path + '/pkl_' + fname))
+        train_set_x, train_set_y = datasets[0]
+        valid_set_x, valid_set_y = datasets[1]
+        test_set_x, test_set_y = datasets[2]
+
+        # compute number of minibatches for training, validation and testing
+        n_train_batches = train_set_x.get_value(borrow=True).shape[0] / batch_size
+        pretraining_fns = dbn.pretraining_functions(train_set_x=train_set_x,
+                                                    batch_size=batch_size,
+                                                    k=k)
+
+        for i in xrange(dbn.n_layers):
+            # go through pretraining epochs
+            for epoch in xrange(pretraining_epochs):
+                # go through the training set
+                c = []
+                for batch_index in xrange(n_train_batches):
+                    c.append(pretraining_fns[i](index=batch_index,
+                                                lr=pretrain_lr))
+                print 'Pre-training layer %i, epoch %d, cost ' % (i, epoch),
+                print numpy.mean(c)
 
     end_time = timeit.default_timer()
     # end-snippet-2
@@ -521,7 +540,7 @@ def main(args):
     if(dataset == 'tox21'):
 
         #  2 p_epochs at p_lr = 0.01: broken
-            p_epochs = 100 #default 100 pretraining_epochs
+            p_epochs = 1 #default 100 pretraining_epochs
             t_epochs = 1000 #default 1000 training_epochs
             f_lr = 0.1 # fine_tune learning rate
             p_lr = 0.01 # unserupvised pre-training learning rate
