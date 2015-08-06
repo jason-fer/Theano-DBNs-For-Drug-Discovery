@@ -336,8 +336,14 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
     #     with open(fold_path + '/pkl_' + fname, 'w') as f:
     #         cPickle.dump(test_set_labels, f)
 
+
+
+    # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX REMOVE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     # enable lines above / remove this line..... (temp)
     num_labels, datasets, test_set_labels = helpers.th_load_multi(data_type, fold_path, fnames[0], test_fold, valid_fold)
+    fnames = [fnames[0]]
+    # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX REMOVE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 
     # 2x classes per column; odds of negative / odds of true
     n_outs = num_labels * 2

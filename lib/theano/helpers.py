@@ -103,7 +103,7 @@ def parse_line_multi(line):
     bitstring = parts[0]
 
     parts = parts[1].rstrip('\n').split(r' ')
-    fold = parts[0]
+    fold = int(parts[0])
 
     # cast labels to int
     labels = parts[1:]
@@ -359,6 +359,7 @@ def get_folds(data_type, fold_path, target, fnames):
     return folds
 
 
+
 def shared_dataset(data_xy, borrow=True):
     """ Function that loads the dataset into shared variables
     The reason we store our dataset in shared variables is to allow Theano to copy it into the GPU memory
@@ -373,6 +374,7 @@ def shared_dataset(data_xy, borrow=True):
     # floats it doesn't make sense) therefore instead of returning  ``shared_y`` we will have to cast it to int. This little hack
     # lets ous get around this issue
     return shared_x, T.cast(shared_y, 'int32')
+
 
 
 def build_data_set(fold):
@@ -393,6 +395,8 @@ def build_data_set(fold):
 
     return (X, Y)
 
+
+
 def build_multi_data_set(fold):
     """ Featurizing 1024 bits is a slow process """
     """ ** Built for Theano ** """
@@ -410,6 +414,8 @@ def build_multi_data_set(fold):
     Y = np.array(Y)
 
     return (X, Y)
+
+
 
 def th_calc_auc(dbn, test_set_labels, test_set_x):
     """ *************** build AUC curve *************** """
