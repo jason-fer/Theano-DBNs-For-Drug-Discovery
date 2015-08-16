@@ -404,13 +404,19 @@ def build_multi_data_set(fold):
     X = []
     Y = []
     for i in range(len(fold)):
+
         row = []
         for bit in fold[i][0]:
             row.append(int(bit))
         X.append(row)
-        Y.append(fold[i][1])
+
+        labels = []
+        for label in fold[i][1]:
+            labels.append(int(label))
+        Y.append(labels)
 
     X = np.array(X)
+    # Y = np.vstack(Y)
     Y = np.array(Y)
 
     return (X, Y)
@@ -550,7 +556,7 @@ def th_load_data2(data_type, fold_path, target, fnames, fold_valid, fold_test):
     train_set_x, train_set_y = shared_dataset(train_set)
     valid_set_x, valid_set_y = shared_dataset(valid_set)
     test_set_x, test_set_y = shared_dataset(test_set)
-    
+
     datasets = [(train_set_x, train_set_y), (valid_set_x, valid_set_y), (test_set_x, test_set_y)]
 
     return datasets, test_y
@@ -606,11 +612,55 @@ def th_load_multi(data_type, fold_path, fname, fold_valid, fold_test):
     train_set_x, train_set_y = shared_dataset(train_set)
     valid_set_x, valid_set_y = shared_dataset(valid_set)
     test_set_x, test_set_y = shared_dataset(test_set)
-    
+
     datasets = [(train_set_x, train_set_y), (valid_set_x, valid_set_y), (test_set_x, test_set_y)]
 
     return num_labels, datasets, test_y
 
+
+def th_load_multi_raw(data_type, fold_path, fname, fold_valid, fold_test):
+    """ Get just 1 test & 1 valid fold to avoid overloading memory """
+    """The load_files_for_task module takes the input files for a single task"""
+    """The module loads the data from these files into two dictionaries - foldsActive and foldsInactive"""
+    """Each dictionary contains five lists: 0 to 4 corresponding to a fold."""
+
+    #fnames contains all files for this target
+    train_folds = []
+    valid_folds = []
+    test_folds = []
+    row = []
+    with open(fold_path + '/' + fname) as f:
+        lines = f.readlines()
+        for line in lines:
+            # put each row in it's respective fold
+            curr_fold, row = parse_line_multi(line)
+
+            if(curr_fold == fold_test):
+                test_folds.append(row)
+            elif(curr_fold == fold_valid):
+                valid_folds.append(row)
+            else:
+                train_folds.append(row)
+    
+
+    with open(fold_path + '/' + fname) as f:
+        lines = f.readlines()
+        num_labels = num_labels_multi(lines[0])
+
+    """multibatch is ALREADY oversampled!  (don't do it again)"""
+
+    # shuffle the folds once upfront
+    random.shuffle(train_folds)
+    random.shuffle(valid_folds)
+    random.shuffle(test_folds)
+
+    train_x, train_y = build_multi_data_set(train_folds)
+    valid_x, valid_y = build_multi_data_set(valid_folds)
+    test_x, test_y = build_multi_data_set(test_folds)
+
+    datasets = [(train_x, train_y), (valid_x, valid_y), (test_x, test_y)]
+
+    return num_labels, datasets, test_y
 
 
 def get_target_list(data_type):

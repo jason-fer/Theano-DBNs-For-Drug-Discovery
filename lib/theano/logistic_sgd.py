@@ -47,8 +47,7 @@ import theano.tensor as T
 
 
 class LogisticRegression(object):
-    """Multi-class Logistic Regression Class
-
+    """
     The logistic regression is fully described by a weight matrix :math:`W`
     and bias vector :math:`b`. Classification is done by projecting data
     points onto a set of hyperplanes, the distance to which is used to
@@ -130,6 +129,10 @@ class LogisticRegression(object):
         Note: we use the mean instead of the sum so that
               the learning rate is less dependent on the batch size
         """
+
+        # if(str(y.type) == 'TensorType(int32, vector)'):
+        #     """Multitask"""
+
         # start-snippet-2
         # y.shape[0] is (symbolically) the number of rows in y, i.e.,
         # number of examples (call it n) in the minibatch

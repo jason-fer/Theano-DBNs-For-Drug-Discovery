@@ -14,7 +14,7 @@ import theano.tensor as T
 from theano.sandbox.rng_mrg import MRG_RandomStreams
 
 # lib.theano: our local versions of things (some key things are modified)
-from lib.theano.logistic_sgd import LogisticRegression, load_data
+from lib.theano.multitask_sgd import MultitaskLogReg
 from lib.theano.mlp import HiddenLayer
 from lib.theano.rbm import RBM
 # helpers is not a theano library
@@ -22,7 +22,7 @@ from lib.theano import helpers
 
 
 # start-snippet-1
-class DBN(object):
+class DBN_multi(object):
     """Deep Belief Network
 
     A deep belief network is obtained by stacking several RBMs on top of each
@@ -34,7 +34,7 @@ class DBN(object):
     """
 
     def __init__(self, numpy_rng, theano_rng=None, n_ins=784,
-                 hidden_layers_sizes=[500, 500], n_outs=10):
+                 hidden_layers_sizes=[500, 500], n_outs=10, num_tasks=1):
         """This class is made to support a variable number of layers.
 
         :type numpy_rng: numpy.random.RandomState
@@ -54,6 +54,13 @@ class DBN(object):
 
         :type n_outs: int
         :param n_outs: dimension of the output of the network
+
+        :type num_tasks: int
+        :param num_tasks: the number of separate multitask targets which will
+        be evaluated. This also represents the number of separate 
+        logistic regression subclasses multitask logistic regression will need
+        to spawn 
+
         """
 
         self.sigmoid_layers = []
@@ -128,20 +135,22 @@ class DBN(object):
             self.rbm_layers.append(rbm_layer)
 
         # We now need to add a logistic layer on top of the MLP
-        self.logLayer = LogisticRegression(
+        self.multiLogLayer = MultitaskLogReg(
             input=self.sigmoid_layers[-1].output,
             n_in=hidden_layers_sizes[-1],
-            n_out=n_outs)
-        self.params.extend(self.logLayer.params)
+            n_out=n_outs, num_tasks=num_tasks)
+
+        self.params.extend(self.multiLogLayer.params)
+
 
         # compute the cost for second phase of training, defined as the
         # negative log likelihood of the logistic regression (output) layer
-        self.finetune_cost = self.logLayer.negative_log_likelihood(self.y)
+        self.finetune_cost = self.multiLogLayer.negative_log_likelihood(self.y, num_tasks)
 
         # compute the gradients with respect to the model parameters
         # symbolic variable that points to the number of errors made on the
         # minibatch given by self.x and self.y
-        self.errors = self.logLayer.errors(self.y)
+        self.errors = self.multiLogLayer.errors(self.y, num_tasks)
 
     def pretraining_functions(self, train_set_x, batch_size, k):
         '''Generates a list of functions, for performing one step of
@@ -216,6 +225,7 @@ class DBN(object):
         (valid_set_x, valid_set_y) = datasets[1]
         (test_set_x, test_set_y) = datasets[2]
 
+
         # compute number of minibatches for training, validation and testing
         n_valid_batches = valid_set_x.get_value(borrow=True).shape[0]
         n_valid_batches /= batch_size
@@ -231,6 +241,7 @@ class DBN(object):
         updates = []
         for param, gparam in zip(self.params, gparams):
             updates.append((param, param - gparam * learning_rate))
+
 
         train_fn = theano.function(
             inputs=[index],
@@ -283,7 +294,7 @@ class DBN(object):
         return train_fn, valid_score, test_score
 
 
-def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
+def run_DBN_multi(finetune_lr=0.1, pretraining_epochs=100,
              pretrain_lr=0.01, k=1, training_epochs=1000,
              batch_size=100, data_type='', patience=5000):
     """
@@ -340,66 +351,69 @@ def run_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
     # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX REMOVE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     # enable lines above / remove this line..... (temp)
-    num_labels, datasets, test_set_labels = helpers.th_load_multi(data_type, fold_path, fnames[0], test_fold, valid_fold)
+    num_labels, datasets, test_set_labels = helpers.th_load_multi_raw(data_type, fold_path, fnames[0], test_fold, valid_fold)
     fnames = [fnames[0]]
+    train_set_x, train_set_y = datasets[0]
+    valid_set_x, valid_set_y = datasets[1]
+    test_set_x, test_set_y = datasets[2]
     # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX REMOVE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
-    # 2x classes per column; odds of negative / odds of true
-    n_outs = num_labels * 2
-
     # numpy random generator
     numpy_rng = numpy.random.RandomState(123)
+
     print '... building the model'
     # construct the Deep Belief Network
-    dbn = DBN(numpy_rng=numpy_rng, n_ins=1024 * 1,
+    dbn = DBN_multi(numpy_rng=numpy_rng, n_ins=1024 * 1,
               hidden_layers_sizes=[2000, 100],
-              n_outs=n_outs) # double the number of truth columns
+              n_outs=2, num_tasks=num_labels) #num_tasks = number of targets
 
-    # start-snippet-2
-    #########################
-    # PRETRAINING THE MODEL #
-    #########################
-    print '... getting the pretraining functions'
-    print '... pre-training the model'
-    start_time = timeit.default_timer()
-    ## Pre-train layer-wise
-    for fname in fnames:
 
-        print '... loading ' + fname
+    # # start-snippet-2
+    # #########################
+    # # PRETRAINING THE MODEL #
+    # #########################
+    # print '... getting the pretraining functions'
+    # print '... pre-training the model'
+    # start_time = timeit.default_timer()
+    # ## Pre-train layer-wise
+    # for fname in fnames:
 
-        # load our relevant pickled data / labels
-        datasets = cPickle.load(open(fold_path + '/pkd_' + fname))
-        test_set_labels = cPickle.load(open(fold_path + '/pkl_' + fname))
-        train_set_x, train_set_y = datasets[0]
-        valid_set_x, valid_set_y = datasets[1]
-        test_set_x, test_set_y = datasets[2]
+    #     print '... loading ' + fname
 
-        # compute number of minibatches for training, validation and testing
-        n_train_batches = train_set_x.get_value(borrow=True).shape[0] / batch_size
-        pretraining_fns = dbn.pretraining_functions(train_set_x=train_set_x,
-                                                    batch_size=batch_size,
-                                                    k=k)
+    #     # load our relevant pickled data / labels
+    #     datasets = cPickle.load(open(fold_path + '/pkd_' + fname))
+    #     test_set_labels = cPickle.load(open(fold_path + '/pkl_' + fname))
+    #     train_set_x, train_set_y = datasets[0]
+    #     valid_set_x, valid_set_y = datasets[1]
+    #     test_set_x, test_set_y = datasets[2]
 
-        for i in xrange(dbn.n_layers):
-            # go through pretraining epochs
-            for epoch in xrange(pretraining_epochs):
-                # go through the training set
-                c = []
-                for batch_index in xrange(n_train_batches):
-                    c.append(pretraining_fns[i](index=batch_index,
-                                                lr=pretrain_lr))
-                print 'Pre-training layer %i, epoch %d, cost ' % (i, epoch),
-                print numpy.mean(c)
+    #     # compute number of minibatches for training, validation and testing
+    #     n_train_batches = train_set_x.get_value(borrow=True).shape[0] / batch_size
+    #     pretraining_fns = dbn.pretraining_functions(train_set_x=train_set_x,
+    #                                                 batch_size=batch_size,
+    #                                                 k=k)
 
-    end_time = timeit.default_timer()
-    # end-snippet-2
-    print >> sys.stderr, ('The pretraining code for file ' +
-                          os.path.split(__file__)[1] +
-                          ' ran for %.2fm' % ((end_time - start_time) / 60.))
+    #     for i in xrange(dbn.n_layers):
+    #         # go through pretraining epochs
+    #         for epoch in xrange(pretraining_epochs):
+    #             # go through the training set
+    #             c = []
+    #             for batch_index in xrange(n_train_batches):
+    #                 c.append(pretraining_fns[i](index=batch_index,
+    #                                             lr=pretrain_lr))
+    #             print 'Pre-training layer %i, epoch %d, cost ' % (i, epoch),
+    #             print numpy.mean(c)
+
+    # end_time = timeit.default_timer()
+    # # end-snippet-2
+    # print >> sys.stderr, ('The pretraining code for file ' +
+    #                       os.path.split(__file__)[1] +
+    #                       ' ran for %.2fm' % ((end_time - start_time) / 60.))
     ########################
     # FINETUNING THE MODEL #
     ########################
+
 
     # get the training, validation and testing function for the model
     print '... getting the finetuning functions'
@@ -520,6 +534,7 @@ def run_predictions(data_type, p_epochs, t_epochs, f_lr, p_lr):
 
 
 def main(args):
+
 
     # !!! Important !!! This has a major impact on the results.
     p_epochs = 8 #default 100 pretraining_epochs
