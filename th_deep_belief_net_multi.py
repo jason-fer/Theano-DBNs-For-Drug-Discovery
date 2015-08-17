@@ -353,7 +353,8 @@ def run_DBN_multi(finetune_lr=0.1, pretraining_epochs=100,
 
     # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX REMOVE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     # enable lines above / remove this line..... (temp)
-    num_labels, datasets, test_set_labels = helpers.th_load_multi_raw(data_type, fold_path, fnames[0], test_fold, valid_fold)
+    # num_labels, datasets, test_set_labels = helpers.th_load_multi_raw(data_type, fold_path, fnames[0], test_fold, valid_fold)
+    num_labels, datasets, test_set_labels = helpers.th_load_multi(data_type, fold_path, fnames[0], test_fold, valid_fold)
     fnames = [fnames[0]]
     train_set_x, train_set_y = datasets[0]
     valid_set_x, valid_set_y = datasets[1]
