@@ -3,26 +3,12 @@
 Multitask Logistic Regression
 **************************************************************************
 
--Builds on the base logistic regression 
--contains m LogReg nodes that make m predictions
--m instances of LogisticRegression and connects each one to the previous RBM layer
--each LogReg instance gets its own weights and makes its own binary prediction 
--an interface between a matrix of labels and the LogReg classifiers that expect a vector of labels
-
-1-create a vector of LogReg classifiers in __init__ 
-2-negative_log_likelihood takes a column slice from the matrix of labels
-3-determine the mean of the negative_log_likelihood functions
-4-errors() work in a similar way; we compile the errors from each individual LogReg classifier
-
-
--self.p_y_given_x and self.y_pred need to be aware of the task 
--open question: will SGD reach converge 
-
-
 @author: Jason Feriante <feriante@cs.wisc.edu>
 @date: 11 Aug 2015
 """
-import statistics
+import cPickle, gzip, os, sys, timeit, numpy, theano
+import theano.tensor as T
+global shared_input
 
 class MultitaskLogReg(object):
     
@@ -40,35 +26,48 @@ class MultitaskLogReg(object):
         :param n_out: number of output units, the dimension of the space in
                                     which the labels lie
         """
-        self.input = input
+        global shared_input
+        shared_input = input
 
         # init one LogLayer per task
         self.multi = {};
         for i in range(num_tasks):
             # keep track of the tasks in numeric order
-            self.multi['LogLayer' + i] = LogisticRegressionMulti(n_in=n_in, n_out=n_out)
+            self.multi['LogLayer' + str(i)] = LogisticRegressionMulti(n_in=n_in, n_out=n_out)
 
 
     def negative_log_likelihood(self, y, num_tasks):
-        results = []
+        results = {}
+        for i in range(num_tasks):
+            results['x' + str(i)] = T.dscalar('x' + str(i))
+
         for i in range(num_tasks):
             # slice the label matrix & only send the relevant column to the 
             # subclass
-            x = self.multi['LogLayer' + i].negative_log_likelihood(y[:,i])
-            results.append(x)
+            results['x' + str(i)] = self.multi['LogLayer' + str(i)].negative_log_likelihood(y[T.arange(y.shape[0]), i])
 
-        return statistics.mean(results)
+        rsList = []
+        for i in range(num_tasks):
+            rsList.append(results['x' + str(i)])
+            
+        return T.mean(T.stacklists(rsList))
 
 
     def errors(self, y, num_tasks): 
-        results = []
+        results = {}
+        for i in range(num_tasks):
+            results['x' + str(i)] = T.dscalar('x' + str(i))
+
         for i in range(num_tasks):
             # slice the label matrix & only send the relevant column to the 
             # subclass
-            x = self.multi['LogLayer' + i].errors(y[:,i])
-            results.append(x)
+            results['x' + str(i)] = self.multi['LogLayer' + str(i)].errors(y[T.arange(y.shape[0]), i])
 
-        return statistics.mean(results)
+        rsList = []
+        for i in range(num_tasks):
+            rsList.append(results['x' + str(i)])
+
+        return T.mean(T.stacklists(rsList))
 
 
 
@@ -97,7 +96,6 @@ class LogisticRegressionMulti(object):
                       which the labels lie
 
         """
-        # start-snippet-1
         # initialize with 0 the weights W as a matrix of shape (n_in, n_out)
         self.W = theano.shared(
             value=numpy.zeros(
@@ -107,6 +105,7 @@ class LogisticRegressionMulti(object):
             name='W',
             borrow=True
         )
+
         # initialize the baises b as a vector of n_out 0s
         self.b = theano.shared(
             value=numpy.zeros(
@@ -125,7 +124,8 @@ class LogisticRegressionMulti(object):
         # x is a matrix where row-j  represents input training sample-j
         # b is a vector where element-k represent the free parameter of
         # hyperplane-k
-        self.p_y_given_x = T.nnet.softmax(T.dot(MultitaskLogReg.input, self.W) + self.b)
+        global shared_input
+        self.p_y_given_x = T.nnet.softmax(T.dot(shared_input, self.W) + self.b)
 
         # symbolic description of how to compute prediction as class whose
         # probability is maximal
@@ -136,7 +136,7 @@ class LogisticRegressionMulti(object):
         self.params = [self.W, self.b]
 
         # keep track of model input
-        self.input = MultitaskLogReg.input
+        # self.input = input #@todo: do we need this?
 
 
     def negative_log_likelihood(self, y):

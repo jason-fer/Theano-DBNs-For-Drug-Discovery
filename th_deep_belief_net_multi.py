@@ -74,9 +74,9 @@ class DBN_multi(object):
             theano_rng = MRG_RandomStreams(numpy_rng.randint(2 ** 30))
 
         # allocate symbolic variables for the data
-        self.x = T.matrix('x')  # the data is presented as rasterized images
-        self.y = T.ivector('y')  # the labels are presented as 1D vector
-                                 # of [int] labels
+        self.x = T.matrix('x')  # the data is presented 1024 bit strings
+        self.y = T.matrix('y')  # the labels are presented as a matrix
+        self.y = T.cast(self.y, 'int32')
 
         # end-snippet-1
         # The DBN is an MLP, for which all weights of intermediate
@@ -140,7 +140,9 @@ class DBN_multi(object):
             n_in=hidden_layers_sizes[-1],
             n_out=n_outs, num_tasks=num_tasks)
 
-        self.params.extend(self.multiLogLayer.params)
+
+        # for i in range(num_tasks):
+        #     self.params.extend(self.multiLogLayer.multi['LogLayer' + str(i)])
 
 
         # compute the cost for second phase of training, defined as the
@@ -356,6 +358,7 @@ def run_DBN_multi(finetune_lr=0.1, pretraining_epochs=100,
     train_set_x, train_set_y = datasets[0]
     valid_set_x, valid_set_y = datasets[1]
     test_set_x, test_set_y = datasets[2]
+
     # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX REMOVE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
@@ -527,7 +530,7 @@ def run_DBN_multi(finetune_lr=0.1, pretraining_epochs=100,
 def run_predictions(data_type, p_epochs, t_epochs, f_lr, p_lr):
 
     """ Run the Theano DBN Model """
-    run_DBN(pretraining_epochs=p_epochs, training_epochs=t_epochs, 
+    run_DBN_multi(pretraining_epochs=p_epochs, training_epochs=t_epochs, 
         data_type=data_type, finetune_lr=f_lr, 
         pretrain_lr=p_lr, patience=2000)
 
